@@ -1,0 +1,20 @@
+id: us.amex.marriott-bonvoy-bevy/spend-15k
+card_id: us.amex.marriott-bonvoy-bevy
+kind: milestone
+name: Free Night Award after $15,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.marriott-bonvoy-bevy@2024-01-01
+  summary: "After $15,000 in eligible purchases in a calendar year, you earn a Free Night Award for a hotel costing up to 50,000 points a night."
+  face_value: null
+  threshold:
+    amount: 1500000
+    currency: USD
+  threshold_period: calendar_year
+  reward_benefit: us.amex.marriott-bonvoy-bevy/spend-free-night
+  beneficiaries:
+  - primary
+  notes: One Free Night Award after $15,000 in eligible purchases on the card in a calendar year; the card has no free night after renewal.
+  grants:
+  - entitlement: milestone:us.amex.marriott-bonvoy-bevy.spend-15k

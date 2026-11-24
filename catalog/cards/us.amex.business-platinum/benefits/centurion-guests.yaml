@@ -1,0 +1,24 @@
+id: us.amex.business-platinum/centurion-guests
+card_id: us.amex.business-platinum
+kind: access
+name: Free Centurion guests
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-platinum@2025-07-01
+    summary: "After $75,000 in calendar-year spend on the card, you can bring guests into Centurion Lounges for free."
+    unlocked_only: true
+    grants:
+      - entitlement: lounge_guests:centurion
+    conditions:
+      - type: spend_gte
+        amount: 7500000
+        currency: USD
+        period: calendar_year
+        note: $75,000 in a calendar year on this card
+    beneficiaries:
+      - primary
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-business-platinum-card/
+        retrieved_at: "2026-11-13"
+        publisher: review

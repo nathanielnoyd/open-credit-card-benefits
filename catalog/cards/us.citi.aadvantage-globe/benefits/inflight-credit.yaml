@@ -1,0 +1,19 @@
+id: us.citi.aadvantage-globe/inflight-credit
+card_id: us.citi.aadvantage-globe
+kind: statement_credit
+name: Inflight purchase credit
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-globe@2025-10-19
+  summary: "Up to $100 each calendar year in statement credits on American inflight Wi-Fi, food and beverage purchases."
+  face_value: { amount: 10000, currency: USD }
+  period: { cadence: annual, anchor: calendar }
+  limit: { amount: 10000 }
+  grants:
+  - entitlement: credit:american_inflight
+  conditions:
+  - type: merchant_in
+    merchants: [american_airlines_inflight]
+  beneficiaries: [primary]
+  notes: Up to $100 per calendar year on inflight food, beverages and Wi-Fi on American and eligible regional flights marketed by American.

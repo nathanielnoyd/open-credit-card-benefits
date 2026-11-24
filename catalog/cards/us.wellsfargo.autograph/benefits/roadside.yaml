@@ -1,0 +1,23 @@
+id: us.wellsfargo.autograph/roadside
+card_id: us.wellsfargo.autograph
+kind: protection
+name: Roadside Dispatch
+versions:
+- version: 1
+  change_type: added
+  release: us.wellsfargo.autograph@2022-07-01
+  summary: "24/7 towing and roadside help through a dispatch service with no membership, but you pay the provider for each service."
+  face_value: null
+  grants:
+  - entitlement: protection:roadside
+    attributes:
+      pay_per_use: true
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: 'Pay-per-use dispatch service: 24/7 towing and roadside help with no membership, but the cardholder pays the provider for the service (mileage beyond five miles is billed). Vehicles up to 10,000 lbs GVW. Not a paid-for benefit, so it carries no coverage amount.'
+  machine_readable: false
+  sources:
+  - url: https://creditcards.wellsfargo.com/autograph-visa-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer

@@ -1,0 +1,14 @@
+id: pts:spirit_free_spirit
+name: Spirit Free Spirit
+kind: airline
+issuer: Spirit Airlines
+url: https://www.spirit.com/free-spirit
+expiry: "Program closed: Spirit ceased operations on May 2, 2026; points can no longer be redeemed or transferred (before closure, points expired after 12 months without activity)."
+paths: []
+sources:
+  - url: https://www.spirit.com/free-spirit
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://www.withautopilot.com/blog/do-airline-miles-expire
+    retrieved_at: "2026-11-13"
+    publisher: review

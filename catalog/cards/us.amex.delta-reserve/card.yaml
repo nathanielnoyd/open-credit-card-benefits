@@ -1,0 +1,41 @@
+id: us.amex.delta-reserve
+issuer_id: us.amex
+name: Delta SkyMiles Reserve American Express Card
+summary: "A $650-a-year Delta card earning 3x miles on Delta purchases, with Delta Sky Club and Centurion Lounge access when flying Delta, a companion certificate each renewal, 2,500 MQDs a year and monthly Resy and rideshare credits."
+network: amex
+segment: personal
+tier: ultra_premium
+family: amex-delta
+earns: pts:delta_skymiles
+open_to_applicants: true
+url: https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-reserve-american-express-card/
+aliases:
+- Delta Reserve
+- Amex Delta Reserve
+cobrand:
+  partner: Delta Air Lines
+  program: pts:delta_skymiles
+fee_posting:
+  anchor: account_open
+provenance:
+  sources:
+  - url: https://upgradedpoints.com/credit-cards/reviews/delta-reserve-credit-card-american-express/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://awardwallet.com/news/delta-skymiles/delta-credit-card-changes-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://thriftytraveler.com/news/credit-card/amex-adds-new-delta-skymiles-card-benefits-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://thepointsguy.com/credit-cards/reviews/delta-reserve-amex-credit-card-review/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://awardwallet.com/credit-cards/delta-skymiles/authorized-user-benefits
+    retrieved_at: '2026-11-13'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.75'
+  last_reviewed: '2026-11-13'
+related:
+  - { card_id: us.amex.delta-reserve-business, relation: business_counterpart }

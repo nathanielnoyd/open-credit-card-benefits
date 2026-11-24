@@ -1,0 +1,33 @@
+id: us.chase.marriott-bonvoy-bountiful/baggage-delay
+card_id: us.chase.marriott-bonvoy-bountiful
+kind: protection
+name: Baggage delay insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.marriott-bonvoy-bountiful@2024-01-01
+  summary: "Up to $100 a day for up to 5 days, $500 in total, for essentials when your bags are delayed more than 6 hours on a trip paid with the card."
+  grants:
+  - entitlement: protection:baggage_delay
+  coverage:
+    per_period:
+      amount: 50000
+      currency: USD
+    waiting_hours: 6
+    max_days: 5
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Up to $100 a day for up to 5 days when bags are delayed over 6 hours.
+  confidence: '0.7'
+  sources:
+  - url: https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/bountiful
+    retrieved_at: '2026-11-14'
+    publisher: issuer
+  - url: https://awardwallet.com/credit-cards/marriott-bonvoy/chase-marriott-bountiful/
+    retrieved_at: '2026-11-14'
+    publisher: review
+  - url: https://thepointsguy.com/credit-cards/reviews/marriott-bonvoy-bountiful-card-review/
+    retrieved_at: '2026-11-14'
+    publisher: review

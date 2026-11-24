@@ -1,0 +1,91 @@
+card_id: us.chase.freedom-flex
+rules:
+- id: us.chase.freedom-flex/rotating-5x
+  name: 5% quarterly bonus categories
+  categories:
+  - cat:merchant.norwegian_cruise_line
+  - cat:dining
+  - cat:merchant.american_heart_association
+  - cat:merchant.amazon
+  - cat:travel.portal.chase
+  - cat:merchant.feeding_america
+  - cat:gas_ev.gas
+  - cat:gas_ev.ev_charging
+  - cat:transit
+  - cat:entertainment
+  - cat:merchant.united_way
+  - cat:groceries.store
+  - cat:merchant.american_red_cross
+  - cat:streaming
+  choice:
+    mode: rotating
+    period: quarter
+  versions:
+  - version: 1
+    release: us.chase.freedom-flex@2026-01-01
+    multiplier: "5"
+    cap:
+      amount: 150000
+      currency: USD
+    cap_period: quarter
+    conditions:
+    - type: enrollment_required
+      note: Activate each quarter; activation opens about the 15th of the month before the quarter and closes about the 14th of the quarter's last month.
+    schedule:
+    - from: "2026-01-01"
+      to: "2026-03-31"
+      categories: [cat:merchant.norwegian_cruise_line, cat:dining, cat:merchant.american_heart_association]
+    - from: "2026-04-01"
+      to: "2026-06-30"
+      categories: [cat:merchant.amazon, cat:travel.portal.chase, cat:merchant.feeding_america]
+    - from: "2026-07-01"
+      to: "2026-09-30"
+      categories: [cat:gas_ev.gas, cat:gas_ev.ev_charging, cat:transit, cat:entertainment, cat:merchant.united_way]
+      notes: Entertainment is "select live entertainment" only; transit is public transit.
+    - from: "2026-10-01"
+      to: "2026-12-31"
+      categories: [cat:groceries.store, cat:dining, cat:merchant.american_red_cross]
+      notes: Grocery stores exclude Walmart and Target.
+    - from: "2027-01-01"
+      to: "2027-03-31"
+      categories: [cat:groceries.store, cat:streaming]
+      notes: Announced in November 2026 (activation from December 15, 2026). Grocery stores exclude Walmart and Target; streaming is Chase's list of top streaming services.
+    notes: 5% on up to $1,500 in combined bonus-category purchases each quarter after activation, then the card's other rates apply. Donations count only to the named charity.
+- id: us.chase.freedom-flex/chase-travel-5x
+  categories:
+  - cat:travel.portal.chase
+  versions:
+  - version: 1
+    release: us.chase.freedom-flex@2026-01-01
+    multiplier: "5"
+- id: us.chase.freedom-flex/dining-3x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.chase.freedom-flex@2026-01-01
+    multiplier: "3"
+    notes: Includes takeout and eligible delivery.
+- id: us.chase.freedom-flex/drugstores-3x
+  categories:
+  - cat:drugstores
+  versions:
+  - version: 1
+    release: us.chase.freedom-flex@2026-01-01
+    multiplier: "3"
+- id: us.chase.freedom-flex/lyft-2x
+  categories:
+  - cat:travel.rideshare.lyft
+  versions:
+  - version: 1
+    release: us.chase.freedom-flex@2026-01-01
+    multiplier: "2"
+    effective_to: "2027-09-30"
+    notes: 2% total on Lyft rides and products booked in the Lyft app.
+- id: us.chase.freedom-flex/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.freedom-flex@2026-01-01
+    multiplier: "1"

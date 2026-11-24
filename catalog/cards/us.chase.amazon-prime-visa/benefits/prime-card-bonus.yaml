@@ -1,0 +1,16 @@
+id: us.chase.amazon-prime-visa/prime-card-bonus
+card_id: us.chase.amazon-prime-visa
+kind: other
+name: Prime Card Bonus (10% or more on select Amazon items)
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.amazon-prime-visa@2023-05-01
+  summary: "10% or more back on a rotating selection of Amazon.com items chosen by Amazon, with an eligible Prime membership."
+  grants:
+  - entitlement: earn_boost:us.chase.amazon-prime-visa
+  notes: 10% or more back on a rotating selection of Amazon.com items and categories chosen by Amazon, with an eligible Prime membership. No published schedule or cap; the selection is item-level, not a spend category.
+  machine_readable: false
+  confidence: "0.7"
+  beneficiaries:
+  - primary

@@ -1,0 +1,142 @@
+card_id: us.bilt.blue
+rules:
+- id: us.bilt.blue/base
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.bilt.blue@2026-02-07
+    multiplier: '1'
+    notes: Rent and mortgage paid through Bilt do not earn this rate; they earn only under the housing rules.
+- id: us.bilt.blue/bilt-travel-hotels
+  categories:
+  - cat:travel.portal.bilt.hotels
+  versions:
+  - version: 1
+    release: us.bilt.blue@2026-02-07
+    multiplier: '3'
+    notes: Hotels booked through the Bilt Travel portal, per the card page; the terms describe it as a Bilt Travel partner
+      bonus on top of the card rate.
+- id: us.bilt.blue/bilt-travel-flights
+  categories:
+  - cat:travel.portal.bilt.flights
+  versions:
+  - version: 1
+    release: us.bilt.blue@2026-02-07
+    multiplier: '2'
+    notes: Flights booked through the Bilt Travel portal, per the card page.
+- id: us.bilt.blue/lyft
+  categories:
+  - cat:travel.rideshare.lyft
+  versions:
+  - version: 1
+    release: us.bilt.blue@2026-02-07
+    multiplier: '3'
+    conditions:
+    - type: enrollment_required
+      note: Link the Bilt and Lyft accounts and set Bilt as the active loyalty partner
+    notes: Lyft rides after linking accounts; rate from the card page FAQ. Bilt Neighborhood Dining restaurants earn a variable
+      bonus ("up to") that is not modeled.
+- id: us.bilt.blue/housing-tier-25
+  name: Housing payments, Everyday Spend Ratio 25%+
+  categories:
+  - cat:rent
+  - cat:mortgage
+  versions:
+  - version: 1
+    release: us.bilt.blue@2026-02-07
+    multiplier: '0.5'
+    conditions:
+    - type: selection_is
+      name: rewards_option
+      value: housing_only
+    - type: selection_is
+      name: everyday_spend_ratio_tier
+      value: '25'
+    notes: 'Housing-only option: 0.5x on rent and mortgage paid through Bilt when everyday spend in the billing cycle is at
+      least 25% of the housing payment. Below 25% the cycle earns a flat 250 points. No annual cap.'
+- id: us.bilt.blue/housing-tier-50
+  name: Housing payments, Everyday Spend Ratio 50%+
+  categories:
+  - cat:rent
+  - cat:mortgage
+  versions:
+  - version: 1
+    release: us.bilt.blue@2026-02-07
+    multiplier: '0.75'
+    conditions:
+    - type: selection_is
+      name: rewards_option
+      value: housing_only
+    - type: selection_is
+      name: everyday_spend_ratio_tier
+      value: '50'
+    notes: 'Housing-only option: 0.75x on rent and mortgage paid through Bilt when everyday spend in the billing cycle is
+      at least 50% of the housing payment. Below 25% the cycle earns a flat 250 points. No annual cap.'
+- id: us.bilt.blue/housing-tier-75
+  name: Housing payments, Everyday Spend Ratio 75%+
+  categories:
+  - cat:rent
+  - cat:mortgage
+  versions:
+  - version: 1
+    release: us.bilt.blue@2026-02-07
+    multiplier: '1'
+    conditions:
+    - type: selection_is
+      name: rewards_option
+      value: housing_only
+    - type: selection_is
+      name: everyday_spend_ratio_tier
+      value: '75'
+    notes: 'Housing-only option: 1x on rent and mortgage paid through Bilt when everyday spend in the billing cycle is at
+      least 75% of the housing payment. Below 25% the cycle earns a flat 250 points. No annual cap.'
+- id: us.bilt.blue/housing-tier-100
+  name: Housing payments, Everyday Spend Ratio 100%+
+  categories:
+  - cat:rent
+  - cat:mortgage
+  versions:
+  - version: 1
+    release: us.bilt.blue@2026-02-07
+    multiplier: '1.25'
+    conditions:
+    - type: selection_is
+      name: rewards_option
+      value: housing_only
+    - type: selection_is
+      name: everyday_spend_ratio_tier
+      value: '100'
+    notes: 'Housing-only option: 1.25x on rent and mortgage paid through Bilt when everyday spend in the billing cycle is
+      at least 100% of the housing payment. Below 25% the cycle earns a flat 250 points. No annual cap.'
+- id: us.bilt.blue/housing-flexible
+  name: Housing payments, Flexible Bilt Cash option
+  categories:
+  - cat:rent
+  - cat:mortgage
+  versions:
+  - version: 1
+    release: us.bilt.blue@2026-02-07
+    multiplier: '1'
+    conditions:
+    - type: selection_is
+      name: rewards_option
+      value: flexible_bilt_cash
+    notes: Up to 1x on housing, unlocked by redeeming Bilt Cash at $3 per 100 points ($30 per $1,000 of housing). The Bilt
+      Cash cost is not modeled.
+- id: us.bilt.blue/bilt-cash-4pct
+  name: 4% Bilt Cash on everyday spend
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.bilt.blue@2026-02-07
+    multiplier: '4'
+    currency: pts:bilt_cash
+    stacks: true
+    conditions:
+    - type: selection_is
+      name: rewards_option
+      value: flexible_bilt_cash
+    notes: Flexible Bilt Cash option only. Earned on everyday spend in addition to points; housing payments do not earn Bilt
+      Cash, which this rule cannot exclude.

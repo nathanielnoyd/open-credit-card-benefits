@@ -1,0 +1,56 @@
+id: us.amex.business-platinum/wireless-credit
+card_id: us.amex.business-platinum
+kind: statement_credit
+name: Wireless credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-platinum@2025-07-01
+    summary: "Up to $10 a month back on US wireless phone service bought directly from the provider, $120 a year in total; enrollment required."
+    face_value:
+      amount: 12000
+      currency: USD
+    period:
+      cadence: monthly
+      anchor: calendar
+    limit:
+      amount: 1000
+    grants:
+      - entitlement: credit:wireless_business
+    conditions: &a1
+      - type: enrollment_required
+    beneficiaries: &a2
+      - primary
+    notes: U.S. wireless telephone service purchased directly from the provider.
+    sources:
+      - url: https://thepointsguy.com/credit-cards/amex-business-platinum-2025-refresh/
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - &a3
+        url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-business-platinum-card/
+        retrieved_at: "2026-11-13"
+        publisher: review
+  - version: 2
+    supersedes: 1
+    change_type: terms_changed
+    release: us.amex.business-platinum@2027-02-17
+    summary: "Up to $10 a month back on US wireless service from select named providers, $120 a year in total; enrollment required."
+    face_value:
+      amount: 12000
+      currency: USD
+    period:
+      cadence: monthly
+      anchor: calendar
+    limit:
+      amount: 1000
+    grants:
+      - entitlement: credit:wireless_business
+    conditions: *a1
+    beneficiaries: *a2
+    confidence: "0.6"
+    notes: From February 17, 2027 only select named wireless providers qualify. The provider list was not confirmed for this card, so no merchant_in condition is set.
+    sources:
+      - *a3
+      - url: https://upgradedpoints.com/credit-cards/reviews/amex-business-platinum/benefits-history/
+        retrieved_at: "2026-11-13"
+        publisher: review

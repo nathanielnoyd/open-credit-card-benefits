@@ -1,0 +1,34 @@
+id: us.chase.sapphire-reserve/air-canada-lounges
+card_id: us.chase.sapphire-reserve
+kind: access
+name: Air Canada Maple Leaf Lounges
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-reserve@2025-06-23
+    summary: "Access to Air Canada Maple Leaf Lounges with one guest when you fly Air Canada or Star Alliance the same day."
+    effective_from: "2025-06-23"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: lounge_network:air_canada_maple_leaf
+        combine: any
+        attributes:
+          guests: 1
+    conditions:
+      - type: same_day_flight
+        carrier:
+          - AC
+        note: Same-day Air Canada or Star Alliance flight
+    beneficiaries:
+      - primary
+      - authorized_user
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.8"

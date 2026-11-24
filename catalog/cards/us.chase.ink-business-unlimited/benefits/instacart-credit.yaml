@@ -1,0 +1,40 @@
+id: us.chase.ink-business-unlimited/instacart-credit
+card_id: us.chase.ink-business-unlimited
+kind: statement_credit
+name: Instacart credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ink-business-unlimited@2025-05-01
+  summary: "Up to $20 a month in Instacart credit, $240 a year, while you have Instacart+; enrollment required, through December 31, 2027."
+  face_value:
+    amount: 24000
+    currency: USD
+  effective_to: '2027-12-31'
+  period:
+    cadence: monthly
+    anchor: calendar
+    rollover: none
+  limit:
+    amount: 2000
+  grants:
+  - entitlement: credit:instacart
+  conditions:
+  - type: enrollment_required
+  - type: merchant_in
+    merchants:
+    - instacart
+  beneficiaries:
+  - primary
+  notes: $20 a month loaded to the Instacart Business account while an Instacart+ membership is active (paid after the free three months). Primary cardmember only; Apple Pay and Google Pay do not qualify.
+  machine_readable: false
+  sources:
+  - url: https://creditcards.chase.com/business-credit-cards/ink/unlimited
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://upgradedpoints.com/news/chase-instacart-benefits-more-cards/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.nerdwallet.com/credit-cards/news/chase-adds-instacart-benefits-to-some-credit-cards
+    retrieved_at: '2026-11-13'
+    publisher: review

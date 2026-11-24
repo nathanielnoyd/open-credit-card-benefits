@@ -1,0 +1,22 @@
+id: us.chase.ritz-carlton/club-upgrades
+card_id: us.chase.ritz-carlton
+kind: certificate
+name: Ritz-Carlton Club Level upgrades
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ritz-carlton@2024-07-01
+  summary: "Three upgrades a year to The Ritz-Carlton Club Level on eligible paid stays of up to 7 nights at Ritz-Carlton hotels with a club level."
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    count: 3
+    unit:
+      unit: upgrade_certificate
+  grants:
+  - entitlement: certificate:us.chase.ritz-carlton.club-upgrades
+  beneficiaries:
+  - primary
+  machine_readable: false
+  notes: Each certificate covers one room for up to 2 guests for up to 7 nights on an eligible paid rate; book by phone at Ritz-Carlton, subject to capacity. Not every Ritz-Carlton has a club level. Sources differ on whether the year is the calendar year or the account year.

@@ -1,0 +1,18 @@
+id: us.capitalone.venture@2025-01-01
+card_id: us.capitalone.venture
+kind: change
+effective_for_new: "2025-01-01"
+notes: Capital One ended the two complimentary lounge visits a year for Venture and Spark Miles cardholders; unused 2024 passes worked
+  through December 31, 2024. Announcement date not confirmed.
+changes:
+- target: benefit:us.capitalone.venture/lounge-visits
+  change_type: retired
+transition:
+- applies_to:
+  - benefit:us.capitalone.venture/lounge-visits
+  'on': "2025-01-01"
+sources:
+- url: https://upgradedpoints.com/news/capital-one-removes-lounge-passes-venture-spark-miles-for-business/
+  retrieved_at: "2026-11-13"
+  publisher: review
+confidence: "0.9"

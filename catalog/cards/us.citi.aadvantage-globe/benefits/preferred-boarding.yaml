@@ -1,0 +1,17 @@
+id: us.citi.aadvantage-globe/preferred-boarding
+card_id: us.citi.aadvantage-globe
+kind: access
+name: Preferred boarding on American
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-globe@2025-10-19
+  summary: "Group 5 preferred boarding on American for you and up to 8 companions on the same reservation."
+  grants:
+  - entitlement: priority_boarding:american
+    attributes:
+      group: 5
+      companions: 8
+  beneficiaries: [primary, companion]
+  notes: Preferred boarding for the cardmember and up to eight companions on the same reservation; Group 5 per Upgraded Points (Citi's page does not name the group).
+  confidence: "0.75"

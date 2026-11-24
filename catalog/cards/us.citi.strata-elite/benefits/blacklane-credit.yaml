@@ -1,0 +1,19 @@
+id: us.citi.strata-elite/blacklane-credit
+card_id: us.citi.strata-elite
+kind: statement_credit
+name: Blacklane credit
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.strata-elite@2025-07-27
+  summary: "Up to $100 back in each half of the calendar year on Blacklane chauffeur rides, $200 a year in total."
+  face_value: { amount: 20000, currency: USD }
+  period: { cadence: semiannual, anchor: calendar }
+  limit: { amount: 10000 }
+  grants:
+  - entitlement: credit:blacklane
+  conditions:
+  - type: merchant_in
+    merchants: [blacklane]
+  beneficiaries: [primary]
+  notes: Up to $100 January through June and $100 July through December.

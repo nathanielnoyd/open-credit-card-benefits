@@ -1,0 +1,40 @@
+card_id: us.bilt.mastercard
+rules:
+- id: us.bilt.mastercard/base
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.bilt.mastercard@2025-01-01
+    multiplier: '1'
+    notes: Points are earned only in statement periods with at least five purchases (a rent payment counts as one); not modeled.
+- id: us.bilt.mastercard/dining-3x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.bilt.mastercard@2025-01-01
+    multiplier: '3'
+    notes: Points are earned only in statement periods with at least five purchases (a rent payment counts as one); not modeled.
+      Rent Day (the 1st of each month) doubled dining, travel and other earn up to 1,000 bonus points a month; not modeled.
+- id: us.bilt.mastercard/travel-2x
+  categories:
+  - cat:travel
+  versions:
+  - version: 1
+    release: us.bilt.mastercard@2025-01-01
+    multiplier: '2'
+    notes: Points are earned only in statement periods with at least five purchases (a rent payment counts as one); not modeled.
+- id: us.bilt.mastercard/rent-1x
+  categories:
+  - cat:rent
+  versions:
+  - version: 1
+    release: us.bilt.mastercard@2025-01-01
+    multiplier: '1'
+    cap:
+      amount: 10000000
+      currency: USD
+    cap_period: calendar_year
+    notes: 1x on rent paid through Bilt with no fee, up to 100,000 points a calendar year. Points are earned only in statement
+      periods with at least five purchases (a rent payment counts as one); not modeled.

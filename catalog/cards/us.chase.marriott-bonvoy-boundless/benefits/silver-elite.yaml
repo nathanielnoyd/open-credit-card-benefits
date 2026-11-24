@@ -1,0 +1,15 @@
+id: us.chase.marriott-bonvoy-boundless/silver-elite
+card_id: us.chase.marriott-bonvoy-boundless
+kind: status
+name: Marriott Bonvoy Silver Elite
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.marriott-bonvoy-boundless@2024-01-01
+  summary: "Marriott Bonvoy Silver Elite status while you hold the card."
+  grants:
+  - entitlement: status:marriott
+    attributes:
+      tier: silver
+  beneficiaries:
+  - primary

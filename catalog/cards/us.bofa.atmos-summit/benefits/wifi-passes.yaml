@@ -1,0 +1,24 @@
+id: us.bofa.atmos-summit/wifi-passes
+card_id: us.bofa.atmos-summit
+kind: access
+name: In-flight Wi-Fi passes
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-summit@2026-11-14
+  summary: "8 single-flight Wi-Fi passes a calendar year on Alaska, issued 2 per quarter; unused passes expire at the end of the quarter."
+  face_value: null
+  period:
+    cadence: quarterly
+    anchor: calendar
+  limit:
+    count: 2
+    unit:
+      unit: pass
+  grants:
+  - entitlement: inflight_wifi:alaska
+  conditions: []
+  beneficiaries:
+  - primary
+  notes: Two single-flight passes each calendar quarter; not on the issuer page, reported by Upgraded Points, Bankrate, The Points Guy and NextCard.
+  confidence: "0.75"

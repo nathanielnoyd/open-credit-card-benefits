@@ -1,0 +1,28 @@
+id: us.amex.marriott-bonvoy-brilliant/priority-pass
+card_id: us.amex.marriott-bonvoy-brilliant
+kind: membership
+name: Priority Pass Select
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.marriott-bonvoy-brilliant@2024-01-01
+  summary: "Priority Pass Select membership with lounge access for you and 2 guests after you enroll; Priority Pass restaurants are not included."
+  face_value: null
+  conditions:
+  - type: enrollment_required
+  beneficiaries:
+  - primary
+  notes: Unlimited visits for the cardholder; two guests free per reviews (the issuer page does not state the guest allowance). Amex Priority Pass memberships exclude restaurants.
+  sources:
+  - url: https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-brilliant/
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://thepointsguy.com/credit-cards/american-express/reviews/marriott-bonvoy-brilliant-amex-card-review/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  confidence: '0.75'
+  grants:
+  - entitlement: membership:priority_pass
+    attributes:
+      guests: 2
+      restaurants: false

@@ -1,0 +1,28 @@
+card_id: us.amex.platinum
+rules:
+  - id: us.amex.platinum/flights-5x
+    categories:
+      - cat:travel.flights.direct
+      - cat:travel.portal.amex.flights
+    versions:
+      - version: 1
+        release: us.amex.platinum@2024-01-01
+        multiplier: "5"
+        cap:
+          amount: 50000000
+          currency: USD
+        cap_period: calendar_year
+  - id: us.amex.platinum/amex-travel-hotels-5x
+    categories:
+      - cat:travel.portal.amex.hotels_prepaid
+    versions:
+      - version: 1
+        release: us.amex.platinum@2024-01-01
+        multiplier: "5"
+  - id: us.amex.platinum/base-1x
+    categories:
+      - cat:all
+    versions:
+      - version: 1
+        release: us.amex.platinum@2024-01-01
+        multiplier: "1"

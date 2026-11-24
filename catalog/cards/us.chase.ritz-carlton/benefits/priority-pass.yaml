@@ -1,0 +1,55 @@
+id: us.chase.ritz-carlton/priority-pass
+card_id: us.chase.ritz-carlton
+kind: membership
+name: Priority Pass Select
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ritz-carlton@2024-07-01
+  summary: "Priority Pass Select lounge membership with unlimited free guests for you and each authorized user after you enroll; Priority Pass restaurants are not included."
+  grants:
+  - entitlement: membership:priority_pass
+    attributes:
+      guests: null
+      restaurants: false
+  conditions:
+  - type: enrollment_required
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Unlimited complimentary guests (guests null means no limit). Each authorized user gets a free membership of their own. Chase removed Priority Pass restaurants, cafes and markets from this card on July 1, 2024; lounges and other experiences remain.
+  sources:
+  - url: https://upgradedpoints.com/news/ritz-carlton-card-lounge-guest-access-change/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://frequentmiler.com/chase-sapphire-reserve-ritz-carlton-cardholders-losing-restaurant-access-from-priority-pass/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  confidence: "0.8"
+- version: 2
+  supersedes: 1
+  change_type: terms_changed
+  release: us.chase.ritz-carlton@2026-01-15
+  summary: "Priority Pass Select lounge membership for you and each authorized user with 2 free guests per visit after you enroll, with a fee for extra guests; Priority Pass restaurants are not included."
+  grants:
+  - entitlement: membership:priority_pass
+    attributes:
+      guests: 2
+      restaurants: false
+  conditions:
+  - type: enrollment_required
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Up to 2 complimentary guests per visit; each additional guest costs $27 (one later comparison says $35). Entry needs the physical card or the Priority Pass digital membership, not a digital wallet card. Authorized users get their own membership at no cost.
+  sources:
+  - url: https://marriott.chase.com/ritz-carlton/benefits
+    retrieved_at: "2026-11-14"
+    publisher: issuer
+  - url: https://upgradedpoints.com/news/ritz-carlton-card-lounge-guest-access-change/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://www.doctorofcredit.com/chase-ritz-carlton-to-restrict-guest-lounge-access-from-2026/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  confidence: "0.85"

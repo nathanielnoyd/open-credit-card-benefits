@@ -1,0 +1,105 @@
+id: us.chase.sapphire-reserve-business@2025-06-23
+card_id: us.chase.sapphire-reserve-business
+kind: baseline
+announced_on: "2025-06-17"
+effective_for_new: "2025-06-23"
+notes: The card launched June 23, 2025. Credits, earn rates and the $120,000 spend perks match launch coverage; protection amounts are as observed
+  in November 2026 and assumed unchanged since launch. Employee cards are free.
+changes:
+- target: fee:annual
+  to:
+    amount: 79500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.chase.sapphire-reserve-business/chase-travel-8x
+  version: 1
+- target: earn_rule:us.chase.sapphire-reserve-business/flights-direct-4x
+  version: 1
+- target: earn_rule:us.chase.sapphire-reserve-business/hotels-direct-4x
+  version: 1
+- target: earn_rule:us.chase.sapphire-reserve-business/advertising-3x
+  version: 1
+- target: earn_rule:us.chase.sapphire-reserve-business/lyft-5x
+  version: 1
+- target: earn_rule:us.chase.sapphire-reserve-business/base-1x
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/travel-credit
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/edit-hotel-credit
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/select-hotels-2026
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/google-workspace-credit
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/ziprecruiter-credit
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/giftcards-credit
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/lyft-credit
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/dashpass
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/doordash-restaurant
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/doordash-other
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/trusted-traveler
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/priority-pass
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/sapphire-lounges
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/ihg-platinum
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/ihg-diamond
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/southwest-alist
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/southwest-credit
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/shops-credit
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/points-boost
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/no-fx
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/rental-cdw
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/trip-delay
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/trip-cancel
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/baggage-delay
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/lost-luggage
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/evacuation
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/travel-accident
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/purchase-protection
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/return-protection
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/extended-warranty
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/cell-phone
+  version: 1
+- target: benefit:us.chase.sapphire-reserve-business/roadside
+  version: 1
+sources:
+- url: https://thepointsguy.com/news/chase-unveils-the-chase-sapphire-reserve-for-business/
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://thepointsguy.com/credit-cards/reviews/chase-sapphire-reserve-for-business-review/
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://creditcards.chase.com/business-credit-cards/sapphire/reserve
+  retrieved_at: "2026-11-13"
+  publisher: issuer
+- url: https://hellosafe.com/credit-card-insurance/united-states/chase/sapphire-reserve-business
+  retrieved_at: "2026-11-13"
+  publisher: review

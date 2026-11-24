@@ -1,0 +1,22 @@
+id: us.amex.platinum-morgan-stanley
+name: Platinum Card Exclusively for Morgan Stanley
+summary: "The $895-a-year Amex Platinum Card for Morgan Stanley clients: every consumer Platinum benefit, plus the first additional Platinum card free and $500 after $100,000 in purchases in a card member year."
+based_on:
+  card: us.amex.platinum
+open_to_applicants: true
+url: https://apply.americanexpress.com/amex-morgan-stanley-credit-cards/
+aliases: [Morgan Stanley Platinum, Amex Platinum for Morgan Stanley]
+related:
+  - { card_id: us.amex.platinum, relation: variant }
+notes: >-
+  Requires an eligible Morgan Stanley or E*TRADE account. Two terms depend on that relationship and can't be expressed
+  yet (roadmap: outside relationships): Membership Rewards points can be deposited into a Morgan Stanley brokerage
+  account at 1 cent each, and Platinum CashPlus clients get an $895 annual engagement bonus.
+provenance:
+  sources:
+    - { url: https://apply.americanexpress.com/amex-morgan-stanley-credit-cards/, retrieved_at: "2026-11-13", publisher: issuer }
+    - { url: https://www.uscreditcardguide.com/amex-platinum-card-for-morgan-stanley, retrieved_at: "2026-11-13", publisher: review }
+    - { url: https://frequentmiler.com/amxplatms/, retrieved_at: "2026-11-13", publisher: review }
+  verified_by: agent:occb-research
+  confidence: "0.75"
+  last_reviewed: "2026-11-13"

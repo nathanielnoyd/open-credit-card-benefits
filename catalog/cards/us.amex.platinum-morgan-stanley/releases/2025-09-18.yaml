@@ -1,0 +1,6 @@
+id: us.amex.platinum-morgan-stanley@2025-09-18
+card_id: us.amex.platinum-morgan-stanley
+follows: us.amex.platinum@2025-09-18
+effective_for_new: "2025-09-18"
+sources:
+  - { url: https://www.uscreditcardguide.com/amex-platinum-card-for-morgan-stanley, retrieved_at: "2026-11-13", publisher: review }

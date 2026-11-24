@@ -1,0 +1,57 @@
+card_id: us.chase.world-of-hyatt
+rules:
+- id: us.chase.world-of-hyatt/hyatt-4x
+  categories:
+  - cat:travel.hotels.direct.hyatt
+  versions:
+  - version: 1
+    release: us.chase.world-of-hyatt@2024-01-01
+    multiplier: '4'
+    notes: Card bonus points at participating Hyatt hotels; members also earn up to 5 base points from World of Hyatt.
+- id: us.chase.world-of-hyatt/dining-2x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.chase.world-of-hyatt@2024-01-01
+    multiplier: '2'
+- id: us.chase.world-of-hyatt/airfare-2x
+  categories:
+  - cat:travel.flights.direct
+  versions:
+  - version: 1
+    release: us.chase.world-of-hyatt@2024-01-01
+    multiplier: '2'
+    notes: Airline tickets purchased directly from the airline.
+- id: us.chase.world-of-hyatt/transit-2x
+  categories:
+  - cat:transit
+  versions:
+  - version: 1
+    release: us.chase.world-of-hyatt@2024-01-01
+    multiplier: '2'
+    notes: Local transit and commuting, including rideshare per Chase definitions.
+- id: us.chase.world-of-hyatt/fitness-2x
+  categories:
+  - cat:fitness
+  versions:
+  - version: 1
+    release: us.chase.world-of-hyatt@2024-01-01
+    multiplier: '2'
+    notes: Fitness club and gym memberships.
+- id: us.chase.world-of-hyatt/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.world-of-hyatt@2024-01-01
+    multiplier: '1'
+- id: us.chase.world-of-hyatt/tier-credits-spend
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.world-of-hyatt@2024-01-01
+    multiplier: '0.0004'
+    currency: pts:hyatt_qn
+    notes: 2 qualifying night credits for every $5,000 spent, no limit; whole increments only.

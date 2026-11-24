@@ -1,0 +1,18 @@
+id: us.bofa.premium-rewards-elite/extended-warranty
+card_id: us.bofa.premium-rewards-elite
+kind: protection
+name: Extended warranty
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards-elite@2026-11-14
+  summary: "Adds up to 1 year to eligible manufacturer warranties on items bought with the card."
+  face_value: null
+  grants:
+  - entitlement: protection:extended_warranty
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  coverage:
+    extends_years: 1

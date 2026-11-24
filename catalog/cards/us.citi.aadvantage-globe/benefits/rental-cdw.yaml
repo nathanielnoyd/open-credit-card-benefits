@@ -1,0 +1,16 @@
+id: us.citi.aadvantage-globe/rental-cdw
+card_id: us.citi.aadvantage-globe
+kind: protection
+name: MasterRental car rental coverage
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-globe@2025-10-19
+  summary: "Covers theft or collision damage to a rental car paid with the card when you decline the rental company's coverage; limits not published."
+  grants:
+  - entitlement: protection:rental_cdw
+  conditions:
+  - type: paid_with_card
+  beneficiaries: [primary, authorized_user]
+  notes: Listed on Citi's product page without limits; Citi has not published a benefit guide for this card that we could find, so coverage amounts are not modeled.
+  confidence: "0.5"

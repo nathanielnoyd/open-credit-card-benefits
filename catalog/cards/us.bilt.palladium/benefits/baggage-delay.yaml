@@ -1,0 +1,28 @@
+id: us.bilt.palladium/baggage-delay
+card_id: us.bilt.palladium
+kind: protection
+name: Baggage delay insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.bilt.palladium@2026-02-07
+  summary: "Covers emergency purchases up to $250 per claim when your checked bags are delayed 6 hours or more on a trip paid with the card, 2 claims per 12 months."
+  grants:
+  - entitlement: protection:baggage_delay
+  coverage:
+    per_claim:
+      amount: 25000
+      currency: USD
+    waiting_hours: 6
+    max_claims_per_period: 2
+    priority: secondary
+  conditions:
+  - type: paid_with_card
+  notes: Emergency purchases up to $250 per claim when checked bags are 6+ hours late; 2 claims per 12 months.
+  sources:
+  - url: https://www.bilt.com/terms/palladium-card-guide-to-benefits
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  face_value: null
+  beneficiaries:
+  - primary

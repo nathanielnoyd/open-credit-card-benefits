@@ -1,0 +1,59 @@
+id: us.citi.aadvantage-globe@2025-10-19
+card_id: us.citi.aadvantage-globe
+kind: baseline
+effective_for_new: "2025-10-19"
+notes: Launch terms (the card became available October 19, 2025), which are also the current terms as of 2026-11-14; no later changes were found.
+changes:
+- target: fee:annual
+  to: { amount: 35000, currency: USD }
+- target: fee:authorized_user
+  to: { amount: 0, currency: USD }
+  notes: Authorized users are added at no additional charge.
+- target: earn_rule:us.citi.aadvantage-globe/aadvantage-hotels-6x
+  version: 1
+- target: earn_rule:us.citi.aadvantage-globe/aa-3x
+  version: 1
+- target: earn_rule:us.citi.aadvantage-globe/dining-2x
+  version: 1
+- target: earn_rule:us.citi.aadvantage-globe/rides-rails-2x
+  version: 1
+- target: earn_rule:us.citi.aadvantage-globe/base-1x
+  version: 1
+- target: earn_rule:us.citi.aadvantage-globe/loyalty-points
+  version: 1
+- target: benefit:us.citi.aadvantage-globe/admirals-club-passes
+  version: 1
+- target: benefit:us.citi.aadvantage-globe/checked-bag
+  version: 1
+- target: benefit:us.citi.aadvantage-globe/preferred-boarding
+  version: 1
+- target: benefit:us.citi.aadvantage-globe/flight-streak
+  version: 1
+- target: benefit:us.citi.aadvantage-globe/companion-certificate
+  version: 1
+- target: benefit:us.citi.aadvantage-globe/splurge-credit
+  version: 1
+- target: benefit:us.citi.aadvantage-globe/inflight-credit
+  version: 1
+- target: benefit:us.citi.aadvantage-globe/trusted-traveler
+  version: 1
+- target: benefit:us.citi.aadvantage-globe/turo-credit
+  version: 1
+- target: benefit:us.citi.aadvantage-globe/no-fx
+  version: 1
+- target: benefit:us.citi.aadvantage-globe/trip-cancel
+  version: 1
+- target: benefit:us.citi.aadvantage-globe/trip-delay
+  version: 1
+- target: benefit:us.citi.aadvantage-globe/lost-luggage
+  version: 1
+- target: benefit:us.citi.aadvantage-globe/rental-cdw
+  version: 1
+- target: benefit:us.citi.aadvantage-globe/extended-warranty
+  version: 1
+- target: benefit:us.citi.aadvantage-globe/purchase-protection
+  version: 1
+sources:
+- { url: https://thepointsguy.com/credit-cards/citi-aadvantage-globe-mastercard-launch, retrieved_at: "2026-11-14", publisher: review }
+- { url: https://upgradedpoints.com/news/citi-aadvantage-globe-card-launches/, retrieved_at: "2026-11-14", publisher: review }
+- { url: https://www.citi.com/credit-cards/citi-aadvantage-globe-mastercard, retrieved_at: "2026-11-14", publisher: issuer }

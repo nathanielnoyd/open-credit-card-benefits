@@ -1,0 +1,72 @@
+id: us.capitalone.venture-x-business/capital-one-lounges
+card_id: us.capitalone.venture-x-business
+kind: access
+name: Capital One Lounges and Landings
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x-business@2025-11-01
+  summary: "Unlimited Capital One Lounge and Landing visits on the day of a flight with two free guests per visit, for the primary cardholder only."
+  grants:
+  - entitlement: lounge_network:capital_one_lounge
+    value_share: "0.5"
+    attributes:
+      guests: 2
+  - entitlement: lounge_network:capital_one_landing
+    value_share: "0.5"
+    attributes:
+      guests: 2
+  conditions:
+  - type: same_day_flight
+  notes: Primary cardholder plus two complimentary guests; employee cards had no lounge access.
+  confidence: "0.7"
+  sources:
+  - url: https://frequentmiler.com/negative-venture-x-venture-x-business-lounge-access-changes-for-additional-cardholders-primary-cardholder-guests
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://onemileatatime.com/news/capital-one-venture-x-lounge-access-changes/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  beneficiaries:
+  - primary
+- version: 2
+  change_type: terms_changed
+  release: us.capitalone.venture-x-business@2026-02-01
+  summary: "Unlimited Capital One Lounge and Landing visits on the day of a flight for the primary cardholder; after $75,000 in calendar-year account spend, two free guests at Lounges and one at Landings."
+  supersedes: 1
+  grants:
+  - entitlement: lounge_network:capital_one_lounge
+    value_share: "0.5"
+    attributes:
+      guests: 0
+  - entitlement: lounge_network:capital_one_landing
+    value_share: "0.5"
+    attributes:
+      guests: 0
+  conditions:
+  - type: same_day_flight
+  unlocks:
+  - when:
+    - type: spend_gte
+      amount: 7500000
+      currency: USD
+      period: calendar_year
+    set:
+      grants[0].attributes.guests: 2
+      grants[1].attributes.guests: 1
+  notes: Cardholder only. $75,000 of account spend (primary plus employee cards) in a calendar year unlocks two free guests at Capital One Lounges
+    and one at Landings for the rest of that year and all of the next; otherwise guests pay $45 (adults) or $25 (ages 2-17). Employee cards get
+    access only if the primary pays $125 a year per card (up to four).
+  machine_readable: false
+  sources:
+  - url: https://frequentmiler.com/negative-venture-x-venture-x-business-lounge-access-changes-for-additional-cardholders-primary-cardholder-guests
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://onemileatatime.com/news/capital-one-venture-x-lounge-access-changes/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://thepointsguy.com/credit-cards/reviews/capital-one-venture-x-business-review-huge-earning-potential-for-businesses/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  beneficiaries:
+  - primary

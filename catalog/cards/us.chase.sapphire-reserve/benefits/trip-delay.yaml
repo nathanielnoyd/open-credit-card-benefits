@@ -1,0 +1,29 @@
+id: us.chase.sapphire-reserve/trip-delay
+card_id: us.chase.sapphire-reserve
+kind: protection
+name: Trip delay reimbursement
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-reserve@2024-01-01
+    summary: "Covers up to $500 per ticket in meals and lodging when a trip paid with the card is delayed more than 6 hours or needs an overnight stay."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: protection:trip_delay
+        combine: max
+    conditions:
+      - type: paid_with_card
+    beneficiaries:
+      - primary
+    notes: Up to $500 per ticket after a 6-hour delay or overnight stay.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

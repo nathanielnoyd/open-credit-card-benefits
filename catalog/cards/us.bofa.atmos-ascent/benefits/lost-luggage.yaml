@@ -1,0 +1,22 @@
+id: us.bofa.atmos-ascent/lost-luggage
+card_id: us.bofa.atmos-ascent
+kind: protection
+name: Lost or damaged luggage
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-ascent@2025-08-20
+  summary: "Covers lost or damaged luggage up to $3,000 per passenger when the trip is paid with the card."
+  face_value: null
+  grants:
+  - entitlement: protection:lost_luggage
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  coverage:
+    per_person:
+      amount: 300000
+      currency: USD
+  notes: Up to $3,000 per passenger.
+  confidence: "0.6"

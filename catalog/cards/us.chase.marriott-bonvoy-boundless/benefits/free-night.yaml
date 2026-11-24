@@ -1,0 +1,53 @@
+id: us.chase.marriott-bonvoy-boundless/free-night
+card_id: us.chase.marriott-bonvoy-boundless
+kind: certificate
+name: Anniversary Free Night Award (up to 35,000 points)
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.marriott-bonvoy-boundless@2024-01-01
+  summary: "One free night each card anniversary at a Marriott hotel costing up to 35,000 points, valid 12 months; you can add up to 15,000 of your own points."
+  cap:
+    currency: pts:marriott_bonvoy
+    points: 35000
+  top_up:
+    currency: pts:marriott_bonvoy
+    points: 15000
+  expires_after_days: 365
+  issued_on: anniversary
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  grants:
+  - entitlement: certificate:us.chase.marriott-bonvoy-boundless.free-night
+  beneficiaries:
+  - primary
+  notes: Valid 12 months; the award plus top-off points must cover the standard or peak award price. Resort fees still apply.
+- version: 2
+  supersedes: 1
+  change_type: terms_changed
+  release: us.chase.marriott-bonvoy-boundless@2026-03-12
+  summary: "One free night each card anniversary at a Marriott hotel costing up to 35,000 points, valid 12 months; you can add up to 25,000 of your own points."
+  cap:
+    currency: pts:marriott_bonvoy
+    points: 35000
+  top_up:
+    currency: pts:marriott_bonvoy
+    points: 25000
+  expires_after_days: 365
+  issued_on: anniversary
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  grants:
+  - entitlement: certificate:us.chase.marriott-bonvoy-boundless.free-night
+  beneficiaries:
+  - primary
+  notes: Valid 12 months; the award plus top-off points must cover the standard or peak award price. Resort fees still apply.
+  sources:
+  - url: https://onemileatatime.com/news/marriott-free-night-awards-top-off-points/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/boundless
+    retrieved_at: '2026-11-13'
+    publisher: issuer

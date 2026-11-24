@@ -1,0 +1,66 @@
+id: us.capitalone.venture-x@2025-03-01
+card_id: us.capitalone.venture-x
+kind: baseline
+effective_for_new: "2025-03-01"
+notes: Terms as observed after Plaza Premium lounge access ended on March 1, 2025 and before the February 2026 lounge changes. Earlier history (including Plaza Premium access) is not modeled; the Capital One Entertainment 5x rule is assumed to predate this date.
+changes:
+- target: fee:annual
+  to:
+    amount: 39500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.capitalone.venture-x/c1-travel-hotels-cars-10x
+  version: 1
+- target: earn_rule:us.capitalone.venture-x/c1-travel-flights-5x
+  version: 1
+- target: earn_rule:us.capitalone.venture-x/c1-entertainment-5x
+  version: 1
+- target: earn_rule:us.capitalone.venture-x/base-2x
+  version: 1
+- target: benefit:us.capitalone.venture-x/travel-credit
+  version: 1
+- target: benefit:us.capitalone.venture-x/anniversary-miles
+  version: 1
+- target: benefit:us.capitalone.venture-x/capital-one-lounges
+  version: 1
+- target: benefit:us.capitalone.venture-x/priority-pass
+  version: 1
+- target: benefit:us.capitalone.venture-x/premier-collection
+  version: 1
+- target: benefit:us.capitalone.venture-x/hertz
+  version: 1
+- target: benefit:us.capitalone.venture-x/trusted-traveler
+  version: 1
+- target: benefit:us.capitalone.venture-x/rental-cdw
+  version: 1
+- target: benefit:us.capitalone.venture-x/cell-phone
+  version: 1
+- target: benefit:us.capitalone.venture-x/trip-delay
+  version: 1
+- target: benefit:us.capitalone.venture-x/trip-cancel
+  version: 1
+- target: benefit:us.capitalone.venture-x/lost-luggage
+  version: 1
+- target: benefit:us.capitalone.venture-x/purchase-protection
+  version: 1
+- target: benefit:us.capitalone.venture-x/extended-warranty
+  version: 1
+- target: benefit:us.capitalone.venture-x/return-protection
+  version: 1
+- target: benefit:us.capitalone.venture-x/no-fx
+  version: 1
+- target: benefit:us.capitalone.venture-x/travel-accident
+  version: 1
+- target: benefit:us.capitalone.venture-x/cultivist
+  version: 1
+sources:
+- url: https://thepointsguy.com/news/capital-one-venture-x-losing-plaza-premium-lounge-access/
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://upgradedpoints.com/credit-cards/reviews/capital-one-venture-x/
+  retrieved_at: "2026-11-13"
+  publisher: review
+confidence: "0.75"

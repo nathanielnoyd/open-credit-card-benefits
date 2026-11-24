@@ -1,0 +1,21 @@
+id: us.capitalone.venture-x/travel-accident
+card_id: us.capitalone.venture-x
+kind: protection
+name: Travel accident insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x@2025-03-01
+  summary: "Travel accident insurance when you pay the fare with the card; the coverage amount is not confirmed."
+  grants:
+  - entitlement: protection:travel_accident
+  conditions:
+  - type: paid_with_card
+  notes: Listed as a card benefit, but no coverage amount could be confirmed.
+  sources:
+  - url: https://awardwallet.com/credit-cards/capital-one-rewards/venture-x-benefits/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  confidence: "0.6"
+  beneficiaries:
+  - primary

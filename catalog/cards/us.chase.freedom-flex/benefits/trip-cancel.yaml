@@ -1,0 +1,23 @@
+id: us.chase.freedom-flex/trip-cancel
+card_id: us.chase.freedom-flex
+kind: protection
+name: Trip cancellation and interruption
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.freedom-flex@2026-01-01
+  summary: "Up to $1,500 per traveler and $6,000 per trip for prepaid nonrefundable fares paid with the card when you cancel or cut short a trip for a covered reason."
+  coverage:
+    per_person:
+      amount: 150000
+      currency: USD
+    per_trip:
+      amount: 600000
+      currency: USD
+  grants:
+  - entitlement: protection:trip_cancellation
+  conditions:
+  - type: paid_with_card
+  notes: Prepaid, non-refundable fares for covered reasons such as sickness or severe weather; up to $1,500 per traveler and $6,000 per trip.
+  beneficiaries:
+  - primary

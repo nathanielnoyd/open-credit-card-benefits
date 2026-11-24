@@ -1,0 +1,62 @@
+id: us.usbank.altitude-reserve/travel-credit
+card_id: us.usbank.altitude-reserve
+kind: statement_credit
+name: $325 annual travel credit
+versions:
+- version: 1
+  change_type: added
+  release: us.usbank.altitude-reserve@2024-11-11
+  summary: "Up to $325 in automatic statement credits each cardmember year on travel and dining purchases, shared with authorized users."
+  face_value:
+    amount: 32500
+    currency: USD
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    amount: 32500
+  grants:
+  - entitlement: credit:travel_general
+    value_share: "0.6"
+  - entitlement: credit:dining_general
+    value_share: "0.4"
+  notes: >-
+    Applied automatically within a few business days to airlines, hotels, car rentals, taxis, cruises, trains,
+    restaurants, takeout, fast food and bars. Authorized user purchases draw on the same $325. The value split between
+    travel and dining is an authoring estimate.
+  beneficiaries:
+  - primary
+  - authorized_user
+- version: 2
+  supersedes: 1
+  change_type: terms_changed
+  release: us.usbank.altitude-reserve@2025-12-15
+  summary: "Up to $325 in statement credits each cardmember year on travel booked through the U.S. Bank Travel Center; dining and travel booked elsewhere no longer qualify."
+  face_value:
+    amount: 32500
+    currency: USD
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    amount: 32500
+  grants:
+  - entitlement: credit:us_bank_travel
+  conditions:
+  - type: booking_channel
+    channel: usbank_travel_center
+  notes: >-
+    From December 15, 2025 the credit only covers bookings made in the U.S. Bank Travel Center (powered by
+    Booking.com); flight changes require calling U.S. Bank. The cardmember-year anchor is carried over from the
+    earlier terms and not restated in 2025 coverage.
+  beneficiaries:
+  - primary
+  - authorized_user
+  sources:
+  - url: https://awardwallet.com/news/credit-cards/us-bank-altitude-reserve-card-2025-changes/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://upgradedpoints.com/news/us-bank-altitude-reserve-card-changes-coming
+    retrieved_at: "2026-11-14"
+    publisher: review
+  confidence: "0.8"

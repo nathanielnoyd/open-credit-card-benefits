@@ -1,0 +1,19 @@
+id: us.chase.sapphire-reserve-business/priority-pass
+card_id: us.chase.sapphire-reserve-business
+kind: membership
+name: Priority Pass Select
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: Priority Pass Select airport lounge membership with 2 guests per visit for the primary cardmember after enrollment.
+  grants:
+  - entitlement: membership:priority_pass
+    attributes:
+      guests: 2
+  conditions:
+  - type: enrollment_required
+  beneficiaries:
+  - primary
+  notes: Employee cardholders can enter only as the primary cardmember's guests. Additional guests cost $27 each. Restaurant access not confirmed
+    for this card.

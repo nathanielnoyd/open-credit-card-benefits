@@ -1,0 +1,118 @@
+card_id: us.amex.business-platinum
+rules:
+  - id: us.amex.business-platinum/amex-travel-5x
+    name: Amex Travel flights and prepaid hotels
+    categories:
+      - cat:travel.portal.amex.flights
+      - cat:travel.portal.amex.hotels_prepaid
+    versions:
+      - version: 1
+        release: us.amex.business-platinum@2025-07-01
+        multiplier: "5"
+        notes: Flights and prepaid hotels (including Fine Hotels + Resorts) booked on AmexTravel.com or the Amex Travel app.
+  - id: us.amex.business-platinum/business-categories
+    name: Select U.S. business categories
+    categories:
+      - cat:home_improvement
+      - cat:business.electronics
+      - cat:business.software_cloud
+    versions:
+      - version: 1
+        release: us.amex.business-platinum@2025-07-01
+        multiplier: "1.5"
+        cap: &a1
+          amount: 200000000
+          currency: USD
+        cap_period: calendar_year
+        cap_group: two-x
+        notes: U.S. construction material and hardware suppliers, electronic goods retailers, and software and cloud system providers. $2 million cap is shared with the shipping and $5,000+ purchase bonuses; only the highest bonus applies.
+      - version: 2
+        release: us.amex.business-platinum@2025-09-18
+        multiplier: "2"
+        cap: *a1
+        cap_period: calendar_year
+        cap_group: two-x
+        sources:
+          - &a2
+            url: https://thepointsguy.com/credit-cards/amex-business-platinum-2025-refresh/
+            retrieved_at: "2026-11-13"
+            publisher: review
+          - &a3
+            url: https://www.doctorofcredit.com/american-express-refreshes-platinum-business-platinum-cards-895-fee-175k-200k-bonus-many-new-credits
+            retrieved_at: "2026-11-13"
+            publisher: review
+        notes: U.S. construction material and hardware suppliers, electronic goods retailers, and software and cloud system providers. $2 million cap is shared with the shipping and $5,000+ purchase bonuses; only the highest bonus applies.
+  - id: us.amex.business-platinum/shipping
+    name: Select U.S. shipping providers
+    categories:
+      - cat:business.shipping
+    versions:
+      - version: 1
+        release: us.amex.business-platinum@2025-07-01
+        multiplier: "1.5"
+        cap: *a1
+        cap_period: calendar_year
+        cap_group: two-x
+        notes: U.S. shipping providers; shares the $2 million bonus cap.
+      - version: 2
+        release: us.amex.business-platinum@2025-09-18
+        multiplier: "2"
+        cap: *a1
+        cap_period: calendar_year
+        cap_group: two-x
+        sources:
+          - *a2
+          - *a3
+        notes: U.S. shipping providers; shares the $2 million bonus cap.
+      - version: 3
+        release: us.amex.business-platinum@2027-02-17
+        multiplier: "2"
+        cap: *a1
+        cap_period: calendar_year
+        cap_group: two-x
+        sources:
+          - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-business-platinum-card/
+            retrieved_at: "2026-11-13"
+            publisher: review
+          - url: https://ecommerceparadise.com/amex-business-platinum-2x-shipping-merchants/
+            retrieved_at: "2026-11-13"
+            publisher: review
+        confidence: "0.6"
+        notes: From February 17, 2027 only seven named shipping merchants qualify. The merchant list was not confirmed, so no merchant_in condition is set.
+  - id: us.amex.business-platinum/large-purchase
+    name: Purchases of $5,000 or more
+    categories:
+      - cat:all
+    versions:
+      - version: 1
+        release: us.amex.business-platinum@2025-07-01
+        multiplier: "1.5"
+        cap: *a1
+        cap_period: calendar_year
+        cap_group: two-x
+        conditions:
+          - type: min_transaction
+            amount: 500000
+            currency: USD
+        notes: Single eligible purchases of $5,000 or more; shares the $2 million bonus cap.
+      - version: 2
+        release: us.amex.business-platinum@2025-09-18
+        multiplier: "2"
+        cap: *a1
+        cap_period: calendar_year
+        cap_group: two-x
+        sources:
+          - *a2
+          - *a3
+        conditions:
+          - type: min_transaction
+            amount: 500000
+            currency: USD
+        notes: Single eligible purchases of $5,000 or more; shares the $2 million bonus cap.
+  - id: us.amex.business-platinum/base-1x
+    categories:
+      - cat:all
+    versions:
+      - version: 1
+        release: us.amex.business-platinum@2025-07-01
+        multiplier: "1"

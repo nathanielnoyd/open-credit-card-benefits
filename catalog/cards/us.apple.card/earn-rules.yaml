@@ -1,0 +1,50 @@
+card_id: us.apple.card
+rules:
+- id: us.apple.card/apple-3pct
+  categories:
+  - cat:merchant.apple
+  versions:
+  - version: 1
+    release: us.apple.card@2019-08-01
+    multiplier: '3'
+    notes: Apple Store, apple.com, the App Store, iTunes and Apple services, with the physical card, virtual number or Apple Pay.
+- id: us.apple.card/partners-3pct
+  name: 3% at select merchants with Apple Pay
+  categories:
+  - cat:merchant.ace_hardware
+  - cat:merchant.booking_com
+  - cat:merchant.chargepoint
+  - cat:merchant.duane_reade
+  - cat:merchant.exxon_mobil
+  - cat:merchant.hertz
+  - cat:merchant.nike
+  - cat:merchant.uber_eats
+  - cat:merchant.walgreens
+  - cat:travel.rideshare.uber
+  versions:
+  - version: 1
+    release: us.apple.card@2019-08-01
+    multiplier: '3'
+    conditions:
+    - type: payment_method
+      method: apple_pay
+    notes: 'Apple Pay purchases at Ace Hardware, Booking.com, ChargePoint, Duane Reade, Exxon Mobil, Hertz, Nike, Uber, Uber Eats and Walgreens. Booking.com: only prepaid stays and car rentals booked through Apple''s link (no flights, cruises or pay-at-property). Hertz: only U.S. corporate locations booked on hertz.com or the app. Uber: excludes alcohol in some states, gift cards bought in a browser, split fares and group orders. Walgreens: excludes gift cards, drive-thru and third-party services. The partner list changes without notice.'
+- id: us.apple.card/apple-pay-2pct
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.apple.card@2019-08-01
+    multiplier: '2'
+    conditions:
+    - type: payment_method
+      method: apple_pay
+    notes: Any purchase made with Apple Pay.
+- id: us.apple.card/base-1pct
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.apple.card@2019-08-01
+    multiplier: '1'
+    notes: Titanium card or the virtual card number without Apple Pay.

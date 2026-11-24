@@ -1,0 +1,25 @@
+id: us.chase.united-club-business/jsx
+card_id: us.chase.united-club-business
+kind: statement_credit
+name: JSX credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club-business@2025-03-24
+  summary: "Up to $200 each cardmember year on JSX flights booked directly with JSX."
+  face_value:
+    amount: 20000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    amount: 20000
+  grants:
+  - entitlement: credit:jsx
+  conditions:
+  - type: booking_channel
+    channel: jsx_direct
+  beneficiaries:
+  - primary
+  notes: Up to $200 per anniversary year on JSX flights booked directly with JSX.

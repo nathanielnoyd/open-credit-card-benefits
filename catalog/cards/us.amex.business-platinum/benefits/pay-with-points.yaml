@@ -1,0 +1,62 @@
+id: us.amex.business-platinum/pay-with-points
+card_id: us.amex.business-platinum
+kind: redemption_modifier
+name: 35% airline Pay with Points rebate
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-platinum@2025-07-01
+    summary: "35% of points back when you pay with points for first or business class on any airline, or any cabin on your selected airline, through Amex Travel, up to 1,000,000 points back a year."
+    grants:
+      - entitlement: redemption:points_rebate
+        attributes:
+          percent_rebate: "0.35"
+    percent_rebate: "0.35"
+    cap:
+      currency: pts:amex_mr
+      points: 1000000
+    applies_to_path: pts:amex_mr/pay-with-points-amex-travel-flights
+    conditions:
+      - type: booking_channel
+        channel: amex_travel
+        note: Pay with Points flights booked through Amex Travel
+    beneficiaries: &a1
+      - primary
+    machine_readable: false
+    notes: 35% of points back on first and business class tickets on any airline, or any cabin on the selected airline, up to 1,000,000 points back per calendar year. The applies_to_path is not defined on pts:amex_mr, and cabin-or-airline eligibility has no structured field.
+    sources:
+      - &a2
+        url: https://upgradedpoints.com/news/amex-business-platinum-pay-with-points-changes/
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - &a3
+        url: https://thepointsguy.com/credit-cards/amex-business-platinum-2025-refresh/
+        retrieved_at: "2026-11-13"
+        publisher: review
+  - version: 2
+    supersedes: 1
+    change_type: terms_changed
+    release: us.amex.business-platinum@2025-09-18
+    summary: "35% of points back when you pay with points for flights on your selected airline through Amex Travel, up to 1,000,000 points back per calendar year."
+    grants:
+      - entitlement: redemption:points_rebate
+        attributes:
+          percent_rebate: "0.35"
+    percent_rebate: "0.35"
+    cap:
+      currency: pts:amex_mr
+      points: 1000000
+    applies_to_path: pts:amex_mr/pay-with-points-amex-travel-flights
+    conditions:
+      - type: booking_channel
+        channel: amex_travel
+        note: Pay with Points flights booked through Amex Travel
+      - type: selection_is
+        name: airline
+        note: Only the airline selected for the airline fee credit (any cabin, including its marketed codeshares)
+    beneficiaries: *a1
+    machine_readable: false
+    notes: Only tickets on the selected airline now qualify; first and business class on other airlines no longer do. Up to 1,000,000 points back per calendar year. The applies_to_path is not defined on pts:amex_mr.
+    sources:
+      - *a2
+      - *a3

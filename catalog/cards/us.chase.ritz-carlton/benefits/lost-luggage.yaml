@@ -1,0 +1,20 @@
+id: us.chase.ritz-carlton/lost-luggage
+card_id: us.chase.ritz-carlton
+kind: protection
+name: Lost luggage reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ritz-carlton@2024-07-01
+  summary: "Up to $3,000 per person when your checked or carry-on bags are lost or damaged on a trip paid with the card."
+  grants:
+  - entitlement: protection:lost_luggage
+  coverage:
+    per_person:
+      amount: 300000
+      currency: USD
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Up to $3,000 per covered traveler for checked and carry-on bags.

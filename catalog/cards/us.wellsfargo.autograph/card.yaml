@@ -1,0 +1,24 @@
+id: us.wellsfargo.autograph
+issuer_id: us.wellsfargo
+name: Wells Fargo Autograph Card
+summary: "A $0-annual-fee Wells Fargo card earning 3x points on dining, travel, gas and transit, streaming and phone plans, with cell phone protection and no foreign transaction fees."
+network: visa
+segment: personal
+tier: no_fee
+family: wells-fargo-rewards
+earns: pts:wells_fargo_rewards
+open_to_applicants: true
+url: https://creditcards.wellsfargo.com/autograph-visa-credit-card/
+aliases:
+- Autograph
+- Wells Fargo Autograph Visa Signature
+fee_posting:
+  anchor: account_open
+notes: Visa Signature. Points transfer to Wells Fargo Rewards travel partners.
+provenance:
+  sources:
+  - url: https://creditcards.wellsfargo.com/autograph-visa-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  verified_by: agent:occb-research
+  confidence: "0.85"

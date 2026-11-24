@@ -1,0 +1,36 @@
+id: us.chase.ihg-business/united-travelbank
+card_id: us.chase.ihg-business
+kind: statement_credit
+name: United TravelBank cash
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-business@2024-01-01
+  summary: "$25 in United TravelBank cash twice a year, $50 a year in total, usable only on United, after you register the card with TravelBank."
+  face_value:
+    amount: 5000
+    currency: USD
+  period:
+    cadence: semiannual
+    anchor: calendar
+  limit:
+    amount: 2500
+  grants:
+  - entitlement: credit:united_travel
+  conditions:
+  - type: enrollment_required
+    note: Register the card with United TravelBank
+  beneficiaries:
+  - primary
+  notes: $25 deposited in January and July; TravelBank cash is usable only on United. Discontinued after December 31, 2026.
+  confidence: '0.7'
+  sources:
+  - url: https://frequentmiler.com/all-the-existing-ihg-credit-cards-have-been-refreshed-here-are-the-changes/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.uscreditcardguide.com/chase-ihg-premier-business-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://thepointsguy.com/news/ihg-credit-card-refresh-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review

@@ -1,0 +1,17 @@
+id: us.citi.strata-elite/priority-pass
+card_id: us.citi.strata-elite
+kind: membership
+name: Priority Pass Select
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.strata-elite@2025-07-27
+  summary: "Priority Pass Select lounge membership once you enroll, with free entry for 2 guests at lounges (restaurants excluded for guests)."
+  grants:
+  - entitlement: membership:priority_pass
+    attributes: { guests: 2, restaurants: false }
+  conditions:
+  - type: enrollment_required
+  beneficiaries: [primary]
+  notes: Two guests free; restaurant and other non-lounge experiences excluded from the guest benefit. Whether authorized users get their own membership is not confirmed.
+  confidence: "0.7"

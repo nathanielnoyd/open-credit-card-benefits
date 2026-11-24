@@ -1,0 +1,32 @@
+id: us.capitalone.quicksilver@2025-01-01
+card_id: us.capitalone.quicksilver
+kind: baseline
+effective_for_new: "2025-01-01"
+notes: Current terms recorded as a baseline; history is unclear and not modeled, and the date is a conventional starting point.
+changes:
+- target: fee:annual
+  to:
+    amount: 0
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.capitalone.quicksilver/c1-travel-5x
+  version: 1
+- target: earn_rule:us.capitalone.quicksilver/c1-entertainment-5x
+  version: 1
+- target: earn_rule:us.capitalone.quicksilver/base-1-5x
+  version: 1
+- target: benefit:us.capitalone.quicksilver/hertz
+  version: 1
+- target: benefit:us.capitalone.quicksilver/no-fx
+  version: 1
+- target: benefit:us.capitalone.quicksilver/extended-warranty
+  version: 1
+- target: benefit:us.capitalone.quicksilver/travel-accident
+  version: 1
+sources:
+- url: https://www.capitalone.com/credit-cards/quicksilver/
+  retrieved_at: "2026-11-13"
+  publisher: issuer

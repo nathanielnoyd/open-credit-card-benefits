@@ -1,0 +1,14 @@
+id: pts:turkish_miles_smiles
+name: Turkish Airlines Miles&Smiles
+kind: airline
+issuer: Turkish Airlines
+url: https://www.turkishairlines.com/en-us/miles-and-smiles/
+expiry: "Fixed term: miles expire at the end of the third full calendar year after they are earned."
+paths: []
+sources:
+  - url: https://www.turkishairlines.com/en-us/miles-and-smiles/
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

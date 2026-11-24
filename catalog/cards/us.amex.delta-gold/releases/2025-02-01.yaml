@@ -1,0 +1,42 @@
+id: us.amex.delta-gold@2025-02-01
+card_id: us.amex.delta-gold
+kind: baseline
+effective_for_new: '2025-02-01'
+notes: Terms in force after the February 1, 2025 Delta changes (MQD Headstart and the Reserve's Sky Club visit limits took
+  effect in early 2025; fees and the Resy, rideshare and Delta Stays credits date from the February 2024 refresh). Earlier
+  history is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 15000
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.amex.delta-gold/delta-2x
+  version: 1
+- target: earn_rule:us.amex.delta-gold/dining-2x
+  version: 1
+- target: earn_rule:us.amex.delta-gold/supermarkets-2x
+  version: 1
+- target: earn_rule:us.amex.delta-gold/base-1x
+  version: 1
+- target: benefit:us.amex.delta-gold/no-fx
+  version: 1
+- target: benefit:us.amex.delta-gold/first-checked-bag
+  version: 1
+- target: benefit:us.amex.delta-gold/priority-boarding
+  version: 1
+- target: benefit:us.amex.delta-gold/inflight-discount
+  version: 1
+- target: benefit:us.amex.delta-gold/award-discount
+  version: 1
+- target: benefit:us.amex.delta-gold/rental-car
+  version: 1
+- target: benefit:us.amex.delta-gold/extended-warranty
+  version: 1
+- target: benefit:us.amex.delta-gold/flight-credit-milestone
+  version: 1
+- target: benefit:us.amex.delta-gold/delta-stays
+  version: 1

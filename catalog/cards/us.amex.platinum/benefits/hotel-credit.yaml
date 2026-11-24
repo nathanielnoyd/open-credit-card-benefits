@@ -1,0 +1,111 @@
+id: us.amex.platinum/hotel-credit
+card_id: us.amex.platinum
+kind: statement_credit
+name: Hotel credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2024-01-01
+    summary: "Up to $200 a calendar year in statement credits on prepaid Fine Hotels + Resorts or The Hotel Collection bookings through Amex Travel; Hotel Collection stays need 2 or more nights."
+    effective_from: "2024-01-01"
+    face_value:
+      amount: 20000
+      currency: USD
+    period:
+      cadence: annual
+      anchor: calendar
+      tz: America/New_York
+    limit:
+      amount: 20000
+    grants:
+      - entitlement: credit:amex_fhr_thc
+        combine: sum
+    conditions:
+      - type: booking_channel
+        channel: amex_travel_fhr_thc
+        note: Prepaid Fine Hotels + Resorts or The Hotel Collection booking through Amex Travel
+      - type: min_nights
+        nights: 2
+        note: The Hotel Collection only
+    beneficiaries:
+      - primary
+    machine_readable: true
+    sources:
+      - url: https://dannydealguru.com/amex-platinum-cards-getting-600-fhr-credit/?amp=1
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"
+  - version: 2
+    supersedes: 1
+    change_type: amount_changed
+    release: us.amex.platinum@2025-09-18
+    summary: "Up to $300 every six months in statement credits on prepaid Fine Hotels + Resorts or The Hotel Collection bookings through Amex Travel, $600 a year; Hotel Collection stays need 2 or more nights."
+    effective_from: "2025-09-18"
+    face_value:
+      amount: 60000
+      currency: USD
+    period:
+      cadence: semiannual
+      anchor: calendar
+      tz: America/New_York
+    limit:
+      amount: 30000
+    grants:
+      - entitlement: credit:amex_fhr_thc
+        combine: sum
+    conditions:
+      - type: booking_channel
+        channel: amex_travel_fhr_thc
+        note: Prepaid Fine Hotels + Resorts or The Hotel Collection booking through Amex Travel
+      - type: min_nights
+        nights: 2
+        note: The Hotel Collection only
+    beneficiaries:
+      - primary
+    transition_amounts:
+      - period: 2025-H2
+        amount: 30000
+        bookings_from: "2025-09-18"
+    machine_readable: true
+    sources:
+      - url: https://dannydealguru.com/amex-platinum-cards-getting-600-fhr-credit/?amp=1
+        retrieved_at: "2026-11-12"
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"
+  - version: 3
+    supersedes: 2
+    change_type: terms_changed
+    release: us.amex.platinum@2027-01-01
+    summary: "Up to $300 every six months in statement credits on prepaid Fine Hotels + Resorts or The Hotel Collection bookings through Amex Travel, $600 a year; every stay needs 2 or more nights."
+    effective_from: "2027-01-01"
+    face_value:
+      amount: 60000
+      currency: USD
+    period:
+      cadence: semiannual
+      anchor: calendar
+      tz: America/New_York
+    limit:
+      amount: 30000
+    grants:
+      - entitlement: credit:amex_fhr_thc
+        combine: sum
+    conditions:
+      - type: booking_channel
+        channel: amex_travel_fhr_thc
+        note: Prepaid Fine Hotels + Resorts or The Hotel Collection booking through Amex Travel
+      - type: min_nights
+        nights: 2
+        note: All bookings
+    beneficiaries:
+      - primary
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+      - url: https://yourmileagemayvary.com/2026/10/27/amex-platinum-fhr-devaluation-worth-it/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

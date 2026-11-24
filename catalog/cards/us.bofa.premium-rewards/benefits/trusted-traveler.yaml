@@ -1,0 +1,21 @@
+id: us.bofa.premium-rewards/trusted-traveler
+card_id: us.bofa.premium-rewards
+kind: statement_credit
+name: TSA PreCheck or Global Entry credit
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards@2024-01-01
+  summary: "A statement credit every 4 years of up to $100 for Global Entry or $85 for TSA PreCheck."
+  face_value:
+    amount: 10000
+    currency: USD
+  period:
+    cadence: every_n_years
+    n: 4
+  grants:
+  - entitlement: credit:trusted_traveler
+  conditions: []
+  beneficiaries:
+  - primary
+  notes: 'One statement credit every four years: up to $100 for Global Entry or $85 for TSA PreCheck.'

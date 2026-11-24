@@ -1,0 +1,32 @@
+id: us.amex.platinum/saks-credit
+card_id: us.amex.platinum
+kind: statement_credit
+name: Saks credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2024-01-01
+    summary: "Up to $50 every six months (January to June and July to December) in statement credits at Saks Fifth Avenue and saks.com, $100 a year in total; enrollment required."
+    face_value:
+      amount: 10000
+      currency: USD
+    period:
+      cadence: semiannual
+      anchor: calendar
+    limit:
+      amount: 5000
+    grants:
+      - entitlement: credit:saks
+    conditions:
+      - type: enrollment_required
+      - type: merchant_in
+        merchants:
+          - saks
+    beneficiaries:
+      - primary
+    sources:
+      - url: https://www.doctorofcredit.com/american-express-to-remove-100-saks-benefit-on-platinum-card/
+        retrieved_at: "2026-11-13"
+        publisher: review
+    verified_by: agent:occb-research
+    confidence: "0.8"

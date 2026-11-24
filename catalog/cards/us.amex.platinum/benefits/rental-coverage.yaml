@@ -1,0 +1,31 @@
+id: us.amex.platinum/rental-coverage
+card_id: us.amex.platinum
+kind: protection
+name: Car rental loss and damage
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2024-01-01
+    summary: "Damage and theft coverage on rental cars paid with the card; whether it is primary or secondary, and its limits, are set in the benefits guide."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: protection:rental_cdw
+        combine: primary_then_excess
+        attributes:
+          priority: unknown
+    conditions:
+      - type: paid_with_card
+    beneficiaries:
+      - primary
+    notes: Check the benefits guide for whether coverage is primary or secondary.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.6"

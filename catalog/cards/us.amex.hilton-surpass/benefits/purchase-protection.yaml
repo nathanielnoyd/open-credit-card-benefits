@@ -1,0 +1,26 @@
+id: us.amex.hilton-surpass/purchase-protection
+card_id: us.amex.hilton-surpass
+kind: protection
+name: Purchase protection
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.hilton-surpass@2024-02-01
+  summary: "Covers theft or accidental damage within 90 days of purchase for items paid with the card, up to $1,000 per item and $50,000 per calendar year."
+  face_value: null
+  coverage:
+    per_item:
+      amount: 100000
+      currency: USD
+    per_period:
+      amount: 5000000
+      currency: USD
+    window_days: 90
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Theft or accidental damage within 90 days of purchase; up to $1,000 per covered purchase and $50,000 per calendar year.
+  grants:
+  - entitlement: protection:purchase

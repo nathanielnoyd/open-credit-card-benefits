@@ -1,0 +1,17 @@
+id: us.cnb.crystal-visa-infinite/trip-delay
+card_id: us.cnb.crystal-visa-infinite
+kind: protection
+name: Trip delay reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.cnb.crystal-visa-infinite@2020-01-01
+  summary: "Trip delay reimbursement for common-carrier trips paid with the card; the amount and waiting period are not confirmed."
+  grants:
+  - entitlement: protection:trip_delay
+  conditions:
+  - type: paid_with_card
+  notes: Listed by name on the issuer page; amounts and terms are in the Visa guide to benefits, which was not reviewed.
+  confidence: "0.65"
+  beneficiaries:
+  - primary

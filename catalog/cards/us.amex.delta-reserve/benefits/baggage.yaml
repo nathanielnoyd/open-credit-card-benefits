@@ -1,0 +1,27 @@
+id: us.amex.delta-reserve/baggage
+card_id: us.amex.delta-reserve
+kind: protection
+name: Baggage insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-reserve@2025-02-01
+  summary: "Covers up to $3,000 per person for lost, damaged or stolen carry-on and checked bags, with checked bags capped at $2,000, when the common-carrier fare is paid with the card."
+  coverage:
+    per_person:
+      amount: 300000
+      currency: USD
+  grants:
+  - entitlement: protection:lost_luggage
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Up to $3,000 per person for carry-on and checked bags combined, of which $2,000 for checked; $1,000 high-risk items.
+    One review lists the lower $1,250/$500 limits instead.
+  sources:
+  - url: https://upgradedpoints.com/travel/amex-travel-insurance-benefits-guide/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  confidence: '0.6'

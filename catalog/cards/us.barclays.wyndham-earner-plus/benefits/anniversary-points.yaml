@@ -1,0 +1,23 @@
+id: us.barclays.wyndham-earner-plus/anniversary-points
+card_id: us.barclays.wyndham-earner-plus
+kind: anniversary
+name: 15,000 anniversary points
+versions:
+- version: 1
+  change_type: added
+  release: us.barclays.wyndham-earner-plus@2026-06-17
+  summary: 15,000 Wyndham Rewards points after each card anniversary once the annual fee is paid and the account is in good
+    standing.
+  reward:
+    currency: pts:wyndham_rewards
+    points: 15000
+  issued_on: anniversary
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  grants:
+  - entitlement: anniversary:us.barclays.wyndham-earner-plus
+  beneficiaries:
+  - primary
+  notes: Posts 8 to 12 weeks after the anniversary date and fee payment; product changing to another Wyndham card may forfeit
+    it.

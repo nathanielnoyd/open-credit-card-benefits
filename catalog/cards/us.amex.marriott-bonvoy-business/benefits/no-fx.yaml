@@ -1,0 +1,16 @@
+id: us.amex.marriott-bonvoy-business/no-fx
+card_id: us.amex.marriott-bonvoy-business
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.marriott-bonvoy-business@2024-01-01
+  summary: "No foreign transaction fees on purchases outside the US."
+  face_value: null
+  waives: foreign_transaction_fee
+  beneficiaries:
+  - primary
+  - authorized_user
+  grants:
+  - entitlement: fee_waiver:foreign_transaction

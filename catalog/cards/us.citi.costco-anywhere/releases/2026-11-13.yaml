@@ -1,0 +1,41 @@
+id: us.citi.costco-anywhere@2026-11-13
+card_id: us.citi.costco-anywhere
+kind: baseline
+effective_for_new: '2026-11-13'
+notes: Current terms as observed on this date. The card launched in 2016; earlier history (including any changes to purchase protection or extended warranty) is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 0
+    currency: USD
+  notes: No card fee, but an active paid Costco membership in the cardmember's name is required to apply and to keep the card.
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.citi.costco-anywhere/costco-gas-5x
+  version: 1
+- target: earn_rule:us.citi.costco-anywhere/gas-ev-4x
+  version: 1
+- target: earn_rule:us.citi.costco-anywhere/dining-3x
+  version: 1
+- target: earn_rule:us.citi.costco-anywhere/travel-3x
+  version: 1
+- target: earn_rule:us.citi.costco-anywhere/costco-2x
+  version: 1
+- target: earn_rule:us.citi.costco-anywhere/base-1x
+  version: 1
+- target: benefit:us.citi.costco-anywhere/annual-reward
+  version: 1
+- target: benefit:us.citi.costco-anywhere/no-fx
+  version: 1
+- target: benefit:us.citi.costco-anywhere/purchase-protection
+  version: 1
+- target: benefit:us.citi.costco-anywhere/rental-cdw
+  version: 1
+- target: benefit:us.citi.costco-anywhere/roadside
+  version: 1
+sources:
+- url: https://www.citi.com/credit-cards/citi-costco-anywhere-visa-credit-card
+  retrieved_at: '2026-11-13'
+  publisher: issuer

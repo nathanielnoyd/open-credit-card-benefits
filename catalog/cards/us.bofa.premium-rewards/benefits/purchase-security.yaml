@@ -1,0 +1,19 @@
+id: us.bofa.premium-rewards/purchase-security
+card_id: us.bofa.premium-rewards
+kind: protection
+name: Purchase security
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards@2024-01-01
+  summary: "Covers theft or damage of items bought with the card within 90 days of purchase; the per-claim limit is not confirmed."
+  face_value: null
+  grants:
+  - entitlement: protection:purchase
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  coverage:
+    window_days: 90
+  notes: Theft or damage within 90 days of purchase; per-claim limit not confirmed.

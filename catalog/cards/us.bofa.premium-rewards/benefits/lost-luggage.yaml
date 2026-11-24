@@ -1,0 +1,29 @@
+id: us.bofa.premium-rewards/lost-luggage
+card_id: us.bofa.premium-rewards
+kind: protection
+name: Lost or damaged luggage
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards@2024-01-01
+  summary: "Covers lost or damaged luggage up to $3,000 per trip when the trip is paid with the card."
+  face_value: null
+  grants:
+  - entitlement: protection:lost_luggage
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  coverage:
+    per_trip:
+      amount: 300000
+      currency: USD
+  notes: Up to $3,000 per covered trip per reviews; the issuer page gives no amount.
+  confidence: "0.6"
+  sources:
+  - url: https://www.bankrate.com/finance/credit-cards/bank-of-america-premium-rewards-benefits-guide
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://www.bankofamerica.com/credit-cards/products/premium-rewards-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer

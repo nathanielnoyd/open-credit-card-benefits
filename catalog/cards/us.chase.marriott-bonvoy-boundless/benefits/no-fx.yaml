@@ -1,0 +1,15 @@
+id: us.chase.marriott-bonvoy-boundless/no-fx
+card_id: us.chase.marriott-bonvoy-boundless
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.marriott-bonvoy-boundless@2024-01-01
+  summary: "No foreign transaction fees on purchases made outside the US."
+  waives: foreign_transaction_fee
+  grants:
+  - entitlement: fee_waiver:foreign_transaction
+  beneficiaries:
+  - primary
+  - authorized_user

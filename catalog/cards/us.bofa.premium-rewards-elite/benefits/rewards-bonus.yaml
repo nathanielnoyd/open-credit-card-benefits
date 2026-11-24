@@ -1,0 +1,36 @@
+id: us.bofa.premium-rewards-elite/rewards-bonus
+card_id: us.bofa.premium-rewards-elite
+kind: program_access
+name: BofA Rewards credit card bonus
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards-elite@2026-11-14
+  summary: "10% (Member), 25% (Preferred Plus), 50% (Preferred Honors) or 75% (Premier) more points on every purchase, based on your BofA Rewards tier and combined balances."
+  face_value: null
+  grants:
+  - entitlement: earn_boost:us.bofa.premium-rewards-elite
+  conditions: []
+  beneficiaries:
+  - primary
+  selections:
+  - name: preferred_rewards_tier
+    values:
+    - none
+    - member
+    - preferred_plus
+    - preferred_honors
+    - premier
+    changeable: quarterly review of three-month average balance
+  notes: 'BofA Rewards (which replaced Preferred Rewards on May 27, 2026): Member 10% (checking account), Preferred Plus 25% ($30,000+), Preferred Honors 50% ($100,000+), Premier 75% ($1,000,000+). The earn value is carried by the boost earn rules; this benefit only declares the tier selection, named as on us.bofa.premium-rewards. Does not apply to welcome bonuses.'
+  sources:
+  - url: https://upgradedpoints.com/credit-cards/reviews/bank-of-america-premium-rewards-elite-credit-card/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://upgradedpoints.com/news/bofa-rewards-program-launch
+    retrieved_at: "2026-11-13"
+    publisher: review
+  confidence: "0.8"

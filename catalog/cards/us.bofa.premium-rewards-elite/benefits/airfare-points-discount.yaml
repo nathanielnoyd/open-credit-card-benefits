@@ -1,0 +1,23 @@
+id: us.bofa.premium-rewards-elite/airfare-points-discount
+card_id: us.bofa.premium-rewards-elite
+kind: redemption_modifier
+name: 20% off airfare paid with points
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards-elite@2026-11-14
+  summary: "20% off domestic or international airfare in any class when you pay with points through the Bank of America Travel Center, making points worth 1.25 cents each."
+  face_value: null
+  rate: "1.25"
+  applies_to_path: pts:bofa_points/travel-center
+  grants:
+  - entitlement: redemption:pay_with_points_boost
+    attributes:
+      rate: "1.25"
+  conditions:
+  - type: booking_channel
+    channel: bofa_travel_center
+    note: Airfare booked through the Bank of America Travel Center or concierge and paid with points
+  beneficiaries:
+  - primary
+  notes: A 20% discount on the points price of airfare works out to 1.25 cents a point (Upgraded Points rounds it to 1.2 cents). Applies to flights only, not hotels or other travel.

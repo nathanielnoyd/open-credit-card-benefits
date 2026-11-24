@@ -1,0 +1,76 @@
+id: us.bilt.obsidian@2026-02-07
+card_id: us.bilt.obsidian
+kind: baseline
+effective_for_new: '2026-02-07'
+notes: 'Bilt Card 2.0 launch: cards issued by Column N.A. and serviced by Cardless went live on 2026-02-07 (pre-orders from
+  2026-01-14). Terms per the issuer pages and offer terms last updated 2026-10-27.'
+changes:
+- target: fee:annual
+  to:
+    amount: 9500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 5000
+    currency: USD
+- target: earn_rule:us.bilt.obsidian/base
+  version: 1
+- target: earn_rule:us.bilt.obsidian/bilt-travel-hotels
+  version: 1
+- target: earn_rule:us.bilt.obsidian/bilt-travel-flights
+  version: 1
+- target: earn_rule:us.bilt.obsidian/lyft
+  version: 1
+- target: earn_rule:us.bilt.obsidian/housing-tier-25
+  version: 1
+- target: earn_rule:us.bilt.obsidian/housing-tier-50
+  version: 1
+- target: earn_rule:us.bilt.obsidian/housing-tier-75
+  version: 1
+- target: earn_rule:us.bilt.obsidian/housing-tier-100
+  version: 1
+- target: earn_rule:us.bilt.obsidian/housing-flexible
+  version: 1
+- target: earn_rule:us.bilt.obsidian/bilt-cash-4pct
+  version: 1
+- target: earn_rule:us.bilt.obsidian/dining-3x
+  version: 1
+- target: earn_rule:us.bilt.obsidian/grocery-3x
+  version: 1
+- target: earn_rule:us.bilt.obsidian/travel-2x
+  version: 1
+- target: benefit:us.bilt.obsidian/housing-payments
+  version: 1
+- target: benefit:us.bilt.obsidian/no-fx
+  version: 1
+- target: benefit:us.bilt.obsidian/cell-phone
+  version: 1
+- target: benefit:us.bilt.obsidian/purchase-assurance
+  version: 1
+- target: benefit:us.bilt.obsidian/rental-cdw
+  version: 1
+- target: benefit:us.bilt.obsidian/trip-cancel
+  version: 1
+- target: benefit:us.bilt.obsidian/trip-delay
+  version: 1
+- target: benefit:us.bilt.obsidian/lost-luggage
+  version: 1
+- target: benefit:us.bilt.obsidian/extended-warranty
+  version: 1
+- target: benefit:us.bilt.obsidian/point-accelerator
+  version: 1
+- target: benefit:us.bilt.obsidian/hotel-credit
+  version: 1
+sources:
+- url: https://www.bilt.com/card
+  retrieved_at: '2026-11-13'
+  publisher: issuer
+- url: https://www.bilt.com/terms/bilt-card-offer-terms
+  retrieved_at: '2026-11-13'
+  publisher: issuer
+- url: https://thepointsguy.com/credit-cards/new-bilt-cards-2-0
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://onemileatatime.com/news/bilt-cardless-credit-cards/
+  retrieved_at: '2026-11-13'
+  publisher: review

@@ -1,0 +1,40 @@
+card_id: us.citi.prestige
+rules:
+- id: us.citi.prestige/air-travel-agencies-5x
+  name: 5x on air travel and travel agencies
+  categories:
+  - cat:travel.flights
+  - cat:travel.other
+  versions:
+  - version: 1
+    release: us.citi.prestige@2025-07-09
+    multiplier: "5"
+    notes: >-
+      Airlines and travel agencies. Travel agencies are modeled with cat:travel.other (merchant category 4722, which also holds
+      4789 transportation services). Whether bookings through Citi Travel earn 5x is not confirmed, so portal categories are not included.
+- id: us.citi.prestige/dining-5x
+  name: 5x at restaurants
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.citi.prestige@2025-07-09
+    multiplier: "5"
+    notes: Restaurants, including takeout and delivery.
+- id: us.citi.prestige/hotels-cruises-3x
+  name: 3x on hotels and cruise lines
+  categories:
+  - cat:travel.hotels
+  - cat:travel.cruise
+  versions:
+  - version: 1
+    release: us.citi.prestige@2025-07-09
+    multiplier: "3"
+- id: us.citi.prestige/base-1x
+  name: 1x on everything else
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.citi.prestige@2025-07-09
+    multiplier: "1"

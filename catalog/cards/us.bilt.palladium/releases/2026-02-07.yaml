@@ -1,0 +1,78 @@
+id: us.bilt.palladium@2026-02-07
+card_id: us.bilt.palladium
+kind: baseline
+effective_for_new: '2026-02-07'
+notes: 'Bilt Card 2.0 launch: cards issued by Column N.A. and serviced by Cardless went live on 2026-02-07 (pre-orders from
+  2026-01-14). Terms per the issuer pages and offer terms last updated 2026-10-27.'
+changes:
+- target: fee:annual
+  to:
+    amount: 49500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 9500
+    currency: USD
+- target: earn_rule:us.bilt.palladium/base
+  version: 1
+- target: earn_rule:us.bilt.palladium/bilt-travel-hotels
+  version: 1
+- target: earn_rule:us.bilt.palladium/bilt-travel-flights
+  version: 1
+- target: earn_rule:us.bilt.palladium/lyft
+  version: 1
+- target: earn_rule:us.bilt.palladium/housing-tier-25
+  version: 1
+- target: earn_rule:us.bilt.palladium/housing-tier-50
+  version: 1
+- target: earn_rule:us.bilt.palladium/housing-tier-75
+  version: 1
+- target: earn_rule:us.bilt.palladium/housing-tier-100
+  version: 1
+- target: earn_rule:us.bilt.palladium/housing-flexible
+  version: 1
+- target: earn_rule:us.bilt.palladium/bilt-cash-4pct
+  version: 1
+- target: benefit:us.bilt.palladium/housing-payments
+  version: 1
+- target: benefit:us.bilt.palladium/no-fx
+  version: 1
+- target: benefit:us.bilt.palladium/cell-phone
+  version: 1
+- target: benefit:us.bilt.palladium/purchase-assurance
+  version: 1
+- target: benefit:us.bilt.palladium/rental-cdw
+  version: 1
+- target: benefit:us.bilt.palladium/trip-cancel
+  version: 1
+- target: benefit:us.bilt.palladium/trip-delay
+  version: 1
+- target: benefit:us.bilt.palladium/lost-luggage
+  version: 1
+- target: benefit:us.bilt.palladium/extended-warranty
+  version: 1
+- target: benefit:us.bilt.palladium/baggage-delay
+  version: 1
+- target: benefit:us.bilt.palladium/price-protection
+  version: 1
+- target: benefit:us.bilt.palladium/priority-pass
+  version: 1
+- target: benefit:us.bilt.palladium/point-accelerator
+  version: 1
+- target: benefit:us.bilt.palladium/hotel-credit
+  version: 1
+- target: benefit:us.bilt.palladium/annual-bilt-cash
+  version: 1
+sources:
+- url: https://www.bilt.com/card
+  retrieved_at: '2026-11-13'
+  publisher: issuer
+- url: https://www.bilt.com/terms/bilt-card-offer-terms
+  retrieved_at: '2026-11-13'
+  publisher: issuer
+- url: https://thepointsguy.com/credit-cards/new-bilt-cards-2-0
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://onemileatatime.com/news/bilt-cardless-credit-cards/
+  retrieved_at: '2026-11-13'
+  publisher: review

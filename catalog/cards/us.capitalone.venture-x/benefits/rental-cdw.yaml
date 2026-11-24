@@ -1,0 +1,30 @@
+id: us.capitalone.venture-x/rental-cdw
+card_id: us.capitalone.venture-x
+kind: protection
+name: Rental car coverage
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x@2025-03-01
+  summary: "Primary coverage up to $75,000 for theft and damage on car rentals paid in full with the card when you decline the rental company's collision waiver."
+  coverage:
+    priority: primary
+    per_claim:
+      amount: 7500000
+      currency: USD
+    requires_card_payment: full
+  grants:
+  - entitlement: protection:rental_cdw
+  conditions:
+  - type: paid_with_card
+  notes: >-
+    Primary when the whole rental is paid with the card and the rental company’s collision waiver is declined; theft, damage,
+    loss-of-use and towing up to the car’s actual cash value, at most $75,000. Excludes Ireland, Northern Ireland, Israel and Jamaica
+    and vehicles over $75,000. The rental-length limit is not confirmed.
+  sources:
+  - url: https://awardwallet.com/credit-cards/capital-one-rewards/venture-x-benefits/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  confidence: "0.75"
+  beneficiaries:
+  - primary

@@ -1,0 +1,28 @@
+id: us.chase.united-club-business/anniversary-miles
+card_id: us.chase.united-club-business
+kind: anniversary
+name: 5,000 anniversary miles with a personal United card
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club-business@2025-03-24
+  summary: "5,000 bonus miles each account anniversary when you are also the primary cardmember on a personal Chase United card."
+  reward:
+    currency: pts:united_mileageplus
+    points: 5000
+  issued_on: anniversary
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  grants:
+  - entitlement: anniversary:us.chase.united-club-business
+  conditions:
+  - type: wallet_holds
+    family: chase-united
+    segment: personal
+    note: A personal United credit card from Chase on which you are the primary cardmember.
+  beneficiaries:
+  - primary
+  notes: Requires a personal Chase United card (Gateway, Explorer, Quest or Club) in the same name. Documented in coverage of the
+    March 2025 refresh; whether this card offered it before then is not confirmed.
+  confidence: '0.65'

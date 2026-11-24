@@ -1,0 +1,16 @@
+id: us.chase.freedom-flex/no-fx
+card_id: us.chase.freedom-flex
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.freedom-flex@2026-09-20
+  summary: "No foreign transaction fees on purchases abroad, since September 20, 2026."
+  waives: foreign_transaction_fee
+  grants:
+  - entitlement: fee_waiver:foreign_transaction
+  notes: The 3% foreign transaction fee was removed on September 20, 2026.
+  beneficiaries:
+  - primary
+  - authorized_user

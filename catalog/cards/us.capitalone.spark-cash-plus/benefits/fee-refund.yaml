@@ -1,0 +1,25 @@
+id: us.capitalone.spark-cash-plus/fee-refund
+card_id: us.capitalone.spark-cash-plus
+kind: milestone
+name: Annual fee refund at $150,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.spark-cash-plus@2026-01-01
+  summary: "Your $150 annual fee back as a statement credit each card year your purchases reach $150,000."
+  threshold:
+    amount: 15000000
+    currency: USD
+  threshold_period: cardmember_year
+  reward_cash:
+    amount: 15000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  grants:
+  - entitlement: milestone:us.capitalone.spark-cash-plus.fee-refund
+  notes: The $150 annual fee is refunded as a statement credit within two billing cycles each year net purchases reach $150,000 by the account
+    anniversary.
+  beneficiaries:
+  - primary

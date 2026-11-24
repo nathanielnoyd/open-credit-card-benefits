@@ -1,0 +1,37 @@
+id: us.amex.marriott-bonvoy-brilliant/earned-choice
+card_id: us.amex.marriott-bonvoy-brilliant
+kind: milestone
+name: Brilliant Earned Choice Award
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.marriott-bonvoy-brilliant@2024-01-01
+  summary: "After $60,000 in calendar-year spend, you choose 5 Nightly Upgrade Awards, a Free Night Award worth up to 85,000 points, or 50,000 bonus points."
+  face_value: null
+  threshold:
+    amount: 6000000
+    currency: USD
+  threshold_period: calendar_year
+  reward:
+    currency: pts:marriott_bonvoy
+    points: 50000
+  selections:
+  - name: earned_choice_award
+    values:
+    - nightly_upgrade_awards_5
+    - free_night_85k
+    - points_50k
+    changeable: once per award, by February 1 of the next year
+  beneficiaries:
+  - primary
+  machine_readable: false
+  sources:
+  - url: https://choice-benefit.marriott.com/brilliant/en-us/terms
+    retrieved_at: '2026-11-13'
+    publisher: partner
+  - url: https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-brilliant/
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  notes: 'After $60,000 in eligible calendar-year purchases (basic and additional cards), choose one: five Nightly Upgrade Awards, a Free Night Award up to 85,000 points, or 50,000 bonus points. Select by February 1 of the next year or the upgrade awards are issued by default. `reward` shows the points option only; the schema has no way to express a menu of alternative rewards.'
+  grants:
+  - entitlement: milestone:us.amex.marriott-bonvoy-brilliant.earned-choice

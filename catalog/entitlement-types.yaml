@@ -1,0 +1,878 @@
+- id: anniversary:*
+  combine: sum
+  name: Anniversary reward of one card
+  description: Keys are <type>:<card id> or <type>:<card id>.<slug>; one card’s reward never duplicates another’s.
+- id: certificate:*
+  combine: sum
+  name: A certificate one card issues, such as a free night or companion fare
+  description: Keys are <type>:<card id> or <type>:<card id>.<slug>; one card’s reward never duplicates another’s.
+- id: credit:accounting_software
+  combine: sum
+  name: Statement credit on accounting software purchases
+  description: Qualifying accounting software by merchant code, such as on the
+    Wyndham Earner Business; distinct from merchant-specific software credits.
+  spend_category: cat:business.software_cloud
+- id: credit:adobe
+  combine: sum
+  spend_category: cat:business.software_cloud
+- id: credit:airbnb_experiences
+  combine: sum
+  name: Airbnb Experiences credit
+  spend_category: cat:travel.other
+- id: credit:airline_incidentals
+  combine: sum
+  spend_category: cat:travel.flights
+- id: credit:airline_lounge_membership
+  combine: sum
+  name: Statement credit toward an airline lounge club membership fee
+  description: Pays for an annual airline lounge club membership such as United
+    Club or Admirals Club; distinct from credit:airline_incidentals.
+- id: credit:airline_purchase
+  combine: sum
+  name: Credit on any airline purchase, including tickets
+  description: Unlike credit:airline_incidentals, airfare itself qualifies.
+  spend_category: cat:travel.flights
+- id: credit:amazon_business
+  combine: sum
+  spend_category: cat:merchant.amazon
+- id: credit:american_inflight
+  combine: sum
+  name: Statement credit on American Airlines in-flight (and Admirals Club) purchases
+  spend_category: cat:travel.flights.direct.aa
+- id: credit:american_vacations
+  combine: sum
+  spend_category: cat:travel.flights.direct.aa
+- id: credit:amex_business_flexible
+  combine: sum
+  name: Amex business credit at shipping, Grubhub and office supply stores
+  spend_category: cat:business.shipping
+- id: credit:amex_dining_partners
+  combine: sum
+  name: Amex dining partner credit (Grubhub, Five Guys and others)
+  spend_category: cat:dining
+- id: credit:amex_fhr_thc
+  combine: sum
+  spend_category: cat:travel.portal.amex.hotels_prepaid
+- id: credit:amex_one_ap
+  combine: sum
+  name: American Express One AP fee credit
+- id: credit:amex_travel_flights
+  combine: sum
+  name: Amex Travel flight credit
+  spend_category: cat:travel.portal.amex.flights
+- id: credit:apple_services
+  combine: sum
+  spend_category: cat:streaming
+- id: credit:avis_budget
+  combine: sum
+  spend_category: cat:travel.car_rental
+- id: credit:bilt_cash
+  combine: sum
+- id: credit:bilt_dining
+  combine: sum
+  spend_category: cat:dining
+- id: credit:bilt_home_away
+  combine: sum
+- id: credit:bilt_rent_day
+  combine: sum
+- id: credit:blacklane
+  combine: sum
+  spend_category: cat:travel.rideshare
+- id: credit:booking_com_travel_credits
+  combine: sum
+  name: Booking.com Travel Credits earned on bookings
+- id: credit:capital_one_travel
+  combine: sum
+  spend_category: cat:travel.portal.capitalone
+- id: credit:chase_edit
+  combine: sum
+  spend_category: cat:travel.portal.chase.hotels_cars
+- id: credit:chase_travel_hotel
+  combine: sum
+  spend_category: cat:travel.portal.chase.hotels_cars
+- id: credit:chase_travel_select_hotels
+  combine: sum
+  spend_category: cat:travel.portal.chase.hotels_cars
+- id: credit:chatgpt_business
+  combine: sum
+  name: ChatGPT Business subscription credit
+  spend_category: cat:business.software_cloud
+- id: credit:citi_relationship
+  combine: sum
+  name: Citi banking-relationship credit toward a card's annual fee (Citigold, Citigold Private Client)
+- id: credit:citi_travel_hotel
+  combine: sum
+  spend_category: cat:travel.portal.citi.hotels
+- id: credit:clear
+  combine: sum
+- id: credit:dell
+  combine: sum
+  spend_category: cat:electronics_stores
+- id: credit:delta_resy
+  combine: sum
+  spend_category: cat:dining
+- id: credit:delta_stays
+  combine: sum
+  spend_category: cat:travel.hotels
+- id: credit:digital_entertainment
+  combine: sum
+  spend_category: cat:streaming
+- id: credit:dining_exclusive_tables
+  combine: sum
+  spend_category: cat:dining
+- id: credit:dining_general
+  combine: sum
+  spend_category: cat:dining
+- id: credit:disney_bundle
+  combine: sum
+  spend_category: cat:streaming
+- id: credit:doordash_nonrestaurant
+  combine: sum
+  spend_category: cat:dining.delivery
+- id: credit:doordash_restaurant
+  combine: sum
+  spend_category: cat:dining.delivery
+- id: credit:dunkin
+  combine: sum
+  name: Dunkin’ credit
+  spend_category: cat:dining.fast_food
+- id: credit:equinox
+  combine: sum
+  spend_category: cat:fitness
+- id: credit:expensify
+  combine: sum
+  name: Expensify subscription credit
+  spend_category: cat:business.software_cloud
+- id: credit:fandango
+  combine: sum
+  spend_category: cat:entertainment.movie_theaters
+- id: credit:fhr_thc
+  combine: sum
+  spend_category: cat:travel.hotels
+- id: credit:fitness_general
+  combine: sum
+  name: Credit on fitness subscriptions or gym memberships at any of several
+    providers
+  spend_category: cat:fitness
+- id: credit:flight_delay_voucher_alaska
+  combine: sum
+  name: Voucher for a delayed or canceled Alaska flight
+- id: credit:giftcards_com
+  combine: sum
+  name: Giftcards.com gift card credit
+- id: credit:google_workspace
+  combine: sum
+  name: Google Workspace credit
+  spend_category: cat:business.software_cloud
+- id: credit:grubhub
+  combine: sum
+  spend_category: cat:dining.delivery
+- id: credit:hello_fresh
+  combine: sum
+  spend_category: cat:groceries.online
+- id: credit:hilton_luxury_property
+  combine: sum
+  name: On-property credit for stays at Waldorf Astoria or Conrad
+  description: Per-stay credit for qualifying charges on a booking made with a card benefit rate; distinct from credit:hilton_property
+    (any Hilton purchase) and credit:hilton_resort.
+  spend_category: cat:travel.hotels.direct.hilton
+- id: credit:hilton_property
+  combine: sum
+  spend_category: cat:travel.hotels.direct.hilton
+- id: credit:hilton_resort
+  combine: sum
+  spend_category: cat:travel.hotels.direct.hilton
+- id: credit:home_improvement
+  combine: sum
+  spend_category: cat:home_improvement
+- id: credit:hotel_general
+  combine: sum
+  spend_category: cat:travel.hotels
+- id: credit:hotel_portal
+  combine: sum
+  spend_category: cat:travel.portal
+- id: credit:hyatt_property
+  combine: sum
+  spend_category: cat:travel.hotels.direct.hyatt
+- id: credit:ihg_food_beverage
+  combine: sum
+  name: IHG Food & Beverage Rewards vouchers on the room bill
+  spend_category: cat:travel.hotels.direct.ihg
+- id: credit:ihg_hotel
+  combine: sum
+  spend_category: cat:travel.hotels.direct.ihg
+- id: credit:indeed
+  combine: sum
+- id: credit:inkind
+  combine: sum
+  name: inKind restaurant dining credit
+- id: credit:instacart
+  combine: sum
+  spend_category: cat:groceries.online
+- id: credit:instacart_plus
+  combine: sum
+- id: credit:jsx
+  combine: sum
+  spend_category: cat:travel.flights
+- id: credit:lululemon
+  combine: sum
+  spend_category: cat:apparel
+- id: credit:lyft
+  combine: sum
+  spend_category: cat:travel.rideshare.lyft
+- id: credit:marriott_dining
+  combine: sum
+  spend_category: cat:dining
+- id: credit:marriott_property
+  combine: sum
+  spend_category: cat:travel.hotels.direct.marriott
+- id: credit:meal_delivery
+  combine: sum
+  name: Statement credit on third-party meal delivery services
+  description: Any third-party delivery merchant by merchant code, unlike
+    merchant-specific credits such as credit:doordash_restaurant.
+  spend_category: cat:dining.delivery
+- id: credit:one_key
+  combine: sum
+- id: credit:opentable
+  combine: sum
+  spend_category: cat:dining
+- id: credit:oura
+  combine: sum
+  spend_category: cat:electronics_stores
+- id: credit:peacock
+  combine: sum
+  spend_category: cat:streaming
+- id: credit:peloton_membership
+  combine: sum
+  spend_category: cat:fitness
+- id: credit:renowned_hotels_united
+  combine: sum
+  name: Renowned Hotels and Resorts for United Cardmembers credit
+  spend_category: cat:travel.hotels
+- id: credit:resy
+  combine: sum
+  spend_category: cat:dining
+- id: credit:rideshare
+  combine: sum
+  spend_category: cat:travel.rideshare
+- id: credit:saks
+  combine: sum
+  spend_category: cat:department_stores
+- id: credit:shops_at_chase
+  combine: sum
+- id: credit:soulcycle
+  combine: sum
+  spend_category: cat:fitness
+- id: credit:southwest_anniversary
+  combine: sum
+- id: credit:southwest_chase_travel
+  combine: sum
+  spend_category: cat:travel.portal.chase.flights
+- id: credit:splurge
+  combine: sum
+- id: credit:squarespace
+  combine: sum
+  name: Squarespace credit
+  spend_category: cat:business.software_cloud
+- id: credit:streaming_general
+  combine: sum
+  spend_category: cat:streaming
+- id: credit:stubhub
+  combine: sum
+  spend_category: cat:entertainment
+- id: credit:ticketmaster
+  combine: sum
+  spend_category: cat:entertainment
+- id: credit:travel_general
+  combine: sum
+  spend_category: cat:travel
+- id: credit:travel_portal
+  combine: sum
+  spend_category: cat:travel.portal
+- id: credit:trusted_traveler
+  combine: once_per_beneficiary
+  name: Global Entry, TSA PreCheck or NEXUS application fee credit
+- id: credit:turo
+  combine: sum
+  name: Turo car rental credit
+  spend_category: cat:travel.car_rental
+- id: credit:uber_cash
+  combine: sum
+  spend_category: cat:travel.rideshare.uber
+- id: credit:united_farelock
+  combine: sum
+  name: United FareLock credit
+  spend_category: cat:travel.flights.direct.ua
+- id: credit:united_hotels
+  combine: sum
+  spend_category: cat:travel.hotels
+- id: credit:united_rideshare
+  combine: sum
+  spend_category: cat:travel.rideshare
+- id: credit:united_travel
+  combine: sum
+  spend_category: cat:travel.flights.direct.ua
+- id: credit:us_bank_travel
+  combine: sum
+  spend_category: cat:travel.portal.usbank
+- id: credit:wholesale_club
+  combine: sum
+  name: Statement credit at wholesale clubs, including membership fees
+  spend_category: cat:groceries.wholesale
+- id: credit:wireless
+  combine: sum
+  spend_category: cat:telecom.wireless
+- id: credit:wireless_business
+  combine: sum
+  spend_category: cat:telecom.wireless
+- id: credit:wyndham_hotel
+  combine: sum
+  name: Statement credit for spend at Wyndham hotel brands
+  spend_category: cat:travel.hotels.direct.wyndham
+- id: credit:zip_car
+  combine: sum
+  spend_category: cat:travel.car_rental
+- id: credit:ziprecruiter
+  combine: sum
+  name: ZipRecruiter credit
+- id: discount:alaska_lounge_membership
+  combine: max
+  name: Discount on an Alaska Lounge+ membership
+- id: discount:american_vacations
+  combine: max
+  name: Percentage discount on American Airlines Vacations
+- id: discount:cultivist
+  combine: any
+  name: Discounted The Cultivist museum membership
+- id: discount:fox_one
+  combine: max
+  name: Discount on a FOX One subscription
+- id: discount:inflight_alaska
+  combine: max
+  name: Discount or credit back on Alaska in-flight purchases
+- id: discount:inflight_american
+  combine: max
+  name: Discount or credit back on American in-flight purchases
+- id: discount:inflight_delta
+  combine: max
+  name: Discount or credit back on Delta in-flight purchases
+- id: discount:inflight_hawaiian
+  combine: max
+  name: Discount or credit back on Hawaiian in-flight purchases
+- id: discount:inflight_jetblue
+  combine: max
+  name: Discount or credit back on Jetblue in-flight purchases
+- id: discount:inflight_southwest
+  combine: max
+  name: Discount or credit back on Southwest in-flight purchases
+- id: discount:inflight_united
+  combine: max
+  name: Discount or credit back on United in-flight purchases
+- id: discount:marriott_room_rate
+  combine: max
+  name: Percentage discount on Marriott room rates booked direct with a card rate
+- id: discount:wyndham_room_rate
+  combine: max
+  name: Cardmember discount on Wyndham paid room rates
+- id: earn_boost:*
+  combine: sum
+  name: An earn bonus of one card
+  description: Keys are <type>:<card id> or <type>:<card id>.<slug>; one card’s reward never duplicates another’s.
+- id: fee_waiver:authorized_user
+  combine: any
+  name: Free authorized user cards
+- id: fee_waiver:award_redeposit
+  combine: any
+  name: Waived award change or redeposit fees
+- id: fee_waiver:checked_bag_alaska
+  combine: any
+  name: Free checked bag on Alaska
+- id: fee_waiver:checked_bag_american
+  combine: any
+  name: Free checked bag on American
+- id: fee_waiver:checked_bag_delta
+  combine: any
+  name: Free checked bag on Delta
+- id: fee_waiver:checked_bag_delta_second
+  combine: any
+  name: Free second checked bag on Delta
+  description: Separate from the first bag, so a card that waives both counts both; two cards that waive the second bag count it once.
+- id: fee_waiver:checked_bag_hawaiian
+  combine: any
+  name: Free checked bag on Hawaiian
+- id: fee_waiver:checked_bag_jetblue
+  combine: any
+  name: Free checked bag on Jetblue
+- id: fee_waiver:checked_bag_southwest
+  combine: any
+  name: Free checked bag on Southwest
+- id: fee_waiver:checked_bag_united
+  combine: any
+  name: Free checked bag on United
+- id: fee_waiver:foreign_transaction
+  combine: any
+  name: No foreign transaction fees
+- id: fee_waiver:partner_award_booking_atmos
+  combine: any
+  name: Waived Atmos Rewards partner award booking fee
+- id: fee_waiver:same_day_change_alaska
+  combine: any
+  name: Waived same-day confirmed change fees on Alaska
+- id: inflight_wifi:alaska
+  combine: sum
+  name: Free single-flight Wi-Fi passes on Alaska
+- id: lounge_guests:centurion
+  combine: any
+- id: lounge_guests:delta_sky_club
+  combine: sum
+  name: Delta Sky Club one-time guest passes
+- id: lounge_guests:united_club
+  combine: sum
+  name: United Club one-time guest passes
+  description: One-time passes for guests of a cardmember who already has United
+    Club access; consistent with lounge_guests:delta_sky_club.
+- id: lounge_network:admirals_club
+  combine: any
+- id: lounge_network:air_canada_maple_leaf
+  combine: any
+- id: lounge_network:alaska_lounge
+  combine: any
+- id: lounge_network:american_express_sidecar
+  combine: any
+- id: lounge_network:capital_one_landing
+  combine: any
+- id: lounge_network:capital_one_lounge
+  combine: any
+- id: lounge_network:centurion
+  combine: any
+- id: lounge_network:chase_sapphire
+  combine: any
+- id: lounge_network:citi_strata_lounge
+  combine: any
+- id: lounge_network:delta_sky_club
+  combine: max
+- id: lounge_network:escape
+  combine: any
+- id: lounge_network:lufthansa
+  combine: any
+- id: lounge_network:plaza_premium
+  combine: any
+- id: lounge_network:star_alliance
+  combine: any
+  name: Star Alliance member lounges
+  description: Access to Star Alliance member airline lounges when flying Star
+    Alliance, as included with United Club All Access.
+- id: lounge_network:united_club
+  combine: any
+- id: membership:amazon_prime
+  combine: any
+  name: Amazon Prime
+- id: membership:apple_music
+  combine: any
+- id: membership:apple_tv
+  combine: any
+- id: membership:clear
+  combine: any
+- id: membership:dashpass
+  combine: any
+- id: membership:disney_plus
+  combine: any
+  name: Disney+
+- id: membership:dragonpass
+  combine: any
+  name: DragonPass
+- id: membership:global_entry
+  combine: any
+  name: Global Entry
+- id: membership:grubhub_plus
+  combine: any
+  name: Grubhub+
+- id: membership:instacart_plus
+  combine: any
+  name: Instacart+
+- id: membership:lyft_pink
+  combine: any
+  name: Lyft Pink
+- id: membership:peacock
+  combine: any
+  name: Peacock
+- id: membership:priority_pass
+  combine: any
+  attribute_rules:
+    guests: max
+    restaurants: any
+- id: membership:shoprunner
+  combine: any
+  name: ShopRunner
+- id: membership:tsa_precheck
+  combine: any
+  name: TSA PreCheck
+- id: membership:uber_one
+  combine: any
+- id: membership:walmart_plus
+  combine: any
+  description: Includes credits that pay for a Walmart+ membership; a second card's membership or credit adds nothing.
+- id: membership:wyndham_insider
+  combine: any
+  name: Wyndham Rewards Insider subscription
+- id: milestone:*
+  combine: sum
+  name: Spend milestone reward of one card
+  description: Keys are <type>:<card id> or <type>:<card id>.<slug>; one card’s reward never duplicates another’s.
+- id: priority_boarding:alaska
+  combine: any
+  name: Priority boarding on Alaska
+- id: priority_boarding:american
+  combine: any
+  name: Priority boarding on American
+- id: priority_boarding:delta
+  combine: any
+  name: Priority boarding on Delta
+- id: priority_boarding:jetblue
+  combine: any
+  name: Priority boarding on Jetblue
+- id: priority_boarding:southwest
+  combine: any
+  name: Priority boarding on Southwest
+- id: priority_boarding:united
+  combine: any
+  name: Priority boarding on United
+- id: program:amex_fhr
+  combine: any
+- id: program:amex_international_airline
+  combine: any
+  name: Amex International Airline Program
+- id: program:amex_member_airfares
+  combine: any
+- id: program:amex_thc
+  combine: any
+  name: The Hotel Collection
+- id: program:bilt_housing_payments
+  combine: any
+  name: Pay rent or mortgage by card through Bilt with no transaction fee
+  description: Bilt cards only; rewards on housing depend on the card's rewards option.
+- id: program:capital_one_lifestyle
+  combine: any
+  name: Capital One Lifestyle Collection
+- id: program:capital_one_premier
+  combine: any
+  name: Capital One Premier Collection
+- id: program:cardmember_offers
+  combine: any
+  name: Issuer merchant offers
+- id: program:chase_edit
+  combine: any
+  name: The Edit by Chase Travel
+- id: program:citi_hotel_collection
+  combine: any
+  name: Citi hotel collection
+- id: program:companion_pass
+  combine: any
+  name: Companion fares and passes
+- id: program:dining_reservations
+  combine: any
+  name: Reserved dining access
+- id: program:expanded_award_availability_united
+  combine: any
+  name: Expanded United award availability for cardholders
+- id: program:hertz_apple_card
+  combine: any
+  name: Apple Card Hertz portal discounts and perks
+- id: program:ihg_fourth_night_free
+  combine: any
+  name: Fourth IHG reward night free
+- id: program:mastercard_luxury_hotels
+  combine: any
+  name: Mastercard Luxury Hotels & Resorts
+- id: program:points_sharing_atmos
+  combine: any
+  name: Free Atmos Rewards points sharing with other members
+- id: program:presale_tickets
+  combine: any
+  name: Ticket presales and reserved seats
+- id: program:reduced_award_pricing_delta
+  combine: any
+  name: Reduced Delta award pricing for cardholders (TakeOff 15)
+- id: program:reduced_award_pricing_united
+  combine: any
+  name: Reduced United award pricing for cardholders
+- id: program:reduced_award_pricing_wyndham
+  combine: max
+  name: Reduced Wyndham award night pricing for cardholders
+  description: Percent off the points price of Wyndham Rewards free nights; Earner
+    Plus 10%, Earner Premier 25%, so the higher discount wins.
+- id: program:visa_infinite_lhc
+  combine: any
+  name: Visa Infinite Luxury Hotel Collection
+- id: program:wyndham_points_no_expiration
+  combine: any
+  name: Wyndham Rewards points do not expire while the card is open
+- id: protection:baggage_delay
+  combine: max
+  name: Baggage delay
+- id: protection:cell_phone
+  combine: max
+  name: Cell phone protection
+- id: protection:emergency_evacuation
+  combine: max
+  name: Emergency evacuation and transport
+- id: protection:extended_warranty
+  combine: max
+  name: Extended warranty
+- id: protection:lost_luggage
+  combine: max
+  name: Lost or damaged luggage
+- id: protection:price_protection
+  combine: max
+  name: Price protection
+- id: protection:purchase
+  combine: max
+  name: Purchase protection
+- id: protection:rental_cdw
+  combine: primary_then_excess
+  name: Rental car collision damage
+- id: protection:return
+  combine: max
+  name: Return protection
+- id: protection:roadside
+  combine: max
+  name: Roadside assistance
+- id: protection:travel_accident
+  combine: max
+  name: Travel accident insurance
+- id: protection:travel_medical
+  combine: max
+  name: Emergency medical and dental while traveling
+- id: protection:trip_cancellation
+  combine: max
+  name: Trip cancellation and interruption
+- id: protection:trip_delay
+  combine: max
+  name: Trip delay
+- id: redemption:chase_points_boost
+  combine: max
+- id: redemption:pay_with_points_boost
+  combine: max
+  name: Better rate when paying with points
+- id: redemption:points_rebate
+  combine: max
+  name: Points refunded on certain redemptions
+- id: redemption:travel_rebate
+  combine: max
+  name: Points back on travel redemptions
+- id: seat_selection:southwest
+  combine: any
+  name: Complimentary seat selection at booking on Southwest
+- id: status:alaska
+  combine: max
+  attribute_rules:
+    tier: max
+  tiers:
+  - member
+  - silver
+  - gold
+  - platinum
+  - titanium
+- id: status:american
+  combine: max
+  attribute_rules:
+    tier: max
+  tiers:
+  - member
+  - gold
+  - platinum
+  - platinum_pro
+  - executive_platinum
+- id: status:avis
+  combine: max
+  attribute_rules:
+    tier: max
+  tiers:
+  - preferred
+  - preferred_plus
+  - presidents_club
+- id: status:bilt
+  combine: max
+  attribute_rules:
+    tier: max
+  tiers:
+  - blue
+  - silver
+  - gold
+  - platinum
+  name: Bilt Rewards elite status
+- id: status:caesars
+  combine: max
+  attribute_rules:
+    tier: max
+  tiers:
+  - gold
+  - platinum
+  - diamond
+  - seven_stars
+- id: status:delta
+  combine: max
+  attribute_rules:
+    tier: max
+  tiers:
+  - member
+  - silver
+  - gold
+  - platinum
+  - diamond
+- id: status:hertz
+  combine: max
+  attribute_rules:
+    tier: max
+  tiers:
+  - gold
+  - five_star
+  - presidents_circle
+- id: status:hilton
+  combine: max
+  attribute_rules:
+    tier: max
+  tiers:
+  - member
+  - silver
+  - gold
+  - diamond
+- id: status:hyatt
+  combine: max
+  attribute_rules:
+    tier: max
+  tiers:
+  - member
+  - discoverist
+  - explorist
+  - globalist
+- id: status:ihg
+  combine: max
+  attribute_rules:
+    tier: max
+  tiers:
+  - club
+  - silver
+  - gold
+  - platinum
+  - diamond
+- id: status:lhw
+  combine: max
+  attribute_rules:
+    tier: max
+  tiers:
+  - club
+  - sterling
+- id: status:marriott
+  combine: max
+  attribute_rules:
+    tier: max
+  tiers:
+  - member
+  - silver
+  - gold
+  - platinum
+  - titanium
+  - ambassador
+- id: status:mgm
+  combine: max
+  attribute_rules:
+    tier: max
+  tiers:
+  - sapphire
+  - pearl
+  - gold
+  - platinum
+  - noir
+- id: status:national
+  combine: max
+  attribute_rules:
+    tier: max
+  tiers:
+  - emerald_club
+  - executive
+  - executive_elite
+- id: status:omni
+  combine: max
+  attribute_rules:
+    tier: max
+  tiers:
+  - member
+  - insider
+  - champion
+  - icon
+- id: status:sixt
+  combine: max
+  attribute_rules:
+    tier: max
+  tiers:
+  - silver
+  - gold
+  - platinum
+  - diamond
+- id: status:southwest
+  combine: max
+  attribute_rules:
+    tier: max
+  tiers:
+  - member
+  - a_list
+  - a_list_preferred
+- id: status:united
+  combine: max
+  attribute_rules:
+    tier: max
+  tiers:
+  - member
+  - silver
+  - gold
+  - platinum
+  - 1k
+- id: status:wyndham
+  combine: max
+  attribute_rules:
+    tier: max
+  tiers:
+  - blue
+  - gold
+  - platinum
+  - diamond
+- id: status_credit:alaska
+  combine: sum
+  name: Status-qualifying credit with Alaska from card spend or a card benefit
+- id: status_credit:american
+  combine: sum
+  name: Status-qualifying credit with American from card spend or a card benefit
+- id: status_credit:delta
+  combine: sum
+  name: Status-qualifying credit with Delta from card spend or a card benefit
+- id: status_credit:hilton
+  combine: sum
+  name: Elite night or status credit with Hilton
+- id: status_credit:hyatt
+  combine: sum
+  name: Elite night or status credit with Hyatt
+- id: status_credit:ihg
+  combine: sum
+  name: Elite night or status credit with Ihg
+- id: status_credit:jetblue
+  combine: sum
+  name: Status-qualifying credit with Jetblue from card spend or a card benefit
+- id: status_credit:marriott
+  combine: sum
+  name: Elite night or status credit with Marriott
+- id: status_credit:southwest
+  combine: sum
+  name: Status-qualifying credit with Southwest from card spend or a card benefit
+- id: status_credit:united
+  combine: sum
+  name: Status-qualifying credit with United from card spend or a card benefit
+- id: upgrade_priority:delta
+  combine: any
+  name: Complimentary upgrade eligibility or priority on Delta
+  description: Card-based placement on the complimentary upgrade list; keys are upgrade_priority:<airline>.
+- id: upgrade_priority:southwest
+  combine: any
+  name: Complimentary upgrade eligibility or priority on Southwest
+  description: Card-based upgrades such as Extra Legroom seats; keys are upgrade_priority:<airline>.

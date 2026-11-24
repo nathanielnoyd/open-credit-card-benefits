@@ -1,0 +1,29 @@
+id: us.chase.freedom-unlimited
+issuer_id: us.chase
+name: Chase Freedom Unlimited
+summary: "A no-annual-fee Chase card earning 5x on Chase Travel, 3x on dining and drugstores and 1.5x on everything else, with DashPass, a quarterly DoorDash credit and purchase, warranty and trip cancellation protection."
+network: visa
+segment: personal
+tier: no_fee
+family: chase-ultimate-rewards
+earns: pts:chase_ur
+open_to_applicants: true
+url: https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited
+aliases:
+- Freedom Unlimited
+- CFU
+fee_posting:
+  anchor: account_open
+notes: Visa Signature. Charges a 3% foreign transaction fee. Earns Ultimate Rewards points sold as cash back; points transfer to partners only when combined with a Sapphire Preferred, Sapphire Reserve
+  or Ink Business Preferred.
+provenance:
+  sources:
+  - url: https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-freedom-unlimited/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.8"
+  last_reviewed: "2026-11-13"

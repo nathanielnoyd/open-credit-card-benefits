@@ -1,0 +1,20 @@
+id: us.chase.ritz-carlton/evacuation
+card_id: us.chase.ritz-carlton
+kind: protection
+name: Emergency evacuation and transportation
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ritz-carlton@2024-07-01
+  summary: "Up to $100,000 for emergency evacuation and transportation on trips paid with the card at least 100 miles from home."
+  grants:
+  - entitlement: protection:emergency_evacuation
+  coverage:
+    per_person:
+      amount: 10000000
+      currency: USD
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Up to $100,000 for trips of 100 miles or more from home.

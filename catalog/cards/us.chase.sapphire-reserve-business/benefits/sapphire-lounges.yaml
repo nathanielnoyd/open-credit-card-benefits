@@ -1,0 +1,18 @@
+id: us.chase.sapphire-reserve-business/sapphire-lounges
+card_id: us.chase.sapphire-reserve-business
+kind: access
+name: Chase Sapphire Lounges
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: Unlimited visits with 2 guests to Chase Sapphire Lounges for the primary cardmember.
+  grants:
+  - entitlement: lounge_network:chase_sapphire
+    attributes:
+      guests: 2
+      visits: null
+  conditions: []
+  beneficiaries:
+  - primary
+  notes: Through the Priority Pass membership issued with the card; employees enter only as guests.

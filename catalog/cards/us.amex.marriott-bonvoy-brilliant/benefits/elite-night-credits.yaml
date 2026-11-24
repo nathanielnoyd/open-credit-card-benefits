@@ -1,0 +1,21 @@
+id: us.amex.marriott-bonvoy-brilliant/elite-night-credits
+card_id: us.amex.marriott-bonvoy-brilliant
+kind: anniversary
+name: 25 Elite Night Credits
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.marriott-bonvoy-brilliant@2024-01-01
+  summary: "25 Elite Night Credits toward Marriott Bonvoy status each calendar year; credits from two personal Marriott cards do not combine."
+  face_value: null
+  reward:
+    currency: pts:marriott_enc
+    points: 25
+  issued_on: calendar_year
+  beneficiaries:
+  - primary
+  machine_readable: false
+  notes: '25 Elite Night Credits each calendar year toward Marriott Bonvoy status. Marriott limits card night credits per member account: credits from one personal and one business Marriott card can combine, but not from two personal cards. The schema cannot express that rule.'
+  grants:
+  - entitlement: status_credit:marriott
+    stacking_confidence: '0.5'

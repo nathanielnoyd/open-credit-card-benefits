@@ -1,0 +1,17 @@
+id: us.capitalone.spark-cash-plus/roadside
+card_id: us.capitalone.spark-cash-plus
+kind: protection
+name: Roadside assistance
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.spark-cash-plus@2026-01-01
+  summary: "Roadside assistance dispatch for jump-starts, tire changes and towing, with services paid with the card at a pre-negotiated rate."
+  grants:
+  - entitlement: protection:roadside
+  conditions:
+  - type: paid_with_card
+  notes: Network roadside dispatch (jump-starts, tire changes, towing); services are generally charged at a pre-negotiated rate.
+  confidence: "0.6"
+  beneficiaries:
+  - primary

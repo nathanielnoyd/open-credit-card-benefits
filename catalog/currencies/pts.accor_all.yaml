@@ -1,0 +1,14 @@
+id: pts:accor_all
+name: Accor Live Limitless
+kind: hotel
+issuer: Accor
+url: https://all.accor.com/loyalty-program/
+expiry: Points expire 365 days after the last eligible earning activity.
+paths: []
+sources:
+  - url: https://all.accor.com/loyalty-program/
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

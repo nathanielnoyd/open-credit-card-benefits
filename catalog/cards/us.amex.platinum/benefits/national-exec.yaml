@@ -1,0 +1,31 @@
+id: us.amex.platinum/national-exec
+card_id: us.amex.platinum
+kind: status
+name: National Emerald Club Executive
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2024-01-01
+    summary: "National Car Rental Emerald Club Executive status after you enroll."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: status:national
+        combine: max
+        attributes:
+          tier: executive
+    conditions:
+      - type: enrollment_required
+    beneficiaries:
+      - primary
+      - authorized_user
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

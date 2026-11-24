@@ -1,0 +1,37 @@
+id: us.chase.ihg-premier/milestone-20k
+card_id: us.chase.ihg-premier
+kind: milestone
+name: 10,000 points and $100 credit after $20,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier@2024-01-01
+  summary: "10,000 IHG points and a $100 statement credit after you spend $20,000 on the card in a calendar year and make one more purchase."
+  threshold:
+    amount: 2000000
+    currency: USD
+  threshold_period: calendar_year
+  reward:
+    currency: pts:ihg_one
+    points: 10000
+  reward_cash:
+    amount: 10000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: milestone:us.chase.ihg-premier.20k
+  beneficiaries:
+  - primary
+  notes: Also required one more purchase after reaching $20,000.
+  sources:
+  - url: https://frequentmiler.com/?p=297051
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://onemileatatime.com/news/ihg-chase-credit-card-changes/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.chase.com/personal/credit-cards/ihg/premier/premier-protection
+    retrieved_at: '2026-11-13'
+    publisher: issuer

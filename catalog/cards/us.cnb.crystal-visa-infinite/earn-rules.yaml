@@ -1,0 +1,29 @@
+card_id: us.cnb.crystal-visa-infinite
+rules:
+- id: us.cnb.crystal-visa-infinite/travel-dining-3x
+  name: 3x on airlines, hotels, ground transportation and dining
+  categories:
+  - cat:travel.flights
+  - cat:travel.hotels
+  - cat:travel.car_rental
+  - cat:travel.rideshare
+  - cat:travel.transit
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.cnb.crystal-visa-infinite@2020-01-01
+    multiplier: "3"
+    notes: >-
+      Merchants coded by Visa as airlines, hotels, taxis and limousines (including Uber and Lyft), rental cars, trains,
+      buses, restaurants, and fast food and takeout. Superstores, warehouse clubs and discount stores earn 1x, as do
+      online and catalog purchases unless the merchant codes them correctly. No cap. Cruises and travel agencies are not
+      listed. Gas stations and groceries left the 3x list on January 1, 2020.
+- id: us.cnb.crystal-visa-infinite/base-1x
+  name: 1x everything else
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.cnb.crystal-visa-infinite@2020-01-01
+    multiplier: "1"
+    notes: PIN-based transactions, ATM withdrawals and cash advances earn no points.

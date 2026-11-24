@@ -1,0 +1,17 @@
+id: us.cnb.crystal-visa-infinite/extended-warranty
+card_id: us.cnb.crystal-visa-infinite
+kind: protection
+name: Extended warranty
+versions:
+- version: 1
+  change_type: added
+  release: us.cnb.crystal-visa-infinite@2020-01-01
+  summary: "Extends eligible manufacturer warranties on items bought with the card; the extension and limits are not confirmed."
+  grants:
+  - entitlement: protection:extended_warranty
+  conditions:
+  - type: paid_with_card
+  notes: Listed by name on the issuer page; amounts and terms are in the Visa guide to benefits, which was not reviewed.
+  confidence: "0.65"
+  beneficiaries:
+  - primary

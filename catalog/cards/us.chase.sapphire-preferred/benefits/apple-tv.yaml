@@ -1,0 +1,31 @@
+id: us.chase.sapphire-preferred/apple-tv
+card_id: us.chase.sapphire-preferred
+kind: membership
+name: Apple TV for a year
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-preferred@2026-06-15
+    summary: "A year of Apple TV at no cost when you activate by December 31, 2026; it may then renew at full price."
+    effective_from: "2026-06-15"
+    enroll_by: "2026-12-31"
+    face_value:
+      amount: 11900
+      currency: USD
+    period:
+      cadence: once
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: membership:apple_tv
+        combine: any
+    conditions: []
+    beneficiaries:
+      - primary
+    notes: May auto-renew at full price.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-preferred/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

@@ -1,0 +1,29 @@
+id: us.chase.sapphire-reserve-business/doordash-other
+card_id: us.chase.sapphire-reserve-business
+kind: statement_credit
+name: DoorDash grocery and retail credits
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: Two $10 DoorDash credits each month, $20 a month and $240 a year, for grocery, retail and other non-restaurant orders, with the card's
+    DashPass membership.
+  face_value:
+    amount: 24000
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 2000
+    per_transaction: 1000
+    max_transactions_per_period: 2
+  grants:
+  - entitlement: credit:doordash_nonrestaurant
+    stacking_confidence: '0.6'
+  conditions:
+  - type: enrollment_required
+    note: Requires the complimentary DashPass membership
+  beneficiaries:
+  - primary
+  notes: Applies to the order subtotal and expires monthly. End date not confirmed by sources.

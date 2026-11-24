@@ -1,0 +1,30 @@
+id: us.amex.gold/rental-cdw
+card_id: us.amex.gold
+kind: protection
+name: Rental car coverage
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.gold@2024-07-25
+  summary: "Secondary coverage of up to $50,000 for damage to or theft of a rental car paid with the card, for rentals of up to 30 consecutive days, with no liability coverage."
+  coverage:
+    priority: secondary
+    per_claim:
+      amount: 5000000
+      currency: USD
+    max_days: 30
+  grants:
+  - entitlement: protection:rental_cdw
+  conditions:
+  - type: paid_with_card
+  notes: Secondary to personal auto insurance; up to $50,000 per rental agreement for damage or theft, rentals up to 30 consecutive days;
+    no liability coverage; not available in Australia, Italy or New Zealand. Premium Car Rental Protection can be bought per rental.
+  sources:
+  - url: https://www.americanexpress.com/content/dam/amex/us/credit-cards/features-benefits/CRLDI-Benefit-Guide_371-396_EDT_2.20_REV_4.24_a11y3_040226.pdf
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://www.americanexpress.com/us/credit-cards/card/gold-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  beneficiaries:
+  - primary

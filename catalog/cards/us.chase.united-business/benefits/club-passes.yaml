@@ -1,0 +1,24 @@
+id: us.chase.united-business/club-passes
+card_id: us.chase.united-business
+kind: access
+name: Two United Club one-time passes
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-business@2024-01-01
+  summary: "Two United Club one-time passes each cardmember year, each admitting one person."
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    count: 2
+    unit:
+      unit: visit
+  grants:
+  - entitlement: lounge_network:united_club
+    attributes:
+      visits: 2
+  beneficiaries:
+  - primary
+  - guest
+  notes: Two one-time passes deposited after account opening and every 12 months. Each pass admits one person; passes cannot be sold or transferred for value.

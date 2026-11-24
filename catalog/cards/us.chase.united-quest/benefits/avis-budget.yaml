@@ -1,0 +1,33 @@
+id: us.chase.united-quest/avis-budget
+card_id: us.chase.united-quest
+kind: statement_credit
+name: Avis or Budget rental credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-quest@2025-03-24
+  summary: "$40 in United TravelBank cash on each of your first two Avis or Budget rentals of 2 days or more per cardmember year, booked through MileagePlus Travel and paid with the card, $80 a year."
+  face_value:
+    amount: 8000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    amount: 8000
+    per_transaction: 4000
+    max_transactions_per_period: 2
+  grants:
+  - entitlement: credit:avis_budget
+  conditions:
+  - type: booking_channel
+    channel: mileageplus_travel_cars
+    note: Booked at mileageplustravel.united.com
+  - type: paid_with_card
+  - type: min_nights
+    nights: 2
+    note: Rental of at least 2 days
+  beneficiaries:
+  - primary
+  notes: $40 in United TravelBank cash for each of the first two Avis or Budget rentals per anniversary year. Paid as TravelBank
+    cash.

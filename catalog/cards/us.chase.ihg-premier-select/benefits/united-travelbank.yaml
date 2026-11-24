@@ -1,0 +1,25 @@
+id: us.chase.ihg-premier-select/united-travelbank
+card_id: us.chase.ihg-premier-select
+kind: statement_credit
+name: United TravelBank cash
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier-select@2026-10-01
+  summary: "$25 in United TravelBank cash twice a year, $50 a year in total, usable only on United, after you register the card with TravelBank."
+  face_value:
+    amount: 5000
+    currency: USD
+  period:
+    cadence: semiannual
+    anchor: calendar
+  limit:
+    amount: 2500
+  grants:
+  - entitlement: credit:united_travel
+  conditions:
+  - type: enrollment_required
+    note: Register the card with United TravelBank using a MileagePlus account
+  beneficiaries:
+  - primary
+  notes: $25 deposited around January 5 (expires July 15) and around July 5 (expires January 15); usable only on United.

@@ -1,0 +1,34 @@
+id: us.chase.united-quest/instacart
+card_id: us.chase.united-quest
+kind: statement_credit
+name: Instacart credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-quest@2025-03-24
+  summary: "A $10 and a $5 Instacart credit each month on separate orders of $10 or more, $180 a year, after you activate Instacart+ with the card, through December 31, 2027."
+  face_value:
+    amount: 18000
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 1500
+    max_transactions_per_period: 2
+  effective_to: '2027-12-31'
+  grants:
+  - entitlement: credit:instacart
+  conditions:
+  - type: enrollment_required
+    note: Activate Instacart+ with the card
+  - type: merchant_in
+    merchants:
+    - instacart
+  - type: min_transaction
+    amount: 1000
+    currency: USD
+    note: Each credit needs a separate order of $10 or more
+  beneficiaries:
+  - primary
+  notes: A $10 and a $5 credit each month, one per order; do not roll over. Ends December 31, 2027.

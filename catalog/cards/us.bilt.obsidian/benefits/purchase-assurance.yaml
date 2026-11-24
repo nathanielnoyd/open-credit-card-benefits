@@ -1,0 +1,30 @@
+id: us.bilt.obsidian/purchase-assurance
+card_id: us.bilt.obsidian
+kind: protection
+name: Purchase assurance
+versions:
+- version: 1
+  change_type: added
+  release: us.bilt.obsidian@2026-02-07
+  summary: "Covers damage or theft of items bought with the card within 90 days of purchase, up to $1,000 per claim and $50,000 per 12 months, secondary to other insurance."
+  grants:
+  - entitlement: protection:purchase
+  coverage:
+    per_claim:
+      amount: 100000
+      currency: USD
+    per_period:
+      amount: 5000000
+      currency: USD
+    window_days: 90
+    priority: secondary
+  conditions:
+  - type: paid_with_card
+  notes: Damage or theft within 90 days of purchase; $50,000 per cardholder account per 12 months.
+  sources:
+  - url: https://www.bilt.com/terms/obsidian-card-guide-to-benefits
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  face_value: null
+  beneficiaries:
+  - primary

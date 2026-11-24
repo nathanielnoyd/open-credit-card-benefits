@@ -1,0 +1,19 @@
+id: us.bilt.mastercard/trip-delay
+card_id: us.bilt.mastercard
+kind: protection
+name: Trip delay reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.bilt.mastercard@2025-01-01
+  summary: "Covers expenses when a trip paid with the card is delayed 6 hours or more."
+  grants:
+  - entitlement: protection:trip_delay
+  coverage:
+    waiting_hours: 6
+  conditions:
+  - type: paid_with_card
+  notes: Delays of 6+ hours; reported as up to $200 a day and $1,800 in total.
+  face_value: null
+  beneficiaries:
+  - primary

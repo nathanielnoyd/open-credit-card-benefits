@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nathanielnoyd.github.io/open-credit-card-benefits/schema/0.3/currency.schema.json",
+  "title": "OCCB points currency with redemption paths",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "kind",
+    "sources"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/currency_id"
+    },
+    "name": {
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "transferable",
+        "fixed_value",
+        "cashback",
+        "cobrand",
+        "airline",
+        "hotel",
+        "status_credit"
+      ],
+      "description": "airline and hotel are loyalty programs that bank points can transfer into; status_credit counts toward elite status and has no redemption value"
+    },
+    "expiry": {
+      "type": "string"
+    },
+    "pooling": {
+      "type": "object"
+    },
+    "paths": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "kind": {
+            "enum": [
+              "cash",
+              "statement_credit",
+              "portal",
+              "pay_with_points",
+              "gift_card",
+              "transfer",
+              "deposit"
+            ]
+          },
+          "rate": {
+            "$ref": "common.schema.json#/$defs/decimal"
+          },
+          "rate_min": {
+            "$ref": "common.schema.json#/$defs/decimal"
+          },
+          "rate_max": {
+            "$ref": "common.schema.json#/$defs/decimal"
+          },
+          "rate_expected": {
+            "$ref": "common.schema.json#/$defs/decimal"
+          },
+          "to": {
+            "$ref": "common.schema.json#/$defs/currency_id"
+          },
+          "ratio": {
+            "$ref": "common.schema.json#/$defs/ratio"
+          },
+          "min_increment": {
+            "type": "integer"
+          },
+          "transfer_days": {
+            "type": "integer"
+          },
+          "requires": {
+            "$ref": "common.schema.json#/$defs/conditions"
+          },
+          "applies_to_lots": {
+            "type": "object"
+          },
+          "effective_from": {
+            "$ref": "common.schema.json#/$defs/date"
+          },
+          "effective_to": {
+            "$ref": "common.schema.json#/$defs/date"
+          },
+          "notes": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "if": {
+          "properties": {
+            "kind": {
+              "const": "transfer"
+            }
+          }
+        },
+        "then": {
+          "required": [
+            "to",
+            "ratio"
+          ]
+        }
+      },
+      "default": []
+    },
+    "sources": {
+      "$ref": "common.schema.json#/$defs/sources"
+    },
+    "issuer": {
+      "type": "string",
+      "description": "Who runs the program"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "cents_per_point": {
+      "$ref": "common.schema.json#/$defs/decimal",
+      "description": "cashback and fixed_value: the fixed value of one point"
+    }
+  },
+  "additionalProperties": false,
+  "patternProperties": {
+    "^x-": {}
+  }
+}

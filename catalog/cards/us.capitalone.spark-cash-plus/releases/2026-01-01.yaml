@@ -1,0 +1,27 @@
+id: us.capitalone.spark-cash-plus@2026-01-01
+card_id: us.capitalone.spark-cash-plus
+kind: baseline
+effective_for_new: "2026-01-01"
+notes: Current terms as observed on 2026-11-13, which reviews report unchanged through 2026. The date marks when these terms are known to have
+  applied, not when they began; earlier history (the 5% portal rate was added after launch) is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 15000
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.capitalone.spark-cash-plus/c1-travel-5pct
+  version: 1
+- target: earn_rule:us.capitalone.spark-cash-plus/base-2pct
+  version: 1
+- target: benefit:us.capitalone.spark-cash-plus/fee-refund
+  version: 1
+- target: benefit:us.capitalone.spark-cash-plus/no-fx
+  version: 1
+- target: benefit:us.capitalone.spark-cash-plus/extended-warranty
+  version: 1
+- target: benefit:us.capitalone.spark-cash-plus/roadside
+  version: 1

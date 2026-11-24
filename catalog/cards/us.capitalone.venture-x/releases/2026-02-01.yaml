@@ -1,0 +1,28 @@
+id: us.capitalone.venture-x@2026-02-01
+card_id: us.capitalone.venture-x
+kind: change
+first_seen_on: "2025-06-04"
+effective_for_new: "2026-02-01"
+notes: >-
+  Lounge changes announced by email to cardholders in early June 2025 (exact date not confirmed) and effective February 1, 2026
+  for everyone: no free Priority Pass guests, Capital One Lounge guests only after $75,000 of calendar-year spend, and authorized
+  users lose lounge access unless the primary pays $125 a year for each. Authorized user cards themselves stay free. Capital One
+  Landings (LGA, DCA) are included from this release.
+changes:
+- target: benefit:us.capitalone.venture-x/capital-one-lounges
+  version: 2
+- target: benefit:us.capitalone.venture-x/priority-pass
+  version: 2
+transition:
+- applies_to:
+  - benefit:us.capitalone.venture-x/capital-one-lounges
+  - benefit:us.capitalone.venture-x/priority-pass
+  "on": "2026-02-01"
+sources:
+- url: https://upgradedpoints.com/news/capital-one-venture-x-lounge-access-changes/
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://thepointsguy.com/credit-cards/capital-one-venture-x
+  retrieved_at: "2026-11-13"
+  publisher: review
+confidence: "0.85"

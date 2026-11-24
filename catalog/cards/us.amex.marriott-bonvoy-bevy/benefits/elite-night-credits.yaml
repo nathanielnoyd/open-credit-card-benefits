@@ -1,0 +1,26 @@
+id: us.amex.marriott-bonvoy-bevy/elite-night-credits
+card_id: us.amex.marriott-bonvoy-bevy
+kind: anniversary
+name: 15 Elite Night Credits
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.marriott-bonvoy-bevy@2024-01-01
+  summary: "15 Elite Night Credits toward Marriott Bonvoy status each calendar year; credits from two personal Marriott cards do not combine."
+  face_value: null
+  reward:
+    currency: pts:marriott_enc
+    points: 15
+  issued_on: calendar_year
+  period:
+    cadence: annual
+    anchor: calendar
+  beneficiaries:
+  - primary
+  machine_readable: false
+  notes: '15 Elite Night Credits each calendar year toward Marriott Bonvoy status (not toward award nights). Marriott limits card night credits per member account to one personal and one business Marriott card, so these stack with a business card such as the Marriott Bonvoy Business but not with a second personal card such as the Brilliant or Boundless. The schema cannot express that rule.'
+  grants:
+  - entitlement: status_credit:marriott
+    stacking_confidence: '0.5'
+    attributes:
+      nights: 15

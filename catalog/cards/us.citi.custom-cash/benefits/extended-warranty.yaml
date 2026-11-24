@@ -1,0 +1,25 @@
+id: us.citi.custom-cash/extended-warranty
+card_id: us.citi.custom-cash
+kind: protection
+name: Extended warranty
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.custom-cash@2025-05-18
+  summary: "Doubles the original warranty on items paid with the card, adding up to 2 years, with coverage up to $10,000 per item."
+  effective_from: "2024-11-17"
+  coverage:
+    extends_years: 2
+    per_item: { amount: 1000000, currency: USD }
+  grants:
+  - entitlement: protection:extended_warranty
+  conditions:
+  - type: paid_with_card
+  notes: >-
+    Restored November 17, 2024. Doubles the original manufacturer or store warranty, adding at most 24 months; up to the lesser
+    of the price paid or $10,000. extends_years: 2 is the maximum, not the typical extension.
+  sources:
+  - { url: https://milestalk.com/citi-double-cash-card-regains-extended-warranty, retrieved_at: "2026-11-13", publisher: review }
+  - { url: https://frequentmiler.com/citi-adds-24-month-extended-warranty-to-double-cash-and-custom-cash/, retrieved_at: "2026-11-13", publisher: review }
+  confidence: "0.7"
+  beneficiaries: [primary]

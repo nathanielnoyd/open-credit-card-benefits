@@ -1,0 +1,55 @@
+{
+  "occb": "0.3",
+  "people": [
+    {
+      "id": "p1"
+    }
+  ],
+  "cards": [
+    {
+      "id": "w-dres",
+      "card_id": "us.amex.delta-reserve",
+      "holder": "p1",
+      "opened_on": "2024-06-01",
+      "status": "open"
+    },
+    {
+      "id": "w-plat",
+      "card_id": "us.amex.platinum",
+      "holder": "p1",
+      "opened_on": "2024-06-01",
+      "status": "open"
+    }
+  ],
+  "spend_profile": {
+    "as_of": "2026-11-13",
+    "currency": "USD",
+    "amounts": {
+      "cat:travel.flights.direct.dl": 800000,
+      "cat:dining": 500000,
+      "cat:travel.hotels.direct": 300000,
+      "cat:all": 3000000
+    }
+  },
+  "finance": {
+    "discount_rate": "0.045",
+    "holding_period_months": 12,
+    "horizon_months": 12,
+    "include_offers": false
+  },
+  "redemption_mix": {
+    "pts:amex_mr": {
+      "transfer:pts:delta_skymiles": "0.5"
+    }
+  },
+  "valuations": [
+    {
+      "currency": "pts:delta_mqd",
+      "cpp": "8",
+      "method": "target",
+      "scope": "user",
+      "source": "self: chasing Delta Platinum Medallion",
+      "as_of": "2026-11-13"
+    }
+  ]
+}

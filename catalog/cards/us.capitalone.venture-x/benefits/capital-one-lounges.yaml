@@ -1,0 +1,64 @@
+id: us.capitalone.venture-x/capital-one-lounges
+card_id: us.capitalone.venture-x
+kind: access
+name: Capital One Lounges and Landings
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x@2025-03-01
+  summary: "Unlimited Capital One Lounge visits on the day of a flight with two free guests per visit, for you and authorized users."
+  grants:
+  - entitlement: lounge_network:capital_one_lounge
+    attributes:
+      guests: 2
+  conditions:
+  - type: same_day_flight
+  notes: Unlimited visits with two complimentary guests per visit; authorized users had their own complimentary access with two guests.
+  beneficiaries:
+  - primary
+  - authorized_user
+  sources:
+  - url: https://upgradedpoints.com/news/capital-one-venture-x-lounge-access-changes/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  confidence: "0.75"
+- version: 2
+  supersedes: 1
+  change_type: terms_changed
+  release: us.capitalone.venture-x@2026-02-01
+  summary: "Unlimited Capital One Lounge and Landing visits on the day of a flight for the primary cardholder; after $75,000 in calendar-year spend, two free guests at Lounges and one at Landings."
+  grants:
+  - entitlement: lounge_network:capital_one_lounge
+    value_share: "0.5"
+    attributes:
+      guests: 0
+  - entitlement: lounge_network:capital_one_landing
+    value_share: "0.5"
+    attributes:
+      guests: 0
+  conditions:
+  - type: same_day_flight
+  unlocks:
+  - when:
+    - type: spend_gte
+      amount: 7500000
+      currency: USD
+      period: calendar_year
+    set:
+      grants[0].attributes.guests: 2
+      grants[1].attributes.guests: 1
+  notes: >-
+    Unlimited visits for the primary cardholder. Guests pay $45 per adult and $25 per child 17 and under (under 2 free) unless the
+    cardholder spent $75,000 in a calendar year, which brings two free guests at Lounges and one at Landings for the rest of that year
+    and all of the next (2026 access was based on 2025 spend). Authorized users get access only if the primary pays $125 a year for
+    each of them, and they cannot bring free guests.
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://upgradedpoints.com/news/capital-one-venture-x-lounge-access-changes/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://upgradedpoints.com/news/venture-x-authorized-users-worth-it-2026/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  confidence: "0.8"

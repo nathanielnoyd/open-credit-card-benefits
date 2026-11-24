@@ -1,0 +1,62 @@
+id: us.amex.delta-platinum@2025-02-01
+card_id: us.amex.delta-platinum
+kind: baseline
+effective_for_new: '2025-02-01'
+notes: Terms in force after the February 1, 2025 Delta changes (MQD Headstart and the Reserve's Sky Club visit limits took
+  effect in early 2025; fees and the Resy, rideshare and Delta Stays credits date from the February 2024 refresh). Earlier
+  history is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 35000
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.amex.delta-platinum/delta-3x
+  version: 1
+- target: earn_rule:us.amex.delta-platinum/hotels-3x
+  version: 1
+- target: earn_rule:us.amex.delta-platinum/dining-2x
+  version: 1
+- target: earn_rule:us.amex.delta-platinum/supermarkets-2x
+  version: 1
+- target: earn_rule:us.amex.delta-platinum/base-1x
+  version: 1
+- target: earn_rule:us.amex.delta-platinum/mqd-boost
+  version: 1
+- target: benefit:us.amex.delta-platinum/no-fx
+  version: 1
+- target: benefit:us.amex.delta-platinum/first-checked-bag
+  version: 1
+- target: benefit:us.amex.delta-platinum/priority-boarding
+  version: 1
+- target: benefit:us.amex.delta-platinum/inflight-discount
+  version: 1
+- target: benefit:us.amex.delta-platinum/award-discount
+  version: 1
+- target: benefit:us.amex.delta-platinum/rental-car
+  version: 1
+- target: benefit:us.amex.delta-platinum/extended-warranty
+  version: 1
+- target: benefit:us.amex.delta-platinum/mqd-headstart
+  version: 1
+- target: benefit:us.amex.delta-platinum/companion-certificate
+  version: 1
+- target: benefit:us.amex.delta-platinum/trusted-traveler
+  version: 1
+- target: benefit:us.amex.delta-platinum/resy
+  version: 1
+- target: benefit:us.amex.delta-platinum/rideshare
+  version: 1
+- target: benefit:us.amex.delta-platinum/delta-stays
+  version: 1
+- target: benefit:us.amex.delta-platinum/trip-delay
+  version: 1
+- target: benefit:us.amex.delta-platinum/baggage
+  version: 1
+- target: benefit:us.amex.delta-platinum/cell-phone
+  version: 1
+- target: benefit:us.amex.delta-platinum/purchase-protection
+  version: 1

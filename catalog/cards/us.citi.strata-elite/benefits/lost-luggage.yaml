@@ -1,0 +1,18 @@
+id: us.citi.strata-elite/lost-luggage
+card_id: us.citi.strata-elite
+kind: protection
+name: Lost or damaged luggage
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.strata-elite@2025-07-27
+  summary: "Covers up to $5,000 per trip ($2,000 for New York residents) for lost or damaged luggage when the fare is paid with the card."
+  coverage:
+    per_trip: { amount: 500000, currency: USD }
+  grants:
+  - entitlement: protection:lost_luggage
+  conditions:
+  - type: paid_with_card
+  beneficiaries: [primary, authorized_user]
+  notes: Up to $5,000 per trip ($2,000 for New York residents); fare paid with the card or its ThankYou points.
+  confidence: "0.75"

@@ -1,0 +1,38 @@
+id: us.amex.business-platinum/delta-sky-club
+card_id: us.amex.business-platinum
+kind: access
+name: Delta Sky Club
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-platinum@2025-07-01
+    summary: "10 Delta Sky Club visits a year (February 1 to January 31) when you fly Delta the same day, excluding Basic Economy; visits within 24 hours count as one."
+    period:
+      cadence: annual
+      anchor: fixed_date
+      anchor_month: 2
+      anchor_day: 1
+    limit:
+      count: 10
+      unit:
+        unit: visit
+        window_hours: 24
+    grants:
+      - entitlement: lounge_network:delta_sky_club
+        attributes:
+          visits: 10
+    conditions:
+      - type: same_day_flight
+        carrier:
+          - DL
+      - type: fare_class_not_in
+        classes:
+          - delta_basic
+    beneficiaries:
+      - primary
+      - authorized_user
+    notes: 10 visits a year (February 1 to January 31) on U.S.-issued cards; visits within 24 hours count as one.
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-business-platinum-card/
+        retrieved_at: "2026-11-13"
+        publisher: review

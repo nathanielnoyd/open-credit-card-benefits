@@ -1,0 +1,14 @@
+id: pts:singapore_krisflyer
+name: Singapore Airlines KrisFlyer
+kind: airline
+issuer: Singapore Airlines
+url: https://www.singaporeair.com/en_UK/us/ppsclub-krisflyer/
+expiry: "Fixed term: miles expire at the end of the month 3 years after the month earned."
+paths: []
+sources:
+  - url: https://www.singaporeair.com/en_UK/us/ppsclub-krisflyer/
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

@@ -1,0 +1,14 @@
+id: pts:aeroplan
+name: Air Canada Aeroplan
+kind: airline
+issuer: Air Canada
+url: https://www.aircanada.com/aeroplan
+expiry: Points expire after 18 months of inactivity; expiry is paused until November 30, 2026.
+paths: []
+sources:
+  - url: https://www.aircanada.com/aeroplan
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://www.withautopilot.com/blog/do-airline-miles-expire
+    retrieved_at: "2026-11-13"
+    publisher: review

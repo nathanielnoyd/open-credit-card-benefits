@@ -1,0 +1,14 @@
+id: us.amex.business-platinum@2026-10-01
+card_id: us.amex.business-platinum
+kind: change
+first_seen_on: "2026-11-13"
+effective_for_new: "2026-10-01"
+notes: Lufthansa lounge access removed.
+changes:
+  - target: benefit:us.amex.business-platinum/lufthansa
+    change_type: retired
+sources:
+  - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-business-platinum-card/
+    retrieved_at: "2026-11-13"
+    publisher: review
+confidence: "0.7"

@@ -1,0 +1,20 @@
+id: us.amex.marriott-bonvoy-bevy/stay-bonus
+card_id: us.amex.marriott-bonvoy-bevy
+kind: other
+name: 1,000 bonus points per stay
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.marriott-bonvoy-bevy@2024-01-01
+  summary: "1,000 bonus Marriott Bonvoy points for each paid eligible stay booked directly with Marriott and charged to the card."
+  face_value: null
+  conditions:
+  - type: booking_channel
+    channel: marriott_direct
+    note: Book directly with Marriott; stays booked through online travel agencies do not qualify
+  beneficiaries:
+  - primary
+  machine_readable: false
+  notes: 1,000 bonus points per paid eligible stay at hotels participating in Marriott Bonvoy, booked directly with Marriott. No field expresses a fixed points bonus per stay.
+  grants:
+  - entitlement: earn_boost:us.amex.marriott-bonvoy-bevy.stay-bonus

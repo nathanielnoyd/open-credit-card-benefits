@@ -1,0 +1,19 @@
+id: us.usbank.altitude-reserve/no-fx
+card_id: us.usbank.altitude-reserve
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.usbank.altitude-reserve@2024-11-11
+  summary: "No foreign transaction fees on purchases abroad."
+  waives: foreign_transaction_fee
+  grants:
+  - entitlement: fee_waiver:foreign_transaction
+  beneficiaries:
+  - primary
+  - authorized_user
+  sources:
+  - url: https://thepointsguy.com/credit-cards/reviews/it-pays-to-go-mobile-u-s-bank-altitude-reserve-visa-infinite-card-review/
+    retrieved_at: "2026-11-14"
+    publisher: review

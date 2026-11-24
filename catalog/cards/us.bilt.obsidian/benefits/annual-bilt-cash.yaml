@@ -1,0 +1,28 @@
+id: us.bilt.obsidian/annual-bilt-cash
+card_id: us.bilt.obsidian
+kind: statement_credit
+name: Annual Bilt Cash
+versions:
+- version: 1
+  change_type: added
+  release: us.bilt.obsidian@2027-01-01
+  summary: "$100 in Bilt Cash at account opening and each card anniversary; Bilt Cash expires 12 months after it is earned."
+  face_value:
+    amount: 10000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    amount: 10000
+  grants:
+  - entitlement: credit:bilt_cash
+  notes: $100 of Bilt Cash at account opening and each card anniversary, replacing the hotel credit for accounts opened from
+    2027-01-01 (and for existing holders from their first 2027 anniversary without a Legacy Election). Paid in Bilt Cash,
+    which expires 12 months after it is earned.
+  sources:
+  - url: https://www.bilt.com/terms/bilt-card-offer-terms
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  beneficiaries:
+  - primary

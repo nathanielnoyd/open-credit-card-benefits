@@ -1,0 +1,15 @@
+id: us.chase.southwest-priority@2026-04-02
+card_id: us.chase.southwest-priority
+kind: change
+effective_for_new: '2026-04-02'
+notes: 'Lyft bonus: 5x total points on Lyft app purchases through December 31, 2027.'
+changes:
+- target: earn_rule:us.chase.southwest-priority/lyft-5x
+  version: 1
+sources:
+- url: https://awardwallet.com/news/southwest-rapid-rewards/southwest-card-lyft-bonus-points/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://creditcards.chase.com/travel-credit-cards/southwest/priority
+  retrieved_at: '2026-11-13'
+  publisher: issuer

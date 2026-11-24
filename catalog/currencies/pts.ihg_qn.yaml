@@ -1,0 +1,11 @@
+id: pts:ihg_qn
+name: IHG One Rewards qualifying nights
+kind: status_credit
+issuer: IHG
+url: https://www.ihg.com/onerewards/content/us/en/elite-member-benefits
+expiry: Status-qualification credit; resets each calendar year.
+paths: []
+sources:
+  - url: https://www.ihg.com/onerewards/content/us/en/elite-member-benefits
+    retrieved_at: "2026-11-13"
+    publisher: partner

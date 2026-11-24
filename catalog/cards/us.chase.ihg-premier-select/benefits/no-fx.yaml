@@ -1,0 +1,15 @@
+id: us.chase.ihg-premier-select/no-fx
+card_id: us.chase.ihg-premier-select
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier-select@2026-10-01
+  summary: "No foreign transaction fees on purchases made outside the US."
+  waives: foreign_transaction_fee
+  grants:
+  - entitlement: fee_waiver:foreign_transaction
+  beneficiaries:
+  - primary
+  - authorized_user

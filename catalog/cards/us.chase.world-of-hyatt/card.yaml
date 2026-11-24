@@ -1,0 +1,26 @@
+id: us.chase.world-of-hyatt
+issuer_id: us.chase
+name: World of Hyatt Credit Card
+summary: "A $95-a-year Hyatt card earning 4x at Hyatt hotels and 2x on dining, airfare, transit and gyms, with a Category 1-4 free night each anniversary, Discoverist status and 5 elite night credits a year."
+network: visa
+segment: personal
+tier: mid
+family: chase-hyatt
+earns: pts:world_of_hyatt
+open_to_applicants: true
+url: https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card
+aliases:
+- Hyatt card
+- Chase World of Hyatt
+cobrand:
+  partner: World of Hyatt
+  program: pts:world_of_hyatt
+fee_posting:
+  anchor: account_open
+provenance:
+  sources:
+  - url: https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  verified_by: agent:occb-research
+  confidence: '0.8'

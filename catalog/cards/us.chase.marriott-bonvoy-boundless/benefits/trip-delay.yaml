@@ -1,0 +1,21 @@
+id: us.chase.marriott-bonvoy-boundless/trip-delay
+card_id: us.chase.marriott-bonvoy-boundless
+kind: protection
+name: Trip delay reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.marriott-bonvoy-boundless@2024-01-01
+  summary: "Covers up to $500 per person in meals and lodging when a trip paid with the card is delayed more than 12 hours."
+  grants:
+  - entitlement: protection:trip_delay
+  coverage:
+    per_person:
+      amount: 50000
+      currency: USD
+    waiting_hours: 12
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Delays over 12 hours or requiring an overnight stay.

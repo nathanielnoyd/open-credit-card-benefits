@@ -1,0 +1,22 @@
+id: us.chase.sapphire-reserve-business/trusted-traveler
+card_id: us.chase.sapphire-reserve-business
+kind: statement_credit
+name: Global Entry, TSA PreCheck or NEXUS credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: A statement credit of up to $120 every 4 years for a Global Entry, TSA PreCheck or NEXUS application fee charged to the card, for anyone.
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: every_n_years
+    anchor: calendar
+    n: 4
+  grants:
+  - entitlement: credit:trusted_traveler
+  conditions: []
+  beneficiaries:
+  - primary
+  notes: Direct application fees only.

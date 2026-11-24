@@ -1,0 +1,87 @@
+card_id: us.chase.ihg-business
+rules:
+- id: us.chase.ihg-business/ihg-10x
+  categories:
+  - cat:travel.hotels.direct.ihg
+  versions:
+  - version: 1
+    release: us.chase.ihg-business@2024-01-01
+    multiplier: '10'
+    notes: Card points at IHG hotels; IHG One Rewards membership and elite bonuses are earned separately.
+- id: us.chase.ihg-business/travel-5x
+  categories:
+  - cat:travel
+  versions:
+  - version: 1
+    release: us.chase.ihg-business@2024-01-01
+    multiplier: '5'
+  - version: 2
+    release: us.chase.ihg-business@2026-10-01
+    multiplier: '5'
+    effective_to: '2026-12-31'
+    notes: Kept for all cardmembers through December 31, 2026, then retired; direct airfare and car rentals keep 5x.
+- id: us.chase.ihg-business/office-supplies-5x
+  categories:
+  - cat:business.office_supplies
+  versions:
+  - version: 1
+    release: us.chase.ihg-business@2024-01-01
+    multiplier: '5'
+  - version: 2
+    release: us.chase.ihg-business@2026-10-01
+    multiplier: '5'
+    effective_to: '2026-12-31'
+    notes: Kept for all cardmembers through December 31, 2026, then 3x.
+- id: us.chase.ihg-business/dining-5x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.chase.ihg-business@2024-01-01
+    multiplier: '5'
+    notes: Includes takeout and eligible delivery.
+- id: us.chase.ihg-business/gas-5x
+  categories:
+  - cat:gas_ev.gas
+  versions:
+  - version: 1
+    release: us.chase.ihg-business@2024-01-01
+    multiplier: '5'
+- id: us.chase.ihg-business/advertising-5x
+  categories:
+  - cat:business.advertising
+  versions:
+  - version: 1
+    release: us.chase.ihg-business@2024-01-01
+    multiplier: '5'
+    notes: Social media and search engine advertising only.
+- id: us.chase.ihg-business/airfare-5x
+  categories:
+  - cat:travel.flights.direct
+  versions:
+  - version: 1
+    release: us.chase.ihg-business@2026-10-01
+    multiplier: '5'
+- id: us.chase.ihg-business/car-rental-5x
+  categories:
+  - cat:travel.car_rental
+  versions:
+  - version: 1
+    release: us.chase.ihg-business@2026-10-01
+    multiplier: '5'
+- id: us.chase.ihg-business/base-3x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.ihg-business@2024-01-01
+    multiplier: '3'
+- id: us.chase.ihg-business/elite-night-credits-spend
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.ihg-business@2026-10-01
+    multiplier: '0.0004'
+    currency: pts:ihg_qn
+    notes: 2 Elite Night Credits for every $5,000 spent; existing cardmembers from January 1, 2027.

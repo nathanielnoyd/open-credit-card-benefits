@@ -1,0 +1,23 @@
+id: us.bofa.premium-rewards/airline-incidentals
+card_id: us.bofa.premium-rewards
+kind: statement_credit
+name: Airline incidental credit
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards@2024-01-01
+  summary: "Up to $100 a calendar year in statement credits for airline incidental fees such as seat upgrades, checked bags and lounge day passes; tickets do not qualify."
+  face_value:
+    amount: 10000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 10000
+  grants:
+  - entitlement: credit:airline_incidentals
+  conditions: []
+  beneficiaries:
+  - primary
+  notes: Up to $100 a calendar year for seat upgrades, checked bags, change fees, in-flight services and airline lounge day fees billed separately from the ticket; applied automatically. Tickets, miles and gift cards do not qualify. The list of eligible U.S. carriers is not published.

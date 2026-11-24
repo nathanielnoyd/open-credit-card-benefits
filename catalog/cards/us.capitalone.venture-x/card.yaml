@@ -1,0 +1,29 @@
+id: us.capitalone.venture-x
+issuer_id: us.capitalone
+name: Capital One Venture X Rewards
+summary: "A $395-a-year Capital One card earning 10x on hotels and rental cars and 5x on flights through Capital One Travel and 2x elsewhere, with a $300 yearly Capital One Travel credit, 10,000 anniversary miles and Capital One Lounge and Priority Pass access."
+network: visa
+segment: personal
+tier: premium
+family: capital-one-miles
+earns: pts:capital_one_miles
+open_to_applicants: true
+url: https://www.capitalone.com/credit-cards/venture-x/
+aliases:
+- Venture X
+fee_posting:
+  anchor: account_open
+notes: Authorized user cards are free; lounge access for an authorized user costs $125 a year each, up to four.
+provenance:
+  sources:
+  - url: https://www.capitalone.com/credit-cards/venture-x/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://onemileatatime.com/reviews/credit-cards/capital-one/capital-one-venture-x-card/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.8"
+  last_reviewed: "2026-11-13"
+related:
+  - { card_id: us.capitalone.venture-x-business, relation: business_counterpart }

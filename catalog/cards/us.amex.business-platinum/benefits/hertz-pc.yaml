@@ -1,0 +1,21 @@
+id: us.amex.business-platinum/hertz-pc
+card_id: us.amex.business-platinum
+kind: status
+name: Hertz President's Circle
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-platinum@2025-07-01
+    summary: "Hertz President's Circle status while you hold the card; enrollment required."
+    grants:
+      - entitlement: status:hertz
+        attributes:
+          tier: presidents_circle
+    conditions:
+      - type: enrollment_required
+    beneficiaries:
+      - primary
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-business-platinum-card/
+        retrieved_at: "2026-11-13"
+        publisher: review

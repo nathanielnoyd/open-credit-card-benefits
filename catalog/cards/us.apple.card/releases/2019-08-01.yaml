@@ -1,0 +1,30 @@
+id: us.apple.card@2019-08-01
+card_id: us.apple.card
+kind: baseline
+effective_for_new: "2019-08-01"
+notes: Current terms (observed 2026-11-13) recorded as the baseline; Apple Card launched in August 2019 and the date approximates the launch month. The 3% partner list has changed several times since launch and its history is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 0
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.apple.card/apple-3pct
+  version: 1
+- target: earn_rule:us.apple.card/partners-3pct
+  version: 1
+- target: earn_rule:us.apple.card/apple-pay-2pct
+  version: 1
+- target: earn_rule:us.apple.card/base-1pct
+  version: 1
+- target: benefit:us.apple.card/no-fx
+  version: 1
+- target: benefit:us.apple.card/booking-travel-credits
+  version: 1
+- target: benefit:us.apple.card/uber-one-trial
+  version: 1
+- target: benefit:us.apple.card/hertz-perks
+  version: 1

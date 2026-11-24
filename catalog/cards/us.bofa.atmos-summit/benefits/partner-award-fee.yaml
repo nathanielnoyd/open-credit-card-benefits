@@ -1,0 +1,17 @@
+id: us.bofa.atmos-summit/partner-award-fee
+card_id: us.bofa.atmos-summit
+kind: fee_waiver
+name: Partner award booking fee waiver
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-summit@2026-11-14
+  summary: "No Atmos Rewards booking fee on partner airline award flights; taxes and carrier fees still apply."
+  face_value: null
+  grants:
+  - entitlement: fee_waiver:partner_award_booking_atmos
+  conditions: []
+  beneficiaries:
+  - primary
+  notes: Reviews disagree on the fee waived, $12.50 per person each way (Upgraded Points) or $20 per person (The Points Guy), so no amount is recorded.
+  confidence: "0.7"

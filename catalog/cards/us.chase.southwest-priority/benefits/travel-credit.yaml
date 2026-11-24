@@ -1,0 +1,26 @@
+id: us.chase.southwest-priority/travel-credit
+card_id: us.chase.southwest-priority
+kind: statement_credit
+name: $75 Southwest annual travel credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.southwest-priority@2024-01-01
+  summary: "$75 credit each cardmember anniversary year for Southwest purchases."
+  face_value:
+    amount: 7500
+    currency: USD
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    amount: 7500
+  grants:
+  - entitlement: credit:southwest_anniversary
+  conditions:
+  - type: merchant_in
+    merchants:
+    - southwest
+  beneficiaries:
+  - primary
+  notes: $75 credit each anniversary for Southwest purchases. Ended after December 31, 2025.

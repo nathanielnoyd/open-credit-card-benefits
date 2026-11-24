@@ -1,0 +1,19 @@
+id: us.wellsfargo.autograph-journey/card-exclusives
+card_id: us.wellsfargo.autograph-journey
+kind: program_access
+name: Autograph Card Exclusives
+versions:
+- version: 1
+  change_type: added
+  release: us.wellsfargo.autograph-journey@2024-03-01
+  summary: "Access to live event tickets and experiences through Autograph Card Exclusives, first come first served and subject to availability."
+  face_value: null
+  grants:
+  - entitlement: program:presale_tickets
+  beneficiaries:
+  - primary
+  notes: Access to live event tickets and experiences, first come first served and subject to availability.
+  sources:
+  - url: https://creditcards.wellsfargo.com/autograph-journey-visa-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer

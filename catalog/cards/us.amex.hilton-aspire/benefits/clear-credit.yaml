@@ -1,0 +1,22 @@
+id: us.amex.hilton-aspire/clear-credit
+card_id: us.amex.hilton-aspire
+kind: statement_credit
+name: CLEAR+ credit
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.hilton-aspire@2024-02-01
+  summary: "Up to $219 a calendar year in statement credits toward a CLEAR+ membership."
+  face_value:
+    amount: 21900
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 21900
+  beneficiaries:
+  - primary
+  notes: Up to $219 in statement credits per calendar year for a CLEAR+ membership paid with the card. The amount has followed the CLEAR+ list price; earlier amounts are not modeled.
+  grants:
+  - entitlement: membership:clear

@@ -1,0 +1,25 @@
+id: us.chase.united-explorer/checked-bag
+card_id: us.chase.united-explorer
+kind: fee_waiver
+name: First checked bag free on United
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-explorer@2024-01-01
+  summary: "First checked bag free on United flights for you and one companion on the same reservation when the ticket is paid with the card."
+  waives: checked_bag
+  count: 1
+  companions: 1
+  grants:
+  - entitlement: fee_waiver:checked_bag_united
+  conditions:
+  - type: paid_with_card
+    note: Ticket bought with the card (waived for the first 90 days); MileagePlus number on the reservation
+  - type: same_day_flight
+    carrier:
+    - UA
+    note: United and United Express flights
+  beneficiaries:
+  - primary
+  - companion
+  notes: First standard checked bag free for the primary cardmember and one companion on the same reservation.

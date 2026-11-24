@@ -1,0 +1,29 @@
+id: us.amex.hilton-aspire/flight-credit
+card_id: us.amex.hilton-aspire
+kind: statement_credit
+name: Flight credit
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.hilton-aspire@2024-02-01
+  summary: "Up to $50 each calendar quarter in statement credits on flights booked directly with an airline or through Amex Travel, $200 a year in total."
+  face_value:
+    amount: 20000
+    currency: USD
+  period:
+    cadence: quarterly
+    anchor: calendar
+  limit:
+    amount: 5000
+  conditions:
+  - type: any_of
+    conditions:
+    - type: booking_channel
+      channel: airline_direct
+    - type: booking_channel
+      channel: amex_travel
+  beneficiaries:
+  - primary
+  notes: Up to $50 in statement credits each calendar quarter on flight purchases made directly with an airline or through AmexTravel.com or the Amex Travel app.
+  grants:
+  - entitlement: credit:airline_purchase

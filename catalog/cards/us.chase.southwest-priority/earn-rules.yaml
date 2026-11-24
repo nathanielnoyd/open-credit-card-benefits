@@ -1,0 +1,86 @@
+card_id: us.chase.southwest-priority
+rules:
+- id: us.chase.southwest-priority/southwest
+  categories:
+  - cat:travel.flights.direct.wn
+  versions:
+  - version: 1
+    release: us.chase.southwest-priority@2024-01-01
+    multiplier: '3'
+    notes: 'Southwest purchases: flights, inflight, Southwest gift cards and Getaways packages.'
+  - version: 2
+    release: us.chase.southwest-priority@2025-07-24
+    multiplier: '4'
+    notes: 'Southwest purchases: flights, inflight, Southwest gift cards and Getaways packages. Southwest Cruises, Charters
+      and Cargo excluded.'
+- id: us.chase.southwest-priority/rr-partners-2x
+  categories:
+  - cat:travel.hotels
+  - cat:travel.car_rental
+  versions:
+  - version: 1
+    release: us.chase.southwest-priority@2024-01-01
+    multiplier: '2'
+    notes: Rapid Rewards hotel and car rental partners only, not all hotels and car rentals.
+- id: us.chase.southwest-priority/telecom-2x
+  categories:
+  - cat:telecom
+  - cat:utilities
+  versions:
+  - version: 1
+    release: us.chase.southwest-priority@2024-01-01
+    multiplier: '2'
+    notes: Internet, cable and phone services, and select streaming. Approximated with telecom and utilities.
+    confidence: '0.7'
+- id: us.chase.southwest-priority/gas-dining-2x
+  categories:
+  - cat:gas_ev.gas
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.chase.southwest-priority@2025-07-24
+    multiplier: '2'
+    notes: Gas stations and restaurants, no annual cap.
+- id: us.chase.southwest-priority/lyft-5x
+  categories:
+  - cat:travel.rideshare.lyft
+  versions:
+  - version: 1
+    release: us.chase.southwest-priority@2026-04-02
+    multiplier: '5'
+    effective_to: '2027-12-31'
+    notes: 5x total (4 bonus points on top of 1x) on qualifying Lyft purchases in the Lyft app through December 31, 2027.
+- id: us.chase.southwest-priority/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.southwest-priority@2024-01-01
+    multiplier: '1'
+- id: us.chase.southwest-priority/tqp
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.southwest-priority@2024-01-01
+    multiplier: '0.15'
+    currency: pts:southwest_cp_tqp
+    notes: 1,500 tier qualifying points toward A-List for every $10,000 in purchases, uncapped; awarded in blocks, approximated
+      as a linear rate.
+    confidence: '0.6'
+  - version: 2
+    release: us.chase.southwest-priority@2025-07-24
+    multiplier: '0.5'
+    currency: pts:southwest_cp_tqp
+    notes: 2,500 tier qualifying points toward A-List for every $5,000 in purchases a year, uncapped; awarded in blocks, approximated
+      as a linear rate.
+  - version: 3
+    release: us.chase.southwest-priority@2027-01-01
+    multiplier: '1'
+    currency: pts:southwest_cp_tqp
+    notes: 1 tier qualifying point per $1 of qualifying purchases, no cap, toward status and Milestone Rewards, including
+      Companion Pass trips.
+    sources:
+    - url: https://www.southwest.com/rapid-rewards/2027/credit-cards/
+      retrieved_at: '2026-11-13'
+      publisher: partner

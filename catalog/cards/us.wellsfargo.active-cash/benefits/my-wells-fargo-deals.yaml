@@ -1,0 +1,22 @@
+id: us.wellsfargo.active-cash/my-wells-fargo-deals
+card_id: us.wellsfargo.active-cash
+kind: program_access
+name: My Wells Fargo Deals
+versions:
+- version: 1
+  change_type: added
+  release: us.wellsfargo.active-cash@2021-07-01
+  summary: "Personalized merchant offers paid as account credits once you activate each deal in Wells Fargo Online."
+  face_value: null
+  grants:
+  - entitlement: program:cardmember_offers
+  conditions:
+  - type: enrollment_required
+    note: Each deal is activated in Wells Fargo Online
+  beneficiaries:
+  - primary
+  notes: Personalized merchant offers paid as account credits within 60 days.
+  sources:
+  - url: https://creditcards.wellsfargo.com/active-cash-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer

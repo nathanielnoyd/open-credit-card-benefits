@@ -1,0 +1,17 @@
+id: us.barclays.wyndham-earner-premier/insider
+card_id: us.barclays.wyndham-earner-premier
+kind: membership
+name: Wyndham Rewards Insider membership
+versions:
+- version: 1
+  change_type: added
+  release: us.barclays.wyndham-earner-premier@2026-06-17
+  summary: A complimentary Wyndham Rewards Insider subscription, valued at $95 a year, while the card is open.
+  face_value:
+    amount: 9500
+    currency: USD
+  grants:
+  - entitlement: membership:wyndham_insider
+  beneficiaries:
+  - primary
+  notes: Enrollment email arrives 2 to 4 weeks after approval; ends if the card is closed or downgraded.

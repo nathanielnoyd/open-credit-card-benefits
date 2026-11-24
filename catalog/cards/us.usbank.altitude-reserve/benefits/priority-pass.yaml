@@ -1,0 +1,31 @@
+id: us.usbank.altitude-reserve/priority-pass
+card_id: us.usbank.altitude-reserve
+kind: membership
+name: Priority Pass Select with 8 visits a year
+versions:
+- version: 1
+  change_type: added
+  release: us.usbank.altitude-reserve@2024-11-11
+  summary: "Priority Pass Select membership for the primary cardholder with 8 free visits a year, which guests also use up; further visits are paid."
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    count: 8
+    unit:
+      unit: visit
+  grants:
+  - entitlement: membership:priority_pass
+    attributes:
+      visits: 8
+      guests: 0
+  conditions:
+  - type: enrollment_required
+  notes: >-
+    Enrollment fee waived for one cardmember per account. Eight complimentary visits a year shared between the
+    cardholder and guests (bringing two guests uses three visits); after that up to $35 per person per visit. Whether
+    Priority Pass restaurants and experiences count as visits could not be confirmed. The reset date (membership or
+    cardmember year) is not stated in sources.
+  beneficiaries:
+  - primary
+  confidence: "0.7"

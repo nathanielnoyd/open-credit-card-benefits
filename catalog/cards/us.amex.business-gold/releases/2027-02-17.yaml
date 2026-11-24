@@ -1,0 +1,16 @@
+id: us.amex.business-gold@2027-02-17
+card_id: us.amex.business-gold
+kind: change
+first_seen_on: "2026-11-13"
+effective_for_new: "2027-02-17"
+notes: 4x advertising and wireless narrowed to named merchants.
+changes:
+  - target: earn_rule:us.amex.business-gold/top-two-4x
+    version: 2
+sources:
+  - url: https://www.doctorofcredit.com/american-express-business-gold-4x-ads-wireless-categories-to-be-narrowed/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://awardwallet.com/news/amex-membership-rewards/amex-business-gold-bonus-category-changes
+    retrieved_at: "2026-11-13"
+    publisher: review

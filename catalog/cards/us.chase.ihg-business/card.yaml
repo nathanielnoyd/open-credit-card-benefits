@@ -1,0 +1,45 @@
+id: us.chase.ihg-business
+issuer_id: us.chase
+name: IHG One Rewards Business Credit Card
+summary: "A $200-a-year IHG business card earning 10x at IHG hotels, 5x on dining, gas, online advertising, direct airfare and car rentals and 3x elsewhere, with an anniversary free night, Platinum status, 15 Elite Night Credits a year and $100 airline, Expensify and IHG dining credits."
+network: mastercard
+segment: business
+tier: mid
+family: chase-ihg
+earns: pts:ihg_one
+open_to_applicants: true
+url: https://creditcards.chase.com/business-credit-cards/IHG/business
+aliases:
+- IHG One Rewards Premier Business Credit Card
+- IHG Premier Business
+- IHG Business
+cobrand:
+  partner: IHG One Rewards
+  program: pts:ihg_one
+fee_posting:
+  anchor: account_open
+notes: Renamed from IHG One Rewards Premier Business in the October 2026 refresh. Employee cards have no annual fee. Points
+  bought from IHG at full price with the card are discounted at least 30% (20% before the refresh); not modeled.
+related:
+- card_id: us.chase.ihg-premier
+  relation: personal_counterpart
+provenance:
+  sources:
+  - url: https://creditcards.chase.com/business-credit-cards/IHG/business
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://www.chase.com/business/credit-cards/ihg/business
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://frequentmiler.com/all-the-existing-ihg-credit-cards-have-been-refreshed-here-are-the-changes/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://onemileatatime.com/news/ihg-chase-credit-card-changes/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://thepointsguy.com/news/ihg-credit-card-refresh-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.8'
+  last_reviewed: '2026-11-13'

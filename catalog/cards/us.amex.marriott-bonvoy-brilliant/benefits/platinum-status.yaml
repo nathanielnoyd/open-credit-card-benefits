@@ -1,0 +1,16 @@
+id: us.amex.marriott-bonvoy-brilliant/platinum-status
+card_id: us.amex.marriott-bonvoy-brilliant
+kind: status
+name: Marriott Bonvoy Platinum Elite status
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.marriott-bonvoy-brilliant@2024-01-01
+  summary: "Platinum Elite status with Marriott Bonvoy while you hold the card."
+  face_value: null
+  beneficiaries:
+  - primary
+  grants:
+  - entitlement: status:marriott
+    attributes:
+      tier: platinum

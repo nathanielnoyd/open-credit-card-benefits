@@ -1,0 +1,23 @@
+id: us.chase.southwest-priority/lost-luggage
+card_id: us.chase.southwest-priority
+kind: protection
+name: Lost luggage reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.southwest-priority@2024-01-01
+  summary: "Covers up to $3,000 per traveler for lost or damaged checked or carry-on bags when the trip is paid with the card."
+  coverage:
+    per_person:
+      amount: 300000
+      currency: USD
+  grants:
+  - entitlement: protection:lost_luggage
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  - household
+  notes: 'Up to $3,000 per covered traveler for lost or damaged checked or carry-on bags. New York residents: $2,000 per bag
+    and $10,000 per trip.'

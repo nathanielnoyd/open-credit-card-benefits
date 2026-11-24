@@ -1,0 +1,47 @@
+id: us.chase.freedom-flex@2026-01-01
+card_id: us.chase.freedom-flex
+kind: baseline
+effective_for_new: "2026-01-01"
+notes: Terms as known at the start of the 2026 bonus calendar, when the card still charged a 3% foreign transaction fee and carried cell phone protection. Earlier history is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 0
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.chase.freedom-flex/rotating-5x
+  version: 1
+- target: earn_rule:us.chase.freedom-flex/chase-travel-5x
+  version: 1
+- target: earn_rule:us.chase.freedom-flex/dining-3x
+  version: 1
+- target: earn_rule:us.chase.freedom-flex/drugstores-3x
+  version: 1
+- target: earn_rule:us.chase.freedom-flex/lyft-2x
+  version: 1
+- target: earn_rule:us.chase.freedom-flex/base-1x
+  version: 1
+- target: benefit:us.chase.freedom-flex/dashpass
+  version: 1
+- target: benefit:us.chase.freedom-flex/doordash-credit
+  version: 1
+- target: benefit:us.chase.freedom-flex/purchase-protection
+  version: 1
+- target: benefit:us.chase.freedom-flex/extended-warranty
+  version: 1
+- target: benefit:us.chase.freedom-flex/trip-cancel
+  version: 1
+- target: benefit:us.chase.freedom-flex/rental-cdw
+  version: 1
+- target: benefit:us.chase.freedom-flex/cell-phone
+  version: 1
+sources:
+- url: https://creditcards.chase.com/cash-back-credit-cards/freedom/flex
+  retrieved_at: "2026-11-13"
+  publisher: issuer
+- url: https://media.chase.com/news/chase-freedom-2026-q1-categories
+  retrieved_at: "2026-11-13"
+  publisher: issuer

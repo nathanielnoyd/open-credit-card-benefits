@@ -1,0 +1,54 @@
+id: us.amex.business-platinum/clear-credit
+card_id: us.amex.business-platinum
+kind: statement_credit
+name: CLEAR+ credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-platinum@2025-07-01
+    summary: "Up to $209 back each calendar year on a CLEAR+ membership; enrollment required."
+    face_value:
+      amount: 20900
+      currency: USD
+    period: &a1
+      cadence: annual
+      anchor: calendar
+    limit:
+      amount: 20900
+    grants:
+      - entitlement: membership:clear
+    conditions: &a2
+      - type: enrollment_required
+    beneficiaries: &a3
+      - primary
+    notes: Raised from $199 to $209 on July 1, 2025, matching the CLEAR+ price.
+    sources:
+      - url: https://www.doctorofcredit.com/american-express-refreshes-platinum-business-platinum-cards-895-fee-175k-200k-bonus-many-new-credits
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - &a4
+        url: https://thepointsguy.com/news/clear-membership-fee-hike-2026/
+        retrieved_at: "2026-11-13"
+        publisher: review
+    confidence: "0.8"
+  - version: 2
+    supersedes: 1
+    change_type: amount_changed
+    release: us.amex.business-platinum@2026-07-01
+    summary: "Up to $219 back each calendar year on a CLEAR+ membership; enrollment required."
+    face_value:
+      amount: 21900
+      currency: USD
+    period: *a1
+    limit:
+      amount: 21900
+    grants:
+      - entitlement: membership:clear
+    conditions: *a2
+    beneficiaries: *a3
+    notes: Matches the CLEAR+ price increase to $219.
+    sources:
+      - *a4
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-business-platinum-card/
+        retrieved_at: "2026-11-13"
+        publisher: review

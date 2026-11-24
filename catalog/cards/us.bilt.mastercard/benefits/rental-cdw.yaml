@@ -1,0 +1,19 @@
+id: us.bilt.mastercard/rental-cdw
+card_id: us.bilt.mastercard
+kind: protection
+name: MasterRental coverage
+versions:
+- version: 1
+  change_type: added
+  release: us.bilt.mastercard@2025-01-01
+  summary: "Primary collision damage coverage on car rentals paid with the card."
+  grants:
+  - entitlement: protection:rental_cdw
+  coverage:
+    priority: primary
+  conditions:
+  - type: paid_with_card
+  notes: Primary rental car coverage.
+  face_value: null
+  beneficiaries:
+  - primary

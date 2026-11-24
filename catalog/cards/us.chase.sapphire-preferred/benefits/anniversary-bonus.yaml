@@ -1,0 +1,30 @@
+id: us.chase.sapphire-preferred/anniversary-bonus
+card_id: us.chase.sapphire-preferred
+kind: anniversary
+name: 10% anniversary points bonus
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-preferred@2024-01-01
+    summary: "Bonus points each card anniversary equal to 10% of the points you earned on purchases in the previous card year."
+    effective_from: "2024-01-01"
+    face_value: null
+    reward:
+      currency: pts:chase_ur
+      percent_of_points_earned: "0.10"
+    period:
+      cadence: annual
+      anchor: cardmember_year
+      tz: America/New_York
+    grants:
+      - entitlement: anniversary:us.chase.sapphire-preferred
+        combine: sum
+    conditions: []
+    beneficiaries:
+      - primary
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-preferred/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

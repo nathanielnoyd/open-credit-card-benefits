@@ -1,0 +1,41 @@
+id: us.bilt.mastercard@2026-02-07
+card_id: us.bilt.mastercard
+kind: change
+announced_on: '2025-11-05'
+effective_for_new: '2026-02-07'
+notes: 'Bilt moved its card program from Wells Fargo to Column N.A./Cardless. The card closed to new applicants on 2025-11-05
+  and stopped working on 2026-02-07: holders who chose a Bilt Card 2.0 were moved to it, others were converted to a Wells
+  Fargo Autograph card.'
+changes:
+- target: earn_rule:us.bilt.mastercard/base
+  change_type: retired
+- target: earn_rule:us.bilt.mastercard/dining-3x
+  change_type: retired
+- target: earn_rule:us.bilt.mastercard/travel-2x
+  change_type: retired
+- target: earn_rule:us.bilt.mastercard/rent-1x
+  change_type: retired
+- target: benefit:us.bilt.mastercard/no-fx
+  change_type: retired
+- target: benefit:us.bilt.mastercard/cell-phone
+  change_type: retired
+- target: benefit:us.bilt.mastercard/trip-cancel
+  change_type: retired
+- target: benefit:us.bilt.mastercard/trip-delay
+  change_type: retired
+- target: benefit:us.bilt.mastercard/rental-cdw
+  change_type: retired
+- target: benefit:us.bilt.mastercard/purchase-protection
+  change_type: retired
+transition:
+- applies_to:
+  - benefits
+  - earn_rules
+  'on': '2026-02-07'
+sources:
+- url: https://onemileatatime.com/news/bilt-cardless-credit-cards/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://www.kiplinger.com/personal-finance/rewards-credit-cards/bilt-wells-fargo-exit
+  retrieved_at: '2026-11-13'
+  publisher: press

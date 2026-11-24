@@ -1,0 +1,30 @@
+id: us.capitalone.spark-cash-plus
+issuer_id: us.capitalone
+name: Capital One Spark Cash Plus
+summary: "A $150-a-year Capital One business charge card earning 2% cash back on all purchases and 5% on hotels and rental cars booked through Capital One Business Travel, with the annual fee refunded in any year you spend $150,000."
+network: other
+segment: business
+tier: mid
+family: capital-one-spark-cash
+earns: pts:capital_one_cash
+open_to_applicants: true
+url: https://www.capitalone.com/small-business/credit-cards/spark-cash-plus/
+aliases:
+- Spark Cash Plus
+- Spark Cash Plus for Business
+fee_posting:
+  anchor: account_open
+notes: Charge-style card with no preset spending limit, designed to be paid in full (part of the balance may be carried with interest). Capital
+  One issues it on Visa or Mastercard and the network is not chosen by the applicant, so `network` is other. Cash back redeems as a statement
+  credit or check and does not expire while the account is open.
+provenance:
+  sources:
+  - url: https://www.capitalone.com/small-business/credit-cards/spark-cash-plus/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://onemileatatime.com/reviews/credit-cards/capital-one/capital-one-spark-cash-plus/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.85"
+  last_reviewed: "2026-11-13"

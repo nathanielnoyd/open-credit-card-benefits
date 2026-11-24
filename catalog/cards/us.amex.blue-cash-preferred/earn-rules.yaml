@@ -1,0 +1,65 @@
+card_id: us.amex.blue-cash-preferred
+rules:
+- id: us.amex.blue-cash-preferred/us-supermarkets-6
+  categories:
+  - cat:groceries.store
+  versions:
+  - version: 1
+    release: us.amex.blue-cash-preferred@2025-01-30
+    multiplier: "6"
+    cap:
+      amount: 600000
+      currency: USD
+    cap_period: calendar_year
+    conditions:
+    - type: region
+      countries:
+      - US
+    notes: US supermarkets only, up to $6,000 a year, then 1%; excludes superstores, warehouse clubs and specialty stores.
+- id: us.amex.blue-cash-preferred/us-streaming-6
+  categories:
+  - cat:streaming
+  versions:
+  - version: 1
+    release: us.amex.blue-cash-preferred@2025-01-30
+    multiplier: "6"
+    conditions:
+    - type: region
+      countries:
+      - US
+    notes: Select US streaming subscriptions on an Amex-published list of 30+ services (AMC+, BritBox, Discovery+, MGM+ and Starz added
+      January 30, 2025). No cap. Bundled or third-party-billed purchases may not qualify.
+    sources:
+    - url: https://upgradedpoints.com/news/amex-expands-streaming-blue-cash-preferred-card/
+      retrieved_at: "2026-11-13"
+      publisher: review
+- id: us.amex.blue-cash-preferred/transit-3
+  categories:
+  - cat:transit
+  - cat:travel.transit
+  - cat:travel.rideshare
+  - cat:travel.parking_tolls
+  versions:
+  - version: 1
+    release: us.amex.blue-cash-preferred@2025-01-30
+    multiplier: "3"
+    notes: Transit includes taxis and rideshare, parking, tolls, trains, buses and more. No cap.
+- id: us.amex.blue-cash-preferred/us-gas-3
+  categories:
+  - cat:gas_ev.gas
+  versions:
+  - version: 1
+    release: us.amex.blue-cash-preferred@2025-01-30
+    multiplier: "3"
+    conditions:
+    - type: region
+      countries:
+      - US
+    notes: US gas stations; superstore and warehouse-club stations generally excluded. No cap.
+- id: us.amex.blue-cash-preferred/base-1
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.blue-cash-preferred@2025-01-30
+    multiplier: "1"

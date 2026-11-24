@@ -1,0 +1,20 @@
+id: us.chase.sapphire-reserve-business/dashpass
+card_id: us.chase.sapphire-reserve-business
+kind: membership
+name: DashPass membership
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: DashPass membership for DoorDash at no cost when you activate it by December 31, 2027.
+  enroll_by: "2027-12-31"
+  face_value:
+    amount: 12000
+    currency: USD
+  grants:
+  - entitlement: membership:dashpass
+  conditions:
+  - type: enrollment_required
+  beneficiaries:
+  - primary
+  notes: Reviews describe at least 12 months of DashPass after activation.

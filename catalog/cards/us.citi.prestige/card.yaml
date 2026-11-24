@@ -1,0 +1,45 @@
+id: us.citi.prestige
+issuer_id: us.citi
+name: Citi Prestige Card
+summary: "A $495-a-year Citi card, closed to new applicants, earning 5x on air travel, travel agencies and restaurants and 3x on hotels and cruise lines, with a $250 travel credit, a fourth night free twice a year and Priority Pass Select."
+network: mastercard
+segment: personal
+tier: premium
+family: citi-thankyou
+earns: pts:citi_ty
+open_to_applicants: false
+closed_to_applicants_on: "2021-07-01"
+url: https://www.citi.com/credit-cards/citi-prestige-credit-card
+aliases:
+- Prestige
+- Citi Prestige
+fee_posting:
+  anchor: account_open
+notes: >-
+  Citi stopped taking applications on July 1, 2021 and product changes into the card on June 19, 2021; existing accounts remain
+  open with the terms modeled here. A premium ThankYou card: points in a Prestige account transfer to partners at full ratios,
+  like the Strata Premier and Strata Elite. Its premium-tier successor is the Strata Elite (launched July 27, 2025), but Prestige
+  accounts were not converted. Reviews say the card carries no trip, baggage, rental car or shopping protections apart from cell
+  phone protection. No foreign transaction fees.
+related:
+- { card_id: us.citi.strata-elite, relation: replaced_by }
+provenance:
+  sources:
+  - url: https://thepointsguy.com/credit-cards/reviews/citi-prestige-credit-card-review/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://onemileatatime.com/reviews/credit-cards/citi/citi-prestige-card/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://upgradedpoints.com/credit-cards/reviews/citi-prestige-card/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://awardwallet.com/credit-cards/citi-thankyou-rewards/citi-prestige/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://www.doctorofcredit.com/?p=173784
+    retrieved_at: "2026-11-14"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.75"
+  last_reviewed: "2026-11-14"

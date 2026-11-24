@@ -1,0 +1,20 @@
+id: us.amex.business-gold/no-fx
+card_id: us.amex.business-gold
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-gold@2024-02-01
+    summary: "No foreign transaction fees on purchases you make abroad or in foreign currencies."
+    waives: foreign_transaction_fee
+    grants:
+      - entitlement: fee_waiver:foreign_transaction
+    conditions: []
+    beneficiaries:
+      - primary
+      - authorized_user
+    sources:
+      - url: https://upgradedpoints.com/credit-cards/reviews/american-express-business-gold-card/
+        retrieved_at: "2026-11-13"
+        publisher: review

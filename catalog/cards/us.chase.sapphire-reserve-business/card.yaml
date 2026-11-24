@@ -1,0 +1,46 @@
+id: us.chase.sapphire-reserve-business
+issuer_id: us.chase
+name: Sapphire Reserve for Business
+summary: A $795-a-year Chase business card earning 8x on Chase Travel, 4x on flights and hotels booked direct and 3x on social media and search
+  advertising, with a $300 travel credit, The Edit, ZipRecruiter, Google Workspace, DoorDash and Lyft credits and Priority Pass lounge access.
+network: visa
+segment: business
+tier: premium
+family: chase-sapphire
+earns: pts:chase_ur
+open_to_applicants: true
+url: https://creditcards.chase.com/business-credit-cards/sapphire/reserve
+aliases:
+- Chase Sapphire Reserve for Business
+- Sapphire Reserve Business
+- CSR Business
+fee_posting:
+  anchor: account_open
+notes: Employee cards are free but get no lounge access, credits or status. Points pool with other Ultimate Rewards cards and keep 1:1 transfers
+  to World of Hyatt after the June 2026 change. Flex for Business lets part of the line be carried with interest.
+provenance:
+  sources:
+  - url: https://creditcards.chase.com/business-credit-cards/sapphire/reserve
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://thepointsguy.com/credit-cards/reviews/chase-sapphire-reserve-for-business-review/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://onemileatatime.com/go/cc-chase-csrbiz-review/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://www.uscreditcardguide.com/chase-sapphire-reserve-for-business/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://thepointsguy.com/news/chase-unveils-the-chase-sapphire-reserve-for-business/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://thepointsguy.com/credit-cards/hyatt-transfer-changes-sapphire-reserve-or-sapphire-preferred/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.75'
+  last_reviewed: "2026-11-13"
+related:
+- card_id: us.chase.sapphire-reserve
+  relation: personal_counterpart

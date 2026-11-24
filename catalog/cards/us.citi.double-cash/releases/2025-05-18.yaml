@@ -1,0 +1,35 @@
+id: us.citi.double-cash@2025-05-18
+card_id: us.citi.double-cash
+kind: baseline
+effective_for_new: "2025-05-18"
+notes: >-
+  Terms as of May 18, 2025, when Citi dropped the end date (previously December 31, 2025) from the 5% Citi Travel rate.
+  Extended warranty was restored on November 17, 2024. Earlier history is not modeled. Foreign transaction fee is 3%.
+changes:
+- target: fee:annual
+  to:
+    amount: 0
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.citi.double-cash/citi-travel-5x
+  version: 1
+- target: earn_rule:us.citi.double-cash/base-2x
+  version: 1
+- target: benefit:us.citi.double-cash/extended-warranty
+  version: 1
+- target: benefit:us.citi.double-cash/citi-entertainment
+  version: 1
+sources:
+- url: https://upgradedpoints.com/news/citi-permanent-5x-earnings-double-cash-custom-cash/
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://awardwallet.com/blog/citi-custom-cash-travel-portal-spending-bonus
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://www.citi.com/credit-cards/citi-double-cash-credit-card
+  retrieved_at: "2026-11-13"
+  publisher: issuer
+confidence: "0.75"

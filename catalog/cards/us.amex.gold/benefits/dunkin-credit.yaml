@@ -1,0 +1,27 @@
+id: us.amex.gold/dunkin-credit
+card_id: us.amex.gold
+kind: statement_credit
+name: Dunkin’ credit
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.gold@2024-07-25
+  summary: "Up to $7 a month in statement credits at US Dunkin' locations, $84 a year in total; enrollment required."
+  face_value:
+    amount: 8400
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 700
+  grants:
+  - entitlement: credit:dunkin
+  conditions:
+  - type: enrollment_required
+  - type: merchant_in
+    merchants:
+    - dunkin
+    note: US Dunkin’ locations
+  beneficiaries:
+  - primary

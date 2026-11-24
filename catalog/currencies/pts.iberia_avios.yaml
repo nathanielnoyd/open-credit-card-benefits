@@ -1,0 +1,14 @@
+id: pts:iberia_avios
+name: Iberia Club Avios
+kind: airline
+issuer: Iberia
+url: https://www.iberia.com/us/iberia-club/
+expiry: Avios expire after 36 months with no activity.
+paths: []
+sources:
+  - url: https://www.iberia.com/us/iberia-club/
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

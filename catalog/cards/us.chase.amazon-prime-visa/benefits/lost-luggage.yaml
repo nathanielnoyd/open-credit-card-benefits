@@ -1,0 +1,20 @@
+id: us.chase.amazon-prime-visa/lost-luggage
+card_id: us.chase.amazon-prime-visa
+kind: protection
+name: Lost luggage reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.amazon-prime-visa@2023-05-01
+  summary: "Up to $3,000 per traveler for checked or carry-on bags lost or damaged by a common carrier when you pay the fare with the card."
+  coverage:
+    per_person:
+      amount: 300000
+      currency: USD
+  grants:
+  - entitlement: protection:lost_luggage
+  conditions:
+  - type: paid_with_card
+  notes: Up to $3,000 per covered traveler per trip for checked or carry-on bags lost or damaged by a common carrier.
+  beneficiaries:
+  - primary

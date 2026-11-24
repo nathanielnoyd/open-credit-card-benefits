@@ -1,0 +1,14 @@
+id: pts:emirates_skywards
+name: Emirates Skywards
+kind: airline
+issuer: Emirates
+url: https://www.emirates.com/us/english/skywards/
+expiry: "Fixed term: miles expire 3 years after they are earned."
+paths: []
+sources:
+  - url: https://www.emirates.com/us/english/skywards/
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

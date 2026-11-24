@@ -1,0 +1,29 @@
+id: us.amex.marriott-bonvoy-business/extended-warranty
+card_id: us.amex.marriott-bonvoy-business
+kind: protection
+name: Extended warranty
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.marriott-bonvoy-business@2024-01-01
+  summary: "Adds up to 1 extra year to original US manufacturer warranties of 5 years or less on items paid with the card."
+  face_value: null
+  coverage:
+    extends_years: 1
+    max_original_warranty_years: 5
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Matches the original US manufacturer warranty for up to one additional year on warranties of 5 years or less. One third-party summary gives limits of 10,000 dollars per item and 50,000 dollars per calendar year, not confirmed elsewhere.
+  confidence: '0.7'
+  sources:
+  - url: https://maxrewards.com/credit-cards/marriott-bonvoy-business
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.hellosafe.com/credit-card-insurance/united-states/american-express/marriott-bonvoy-business
+    retrieved_at: '2026-11-13'
+    publisher: review
+  grants:
+  - entitlement: protection:extended_warranty

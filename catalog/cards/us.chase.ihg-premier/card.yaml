@@ -1,0 +1,34 @@
+id: us.chase.ihg-premier
+issuer_id: us.chase
+name: IHG One Rewards Premier Credit Card
+summary: "A $150-a-year IHG card earning 10x at IHG hotels, 5x on dining, gas, groceries, direct airfare and car rentals and 3x elsewhere, with an anniversary free night, Gold status, 15 Elite Night Credits a year and a $100 airline credit."
+network: mastercard
+segment: personal
+tier: mid
+family: chase-ihg
+earns: pts:ihg_one
+open_to_applicants: true
+url: https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier
+aliases:
+- IHG Premier
+- IHG Rewards Club Premier
+cobrand:
+  partner: IHG One Rewards
+  program: pts:ihg_one
+fee_posting:
+  anchor: account_open
+provenance:
+  sources:
+  - url: https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://frequentmiler.com/?p=297051
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://onemileatatime.com/news/ihg-chase-credit-card-changes/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.8'
+related:
+  - { card_id: us.chase.ihg-business, relation: business_counterpart }

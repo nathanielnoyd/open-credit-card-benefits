@@ -1,0 +1,32 @@
+id: us.citi.strata-premier
+issuer_id: us.citi
+name: Citi Strata Premier Card
+summary: "A $95-a-year Citi card earning 10x on hotels, car rentals and attractions through Citi Travel and 3x on air travel, hotels, dining, supermarkets and gas or EV charging, with a $100 annual hotel benefit and no foreign transaction fees."
+network: mastercard
+segment: personal
+tier: mid
+family: citi-thankyou
+earns: pts:citi_ty
+open_to_applicants: true
+url: https://www.citi.com/credit-cards/citi-strata-premier-credit-card
+aliases:
+- Strata Premier
+- Citi Premier
+- Citi Premier Card
+fee_posting:
+  anchor: account_open
+notes: >-
+  Replaced the Citi Premier in May 2024; existing Premier accounts were converted. One of the premium ThankYou cards that unlock
+  full-ratio transfers to every partner, including American AAdvantage (added July 27, 2025); points pooled from a Double Cash,
+  Custom Cash or Strata account transfer at full ratios through it.
+provenance:
+  sources:
+  - url: https://www.citi.com/credit-cards/citi-strata-premier-credit-card
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://frequentmiler.com/citi-strata-premier-credit-card-review/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.8"
+  last_reviewed: "2026-11-13"

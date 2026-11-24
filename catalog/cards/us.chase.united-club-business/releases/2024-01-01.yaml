@@ -1,0 +1,71 @@
+id: us.chase.united-club-business@2024-01-01
+card_id: us.chase.united-club-business
+kind: baseline
+confidence: '0.6'
+effective_for_new: '2024-01-01'
+notes: Terms before the March 24, 2025 refresh, limited to the fee, earn rates and benefits that reviews of the refresh and
+  Chase's current pages confirm existed before it. The date matches the personal United cards' baseline and marks when these
+  terms are known to have applied, not when they began; earlier history is not modeled. The pre-refresh fee is $450 per Upgraded
+  Points and Dan's Deals, but Frequent Miler gives $525 and The Points Guy $550, so the fee carries lower confidence. Protections
+  are taken from Chase's current benefit page and assumed unchanged.
+changes:
+- target: fee:annual
+  to:
+    amount: 45000
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+  notes: Employee cards at no additional cost.
+- target: earn_rule:us.chase.united-club-business/united-purchases
+  version: 1
+- target: earn_rule:us.chase.united-club-business/base-1-5x
+  version: 1
+- target: earn_rule:us.chase.united-club-business/pqp
+  version: 1
+- target: benefit:us.chase.united-club-business/club-membership
+  version: 1
+- target: benefit:us.chase.united-club-business/checked-bags
+  version: 1
+- target: benefit:us.chase.united-club-business/priority-boarding
+  version: 1
+- target: benefit:us.chase.united-club-business/award-availability
+  version: 1
+- target: benefit:us.chase.united-club-business/inflight-25
+  version: 1
+- target: benefit:us.chase.united-club-business/ihg-platinum
+  version: 1
+- target: benefit:us.chase.united-club-business/avis-presidents-club
+  version: 1
+- target: benefit:us.chase.united-club-business/no-fx
+  version: 1
+- target: benefit:us.chase.united-club-business/rental-cdw
+  version: 1
+- target: benefit:us.chase.united-club-business/baggage-delay
+  version: 1
+- target: benefit:us.chase.united-club-business/lost-luggage
+  version: 1
+- target: benefit:us.chase.united-club-business/trip-cancel
+  version: 1
+- target: benefit:us.chase.united-club-business/trip-delay
+  version: 1
+- target: benefit:us.chase.united-club-business/purchase-protection
+  version: 1
+- target: benefit:us.chase.united-club-business/return-protection
+  version: 1
+- target: benefit:us.chase.united-club-business/extended-warranty
+  version: 1
+sources:
+- url: https://upgradedpoints.com/news/united-airlines-business-credit-card-changes-2025/
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://www.dansdeals.com/credit-cards/wow-united-massively-overhauls-credit-card-program-and-lounge-access-the-good-the-bad-and-the-ugly
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://frequentmiler.com/?p=262194
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://www.uscreditcardguide.com/chase-ua-club-business-credit-card/
+  retrieved_at: '2026-11-14'
+  publisher: review

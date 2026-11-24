@@ -1,0 +1,49 @@
+id: us.amex.hilton-business@2024-03-28
+card_id: us.amex.hilton-business
+kind: baseline
+effective_for_new: '2024-03-28'
+notes: Current terms recorded as the baseline, from the refresh announced March 28, 2024 (fee $95 to $195, quarterly Hilton credit, 5x/3x replacing the 6x categories, Free Night Rewards and Priority Pass removed, National Executive added). Existing holders got the new fee at renewals on or after July 1, 2024, and their free-night spend counted through June 30, 2024. Terms before the refresh are not modeled. No later change was found through November 2026.
+changes:
+- target: fee:annual
+  to:
+    amount: 19500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+  notes: Up to 99 Employee Cards at no annual fee.
+- target: earn_rule:us.amex.hilton-business/hilton-12x
+  version: 1
+- target: earn_rule:us.amex.hilton-business/base-5x
+  version: 1
+- target: earn_rule:us.amex.hilton-business/base-3x
+  version: 1
+- target: benefit:us.amex.hilton-business/gold-status
+  version: 1
+- target: benefit:us.amex.hilton-business/diamond-upgrade
+  version: 1
+- target: benefit:us.amex.hilton-business/hilton-credit
+  version: 1
+- target: benefit:us.amex.hilton-business/national-executive
+  version: 1
+- target: benefit:us.amex.hilton-business/no-fx
+  version: 1
+- target: benefit:us.amex.hilton-business/rental-cdw
+  version: 1
+- target: benefit:us.amex.hilton-business/purchase-protection
+  version: 1
+- target: benefit:us.amex.hilton-business/extended-warranty
+  version: 1
+- target: benefit:us.amex.hilton-business/baggage
+  version: 1
+sources:
+- url: https://www.doctorofcredit.com/american-express-hilton-business-changes-increased-annual-fee-195-removal-of-free-night-certificate/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://upgradedpoints.com/news/hilton-honors-amex-business-card-refresh/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://onemileatatime.com/reviews/credit-cards/american-express/hilton-business-card/
+  retrieved_at: '2026-11-13'
+  publisher: review

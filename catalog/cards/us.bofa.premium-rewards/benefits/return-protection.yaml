@@ -1,0 +1,27 @@
+id: us.bofa.premium-rewards/return-protection
+card_id: us.bofa.premium-rewards
+kind: protection
+name: Return protection
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards@2024-01-01
+  summary: "Refunds up to $250 per item within 90 days of purchase when the merchant won't take back an item bought with the card."
+  face_value: null
+  grants:
+  - entitlement: protection:return
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  coverage:
+    per_item:
+      amount: 25000
+      currency: USD
+    window_days: 90
+  notes: Up to $250 per item within 90 days when the merchant won’t take it back.
+  confidence: "0.7"
+  sources:
+  - url: https://frequentmiler.com/bank-of-america-premium-rewards-credit-card-complete-guide/
+    retrieved_at: "2026-11-13"
+    publisher: review

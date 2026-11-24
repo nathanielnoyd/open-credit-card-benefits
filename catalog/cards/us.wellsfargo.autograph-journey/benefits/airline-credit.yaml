@@ -1,0 +1,36 @@
+id: us.wellsfargo.autograph-journey/airline-credit
+card_id: us.wellsfargo.autograph-journey
+kind: statement_credit
+name: Annual airline credit
+versions:
+- version: 1
+  change_type: added
+  release: us.wellsfargo.autograph-journey@2024-03-01
+  summary: "$50 back once a year on your first airline purchase of $50 or more, tickets included; charter and private jet flights are excluded."
+  face_value:
+    amount: 5000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: fee_post
+  limit:
+    amount: 5000
+    max_transactions_per_period: 1
+  grants:
+  - entitlement: credit:airline_purchase
+  conditions:
+  - type: min_transaction
+    amount: 5000
+    currency: USD
+    note: First airline purchase of at least $50 in the period
+  beneficiaries:
+  - primary
+  posting_lag_days: 60
+  notes: One-time $50 credit on the first airline purchase of $50 or more each annual period; tickets count, not only incidentals. Charter and private jet flights are excluded. The first period starts at account opening; later periods start the first day of the month after the annual fee posts. Airline purchases under $50 do not trigger it; the min_transaction condition models that floor.
+  sources:
+  - url: https://creditcards.wellsfargo.com/autograph-journey-visa-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://upgradedpoints.com/credit-cards/reviews/wells-fargo-autograph-journey-card/
+    retrieved_at: "2026-11-13"
+    publisher: review

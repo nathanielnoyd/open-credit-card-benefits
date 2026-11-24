@@ -1,0 +1,17 @@
+id: us.barclays.wyndham-earner-business/diamond
+card_id: us.barclays.wyndham-earner-business
+kind: status
+name: Wyndham Rewards Diamond
+versions:
+- version: 1
+  change_type: added
+  release: us.barclays.wyndham-earner-business@2021-08-18
+  summary: Wyndham Rewards Diamond status while you hold the card.
+  grants:
+  - entitlement: status:wyndham
+    attributes:
+      tier: diamond
+  beneficiaries:
+  - primary
+  notes: Primary cardmember only, not employee cards; posts 2 to 8 weeks after approval and continues while the account is open
+    and in good standing. Unchanged at the June 2026 refresh.

@@ -1,0 +1,26 @@
+id: us.chase.sapphire-reserve-business/doordash-restaurant
+card_id: us.chase.sapphire-reserve-business
+kind: statement_credit
+name: DoorDash restaurant credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: Up to $5 off a DoorDash restaurant order each month, $60 a year, with the card's DashPass membership.
+  face_value:
+    amount: 6000
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 500
+  grants:
+  - entitlement: credit:doordash_restaurant
+    stacking_confidence: '0.6'
+  conditions:
+  - type: enrollment_required
+    note: Requires the complimentary DashPass membership
+  beneficiaries:
+  - primary
+  notes: Applies to the order subtotal and expires monthly. End date not confirmed by sources.

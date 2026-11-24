@@ -1,0 +1,27 @@
+id: us.bofa.atmos-summit/global-companion-25k
+card_id: us.bofa.atmos-summit
+kind: certificate
+name: 25K Global Companion Award
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-summit@2026-11-14
+  summary: "Each account anniversary, a Global Companion Award that covers a companion's award ticket of up to 25,000 points on the same itinerary as your award booking."
+  face_value: null
+  issued_on: anniversary
+  companions: 1
+  cap:
+    currency: pts:atmos_rewards
+    points: 25000
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  grants:
+  - entitlement: certificate:us.bofa.atmos-summit.global-companion-25k
+  conditions: []
+  beneficiaries:
+  - primary
+  - companion
+  machine_readable: false
+  confidence: "0.75"
+  notes: Covers the points for a companion on the same award itinerary, up to 25,000 points, on Alaska, Hawaiian or partner flights in any cabin per The Points Guy. Taxes and fees apply. How long the award stays valid is not confirmed.

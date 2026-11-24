@@ -1,0 +1,68 @@
+id: us.chase.united-quest@2024-01-01
+card_id: us.chase.united-quest
+kind: baseline
+confidence: '0.7'
+effective_for_new: '2024-01-01'
+notes: Terms before the March 24, 2025 refresh, limited to the fee, earn rates and benefits that reviews of the refresh confirm
+  existed before it. Earlier history is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 25000
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.chase.united-quest/united-purchases
+  version: 1
+- target: earn_rule:us.chase.united-quest/travel-2x
+  version: 1
+- target: earn_rule:us.chase.united-quest/dining-2x
+  version: 1
+- target: earn_rule:us.chase.united-quest/streaming-2x
+  version: 1
+- target: earn_rule:us.chase.united-quest/base-1x
+  version: 1
+- target: earn_rule:us.chase.united-quest/pqp
+  version: 1
+- target: benefit:us.chase.united-quest/checked-bags
+  version: 1
+- target: benefit:us.chase.united-quest/priority-boarding
+  version: 1
+- target: benefit:us.chase.united-quest/united-credit
+  version: 1
+- target: benefit:us.chase.united-quest/award-discount
+  version: 1
+- target: benefit:us.chase.united-quest/trusted-traveler
+  version: 1
+- target: benefit:us.chase.united-quest/inflight-25
+  version: 1
+- target: benefit:us.chase.united-quest/award-availability
+  version: 1
+- target: benefit:us.chase.united-quest/no-fx
+  version: 1
+- target: benefit:us.chase.united-quest/rental-cdw
+  version: 1
+- target: benefit:us.chase.united-quest/baggage-delay
+  version: 1
+- target: benefit:us.chase.united-quest/lost-luggage
+  version: 1
+- target: benefit:us.chase.united-quest/trip-cancel
+  version: 1
+- target: benefit:us.chase.united-quest/trip-delay
+  version: 1
+- target: benefit:us.chase.united-quest/purchase-protection
+  version: 1
+- target: benefit:us.chase.united-quest/extended-warranty
+  version: 1
+sources:
+- url: https://thepointsguy.com/news/united-credit-card-refresh-2025
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://awardwallet.com/news/united-mileageplus/united-card-portfolio-overhaul/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://awardwallet.com/news/united-mileageplus/mileage-earning-changes-2026/
+  retrieved_at: '2026-11-13'
+  publisher: review

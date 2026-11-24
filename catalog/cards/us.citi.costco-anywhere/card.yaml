@@ -1,0 +1,30 @@
+id: us.citi.costco-anywhere
+issuer_id: us.citi
+name: Costco Anywhere Visa Card by Citi
+summary: "A no-annual-fee Costco card earning 5% on Costco gas and 4% on other gas and EV charging, up to $7,000 a year combined, plus 3% on dining and travel and 2% at Costco, paid once a year as a reward certificate."
+network: visa
+segment: personal
+tier: no_fee
+family: citi-costco
+earns: pts:costco_reward
+open_to_applicants: true
+url: https://www.citi.com/credit-cards/citi-costco-anywhere-visa-credit-card
+aliases:
+- Costco Citi card
+- Costco Anywhere Visa
+cobrand:
+  partner: Costco
+  program: pts:costco_reward
+fee_posting:
+  anchor: account_open
+notes: Requires an active, paid Costco membership in the cardmember's name; the card doubles as the Costco membership ID.
+provenance:
+  sources:
+  - url: https://www.citi.com/credit-cards/citi-costco-anywhere-visa-credit-card
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://www.nerdwallet.com/travel/learn/the-guide-to-citi-credit-card-travel-insurance
+    retrieved_at: '2026-11-13'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.8'

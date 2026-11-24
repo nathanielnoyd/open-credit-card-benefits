@@ -1,0 +1,14 @@
+id: pts:aer_lingus_avios
+name: Aer Lingus AerClub Avios
+kind: airline
+issuer: Aer Lingus
+url: https://www.aerlingus.com/aerclub/
+expiry: Avios expire after 36 months with no activity.
+paths: []
+sources:
+  - url: https://www.aerlingus.com/aerclub/
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

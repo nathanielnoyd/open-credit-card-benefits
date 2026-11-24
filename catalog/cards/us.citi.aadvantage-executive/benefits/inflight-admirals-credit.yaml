@@ -1,0 +1,34 @@
+id: us.citi.aadvantage-executive/inflight-admirals-credit
+card_id: us.citi.aadvantage-executive
+kind: statement_credit
+name: Inflight and Admirals Club purchase credit
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-executive@2026-08-23
+  summary: "Up to $100 each calendar year in statement credits on American inflight purchases and Admirals Club purchases."
+  face_value:
+    amount: 10000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 10000
+  grants:
+  - entitlement: credit:american_inflight
+  beneficiaries:
+  - primary
+  conditions:
+  - type: merchant_in
+    merchants:
+    - american_airlines_inflight
+    - admirals_club
+  notes: Up to $100 per calendar year in statement credits on eligible American inflight purchases and eligible Admirals Club purchases.
+  sources:
+  - url: https://www.citi.com/credit-cards/citi-aadvantage-executive-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://worldairlinenews.com/2026/08/03/american-airlines-and-citi-elevate-premium-travel-with-enhanced-citi-aadvantage-executive-world-legend-mastercard/
+    retrieved_at: '2026-11-13'
+    publisher: press

@@ -1,0 +1,35 @@
+id: us.chase.sapphire-reserve/apple
+card_id: us.chase.sapphire-reserve
+kind: membership
+name: Apple TV and Apple Music
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-reserve@2025-06-23
+    summary: "Apple TV and Apple Music subscriptions at no cost, worth $324 a year, through June 22, 2027."
+    effective_from: "2025-06-23"
+    effective_to: "2027-06-22"
+    face_value:
+      amount: 32400
+      currency: USD
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: membership:apple_tv
+        combine: any
+        value_share: "0.37"
+      - entitlement: membership:apple_music
+        combine: any
+        value_share: "0.63"
+    conditions: []
+    beneficiaries:
+      - primary
+    notes: Value split assumes Apple TV is $119 of the $324.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

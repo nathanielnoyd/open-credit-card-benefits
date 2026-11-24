@@ -1,0 +1,29 @@
+id: us.capitalone.venture-x-business/cell-phone
+card_id: us.capitalone.venture-x-business
+kind: protection
+name: Cell phone protection
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x-business@2025-11-01
+  summary: "Up to $800 per claim for a stolen or damaged phone, with a $50 deductible, when you pay your monthly wireless bill in full with the card."
+  coverage:
+    per_claim:
+      amount: 80000
+      currency: USD
+    deductible:
+      amount: 5000
+      currency: USD
+    requires_card_payment: full
+  grants:
+  - entitlement: protection:cell_phone
+  conditions:
+  - type: paid_with_card
+  notes: Phones on a monthly bill paid with the card. Amounts reported by reviews, not confirmed in the business guide to benefits.
+  confidence: "0.55"
+  sources:
+  - url: https://frequentmiler.com/capital-one-venture-x-business-credit-card-review/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  beneficiaries:
+  - primary

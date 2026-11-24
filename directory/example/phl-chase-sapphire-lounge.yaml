@@ -1,0 +1,13 @@
+id: example:phl-chase-sapphire-lounge
+name: Chase Sapphire Lounge by The Club
+airport: PHL
+terminal: Terminal D/E Connector
+access_rules:
+  - entitlement: lounge_network:chase_sapphire
+    guests:
+      free: 2
+    effective_from: null
+    notes: Priority Pass members without a Sapphire Reserve lost general access in August 2026. Add that as a dated rule once the exact date is confirmed.
+sources:
+  - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+    retrieved_at: "2026-11-12"

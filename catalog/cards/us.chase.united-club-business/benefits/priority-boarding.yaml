@@ -1,0 +1,23 @@
+id: us.chase.united-club-business/priority-boarding
+card_id: us.chase.united-club-business
+kind: access
+name: Premier Access on United
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club-business@2024-01-01
+  summary: "Premier Access priority check-in, security lanes, boarding and baggage handling on United flights for you and companions on the same reservation."
+  grants:
+  - entitlement: priority_boarding:united
+    attributes:
+      group: Premier Access
+  conditions:
+  - type: same_day_flight
+    carrier:
+    - UA
+    note: MileagePlus number on the reservation
+  beneficiaries:
+  - primary
+  - companion
+  notes: Premier Access covers priority check-in, security lanes where available, priority boarding and priority baggage handling.
+    Only the boarding part has a registry key.

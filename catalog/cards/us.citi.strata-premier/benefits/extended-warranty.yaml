@@ -1,0 +1,22 @@
+id: us.citi.strata-premier/extended-warranty
+card_id: us.citi.strata-premier
+kind: protection
+name: Extended warranty
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.strata-premier@2024-05-12
+  summary: "Adds 24 months to the manufacturer's warranty, up to $10,000 per item, on purchases paid with the card."
+  coverage:
+    extends_years: 2
+    per_item: { amount: 1000000, currency: USD }
+  grants:
+  - entitlement: protection:extended_warranty
+  conditions:
+  - type: paid_with_card
+  beneficiaries: [primary, authorized_user]
+  notes: Adds 24 months to the manufacturer's warranty, total coverage at most 7 years from purchase; up to $10,000 per item. Not listed on Citi's product page.
+  sources:
+  - { url: https://frequentmiler.com/citi-strata-premier-credit-card-review/, retrieved_at: "2026-11-13", publisher: review }
+  - { url: https://milestalk.com/which-citi-credit-cards-still-have-extended-warranty, retrieved_at: "2026-11-13", publisher: review }
+  confidence: "0.65"

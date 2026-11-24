@@ -1,0 +1,30 @@
+id: us.amex.platinum/lhw-sterling
+card_id: us.amex.platinum
+kind: status
+name: Leading Hotels of the World Sterling
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2025-09-18
+    summary: "Sterling status with Leading Hotels of the World while you hold the card."
+    effective_from: "2025-09-18"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: status:lhw
+        combine: max
+        attributes:
+          tier: sterling
+    conditions: []
+    beneficiaries:
+      - primary
+      - authorized_user
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.7"

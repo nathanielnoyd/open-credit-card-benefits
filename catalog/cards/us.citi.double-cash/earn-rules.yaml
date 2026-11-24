@@ -1,0 +1,31 @@
+card_id: us.citi.double-cash
+rules:
+- id: us.citi.double-cash/citi-travel-5x
+  categories:
+  - cat:travel.portal.citi.hotels
+  - cat:travel.portal.citi.cars
+  - cat:travel.portal.citi.attractions
+  versions:
+  - version: 1
+    release: us.citi.double-cash@2025-05-18
+    multiplier: "5"
+    notes: >-
+      2% base plus an extra 3% on hotels, car rentals and attractions booked through Citi Travel. Launched as a limited-time offer
+      ending December 31, 2025; Citi removed the end date, and reviews report it as permanent since May 18, 2025. Citi's page
+      lists no end date as of 2026-11-13.
+    sources:
+    - url: https://www.citi.com/credit-cards/citi-double-cash-credit-card
+      retrieved_at: "2026-11-13"
+      publisher: issuer
+    - url: https://upgradedpoints.com/news/citi-permanent-5x-earnings-double-cash-custom-cash/
+      retrieved_at: "2026-11-13"
+      publisher: review
+    confidence: "0.8"
+- id: us.citi.double-cash/base-2x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.citi.double-cash@2025-05-18
+    multiplier: "2"
+    notes: "1 point at purchase and 1 point when the purchase is paid off. Balance transfers earn nothing."

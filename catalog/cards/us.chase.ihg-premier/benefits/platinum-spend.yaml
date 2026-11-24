@@ -1,0 +1,23 @@
+id: us.chase.ihg-premier/platinum-spend
+card_id: us.chase.ihg-premier
+kind: status
+name: IHG Platinum Elite with $15,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier@2026-10-01
+  summary: "IHG Platinum Elite status for the rest of that year and the next after you spend $15,000 on the card in a calendar year."
+  grants:
+  - entitlement: status:ihg
+    attributes:
+      tier: platinum
+  conditions:
+  - type: spend_gte
+    amount: 1500000
+    currency: USD
+    period: calendar_year
+    note: $15,000 in a calendar year
+  beneficiaries:
+  - primary
+  notes: Status for the rest of that year and the following year.
+  machine_readable: false

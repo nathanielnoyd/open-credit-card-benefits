@@ -1,0 +1,40 @@
+id: us.chase.united-club-business/club-membership
+card_id: us.chase.united-club-business
+kind: membership
+name: United Club membership
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club-business@2024-01-01
+  summary: "United Club membership for the primary cardmember, with two adult guests or your immediate family, plus access to Star Alliance lounges."
+  grants:
+  - entitlement: lounge_network:united_club
+    value_share: '0.85'
+    attributes:
+      guests: 2
+  - entitlement: lounge_network:star_alliance
+    value_share: '0.15'
+  beneficiaries:
+  - primary
+  - guest
+  notes: Before the March 2025 refresh the membership admitted two adult guests (or immediate family, with dependent children
+    under 21) and included Star Alliance member lounges when flying Star Alliance.
+  sources:
+  - url: https://www.dansdeals.com/credit-cards/wow-united-massively-overhauls-credit-card-program-and-lounge-access-the-good-the-bad-and-the-ugly
+    retrieved_at: '2026-11-14'
+    publisher: review
+  confidence: '0.7'
+- version: 2
+  supersedes: 1
+  change_type: terms_changed
+  release: us.chase.united-club-business@2025-03-24
+  summary: "United Club membership for the primary cardmember, with one adult guest plus dependent children under 18; Star Alliance lounges are not included."
+  grants:
+  - entitlement: lounge_network:united_club
+    attributes:
+      guests: 1
+  beneficiaries:
+  - primary
+  - guest
+  notes: One adult guest plus dependent children under 18. Employee cardholders get no United Club membership of their own and enter only as the primary cardmember's guests. Star Alliance lounges
+    and a second guest come only with All Access.

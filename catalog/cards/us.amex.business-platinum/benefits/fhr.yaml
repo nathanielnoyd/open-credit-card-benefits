@@ -1,0 +1,19 @@
+id: us.amex.business-platinum/fhr
+card_id: us.amex.business-platinum
+kind: program_access
+name: Fine Hotels + Resorts access
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-platinum@2025-07-01
+    summary: "Fine Hotels + Resorts bookings through Amex Travel come with breakfast for two, an upgrade when available, a property credit and 4pm checkout."
+    grants:
+      - entitlement: program:amex_fhr
+    conditions: []
+    beneficiaries:
+      - primary
+    notes: Breakfast for two, upgrade when available, property credit, 4pm checkout.
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-business-platinum-card/
+        retrieved_at: "2026-11-13"
+        publisher: review

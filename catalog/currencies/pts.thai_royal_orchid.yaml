@@ -1,0 +1,14 @@
+id: pts:thai_royal_orchid
+name: Thai Airways Royal Orchid Plus
+kind: airline
+issuer: Thai Airways
+url: https://www.thaiairways.com/en-us/royal-orchid-plus/
+expiry: "Fixed term: miles expire 3 years after they are earned, at the end of the quarter earned."
+paths: []
+sources:
+  - url: https://www.thaiairways.com/en-us/royal-orchid-plus/
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardwallet.com/travel/loyalty-program-expiration-policies/
+    retrieved_at: "2026-11-13"
+    publisher: review

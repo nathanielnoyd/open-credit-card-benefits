@@ -1,0 +1,45 @@
+{
+  "occb": "0.3",
+  "people": [
+    {
+      "id": "p1"
+    }
+  ],
+  "cards": [
+    {
+      "id": "w-bilt",
+      "card_id": "us.bilt.obsidian",
+      "holder": "p1",
+      "opened_on": "2026-03-01",
+      "status": "open",
+      "selections": {
+        "rewards_option": "housing_only",
+        "everyday_spend_ratio_tier": "100",
+        "bonus_category": "dining"
+      }
+    },
+    {
+      "id": "w-dc",
+      "card_id": "us.citi.double-cash",
+      "holder": "p1",
+      "opened_on": "2024-06-01",
+      "status": "open"
+    }
+  ],
+  "spend_profile": {
+    "as_of": "2026-11-13",
+    "currency": "USD",
+    "amounts": {
+      "cat:rent": 3000000,
+      "cat:dining": 500000,
+      "cat:groceries.store": 600000,
+      "cat:all": 1200000
+    }
+  },
+  "finance": {
+    "discount_rate": "0.045",
+    "holding_period_months": 12,
+    "horizon_months": 12,
+    "include_offers": false
+  }
+}

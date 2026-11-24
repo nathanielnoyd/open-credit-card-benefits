@@ -1,0 +1,31 @@
+id: us.apple.card/booking-travel-credits
+card_id: us.apple.card
+kind: statement_credit
+name: Booking.com Travel Credits
+versions:
+- version: 1
+  change_type: added
+  release: us.apple.card@2019-08-01
+  summary: "An extra 2% back in Booking.com Travel Credits on prepaid stays and car rentals booked through Apple's Booking.com link and paid with Apple Card in Apple Pay."
+  face_value: null
+  percent_back: '0.02'
+  period:
+    cadence: per_event
+  grants:
+  - entitlement: credit:booking_com_travel_credits
+  conditions:
+  - type: merchant_in
+    merchants:
+    - booking_com
+  - type: payment_method
+    method: apple_pay
+  - type: booking_channel
+    channel: apple_card_booking_com_link
+  beneficiaries:
+  - primary
+  notes: An extra 2% back in Booking.com Travel Credits (on top of 3% Daily Cash) on eligible prepaid stays and car rentals booked through Apple's exclusive Booking.com link. Paid as Booking.com credit, not a statement credit.
+  machine_readable: false
+  sources:
+  - url: https://www.apple.com/apple-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer

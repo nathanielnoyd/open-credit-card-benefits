@@ -1,0 +1,24 @@
+id: us.amex.hilton-business/diamond-upgrade
+card_id: us.amex.hilton-business
+kind: status
+name: Hilton Honors Diamond after $40,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.hilton-business@2024-03-28
+  summary: "After $40,000 in calendar-year spend, Diamond status with Hilton Honors through the end of the next calendar year."
+  face_value: null
+  unlocked_only: true
+  conditions:
+  - type: spend_gte
+    amount: 4000000
+    currency: USD
+    period: calendar_year
+  beneficiaries:
+  - primary
+  machine_readable: false
+  notes: Spend $40,000 on eligible purchases in a calendar year to earn Diamond status through the end of the next calendar year. The schema cannot say the status runs in the following year.
+  grants:
+  - entitlement: status:hilton
+    attributes:
+      tier: diamond

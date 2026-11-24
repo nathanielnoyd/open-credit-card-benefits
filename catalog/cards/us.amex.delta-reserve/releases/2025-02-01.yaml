@@ -1,0 +1,72 @@
+id: us.amex.delta-reserve@2025-02-01
+card_id: us.amex.delta-reserve
+kind: baseline
+effective_for_new: '2025-02-01'
+notes: Terms in force after the February 1, 2025 Delta changes (MQD Headstart and the Reserve's Sky Club visit limits took
+  effect in early 2025; fees and the Resy, rideshare and Delta Stays credits date from the February 2024 refresh). Earlier
+  history is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 65000
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 17500
+    currency: USD
+- target: earn_rule:us.amex.delta-reserve/delta-3x
+  version: 1
+- target: earn_rule:us.amex.delta-reserve/base-1x
+  version: 1
+- target: earn_rule:us.amex.delta-reserve/mqd-boost
+  version: 1
+- target: benefit:us.amex.delta-reserve/no-fx
+  version: 1
+- target: benefit:us.amex.delta-reserve/first-checked-bag
+  version: 1
+- target: benefit:us.amex.delta-reserve/priority-boarding
+  version: 1
+- target: benefit:us.amex.delta-reserve/inflight-discount
+  version: 1
+- target: benefit:us.amex.delta-reserve/award-discount
+  version: 1
+- target: benefit:us.amex.delta-reserve/rental-car
+  version: 1
+- target: benefit:us.amex.delta-reserve/extended-warranty
+  version: 1
+- target: benefit:us.amex.delta-reserve/mqd-headstart
+  version: 1
+- target: benefit:us.amex.delta-reserve/companion-certificate
+  version: 1
+- target: benefit:us.amex.delta-reserve/trusted-traveler
+  version: 1
+- target: benefit:us.amex.delta-reserve/sky-club
+  version: 1
+- target: benefit:us.amex.delta-reserve/sky-club-unlimited
+  version: 1
+- target: benefit:us.amex.delta-reserve/sky-club-guest-passes
+  version: 1
+- target: benefit:us.amex.delta-reserve/centurion
+  version: 1
+- target: benefit:us.amex.delta-reserve/upgrade-priority
+  version: 1
+- target: benefit:us.amex.delta-reserve/hertz-presidents-circle
+  version: 1
+- target: benefit:us.amex.delta-reserve/resy
+  version: 1
+- target: benefit:us.amex.delta-reserve/rideshare
+  version: 1
+- target: benefit:us.amex.delta-reserve/delta-stays
+  version: 1
+- target: benefit:us.amex.delta-reserve/trip-delay
+  version: 1
+- target: benefit:us.amex.delta-reserve/trip-cancellation
+  version: 1
+- target: benefit:us.amex.delta-reserve/baggage
+  version: 1
+- target: benefit:us.amex.delta-reserve/cell-phone
+  version: 1
+- target: benefit:us.amex.delta-reserve/purchase-protection
+  version: 1
+- target: benefit:us.amex.delta-reserve/return-protection
+  version: 1

@@ -1,0 +1,51 @@
+card_id: us.citi.strata-premier
+rules:
+- id: us.citi.strata-premier/citi-travel-10x
+  categories:
+  - cat:travel.portal.citi.hotels
+  - cat:travel.portal.citi.cars
+  - cat:travel.portal.citi.attractions
+  versions:
+  - version: 1
+    release: us.citi.strata-premier@2024-05-12
+    multiplier: "10"
+- id: us.citi.strata-premier/air-hotels-3x
+  categories:
+  - cat:travel.flights
+  - cat:travel.portal.citi.flights
+  - cat:travel.hotels
+  versions:
+  - version: 1
+    release: us.citi.strata-premier@2024-05-12
+    multiplier: "3"
+    notes: Air travel and hotel purchases, including flights booked on Citi Travel. Other travel (cruises, rail, rideshare) earns 1x.
+- id: us.citi.strata-premier/dining-3x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.citi.strata-premier@2024-05-12
+    multiplier: "3"
+- id: us.citi.strata-premier/supermarkets-3x
+  categories:
+  - cat:groceries.store
+  versions:
+  - version: 1
+    release: us.citi.strata-premier@2024-05-12
+    multiplier: "3"
+    notes: Supermarkets; excludes general merchandise stores and warehouse clubs. Uncapped.
+- id: us.citi.strata-premier/gas-ev-3x
+  categories:
+  - cat:gas_ev
+  versions:
+  - version: 1
+    release: us.citi.strata-premier@2024-05-12
+    multiplier: "3"
+    notes: Gas stations and EV charging stations; reports say gas at warehouse clubs is excluded.
+- id: us.citi.strata-premier/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.citi.strata-premier@2024-05-12
+    multiplier: "1"

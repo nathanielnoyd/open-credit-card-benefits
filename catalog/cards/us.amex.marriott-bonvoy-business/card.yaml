@@ -1,0 +1,41 @@
+id: us.amex.marriott-bonvoy-business
+issuer_id: us.amex
+name: Marriott Bonvoy Business American Express Card
+summary: "A $125-a-year Marriott business card earning 6x points at Marriott hotels and 4x at restaurants, US gas stations, US wireless and US shipping, with Gold Elite status, 15 Elite Night Credits a year, a 35,000-point Free Night Award after each renewal and a second after $60,000 in calendar-year spend."
+network: amex
+segment: business
+tier: mid
+family: amex-marriott
+earns: pts:marriott_bonvoy
+open_to_applicants: true
+url: https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/marriott-bonvoy-business-american-express-card/
+aliases:
+- Marriott Bonvoy Business Amex
+- Amex Marriott Business
+- Starwood Preferred Guest Business
+cobrand:
+  partner: Marriott Bonvoy
+  program: pts:marriott_bonvoy
+fee_posting:
+  anchor: account_open
+notes: Also gives 7% off standard room rates booked direct at participating Marriott hotels (Amex Business Card Rate), modeled as a benefit. Amex Offers are not modeled. Additional (employee) cards carry no fee.
+related:
+- card_id: us.amex.marriott-bonvoy-brilliant
+  relation: personal_counterpart
+provenance:
+  sources:
+  - url: https://thepointsguy.com/credit-cards/reviews/marriott-bonvoy-business-amex-credit-card-review/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://upgradedpoints.com/credit-cards/reviews/marriott-bonvoy-business-amex-review/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://onemileatatime.com/reviews/credit-cards/american-express/marriott-bonvoy-business-card/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.nerdwallet.com/reviews/credit-cards/marriott-bonvoy-business
+    retrieved_at: '2026-11-13'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.8'
+  last_reviewed: '2026-11-13'

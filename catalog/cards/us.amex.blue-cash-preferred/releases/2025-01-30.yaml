@@ -1,0 +1,45 @@
+id: us.amex.blue-cash-preferred@2025-01-30
+card_id: us.amex.blue-cash-preferred
+kind: baseline
+effective_for_new: "2025-01-30"
+notes: Terms as of January 30, 2025, when Amex expanded the 6% streaming list. Earlier history is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 9500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.amex.blue-cash-preferred/us-supermarkets-6
+  version: 1
+- target: earn_rule:us.amex.blue-cash-preferred/us-streaming-6
+  version: 1
+- target: earn_rule:us.amex.blue-cash-preferred/transit-3
+  version: 1
+- target: earn_rule:us.amex.blue-cash-preferred/us-gas-3
+  version: 1
+- target: earn_rule:us.amex.blue-cash-preferred/base-1
+  version: 1
+- target: benefit:us.amex.blue-cash-preferred/disney-credit
+  version: 1
+- target: benefit:us.amex.blue-cash-preferred/rental-cdw
+  version: 1
+- target: benefit:us.amex.blue-cash-preferred/purchase-protection
+  version: 1
+- target: benefit:us.amex.blue-cash-preferred/return-protection
+  version: 1
+- target: benefit:us.amex.blue-cash-preferred/extended-warranty
+  version: 1
+sources:
+- url: https://www.americanexpress.com/us/credit-cards/card/blue-cash-preferred/
+  retrieved_at: "2026-11-13"
+  publisher: issuer
+- url: https://upgradedpoints.com/news/amex-expands-streaming-blue-cash-preferred-card/
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://doctorofcredit.com/american-express-blue-cash-preferred-card-84-yearly-disney-credit
+  retrieved_at: "2026-11-13"
+  publisher: review
+confidence: "0.8"

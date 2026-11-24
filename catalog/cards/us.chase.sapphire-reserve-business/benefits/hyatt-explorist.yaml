@@ -1,0 +1,36 @@
+id: us.chase.sapphire-reserve-business/hyatt-explorist
+card_id: us.chase.sapphire-reserve-business
+kind: status
+name: World of Hyatt Explorist
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2026-03-31
+  summary: After $120,000 in calendar-year spend on the card, World of Hyatt Explorist status.
+  unlocked_only: true
+  grants:
+  - entitlement: status:hyatt
+    attributes:
+      tier: explorist
+  conditions:
+  - type: spend_gte
+    amount: 12000000
+    currency: USD
+    period: calendar_year
+    note: $120,000 in purchases on this card in a calendar year
+  - type: enrollment_required
+    note: Link Chase and World of Hyatt accounts
+  beneficiaries:
+  - primary
+  notes: Lasts through the rest of the qualifying year and the following year.
+  sources:
+  - url: https://www.thepointsguy.com/news/new-hyatt-explorist-sapphire-reserve-benefit
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://upgradedpoints.com/news/chase-sapphire-cardholders-spend-hyatt-explorist/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://creditcards.chase.com/business-credit-cards/sapphire/reserve
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  confidence: '0.75'

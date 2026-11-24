@@ -1,0 +1,62 @@
+id: us.chase.ihg-business/diamond-spend
+card_id: us.chase.ihg-business
+kind: status
+name: IHG Diamond Elite with spend
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-business@2024-01-01
+  summary: "IHG Diamond Elite status for the rest of that year and the next after you spend $40,000 on the card in a calendar year."
+  grants:
+  - entitlement: status:ihg
+    attributes:
+      tier: diamond
+  conditions:
+  - type: spend_gte
+    amount: 4000000
+    currency: USD
+    period: calendar_year
+    note: $40,000 in a calendar year
+  beneficiaries:
+  - primary
+  notes: Status for the rest of that year and the following year.
+  machine_readable: false
+  sources:
+  - url: https://frequentmiler.com/all-the-existing-ihg-credit-cards-have-been-refreshed-here-are-the-changes/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.uscreditcardguide.com/chase-ihg-premier-business-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://thepointsguy.com/news/ihg-credit-card-refresh-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review
+- version: 2
+  supersedes: 1
+  change_type: amount_changed
+  release: us.chase.ihg-business@2027-01-01
+  summary: "IHG Diamond Elite status for the rest of that year and the next after you spend $50,000 on the card in a calendar year."
+  grants:
+  - entitlement: status:ihg
+    attributes:
+      tier: diamond
+  conditions:
+  - type: spend_gte
+    amount: 5000000
+    currency: USD
+    period: calendar_year
+    note: $50,000 in a calendar year, from January 1, 2027
+  beneficiaries:
+  - primary
+  notes: Status for the rest of that year and the following year.
+  machine_readable: false
+  sources:
+  - url: https://creditcards.chase.com/business-credit-cards/IHG/business
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://chase.com/personal/credit-cards/ihg/premierbusiness/premier-business-perks
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://thepointsguy.com/news/ihg-credit-card-refresh-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review

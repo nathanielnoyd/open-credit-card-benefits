@@ -1,0 +1,22 @@
+id: us.amex.gold/baggage
+card_id: us.amex.gold
+kind: protection
+name: Baggage insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.gold@2024-07-25
+  summary: "Covers up to $1,250 for lost, damaged or stolen carry-on bags and $500 for checked bags, beyond the carrier's coverage, when the full common-carrier fare is paid with the card."
+  coverage:
+    per_person:
+      amount: 125000
+      currency: USD
+  grants:
+  - entitlement: protection:lost_luggage
+  conditions:
+  - type: paid_with_card
+  notes: Up to $1,250 for carry-on and $500 for checked bags, in excess of the carrier's coverage, when the entire common-carrier fare is paid
+    with the card. New York residents have a $10,000 aggregate limit per covered trip. per_person holds the carry-on limit; the separate
+    $500 checked-bag limit has no field.
+  beneficiaries:
+  - primary

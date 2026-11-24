@@ -1,0 +1,141 @@
+id: pts:capital_one_miles
+name: Capital One Miles
+kind: transferable
+issuer: Capital One
+url: https://www.capitalone.com/credit-cards/venture/
+expiry: none
+pooling:
+  family: capital-one-miles
+  notes: Minimum transfer to partners is 1,000 miles. Miles can be moved to any other Capital One miles account, including another person's; cash-back cards can move rewards into a miles account.
+paths:
+  - id: cover-travel-purchases
+    kind: statement_credit
+    rate: "1.0"
+    notes: Purchase Eraser, against travel purchases charged in the last 90 days.
+  - id: capital-one-travel
+    kind: portal
+    rate: "1.0"
+  - id: cash
+    kind: statement_credit
+    rate: "0.5"
+    notes: Cash back, check or non-travel statement credit.
+  - id: gift-cards
+    kind: gift_card
+    rate_min: "0.8"
+    rate_max: "1.0"
+    rate_expected: "1.0"
+  - id: pay-with-points-checkout
+    kind: pay_with_points
+    rate: "0.8"
+    notes: Amazon and PayPal checkout; sources range from 0.8¢ to 1¢.
+  - id: aeromexico
+    kind: transfer
+    to: pts:aeromexico_rewards
+    ratio: "1:1"
+  - id: aeroplan
+    kind: transfer
+    to: pts:aeroplan
+    ratio: "1:1"
+  - id: avianca
+    kind: transfer
+    to: pts:avianca_lifemiles
+    ratio: "1:1"
+  - id: british-airways
+    kind: transfer
+    to: pts:ba_avios
+    ratio: "1:1"
+  - id: cathay
+    kind: transfer
+    to: pts:cathay_asia_miles
+    ratio: "1:1"
+  - id: emirates
+    kind: transfer
+    to: pts:emirates_skywards
+    ratio: "2:1.5"
+    notes: Reduced to 2:1.5 on January 13, 2026.
+  - id: etihad
+    kind: transfer
+    to: pts:etihad_guest
+    ratio: "1:1"
+  - id: eva
+    kind: transfer
+    to: pts:eva_infinity
+    ratio: "2:1.5"
+  - id: finnair
+    kind: transfer
+    to: pts:finnair_avios
+    ratio: "1:1"
+  - id: flying-blue
+    kind: transfer
+    to: pts:flying_blue
+    ratio: "1:1"
+  - id: jal
+    kind: transfer
+    to: pts:jal_mileage_bank
+    ratio: "2:1.5"
+  - id: jetblue
+    kind: transfer
+    to: pts:jetblue_trueblue
+    ratio: "5:3"
+  - id: qantas
+    kind: transfer
+    to: pts:qantas
+    ratio: "1:1"
+  - id: qatar
+    kind: transfer
+    to: pts:qatar_avios
+    ratio: "1:1"
+  - id: singapore
+    kind: transfer
+    to: pts:singapore_krisflyer
+    ratio: "1:1"
+  - id: tap
+    kind: transfer
+    to: pts:tap_miles_go
+    ratio: "1:1"
+  - id: turkish
+    kind: transfer
+    to: pts:turkish_miles_smiles
+    ratio: "1:1"
+  - id: virgin-atlantic
+    kind: transfer
+    to: pts:virgin_atlantic
+    ratio: "1:1"
+  - id: copa
+    kind: transfer
+    to: pts:copa_connectmiles
+    ratio: "2:1.5"
+    effective_from: "2026-11-02"
+    notes: Added November 2, 2026 with a 30% launch bonus (1,000:975) through December 1, 2026; base ratio 1,000:750.
+  - id: accor
+    kind: transfer
+    to: pts:accor_all
+    ratio: "2:1"
+  - id: choice
+    kind: transfer
+    to: pts:choice_privileges
+    ratio: "1:1"
+  - id: i-prefer
+    kind: transfer
+    to: pts:i_prefer
+    ratio: "1:2"
+  - id: wyndham
+    kind: transfer
+    to: pts:wyndham_rewards
+    ratio: "1:1"
+sources:
+  - url: https://awardwallet.com/mile-transfer-times?program=Capital+One
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://cardcurator.ai/blog/capital-one-miles-guide
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://frequentmiler.com/copa-added-as-new-capital-one-transfer-partner/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://www.nerdwallet.com/article/travel/capital-one-miles-value
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://www.point.me/insights/how-much-are-capital-one-miles-worth.md
+    retrieved_at: "2026-11-13"
+    publisher: review

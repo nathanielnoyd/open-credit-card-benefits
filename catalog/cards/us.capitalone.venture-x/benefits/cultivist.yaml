@@ -1,0 +1,21 @@
+id: us.capitalone.venture-x/cultivist
+card_id: us.capitalone.venture-x
+kind: membership
+name: The Cultivist Enthusiast membership discount
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x@2025-03-01
+  summary: "50% off a Cultivist Enthusiast museum membership for up to two years after you enroll; it renews at full price afterward."
+  grants:
+  - entitlement: discount:cultivist
+  conditions:
+  - type: enrollment_required
+  notes: 50% off a Cultivist Enthusiast membership for up to two years; free entry to 80+ museums. Auto-renews at full price afterwards.
+  machine_readable: false
+  sources:
+  - url: https://www.capitalone.com/credit-cards/venture-x/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  beneficiaries:
+  - primary

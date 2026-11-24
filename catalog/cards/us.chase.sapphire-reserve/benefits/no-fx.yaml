@@ -1,0 +1,27 @@
+id: us.chase.sapphire-reserve/no-fx
+card_id: us.chase.sapphire-reserve
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-reserve@2024-01-01
+    summary: "No foreign transaction fees on purchases made outside the US."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: fee_waiver:foreign_transaction
+        combine: any
+    conditions: []
+    beneficiaries:
+      - primary
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

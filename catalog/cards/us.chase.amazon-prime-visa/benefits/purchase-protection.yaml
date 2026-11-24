@@ -1,0 +1,24 @@
+id: us.chase.amazon-prime-visa/purchase-protection
+card_id: us.chase.amazon-prime-visa
+kind: protection
+name: Purchase protection
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.amazon-prime-visa@2023-05-01
+  summary: "Covers damage or theft within 120 days of purchase on items bought with the card, up to $500 per claim and $50,000 a year."
+  coverage:
+    per_claim:
+      amount: 50000
+      currency: USD
+    per_period:
+      amount: 5000000
+      currency: USD
+    window_days: 120
+  grants:
+  - entitlement: protection:purchase
+  conditions:
+  - type: paid_with_card
+  notes: 120 days from purchase against damage or theft; up to $500 per claim and $50,000 per year.
+  beneficiaries:
+  - primary

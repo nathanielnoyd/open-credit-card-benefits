@@ -1,0 +1,60 @@
+id: us.citi.aadvantage-executive@2026-08-23
+card_id: us.citi.aadvantage-executive
+kind: refresh
+announced_on: '2026-08-03'
+effective_for_new: '2026-08-23'
+notes: 'August 2026 refresh: $695 fee, AA Vacations, inflight/Admirals Club, Omni and Avis benefits, larger Lyft credit and Loyalty Point bonuses, 12x on AAdvantage Hotels and Cars. Grubhub and the 25% inflight savings end for accounts opened on or after 2026-08-23. The card is now marketed as a World Legend Mastercard. Existing cardmembers open more than 12 months were notified by September 2026 and pay the new fee at their next anniversary; those open less than 12 months are notified in August 2027 and pay it at the anniversary after that, so the fee transition below is approximate.'
+changes:
+- target: fee:annual
+  to:
+    amount: 69500
+    currency: USD
+- target: earn_rule:us.citi.aadvantage-executive/aadvantage-hotels-cars
+  version: 2
+- target: benefit:us.citi.aadvantage-executive/lyft-credit
+  version: 2
+- target: benefit:us.citi.aadvantage-executive/trusted-traveler
+  version: 2
+- target: benefit:us.citi.aadvantage-executive/loyalty-point-bonus
+  version: 2
+- target: benefit:us.citi.aadvantage-executive/inflight-savings
+  change_type: retired
+- target: benefit:us.citi.aadvantage-executive/grubhub-credit
+  change_type: retired
+- target: benefit:us.citi.aadvantage-executive/aa-vacations-credit
+  version: 1
+- target: benefit:us.citi.aadvantage-executive/inflight-admirals-credit
+  version: 1
+- target: benefit:us.citi.aadvantage-executive/omni-champion
+  version: 1
+- target: benefit:us.citi.aadvantage-executive/omni-free-night
+  version: 1
+- target: benefit:us.citi.aadvantage-executive/avis-presidents-club
+  version: 1
+transition:
+- applies_to:
+  - benefits
+  - earn_rules
+  'on': '2026-08-23'
+- applies_to:
+  - benefit:us.citi.aadvantage-executive/inflight-savings
+  'on': '2026-10-01'
+- applies_to:
+  - benefit:us.citi.aadvantage-executive/grubhub-credit
+  'on': '2027-09-01'
+- applies_to:
+  - fees
+  next_renewal_on_or_after: '2026-08-23'
+sources:
+- url: https://worldairlinenews.com/2026/08/03/american-airlines-and-citi-elevate-premium-travel-with-enhanced-citi-aadvantage-executive-world-legend-mastercard/
+  retrieved_at: '2026-11-13'
+  publisher: press
+- url: https://thepointsguy.com/news/citi-aadvantage-executive-mastercard-refresh-2026/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://onemileatatime.com/news/citi-aadvantage-executive-card-changes-higher-fee-new-benefits/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://awardwallet.com/news/american-aadvantage/citi-aadvantage-executive-card-2026-refresh/
+  retrieved_at: '2026-11-13'
+  publisher: review

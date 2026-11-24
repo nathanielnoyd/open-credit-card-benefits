@@ -1,0 +1,16 @@
+id: us.amex.hilton-aspire/diamond-status
+card_id: us.amex.hilton-aspire
+kind: status
+name: Hilton Honors Diamond status
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.hilton-aspire@2024-02-01
+  summary: "Diamond status with Hilton Honors while you hold the card."
+  face_value: null
+  beneficiaries:
+  - primary
+  grants:
+  - entitlement: status:hilton
+    attributes:
+      tier: diamond

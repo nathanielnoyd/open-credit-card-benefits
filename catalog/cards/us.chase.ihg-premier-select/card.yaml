@@ -1,0 +1,41 @@
+id: us.chase.ihg-premier-select
+issuer_id: us.chase
+name: IHG One Rewards Premier Select Credit Card
+summary: "A $350-a-year IHG card earning 12x at IHG hotels, 6x on dining and other travel and 3x elsewhere, with a 60,000-point anniversary free night, Platinum status, 20 Elite Night Credits a year, up to $300 in IHG food and beverage vouchers and a $200 airline credit."
+network: mastercard
+segment: personal
+tier: premium
+family: chase-ihg
+earns: pts:ihg_one
+open_to_applicants: true
+url: https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier-select
+aliases:
+- IHG Premier Select
+- IHG One Rewards Premier Select
+cobrand:
+  partner: IHG One Rewards
+  program: pts:ihg_one
+fee_posting:
+  anchor: account_open
+notes: The top tier of the Chase IHG personal cards, announced and opened to applicants on October 1, 2026 alongside the
+  refresh of the IHG Premier. Points bought from IHG with the card are discounted 30%; not modeled.
+provenance:
+  sources:
+  - url: https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier-select
+    retrieved_at: '2026-11-14'
+    publisher: issuer
+  - url: https://www.chase.com/personal/credit-cards/ihg/premierselect
+    retrieved_at: '2026-11-14'
+    publisher: issuer
+  - url: https://media.chase.com/news/ihg-premier-select-card-portfolio-updates
+    retrieved_at: '2026-11-14'
+    publisher: issuer
+  - url: https://thepointsguy.com/news/ihg-premier-select-card-launch/
+    retrieved_at: '2026-11-14'
+    publisher: review
+  - url: https://onemileatatime.com/go/cc-chase-ihgpremierselect-review/
+    retrieved_at: '2026-11-14'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.8'
+  last_reviewed: '2026-11-14'

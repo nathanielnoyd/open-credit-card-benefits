@@ -1,0 +1,21 @@
+id: us.amex.delta-platinum-business/mqd-headstart
+card_id: us.amex.delta-platinum-business
+kind: anniversary
+name: MQD Headstart
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-platinum-business@2025-02-01
+  summary: "2,500 Medallion Qualification Dollars deposited each calendar year you hold the card."
+  reward:
+    currency: pts:delta_mqd
+    points: 2500
+  issued_on: calendar_year
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: anniversary:us.amex.delta-platinum-business.mqd-headstart
+  beneficiaries:
+  - primary
+  notes: 2,500 Medallion Qualification Dollars deposited each Medallion Qualification Year (calendar year) the card is open.

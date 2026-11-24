@@ -1,0 +1,95 @@
+card_id: us.amex.business-gold
+rules:
+- id: us.amex.business-gold/top-two-4x
+  name: 4x in top two categories
+  categories:
+  - cat:dining
+  - cat:gas_ev.gas
+  - cat:business.advertising
+  - cat:business.electronics
+  - cat:business.software_cloud
+  - cat:telecom.wireless
+  - cat:transit
+  - cat:travel.transit
+  - cat:travel.rideshare
+  - cat:travel.parking_tolls
+  choice:
+    mode: top_spend
+    pick: 2
+    period: statement
+    groups:
+    - id: dining
+      categories:
+      - cat:dining
+    - id: gas_ev_gas
+      categories:
+      - cat:gas_ev.gas
+    - id: business_advertising
+      categories:
+      - cat:business.advertising
+    - id: telecom_wireless
+      categories:
+      - cat:telecom.wireless
+    - id: transit
+      name: Transit
+      categories:
+      - cat:transit
+      - cat:travel.transit
+      - cat:travel.rideshare
+      - cat:travel.parking_tolls
+    - id: technology
+      name: Electronics, software and cloud
+      categories:
+      - cat:business.electronics
+      - cat:business.software_cloud
+  versions:
+  - version: 1
+    release: us.amex.business-gold@2024-02-01
+    multiplier: '4'
+    cap:
+      amount: 15000000
+      currency: USD
+    cap_period: calendar_year
+    notes: 'Six Amex categories: U.S. restaurants (incl. takeout and delivery); U.S. gas stations; U.S. advertising in select media
+      (online, TV, radio); U.S. electronic goods retailers and software and cloud providers (one category); U.S. wireless phone service
+      billed directly by the provider; transit (trains, taxis, rideshare, ferries, tolls, parking, buses, subways). The two with the
+      most spend each billing cycle earn 4x on $150,000 combined per calendar year. Several category IDs here map to one Amex category,
+      which choice.pick cannot express.'
+  - version: 2
+    release: us.amex.business-gold@2027-02-17
+    multiplier: '4'
+    cap:
+      amount: 15000000
+      currency: USD
+    cap_period: calendar_year
+    sources:
+    - url: https://www.doctorofcredit.com/american-express-business-gold-4x-ads-wireless-categories-to-be-narrowed/
+      retrieved_at: '2026-11-13'
+      publisher: review
+    - url: https://awardwallet.com/news/amex-membership-rewards/amex-business-gold-bonus-category-changes
+      retrieved_at: '2026-11-13'
+      publisher: review
+    confidence: '0.75'
+    notes: 'Six Amex categories: U.S. restaurants (incl. takeout and delivery); U.S. gas stations; U.S. advertising in select media
+      (online, TV, radio); U.S. electronic goods retailers and software and cloud providers (one category); U.S. wireless phone service
+      billed directly by the provider; transit (trains, taxis, rideshare, ferries, tolls, parking, buses, subways). The two with the
+      most spend each billing cycle earn 4x on $150,000 combined per calendar year. Several category IDs here map to one Amex category,
+      which choice.pick cannot express. From February 17, 2027 advertising counts only direct purchases from Meta, Google, Amazon, Microsoft,
+      GoDaddy and Yelp, and wireless only named U.S. carriers (Verizon, AT&T, T-Mobile and others); merchant restrictions on single
+      categories cannot be expressed on a multi-category rule.'
+- id: us.amex.business-gold/amex-travel-3x
+  name: Amex Travel flights and prepaid hotels
+  categories:
+  - cat:travel.portal.amex.flights
+  - cat:travel.portal.amex.hotels_prepaid
+  versions:
+  - version: 1
+    release: us.amex.business-gold@2024-02-01
+    multiplier: '3'
+- id: us.amex.business-gold/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.business-gold@2024-02-01
+    multiplier: '1'

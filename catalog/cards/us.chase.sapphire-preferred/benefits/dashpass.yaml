@@ -1,0 +1,31 @@
+id: us.chase.sapphire-preferred/dashpass
+card_id: us.chase.sapphire-preferred
+kind: membership
+name: DashPass membership
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-preferred@2024-01-01
+    summary: "DashPass membership for DoorDash at no cost when you activate it by December 31, 2029."
+    effective_from: "2024-01-01"
+    enroll_by: "2029-12-31"
+    face_value:
+      amount: 12000
+      currency: USD
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: membership:dashpass
+        combine: any
+    conditions: []
+    beneficiaries:
+      - primary
+    notes: Current terms shown; earlier terms are not verified.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-preferred/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.6"

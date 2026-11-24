@@ -1,0 +1,33 @@
+id: us.citi.aadvantage-executive
+issuer_id: us.citi
+name: Citi / AAdvantage Executive World Legend Mastercard
+summary: "A $695-a-year American Airlines card earning 4x on American purchases and 12x on AAdvantage Hotels and Cars bookings, with Admirals Club membership, Loyalty Point bonuses, and Lyft, Avis, AA Vacations and inKind dining credits."
+network: mastercard
+segment: personal
+tier: premium
+family: citi-aadvantage
+earns: pts:aa_aadvantage
+open_to_applicants: true
+url: https://www.citi.com/credit-cards/citi-aadvantage-executive-credit-card/
+aliases:
+- Citi AAdvantage Executive
+- AAdvantage Executive World Elite Mastercard
+- Citi AA Executive
+cobrand:
+  partner: American Airlines
+  program: pts:aa_aadvantage
+fee_posting:
+  anchor: account_open
+provenance:
+  sources:
+  - url: https://www.citi.com/credit-cards/citi-aadvantage-executive-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://onemileatatime.com/reviews/credit-cards/citi/citi-aadvantage-executive-card/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://thepointsguy.com/news/citi-aadvantage-executive-mastercard-refresh-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.8'

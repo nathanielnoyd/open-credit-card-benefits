@@ -1,0 +1,46 @@
+id: us.wellsfargo.autograph-journey@2024-03-01
+card_id: us.wellsfargo.autograph-journey
+kind: baseline
+effective_for_new: "2024-03-01"
+notes: Current terms (observed 2026-11-13) recorded as the baseline; the card launched in March 2024 and the date approximates the launch month. No 2025-2026 change to the card's own terms was found.
+changes:
+- target: fee:annual
+  to:
+    amount: 9500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.wellsfargo.autograph-journey/hotels-5x
+  version: 1
+- target: earn_rule:us.wellsfargo.autograph-journey/airlines-4x
+  version: 1
+- target: earn_rule:us.wellsfargo.autograph-journey/dining-3x
+  version: 1
+- target: earn_rule:us.wellsfargo.autograph-journey/other-travel-3x
+  version: 1
+- target: earn_rule:us.wellsfargo.autograph-journey/base-1x
+  version: 1
+- target: benefit:us.wellsfargo.autograph-journey/no-fx
+  version: 1
+- target: benefit:us.wellsfargo.autograph-journey/airline-credit
+  version: 1
+- target: benefit:us.wellsfargo.autograph-journey/cell-phone
+  version: 1
+- target: benefit:us.wellsfargo.autograph-journey/rental-cdw
+  version: 1
+- target: benefit:us.wellsfargo.autograph-journey/trip-cancel
+  version: 1
+- target: benefit:us.wellsfargo.autograph-journey/lost-luggage
+  version: 1
+- target: benefit:us.wellsfargo.autograph-journey/travel-accident
+  version: 1
+- target: benefit:us.wellsfargo.autograph-journey/roadside
+  version: 1
+- target: benefit:us.wellsfargo.autograph-journey/luxury-hotel-collection
+  version: 1
+- target: benefit:us.wellsfargo.autograph-journey/my-wells-fargo-deals
+  version: 1
+- target: benefit:us.wellsfargo.autograph-journey/card-exclusives
+  version: 1

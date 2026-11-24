@@ -1,0 +1,22 @@
+id: us.chase.united-business@2026-04-02
+card_id: us.chase.united-business
+kind: change
+announced_on: '2026-02-19'
+effective_for_new: '2026-04-02'
+notes: 'MileagePlus overhaul: cardmembers get at least 10% off United award pricing (15% for Premier members) and extra Polaris saver award space. Unlike the personal Explorer, card earn on United purchases stayed at 2x; the 6x cardmember flight earn is a MileagePlus program rate and is not modeled.'
+confidence: '0.65'
+changes:
+- target: benefit:us.chase.united-business/award-pricing
+  version: 1
+- target: benefit:us.chase.united-business/award-availability
+  version: 1
+sources:
+- url: https://creditcards.chase.com/business-credit-cards/united/united-business-card
+  retrieved_at: '2026-11-13'
+  publisher: issuer
+- url: https://www.uscreditcardguide.com/chase-united-mileageplus-explorer-business-credit-card
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://www.insideflyer.com/posts/united-cardholders-now-earn-more-miles-and-save-on-awards/
+  retrieved_at: '2026-11-13'
+  publisher: review

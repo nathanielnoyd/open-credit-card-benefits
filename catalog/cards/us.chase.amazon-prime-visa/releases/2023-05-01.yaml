@@ -1,0 +1,39 @@
+id: us.chase.amazon-prime-visa@2023-05-01
+card_id: us.chase.amazon-prime-visa
+kind: baseline
+effective_for_new: "2023-05-01"
+notes: Terms from the May 2023 revamp (rename to Prime Visa, 5% on Chase Travel and 2% on local transit and commuting added), which reviews in November 2026 still list. Protections are as listed in 2026 reviews and are assumed unchanged since 2023. Earlier history is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 0
+    currency: USD
+  notes: Requires an Amazon Prime membership, which has its own fee.
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.chase.amazon-prime-visa/amazon-wholefoods-5x
+  version: 1
+- target: earn_rule:us.chase.amazon-prime-visa/chase-travel-5x
+  version: 1
+- target: earn_rule:us.chase.amazon-prime-visa/dining-gas-transit-2x
+  version: 1
+- target: earn_rule:us.chase.amazon-prime-visa/base-1x
+  version: 1
+- target: benefit:us.chase.amazon-prime-visa/prime-card-bonus
+  version: 1
+- target: benefit:us.chase.amazon-prime-visa/no-fx
+  version: 1
+- target: benefit:us.chase.amazon-prime-visa/purchase-protection
+  version: 1
+- target: benefit:us.chase.amazon-prime-visa/extended-warranty
+  version: 1
+- target: benefit:us.chase.amazon-prime-visa/baggage-delay
+  version: 1
+- target: benefit:us.chase.amazon-prime-visa/lost-luggage
+  version: 1
+- target: benefit:us.chase.amazon-prime-visa/rental-cdw
+  version: 1
+- target: benefit:us.chase.amazon-prime-visa/travel-accident
+  version: 1

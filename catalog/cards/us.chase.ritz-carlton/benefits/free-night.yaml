@@ -1,0 +1,53 @@
+id: us.chase.ritz-carlton/free-night
+card_id: us.chase.ritz-carlton
+kind: certificate
+name: Anniversary Free Night Award (up to 85,000 points)
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ritz-carlton@2024-07-01
+  summary: "One free night after each account anniversary at a Marriott hotel costing up to 85,000 points, valid 12 months; you can add up to 15,000 of your own points."
+  cap:
+    currency: pts:marriott_bonvoy
+    points: 85000
+  top_up:
+    currency: pts:marriott_bonvoy
+    points: 15000
+  expires_after_days: 365
+  issued_on: anniversary
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  grants:
+  - entitlement: certificate:us.chase.ritz-carlton.free-night
+  beneficiaries:
+  - primary
+  notes: Standard room at a hotel with a redemption level up to 85,000 points; valid 12 months. Resort fees may apply.
+- version: 2
+  supersedes: 1
+  change_type: terms_changed
+  release: us.chase.ritz-carlton@2026-03-12
+  summary: "One free night after each account anniversary at a Marriott hotel costing up to 85,000 points, valid 12 months; you can add up to 25,000 of your own points."
+  cap:
+    currency: pts:marriott_bonvoy
+    points: 85000
+  top_up:
+    currency: pts:marriott_bonvoy
+    points: 25000
+  expires_after_days: 365
+  issued_on: anniversary
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  grants:
+  - entitlement: certificate:us.chase.ritz-carlton.free-night
+  beneficiaries:
+  - primary
+  notes: Standard room at a hotel with a redemption level up to 85,000 points; valid 12 months. Resort fees may apply.
+  sources:
+  - url: https://onemileatatime.com/news/marriott-free-night-awards-top-off-points/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://marriott.chase.com/ritz-carlton/benefits
+    retrieved_at: "2026-11-14"
+    publisher: issuer

@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nathanielnoyd.github.io/open-credit-card-benefits/schema/0.3/venue.schema.json",
+  "title": "OCCB access directory venue (Appendix D)",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "airport",
+    "access_rules",
+    "sources"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_-]+:[a-z0-9-]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "airport": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "terminal": {
+      "type": "string"
+    },
+    "access_rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "entitlement"
+        ],
+        "properties": {
+          "entitlement": {
+            "$ref": "common.schema.json#/$defs/entitlement_id"
+          },
+          "conditions": {
+            "$ref": "common.schema.json#/$defs/conditions"
+          },
+          "guests": {
+            "type": "object",
+            "properties": {
+              "free": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "fee": {
+                "$ref": "common.schema.json#/$defs/money"
+              }
+            }
+          },
+          "effective_from": {
+            "oneOf": [
+              {
+                "$ref": "common.schema.json#/$defs/date"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "effective_to": {
+            "$ref": "common.schema.json#/$defs/date"
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "sources": {
+      "$ref": "common.schema.json#/$defs/sources"
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

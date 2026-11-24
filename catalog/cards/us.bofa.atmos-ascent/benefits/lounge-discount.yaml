@@ -1,0 +1,22 @@
+id: us.bofa.atmos-ascent/lounge-discount
+card_id: us.bofa.atmos-ascent
+kind: other
+name: $100 off Alaska Lounge+ membership
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-ascent@2025-08-20
+  summary: "$100 off an annual Alaska Lounge+ membership."
+  face_value: null
+  grants:
+  - entitlement: discount:alaska_lounge_membership
+  conditions: []
+  beneficiaries:
+  - primary
+  machine_readable: false
+  notes: $100 off an annual Alaska Lounge+ membership. No field expresses a fixed discount on a membership price.
+  confidence: "0.7"
+  sources:
+  - url: https://upgradedpoints.com/credit-cards/reviews/atmos-rewards-ascent-visa-card/
+    retrieved_at: "2026-11-13"
+    publisher: review

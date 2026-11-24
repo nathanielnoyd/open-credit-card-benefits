@@ -1,0 +1,11 @@
+id: pts:aa_loyalty_points
+name: AAdvantage Loyalty Points
+kind: status_credit
+issuer: American Airlines
+url: https://www.aa.com/i18n/aadvantage-program/aadvantage-status/aadvantage-status.jsp
+expiry: Status-qualification credit; resets each AAdvantage status qualification year (March 1 to the last day of February).
+paths: []
+sources:
+  - url: https://www.aa.com/i18n/aadvantage-program/aadvantage-status/aadvantage-status.jsp
+    retrieved_at: "2026-11-13"
+    publisher: partner

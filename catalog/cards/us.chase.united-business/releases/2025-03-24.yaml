@@ -1,0 +1,42 @@
+id: us.chase.united-business@2025-03-24
+card_id: us.chase.united-business
+kind: refresh
+announced_on: '2025-03-24'
+transition:
+- applies_to:
+  - fee:annual
+  next_renewal_on_or_after: '2025-08-01'
+effective_for_new: '2025-03-24'
+notes: New credits took effect for new and existing cardmembers. The $150 fee applies to existing cardmembers from their first annual fee after August 1, 2025. The $100 United travel credit after seven purchases became $125 in TravelBank cash after five, and the spend PQP cap rose from 1,000 to 4,000.
+changes:
+- target: fee:annual
+  to:
+    amount: 15000
+    currency: USD
+- target: earn_rule:us.chase.united-business/pqp
+  version: 2
+- target: benefit:us.chase.united-business/travel-credit
+  version: 2
+- target: benefit:us.chase.united-business/united-hotels
+  version: 1
+- target: benefit:us.chase.united-business/rideshare
+  version: 1
+- target: benefit:us.chase.united-business/avis-budget
+  version: 1
+- target: benefit:us.chase.united-business/jsx
+  version: 1
+- target: benefit:us.chase.united-business/instacart
+  version: 1
+- target: benefit:us.chase.united-business/instacart-plus
+  version: 1
+- target: benefit:us.chase.united-business/farelock
+  version: 1
+- target: benefit:us.chase.united-business/economy-plus-milestone
+  version: 1
+sources:
+- url: https://upgradedpoints.com/news/united-airlines-business-credit-card-changes-2025/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://creditcards.chase.com/business-credit-cards/united/united-business-card
+  retrieved_at: '2026-11-13'
+  publisher: issuer

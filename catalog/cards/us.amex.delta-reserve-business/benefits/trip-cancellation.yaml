@@ -1,0 +1,28 @@
+id: us.amex.delta-reserve-business/trip-cancellation
+card_id: us.amex.delta-reserve-business
+kind: protection
+name: Trip cancellation and interruption insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-reserve-business@2025-02-01
+  summary: Covers up to $10,000 per trip and $20,000 per 12 months in nonrefundable costs when a round trip paid with the
+    card is canceled or interrupted for a covered reason.
+  coverage:
+    per_trip:
+      amount: 1000000
+      currency: USD
+    per_period:
+      amount: 2000000
+      currency: USD
+  period:
+    cadence: rolling
+    window_days: 365
+  grants:
+  - entitlement: protection:trip_cancellation
+  conditions:
+  - type: paid_with_card
+    note: Round-trip fare paid entirely with the card
+  beneficiaries:
+  - primary
+  - authorized_user

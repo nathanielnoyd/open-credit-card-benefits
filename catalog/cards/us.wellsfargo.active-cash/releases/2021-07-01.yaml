@@ -1,0 +1,26 @@
+id: us.wellsfargo.active-cash@2021-07-01
+card_id: us.wellsfargo.active-cash
+kind: baseline
+effective_for_new: "2021-07-01"
+notes: Current terms (observed 2026-11-13) recorded as the baseline; the card launched in mid-2021 and the date approximates the launch month. Earlier changes, such as protection amounts, are not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 0
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.wellsfargo.active-cash/base-2pct
+  version: 1
+- target: benefit:us.wellsfargo.active-cash/cell-phone
+  version: 1
+- target: benefit:us.wellsfargo.active-cash/rental-cdw
+  version: 1
+- target: benefit:us.wellsfargo.active-cash/roadside
+  version: 1
+- target: benefit:us.wellsfargo.active-cash/luxury-hotel-collection
+  version: 1
+- target: benefit:us.wellsfargo.active-cash/my-wells-fargo-deals
+  version: 1

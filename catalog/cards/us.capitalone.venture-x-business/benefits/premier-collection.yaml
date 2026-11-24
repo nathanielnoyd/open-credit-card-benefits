@@ -1,0 +1,21 @@
+id: us.capitalone.venture-x-business/premier-collection
+card_id: us.capitalone.venture-x-business
+kind: program_access
+name: Premier and Lifestyle Collections
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x-business@2025-11-01
+  summary: "A $100 experience credit, daily breakfast for two and upgrades when available on Premier Collection stays, and a $50 credit on Lifestyle Collection stays, booked through Capital One Business Travel."
+  grants:
+  - entitlement: program:capital_one_premier
+    value_share: "0.5"
+  - entitlement: program:capital_one_lifestyle
+    value_share: "0.5"
+  conditions:
+  - type: booking_channel
+    channel: capital_one_travel
+  notes: $100 experience credit per stay, daily breakfast for two and upgrades when available at Premier Collection hotels and vacation rentals;
+    $50 experience credit in the Lifestyle Collection. Booked through Capital One Business Travel.
+  beneficiaries:
+  - primary

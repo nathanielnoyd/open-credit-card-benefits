@@ -1,0 +1,48 @@
+id: us.citi.aadvantage-platinum-select/flight-discount
+card_id: us.citi.aadvantage-platinum-select
+kind: milestone
+name: $125 American flight discount
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-platinum-select@2025-10-19
+  summary: "A $125 American Airlines flight discount after you spend $20,000 on purchases in a cardmember year and renew the card."
+  threshold:
+    amount: 2000000
+    currency: USD
+  threshold_period: cardmember_year
+  reward_cash:
+    amount: 12500
+    currency: USD
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  grants:
+  - entitlement: milestone:us.citi.aadvantage-platinum-select.flight-discount
+  beneficiaries:
+  - primary
+  notes: A $125 American Airlines flight discount after $20,000 in purchases in a membership year and renewing the card. It is a flight voucher, not cash, and requires renewal; neither is expressible.
+- version: 2
+  supersedes: 1
+  change_type: amount_changed
+  release: us.citi.aadvantage-platinum-select@2027-01-24
+  summary: "A $150 American Airlines flight discount after you spend $20,000 on purchases in a cardmember year and renew the card."
+  threshold:
+    amount: 2000000
+    currency: USD
+  threshold_period: cardmember_year
+  reward_cash:
+    amount: 15000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  grants:
+  - entitlement: milestone:us.citi.aadvantage-platinum-select.flight-discount
+  beneficiaries:
+  - primary
+  notes: A $150 American Airlines flight discount after $20,000 in purchases in a membership year and renewing the card.
+  sources:
+  - url: https://upgradedpoints.com/news/citi-aadvantage-card-changes-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review

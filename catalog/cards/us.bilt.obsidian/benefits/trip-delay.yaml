@@ -1,0 +1,28 @@
+id: us.bilt.obsidian/trip-delay
+card_id: us.bilt.obsidian
+kind: protection
+name: Trip delay reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.bilt.obsidian@2026-02-07
+  summary: "Covers up to $300 per trip in expenses when a round trip paid with the card is delayed more than 6 hours, one claim per 12 months."
+  grants:
+  - entitlement: protection:trip_delay
+  coverage:
+    per_trip:
+      amount: 30000
+      currency: USD
+    waiting_hours: 6
+    max_claims_per_period: 1
+    priority: secondary
+  conditions:
+  - type: paid_with_card
+  notes: $300 per trip after a delay of more than 6 hours; one claim per 12 months; round trips paid in full with the card.
+  sources:
+  - url: https://www.bilt.com/terms/obsidian-card-guide-to-benefits
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  face_value: null
+  beneficiaries:
+  - primary

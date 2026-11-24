@@ -1,0 +1,62 @@
+- id: us.amex
+  name: American Express
+  region: US
+  tz: America/New_York
+  url: https://www.americanexpress.com/
+- id: us.bilt
+  name: Bilt
+  region: US
+  tz: America/New_York
+  url: https://www.bilt.com/
+- id: us.bofa
+  name: Bank of America
+  region: US
+  tz: America/New_York
+  url: https://www.bankofamerica.com/
+- id: us.capitalone
+  name: Capital One
+  region: US
+  tz: America/New_York
+  url: https://www.capitalone.com/
+- id: us.chase
+  name: Chase
+  region: US
+  tz: America/New_York
+  url: https://www.chase.com/
+- id: us.citi
+  name: Citi
+  region: US
+  tz: America/New_York
+  url: https://www.citi.com/
+- id: us.discover
+  name: Discover
+  region: US
+  tz: America/Chicago
+  url: https://www.discover.com/
+  aliases:
+  - Discover (a Capital One company)
+- id: us.usbank
+  name: U.S. Bank
+  region: US
+  tz: America/Chicago
+  url: https://www.usbank.com/
+- id: us.wellsfargo
+  name: Wells Fargo
+  region: US
+  tz: America/Los_Angeles
+  url: https://www.wellsfargo.com/
+- id: us.apple
+  name: Apple
+  region: US
+  tz: America/Los_Angeles
+  url: https://www.apple.com/apple-card/
+- id: us.barclays
+  name: Barclays US
+  region: US
+  tz: America/New_York
+  url: https://cards.barclaycardus.com/
+- id: us.cnb
+  name: City National Bank
+  region: US
+  tz: America/Los_Angeles
+  url: https://www.cnb.com/

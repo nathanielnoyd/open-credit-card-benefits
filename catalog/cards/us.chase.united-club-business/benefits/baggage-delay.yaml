@@ -1,0 +1,25 @@
+id: us.chase.united-club-business/baggage-delay
+card_id: us.chase.united-club-business
+kind: protection
+name: Baggage delay insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club-business@2024-01-01
+  summary: "Covers up to $300 per incident, for up to 3 days, for essentials when your bags are delayed more than 6 hours on a trip paid with the card."
+  coverage:
+    per_period:
+      amount: 30000
+      currency: USD
+    waiting_hours: 6
+    max_days: 3
+  grants:
+  - entitlement: protection:baggage_delay
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  - household
+  notes: Up to $100 a day for up to 3 days for essentials when baggage is delayed more than 6 hours. per_period here is the
+    per-incident maximum ($300).

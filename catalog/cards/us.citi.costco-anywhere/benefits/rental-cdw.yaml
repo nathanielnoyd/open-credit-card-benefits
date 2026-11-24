@@ -1,0 +1,18 @@
+id: us.citi.costco-anywhere/rental-cdw
+card_id: us.citi.costco-anywhere
+kind: protection
+name: Worldwide car rental insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.costco-anywhere@2026-11-13
+  summary: "Covers theft of or damage to a rental car paid with the card when you decline the rental company's collision coverage."
+  grants:
+  - entitlement: protection:rental_cdw
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Covers theft of or damage to a rental car when the rental is paid with the card and the rental company collision coverage is declined. Coverage limits and priority are not published on the product page.
+  confidence: '0.7'

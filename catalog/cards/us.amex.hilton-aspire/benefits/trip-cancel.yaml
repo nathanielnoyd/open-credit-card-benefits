@@ -1,0 +1,29 @@
+id: us.amex.hilton-aspire/trip-cancel
+card_id: us.amex.hilton-aspire
+kind: protection
+name: Trip cancellation and interruption insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.hilton-aspire@2024-02-01
+  summary: "Covers up to $10,000 per trip and $20,000 per 12 months in nonrefundable costs when a round trip paid with the card is canceled or interrupted for a covered reason."
+  face_value: null
+  period:
+    cadence: rolling
+    window_days: 365
+  coverage:
+    per_trip:
+      amount: 1000000
+      currency: USD
+    per_period:
+      amount: 2000000
+      currency: USD
+  conditions:
+  - type: paid_with_card
+    note: Round trip paid entirely with the card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: 'Non-refundable expenses charged to the card when a covered reason cancels or interrupts the trip: up to $10,000 per trip and $20,000 per card per 12 consecutive months.'
+  grants:
+  - entitlement: protection:trip_cancellation

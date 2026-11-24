@@ -1,0 +1,43 @@
+id: us.chase.ritz-carlton
+issuer_id: us.chase
+name: The Ritz-Carlton Credit Card
+summary: "A $450-a-year Chase Marriott card, closed to new applicants, earning 6x at Marriott hotels and 3x on dining, car rentals and airlines, with an 85,000-point anniversary free night, $300 a year in airline incidental credits, Priority Pass and Sapphire Lounge access and Marriott Gold Elite status."
+network: visa
+segment: personal
+tier: premium
+family: chase-marriott
+earns: pts:marriott_bonvoy
+open_to_applicants: false
+closed_to_applicants_on: "2018-07-26"
+url: https://marriott.chase.com/ritz-carlton/benefits
+aliases:
+- Ritz-Carlton Card
+- Chase Ritz-Carlton
+- Ritz-Carlton Rewards Credit Card
+- Ritz-Carlton Visa Infinite
+cobrand:
+  partner: Marriott Bonvoy
+  program: pts:marriott_bonvoy
+fee_posting:
+  anchor: account_open
+notes: Closed to new applications on July 26, 2018. Available only as a product change from a personal Chase Marriott Bonvoy card (Bold, Boundless or Bountiful) held at least 12 months, reportedly with a credit line of at least $10,000; Marriott Amex cards, business cards and non-Marriott Chase cards are not eligible.
+provenance:
+  sources:
+  - url: https://marriott.chase.com/ritz-carlton/benefits
+    retrieved_at: "2026-11-14"
+    publisher: issuer
+  - url: https://thepointsguy.com/credit-cards/reviews/ritz-carlton-rewards-card-review/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://www.takerisksbehappy.com/chase-ritz-carlton-credit-card-review-marriott/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://onemileatatime.com/reviews/credit-cards/chase/ritz-carlton-credit-card/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://thepointsguy.com/news/ritz-carlton-rewards-card-applications-closed
+    retrieved_at: "2026-11-14"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.8"
+  last_reviewed: "2026-11-14"

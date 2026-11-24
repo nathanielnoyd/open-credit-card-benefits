@@ -1,0 +1,34 @@
+id: us.chase.freedom-flex/cell-phone
+card_id: us.chase.freedom-flex
+kind: protection
+name: Cell phone protection
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.freedom-flex@2026-01-01
+  summary: "Up to $800 per claim and $1,000 per 12 months for a stolen or damaged phone, $50 deductible, two claims per 12 months, when you pay your wireless bill with the card; ended September 20, 2026."
+  coverage:
+    priority: secondary
+    per_claim:
+      amount: 80000
+      currency: USD
+    per_period:
+      amount: 100000
+      currency: USD
+    deductible:
+      amount: 5000
+      currency: USD
+    max_claims_per_period: 2
+  grants:
+  - entitlement: protection:cell_phone
+  conditions:
+  - type: paid_with_card
+    note: The monthly wireless bill must be paid with the card.
+  notes: Up to $800 per claim and $1,000 per 12 months, two claims per 12 months, $50 deductible. Discontinued September 20, 2026; losses through September 19, 2026 remain covered.
+  sources:
+  - url: https://thepointsguy.com/news/chase-freedom-flex-cellphone-protection-ending/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  beneficiaries:
+  - primary
+  - authorized_user

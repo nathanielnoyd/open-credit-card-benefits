@@ -1,0 +1,30 @@
+id: us.amex.marriott-bonvoy-brilliant/return-protection
+card_id: us.amex.marriott-bonvoy-brilliant
+kind: protection
+name: Return protection
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.marriott-bonvoy-brilliant@2024-01-01
+  summary: "Refunds items bought in the US with the card that the store won't take back within 90 days of purchase, up to $300 per item and $1,000 per calendar year."
+  face_value: null
+  period:
+    cadence: annual
+    anchor: calendar
+  coverage:
+    per_item:
+      amount: 30000
+      currency: USD
+    per_period:
+      amount: 100000
+      currency: USD
+    window_days: 90
+  conditions:
+  - type: paid_with_card
+    note: Purchased entirely with the card in the U.S. or its territories
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: 'Refund when the seller will not take an eligible item back within 90 days: up to $300 per item and $1,000 per calendar year per account.'
+  grants:
+  - entitlement: protection:return

@@ -1,0 +1,38 @@
+id: us.chase.sapphire-reserve/southwest-credit
+card_id: us.chase.sapphire-reserve
+kind: statement_credit
+name: $500 Southwest credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-reserve@2025-06-23
+    summary: "After $75,000 in calendar-year spend on the card, a $500 credit each year for Southwest flights booked through Chase Travel."
+    effective_from: "2025-06-23"
+    unlocked_only: true
+    face_value:
+      amount: 50000
+      currency: USD
+    period:
+      cadence: annual
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: credit:southwest_chase_travel
+        combine: sum
+    conditions:
+      - period: calendar_year
+        type: spend_gte
+        amount: 7500000
+        currency: USD
+        note: $75,000 in a calendar year on this card
+      - type: booking_channel
+        channel: chase_travel
+        note: Southwest flights through Chase Travel
+    beneficiaries:
+      - primary
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

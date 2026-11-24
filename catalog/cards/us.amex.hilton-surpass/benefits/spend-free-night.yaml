@@ -1,0 +1,19 @@
+id: us.amex.hilton-surpass/spend-free-night
+card_id: us.amex.hilton-surpass
+kind: certificate
+name: Free Night Reward after $15,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.hilton-surpass@2024-02-01
+  summary: "After $15,000 in calendar-year spend, a weekend or weekday standard-room Free Night Reward at almost any Hilton Honors property, valid for 1 year."
+  face_value: null
+  issued_on: milestone
+  expires_after_days: 365
+  beneficiaries:
+  - primary
+  notes: One weekend or weekday standard-room Free Night Reward at almost any Hilton Honors property, with no points cap; a few properties are excluded. Expires one year after issue. The schema cannot say "no cap"; leaving `cap` out is ambiguous.
+  machine_readable: false
+  unlocked_only: true
+  grants:
+  - entitlement: certificate:us.amex.hilton-surpass.spend-free-night

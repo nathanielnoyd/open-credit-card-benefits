@@ -1,0 +1,62 @@
+id: us.bofa.premium-rewards/rewards-bonus
+card_id: us.bofa.premium-rewards
+kind: program_access
+name: BofA Rewards credit card bonus
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards@2024-01-01
+  summary: "25% (Gold), 50% (Platinum) or 75% (Platinum Honors or Diamond Honors) more points on every purchase, based on your Preferred Rewards tier from your Bank of America and Merrill balances."
+  face_value: null
+  grants:
+  - entitlement: earn_boost:us.bofa.premium-rewards
+  conditions: []
+  beneficiaries:
+  - primary
+  selections:
+  - name: preferred_rewards_tier
+    values:
+    - none
+    - gold
+    - platinum
+    - platinum_honors
+    - diamond_honors
+    changeable: quarterly review of three-month average balance
+  notes: 'Preferred Rewards: 25% (Gold), 50% (Platinum) or 75% (Platinum Honors, Diamond Honors) more on every purchase, set by the holder’s combined Bank of America and Merrill balances. The earn value is carried by the boost earn rules; this benefit only declares the tier selection. Tier is not the holder’s choice but a fact of their banking relationship.'
+  sources:
+  - url: https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  confidence: "0.85"
+- version: 2
+  change_type: terms_changed
+  supersedes: 1
+  release: us.bofa.premium-rewards@2026-05-27
+  summary: "10% (Member), 25% (Preferred Plus), 50% (Preferred Honors) or 75% (Premier) more points on every purchase, based on your BofA Rewards tier and combined balances; welcome bonuses excluded."
+  face_value: null
+  grants:
+  - entitlement: earn_boost:us.bofa.premium-rewards
+  conditions: []
+  beneficiaries:
+  - primary
+  selections:
+  - name: preferred_rewards_tier
+    values:
+    - none
+    - member
+    - preferred_plus
+    - preferred_honors
+    - premier
+    changeable: quarterly review of three-month average balance
+  notes: 'Preferred Rewards became BofA Rewards on May 27, 2026: Member 10% (checking account, no minimum), Preferred Plus 25% ($30,000+), Preferred Honors 50% ($100,000+), Premier 75% ($1,000,000+). The selection keeps its old name. Does not apply to welcome bonuses.'
+  sources:
+  - url: https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://upgradedpoints.com/news/bofa-rewards-program-launch
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://onemileatatime.com/guides/bank-of-america-preferred-rewards/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  confidence: "0.85"

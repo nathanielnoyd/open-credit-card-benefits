@@ -1,0 +1,16 @@
+id: us.citi.aadvantage-globe/extended-warranty
+card_id: us.citi.aadvantage-globe
+kind: protection
+name: Extended warranty
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-globe@2025-10-19
+  summary: "Extends eligible manufacturer warranties on purchases paid with the card; terms not published."
+  grants:
+  - entitlement: protection:extended_warranty
+  conditions:
+  - type: paid_with_card
+  beneficiaries: [primary, authorized_user]
+  notes: Listed on Citi's product page without limits; Citi has not published a benefit guide for this card that we could find, so coverage amounts are not modeled.
+  confidence: "0.5"

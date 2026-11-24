@@ -1,0 +1,15 @@
+id: us.chase.world-of-hyatt/discoverist
+card_id: us.chase.world-of-hyatt
+kind: status
+name: World of Hyatt Discoverist status
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.world-of-hyatt@2024-01-01
+  summary: "World of Hyatt Discoverist status while you hold the card."
+  grants:
+  - entitlement: status:hyatt
+    attributes:
+      tier: discoverist
+  beneficiaries:
+  - primary

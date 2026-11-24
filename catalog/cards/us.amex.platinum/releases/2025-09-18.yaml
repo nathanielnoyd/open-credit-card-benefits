@@ -1,0 +1,36 @@
+id: us.amex.platinum@2025-09-18
+card_id: us.amex.platinum
+kind: refresh
+announced_on: "2025-09-18"
+effective_for_new: "2025-09-18"
+notes: Existing holders got the new benefits on September 18, 2025, and the new fee at their first renewal on or after January 2, 2026.
+changes:
+  - target: fee:annual
+    to:
+      amount: 89500
+      currency: USD
+  - target: benefit:us.amex.platinum/hotel-credit
+    version: 2
+  - target: benefit:us.amex.platinum/resy-credit
+    version: 1
+  - target: benefit:us.amex.platinum/digital-entertainment
+    version: 2
+  - target: benefit:us.amex.platinum/lululemon
+    version: 1
+  - target: benefit:us.amex.platinum/oura
+    version: 1
+  - target: benefit:us.amex.platinum/uber-one
+    version: 1
+  - target: benefit:us.amex.platinum/lhw-sterling
+    version: 1
+transition:
+  - applies_to:
+      - fees
+    next_renewal_on_or_after: "2026-01-02"
+sources:
+  - url: https://www.nerdwallet.com/credit-cards/news/amex-platinum-hikes-fee-adds-hundreds-in-credits
+    retrieved_at: "2026-11-12"
+  - url: https://thepointsguy.com/credit-cards/amex-platinum-2025-refresh/
+    retrieved_at: "2026-11-12"
+  - url: https://dannydealguru.com/amex-platinum-cards-getting-600-fhr-credit/?amp=1
+    retrieved_at: "2026-11-12"

@@ -1,0 +1,29 @@
+id: us.chase.united-club-business/all-access
+card_id: us.chase.united-club-business
+kind: membership
+name: United Club All Access after $50,000 spend or Premier Gold
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club-business@2025-03-24
+  summary: "After $50,000 in calendar-year spend, or with Premier Gold status or higher, an upgrade to United Club All Access with two adult guests and Star Alliance lounge access."
+  unlocked_only: true
+  grants:
+  - entitlement: lounge_network:united_club
+    value_share: '0.5'
+    attributes:
+      guests: 2
+  - entitlement: lounge_network:star_alliance
+    value_share: '0.5'
+  conditions:
+  - type: spend_gte
+    amount: 5000000
+    currency: USD
+    period: calendar_year
+    note: $50,000 in net purchases in a calendar year; Premier Gold or higher status also unlocks it
+  beneficiaries:
+  - primary
+  - guest
+  notes: Two adult guests, or one adult guest plus dependent children under 18, and Star Alliance member lounges. Unlocked by
+    $50,000 in calendar-year purchases or by holding Premier Gold or higher; the status path cannot be expressed as a condition.
+  machine_readable: false

@@ -1,0 +1,213 @@
+card_id: us.bofa.customized-cash
+rules:
+- id: us.bofa.customized-cash/choice-3pct
+  name: 3% choice category
+  categories:
+  - cat:gas_ev
+  - cat:online_shopping
+  - cat:telecom
+  - cat:streaming
+  - cat:dining
+  - cat:travel
+  - cat:drugstores
+  - cat:home_improvement
+  - cat:furniture
+  choice:
+    mode: holder_selects
+    pick: 1
+    selection: customized_cash_category
+    period: month
+    changeable: once per calendar month
+    groups:
+    - id: gas_ev
+      categories:
+      - cat:gas_ev
+    - id: dining
+      categories:
+      - cat:dining
+    - id: travel
+      categories:
+      - cat:travel
+    - id: drugstores
+      categories:
+      - cat:drugstores
+    - id: home_improvement
+      categories:
+      - cat:home_improvement
+    - id: furniture
+      categories:
+      - cat:furniture
+    - id: online_shopping
+      name: Online shopping, including cable, internet, phone and streaming
+      categories:
+      - cat:online_shopping
+      - cat:telecom
+      - cat:streaming
+  versions:
+  - version: 1
+    release: us.bofa.customized-cash@2024-01-01
+    multiplier: '3'
+    cap:
+      amount: 250000
+      currency: USD
+    cap_period: quarter
+    cap_group: quarterly-bonus
+    notes: 'Choice options are groups, not single categories: gas and EV charging; online shopping including cable, internet, phone
+      plans and streaming; dining; travel; drug stores and pharmacies; home improvement and furnishings. Picking "online shopping" covers
+      cat:online_shopping, cat:telecom and cat:streaming together, which choice.pick cannot express. Unchanged choice carries over.'
+- id: us.bofa.customized-cash/grocery-wholesale-2pct
+  name: 2% grocery stores and wholesale clubs
+  categories:
+  - cat:groceries.store
+  - cat:groceries.wholesale
+  versions:
+  - version: 1
+    release: us.bofa.customized-cash@2024-01-01
+    multiplier: '2'
+    cap:
+      amount: 250000
+      currency: USD
+    cap_period: quarter
+    cap_group: quarterly-bonus
+    notes: Shares the $2,500 quarterly cap with the choice category; superstores do not count as grocery stores.
+- id: us.bofa.customized-cash/base-1pct
+  name: 1% everything else
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.bofa.customized-cash@2024-01-01
+    multiplier: '1'
+- id: us.bofa.customized-cash/rewards-boost-10
+  name: BofA Rewards Member bonus (10%)
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.bofa.customized-cash@2026-05-27
+    boost: '0.10'
+    conditions:
+    - type: selection_is
+      name: preferred_rewards_tier
+      value: member
+    notes: 'BofA Rewards Member tier: a Bank of America checking account, no minimum balance.'
+    sources:
+    - url: https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/
+      retrieved_at: '2026-11-13'
+      publisher: review
+    - url: https://upgradedpoints.com/news/bofa-rewards-program-launch
+      retrieved_at: '2026-11-13'
+      publisher: review
+    - url: https://onemileatatime.com/guides/bank-of-america-preferred-rewards/
+      retrieved_at: '2026-11-13'
+      publisher: review
+- id: us.bofa.customized-cash/rewards-boost-25
+  name: Relationship bonus (25%)
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.bofa.customized-cash@2024-01-01
+    boost: '0.25'
+    conditions:
+    - type: selection_is
+      name: preferred_rewards_tier
+      value: gold
+    notes: 'Preferred Rewards Gold: $20,000 to $49,999 three-month average combined balance.'
+    sources:
+    - url: https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/
+      retrieved_at: '2026-11-13'
+      publisher: review
+  - version: 2
+    release: us.bofa.customized-cash@2026-05-27
+    boost: '0.25'
+    conditions:
+    - type: selection_is
+      name: preferred_rewards_tier
+      value: preferred_plus
+    notes: 'BofA Rewards Preferred Plus: $30,000 to $99,999 three-month average combined balance.'
+    sources:
+    - url: https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/
+      retrieved_at: '2026-11-13'
+      publisher: review
+    - url: https://upgradedpoints.com/news/bofa-rewards-program-launch
+      retrieved_at: '2026-11-13'
+      publisher: review
+    - url: https://onemileatatime.com/guides/bank-of-america-preferred-rewards/
+      retrieved_at: '2026-11-13'
+      publisher: review
+- id: us.bofa.customized-cash/rewards-boost-50
+  name: Relationship bonus (50%)
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.bofa.customized-cash@2024-01-01
+    boost: '0.50'
+    conditions:
+    - type: selection_is
+      name: preferred_rewards_tier
+      value: platinum
+    notes: 'Preferred Rewards Platinum: $50,000 to $99,999.'
+    sources:
+    - url: https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/
+      retrieved_at: '2026-11-13'
+      publisher: review
+  - version: 2
+    release: us.bofa.customized-cash@2026-05-27
+    boost: '0.50'
+    conditions:
+    - type: selection_is
+      name: preferred_rewards_tier
+      value: preferred_honors
+    notes: 'BofA Rewards Preferred Honors: $100,000 to $999,999.'
+    sources:
+    - url: https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/
+      retrieved_at: '2026-11-13'
+      publisher: review
+    - url: https://upgradedpoints.com/news/bofa-rewards-program-launch
+      retrieved_at: '2026-11-13'
+      publisher: review
+    - url: https://onemileatatime.com/guides/bank-of-america-preferred-rewards/
+      retrieved_at: '2026-11-13'
+      publisher: review
+- id: us.bofa.customized-cash/rewards-boost-75
+  name: Relationship bonus (75%)
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.bofa.customized-cash@2024-01-01
+    boost: '0.75'
+    conditions:
+    - type: any_of
+      conditions:
+      - type: selection_is
+        name: preferred_rewards_tier
+        value: platinum_honors
+      - type: selection_is
+        name: preferred_rewards_tier
+        value: diamond_honors
+    notes: Preferred Rewards Platinum Honors ($100,000+) and Diamond Honors ($1,000,000+).
+    sources:
+    - url: https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/
+      retrieved_at: '2026-11-13'
+      publisher: review
+  - version: 2
+    release: us.bofa.customized-cash@2026-05-27
+    boost: '0.75'
+    conditions:
+    - type: selection_is
+      name: preferred_rewards_tier
+      value: premier
+    notes: 'BofA Rewards Premier: $1,000,000+.'
+    sources:
+    - url: https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/
+      retrieved_at: '2026-11-13'
+      publisher: review
+    - url: https://upgradedpoints.com/news/bofa-rewards-program-launch
+      retrieved_at: '2026-11-13'
+      publisher: review
+    - url: https://onemileatatime.com/guides/bank-of-america-preferred-rewards/
+      retrieved_at: '2026-11-13'
+      publisher: review

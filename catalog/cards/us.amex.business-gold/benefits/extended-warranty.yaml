@@ -1,0 +1,33 @@
+id: us.amex.business-gold/extended-warranty
+card_id: us.amex.business-gold
+kind: protection
+name: Extended warranty
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-gold@2024-02-01
+    summary: "Adds 1 year to manufacturer warranties of 5 years or less on items paid with the card, up to $10,000 per item and $50,000 per year."
+    coverage:
+      extends_years: 1
+      max_original_warranty_years: 5
+      per_item:
+        amount: 1000000
+        currency: USD
+      per_period:
+        amount: 5000000
+        currency: USD
+    grants:
+      - entitlement: protection:extended_warranty
+    conditions:
+      - type: paid_with_card
+    beneficiaries:
+      - primary
+      - authorized_user
+    notes: Adds up to one year to U.S. manufacturer warranties of five years or less; up to $10,000 per item and $50,000 per account per year.
+    sources:
+      - url: https://upgradedpoints.com/credit-cards/reviews/american-express-business-gold-card/
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - url: https://frequentmiler.com/american-express-business-gold-credit-card-review/
+        retrieved_at: "2026-11-13"
+        publisher: review

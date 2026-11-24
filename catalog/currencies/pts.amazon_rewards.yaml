@@ -1,0 +1,30 @@
+id: pts:amazon_rewards
+name: Amazon rewards points
+kind: cashback
+issuer: Chase
+url: https://www.amazon.com/gp/help/customer/display.html?nodeId=GGLVZAP2LJJYRHWQ
+cents_per_point: "1.0"
+expiry: none while the account is open
+paths:
+  - id: amazon-checkout
+    kind: pay_with_points
+    rate: "1.0"
+    notes: Applied to eligible Amazon.com purchases, any amount (excludes some digital items).
+  - id: cash
+    kind: statement_credit
+    rate: "1.0"
+    notes: Statement credit or deposit through Chase, any amount.
+  - id: gift-cards
+    kind: gift_card
+    rate: "1.0"
+    notes: In $25 increments through Chase.
+  - id: chase-travel
+    kind: portal
+    rate: "1.0"
+sources:
+  - url: https://www.amazon.com/gp/help/customer/display.html?nodeId=GGLVZAP2LJJYRHWQ
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://www.nerdwallet.com/reviews/credit-cards/amazon-prime-rewards
+    retrieved_at: "2026-11-13"
+    publisher: review

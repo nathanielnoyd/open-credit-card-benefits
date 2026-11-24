@@ -1,0 +1,34 @@
+id: us.amex.delta-reserve/cell-phone
+card_id: us.amex.delta-reserve
+kind: protection
+name: Cell phone protection
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-reserve@2025-02-01
+  summary: "Covers theft of or damage to your phone up to $800 per claim, with a $50 deductible and at most 2 claims in 12 months, when you pay your monthly wireless bill with the card."
+  coverage:
+    per_claim:
+      amount: 80000
+      currency: USD
+    deductible:
+      amount: 5000
+      currency: USD
+    max_claims_per_period: 2
+  period:
+    cadence: rolling
+    window_days: 365
+  grants:
+  - entitlement: protection:cell_phone
+  conditions:
+  - type: paid_with_card
+    note: Monthly wireless bill paid with the card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Theft or damage (not loss) of phones on the billed wireless line; $1,600 per 12 months.
+  sources:
+  - url: https://www.doctorofcredit.com/american-express-adds-cell-phone-protection-on-their-premium-cards-platinum-delta
+    retrieved_at: '2026-11-13'
+    publisher: review
+  confidence: '0.75'

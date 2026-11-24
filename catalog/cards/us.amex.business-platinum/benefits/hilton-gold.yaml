@@ -1,0 +1,24 @@
+id: us.amex.business-platinum/hilton-gold
+card_id: us.amex.business-platinum
+kind: status
+name: Hilton Honors Gold
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-platinum@2025-07-01
+    summary: "Gold status with Hilton Honors while you hold the card; enrollment required."
+    grants:
+      - entitlement: status:hilton
+        attributes:
+          tier: gold
+    conditions:
+      - type: enrollment_required
+    beneficiaries:
+      - primary
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-business-platinum-card/
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - url: https://thepointsguy.com/credit-cards/amex-business-platinum-2025-refresh/
+        retrieved_at: "2026-11-13"
+        publisher: review

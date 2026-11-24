@@ -1,0 +1,24 @@
+id: us.amex.business-platinum/lufthansa
+card_id: us.amex.business-platinum
+kind: access
+name: Lufthansa lounges
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-platinum@2025-07-01
+    summary: "Access to Lufthansa lounges when you fly Lufthansa the same day."
+    grants:
+      - entitlement: lounge_network:lufthansa
+    conditions:
+      - type: same_day_flight
+        carrier:
+          - LH
+    beneficiaries:
+      - primary
+      - authorized_user
+    confidence: "0.7"
+    notes: Lufthansa lounges when flying Lufthansa Group; access ended October 1, 2026.
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-business-platinum-card/
+        retrieved_at: "2026-11-13"
+        publisher: review

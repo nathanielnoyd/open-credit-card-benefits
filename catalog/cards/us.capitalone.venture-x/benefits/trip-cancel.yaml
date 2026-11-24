@@ -1,0 +1,26 @@
+id: us.capitalone.venture-x/trip-cancel
+card_id: us.capitalone.venture-x
+kind: protection
+name: Trip cancellation and interruption
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x@2025-03-01
+  summary: "Up to $2,000 per person for nonrefundable common-carrier fares paid in full with the card when you cancel or cut short a trip for a covered reason such as illness."
+  coverage:
+    per_person:
+      amount: 200000
+      currency: USD
+    requires_card_payment: full
+  grants:
+  - entitlement: protection:trip_cancellation
+  conditions:
+  - type: paid_with_card
+  notes: Covers nonrefundable common-carrier fares paid in full with the card for covered reasons (illness, injury, death in the family, carrier insolvency). The $2,000 per-person limit comes from one review and is not confirmed.
+  sources:
+  - url: https://upgradedpoints.com/credit-cards/reviews/capital-one-venture-x/travel-insurance-benefits/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  confidence: "0.5"
+  beneficiaries:
+  - primary

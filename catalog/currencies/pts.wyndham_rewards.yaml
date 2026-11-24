@@ -1,0 +1,14 @@
+id: pts:wyndham_rewards
+name: Wyndham Rewards
+kind: hotel
+issuer: Wyndham
+url: https://www.wyndhamhotels.com/wyndham-rewards
+expiry: Points expire after about 18 months with no account activity, and in any case 4 years after posting.
+paths: []
+sources:
+  - url: https://www.wyndhamhotels.com/wyndham-rewards
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

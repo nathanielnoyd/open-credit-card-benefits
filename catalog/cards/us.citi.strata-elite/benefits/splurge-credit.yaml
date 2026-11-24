@@ -1,0 +1,27 @@
+id: us.citi.strata-elite/splurge-credit
+card_id: us.citi.strata-elite
+kind: statement_credit
+name: Splurge credit
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.strata-elite@2025-07-27
+  summary: "Up to $200 back each calendar year at up to 2 merchants you enroll from 1stDibs, American Airlines, Best Buy, Future Personal Training and Live Nation."
+  face_value: { amount: 20000, currency: USD }
+  period: { cadence: annual, anchor: calendar }
+  limit: { amount: 20000 }
+  selections:
+  - name: splurge_merchants
+    values: [1stdibs, american_airlines, best_buy, future_personal_training, live_nation]
+  grants:
+  - entitlement: credit:splurge
+  conditions:
+  - type: enrollment_required
+    note: Choose up to two merchants at citi.com/splurgecredit
+  - type: merchant_in
+    merchants: [1stdibs, american_airlines, best_buy, future_personal_training, live_nation]
+  - type: selection_is
+    name: splurge_merchants
+    note: Purchase must be at one of the (up to two) merchants the holder chose
+  beneficiaries: [primary]
+  notes: Up to $200 a calendar year combined across up to two chosen merchants. American Airlines and Live Nation have exclusions; Live Nation and Ticketmaster events outside the US do not qualify.

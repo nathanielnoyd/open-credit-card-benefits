@@ -1,0 +1,30 @@
+id: us.amex.blue-cash-everyday/rental-cdw
+card_id: us.amex.blue-cash-everyday
+kind: protection
+name: Rental car coverage
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.blue-cash-everyday@2025-08-01
+  summary: "Secondary coverage up to $50,000 for theft of or damage to a rental car on rentals of up to 30 days paid with the card; no liability coverage."
+  coverage:
+    priority: secondary
+    per_claim:
+      amount: 5000000
+      currency: USD
+    max_days: 30
+  grants:
+  - entitlement: protection:rental_cdw
+  conditions:
+  - type: paid_with_card
+  notes: Secondary; up to $50,000 per rental agreement for damage or theft, rentals up to 30 consecutive days; no liability coverage; not
+    available in Australia, Italy or New Zealand.
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://www.americanexpress.com/content/dam/amex/us/credit-cards/features-benefits/CRLDI-Benefit-Guide_371-396_EDT_2.20_REV_4.24_a11y3_040226.pdf
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://www.americanexpress.com/us/credit-cards/card/blue-cash-everyday/
+    retrieved_at: "2026-11-13"
+    publisher: issuer

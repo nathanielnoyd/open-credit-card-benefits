@@ -1,0 +1,34 @@
+id: us.citi.aadvantage-executive/rental-cdw
+card_id: us.citi.aadvantage-executive
+kind: protection
+name: Worldwide car rental insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-executive@2023-07-23
+  summary: "Secondary coverage up to $75,000 for theft or collision damage to a rental car paid with the card when you decline the rental company's coverage."
+  coverage:
+    per_claim:
+      amount: 7500000
+      currency: USD
+    priority: secondary
+  grants:
+  - entitlement: protection:rental_cdw
+    attributes:
+      priority: secondary
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Up to $75,000 for theft or collision damage when the rental company coverage is declined. Reported as secondary in the US and primary abroad; the priority split by region is not expressible.
+  sources:
+  - url: https://www.nerdwallet.com/travel/learn/the-guide-to-citi-credit-card-travel-insurance
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.squaremouth.com/travel-advice/citi-travel-insurance
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.citi.com/credit-cards/citi-aadvantage-executive-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  confidence: '0.5'

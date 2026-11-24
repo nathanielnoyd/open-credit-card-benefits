@@ -1,0 +1,32 @@
+id: us.chase.marriott-bonvoy-bountiful/purchase-protection
+card_id: us.chase.marriott-bonvoy-bountiful
+kind: protection
+name: Purchase protection
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.marriott-bonvoy-bountiful@2024-01-01
+  summary: "Covers items you buy with the card against damage or theft for 120 days, up to $500 per item."
+  grants:
+  - entitlement: protection:purchase
+  coverage:
+    per_item:
+      amount: 50000
+      currency: USD
+    window_days: 120
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: 120 days (90 days for New York residents) per The Points Guy; a general Chase Marriott benefits page says 90 days. Limits assumed to match the Boundless.
+  confidence: '0.7'
+  sources:
+  - url: https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/bountiful
+    retrieved_at: '2026-11-14'
+    publisher: issuer
+  - url: https://awardwallet.com/credit-cards/marriott-bonvoy/chase-marriott-bountiful/
+    retrieved_at: '2026-11-14'
+    publisher: review
+  - url: https://thepointsguy.com/credit-cards/reviews/marriott-bonvoy-bountiful-card-review/
+    retrieved_at: '2026-11-14'
+    publisher: review

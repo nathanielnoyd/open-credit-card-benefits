@@ -1,0 +1,102 @@
+card_id: us.citi.custom-cash
+rules:
+- id: us.citi.custom-cash/top-category-5x
+  name: 5% in the top eligible category
+  categories:
+  - cat:dining
+  - cat:gas_ev.gas
+  - cat:groceries.store
+  - cat:travel.flights
+  - cat:travel.hotels
+  - cat:travel.cruise
+  - cat:travel.other
+  - cat:travel.transit
+  - cat:travel.rideshare
+  - cat:travel.parking_tolls
+  - cat:streaming
+  - cat:drugstores
+  - cat:home_improvement
+  - cat:fitness
+  - cat:entertainment
+  choice:
+    mode: top_spend
+    pick: 1
+    period: statement
+    groups:
+    - id: dining
+      categories:
+      - cat:dining
+    - id: gas_ev_gas
+      categories:
+      - cat:gas_ev.gas
+    - id: groceries_store
+      categories:
+      - cat:groceries.store
+    - id: streaming
+      categories:
+      - cat:streaming
+    - id: drugstores
+      categories:
+      - cat:drugstores
+    - id: home_improvement
+      categories:
+      - cat:home_improvement
+    - id: fitness
+      categories:
+      - cat:fitness
+    - id: entertainment
+      categories:
+      - cat:entertainment
+    - id: select_travel
+      name: Select travel
+      categories:
+      - cat:travel.flights
+      - cat:travel.hotels
+      - cat:travel.cruise
+      - cat:travel.other
+    - id: select_transit
+      name: Select transit
+      categories:
+      - cat:travel.transit
+      - cat:travel.rideshare
+      - cat:travel.parking_tolls
+  versions:
+  - version: 1
+    release: us.citi.custom-cash@2025-05-18
+    multiplier: '5'
+    cap:
+      amount: 50000
+      currency: USD
+    cap_period: statement
+    notes: 5% on the first $500 spent each billing cycle in the single top eligible category, then 1%. Citi's ten categories are restaurants,
+      gas stations, grocery stores, select travel (airlines, hotels, cruise lines, travel agencies), select transit (commuter transit,
+      rideshare, taxis, parking, tolls), select streaming services, drugstores, home improvement stores, fitness clubs and live entertainment.
+      Grocery excludes warehouse clubs and superstores. Whether EV charging counts with gas stations is not confirmed.
+- id: us.citi.custom-cash/citi-travel-bonus
+  categories:
+  - cat:travel.portal.citi.hotels
+  - cat:travel.portal.citi.cars
+  - cat:travel.portal.citi.attractions
+  versions:
+  - version: 1
+    release: us.citi.custom-cash@2025-05-18
+    multiplier: '4'
+    stacks: true
+    notes: An additional 4% (5% total, up to 9% when travel is also the top category) on hotels, car rentals and attractions booked
+      through Citi Travel. Launched with an end date of June 30, 2026; Citi removed the end date and one review (updated September 2026)
+      calls it permanent since May 18, 2025, but other pages still showed the June 30, 2026 end. Unconfirmed.
+    sources:
+    - url: https://upgradedpoints.com/news/citi-permanent-5x-earnings-double-cash-custom-cash/
+      retrieved_at: '2026-11-13'
+      publisher: review
+    - url: https://awardwallet.com/blog/citi-custom-cash-travel-portal-spending-bonus
+      retrieved_at: '2026-11-13'
+      publisher: review
+    confidence: '0.5'
+- id: us.citi.custom-cash/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.citi.custom-cash@2025-05-18
+    multiplier: '1'

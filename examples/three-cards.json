@@ -1,0 +1,94 @@
+{
+  "occb": "0.2",
+  "people": [
+    {
+      "id": "p1"
+    },
+    {
+      "id": "p2"
+    }
+  ],
+  "cards": [
+    {
+      "id": "w-csr",
+      "card_id": "us.chase.sapphire-reserve",
+      "holder": "p1",
+      "opened_on": "2024-03-01",
+      "fee_post_dates": [
+        "2025-03-01",
+        "2026-03-01"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "w-csp",
+      "card_id": "us.chase.sapphire-preferred",
+      "holder": "p2",
+      "opened_on": "2022-01-15",
+      "status": "open"
+    },
+    {
+      "id": "w-plat",
+      "card_id": "us.amex.platinum",
+      "holder": "p1",
+      "opened_on": "2023-05-10",
+      "fee_post_dates": [
+        "2025-05-10",
+        "2026-05-10"
+      ],
+      "status": "open",
+      "selections": {
+        "airline": "AS"
+      }
+    }
+  ],
+  "spend_profile": {
+    "as_of": "2026-11-12",
+    "currency": "USD",
+    "amounts": {
+      "cat:dining": 800000,
+      "cat:groceries.online": 150000,
+      "cat:groceries.store": 400000,
+      "cat:gas_ev": 200000,
+      "cat:streaming": 40000,
+      "cat:travel.flights.direct": 400000,
+      "cat:travel.hotels.direct": 250000,
+      "cat:travel.portal.chase.hotels_cars": 100000,
+      "cat:travel.vacation_rentals": 100000,
+      "cat:travel.other": 150000,
+      "cat:travel.rideshare.lyft": 30000,
+      "cat:all": 1500000
+    }
+  },
+  "redemption_mix": {
+    "pts:chase_ur": {
+      "transfer:pts:world_of_hyatt": "0.2"
+    }
+  },
+  "finance": {
+    "discount_rate": "0.045",
+    "devaluation": {
+      "pts:chase_ur": "0.06",
+      "pts:amex_mr": "0.06"
+    },
+    "holding_period_months": 18,
+    "horizon_months": 12,
+    "include_offers": false
+  },
+  "balances": [
+    {
+      "currency": "pts:chase_ur",
+      "points": 182000,
+      "as_of": "2026-11-01",
+      "lots": [
+        {
+          "points": 40000,
+          "earned_before": "2025-10-26"
+        },
+        {
+          "points": 142000
+        }
+      ]
+    }
+  ]
+}

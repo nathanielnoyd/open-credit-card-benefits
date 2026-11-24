@@ -1,0 +1,21 @@
+id: us.bofa.atmos-summit/bofa-account-bonus
+card_id: us.bofa.atmos-summit
+kind: program_access
+name: Bank of America account points bonus
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-summit@2026-11-14
+  summary: "10% more Atmos points on purchases when you have an eligible Bank of America account."
+  face_value: null
+  grants:
+  - entitlement: earn_boost:us.bofa.atmos-summit
+  selections:
+  - name: bofa_eligible_account
+    values:
+    - true
+    - false
+  conditions: []
+  beneficiaries:
+  - primary
+  notes: Declares the selection used by the 10% boost earn rule; its value is in the earn rule.

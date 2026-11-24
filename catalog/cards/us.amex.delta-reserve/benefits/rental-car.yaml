@@ -1,0 +1,20 @@
+id: us.amex.delta-reserve/rental-car
+card_id: us.amex.delta-reserve
+kind: protection
+name: Car rental loss and damage insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-reserve@2025-02-01
+  summary: "Secondary coverage for damage to or theft of a rental car paid with the card when you decline the rental company's collision damage waiver."
+  coverage:
+    priority: secondary
+  grants:
+  - entitlement: protection:rental_cdw
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Secondary coverage for damage or theft of a rental car declined-CDW and paid with the card. Coverage amount not confirmed.
+  confidence: '0.7'

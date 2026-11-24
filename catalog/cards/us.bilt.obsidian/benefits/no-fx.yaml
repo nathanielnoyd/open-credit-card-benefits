@@ -1,0 +1,15 @@
+id: us.bilt.obsidian/no-fx
+card_id: us.bilt.obsidian
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.bilt.obsidian@2026-02-07
+  summary: "No foreign transaction fees on purchases made abroad or in a foreign currency."
+  grants:
+  - entitlement: fee_waiver:foreign_transaction
+  waives: foreign_transaction_fee
+  face_value: null
+  beneficiaries:
+  - primary

@@ -1,0 +1,25 @@
+id: us.barclays.wyndham-earner-plus/paid-stay-bonus
+card_id: us.barclays.wyndham-earner-plus
+kind: milestone
+name: 15,000 points after 5 paid nights
+versions:
+- version: 1
+  change_type: added
+  release: us.barclays.wyndham-earner-plus@2026-06-17
+  summary: 15,000 Wyndham Rewards points once a calendar year after you stay 5 nights at participating Hotels by Wyndham booked
+    and paid with the card.
+  reward:
+    currency: pts:wyndham_rewards
+    points: 15000
+  threshold_period: calendar_year
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: milestone:us.barclays.wyndham-earner-plus.paid-stay-bonus
+  beneficiaries:
+  - primary
+  notes: Five nights in total, consecutive or not, at 6x-earning properties, booked and paid with the card; points post 2
+    to 4 weeks after the fifth night, capped at 15,000 per calendar year. Marketed as a free night. The threshold is nights,
+    not spend, which the milestone fields cannot express.
+  machine_readable: false

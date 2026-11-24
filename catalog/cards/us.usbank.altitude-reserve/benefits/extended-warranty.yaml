@@ -1,0 +1,24 @@
+id: us.usbank.altitude-reserve/extended-warranty
+card_id: us.usbank.altitude-reserve
+kind: protection
+name: Extended warranty
+versions:
+- version: 1
+  change_type: added
+  release: us.usbank.altitude-reserve@2024-11-11
+  summary: "Extends eligible manufacturer warranties on items bought with the card; the extension and limits are not confirmed."
+  grants:
+  - entitlement: protection:extended_warranty
+  conditions:
+  - type: paid_with_card
+  notes: Listed as a card benefit by reviews; terms were not confirmed.
+  sources:
+  - url: https://awardwallet.com/credit-cards/us-bank-altitude-reserve-card/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://thepointsguy.com/credit-cards/reviews/it-pays-to-go-mobile-u-s-bank-altitude-reserve-visa-infinite-card-review/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  confidence: "0.6"
+  beneficiaries:
+  - primary

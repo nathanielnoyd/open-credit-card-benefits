@@ -1,0 +1,22 @@
+id: us.amex.delta-reserve/hertz-presidents-circle
+card_id: us.amex.delta-reserve
+kind: status
+name: Hertz President's Circle
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-reserve@2025-02-01
+  summary: "Hertz President's Circle status after you enroll."
+  grants:
+  - entitlement: status:hertz
+    attributes:
+      tier: presidents_circle
+  conditions:
+  - type: enrollment_required
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://thepointsguy.com/credit-cards/reviews/delta-reserve-amex-credit-card-review/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  confidence: '0.75'

@@ -1,0 +1,33 @@
+id: us.amex.hilton-aspire
+issuer_id: us.amex
+name: Hilton Honors American Express Aspire Card
+summary: "A $550-a-year Hilton card earning 14x points at Hilton hotels and 7x on flights, select car rentals and US restaurants, with Hilton Diamond status, a yearly Free Night Reward, and resort, flight and CLEAR+ credits."
+network: amex
+segment: personal
+tier: premium
+family: amex-hilton
+earns: pts:hilton_honors
+open_to_applicants: true
+url: https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/
+aliases:
+- Hilton Aspire
+- Amex Hilton Aspire
+cobrand:
+  partner: Hilton
+  program: pts:hilton_honors
+fee_posting:
+  anchor: account_open
+provenance:
+  sources:
+  - url: https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://frequentmiler.com/?p=35649
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://thriftytraveler.com/news/credit-card/hilton-aspire-card-changes/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.85'
+  last_reviewed: '2026-11-13'

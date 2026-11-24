@@ -1,0 +1,23 @@
+id: us.chase.sapphire-reserve-business@2026-11-15
+card_id: us.chase.sapphire-reserve-business
+kind: change
+announced_on: "2026-09-17"
+effective_for_new: "2026-11-15"
+notes: 3x social media and search advertising capped at $1,000,000 per account anniversary year, then 1x.
+changes:
+- target: earn_rule:us.chase.sapphire-reserve-business/advertising-3x
+  version: 2
+transition:
+- applies_to:
+  - earn_rule:us.chase.sapphire-reserve-business/advertising-3x
+  'on': "2026-11-15"
+sources:
+- url: https://onemileatatime.com/news/sapphire-reserve-business-bigger-hotel-credit-bonus-category-cap/
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://upgradedpoints.com/news/chase-sapphire-reserve-business-card-changes-2026/
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://creditcards.chase.com/business-credit-cards/sapphire/reserve
+  retrieved_at: "2026-11-13"
+  publisher: issuer

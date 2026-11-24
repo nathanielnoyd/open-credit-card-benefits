@@ -1,0 +1,27 @@
+id: us.amex.gold@2026-04-30
+card_id: us.amex.gold
+kind: change
+announced_on: "2026-04-30"
+notes: 'Card’s 60th anniversary: 5x on prepaid Amex Travel hotels, Hertz Five Star status, Buffalo Wild Wings and Wonder added to the dining
+  credit, and a limited-time Uber One credit. Existing and new holders got these on the same date. A 20% Hilton transfer bonus through May 30,
+  2026 is a promotion and not modeled.'
+effective_for_new: "2026-04-30"
+changes:
+- target: earn_rule:us.amex.gold/amex-travel-hotels
+  version: 2
+- target: benefit:us.amex.gold/dining-credit
+  version: 2
+- target: benefit:us.amex.gold/uber-one-2026
+  version: 1
+- target: benefit:us.amex.gold/hertz-five-star
+  version: 1
+sources:
+- url: https://upgradedpoints.com/news/amex-gold-card-new-benefits-2026/
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://awardwallet.com/news/credit-cards/american-express-gold-card-refresh-2026/
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://thepointsguy.com/news/american-express-gold-refresh-2026/
+  retrieved_at: "2026-11-13"
+  publisher: review

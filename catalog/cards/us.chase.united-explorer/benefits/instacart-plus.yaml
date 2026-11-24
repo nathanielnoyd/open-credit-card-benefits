@@ -1,0 +1,20 @@
+id: us.chase.united-explorer/instacart-plus
+card_id: us.chase.united-explorer
+kind: membership
+name: Instacart+ trial and discount
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-explorer@2025-03-24
+  summary: "Three months of Instacart+ free when you enroll, then 25% off the annual membership, through December 31, 2027."
+  face_value: null
+  effective_to: '2027-12-31'
+  grants:
+  - entitlement: membership:instacart_plus
+  conditions:
+  - type: enrollment_required
+  beneficiaries:
+  - primary
+  notes: Three months of Instacart+ free, then 25% off the annual membership (list $99) through December 31, 2027. A discount
+    after the trial is not expressible as a grant.
+  machine_readable: false

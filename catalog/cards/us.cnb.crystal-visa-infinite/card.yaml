@@ -1,0 +1,36 @@
+id: us.cnb.crystal-visa-infinite
+issuer_id: us.cnb
+name: City National Crystal Visa Infinite Credit Card
+summary: "A $400-a-year City National Bank card earning 3x on airlines, hotels, rental cars, taxis, rideshare, trains, buses and restaurants and 1x elsewhere, with a $350 yearly airline credit per account, Priority Pass Select, a Global Entry credit and a $550 lounge club credit after $50,000 in yearly spend."
+network: visa
+segment: personal
+tier: premium
+family: cnb-rewards
+earns: pts:cnb_rewards
+open_to_applicants: true
+url: https://www.cnb.com/lending/cards/individual/crystal-credit-card.asp
+aliases:
+- CNB Crystal
+- Crystal Visa Infinite
+- City National Crystal
+fee_posting:
+  anchor: account_open
+notes: >-
+  Authorized (additional) cards cost $95 each a year since 2020. Older reviews mention 12 Gogo in-flight internet
+  passes a year per card, but the issuer page no longer lists them and no current source confirms them, so they are not
+  modeled. Other issuer-listed perks not modeled: Crystal Card Concierge, Troon Rewards and Troon Prive golf benefits,
+  preferred seating at Beacon Theatre events, and car rental privileges with Avis, Hertz, National and Audi on demand.
+provenance:
+  sources:
+  - url: https://www.cnb.com/lending/cards/individual/crystal-credit-card.asp
+    retrieved_at: "2026-11-14"
+    publisher: issuer
+  - url: https://www.cnb.com/content/dam/cnb/personal-banking/lending/credit-cards/documents/Rewards-Program-Rules-Householding-08119.pdf
+    retrieved_at: "2026-11-14"
+    publisher: issuer
+  - url: https://www.uscreditcardguide.com/cnb-city-national-bank-crystal-visa-infinite-credit-card/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.75"
+  last_reviewed: "2026-11-14"

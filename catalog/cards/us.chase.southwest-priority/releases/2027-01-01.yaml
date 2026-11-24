@@ -1,0 +1,21 @@
+id: us.chase.southwest-priority@2027-01-01
+card_id: us.chase.southwest-priority
+kind: change
+announced_on: '2026-10-15'
+confidence: '0.7'
+effective_for_new: '2027-01-01'
+notes: 'Rapid Rewards 2027: card purchases earn 1 tier qualifying point per $1 with no cap, replacing the per-$5,000 TQP bonus.
+  Welcome, referral and anniversary points no longer earn TQPs; a one-time 10,000 TQP boost at 130,000 TQPs in 2027. Announcement
+  date inferred from coverage dated October 17, 2026 (''Thursday'').'
+changes:
+- target: earn_rule:us.chase.southwest-priority/tqp
+  version: 3
+- target: benefit:us.chase.southwest-priority/tqp-boost-2027
+  version: 1
+sources:
+- url: https://www.southwest.com/rapid-rewards/2027/credit-cards/
+  retrieved_at: '2026-11-13'
+  publisher: partner
+- url: https://thepointsguy.com/loyalty-programs/southwest-rapid-rewards-reboot-and-companion-pass-changes
+  retrieved_at: '2026-11-13'
+  publisher: review

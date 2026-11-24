@@ -1,0 +1,26 @@
+id: us.amex.blue-business-plus/rental-coverage
+card_id: us.amex.blue-business-plus
+kind: protection
+name: Car rental loss and damage
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.blue-business-plus@2026-01-01
+    summary: "Secondary coverage for theft of or damage to a rental car when you pay for the rental with the card and decline the rental company's collision damage waiver."
+    coverage:
+      priority: secondary
+    grants:
+      - entitlement: protection:rental_cdw
+        attributes:
+          priority: secondary
+    conditions:
+      - type: paid_with_card
+    beneficiaries:
+      - primary
+      - authorized_user
+    confidence: "0.7"
+    notes: Secondary coverage for theft or damage when the whole rental is charged to the card and the rental company CDW is declined; maximum not confirmed.
+    sources:
+      - url: https://www.cardsandpoints.com/amex-blue-business-cash
+        retrieved_at: "2026-11-13"
+        publisher: review

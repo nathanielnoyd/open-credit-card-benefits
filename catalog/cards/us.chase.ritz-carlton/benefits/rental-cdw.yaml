@@ -1,0 +1,23 @@
+id: us.chase.ritz-carlton/rental-cdw
+card_id: us.chase.ritz-carlton
+kind: protection
+name: Primary auto rental coverage
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ritz-carlton@2024-07-01
+  summary: "Primary theft and collision coverage up to $75,000 on most rental cars paid with the card when you decline the rental company's coverage."
+  grants:
+  - entitlement: protection:rental_cdw
+    attributes:
+      priority: primary
+  coverage:
+    priority: primary
+    per_claim:
+      amount: 7500000
+      currency: USD
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Primary coverage up to $75,000 for theft and collision damage for most rentals in the US and abroad.

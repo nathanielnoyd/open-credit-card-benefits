@@ -1,0 +1,30 @@
+id: us.amex.marriott-bonvoy-bevy/baggage
+card_id: us.amex.marriott-bonvoy-bevy
+kind: protection
+name: Baggage insurance plan
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.marriott-bonvoy-bevy@2024-01-01
+  summary: "Covers lost, damaged or stolen bags beyond the carrier's coverage when the full common-carrier fare is paid with the card, with separate limits for carry-on and checked bags."
+  face_value: null
+  coverage:
+    priority: excess
+  conditions:
+  - type: paid_with_card
+    note: Entire common carrier fare charged to the card
+  beneficiaries:
+  - primary
+  - authorized_user
+  machine_readable: false
+  notes: Excess of the carrier's coverage. One third-party summary gives up to 1,250 dollars for carry-on and 500 dollars for checked bags per person; not confirmed from the benefit guide. The schema has no carry-on and checked sub-limits.
+  confidence: '0.6'
+  sources:
+  - url: https://www.thepointsguy.com/credit-cards/reviews/marriott-bonvoy-bevy-american-express-card-review/
+    retrieved_at: '2026-11-14'
+    publisher: review
+  - url: https://hellosafe.com/credit-card-insurance/united-states/american-express/marriott-bonvoy-bevy
+    retrieved_at: '2026-11-14'
+    publisher: review
+  grants:
+  - entitlement: protection:lost_luggage

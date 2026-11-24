@@ -1,0 +1,33 @@
+id: us.chase.amazon-prime-visa
+issuer_id: us.chase
+name: Prime Visa
+summary: "A $0-a-year Chase card that requires an Amazon Prime membership, earning 5% back at Amazon, Whole Foods and Chase Travel and 2% at restaurants, gas stations and on local transit, with no foreign transaction fees."
+network: visa
+segment: personal
+tier: no_fee
+family: chase-amazon
+earns: pts:amazon_rewards
+cobrand:
+  partner: Amazon
+  program: pts:amazon_rewards
+open_to_applicants: true
+url: https://www.chase.com/personal/credit-cards/amazon
+aliases:
+- Amazon Prime Visa
+- Amazon Prime Rewards Visa Signature
+- Prime Visa Signature
+notes: Requires an eligible Amazon Prime membership; without one the account is moved to the Amazon Visa. Renamed from Amazon Prime Rewards Visa Signature in May 2023. Points are worth 1 cent at Amazon checkout or as cash back.
+provenance:
+  sources:
+  - url: https://upgradedpoints.com/credit-cards/reviews/amazon-prime-rewards-visa-signature-card/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://thepointsguy.com/credit-cards/prime-visa-current-offer/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://www.businesswire.com/news/home/20230501005242/en
+    retrieved_at: "2026-11-13"
+    publisher: press
+  verified_by: agent:occb-research
+  confidence: "0.75"
+  last_reviewed: "2026-11-13"

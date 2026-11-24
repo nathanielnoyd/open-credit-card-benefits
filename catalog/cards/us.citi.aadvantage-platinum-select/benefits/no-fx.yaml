@@ -1,0 +1,15 @@
+id: us.citi.aadvantage-platinum-select/no-fx
+card_id: us.citi.aadvantage-platinum-select
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-platinum-select@2025-10-19
+  summary: "No foreign transaction fees on purchases made abroad or in a foreign currency."
+  waives: foreign_transaction_fee
+  grants:
+  - entitlement: fee_waiver:foreign_transaction
+  beneficiaries:
+  - primary
+  - authorized_user

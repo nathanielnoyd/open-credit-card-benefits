@@ -1,0 +1,22 @@
+card_id: us.chase.ink-business-unlimited
+rules:
+- id: us.chase.ink-business-unlimited/lyft-5x
+  categories:
+  - cat:travel.rideshare.lyft
+  versions:
+  - version: 1
+    release: us.chase.ink-business-unlimited@2025-01-01
+    multiplier: '5'
+    effective_to: '2027-09-30'
+    notes: 5 points per $1 total on Lyft rides bought in the Lyft app; excludes gift cards, car rentals, vehicle service centers and other Lyft products. Start date of this promotion is not modeled.
+    sources:
+    - url: https://creditcards.chase.com/business-credit-cards/ink/unlimited
+      retrieved_at: '2026-11-13'
+      publisher: issuer
+- id: us.chase.ink-business-unlimited/base-1-5x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.ink-business-unlimited@2025-01-01
+    multiplier: '1.5'

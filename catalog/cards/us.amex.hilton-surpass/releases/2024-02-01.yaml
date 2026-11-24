@@ -1,0 +1,58 @@
+id: us.amex.hilton-surpass@2024-02-01
+card_id: us.amex.hilton-surpass
+kind: baseline
+effective_for_new: '2024-02-01'
+notes: Current terms recorded as the baseline. They come from the refresh announced in October 2023 (fee $95 to $150, quarterly Hilton credit, $15,000 free night, Priority Pass removed), complete for existing holders by February 2024; terms before it are not modeled. No 2025-2026 change was found.
+changes:
+- target: fee:annual
+  to:
+    amount: 15000
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.amex.hilton-surpass/hilton-12x
+  version: 1
+- target: earn_rule:us.amex.hilton-surpass/dining-6x
+  version: 1
+- target: earn_rule:us.amex.hilton-surpass/groceries-6x
+  version: 1
+- target: earn_rule:us.amex.hilton-surpass/gas-6x
+  version: 1
+- target: earn_rule:us.amex.hilton-surpass/online-retail-4x
+  version: 1
+- target: earn_rule:us.amex.hilton-surpass/base-3x
+  version: 1
+- target: benefit:us.amex.hilton-surpass/diamond-upgrade
+  version: 1
+- target: benefit:us.amex.hilton-surpass/gold-status
+  version: 1
+- target: benefit:us.amex.hilton-surpass/hilton-credit
+  version: 1
+- target: benefit:us.amex.hilton-surpass/spend-free-night
+  version: 1
+- target: benefit:us.amex.hilton-surpass/spend-15k
+  version: 1
+- target: benefit:us.amex.hilton-surpass/national-executive
+  version: 1
+- target: benefit:us.amex.hilton-surpass/no-fx
+  version: 1
+- target: benefit:us.amex.hilton-surpass/rental-cdw
+  version: 1
+- target: benefit:us.amex.hilton-surpass/purchase-protection
+  version: 1
+- target: benefit:us.amex.hilton-surpass/extended-warranty
+  version: 1
+- target: benefit:us.amex.hilton-surpass/baggage
+  version: 1
+sources:
+- url: https://www.americanexpress.com/us/credit-cards/card/hilton-honors-surpass/
+  retrieved_at: '2026-11-13'
+  publisher: issuer
+- url: https://upgradedpoints.com/news/hilton-honors-aspire-surpass-card-changes/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://frequentmiler.com/hilton-honors-american-express-surpass-card/
+  retrieved_at: '2026-11-13'
+  publisher: review

@@ -1,0 +1,25 @@
+id: us.chase.ihg-premier-select/purchase-protection
+card_id: us.chase.ihg-premier-select
+kind: protection
+name: Purchase protection
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier-select@2026-10-01
+  summary: "Covers items you buy with the card against damage or theft for 120 days, up to $500 per item."
+  grants:
+  - entitlement: protection:purchase
+  coverage:
+    per_item:
+      amount: 50000
+      currency: USD
+    window_days: 120
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: 90 days for New York residents.
+  sources:
+  - url: https://www.chase.com/personal/credit-cards/ihg/premierselect
+    retrieved_at: '2026-11-14'
+    publisher: issuer

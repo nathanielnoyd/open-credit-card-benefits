@@ -1,0 +1,63 @@
+id: us.amex.marriott-bonvoy-brilliant@2024-01-01
+card_id: us.amex.marriott-bonvoy-brilliant
+kind: baseline
+effective_for_new: '2024-01-01'
+notes: Current terms recorded as the baseline. They date from the September 2022 refresh ($650 fee, $300 dining credit, 85,000-point free night, Platinum status, Earned Choice Award); earlier terms are not modeled. No 2025-2026 change to the card terms was found; the Earned Choice bed-credit option was dropped for calendar years from 2026, which only changes the award menu.
+changes:
+- target: fee:annual
+  to:
+    amount: 65000
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.amex.marriott-bonvoy-brilliant/marriott-6x
+  version: 1
+- target: earn_rule:us.amex.marriott-bonvoy-brilliant/dining-3x
+  version: 1
+- target: earn_rule:us.amex.marriott-bonvoy-brilliant/flights-3x
+  version: 1
+- target: earn_rule:us.amex.marriott-bonvoy-brilliant/base-2x
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-brilliant/dining-credit
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-brilliant/free-night
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-brilliant/platinum-status
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-brilliant/elite-night-credits
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-brilliant/earned-choice
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-brilliant/property-credit
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-brilliant/trusted-traveler
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-brilliant/priority-pass
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-brilliant/no-fx
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-brilliant/rental-cdw
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-brilliant/purchase-protection
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-brilliant/extended-warranty
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-brilliant/baggage
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-brilliant/trip-delay
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-brilliant/trip-cancel
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-brilliant/return-protection
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-brilliant/cell-phone
+  version: 1
+sources:
+- url: https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-brilliant/
+  retrieved_at: '2026-11-13'
+  publisher: issuer
+- url: https://www.nerdwallet.com/reviews/credit-cards/marriott-bonvoy-brilliant
+  retrieved_at: '2026-11-13'
+  publisher: review

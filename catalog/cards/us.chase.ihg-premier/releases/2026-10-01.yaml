@@ -1,0 +1,82 @@
+id: us.chase.ihg-premier@2026-10-01
+card_id: us.chase.ihg-premier
+kind: refresh
+first_seen_on: '2026-10-01'
+notes: 'New terms applied to new applicants on October 1, 2026. Existing cardmembers: new credits and earn categories at once
+  (reduced travel earn ends Dec 31, 2026 for everyone); Elite Night Credits from January 1, 2027; $150 fee and 50,000-point
+  free night at the first renewal in 2027 (Oct-Dec 2026 renewals keep $99 and a 40,000-point night); automatic Platinum kept
+  through December 31, 2027.'
+effective_for_new: '2026-10-01'
+changes:
+- target: fee:annual
+  to:
+    amount: 15000
+    currency: USD
+- target: earn_rule:us.chase.ihg-premier/travel-5x
+  version: 2
+- target: earn_rule:us.chase.ihg-premier/airfare-5x
+  version: 1
+- target: earn_rule:us.chase.ihg-premier/car-rental-5x
+  version: 1
+- target: earn_rule:us.chase.ihg-premier/groceries-5x
+  version: 1
+- target: earn_rule:us.chase.ihg-premier/elite-night-credits-spend
+  version: 1
+- target: benefit:us.chase.ihg-premier/free-night
+  version: 2
+- target: benefit:us.chase.ihg-premier/platinum
+  change_type: retired
+  notes: New cardmembers get Gold; existing cardmembers keep Platinum through December 31, 2027.
+- target: benefit:us.chase.ihg-premier/gold
+  version: 1
+- target: benefit:us.chase.ihg-premier/platinum-spend
+  version: 1
+- target: benefit:us.chase.ihg-premier/milestone-20k
+  change_type: retired
+  notes: Removed in the refresh; the date it stopped for existing cardmembers is not confirmed.
+- target: benefit:us.chase.ihg-premier/milestone-15k
+  version: 1
+- target: benefit:us.chase.ihg-premier/milestone-15k-enc
+  version: 1
+- target: benefit:us.chase.ihg-premier/elite-night-credits
+  version: 1
+- target: benefit:us.chase.ihg-premier/airline-credit
+  version: 1
+- target: benefit:us.chase.ihg-premier/food-beverage
+  version: 1
+- target: benefit:us.chase.ihg-premier/dashpass
+  version: 1
+- target: benefit:us.chase.ihg-premier/doordash-other
+  version: 1
+- target: benefit:us.chase.ihg-premier/instacart-credit
+  version: 1
+- target: benefit:us.chase.ihg-premier/instacart-plus
+  version: 1
+transition:
+- applies_to:
+  - fee:annual
+  - benefit:us.chase.ihg-premier/free-night
+  next_renewal_on_or_after: '2027-01-01'
+- applies_to:
+  - benefit:us.chase.ihg-premier/elite-night-credits
+  - earn_rule:us.chase.ihg-premier/elite-night-credits-spend
+  - benefit:us.chase.ihg-premier/milestone-15k
+  - benefit:us.chase.ihg-premier/milestone-15k-enc
+  'on': '2027-01-01'
+- applies_to:
+  - benefit:us.chase.ihg-premier/platinum
+  - benefit:us.chase.ihg-premier/gold
+  'on': '2028-01-01'
+sources:
+- url: https://frequentmiler.com/?p=297051
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://onemileatatime.com/news/ihg-chase-credit-card-changes/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://thepointsguy.com/news/ihg-credit-card-refresh-2026/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier
+  retrieved_at: '2026-11-13'
+  publisher: issuer

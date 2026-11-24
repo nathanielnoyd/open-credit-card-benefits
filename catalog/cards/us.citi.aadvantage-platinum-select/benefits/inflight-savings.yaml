@@ -1,0 +1,16 @@
+id: us.citi.aadvantage-platinum-select/inflight-savings
+card_id: us.citi.aadvantage-platinum-select
+kind: statement_credit
+name: 25% back on inflight food and beverages
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-platinum-select@2025-10-19
+  summary: "25% back as a statement credit on American inflight food and beverage purchases."
+  face_value: null
+  percent_back: '0.25'
+  grants:
+  - entitlement: discount:inflight_american
+  beneficiaries:
+  - primary
+  notes: 25% back as a statement credit on American inflight food and beverage purchases. Removed with the January 2027 refresh.

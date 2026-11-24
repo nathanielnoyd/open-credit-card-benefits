@@ -1,0 +1,40 @@
+card_id: us.amex.hilton-aspire
+rules:
+- id: us.amex.hilton-aspire/hilton-14x
+  categories:
+  - cat:travel.hotels.direct.hilton
+  versions:
+  - version: 1
+    release: us.amex.hilton-aspire@2024-02-01
+    multiplier: '14'
+    notes: Purchases made directly with hotels and resorts in the Hilton portfolio.
+- id: us.amex.hilton-aspire/travel-7x
+  categories:
+  - cat:travel.flights.direct
+  - cat:travel.portal.amex.flights
+  - cat:travel.car_rental
+  versions:
+  - version: 1
+    release: us.amex.hilton-aspire@2024-02-01
+    multiplier: '7'
+    notes: Flights booked directly with airlines or through Amex Travel, and car rentals booked directly with select car rental companies (not all rental companies qualify).
+- id: us.amex.hilton-aspire/dining-7x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.amex.hilton-aspire@2024-02-01
+    multiplier: '7'
+    conditions:
+    - type: region
+      countries:
+      - US
+      note: U.S. merchants only
+    notes: U.S. restaurants, including takeout and delivery.
+- id: us.amex.hilton-aspire/base-3x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.hilton-aspire@2024-02-01
+    multiplier: '3'

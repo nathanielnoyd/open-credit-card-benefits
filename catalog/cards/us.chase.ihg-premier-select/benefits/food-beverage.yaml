@@ -1,0 +1,24 @@
+id: us.chase.ihg-premier-select/food-beverage
+card_id: us.chase.ihg-premier-select
+kind: statement_credit
+name: IHG Food & Beverage Rewards
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier-select@2026-10-01
+  summary: "A $75 food and beverage voucher each calendar quarter, $300 a year, applied to your room bill during an IHG hotel stay, one per stay."
+  face_value:
+    amount: 30000
+    currency: USD
+  period:
+    cadence: quarterly
+    anchor: calendar
+  limit:
+    amount: 7500
+  grants:
+  - entitlement: credit:ihg_food_beverage
+  beneficiaries:
+  - primary
+  notes: A voucher of up to $75 each quarter for food, beverage and gratuity charges on the room bill at participating IHG
+    hotels while checked in (not a statement credit); one per stay, expires at quarter end with no rollover.
+  machine_readable: false

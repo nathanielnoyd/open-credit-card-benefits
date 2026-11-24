@@ -1,0 +1,36 @@
+id: us.amex.business-platinum/cell-phone
+card_id: us.amex.business-platinum
+kind: protection
+name: Cell phone protection
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-platinum@2025-07-01
+    summary: "Covers up to $800 per claim for a stolen or damaged phone, with a $50 deductible and 2 claims per 12 months, when you pay your monthly wireless bill with the card; enrollment required."
+    coverage:
+      per_claim:
+        amount: 80000
+        currency: USD
+      deductible:
+        amount: 5000
+        currency: USD
+      max_claims_per_period: 2
+    period:
+      cadence: rolling
+      window_days: 365
+    limit:
+      count: 2
+    grants:
+      - entitlement: protection:cell_phone
+    conditions:
+      - type: enrollment_required
+      - type: paid_with_card
+        note: Monthly wireless bill paid with the card
+    beneficiaries:
+      - primary
+    confidence: "0.7"
+    notes: Up to $800 per claim, 2 approved claims per 12 months, $50 deductible per claim (deductible per TPG/Amex standard terms).
+    sources:
+      - url: https://thepointsguy.com/credit-cards/amex-business-platinum-2025-refresh/
+        retrieved_at: "2026-11-13"
+        publisher: review

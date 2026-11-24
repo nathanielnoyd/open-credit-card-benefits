@@ -1,0 +1,22 @@
+id: us.citi.strata-elite/hotel-benefit
+card_id: us.citi.strata-elite
+kind: statement_credit
+name: $300 annual hotel benefit
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.strata-elite@2025-07-27
+  summary: "Up to $300 off each calendar year on hotel stays of 2 or more nights booked through Citi Travel."
+  face_value: { amount: 30000, currency: USD }
+  period: { cadence: annual, anchor: calendar }
+  limit: { amount: 30000 }
+  grants:
+  - entitlement: credit:citi_travel_hotel
+  conditions:
+  - type: booking_channel
+    channel: citi_travel
+    note: Booked at cititravel.com
+  - type: min_nights
+    nights: 2
+  beneficiaries: [primary]
+  notes: Up to $300 off stays of two or more nights each calendar year, applied at booking; excludes taxes and fees. An unused remainder can go toward another stay.

@@ -1,0 +1,49 @@
+card_id: us.amex.delta-gold-business
+rules:
+- id: us.amex.delta-gold-business/delta-2x
+  categories:
+  - cat:travel.flights.direct.dl
+  versions:
+  - version: 1
+    release: us.amex.delta-gold-business@2025-02-01
+    multiplier: '2'
+    notes: Purchases made directly with Delta.
+- id: us.amex.delta-gold-business/dining-2x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.amex.delta-gold-business@2025-02-01
+    multiplier: '2'
+    notes: Restaurants worldwide, including takeout and delivery in the U.S.
+- id: us.amex.delta-gold-business/shipping-2x
+  categories:
+  - cat:business.shipping
+  versions:
+  - version: 1
+    release: us.amex.delta-gold-business@2025-02-01
+    multiplier: '2'
+    cap:
+      amount: 5000000
+      currency: USD
+    cap_period: calendar_year
+    notes: Eligible U.S. shipping purchases, up to $50,000 per calendar year (its own cap, separate from advertising), then 1x.
+- id: us.amex.delta-gold-business/advertising-2x
+  categories:
+  - cat:business.advertising
+  versions:
+  - version: 1
+    release: us.amex.delta-gold-business@2025-02-01
+    multiplier: '2'
+    cap:
+      amount: 5000000
+      currency: USD
+    cap_period: calendar_year
+    notes: U.S. advertising in select media (online, TV, radio), up to $50,000 per calendar year (its own cap, separate from shipping), then 1x.
+- id: us.amex.delta-gold-business/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.delta-gold-business@2025-02-01
+    multiplier: '1'

@@ -1,0 +1,30 @@
+id: us.bofa.atmos-ascent
+issuer_id: us.bofa
+name: Atmos Rewards Ascent Visa Signature
+summary: "A $95-a-year Visa earning 3x on Alaska and Hawaiian and 2x on gas, EV charging, cable, streaming and local transit, with a yearly $99 companion fare after $6,000 in spend and a free first checked bag."
+network: visa
+segment: personal
+tier: mid
+family: atmos
+earns: pts:atmos_rewards
+open_to_applicants: true
+aliases:
+- Atmos Ascent
+- Alaska Airlines Visa Signature
+- Alaska Airlines Visa
+fee_posting:
+  anchor: account_open
+cobrand:
+  partner: Alaska Airlines
+  program: pts:atmos_rewards
+notes: Renamed from the Alaska Airlines Visa Signature in August 2025, when Alaska and Hawaiian launched Atmos Rewards; existing cards converted automatically. Issuer product URL not confirmed.
+provenance:
+  sources:
+  - url: https://upgradedpoints.com/credit-cards/reviews/atmos-rewards-ascent-visa-card/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://onemileatatime.com/guides/atmos-rewards-ascent-visa-card
+    retrieved_at: "2026-11-13"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.8"

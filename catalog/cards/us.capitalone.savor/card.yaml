@@ -1,0 +1,31 @@
+id: us.capitalone.savor
+issuer_id: us.capitalone
+name: Capital One Savor Cash Rewards
+summary: "A $0-a-year Capital One card earning 3% cash back at restaurants, grocery stores, on entertainment and popular streaming, 8% on Capital One Entertainment and 5% on Capital One Travel hotels and rental cars, with no foreign transaction fees."
+network: mastercard
+segment: personal
+tier: no_fee
+family: capital-one-cash
+earns: pts:capital_one_cash
+open_to_applicants: true
+url: https://www.capitalone.com/credit-cards/savor/
+aliases:
+- Savor
+- SavorOne
+- Capital One SavorOne
+fee_posting:
+  anchor: account_open
+notes: The $0 card formerly named SavorOne. The $95 Savor (4% dining and entertainment) closed to applicants in July 2024 and is not
+  this product; in 2025 Capital One reused the SavorOne name for a separate $39 card for fair credit. Rewards can be moved to Capital
+  One miles when the holder also has a miles card such as Venture X.
+provenance:
+  sources:
+  - url: https://www.capitalone.com/credit-cards/savor/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://thepointsguy.com/credit-cards/capital-one-best-welcome-offers
+    retrieved_at: "2026-11-13"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.8"
+  last_reviewed: "2026-11-13"

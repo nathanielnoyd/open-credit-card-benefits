@@ -1,0 +1,36 @@
+id: us.chase.ihg-premier/diamond-spend
+card_id: us.chase.ihg-premier
+kind: status
+name: IHG Diamond Elite with $40,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier@2024-01-01
+  summary: "IHG Diamond Elite status for the rest of that year and the next after you spend $40,000 on the card in a calendar year."
+  grants:
+  - entitlement: status:ihg
+    attributes:
+      tier: diamond
+  conditions:
+  - type: spend_gte
+    amount: 4000000
+    currency: USD
+    period: calendar_year
+    note: $40,000 in a calendar year
+  beneficiaries:
+  - primary
+  notes: Status for the rest of that year and the following year.
+  machine_readable: false
+  sources:
+  - url: https://frequentmiler.com/?p=297051
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://onemileatatime.com/news/ihg-chase-credit-card-changes/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.chase.com/personal/credit-cards/ihg/premier/premier-protection
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier
+    retrieved_at: '2026-11-13'
+    publisher: issuer

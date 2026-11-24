@@ -1,0 +1,24 @@
+id: us.chase.ritz-carlton/platinum-elite-spend
+card_id: us.chase.ritz-carlton
+kind: status
+name: Marriott Bonvoy Platinum Elite with $75,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ritz-carlton@2024-07-01
+  summary: "Marriott Bonvoy Platinum Elite status after you spend $75,000 on the card in a calendar year."
+  unlocked_only: true
+  grants:
+  - entitlement: status:marriott
+    attributes:
+      tier: platinum
+  conditions:
+  - type: spend_gte
+    amount: 7500000
+    currency: USD
+    period: calendar_year
+    note: $75,000 in eligible purchases in a calendar year; the total resets each January 1
+  beneficiaries:
+  - primary
+  machine_readable: false
+  notes: Platinum Elite is earned once the spend is met and runs through the following status year.

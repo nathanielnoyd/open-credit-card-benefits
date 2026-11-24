@@ -1,0 +1,29 @@
+id: us.chase.sapphire-reserve-business/trip-delay
+card_id: us.chase.sapphire-reserve-business
+kind: protection
+name: Trip delay reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: Covers up to $500 per traveler in meals and lodging when a trip paid with the card is delayed more than 6 hours or needs an overnight
+    stay.
+  coverage:
+    per_person:
+      amount: 50000
+      currency: USD
+    waiting_hours: 6
+  grants:
+  - entitlement: protection:trip_delay
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://hellosafe.com/credit-card-insurance/united-states/chase/sapphire-reserve-business
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://creditcards.chase.com/business-credit-cards/sapphire/reserve
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  confidence: '0.6'

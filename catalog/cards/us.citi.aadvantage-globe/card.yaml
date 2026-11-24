@@ -1,0 +1,38 @@
+id: us.citi.aadvantage-globe
+issuer_id: us.citi
+name: Citi / AAdvantage Globe Mastercard
+summary: "A $350-a-year American Airlines card earning 6x on AAdvantage Hotels, 3x on American and 2x on restaurants and rides and rails, with 4 Admirals Club passes a year, a $99 companion certificate from the second year, and Splurge, inflight and Turo credits."
+network: mastercard
+segment: personal
+tier: premium
+family: citi-aadvantage
+earns: pts:aa_aadvantage
+open_to_applicants: true
+url: https://www.citi.com/credit-cards/citi-aadvantage-globe-mastercard
+aliases:
+- Citi AAdvantage Globe
+- AAdvantage Globe
+- Citi AA Globe
+cobrand:
+  partner: American Airlines
+  program: pts:aa_aadvantage
+fee_posting:
+  anchor: account_open
+notes: >-
+  Launched October 19, 2025, between the Platinum Select and the Executive. No changes to the card had been announced as of
+  November 2026; the October 2026 refresh of the Platinum Select and AAdvantage Business did not include it. Authorized users
+  are free. No foreign transaction fees.
+provenance:
+  sources:
+  - url: https://www.citi.com/credit-cards/citi-aadvantage-globe-mastercard
+    retrieved_at: "2026-11-14"
+    publisher: issuer
+  - url: https://thepointsguy.com/credit-cards/citi-aadvantage-globe-mastercard-launch
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://upgradedpoints.com/news/citi-aadvantage-globe-card-launches/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.8"
+  last_reviewed: "2026-11-14"

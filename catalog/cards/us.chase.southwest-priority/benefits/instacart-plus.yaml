@@ -1,0 +1,17 @@
+id: us.chase.southwest-priority/instacart-plus
+card_id: us.chase.southwest-priority
+kind: membership
+name: Three months of Instacart+
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.southwest-priority@2026-11-13
+  summary: "Three months of Instacart+ free, then automatic renewal at $99 a year if you had no existing membership."
+  face_value: null
+  period:
+    cadence: once
+  grants:
+  - entitlement: membership:instacart_plus
+  beneficiaries:
+  - primary
+  notes: Three months of complimentary Instacart+, then auto-enrollment at $99 a year for members without an existing membership.

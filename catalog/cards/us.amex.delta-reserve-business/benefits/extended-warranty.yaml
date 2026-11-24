@@ -1,0 +1,20 @@
+id: us.amex.delta-reserve-business/extended-warranty
+card_id: us.amex.delta-reserve-business
+kind: protection
+name: Extended warranty
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-reserve-business@2025-02-01
+  summary: Adds up to 1 extra year to original manufacturer warranties of 5 years or less on items paid with the card.
+  coverage:
+    extends_years: 1
+    max_original_warranty_years: 5
+  grants:
+  - entitlement: protection:extended_warranty
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Up to $10,000 per item and $50,000 per calendar year.

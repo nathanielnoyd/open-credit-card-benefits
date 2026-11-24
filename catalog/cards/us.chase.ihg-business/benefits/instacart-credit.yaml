@@ -1,0 +1,27 @@
+id: us.chase.ihg-business/instacart-credit
+card_id: us.chase.ihg-business
+kind: statement_credit
+name: Instacart credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-business@2026-10-01
+  summary: "Up to $10 a month in Instacart credit, $120 a year, while you have Instacart+, through December 31, 2027."
+  effective_to: '2027-12-31'
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 1000
+  grants:
+  - entitlement: credit:instacart
+  conditions:
+  - type: enrollment_required
+  beneficiaries:
+  - primary
+  confidence: '0.7'
+  notes: Up to $10 each month; requires an Instacart+ membership, three months of which are complimentary on activation.
+  machine_readable: false

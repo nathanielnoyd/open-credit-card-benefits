@@ -1,0 +1,19 @@
+id: us.chase.united-club/ihg-platinum
+card_id: us.chase.united-club
+kind: status
+name: IHG One Rewards Platinum Elite
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club@2024-01-01
+  summary: "IHG One Rewards Platinum Elite status for the primary cardmember after you register, while the card stays open."
+  grants:
+  - entitlement: status:ihg
+    attributes:
+      tier: platinum
+  conditions:
+  - type: enrollment_required
+  beneficiaries:
+  - primary
+  notes: Registration required; offered to United Club cardmembers since January 2022.
+  confidence: '0.75'

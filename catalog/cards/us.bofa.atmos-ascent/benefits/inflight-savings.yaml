@@ -1,0 +1,21 @@
+id: us.bofa.atmos-ascent/inflight-savings
+card_id: us.bofa.atmos-ascent
+kind: statement_credit
+name: 20% back on in-flight purchases
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-ascent@2025-08-20
+  summary: "20% back on in-flight food, drinks and Wi-Fi on Alaska and Hawaiian flights."
+  face_value: null
+  percent_back: "0.20"
+  grants:
+  - entitlement: discount:inflight_alaska
+    value_share: "0.85"
+  - entitlement: discount:inflight_hawaiian
+    value_share: "0.15"
+  conditions: []
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: 20% back on Alaska and Hawaiian in-flight food, beverages and Wi-Fi.

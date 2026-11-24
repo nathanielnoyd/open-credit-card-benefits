@@ -1,0 +1,28 @@
+id: us.bofa.premium-rewards
+issuer_id: us.bofa
+name: Bank of America Premium Rewards credit card
+summary: "A $95-a-year Visa earning 2 points per dollar on travel and dining and 1.5 elsewhere, with a $100 yearly airline incidental credit, a Global Entry or TSA PreCheck credit and up to 75% more points through BofA Rewards."
+network: visa
+segment: personal
+tier: mid
+family: bofa-rewards
+earns: pts:bofa_points
+open_to_applicants: true
+url: https://www.bankofamerica.com/credit-cards/products/premium-rewards-credit-card/
+aliases:
+- BofA Premium Rewards
+fee_posting:
+  anchor: account_open
+provenance:
+  sources:
+  - url: https://www.bankofamerica.com/credit-cards/products/premium-rewards-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://frequentmiler.com/bank-of-america-premium-rewards-credit-card-complete-guide/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://upgradedpoints.com/credit-cards/reviews/bank-of-america-premium-rewards-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.8"

@@ -1,0 +1,23 @@
+id: us.chase.ihg-premier-select/lost-luggage
+card_id: us.chase.ihg-premier-select
+kind: protection
+name: Lost luggage reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier-select@2026-10-01
+  summary: "Up to $3,000 per person when your bags are lost or damaged on a trip paid with the card."
+  grants:
+  - entitlement: protection:lost_luggage
+  coverage:
+    per_person:
+      amount: 300000
+      currency: USD
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://www.chase.com/personal/credit-cards/ihg/premierselect
+    retrieved_at: '2026-11-14'
+    publisher: issuer

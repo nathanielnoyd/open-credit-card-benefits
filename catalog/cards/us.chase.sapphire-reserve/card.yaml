@@ -1,0 +1,15 @@
+id: us.chase.sapphire-reserve
+issuer_id: us.chase
+name: Sapphire Reserve
+summary: "A $795-a-year Chase card earning 8x on Chase Travel, 4x on flights and hotels booked direct and 3x on dining, with a $300 travel credit, $500 The Edit hotel credit, dining, StubHub, DoorDash and Lyft credits and Priority Pass lounge access."
+network: visa
+segment: personal
+family: chase-sapphire
+earns: pts:chase_ur
+open_to_applicants: true
+url: https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve
+fee_posting:
+  anchor: account_open
+tier: premium
+related:
+  - { card_id: us.chase.sapphire-reserve-business, relation: business_counterpart }

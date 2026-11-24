@@ -1,0 +1,25 @@
+id: us.chase.united-club/award-discount-milestone-2
+card_id: us.chase.united-club
+kind: milestone
+name: Second 10,000-mile award discount after $40,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club@2025-03-24
+  summary: "After $40,000 in calendar-year spend, a second 10,000-mile discount on a United award flight, once per calendar year."
+  threshold:
+    amount: 4000000
+    currency: USD
+  threshold_period: calendar_year
+  reward:
+    currency: pts:united_mileageplus
+    points: 10000
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: milestone:us.chase.united-club.award-discount-2
+  beneficiaries:
+  - primary
+  notes: 'Not miles: a second 10,000-mile award discount on reaching $40,000 in a calendar year, on top of the one at $20,000;
+    expires 12 months after issue. Modeled as 10,000 miles.'

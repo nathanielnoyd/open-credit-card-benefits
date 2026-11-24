@@ -1,0 +1,32 @@
+id: us.cnb.crystal-visa-infinite/lounge-club-credit
+card_id: us.cnb.crystal-visa-infinite
+kind: statement_credit
+name: Airline lounge club credit after $50,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.cnb.crystal-visa-infinite@2020-01-01
+  summary: "After $50,000 in yearly spend, up to $550 per account each calendar year toward an airline lounge club membership."
+  face_value:
+    amount: 55000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 55000
+  unlocked_only: true
+  grants:
+  - entitlement: credit:airline_lounge_membership
+  conditions:
+  - type: spend_gte
+    amount: 5000000
+    currency: USD
+    period: calendar_year
+  notes: >-
+    Statement credit of up to $550 per account per calendar year for any airline lounge club membership worldwide, with
+    $50,000 of yearly spend. The issuer does not say whether the spend year is the calendar year or how soon after
+    reaching it the credit applies; calendar year is assumed. Added in late 2017.
+  beneficiaries:
+  - primary
+  confidence: "0.7"

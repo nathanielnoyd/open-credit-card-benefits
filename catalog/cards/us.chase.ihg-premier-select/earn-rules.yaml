@@ -1,0 +1,43 @@
+card_id: us.chase.ihg-premier-select
+rules:
+- id: us.chase.ihg-premier-select/ihg-12x
+  categories:
+  - cat:travel.hotels.direct.ihg
+  versions:
+  - version: 1
+    release: us.chase.ihg-premier-select@2026-10-01
+    multiplier: '12'
+    notes: Card points at participating IHG hotels; IHG One Rewards membership and Platinum Elite bonuses are earned separately
+      (up to 28x in total).
+- id: us.chase.ihg-premier-select/dining-6x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.chase.ihg-premier-select@2026-10-01
+    multiplier: '6'
+    notes: Includes takeout and eligible delivery.
+- id: us.chase.ihg-premier-select/travel-6x
+  categories:
+  - cat:travel
+  versions:
+  - version: 1
+    release: us.chase.ihg-premier-select@2026-10-01
+    multiplier: '6'
+    notes: All other travel, including rideshare; IHG hotel purchases earn 12x instead.
+- id: us.chase.ihg-premier-select/base-3x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.ihg-premier-select@2026-10-01
+    multiplier: '3'
+- id: us.chase.ihg-premier-select/elite-night-credits-spend
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.ihg-premier-select@2026-10-01
+    multiplier: '0.0004'
+    currency: pts:ihg_qn
+    notes: 2 Elite Night Credits for every $5,000 spent.

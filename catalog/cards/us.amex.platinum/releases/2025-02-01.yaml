@@ -1,0 +1,14 @@
+id: us.amex.platinum@2025-02-01
+card_id: us.amex.platinum
+kind: change
+effective_for_new: "2025-02-01"
+notes: Sky Club access limited to 10 visits a year, unlimited after $75,000 of calendar-year spend. Announced in 2023.
+changes:
+  - target: benefit:us.amex.platinum/delta-sky-club
+    version: 2
+  - target: benefit:us.amex.platinum/delta-unlimited
+    version: 1
+sources:
+  - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+    retrieved_at: "2026-11-12"
+confidence: "0.8"

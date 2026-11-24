@@ -1,0 +1,20 @@
+id: us.chase.united-business/extended-warranty
+card_id: us.chase.united-business
+kind: protection
+name: Extended warranty
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-business@2024-01-01
+  summary: "Adds one year to eligible US manufacturer warranties of three years or less on items paid with the card."
+  coverage:
+    extends_years: 1
+    max_original_warranty_years: 3
+  grants:
+  - entitlement: protection:extended_warranty
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Adds one year to eligible U.S. manufacturer warranties of three years or less.

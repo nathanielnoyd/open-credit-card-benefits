@@ -1,0 +1,38 @@
+id: us.amex.delta-reserve-business/sky-club-guest-passes
+card_id: us.amex.delta-reserve-business
+kind: access
+name: Delta Sky Club guest passes
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-reserve-business@2025-02-01
+  summary: 4 Delta Sky Club guest passes each card year for guests flying Delta the same day on a fare other than Basic Economy.
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    count: 4
+    unit:
+      unit: guest_pass
+  grants:
+  - entitlement: lounge_guests:delta_sky_club
+    attributes:
+      guests: 4
+  conditions:
+  - type: same_day_flight
+    carrier:
+    - DL
+  - type: fare_class_not_in
+    classes:
+    - delta_basic
+  beneficiaries:
+  - guest
+  notes: Four one-time guest passes each year for the basic card member only (employee card members are not eligible); at
+    most two used per visit; otherwise $50 per guest.
+  sources:
+  - url: https://www.delta.com/us/en/delta-sky-club/access
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://awardwallet.com/credit-cards/delta-skymiles/delta-reserve-business/
+    retrieved_at: '2026-11-13'
+    publisher: review

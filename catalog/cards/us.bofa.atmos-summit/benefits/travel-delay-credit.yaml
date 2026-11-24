@@ -1,0 +1,23 @@
+id: us.bofa.atmos-summit/travel-delay-credit
+card_id: us.bofa.atmos-summit
+kind: statement_credit
+name: $50 instant travel delay credit
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-summit@2026-11-14
+  summary: "A $50 travel voucher, sent automatically, when an Alaska flight paid with the card is canceled or its departure is delayed 2 hours or more."
+  face_value: null
+  period:
+    cadence: per_event
+  limit:
+    amount: 5000
+  grants:
+  - entitlement: credit:flight_delay_voucher_alaska
+  conditions:
+  - type: paid_with_card
+    note: Flight bought on alaskaair.com with the card
+  beneficiaries:
+  - primary
+  machine_readable: false
+  notes: A $50 Alaska voucher by email for a departure delay of 2 hours or more, or a cancellation within 24 hours of departure, on flights bought directly from Alaska with the card. It is a voucher, not a statement credit; Hawaiian is expected to follow but not confirmed.

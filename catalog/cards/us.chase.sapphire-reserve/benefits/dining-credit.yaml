@@ -1,0 +1,34 @@
+id: us.chase.sapphire-reserve/dining-credit
+card_id: us.chase.sapphire-reserve
+kind: statement_credit
+name: Exclusive Tables dining credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-reserve@2025-06-23
+    summary: "Up to $150 back each half-year, $300 a year, at Sapphire Reserve Exclusive Tables restaurants on OpenTable."
+    effective_from: "2025-06-23"
+    face_value:
+      amount: 30000
+      currency: USD
+    period:
+      cadence: semiannual
+      anchor: calendar
+      tz: America/New_York
+    limit:
+      amount: 15000
+    grants:
+      - entitlement: credit:dining_exclusive_tables
+        combine: sum
+    conditions:
+      - type: merchant_in
+        merchants: [sapphire_exclusive_tables]
+        note: Sapphire Reserve Exclusive Tables restaurants on OpenTable
+    beneficiaries:
+      - primary
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

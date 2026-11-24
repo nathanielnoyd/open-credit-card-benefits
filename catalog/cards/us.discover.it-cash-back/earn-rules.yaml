@@ -1,0 +1,83 @@
+card_id: us.discover.it-cash-back
+rules:
+- id: us.discover.it-cash-back/rotating-5pct
+  name: 5% quarterly rotating categories
+  categories:
+  - cat:groceries.store
+  - cat:groceries.wholesale
+  - cat:streaming
+  - cat:dining
+  - cat:home_improvement
+  - cat:gas_ev
+  - cat:travel.flights.direct
+  - cat:transit
+  - cat:travel.transit
+  - cat:drugstores
+  - cat:entertainment
+  - cat:utilities
+  choice:
+    mode: rotating
+    period: quarter
+  versions:
+  - version: 1
+    release: us.discover.it-cash-back@2026-01-01
+    multiplier: '5'
+    cap:
+      amount: 150000
+      currency: USD
+    cap_period: quarter
+    conditions:
+    - type: enrollment_required
+    schedule:
+    - from: '2026-01-01'
+      to: '2026-03-31'
+      categories:
+      - cat:groceries.store
+      - cat:groceries.wholesale
+      - cat:streaming
+      notes: Grocery stores, wholesale clubs and select streaming services.
+    - from: '2026-04-01'
+      to: '2026-06-30'
+      categories:
+      - cat:dining
+      - cat:home_improvement
+      notes: Restaurants and home improvement stores.
+    - from: '2026-07-01'
+      to: '2026-09-30'
+      categories:
+      - cat:gas_ev
+      - cat:travel.flights.direct
+      - cat:transit
+      - cat:travel.transit
+      - cat:drugstores
+      notes: Gas stations and EV charging, airlines and public transportation (bus, rail, ferry), and drugstores.
+    - from: '2026-10-01'
+      to: '2026-12-31'
+      categories:
+      - cat:dining
+      - cat:entertainment
+      - cat:utilities
+      notes: Restaurants, entertainment and utilities. Excludes restaurants in hotels or stores, streaming subscriptions, and utilities
+        paid through landlords or HOAs.
+    notes: Activate each quarter; earns 5% only from the activation date (not retroactive). Up to $1,500 of category purchases a quarter
+      ($75 back), then 1%. Purchases through digital wallets or third-party payment accounts may not qualify.
+    sources:
+    - url: https://www.discover.com/credit-cards/cashback-bonus/cashback-calendar.html
+      retrieved_at: '2026-11-13'
+      publisher: issuer
+    - url: https://awardwallet.com/news/cash-back/discover-cashback-calendar/
+      retrieved_at: '2026-11-13'
+      publisher: review
+    - url: https://doctorofcredit.com/discover-q2-2026-5-categories-gas-ev-transit-flights-drugstores
+      retrieved_at: '2026-11-13'
+      publisher: review
+    - url: https://www.nerdwallet.com/credit-cards/news/discover-bonus-categories-q4-2026
+      retrieved_at: '2026-11-13'
+      publisher: review
+- id: us.discover.it-cash-back/base-1pct
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.discover.it-cash-back@2026-01-01
+    multiplier: '1'

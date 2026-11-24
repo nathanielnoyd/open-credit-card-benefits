@@ -1,0 +1,16 @@
+id: us.chase.marriott-bonvoy-bountiful/gold-elite
+card_id: us.chase.marriott-bonvoy-bountiful
+kind: status
+name: Marriott Bonvoy Gold Elite
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.marriott-bonvoy-bountiful@2024-01-01
+  summary: "Marriott Bonvoy Gold Elite status each calendar year while you hold the card."
+  grants:
+  - entitlement: status:marriott
+    attributes:
+      tier: gold
+  beneficiaries:
+  - primary
+  notes: Awarded automatically to the primary cardmember; only one card account per member qualifies.

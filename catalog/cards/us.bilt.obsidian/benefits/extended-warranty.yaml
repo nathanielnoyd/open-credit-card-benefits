@@ -1,0 +1,27 @@
+id: us.bilt.obsidian/extended-warranty
+card_id: us.bilt.obsidian
+kind: protection
+name: Extended warranty
+versions:
+- version: 1
+  change_type: added
+  release: us.bilt.obsidian@2026-02-07
+  summary: "Doubles the manufacturer's warranty, adding up to 2 years, with up to $10,000 per claim on items bought with the card."
+  grants:
+  - entitlement: protection:extended_warranty
+  coverage:
+    extends_years: 2
+    per_claim:
+      amount: 1000000
+      currency: USD
+    priority: secondary
+  conditions:
+  - type: paid_with_card
+  notes: Doubles the original warranty, adding at most 24 months; up to $10,000 per claim.
+  sources:
+  - url: https://www.bilt.com/terms/obsidian-card-guide-to-benefits
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  face_value: null
+  beneficiaries:
+  - primary

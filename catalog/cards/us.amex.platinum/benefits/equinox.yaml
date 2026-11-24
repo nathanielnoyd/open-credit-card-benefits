@@ -1,0 +1,30 @@
+id: us.amex.platinum/equinox
+card_id: us.amex.platinum
+kind: statement_credit
+name: Equinox credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2024-01-01
+    summary: "Up to $300 a calendar year in statement credits toward Equinox memberships; enrollment required."
+    effective_from: "2024-01-01"
+    face_value:
+      amount: 30000
+      currency: USD
+    period:
+      cadence: annual
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: credit:equinox
+        combine: sum
+    conditions:
+      - type: enrollment_required
+    beneficiaries:
+      - primary
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

@@ -1,0 +1,28 @@
+id: us.bilt.mastercard
+issuer_id: us.bilt
+name: Bilt World Elite Mastercard (Wells Fargo)
+summary: "A no-annual-fee Wells Fargo Mastercard, closed to applicants and discontinued in February 2026, earning 3x on dining, 2x on travel and 1x on rent paid through Bilt with no fee (up to 100,000 points a year)."
+network: mastercard
+segment: personal
+tier: no_fee
+family: bilt
+earns: pts:bilt
+open_to_applicants: false
+closed_to_applicants_on: '2025-11-05'
+aliases:
+- Bilt Mastercard
+- Wells Fargo Bilt card
+- Bilt Card 1.0
+fee_posting:
+  anchor: account_open
+notes: Issued by Wells Fargo. Closed to new applicants 2025-11-05 and discontinued 2026-02-07.
+provenance:
+  sources:
+  - url: https://www.doctorofcredit.com/bilt-rewards-credit-card-full-review-earn-valuable-rewards-with-rent-payments-to-any-landlord-more
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://onemileatatime.com/news/bilt-cardless-credit-cards/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.7'

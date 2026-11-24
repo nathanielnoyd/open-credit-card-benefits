@@ -1,0 +1,14 @@
+id: pts:world_of_hyatt
+name: World of Hyatt
+kind: hotel
+issuer: Hyatt
+url: https://world.hyatt.com/
+expiry: Points expire after 24 consecutive months of inactivity.
+paths: []
+sources:
+  - url: https://world.hyatt.com/
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

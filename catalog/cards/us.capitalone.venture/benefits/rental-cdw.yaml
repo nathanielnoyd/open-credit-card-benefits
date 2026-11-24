@@ -1,0 +1,22 @@
+id: us.capitalone.venture/rental-cdw
+card_id: us.capitalone.venture
+kind: protection
+name: Auto rental collision damage waiver
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture@2024-01-01
+  summary: "Secondary collision and theft coverage on car rentals you pay for with the card when you decline the rental company's collision waiver."
+  coverage:
+    priority: secondary
+  conditions:
+  - type: paid_with_card
+  notes: Collision and theft damage on eligible rentals paid with the card when the rental company’s waiver is declined. Visa Signature
+    coverage is secondary in the US; the issuer page does not state priority or limits.
+  confidence: "0.6"
+  grants:
+  - entitlement: protection:rental_cdw
+    attributes:
+      priority: secondary
+  beneficiaries:
+  - primary

@@ -1,0 +1,73 @@
+card_id: us.chase.ihg-premier
+rules:
+- id: us.chase.ihg-premier/ihg-10x
+  categories:
+  - cat:travel.hotels.direct.ihg
+  versions:
+  - version: 1
+    release: us.chase.ihg-premier@2024-01-01
+    multiplier: '10'
+    notes: Card points at IHG hotels; IHG One Rewards membership and elite bonuses are earned separately.
+- id: us.chase.ihg-premier/travel-5x
+  categories:
+  - cat:travel
+  versions:
+  - version: 1
+    release: us.chase.ihg-premier@2024-01-01
+    multiplier: '5'
+  - version: 2
+    release: us.chase.ihg-premier@2026-10-01
+    multiplier: '5'
+    effective_to: '2026-12-31'
+    notes: Kept for all cardmembers through December 31, 2026, then retired.
+- id: us.chase.ihg-premier/dining-5x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.chase.ihg-premier@2024-01-01
+    multiplier: '5'
+- id: us.chase.ihg-premier/gas-5x
+  categories:
+  - cat:gas_ev.gas
+  versions:
+  - version: 1
+    release: us.chase.ihg-premier@2024-01-01
+    multiplier: '5'
+- id: us.chase.ihg-premier/airfare-5x
+  categories:
+  - cat:travel.flights.direct
+  versions:
+  - version: 1
+    release: us.chase.ihg-premier@2026-10-01
+    multiplier: '5'
+- id: us.chase.ihg-premier/car-rental-5x
+  categories:
+  - cat:travel.car_rental
+  versions:
+  - version: 1
+    release: us.chase.ihg-premier@2026-10-01
+    multiplier: '5'
+- id: us.chase.ihg-premier/groceries-5x
+  categories:
+  - cat:groceries.store
+  versions:
+  - version: 1
+    release: us.chase.ihg-premier@2026-10-01
+    multiplier: '5'
+- id: us.chase.ihg-premier/base-3x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.ihg-premier@2024-01-01
+    multiplier: '3'
+- id: us.chase.ihg-premier/elite-night-credits-spend
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.ihg-premier@2026-10-01
+    multiplier: '0.0004'
+    currency: pts:ihg_qn
+    notes: 2 Elite Night Credits for every $5,000 spent; existing cardmembers from January 1, 2027.

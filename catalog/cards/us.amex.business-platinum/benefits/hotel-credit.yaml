@@ -1,0 +1,99 @@
+id: us.amex.business-platinum/hotel-credit
+card_id: us.amex.business-platinum
+kind: statement_credit
+name: Hotel (lodging) credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-platinum@2025-09-18
+    summary: "Up to $300 back in each half of the calendar year, $600 a year in total, on prepaid Fine Hotels + Resorts or The Hotel Collection bookings through Amex Travel (2-night minimum for The Hotel Collection)."
+    face_value: &a1
+      amount: 60000
+      currency: USD
+    period: &a2
+      cadence: semiannual
+      anchor: calendar
+    limit: &a3
+      amount: 30000
+    grants: &a4
+      - entitlement: credit:amex_fhr_thc
+    beneficiaries: &a5
+      - primary
+    conditions:
+      - type: booking_channel
+        channel: amex_travel_fhr_thc
+        note: Prepaid Fine Hotels + Resorts or The Hotel Collection booking through Amex Travel
+      - type: min_nights
+        nights: 2
+        note: The Hotel Collection only
+    sources:
+      - url: https://thepointsguy.com/credit-cards/amex-business-platinum-2025-refresh/
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - url: https://www.doctorofcredit.com/american-express-refreshes-platinum-business-platinum-cards-895-fee-175k-200k-bonus-many-new-credits
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - url: https://upgradedpoints.com/credit-cards/reviews/amex-business-platinum/benefits-history/
+        retrieved_at: "2026-11-13"
+        publisher: review
+    notes: Up to $300 January-June and $300 July-December.
+  - version: 2
+    supersedes: 1
+    change_type: terms_changed
+    release: us.amex.business-platinum@2026-10-22
+    summary: "Up to $300 back in each half of the calendar year, $600 a year in total, on prepaid Fine Hotels + Resorts, The Hotel Collection or Airbnb Luxe bookings through Amex Travel; 2-night minimum except Fine Hotels + Resorts."
+    face_value: *a1
+    period: *a2
+    limit: *a3
+    grants: *a4
+    beneficiaries: *a5
+    conditions:
+      - type: any_of
+        conditions:
+          - type: booking_channel
+            channel: amex_travel_fhr_thc
+            note: Prepaid Fine Hotels + Resorts or The Hotel Collection (2-night minimum for The Hotel Collection)
+          - type: booking_channel
+            channel: amex_travel_airbnb_luxe
+            note: Prepaid Airbnb Luxe stay of 2+ nights through Amex Travel
+    notes: Renamed the Lodging Credit and extended to prepaid Airbnb Luxe stays of at least 2 nights. The 2-night minimum applies to The Hotel Collection and Airbnb Luxe but not yet to Fine Hotels + Resorts; min_nights cannot be scoped to one channel inside any_of.
+    sources:
+      - &a6
+        url: https://www.nerdwallet.com/travel/news/amex-adds-airbnb-and-restricts-platinum-credit
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - url: https://milestalk.com/amex-expands-platinum-and-business-platinum-600-lodging-credit-to-airbnb-adds-2-night-fhr-minimum/
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - &a7
+        url: https://cardstack.money/articles/credit-card-reviews/amex-business-platinum-benefits-2026
+        retrieved_at: "2026-11-13"
+        publisher: review
+  - version: 3
+    supersedes: 2
+    change_type: terms_changed
+    release: us.amex.business-platinum@2027-01-01
+    summary: "Up to $300 back in each half of the calendar year, $600 a year in total, on prepaid Fine Hotels + Resorts, The Hotel Collection or Airbnb Luxe bookings of 2 or more nights through Amex Travel."
+    face_value: *a1
+    period: *a2
+    limit: *a3
+    grants: *a4
+    beneficiaries: *a5
+    conditions:
+      - type: any_of
+        conditions:
+          - type: booking_channel
+            channel: amex_travel_fhr_thc
+            note: Prepaid Fine Hotels + Resorts or The Hotel Collection
+          - type: booking_channel
+            channel: amex_travel_airbnb_luxe
+            note: Prepaid Airbnb Luxe through Amex Travel
+      - type: min_nights
+        nights: 2
+        note: All bookings
+    sources:
+      - *a6
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-business-platinum-card/
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - *a7

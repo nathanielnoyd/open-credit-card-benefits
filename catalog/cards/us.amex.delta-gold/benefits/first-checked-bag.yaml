@@ -1,0 +1,24 @@
+id: us.amex.delta-gold/first-checked-bag
+card_id: us.amex.delta-gold
+kind: fee_waiver
+name: First checked bag free on Delta
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-gold@2025-02-01
+  summary: "Free first checked bag on Delta-operated flights for you and up to 8 companions on the same reservation."
+  waives: checked_bag
+  count: 1
+  companions: 8
+  grants:
+  - entitlement: fee_waiver:checked_bag_delta
+  conditions:
+  - type: same_day_flight
+    carrier:
+    - DL
+    note: Delta-operated flights; holder's SkyMiles number must be on the reservation
+  beneficiaries:
+  - primary
+  - authorized_user
+  - companion
+  notes: First checked bag free for the card member and up to 8 companions on the same reservation.

@@ -1,0 +1,24 @@
+id: us.amex.hilton-surpass/gold-status
+card_id: us.amex.hilton-surpass
+kind: status
+name: Hilton Honors Gold status
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.hilton-surpass@2024-02-01
+  summary: "Gold status with Hilton Honors while you hold the card."
+  face_value: null
+  beneficiaries:
+  - primary
+  unlocks:
+  - when:
+    - type: spend_gte
+      amount: 4000000
+      currency: USD
+      period: calendar_year
+    add:
+    - us.amex.hilton-surpass/diamond-upgrade
+  grants:
+  - entitlement: status:hilton
+    attributes:
+      tier: gold

@@ -1,0 +1,43 @@
+id: us.amex.platinum/airline-fee
+card_id: us.amex.platinum
+kind: statement_credit
+name: Airline fee credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2024-01-01
+    summary: "Up to $200 a calendar year in statement credits for incidental fees on one airline you choose (Alaska, American, Delta, Hawaiian, JetBlue, Southwest or United), which you can change each January."
+    effective_from: "2024-01-01"
+    face_value:
+      amount: 20000
+      currency: USD
+    period:
+      cadence: annual
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: credit:airline_incidentals
+        combine: sum
+    selections:
+      - name: airline
+        values:
+          - AS
+          - AA
+          - DL
+          - HA
+          - B6
+          - WN
+          - UA
+        changeable: january
+    conditions:
+      - name: airline
+        type: selection_is
+        note: Incidental fees on the airline you picked
+    beneficiaries:
+      - primary
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

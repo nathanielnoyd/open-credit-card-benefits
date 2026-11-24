@@ -1,0 +1,37 @@
+id: us.amex.platinum/uber-cash
+card_id: us.amex.platinum
+kind: statement_credit
+name: Uber Cash
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2024-01-01
+    summary: "$15 a month in Uber Cash, $35 in December, for US Uber rides and Uber Eats orders, $200 a year in total, once the card is added to your Uber account."
+    effective_from: "2024-01-01"
+    face_value:
+      amount: 20000
+      currency: USD
+    period:
+      cadence: monthly
+      anchor: calendar
+      tz: America/New_York
+      schedule:
+        "12":
+          amount: 3500
+          currency: USD
+    limit:
+      amount: 1500
+    grants:
+      - entitlement: credit:uber_cash
+        combine: sum
+    conditions:
+      - type: payment_method
+        note: Card added to Uber; US rides and Uber Eats
+    beneficiaries:
+      - primary
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

@@ -1,0 +1,31 @@
+id: us.amex.platinum/hertz-pc
+card_id: us.amex.platinum
+kind: status
+name: Hertz President’s Circle
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2024-01-01
+    summary: "Hertz President's Circle status after you enroll."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: status:hertz
+        combine: max
+        attributes:
+          tier: presidents_circle
+    conditions:
+      - type: enrollment_required
+    beneficiaries:
+      - primary
+      - authorized_user
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

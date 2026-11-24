@@ -1,0 +1,22 @@
+id: us.citi.prestige/trusted-traveler
+card_id: us.citi.prestige
+kind: statement_credit
+name: Global Entry or TSA PreCheck credit
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.prestige@2025-07-09
+  summary: "Up to $120 back once every 5 years for a Global Entry or TSA PreCheck application fee charged to the card."
+  face_value: { amount: 12000, currency: USD }
+  period: { cadence: every_n_years, n: 5, anchor: calendar }
+  limit: { amount: 12000 }
+  grants:
+  - entitlement: credit:trusted_traveler
+  conditions:
+  - type: paid_with_card
+  beneficiaries: [primary]
+  notes: >-
+    Upgraded Points reports up to $120 once every 5 years since October 1, 2024, and One Mile at a Time also says every 5 years;
+    The Points Guy says every 4 years and AwardWallet (2023) says $100 every 4 years. Modeled as $120 every 5 years. The credit
+    can be used for another person's application.
+  confidence: "0.55"

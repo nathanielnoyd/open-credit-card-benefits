@@ -1,0 +1,22 @@
+id: us.bilt.mastercard/cell-phone
+card_id: us.bilt.mastercard
+kind: protection
+name: Cell phone protection
+versions:
+- version: 1
+  change_type: added
+  release: us.bilt.mastercard@2025-01-01
+  summary: "Covers your phone up to $800 per claim when you pay your monthly wireless bill with the card."
+  grants:
+  - entitlement: protection:cell_phone
+  coverage:
+    per_claim:
+      amount: 80000
+      currency: USD
+  conditions:
+  - type: paid_with_card
+    note: Pay the monthly wireless bill with the card
+  notes: Up to $800 per claim; deductible and annual limit not confirmed.
+  face_value: null
+  beneficiaries:
+  - primary

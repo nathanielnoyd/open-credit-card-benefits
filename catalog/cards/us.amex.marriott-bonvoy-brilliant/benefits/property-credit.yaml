@@ -1,0 +1,28 @@
+id: us.amex.marriott-bonvoy-brilliant/property-credit
+card_id: us.amex.marriott-bonvoy-brilliant
+kind: statement_credit
+name: Ritz-Carlton and St. Regis property credit
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.marriott-bonvoy-brilliant@2024-01-01
+  summary: "Up to $100 toward on-property charges for each stay of 2 or more nights at The Ritz-Carlton or St. Regis booked direct with the special card rate."
+  period:
+    cadence: per_event
+  limit:
+    per_transaction: 10000
+  conditions:
+  - type: booking_channel
+    channel: marriott_brilliant_special_rate
+    note: Book direct using the special card rate
+  - type: merchant_in
+    merchants:
+    - ritz_carlton
+    - st_regis
+  - type: min_nights
+    nights: 2
+  beneficiaries:
+  - primary
+  notes: Up to $100 credit for qualifying charges per stay of 2 nights or more at The Ritz-Carlton or St. Regis. No stated annual cap.
+  grants:
+  - entitlement: credit:marriott_property

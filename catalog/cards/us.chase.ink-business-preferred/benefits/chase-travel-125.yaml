@@ -1,0 +1,25 @@
+id: us.chase.ink-business-preferred/chase-travel-125
+card_id: us.chase.ink-business-preferred
+kind: redemption_modifier
+name: Chase Travel redemptions at 1.25 cents
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ink-business-preferred@2025-02-01
+  summary: "Your points are worth 1.25 cents each when redeemed for travel through Chase Travel."
+  face_value: null
+  rate: '1.25'
+  grants:
+  - entitlement: redemption:pay_with_points_boost
+    attributes:
+      rate: '1.25'
+  conditions: []
+  beneficiaries:
+  - primary
+  notes: Points were worth 1.25 cents in Chase Travel. Retired for new cardmembers June 23, 2025; points earned before October 26, 2025 keep 1.25 cents until October 25, 2027. There is no Ink-specific path
+    in pts:chase_ur, so applies_to_path is omitted.
+  machine_readable: false
+  sources:
+  - url: https://onemileatatime.com/?p=343735
+    retrieved_at: '2026-11-13'
+    publisher: review

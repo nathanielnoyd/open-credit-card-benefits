@@ -1,0 +1,32 @@
+id: us.amex.platinum/trip-delay
+card_id: us.amex.platinum
+kind: protection
+name: Trip delay insurance
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2024-01-01
+    summary: "Covers up to $500 per trip in expenses when a trip paid with the card is delayed more than 6 hours, for at most 2 claims in any 12 months."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      window_days: 365
+      cadence: rolling
+      anchor: calendar
+      tz: America/New_York
+    limit:
+      count: 2
+    grants:
+      - entitlement: protection:trip_delay
+        combine: max
+    conditions:
+      - type: paid_with_card
+    beneficiaries:
+      - primary
+    notes: Up to $500 per trip after 6 hours; 2 claims per 12 months.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

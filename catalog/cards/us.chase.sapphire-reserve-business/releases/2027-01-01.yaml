@@ -1,0 +1,26 @@
+id: us.chase.sapphire-reserve-business@2027-01-01
+card_id: us.chase.sapphire-reserve-business
+kind: change
+announced_on: "2026-09-17"
+effective_for_new: "2027-01-01"
+notes: The Edit credit doubles to $1,000 a calendar year in up to four $250 credits; the personal Sapphire Reserve is unchanged.
+changes:
+- target: benefit:us.chase.sapphire-reserve-business/edit-hotel-credit
+  version: 2
+transition:
+- applies_to:
+  - benefit:us.chase.sapphire-reserve-business/edit-hotel-credit
+  'on': "2027-01-01"
+sources:
+- url: https://onemileatatime.com/news/sapphire-reserve-business-bigger-hotel-credit-bonus-category-cap/
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://www.doctorofcredit.com/chase-sapphire-reserve-for-business-increases-the-edit-credit-to-1000-per-year-4-x-250/
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://upgradedpoints.com/news/chase-sapphire-reserve-business-card-changes-2026/
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://creditcards.chase.com/business-credit-cards/sapphire/reserve
+  retrieved_at: "2026-11-13"
+  publisher: issuer

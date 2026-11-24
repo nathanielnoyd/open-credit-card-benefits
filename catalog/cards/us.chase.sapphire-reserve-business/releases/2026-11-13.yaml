@@ -1,0 +1,15 @@
+id: us.chase.sapphire-reserve-business@2026-11-13
+card_id: us.chase.sapphire-reserve-business
+kind: change
+first_seen_on: "2026-11-13"
+effective_for_new: "2026-11-13"
+notes: Air Canada Maple Leaf Lounge access first observed on the issuer page on this date; it was not in launch coverage and the real start date
+  is unknown.
+changes:
+- target: benefit:us.chase.sapphire-reserve-business/air-canada-lounges
+  version: 1
+sources:
+- url: https://creditcards.chase.com/business-credit-cards/sapphire/reserve
+  retrieved_at: "2026-11-13"
+  publisher: issuer
+confidence: '0.65'

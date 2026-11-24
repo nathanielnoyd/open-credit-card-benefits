@@ -1,0 +1,28 @@
+id: us.chase.sapphire-reserve-business/roadside
+card_id: us.chase.sapphire-reserve-business
+kind: protection
+name: Roadside assistance
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: Roadside assistance covering up to $50 per service event, up to 4 times a year, for towing, tire changes, jump starts, lockouts and
+    fuel delivery.
+  coverage:
+    per_claim:
+      amount: 5000
+      currency: USD
+    max_claims_per_period: 4
+  grants:
+  - entitlement: protection:roadside
+  conditions: []
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://hellosafe.com/credit-card-insurance/united-states/chase/sapphire-reserve-business
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://creditcards.chase.com/business-credit-cards/sapphire/reserve
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  confidence: '0.6'

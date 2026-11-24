@@ -1,0 +1,12 @@
+id: us.amex.business-gold@2026-10-01
+card_id: us.amex.business-gold
+kind: change
+effective_for_new: "2026-10-01"
+notes: FedEx removed from and UPS.com added to the flexible business credit.
+changes:
+  - target: benefit:us.amex.business-gold/flexible-credit
+    version: 2
+sources:
+  - url: https://frequentmiler.com/fedex-being-removed-from-flexible-business-credit-on-american-express-business-gold-card-from-10-1-26/
+    retrieved_at: "2026-11-13"
+    publisher: review

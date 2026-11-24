@@ -1,0 +1,61 @@
+card_id: us.chase.united-explorer
+rules:
+- id: us.chase.united-explorer/united-purchases
+  categories:
+  - cat:travel.flights.direct.ua
+  versions:
+  - version: 1
+    release: us.chase.united-explorer@2024-01-01
+    multiplier: '2'
+    notes: 'All purchases from United: tickets, Economy Plus, upgrades, inflight purchases, bag and other fees. Some third-party
+      bookings do not qualify.'
+  - version: 2
+    release: us.chase.united-explorer@2026-04-02
+    multiplier: '3'
+    notes: 'Chase advertises 9x total on United flights: 6x MileagePlus cardmember flight earn plus 3x card earn. Only the
+      3x is card earn.'
+- id: us.chase.united-explorer/dining-2x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.chase.united-explorer@2024-01-01
+    multiplier: '2'
+    notes: Restaurants, including takeout and eligible delivery services.
+- id: us.chase.united-explorer/hotels-2x
+  categories:
+  - cat:travel.hotels.direct
+  versions:
+  - version: 1
+    release: us.chase.united-explorer@2024-01-01
+    multiplier: '2'
+    notes: Hotel stays booked directly with the hotel. Chase's '5x on United Hotels' adds MileagePlus program miles on top
+      of this 2x.
+- id: us.chase.united-explorer/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.united-explorer@2024-01-01
+    multiplier: '1'
+- id: us.chase.united-explorer/pqp
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.united-explorer@2025-03-24
+    multiplier: '0.05'
+    currency: pts:united_pqp
+    cap:
+      amount: 2000000
+      currency: USD
+    cap_period: calendar_year
+    notes: 1 Premier qualifying point per $20 of net purchases, up to 1,000 PQP a calendar year, including authorized user
+      purchases. Counts toward status up to Premier 1K.
+    sources:
+    - url: https://creditcards.chase.com/travel-credit-cards/united/united-explorer
+      retrieved_at: '2026-11-13'
+      publisher: issuer
+    - url: https://onemileatatime.com/news/united-chase-card-changes
+      retrieved_at: '2026-11-13'
+      publisher: review

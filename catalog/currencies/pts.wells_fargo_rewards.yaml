@@ -1,0 +1,134 @@
+id: pts:wells_fargo_rewards
+name: Wells Fargo Rewards
+kind: transferable
+issuer: Wells Fargo
+url: https://www.wellsfargo.com/rewards/
+expiry: none
+paths:
+  - id: cash
+    kind: statement_credit
+    rate: "1.0"
+    notes: Statement credit, deposit to a Wells Fargo account, or cash at a Wells Fargo ATM.
+  - id: travel
+    kind: portal
+    rate: "1.0"
+  - id: gift-cards
+    kind: gift_card
+    rate: "1.0"
+  - id: aer-lingus
+    kind: transfer
+    to: pts:aer_lingus_avios
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Transfers require an Autograph or Autograph Journey card; whether Active Cash rewards combined into that account transfer is unclear.
+        conditions:
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph }
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph-journey }
+  - id: flying-blue
+    kind: transfer
+    to: pts:flying_blue
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Transfers require an Autograph or Autograph Journey card; whether Active Cash rewards combined into that account transfer is unclear.
+        conditions:
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph }
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph-journey }
+  - id: avianca
+    kind: transfer
+    to: pts:avianca_lifemiles
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Transfers require an Autograph or Autograph Journey card; whether Active Cash rewards combined into that account transfer is unclear.
+        conditions:
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph }
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph-journey }
+  - id: british-airways
+    kind: transfer
+    to: pts:ba_avios
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Transfers require an Autograph or Autograph Journey card; whether Active Cash rewards combined into that account transfer is unclear.
+        conditions:
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph }
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph-journey }
+  - id: cathay
+    kind: transfer
+    to: pts:cathay_asia_miles
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Transfers require an Autograph or Autograph Journey card; whether Active Cash rewards combined into that account transfer is unclear.
+        conditions:
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph }
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph-journey }
+  - id: iberia
+    kind: transfer
+    to: pts:iberia_avios
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Transfers require an Autograph or Autograph Journey card; whether Active Cash rewards combined into that account transfer is unclear.
+        conditions:
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph }
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph-journey }
+  - id: jetblue
+    kind: transfer
+    to: pts:jetblue_trueblue
+    ratio: "1:1"
+    effective_from: "2025-10-27"
+    notes: Added October 27, 2025.
+    requires:
+      - type: any_of
+        note: Transfers require an Autograph or Autograph Journey card; whether Active Cash rewards combined into that account transfer is unclear.
+        conditions:
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph }
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph-journey }
+  - id: virgin-atlantic
+    kind: transfer
+    to: pts:virgin_atlantic
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Transfers require an Autograph or Autograph Journey card; whether Active Cash rewards combined into that account transfer is unclear.
+        conditions:
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph }
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph-journey }
+  - id: choice
+    kind: transfer
+    to: pts:choice_privileges
+    ratio: "1:2"
+    requires:
+      - type: any_of
+        note: Transfers require an Autograph or Autograph Journey card; whether Active Cash rewards combined into that account transfer is unclear.
+        conditions:
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph }
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph-journey }
+  - id: wyndham
+    kind: transfer
+    to: pts:wyndham_rewards
+    ratio: "1:2"
+    effective_from: "2026-04-15"
+    notes: Added April 15, 2026.
+    requires:
+      - type: any_of
+        note: Transfers require an Autograph or Autograph Journey card; whether Active Cash rewards combined into that account transfer is unclear.
+        conditions:
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph }
+          - { type: wallet_holds, card_id: us.wellsfargo.autograph-journey }
+sources:
+  - url: https://awardwallet.com/mile-transfer-times?program=Wells+Fargo
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://frequentmiler.com/unexpected-wells-fargo-adds-wyndham-as-transfer-partner-on-12-basis/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://thepointsguy.com/credit-cards/wells-fargo-travel-portal-guide/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://flightpoints.com/blogs/wells-fargo-points-value-redemption-guide/
+    retrieved_at: "2026-11-13"
+    publisher: review

@@ -1,0 +1,18 @@
+id: us.citi.aadvantage-executive/checked-bag
+card_id: us.citi.aadvantage-executive
+kind: fee_waiver
+name: First checked bag free on American
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-executive@2023-07-23
+  summary: "First checked bag free on American for you and up to 8 companions on the same reservation."
+  waives: checked_bag
+  count: 1
+  companions: 8
+  grants:
+  - entitlement: fee_waiver:checked_bag_american
+  beneficiaries:
+  - primary
+  - companion
+  notes: First checked bag free on domestic American itineraries for the primary cardmember and up to eight companions on the same reservation.

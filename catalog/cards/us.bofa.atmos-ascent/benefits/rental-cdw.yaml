@@ -1,0 +1,21 @@
+id: us.bofa.atmos-ascent/rental-cdw
+card_id: us.bofa.atmos-ascent
+kind: protection
+name: Auto rental collision damage waiver
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-ascent@2025-08-20
+  summary: "Secondary collision damage coverage on car rentals paid with the card when you decline the rental company's coverage."
+  face_value: null
+  grants:
+  - entitlement: protection:rental_cdw
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  coverage:
+    priority: secondary
+  notes: Secondary; decline the rental company’s LDW/CDW.
+  confidence: "0.7"

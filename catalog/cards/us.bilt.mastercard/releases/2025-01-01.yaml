@@ -1,0 +1,40 @@
+id: us.bilt.mastercard@2025-01-01
+card_id: us.bilt.mastercard
+kind: baseline
+effective_for_new: '2025-01-01'
+notes: Terms of the Wells Fargo-issued Bilt World Elite Mastercard as last known (rent cap 100,000 points a year). Earlier
+  history is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 0
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+  notes: Not confirmed in current sources; believed free.
+- target: earn_rule:us.bilt.mastercard/base
+  version: 1
+- target: earn_rule:us.bilt.mastercard/dining-3x
+  version: 1
+- target: earn_rule:us.bilt.mastercard/travel-2x
+  version: 1
+- target: earn_rule:us.bilt.mastercard/rent-1x
+  version: 1
+- target: benefit:us.bilt.mastercard/no-fx
+  version: 1
+- target: benefit:us.bilt.mastercard/cell-phone
+  version: 1
+- target: benefit:us.bilt.mastercard/trip-cancel
+  version: 1
+- target: benefit:us.bilt.mastercard/trip-delay
+  version: 1
+- target: benefit:us.bilt.mastercard/rental-cdw
+  version: 1
+- target: benefit:us.bilt.mastercard/purchase-protection
+  version: 1
+sources:
+- url: https://www.doctorofcredit.com/bilt-rewards-credit-card-full-review-earn-valuable-rewards-with-rent-payments-to-any-landlord-more
+  retrieved_at: '2026-11-13'
+  publisher: review

@@ -1,0 +1,19 @@
+id: us.amex.delta-platinum-business/upgrade-priority
+card_id: us.amex.delta-platinum-business
+kind: status
+name: Complimentary upgrade eligibility
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-platinum-business@2025-02-01
+  summary: "Places you on the Delta complimentary upgrade list on eligible tickets, after Medallion Members and Delta Reserve cardmembers; Basic Economy is excluded."
+  grants:
+  - entitlement: upgrade_priority:delta
+  conditions:
+  - type: same_day_flight
+    carrier:
+    - DL
+  beneficiaries:
+  - primary
+  notes: Added to the complimentary upgrade list after Medallion Members and Reserve cardmembers, for tickets purchased on
+    or after February 1, 2024. Basic Economy is not eligible. Whether employee cardholders also get it was not confirmed.

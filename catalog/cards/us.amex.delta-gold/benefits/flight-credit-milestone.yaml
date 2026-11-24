@@ -1,0 +1,24 @@
+id: us.amex.delta-gold/flight-credit-milestone
+card_id: us.amex.delta-gold
+kind: milestone
+name: $200 Delta flight credit after $10,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-gold@2025-02-01
+  summary: "After $10,000 in purchases in a calendar year, you get a $200 Delta flight credit for future travel."
+  threshold:
+    amount: 1000000
+    currency: USD
+  threshold_period: calendar_year
+  reward_cash:
+    amount: 20000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: milestone:us.amex.delta-gold.flight-credit
+  beneficiaries:
+  - primary
+  notes: Reward is a $200 Delta flight credit (eCredit) for future Delta travel, not cash; modeled as reward_cash.

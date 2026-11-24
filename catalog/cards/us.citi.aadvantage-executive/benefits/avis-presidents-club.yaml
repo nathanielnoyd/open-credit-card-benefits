@@ -1,0 +1,27 @@
+id: us.citi.aadvantage-executive/avis-presidents-club
+card_id: us.citi.aadvantage-executive
+kind: status
+name: Avis President's Club
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-executive@2026-08-23
+  summary: "Avis President's Club status when you enroll through your AAdvantage account by August 31, 2028."
+  grants:
+  - entitlement: status:avis
+    attributes:
+      tier: presidents_club
+  beneficiaries:
+  - primary
+  conditions:
+  - type: enrollment_required
+    note: Enroll through the AAdvantage account
+  enroll_by: '2028-08-31'
+  notes: Complimentary Avis President's Club with enrollment available through 2028-08-31.
+  sources:
+  - url: https://www.citi.com/credit-cards/citi-aadvantage-executive-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://thepointsguy.com/news/citi-aadvantage-executive-mastercard-refresh-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review

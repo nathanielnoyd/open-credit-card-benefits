@@ -1,0 +1,20 @@
+id: us.citi.strata-elite/purchase-protection
+card_id: us.citi.strata-elite
+kind: protection
+name: Purchase Assurance Plus
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.strata-elite@2025-07-27
+  summary: "Covers damage or theft within 120 days of purchase, up to $10,000 per claim and $50,000 per year, for items paid with the card."
+  coverage:
+    window_days: 120
+    per_claim: { amount: 1000000, currency: USD }
+    per_period: { amount: 5000000, currency: USD }
+  grants:
+  - entitlement: protection:purchase
+  conditions:
+  - type: paid_with_card
+  beneficiaries: [primary, authorized_user]
+  notes: Damage and theft within 120 days; $10,000 per claim and $50,000 per calendar year.
+  confidence: "0.75"

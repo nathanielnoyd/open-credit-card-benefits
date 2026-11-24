@@ -1,0 +1,26 @@
+id: us.amex.delta-platinum/purchase-protection
+card_id: us.amex.delta-platinum
+kind: protection
+name: Purchase protection
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-platinum@2025-02-01
+  summary: "Covers theft or accidental damage within 90 days of purchase on items paid with the card, up to $1,000 per claim and $50,000 per year."
+  coverage:
+    per_claim:
+      amount: 100000
+      currency: USD
+    per_period:
+      amount: 5000000
+      currency: USD
+    window_days: 90
+  grants:
+  - entitlement: protection:purchase
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Per-occurrence limit from one review only; Amex has not been checked directly.
+  confidence: '0.5'

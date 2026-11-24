@@ -1,0 +1,14 @@
+id: pts:jetblue_trueblue
+name: JetBlue TrueBlue
+kind: airline
+issuer: JetBlue
+url: https://www.jetblue.com/trueblue
+expiry: Points do not expire.
+paths: []
+sources:
+  - url: https://www.jetblue.com/trueblue
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

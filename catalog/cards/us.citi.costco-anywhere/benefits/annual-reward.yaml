@@ -1,0 +1,20 @@
+id: us.citi.costco-anywhere/annual-reward
+card_id: us.citi.costco-anywhere
+kind: other
+name: Annual reward certificate
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.costco-anywhere@2026-11-13
+  summary: "Your rewards arrive once a year as a certificate after the February statement, redeemable in one transaction at a US Costco warehouse by December 31."
+  period:
+    cadence: annual
+    anchor: fixed_date
+    anchor_month: 2
+    anchor_day: 28
+  grants:
+  - entitlement: certificate:us.citi.costco-anywhere.annual-reward
+  beneficiaries:
+  - primary
+  notes: Cash back is paid once a year as a reward certificate issued after the February billing statement closes. It must be redeemed in one transaction for cash or merchandise at a U.S. Costco warehouse (including Puerto Rico) by December 31 of that year. Annual payout, single-use redemption and expiry belong to the currency and have no structured field.
+  machine_readable: false

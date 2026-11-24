@@ -1,0 +1,22 @@
+id: us.bofa.premium-rewards-elite/lost-luggage
+card_id: us.bofa.premium-rewards-elite
+kind: protection
+name: Lost or damaged luggage
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards-elite@2026-11-14
+  summary: "Covers luggage lost or stolen by the carrier up to $3,000 when the trip is paid with the card."
+  face_value: null
+  grants:
+  - entitlement: protection:lost_luggage
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  coverage:
+    per_trip:
+      amount: 300000
+      currency: USD
+  notes: Up to $3,000 per Upgraded Points; the issuer page gives no amount.
+  confidence: "0.7"

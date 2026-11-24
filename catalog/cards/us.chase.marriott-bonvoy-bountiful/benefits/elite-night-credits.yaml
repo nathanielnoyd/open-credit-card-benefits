@@ -1,0 +1,25 @@
+id: us.chase.marriott-bonvoy-bountiful/elite-night-credits
+card_id: us.chase.marriott-bonvoy-bountiful
+kind: anniversary
+name: 15 Elite Night Credits each year
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.marriott-bonvoy-bountiful@2024-01-01
+  summary: "15 Marriott Bonvoy Elite Night Credits toward status each calendar year while you hold the card."
+  reward:
+    currency: pts:marriott_enc
+    points: 15
+  issued_on: calendar_year
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: status_credit:marriott
+    attributes:
+      nights: 15
+  beneficiaries:
+  - primary
+  notes: 'Deposited within 60 days of account opening, then each calendar year. Elite Night Credits from more than one Marriott
+    card do not add up: Marriott caps card-earned credits per member.'
+  machine_readable: false

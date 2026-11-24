@@ -1,0 +1,17 @@
+id: us.bofa.premium-rewards-elite/no-fx
+card_id: us.bofa.premium-rewards-elite
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards-elite@2026-11-14
+  summary: "No foreign transaction fees on purchases made abroad or in a foreign currency."
+  face_value: null
+  waives: foreign_transaction_fee
+  grants:
+  - entitlement: fee_waiver:foreign_transaction
+  conditions: []
+  beneficiaries:
+  - primary
+  - authorized_user

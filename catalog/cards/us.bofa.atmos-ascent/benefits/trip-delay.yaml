@@ -1,0 +1,23 @@
+id: us.bofa.atmos-ascent/trip-delay
+card_id: us.bofa.atmos-ascent
+kind: protection
+name: Trip delay reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-ascent@2025-08-20
+  summary: "Covers up to $500 per person in expenses when a trip paid with the card is delayed 12 hours or more."
+  face_value: null
+  grants:
+  - entitlement: protection:trip_delay
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  coverage:
+    waiting_hours: 12
+    per_person:
+      amount: 50000
+      currency: USD
+  notes: Up to $500 per ticket for delays of 12 hours or more.
+  confidence: "0.6"

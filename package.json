@@ -1,0 +1,41 @@
+{
+  "name": "open-credit-card-benefits",
+  "version": "0.3.0",
+  "description": "Open data, a spec and a TypeScript engine for US credit card benefits, rewards, statement credits, points and transfer partners.",
+  "author": "nathanielnoyd",
+  "license": "Apache-2.0",
+  "repository": { "type": "git", "url": "git+https://github.com/nathanielnoyd/open-credit-card-benefits.git" },
+  "homepage": "https://github.com/nathanielnoyd/open-credit-card-benefits#readme",
+  "bugs": { "url": "https://github.com/nathanielnoyd/open-credit-card-benefits/issues" },
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": { "types": "./lib/index.d.ts", "default": "./lib/index.js" },
+    "./catalog.json": "./dist/catalog.json",
+    "./data/*": "./dist/*",
+    "./schema/*": "./schema/*",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib", "dist", "schema", "LICENSE-DATA", "LICENSE-SPEC"],
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "validate": "node tools/validate.mjs",
+    "warnings": "OCCB_WARNINGS=1 node tools/validate.mjs",
+    "build": "node tools/validate.mjs && node tools/build.mjs",
+    "build:lib": "tsc -p tsconfig.build.json",
+    "test": "node --test \"test/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run build && npm test && npm run typecheck",
+    "stale": "node tools/stale.mjs",
+    "values": "node examples/value-sets/generate.mjs",
+    "prepare": "npm run build && npm run build:lib"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1",
+    "typescript": "5.7.2",
+    "yaml": "2.6.1"
+  },
+  "keywords": ["credit cards", "credit card benefits", "credit card rewards", "card perks", "statement credits", "points", "miles", "transfer partners", "travel rewards", "lounges", "annual fee", "open data", "llm", "mcp"]
+}

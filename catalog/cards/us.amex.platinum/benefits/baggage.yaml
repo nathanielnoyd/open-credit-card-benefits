@@ -1,0 +1,29 @@
+id: us.amex.platinum/baggage
+card_id: us.amex.platinum
+kind: protection
+name: Baggage insurance
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2024-01-01
+    summary: "Coverage for lost, damaged or stolen bags when the common-carrier fare is paid with the card; the limits are set in the benefits guide."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: protection:lost_luggage
+        combine: max
+    conditions:
+      - type: paid_with_card
+    beneficiaries:
+      - primary
+    notes: See the benefits guide for limits.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

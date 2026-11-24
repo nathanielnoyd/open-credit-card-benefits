@@ -1,0 +1,19 @@
+id: pts:amex_reward_dollars
+name: American Express Reward Dollars
+kind: cashback
+issuer: American Express
+url: https://www.americanexpress.com/us/credit-cards/card/blue-cash-preferred/
+cents_per_point: "1.0"
+expiry: none
+paths:
+  - id: statement-credit
+    kind: statement_credit
+    rate: "1.0"
+    notes: Blue Cash cards; Reward Dollars redeem only as a statement credit and cannot be converted to Membership Rewards or transferred.
+sources:
+  - url: https://www.americanexpress.com/us/credit-cards/card/blue-cash-preferred/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://www.nerdwallet.com/reviews/credit-cards/amex-blue-cash-preferred
+    retrieved_at: "2026-11-13"
+    publisher: review

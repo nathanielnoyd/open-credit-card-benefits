@@ -1,0 +1,20 @@
+id: us.discover.it-cash-back@2026-01-01
+card_id: us.discover.it-cash-back
+kind: baseline
+effective_for_new: '2026-01-01'
+notes: Current terms with the 2026 rotating calendar. The structure (5% rotating up to $1,500 a quarter, 1% base) is long-standing; earlier calendars and history are not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 0
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.discover.it-cash-back/rotating-5pct
+  version: 1
+- target: earn_rule:us.discover.it-cash-back/base-1pct
+  version: 1
+- target: benefit:us.discover.it-cash-back/no-fx
+  version: 1

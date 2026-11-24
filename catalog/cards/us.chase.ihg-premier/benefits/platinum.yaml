@@ -1,0 +1,25 @@
+id: us.chase.ihg-premier/platinum
+card_id: us.chase.ihg-premier
+kind: status
+name: IHG One Rewards Platinum Elite (automatic)
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier@2024-01-01
+  summary: "IHG One Rewards Platinum Elite status while you hold the card."
+  grants:
+  - entitlement: status:ihg
+    attributes:
+      tier: platinum
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://frequentmiler.com/?p=297051
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://onemileatatime.com/news/ihg-chase-credit-card-changes/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.chase.com/personal/credit-cards/ihg/premier/premier-protection
+    retrieved_at: '2026-11-13'
+    publisher: issuer

@@ -1,0 +1,69 @@
+card_id: us.amex.hilton-surpass
+rules:
+- id: us.amex.hilton-surpass/hilton-12x
+  categories:
+  - cat:travel.hotels.direct.hilton
+  versions:
+  - version: 1
+    release: us.amex.hilton-surpass@2024-02-01
+    multiplier: '12'
+    notes: Purchases made directly with hotels and resorts in the Hilton portfolio.
+- id: us.amex.hilton-surpass/dining-6x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.amex.hilton-surpass@2024-02-01
+    multiplier: '6'
+    conditions:
+    - type: region
+      countries:
+      - US
+      note: U.S. merchants only
+    notes: U.S. restaurants, including takeout and delivery.
+- id: us.amex.hilton-surpass/groceries-6x
+  categories:
+  - cat:groceries.store
+  versions:
+  - version: 1
+    release: us.amex.hilton-surpass@2024-02-01
+    multiplier: '6'
+    conditions:
+    - type: region
+      countries:
+      - US
+      note: U.S. merchants only
+    notes: U.S. supermarkets; superstores, warehouse clubs and specialty stores excluded.
+- id: us.amex.hilton-surpass/gas-6x
+  categories:
+  - cat:gas_ev.gas
+  versions:
+  - version: 1
+    release: us.amex.hilton-surpass@2024-02-01
+    multiplier: '6'
+    conditions:
+    - type: region
+      countries:
+      - US
+      note: U.S. merchants only
+    notes: U.S. gas stations.
+- id: us.amex.hilton-surpass/online-retail-4x
+  categories:
+  - cat:online_shopping
+  versions:
+  - version: 1
+    release: us.amex.hilton-surpass@2024-02-01
+    multiplier: '4'
+    conditions:
+    - type: region
+      countries:
+      - US
+      note: U.S. merchants only
+    notes: U.S. online retail purchases of goods; Amex excludes some merchants (for example travel and services) from this category.
+- id: us.amex.hilton-surpass/base-3x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.hilton-surpass@2024-02-01
+    multiplier: '3'

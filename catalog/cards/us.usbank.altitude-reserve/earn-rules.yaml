@@ -1,0 +1,90 @@
+card_id: us.usbank.altitude-reserve
+rules:
+- id: us.usbank.altitude-reserve/travel-center-hotels-cars
+  name: Prepaid hotels and car rentals in the U.S. Bank Travel Center
+  categories:
+  - cat:travel.portal.usbank.hotels
+  - cat:travel.portal.usbank.cars
+  versions:
+  - version: 1
+    release: us.usbank.altitude-reserve@2024-11-11
+    multiplier: "5"
+    notes: Prepaid hotels and car rentals booked directly in the Altitude Rewards Center (U.S. Bank Travel Center).
+  - version: 2
+    release: us.usbank.altitude-reserve@2025-12-15
+    multiplier: "10"
+    notes: Prepaid hotels and car rentals booked in the U.S. Bank Travel Center, from December 15, 2025.
+    sources:
+    - url: https://awardwallet.com/news/credit-cards/us-bank-altitude-reserve-card-2025-changes/
+      retrieved_at: "2026-11-14"
+      publisher: review
+    - url: https://upgradedpoints.com/news/us-bank-altitude-reserve-card-changes-coming
+      retrieved_at: "2026-11-14"
+      publisher: review
+- id: us.usbank.altitude-reserve/travel-center-flights
+  name: Flights in the U.S. Bank Travel Center
+  categories:
+  - cat:travel.portal.usbank.flights
+  versions:
+  - version: 1
+    release: us.usbank.altitude-reserve@2025-12-15
+    multiplier: "5"
+    notes: Flights booked in the U.S. Bank Travel Center, from December 15, 2025. Before then they earned the 3x travel rate.
+    sources:
+    - url: https://awardwallet.com/news/credit-cards/us-bank-altitude-reserve-card-2025-changes/
+      retrieved_at: "2026-11-14"
+      publisher: review
+    - url: https://upgradedpoints.com/news/us-bank-altitude-reserve-card-changes-coming
+      retrieved_at: "2026-11-14"
+      publisher: review
+- id: us.usbank.altitude-reserve/travel-3x
+  name: 3x on eligible travel
+  categories:
+  - cat:travel
+  versions:
+  - version: 1
+    release: us.usbank.altitude-reserve@2024-11-11
+    multiplier: "3"
+    notes: >-
+      Eligible travel such as airlines, hotels, car rentals, taxis, trains and cruise lines. The December 2025 change
+      announcements did not mention this rate, so it is assumed unchanged; no 2026 source states it explicitly.
+- id: us.usbank.altitude-reserve/mobile-wallet-3x
+  name: 3x on mobile wallet purchases
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.usbank.altitude-reserve@2024-11-11
+    multiplier: "3"
+    conditions:
+    - type: payment_method
+      method: mobile_wallet
+    notes: >-
+      Purchases made with Apple Pay, Google Pay or Samsung Pay, uncapped. One Frequent Miler summary from November 2024
+      mentions a $5,000-a-month limit, but the 2025 change coverage describes the earlier rate as uncapped.
+  - version: 2
+    release: us.usbank.altitude-reserve@2025-12-15
+    multiplier: "3"
+    cap:
+      amount: 500000
+      currency: USD
+    cap_period: statement
+    conditions:
+    - type: payment_method
+      method: mobile_wallet
+    notes: Apple Pay, Google Pay and Samsung Pay purchases earn 3x on the first $5,000 each billing cycle, then 1x.
+    sources:
+    - url: https://awardwallet.com/news/credit-cards/us-bank-altitude-reserve-card-2025-changes/
+      retrieved_at: "2026-11-14"
+      publisher: review
+    - url: https://www.doctorofcredit.com/u-s-bank-to-make-negative-changes-to-u-s-bank-altitude-reserve-travel-transfers-1%C2%A2-per-point-instead-of-1-5%C2%A2
+      retrieved_at: "2026-11-14"
+      publisher: review
+- id: us.usbank.altitude-reserve/base-1x
+  name: 1x everything else
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.usbank.altitude-reserve@2024-11-11
+    multiplier: "1"

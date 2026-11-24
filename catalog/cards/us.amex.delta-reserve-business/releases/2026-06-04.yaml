@@ -1,0 +1,16 @@
+id: us.amex.delta-reserve-business@2026-06-04
+card_id: us.amex.delta-reserve-business
+kind: change
+announced_on: '2026-06-04'
+effective_for_new: '2026-06-04'
+notes: 'Delta 30th-anniversary card refresh: free second checked bag on U.S. domestic Delta-operated flights and new card design. Live for existing holders the same day. Annual fee unchanged.'
+changes:
+- target: benefit:us.amex.delta-reserve-business/second-checked-bag
+  version: 1
+sources:
+- url: https://awardwallet.com/news/delta-skymiles/delta-credit-card-changes-2026/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://www.uscreditcardguide.com/amex-delta-reserve-business-credit-card
+  retrieved_at: '2026-11-13'
+  publisher: review

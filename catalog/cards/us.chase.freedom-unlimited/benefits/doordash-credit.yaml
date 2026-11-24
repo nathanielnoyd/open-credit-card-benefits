@@ -1,0 +1,29 @@
+id: us.chase.freedom-unlimited/doordash-credit
+card_id: us.chase.freedom-unlimited
+kind: statement_credit
+name: DoorDash non-restaurant credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.freedom-unlimited@2025-02-01
+  summary: "Up to $10 off one non-restaurant DoorDash order each calendar quarter, $40 a year, while you have DashPass; enrollment required, through December 31, 2029."
+  face_value:
+    amount: 4000
+    currency: USD
+  period:
+    cadence: quarterly
+    anchor: calendar
+  limit:
+    amount: 1000
+  grants:
+  - entitlement: credit:doordash_nonrestaurant
+  effective_to: "2029-12-31"
+  conditions:
+  - type: enrollment_required
+  - type: merchant_in
+    merchants:
+    - doordash
+    note: Grocery, convenience and other non-restaurant DoorDash orders
+  notes: Up to $10 off one non-restaurant order per calendar quarter while a DashPass member; subtotal only, no rollover.
+  beneficiaries:
+  - primary

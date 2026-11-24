@@ -1,0 +1,19 @@
+id: us.capitalone.venture/lifestyle-collection
+card_id: us.capitalone.venture
+kind: program_access
+name: Lifestyle Collection
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture@2024-01-01
+  summary: "A $50 experience credit and space-available perks on each Lifestyle Collection stay you book through Capital One Travel."
+  conditions:
+  - type: booking_channel
+    channel: capital_one_travel
+  notes: $50 experience credit per Lifestyle Collection stay booked through Capital One Travel, plus space-available perks. The per-stay
+    property credit is not modeled as a statement credit.
+  machine_readable: false
+  grants:
+  - entitlement: program:capital_one_lifestyle
+  beneficiaries:
+  - primary

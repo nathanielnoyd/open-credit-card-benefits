@@ -1,0 +1,28 @@
+id: us.amex.hilton-aspire/property-credit
+card_id: us.amex.hilton-aspire
+kind: statement_credit
+name: Waldorf Astoria and Conrad property credit
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.hilton-aspire@2024-02-01
+  summary: "Up to $100 toward on-property charges for each stay of 2 or more nights at Waldorf Astoria and Conrad hotels booked with the Aspire Card Benefit rate."
+  period:
+    cadence: per_event
+  limit:
+    per_transaction: 10000
+  conditions:
+  - type: booking_channel
+    channel: hilton_aspire_card_benefit_rate
+    note: Book at HiltonHonorsAspireCard.com with the Aspire Card Benefit rate, or by phone
+  - type: merchant_in
+    merchants:
+    - waldorf_astoria
+    - conrad
+  - type: min_nights
+    nights: 2
+  beneficiaries:
+  - primary
+  notes: Up to $100 credit for qualifying on-property charges per stay of 2 nights or more at Waldorf Astoria and Conrad properties. No stated annual cap.
+  grants:
+  - entitlement: credit:hilton_luxury_property

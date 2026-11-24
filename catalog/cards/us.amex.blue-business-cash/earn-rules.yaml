@@ -1,0 +1,21 @@
+card_id: us.amex.blue-business-cash
+rules:
+  - id: us.amex.blue-business-cash/base-2x
+    name: All purchases up to $50,000 a year
+    categories:
+      - cat:all
+    versions:
+      - version: 1
+        release: us.amex.blue-business-cash@2026-01-01
+        multiplier: "2"
+        cap:
+          amount: 5000000
+          currency: USD
+        cap_period: calendar_year
+  - id: us.amex.blue-business-cash/base-1x
+    categories:
+      - cat:all
+    versions:
+      - version: 1
+        release: us.amex.blue-business-cash@2026-01-01
+        multiplier: "1"

@@ -1,0 +1,20 @@
+id: us.chase.marriott-bonvoy-boundless/lost-luggage
+card_id: us.chase.marriott-bonvoy-boundless
+kind: protection
+name: Lost luggage reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.marriott-bonvoy-boundless@2024-01-01
+  summary: "Up to $3,000 per person when your bags are lost or damaged on a trip paid with the card."
+  grants:
+  - entitlement: protection:lost_luggage
+  coverage:
+    per_person:
+      amount: 300000
+      currency: USD
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: 'Up to $3,000 per covered traveler (New York residents: $2,000 per bag, $10,000 per trip).'

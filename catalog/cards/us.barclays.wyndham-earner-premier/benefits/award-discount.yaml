@@ -1,0 +1,17 @@
+id: us.barclays.wyndham-earner-premier/award-discount
+card_id: us.barclays.wyndham-earner-premier
+kind: redemption_modifier
+name: 25% off award nights
+versions:
+- version: 1
+  change_type: added
+  release: us.barclays.wyndham-earner-premier@2026-06-17
+  summary: Wyndham Rewards free night awards cost 25% fewer points while you hold the card.
+  percent_rebate: '0.25'
+  grants:
+  - entitlement: program:reduced_award_pricing_wyndham
+  beneficiaries:
+  - primary
+  notes: An upfront 25% reduction in the points price of Wyndham free nights, approximated as percent_rebate; no applies_to_path
+    because the Wyndham Rewards currency has no redemption paths yet.
+  machine_readable: false

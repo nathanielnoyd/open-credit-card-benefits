@@ -1,0 +1,27 @@
+id: us.chase.sapphire-reserve-business/google-workspace-credit
+card_id: us.chase.sapphire-reserve-business
+kind: statement_credit
+name: Google Workspace credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: Up to $200 back each calendar year on Google Workspace purchases made directly with Google, through December 31, 2027.
+  effective_to: "2027-12-31"
+  face_value:
+    amount: 20000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 20000
+  grants:
+  - entitlement: credit:google_workspace
+  conditions:
+  - type: merchant_in
+    merchants:
+    - google_workspace
+    note: Purchases made directly with Google
+  beneficiaries:
+  - primary

@@ -1,0 +1,49 @@
+id: us.amex.marriott-bonvoy-business/free-night
+card_id: us.amex.marriott-bonvoy-business
+kind: certificate
+name: Annual Free Night Award
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.marriott-bonvoy-business@2024-01-01
+  summary: "A Free Night Award after each renewal for a hotel costing up to 35,000 points a night, which you can top up with as many as 15,000 points; valid for 1 year."
+  face_value: null
+  cap:
+    currency: pts:marriott_bonvoy
+    points: 35000
+  top_up:
+    currency: pts:marriott_bonvoy
+    points: 15000
+  issued_on: renewal
+  expires_after_days: 365
+  beneficiaries:
+  - primary
+  notes: One night at a hotel with a redemption level at or under 35,000 points, issued after the card renewal month (so the first arrives after the first renewal). Marriott let members add up to 15,000 points to a certificate. Resort fees may apply.
+  grants:
+  - entitlement: certificate:us.amex.marriott-bonvoy-business.free-night
+- version: 2
+  supersedes: 1
+  change_type: terms_changed
+  release: us.amex.marriott-bonvoy-business@2026-03-12
+  summary: "A Free Night Award after each renewal for a hotel costing up to 35,000 points a night, which you can top up with as many as 25,000 points; valid for 1 year."
+  face_value: null
+  cap:
+    currency: pts:marriott_bonvoy
+    points: 35000
+  top_up:
+    currency: pts:marriott_bonvoy
+    points: 25000
+  issued_on: renewal
+  expires_after_days: 365
+  beneficiaries:
+  - primary
+  notes: One night at a hotel with a redemption level at or under 35,000 points, issued after the card renewal month. Marriott raised the top-off on all Free Night Awards to 25,000 points. Resort fees may apply.
+  sources:
+  - url: https://onemileatatime.com/news/marriott-free-night-awards-top-off-points/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://upgradedpoints.com/credit-cards/reviews/marriott-bonvoy-business-amex-review/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  grants:
+  - entitlement: certificate:us.amex.marriott-bonvoy-business.free-night

@@ -1,0 +1,41 @@
+id: us.citi.prestige@2025-07-09
+card_id: us.citi.prestige
+kind: baseline
+effective_for_new: "2025-07-09"
+notes: >-
+  Terms existing cardholders hold, as first observed in a July 9, 2025 review and still described the same way in November 2026.
+  The card closed to new applicants on 2021-07-01, so this date is not an application date; earlier history (the 2019 refresh to
+  5x/3x earning and a $495 fee, the move of the fourth night free to the ThankYou portal) is not modeled.
+changes:
+- target: fee:annual
+  to: { amount: 49500, currency: USD }
+- target: fee:authorized_user
+  to: { amount: 7500, currency: USD }
+  notes: $75 per authorized user. One review (Upgraded Points) lists $50; the $75 figure is from One Mile at a Time and Bankrate. A Citigold reduction of this fee could not be confirmed.
+- target: earn_rule:us.citi.prestige/air-travel-agencies-5x
+  version: 1
+- target: earn_rule:us.citi.prestige/dining-5x
+  version: 1
+- target: earn_rule:us.citi.prestige/hotels-cruises-3x
+  version: 1
+- target: earn_rule:us.citi.prestige/base-1x
+  version: 1
+- target: benefit:us.citi.prestige/travel-credit
+  version: 1
+- target: benefit:us.citi.prestige/fourth-night-free
+  version: 1
+- target: benefit:us.citi.prestige/priority-pass
+  version: 1
+- target: benefit:us.citi.prestige/trusted-traveler
+  version: 1
+- target: benefit:us.citi.prestige/citigold-credit
+  version: 1
+- target: benefit:us.citi.prestige/cell-phone
+  version: 1
+- target: benefit:us.citi.prestige/no-fx
+  version: 1
+sources:
+- { url: https://thepointsguy.com/credit-cards/reviews/citi-prestige-credit-card-review/, retrieved_at: "2026-11-14", publisher: review }
+- { url: https://onemileatatime.com/reviews/credit-cards/citi/citi-prestige-card/, retrieved_at: "2026-11-14", publisher: review }
+- { url: https://upgradedpoints.com/credit-cards/reviews/citi-prestige-card/, retrieved_at: "2026-11-14", publisher: review }
+- { url: https://www.bankrate.com/credit-cards/reviews/citi-prestige-card/, retrieved_at: "2026-11-14", publisher: review }

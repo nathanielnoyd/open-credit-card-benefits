@@ -1,0 +1,23 @@
+id: us.barclays.wyndham-earner-premier/points-no-expiration
+card_id: us.barclays.wyndham-earner-premier
+kind: program_access
+name: Points do not expire
+versions:
+- version: 1
+  change_type: added
+  release: us.barclays.wyndham-earner-premier@2026-06-17
+  summary: Wyndham Rewards points do not expire while the card is open and in good standing.
+  grants:
+  - entitlement: program:wyndham_points_no_expiration
+  beneficiaries:
+  - primary
+  notes: Stated in the launch press release and reviews; the card page and terms still repeat the general Wyndham Rewards
+    expiration rules (18 months inactivity, 4 years after earning).
+  confidence: '0.7'
+  sources:
+  - url: https://investor.wyndhamhotels.com/news-events/press-releases/detail/422/wyndham-and-barclays-launch-updated-credit-card-suite
+    retrieved_at: '2026-11-14'
+    publisher: issuer
+  - url: https://upgradedpoints.com/travel/hotels/wyndham-rewards-loyalty-program/
+    retrieved_at: '2026-11-14'
+    publisher: review

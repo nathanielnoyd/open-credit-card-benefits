@@ -1,0 +1,12 @@
+id: us.chase.southwest-priority@2026-09-01
+card_id: us.chase.southwest-priority
+kind: change
+effective_for_new: '2026-09-01'
+notes: DashPass enrollees from September 1, 2026 get the DoorDash discount monthly instead of quarterly.
+changes:
+- target: benefit:us.chase.southwest-priority/doordash
+  version: 2
+sources:
+- url: https://creditcards.chase.com/travel-credit-cards/southwest/priority
+  retrieved_at: '2026-11-13'
+  publisher: issuer

@@ -1,0 +1,16 @@
+id: us.amex.blue-cash-preferred@2025-08-01
+card_id: us.amex.blue-cash-preferred
+kind: change
+effective_for_new: "2025-08-01"
+notes: Disney streaming credit raised from $7 to $10 a month and the $9.99 minimum subscription purchase removed; existing enrolled holders
+  got it for transactions on or after the same date.
+changes:
+- target: benefit:us.amex.blue-cash-preferred/disney-credit
+  version: 2
+sources:
+- url: https://awardwallet.com/news/cash-back/amex-disney-streaming-credit-update/
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://thepointsguy.com/credit-cards/blue-cash-preferred-increases-disney-bundle-credit
+  retrieved_at: "2026-11-13"
+  publisher: review

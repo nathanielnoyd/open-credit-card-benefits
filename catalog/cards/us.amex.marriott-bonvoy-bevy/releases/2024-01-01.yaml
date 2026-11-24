@@ -1,0 +1,55 @@
+id: us.amex.marriott-bonvoy-bevy@2024-01-01
+card_id: us.amex.marriott-bonvoy-bevy
+kind: baseline
+effective_for_new: '2024-01-01'
+notes: Current terms recorded as the baseline on the same date as the Brilliant's and Business card's. The card launched in September 2022 and no change to its own terms since then was found; the baseline date marks when terms are taken as first observed in this catalog, not a change date.
+changes:
+- target: fee:annual
+  to:
+    amount: 25000
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+  notes: Additional cards at no cost per reviews.
+- target: earn_rule:us.amex.marriott-bonvoy-bevy/marriott-6x
+  version: 1
+- target: earn_rule:us.amex.marriott-bonvoy-bevy/dining-4x
+  version: 1
+- target: earn_rule:us.amex.marriott-bonvoy-bevy/us-supermarkets-4x
+  version: 1
+- target: earn_rule:us.amex.marriott-bonvoy-bevy/base-2x
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-bevy/gold-status
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-bevy/elite-night-credits
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-bevy/stay-bonus
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-bevy/spend-15k
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-bevy/spend-free-night
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-bevy/no-fx
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-bevy/rental-cdw
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-bevy/purchase-protection
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-bevy/extended-warranty
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-bevy/baggage
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-bevy/trip-delay
+  version: 1
+sources:
+- url: https://www.thepointsguy.com/credit-cards/reviews/marriott-bonvoy-bevy-american-express-card-review/
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://www.uscreditcardguide.com/amex-marriott-bonvoy-credit-card
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://dealspoints.com/amex-marriott-bonvoy-bevy/
+  retrieved_at: '2026-11-14'
+  publisher: review

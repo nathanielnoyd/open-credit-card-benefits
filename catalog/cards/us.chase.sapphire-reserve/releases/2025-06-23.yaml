@@ -1,0 +1,87 @@
+id: us.chase.sapphire-reserve@2025-06-23
+card_id: us.chase.sapphire-reserve
+kind: refresh
+announced_on: '2025-06-17'
+effective_for_new: '2025-06-23'
+changes:
+- target: fee:annual
+  to:
+    amount: 79500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 19500
+    currency: USD
+- target: earn_rule:us.chase.sapphire-reserve/travel-3x
+  change_type: retired
+- target: earn_rule:us.chase.sapphire-reserve/chase-travel-hotels-cars-10x
+  change_type: retired
+- target: earn_rule:us.chase.sapphire-reserve/chase-travel-flights-5x
+  change_type: retired
+- target: earn_rule:us.chase.sapphire-reserve/chase-travel-8x
+  version: 1
+- target: earn_rule:us.chase.sapphire-reserve/flights-direct-4x
+  version: 1
+- target: earn_rule:us.chase.sapphire-reserve/hotels-direct-4x
+  version: 1
+- target: earn_rule:us.chase.sapphire-reserve/lyft-5x
+  version: 1
+- target: benefit:us.chase.sapphire-reserve/edit-hotel-credit
+  version: 1
+- target: benefit:us.chase.sapphire-reserve/select-hotels-2026
+  version: 1
+- target: benefit:us.chase.sapphire-reserve/dining-credit
+  version: 1
+- target: benefit:us.chase.sapphire-reserve/stubhub-credit
+  version: 1
+- target: benefit:us.chase.sapphire-reserve/doordash-restaurant
+  version: 1
+- target: benefit:us.chase.sapphire-reserve/doordash-other
+  version: 1
+- target: benefit:us.chase.sapphire-reserve/apple
+  version: 1
+- target: benefit:us.chase.sapphire-reserve/lyft-credit
+  version: 1
+- target: benefit:us.chase.sapphire-reserve/peloton-credit
+  version: 1
+- target: benefit:us.chase.sapphire-reserve/air-canada-lounges
+  version: 1
+- target: benefit:us.chase.sapphire-reserve/ihg-platinum
+  version: 1
+- target: benefit:us.chase.sapphire-reserve/points-boost
+  version: 1
+- target: benefit:us.chase.sapphire-reserve/ihg-diamond
+  version: 1
+- target: benefit:us.chase.sapphire-reserve/hyatt-explorist
+  version: 1
+- target: benefit:us.chase.sapphire-reserve/southwest-alist
+  version: 1
+- target: benefit:us.chase.sapphire-reserve/southwest-credit
+  version: 1
+- target: benefit:us.chase.sapphire-reserve/shops-credit
+  version: 1
+transition:
+- applies_to:
+  - benefit:us.chase.sapphire-reserve/points-boost
+  'on': '2025-06-23'
+- applies_to:
+  - benefits
+  - earn_rules
+  'on': '2025-10-26'
+- applies_to:
+  - fees
+  next_renewal_on_or_after: '2025-10-26'
+legacy:
+- effective_to: '2027-10-25'
+  notes: Points earned before October 26, 2025 by cardmembers who applied before June 23, 2025.
+  path: pts:chase_ur/chase-travel-legacy
+  rate: '1.5'
+  applies_to_lots:
+    earned_before: '2025-10-26'
+sources:
+- url: https://www.nerdwallet.com/credit-cards/news/chase-sapphire-reserve-overhaul-june-2025
+  retrieved_at: '2026-11-12'
+- url: https://frequentmiler.com/?p=267305
+  retrieved_at: '2026-11-12'
+- url: https://www.nerdwallet.com/article/credit-cards/chase-sapphire-reserve-overhaul-june-2025
+  retrieved_at: '2026-11-12'

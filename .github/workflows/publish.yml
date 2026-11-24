@@ -1,0 +1,53 @@
+# Publishes the built catalog as static files on GitHub Pages after every merge to main:
+#   https://<owner>.github.io/<repo>/v0.3/index.json  (and llms.txt, cards.json, catalog.json, releases.json, cards/, csv/)
+# Tagging a commit vX.Y.Z also attaches the same files to a GitHub Release, so each version stays downloadable.
+name: publish
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: publish
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+        env:
+          CATALOG_VERSION: ${{ github.ref_type == 'tag' && github.ref_name || format('{0}-{1}', github.run_number, github.sha) }}
+      - name: Arrange site
+        run: |
+          SPEC=$(node -p "require('./package.json').version.split('.').slice(0,2).join('.')")
+          mkdir -p site/v$SPEC && cp -r dist/. site/v$SPEC/
+          # Schemas are served at their $id: <pages-url>/schema/<spec version>/<name>.schema.json
+          mkdir -p site/schema/$SPEC && cp schema/*.json site/schema/$SPEC/
+          (cd dist && zip -qr ../open-credit-card-benefits-catalog.zip .)
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - if: github.ref_type == 'tag'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: open-credit-card-benefits-catalog.zip
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

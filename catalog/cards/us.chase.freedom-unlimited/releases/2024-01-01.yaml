@@ -1,0 +1,31 @@
+id: us.chase.freedom-unlimited@2024-01-01
+card_id: us.chase.freedom-unlimited
+kind: baseline
+effective_for_new: '2024-01-01'
+notes: Terms as known from January 2024. Earlier history (including the pre-2024
+  Lyft and DashPass terms) is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 0
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.chase.freedom-unlimited/chase-travel-5x
+  version: 1
+- target: earn_rule:us.chase.freedom-unlimited/dining-3x
+  version: 1
+- target: earn_rule:us.chase.freedom-unlimited/drugstores-3x
+  version: 1
+- target: earn_rule:us.chase.freedom-unlimited/base-1-5x
+  version: 1
+- target: benefit:us.chase.freedom-unlimited/purchase-protection
+  version: 1
+- target: benefit:us.chase.freedom-unlimited/extended-warranty
+  version: 1
+- target: benefit:us.chase.freedom-unlimited/trip-cancel
+  version: 1
+- target: benefit:us.chase.freedom-unlimited/rental-cdw
+  version: 1

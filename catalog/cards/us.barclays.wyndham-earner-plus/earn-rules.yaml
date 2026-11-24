@@ -1,0 +1,51 @@
+card_id: us.barclays.wyndham-earner-plus
+rules:
+- id: us.barclays.wyndham-earner-plus/wyndham-6x
+  categories:
+  - cat:travel.hotels.direct.wyndham
+  versions:
+  - version: 1
+    release: us.barclays.wyndham-earner-plus@2026-06-17
+    multiplier: '6'
+    notes: Eligible folio charges at participating Hotels by Wyndham (including Wyndham Travel Bundles), Caesars Rewards and
+      Trademark Collection lodging and Trademark Collection vacation club resorts. Echo Suites, WaterWalk unfurnished suites
+      and non-participating hotels are excluded.
+- id: us.barclays.wyndham-earner-plus/travel-4x
+  categories:
+  - cat:travel.flights
+  - cat:travel.car_rental
+  - cat:travel.rideshare
+  - cat:gas_ev.gas
+  - cat:gas_ev.ev_charging
+  - cat:travel.parking_tolls
+  - cat:travel.transit
+  versions:
+  - version: 1
+    release: us.barclays.wyndham-earner-plus@2026-06-17
+    multiplier: '4'
+    notes: 'Issuer travel definition: airfare, car rental, rideshare, gas, EV charging, tolls and trains, by merchant code.
+      Parking shares the tolls category here but may not qualify; Vacation Club resorts outside the Trademark Collection,
+      their maintenance fees and timeshare loan payments to Wyndham developers also earn 4x but have no spend category.'
+- id: us.barclays.wyndham-earner-plus/dining-4x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.barclays.wyndham-earner-plus@2026-06-17
+    multiplier: '4'
+- id: us.barclays.wyndham-earner-plus/groceries-4x
+  categories:
+  - cat:groceries.store
+  versions:
+  - version: 1
+    release: us.barclays.wyndham-earner-plus@2026-06-17
+    multiplier: '4'
+    notes: Grocery stores by merchant code; Target, Walmart, warehouse clubs, drug stores and discount stores are excluded.
+- id: us.barclays.wyndham-earner-plus/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.barclays.wyndham-earner-plus@2026-06-17
+    multiplier: '1'
+    notes: Timeshare down payments to Wyndham developers earn nothing.

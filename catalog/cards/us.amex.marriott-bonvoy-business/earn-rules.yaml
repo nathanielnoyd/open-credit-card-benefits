@@ -1,0 +1,28 @@
+card_id: us.amex.marriott-bonvoy-business
+rules:
+- id: us.amex.marriott-bonvoy-business/marriott-6x
+  categories:
+  - cat:travel.hotels.direct.marriott
+  versions:
+  - version: 1
+    release: us.amex.marriott-bonvoy-business@2024-01-01
+    multiplier: '6'
+    notes: Eligible purchases at hotels participating in Marriott Bonvoy.
+- id: us.amex.marriott-bonvoy-business/business-4x
+  categories:
+  - cat:dining
+  - cat:gas_ev.gas
+  - cat:telecom.wireless
+  - cat:business.shipping
+  versions:
+  - version: 1
+    release: us.amex.marriott-bonvoy-business@2024-01-01
+    multiplier: '4'
+    notes: Restaurants worldwide, US gas stations, wireless telephone services bought directly from US providers, and US purchases for shipping. No cap. Gas, wireless and shipping must be US merchants.
+- id: us.amex.marriott-bonvoy-business/base-2x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.marriott-bonvoy-business@2024-01-01
+    multiplier: '2'

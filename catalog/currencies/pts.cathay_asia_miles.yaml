@@ -1,0 +1,14 @@
+id: pts:cathay_asia_miles
+name: Cathay Pacific Asia Miles
+kind: airline
+issuer: Cathay Pacific
+url: https://www.cathaypacific.com/cx/en_US/membership.html
+expiry: Miles expire 18 months after the last crediting or debiting activity.
+paths: []
+sources:
+  - url: https://www.cathaypacific.com/cx/en_US/membership.html
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

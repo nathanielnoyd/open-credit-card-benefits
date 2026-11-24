@@ -1,0 +1,30 @@
+id: us.citi.double-cash
+issuer_id: us.citi
+name: Citi Double Cash Card
+summary: "A $0-annual-fee Citi card earning 2x ThankYou points on everything (1 when you buy, 1 when you pay) and 5x on hotels, car rentals and attractions booked through Citi Travel, with extended warranty."
+network: mastercard
+segment: personal
+tier: no_fee
+family: citi-thankyou
+earns: pts:citi_ty
+open_to_applicants: true
+url: https://www.citi.com/credit-cards/citi-double-cash-credit-card
+aliases:
+- Double Cash
+fee_posting:
+  anchor: account_open
+notes: >-
+  Earns ThankYou points: 1 when you buy and 1 when you pay. 3% foreign transaction fee. On its own the card reaches only a few
+  transfer partners at reduced ratios (generally 1,000 to 700 or 1,000 to 800); points moved to a Strata Premier, Strata Elite
+  or legacy Prestige/Premier account transfer at full ratios, including to American AAdvantage (partner since July 27, 2025).
+provenance:
+  sources:
+  - url: https://www.citi.com/credit-cards/citi-double-cash-credit-card
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://onemileatatime.com/reviews/credit-cards/citi/citi-double-cash/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.8"
+  last_reviewed: "2026-11-13"

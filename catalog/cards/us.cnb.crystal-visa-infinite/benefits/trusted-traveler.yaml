@@ -1,0 +1,34 @@
+id: us.cnb.crystal-visa-infinite/trusted-traveler
+card_id: us.cnb.crystal-visa-infinite
+kind: statement_credit
+name: Global Entry credit
+versions:
+- version: 1
+  change_type: added
+  release: us.cnb.crystal-visa-infinite@2020-01-01
+  summary: "A $120 statement credit when you pay the Global Entry application fee with the card, which also brings TSA PreCheck; a standalone TSA PreCheck fee does not qualify."
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: every_n_years
+    n: 4
+    anchor: calendar
+  limit:
+    amount: 12000
+  grants:
+  - entitlement: credit:trusted_traveler
+  notes: >-
+    The issuer page gives $120 for a Global Entry fee paid with the card but no frequency; once every four years
+    matches the Global Entry renewal cycle and older reviews. Reviews from 2017 to 2020 gave $100, so the date the
+    amount rose is unknown.
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://www.cnb.com/lending/cards/individual/crystal-credit-card.asp
+    retrieved_at: "2026-11-14"
+    publisher: issuer
+  - url: https://www.doctorofcredit.com/city-national-bank-crystal-visa-infinite-credit-card-review/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  confidence: "0.65"

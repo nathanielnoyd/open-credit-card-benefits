@@ -1,0 +1,58 @@
+card_id: us.bofa.atmos-ascent
+rules:
+- id: us.bofa.atmos-ascent/alaska-hawaiian-3x
+  name: 3 points on Alaska and Hawaiian
+  categories:
+  - cat:travel.flights.direct.as
+  - cat:travel.flights.direct.ha
+  versions:
+  - version: 1
+    release: us.bofa.atmos-ascent@2025-08-20
+    multiplier: "3"
+- id: us.bofa.atmos-ascent/everyday-2x
+  name: 2 points on gas, EV charging, cable, streaming and local transit
+  categories:
+  - cat:gas_ev
+  - cat:telecom
+  - cat:streaming
+  - cat:transit
+  - cat:travel.transit
+  - cat:travel.rideshare
+  versions:
+  - version: 1
+    release: us.bofa.atmos-ascent@2025-08-20
+    multiplier: "2"
+    notes: Cable is mapped to cat:telecom, which also includes phone service the issuer may not count. Local transit includes rideshare.
+- id: us.bofa.atmos-ascent/base-1x
+  name: 1 point on everything else
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.bofa.atmos-ascent@2025-08-20
+    multiplier: "1"
+- id: us.bofa.atmos-ascent/status-points
+  name: Status points from spend
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.bofa.atmos-ascent@2025-08-20
+    currency: pts:atmos_status_points
+    multiplier: "0.3333"
+    stacks: true
+    confidence: "0.7"
+    notes: 1 Atmos status point per $3 spent (0.3333 approximates 1/3). Reviews say uncapped; NerdWallet mentions a 30,000-point cap in 2025 only, not confirmed.
+- id: us.bofa.atmos-ascent/bofa-account-boost
+  name: 10% bonus with an eligible Bank of America account
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.bofa.atmos-ascent@2025-08-20
+    boost: "0.10"
+    conditions:
+    - type: selection_is
+      name: bofa_eligible_account
+      value: true
+    notes: Applies to Atmos points earned on purchases only, not to status points; boost cannot be scoped by currency. Separate from BofA Rewards, which excludes Atmos cards.

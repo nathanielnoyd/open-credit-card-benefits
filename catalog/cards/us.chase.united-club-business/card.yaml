@@ -1,0 +1,46 @@
+id: us.chase.united-club-business
+issuer_id: us.chase
+name: United Club Business Card
+summary: "A $695-a-year United business card with a United Club membership, earning 2x on United purchases, 5x on prepaid Renowned Hotels stays and 1.5x elsewhere, with two free checked bags, Premier Access, up to 28,000 PQP a year from spend and travel, rideshare and Instacart credits."
+network: visa
+segment: business
+tier: ultra_premium
+family: chase-united
+earns: pts:united_mileageplus
+open_to_applicants: true
+url: https://creditcards.chase.com/business-credit-cards/united/united-club-business
+aliases:
+- United Club Business
+- Chase United Club Business
+- United MileagePlus Club Business
+cobrand:
+  partner: United Airlines
+  program: pts:united_mileageplus
+fee_posting:
+  anchor: account_open
+related:
+- card_id: us.chase.united-club
+  relation: personal_counterpart
+notes: Employee cards are free but get no United Club membership of their own. Chase advertises 8x total on United flights, of
+  which 6x is the MileagePlus cardmember flight earn and only 2x is card earn. Chase's page still lists complimentary Premier
+  upgrades on award tickets for Premier cardmembers, but reviews report the perk ended for United cards on August 1, 2025, so
+  it is not modeled. A Global Entry, TSA PreCheck or NEXUS credit appears in some reviews, but Chase said it was listed for this
+  card by mistake and its product pages do not include it, so it is not modeled. Some reviews list price protection; Chase's
+  benefit page does not, so it is not modeled.
+provenance:
+  sources:
+  - url: https://creditcards.chase.com/business-credit-cards/united/united-club-business
+    retrieved_at: '2026-11-14'
+    publisher: issuer
+  - url: https://www.chase.com/business/credit-cards/united-business-cards/united-club-card/travel-benefits
+    retrieved_at: '2026-11-14'
+    publisher: issuer
+  - url: https://thepointsguy.com/credit-cards/reviews/united-club-business-card-review
+    retrieved_at: '2026-11-14'
+    publisher: review
+  - url: https://upgradedpoints.com/credit-cards/reviews/united-club-business-card
+    retrieved_at: '2026-11-14'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.75'
+  last_reviewed: '2026-11-14'

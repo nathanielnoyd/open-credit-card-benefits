@@ -1,0 +1,30 @@
+id: us.wellsfargo.autograph-journey/cell-phone
+card_id: us.wellsfargo.autograph-journey
+kind: protection
+name: Cell phone protection
+versions:
+- version: 1
+  change_type: added
+  release: us.wellsfargo.autograph-journey@2024-03-01
+  summary: "Covers up to $1,000 per claim for damage or theft of phones on your bill, less a $25 deductible, at most 2 claims per 12 months, when you pay the monthly bill with the card."
+  face_value: null
+  grants:
+  - entitlement: protection:cell_phone
+  coverage:
+    per_claim:
+      amount: 100000
+      currency: USD
+    deductible:
+      amount: 2500
+      currency: USD
+    max_claims_per_period: 2
+  conditions:
+  - type: paid_with_card
+    note: Monthly cell phone bill paid with an eligible Wells Fargo consumer credit card
+  beneficiaries:
+  - primary
+  notes: Up to $1000 per claim against damage or theft, less a $25 deductible, at most two paid claims per rolling 12 months. Covers lines on the bill. Starts the first day of the calendar month after the first bill paid with the card. Excludes phones that are lost or mysteriously disappear, and electronic or software failure. Secondary to other insurance.
+  sources:
+  - url: https://creditcards.wellsfargo.com/autograph-journey-visa-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer

@@ -1,0 +1,25 @@
+id: us.chase.united-club/trusted-traveler
+card_id: us.chase.united-club
+kind: statement_credit
+name: Global Entry, TSA PreCheck or NEXUS credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club@2024-01-01
+  summary: "Up to $120 every four years for a Global Entry, TSA PreCheck or NEXUS application fee charged to the card."
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: every_n_years
+    n: 4
+    anchor: calendar
+  grants:
+  - entitlement: credit:trusted_traveler
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Up to $120 every four years. The amount was $100 before the Global Entry fee rose in late 2024; that earlier amount
+    is not modeled.
+  confidence: '0.65'

@@ -1,0 +1,17 @@
+id: us.cnb.crystal-visa-infinite/evacuation
+card_id: us.cnb.crystal-visa-infinite
+kind: protection
+name: Emergency evacuation and transportation
+versions:
+- version: 1
+  change_type: added
+  release: us.cnb.crystal-visa-infinite@2020-01-01
+  summary: "Emergency evacuation and transportation coverage on trips paid with the card; the amount is not confirmed."
+  grants:
+  - entitlement: protection:emergency_evacuation
+  conditions:
+  - type: paid_with_card
+  notes: Listed by name on the issuer page; amounts and terms are in the Visa guide to benefits, which was not reviewed.
+  confidence: "0.65"
+  beneficiaries:
+  - primary

@@ -1,0 +1,16 @@
+id: us.barclays.wyndham-earner-plus/national-executive
+card_id: us.barclays.wyndham-earner-plus
+kind: status
+name: National Emerald Club Executive status
+versions:
+- version: 1
+  change_type: added
+  release: us.barclays.wyndham-earner-plus@2026-06-17
+  summary: National Car Rental Emerald Club Executive status while you hold the card.
+  grants:
+  - entitlement: status:national
+    attributes:
+      tier: executive
+  beneficiaries:
+  - primary
+  notes: Wyndham may change or cancel this benefit at any time.

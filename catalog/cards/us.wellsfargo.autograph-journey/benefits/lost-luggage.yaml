@@ -1,0 +1,32 @@
+id: us.wellsfargo.autograph-journey/lost-luggage
+card_id: us.wellsfargo.autograph-journey
+kind: protection
+name: Lost baggage
+versions:
+- version: 1
+  change_type: added
+  release: us.wellsfargo.autograph-journey@2024-03-01
+  summary: "Covers up to $3,000 per trip for checked or carry-on bags lost or stolen by a common carrier when the fare is paid with the card; secondary to other coverage."
+  face_value: null
+  grants:
+  - entitlement: protection:lost_luggage
+  coverage:
+    priority: secondary
+    per_trip:
+      amount: 300000
+      currency: USD
+  conditions:
+  - type: paid_with_card
+    note: Common carrier fare paid with the card
+  beneficiaries:
+  - primary
+  - authorized_user
+  - companion
+  notes: Up to $3,000 per trip for checked or carry-on bags lost to theft or misdirection by a common carrier. A review says $3,000 per person.
+  sources:
+  - url: https://creditcards.wellsfargo.com/autograph-journey-visa-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://upgradedpoints.com/credit-cards/reviews/wells-fargo-autograph-journey-card/
+    retrieved_at: "2026-11-13"
+    publisher: review

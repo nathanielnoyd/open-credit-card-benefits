@@ -1,0 +1,22 @@
+id: us.amex.hilton-surpass/baggage
+card_id: us.amex.hilton-surpass
+kind: protection
+name: Baggage insurance plan
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.hilton-surpass@2024-02-01
+  summary: "Covers up to $1,250 for lost, damaged or stolen carry-on bags and $500 for checked bags, beyond the carrier's coverage, when the full common-carrier fare is paid with the card."
+  face_value: null
+  coverage:
+    priority: excess
+  conditions:
+  - type: paid_with_card
+    note: Entire common carrier fare charged to the card
+  beneficiaries:
+  - primary
+  - authorized_user
+  machine_readable: false
+  notes: 'Lost, damaged or stolen baggage in excess of the carrier''s coverage: up to $1,250 for carry-on and $500 for checked baggage per covered person. The schema has no separate carry-on and checked limits.'
+  grants:
+  - entitlement: protection:lost_luggage

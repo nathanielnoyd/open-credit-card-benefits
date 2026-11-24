@@ -1,0 +1,15 @@
+id: us.amex.gold/no-fx
+card_id: us.amex.gold
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.gold@2024-07-25
+  summary: "No foreign transaction fees on purchases outside the US, for you and authorized users."
+  waives: foreign_transaction_fee
+  grants:
+  - entitlement: fee_waiver:foreign_transaction
+  beneficiaries:
+  - primary
+  - authorized_user

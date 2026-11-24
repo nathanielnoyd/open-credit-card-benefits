@@ -1,0 +1,15 @@
+id: us.bofa.atmos-summit/points-sharing
+card_id: us.bofa.atmos-summit
+kind: program_access
+name: Free points sharing
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-summit@2026-11-14
+  summary: "Share Atmos points with up to 10 other Atmos Rewards members at no cost."
+  face_value: null
+  grants:
+  - entitlement: program:points_sharing_atmos
+  conditions: []
+  beneficiaries:
+  - primary

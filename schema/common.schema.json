@@ -1,0 +1,805 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nathanielnoyd.github.io/open-credit-card-benefits/schema/0.3/common.schema.json",
+  "title": "OCCB shared definitions",
+  "$defs": {
+    "card_id": {
+      "type": "string",
+      "pattern": "^[a-z]{2}\\.[a-z0-9-]+\\.[a-z0-9-]+$"
+    },
+    "benefit_id": {
+      "type": "string",
+      "pattern": "^[a-z]{2}\\.[a-z0-9-]+\\.[a-z0-9-]+/[a-z0-9-]+$"
+    },
+    "release_id": {
+      "type": "string",
+      "pattern": "^[a-z]{2}\\.[a-z0-9-]+\\.[a-z0-9-]+@\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "currency_id": {
+      "type": "string",
+      "pattern": "^(pts:[a-z0-9_]+|[A-Z]{3})$"
+    },
+    "entitlement_id": {
+      "type": "string",
+      "pattern": "^[a-z_]+:[a-z0-9_.\\-]+$"
+    },
+    "category_id": {
+      "type": "string",
+      "pattern": "^cat:[a-z0-9_.]+$"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "decimal": {
+      "type": "string",
+      "pattern": "^-?\\d+(\\.\\d+)?$"
+    },
+    "ratio": {
+      "type": "string",
+      "pattern": "^\\d+(\\.\\d+)?:\\d+(\\.\\d+)?$"
+    },
+    "money": {
+      "type": "object",
+      "required": [
+        "amount",
+        "currency"
+      ],
+      "properties": {
+        "amount": {
+          "type": "integer"
+        },
+        "currency": {
+          "type": "string",
+          "pattern": "^[A-Z]{3}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "points": {
+      "type": "object",
+      "required": [
+        "currency"
+      ],
+      "properties": {
+        "currency": {
+          "$ref": "#/$defs/currency_id"
+        },
+        "points": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "percent_of_points_earned": {
+          "$ref": "#/$defs/decimal"
+        }
+      },
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "url"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "retrieved_at": {
+          "type": "string"
+        },
+        "excerpt_hash": {
+          "type": "string"
+        },
+        "publisher": {
+          "enum": [
+            "issuer",
+            "network",
+            "partner",
+            "press",
+            "review",
+            "community"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "confidence": {
+      "type": "string",
+      "pattern": "^(0(\\.\\d+)?|1(\\.0+)?)$"
+    },
+    "provenance": {
+      "description": "Provenance defaults declared once on a card and applied to every version and release that omits them.",
+      "type": "object",
+      "properties": {
+        "sources": {
+          "$ref": "#/$defs/sources"
+        },
+        "verified_by": {
+          "type": "string"
+        },
+        "confidence": {
+          "$ref": "#/$defs/confidence"
+        },
+        "last_reviewed": {
+          "$ref": "#/$defs/date"
+        }
+      },
+      "additionalProperties": false
+    },
+    "condition_type": {
+      "enum": [
+        "enrollment_required",
+        "booking_channel",
+        "merchant_in",
+        "min_nights",
+        "same_day_flight",
+        "fare_class_not_in",
+        "access_window_hours",
+        "paid_with_card",
+        "payment_method",
+        "selection_is",
+        "beneficiary_role",
+        "spend_gte",
+        "wallet_holds",
+        "region",
+        "date_window",
+        "card_year",
+        "min_transaction",
+        "any_of"
+      ]
+    },
+    "condition": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "$ref": "#/$defs/condition_type"
+        },
+        "note": {
+          "type": "string"
+        },
+        "channel": {
+          "type": "string"
+        },
+        "merchants": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "nights": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "carrier": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Z0-9]{2}$"
+          }
+        },
+        "classes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "before_departure": {
+          "type": "number",
+          "minimum": 0
+        },
+        "method": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "value": {
+          "description": "selection_is: the value that must be chosen; omitted means the purchase must match whatever the holder chose"
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/role"
+          },
+          "minItems": 1
+        },
+        "amount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "currency": {
+          "type": "string",
+          "pattern": "^[A-Z]{3}$"
+        },
+        "period": {
+          "enum": [
+            "calendar_year",
+            "cardmember_year",
+            "semiannual",
+            "quarter",
+            "month",
+            "statement",
+            "lifetime"
+          ]
+        },
+        "card_id": {
+          "$ref": "#/$defs/card_id"
+        },
+        "family": {
+          "type": "string"
+        },
+        "tier": {
+          "description": "With family in wallet_holds: only cards of this tier, or of any tier in the list",
+          "anyOf": [
+            { "type": "string" },
+            { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+          ]
+        },
+        "segment": {
+          "description": "With family in wallet_holds: only personal or only business cards",
+          "enum": ["personal", "business"]
+        },
+        "countries": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+          },
+          "minItems": 1
+        },
+        "from": {
+          "$ref": "#/$defs/date"
+        },
+        "to": {
+          "$ref": "#/$defs/date"
+        },
+        "years": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "minItems": 1
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/condition"
+          },
+          "minItems": 2
+        },
+        "min": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "card_year: first card year it applies to, with no end unless max is given"
+        },
+        "max": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "additionalProperties": false,
+      "patternProperties": {
+        "^x-": {}
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "booking_channel"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "channel"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "merchant_in"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "merchants"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "min_nights"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "nights"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "fare_class_not_in"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "classes"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "access_window_hours"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "before_departure"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "selection_is"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "name"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "beneficiary_role"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "roles"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "spend_gte"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "amount",
+              "currency",
+              "period"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "min_transaction"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "amount",
+              "currency"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "wallet_holds"
+              }
+            }
+          },
+          "then": {
+            "anyOf": [
+              {
+                "required": [
+                  "card_id"
+                ]
+              },
+              {
+                "required": [
+                  "family"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "region"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "countries"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "date_window"
+              }
+            }
+          },
+          "then": {
+            "anyOf": [
+              {
+                "required": [
+                  "from"
+                ]
+              },
+              {
+                "required": [
+                  "to"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "card_year"
+              }
+            }
+          },
+          "then": {
+            "anyOf": [
+              {
+                "required": [
+                  "years"
+                ]
+              },
+              {
+                "required": [
+                  "min"
+                ]
+              },
+              {
+                "required": [
+                  "max"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "any_of"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "conditions"
+            ]
+          }
+        }
+      ]
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/condition"
+      }
+    },
+    "period": {
+      "type": "object",
+      "required": [
+        "cadence"
+      ],
+      "properties": {
+        "cadence": {
+          "enum": [
+            "once",
+            "monthly",
+            "quarterly",
+            "semiannual",
+            "annual",
+            "every_n_years",
+            "rolling",
+            "ongoing",
+            "per_event"
+          ]
+        },
+        "n": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "window_days": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "anchor": {
+          "enum": [
+            "calendar",
+            "cardmember_year",
+            "account_open",
+            "fee_post",
+            "fixed_date"
+          ]
+        },
+        "anchor_month": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 12
+        },
+        "anchor_day": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 31
+        },
+        "schedule": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/money"
+          }
+        },
+        "tz": {
+          "type": "string"
+        },
+        "rollover": {
+          "enum": [
+            "none",
+            "next_period",
+            "until_date"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "cadence": {
+                "const": "every_n_years"
+              }
+            },
+            "required": [
+              "cadence"
+            ]
+          },
+          "then": {
+            "required": [
+              "n"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "cadence": {
+                "const": "rolling"
+              }
+            },
+            "required": [
+              "cadence"
+            ]
+          },
+          "then": {
+            "required": [
+              "window_days"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "anchor": {
+                "const": "fixed_date"
+              }
+            },
+            "required": [
+              "anchor"
+            ]
+          },
+          "then": {
+            "required": [
+              "anchor_month",
+              "anchor_day"
+            ]
+          }
+        }
+      ]
+    },
+    "limit": {
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "per_transaction": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "max_transactions_per_period": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "unit": {
+          "type": "object",
+          "required": [
+            "unit"
+          ],
+          "properties": {
+            "unit": {
+              "type": "string"
+            },
+            "window_hours": {
+              "type": "integer"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "coverage": {
+      "description": "Structured terms of a protection benefit. Amounts are the most the plan pays.",
+      "type": "object",
+      "properties": {
+        "priority": {
+          "enum": [
+            "primary",
+            "secondary",
+            "excess"
+          ]
+        },
+        "per_claim": {
+          "$ref": "#/$defs/money"
+        },
+        "per_person": {
+          "$ref": "#/$defs/money"
+        },
+        "per_trip": {
+          "$ref": "#/$defs/money"
+        },
+        "per_item": {
+          "$ref": "#/$defs/money"
+        },
+        "per_period": {
+          "$ref": "#/$defs/money"
+        },
+        "deductible": {
+          "$ref": "#/$defs/money"
+        },
+        "waiting_hours": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "max_days": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "window_days": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "extends_years": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_original_warranty_years": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_claims_per_period": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "requires_card_payment": {
+          "enum": [
+            "full",
+            "partial",
+            "any"
+          ]
+        },
+        "domestic": {
+          "type": "boolean"
+        },
+        "international": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "grant": {
+      "type": "object",
+      "required": [
+        "entitlement"
+      ],
+      "properties": {
+        "entitlement": {
+          "$ref": "#/$defs/entitlement_id"
+        },
+        "combine": {
+          "$ref": "#/$defs/combine_rule"
+        },
+        "attributes": {
+          "type": "object"
+        },
+        "value_share": {
+          "$ref": "#/$defs/decimal"
+        },
+        "stacking_confidence": {
+          "$ref": "#/$defs/confidence"
+        }
+      },
+      "additionalProperties": false
+    },
+    "combine_rule": {
+      "enum": [
+        "sum",
+        "max",
+        "any",
+        "once_per_beneficiary",
+        "primary_then_excess"
+      ]
+    },
+    "role": {
+      "enum": [
+        "primary",
+        "authorized_user",
+        "household",
+        "guest",
+        "companion"
+      ]
+    }
+  }
+}

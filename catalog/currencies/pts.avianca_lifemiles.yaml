@@ -1,0 +1,14 @@
+id: pts:avianca_lifemiles
+name: Avianca LifeMiles
+kind: airline
+issuer: Avianca
+url: https://www.lifemiles.com/
+expiry: Miles expire after 12 months of inactivity; redemptions do not count as activity. Reinstatement costs $10 per 1,000 miles.
+paths: []
+sources:
+  - url: https://www.lifemiles.com/
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://www.withautopilot.com/blog/do-airline-miles-expire
+    retrieved_at: "2026-11-13"
+    publisher: review

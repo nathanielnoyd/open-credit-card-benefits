@@ -1,0 +1,38 @@
+id: us.chase.sapphire-reserve/edit-hotel-credit
+card_id: us.chase.sapphire-reserve
+kind: statement_credit
+name: The Edit hotel credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-reserve@2025-06-23
+    summary: "Up to $500 back a year, in two credits of up to $250, on prepaid stays of 2 nights or more booked through The Edit by Chase Travel."
+    effective_from: "2025-06-23"
+    face_value:
+      amount: 50000
+      currency: USD
+    period:
+      cadence: annual
+      anchor: calendar
+      tz: America/New_York
+    limit:
+      amount: 50000
+      per_transaction: 25000
+      max_transactions_per_period: 2
+    grants:
+      - entitlement: credit:chase_edit
+        combine: sum
+    conditions:
+      - type: booking_channel
+        channel: chase_travel_the_edit
+        note: Prepaid booking through The Edit by Chase Travel
+      - type: min_nights
+        nights: 2
+    beneficiaries:
+      - primary
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

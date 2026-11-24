@@ -1,0 +1,35 @@
+id: us.amex.platinum/lululemon
+card_id: us.amex.platinum
+kind: statement_credit
+name: Lululemon credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2025-09-18
+    summary: "Up to $75 each calendar quarter in statement credits at US Lululemon stores, $300 a year in total; enrollment required."
+    effective_from: "2025-09-18"
+    face_value:
+      amount: 30000
+      currency: USD
+    period:
+      cadence: quarterly
+      anchor: calendar
+      tz: America/New_York
+    limit:
+      amount: 7500
+    grants:
+      - entitlement: credit:lululemon
+        combine: sum
+    conditions:
+      - type: enrollment_required
+      - type: merchant_in
+        merchants: [lululemon]
+        note: Lululemon stores in the US
+    beneficiaries:
+      - primary
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

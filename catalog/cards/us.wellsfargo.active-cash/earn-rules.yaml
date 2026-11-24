@@ -1,0 +1,10 @@
+card_id: us.wellsfargo.active-cash
+rules:
+- id: us.wellsfargo.active-cash/base-2pct
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.wellsfargo.active-cash@2021-07-01
+    multiplier: '2'
+    notes: Unlimited 2% cash rewards on net purchases. Cash advances and cash equivalents earn nothing.

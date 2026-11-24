@@ -1,0 +1,23 @@
+id: us.barclays.wyndham-earner-premier/wholesale-club
+card_id: us.barclays.wyndham-earner-premier
+kind: statement_credit
+name: Wholesale club credit
+versions:
+- version: 1
+  change_type: added
+  release: us.barclays.wyndham-earner-premier@2026-06-17
+  summary: A $65 statement credit once each calendar year after you spend $65 or more at wholesale clubs, including membership
+    fees.
+  face_value:
+    amount: 6500
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 6500
+  grants:
+  - entitlement: credit:wholesale_club
+  beneficiaries:
+  - primary
+  notes: Qualifying wholesale transactions by merchant code, including membership and renewal fees; no clubs are named.

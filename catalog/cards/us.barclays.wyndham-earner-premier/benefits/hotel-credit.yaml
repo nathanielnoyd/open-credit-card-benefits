@@ -1,0 +1,32 @@
+id: us.barclays.wyndham-earner-premier/hotel-credit
+card_id: us.barclays.wyndham-earner-premier
+kind: statement_credit
+name: Wyndham hotel credit
+versions:
+- version: 1
+  change_type: added
+  release: us.barclays.wyndham-earner-premier@2026-06-17
+  summary: A $100 statement credit once each calendar year after you spend $100 or more at Wyndham, Wyndham Grand, Dolce,
+    Trademark Collection or Registry Collection hotels.
+  face_value:
+    amount: 10000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 10000
+  grants:
+  - entitlement: credit:wyndham_hotel
+  conditions:
+  - type: merchant_in
+    merchants:
+    - wyndham_hotels
+    - wyndham_grand
+    - dolce_hotels
+    - trademark_collection
+    - registry_collection
+    note: $100 or more in combined calendar-year spend at these brands, by merchant code
+  beneficiaries:
+  - primary
+  notes: A single $100 credit triggered once $100 or more of qualifying spend posts in the calendar year; posts within 2 weeks.

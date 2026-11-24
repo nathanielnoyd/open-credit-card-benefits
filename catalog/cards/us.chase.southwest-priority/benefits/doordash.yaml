@@ -1,0 +1,59 @@
+id: us.chase.southwest-priority/doordash
+card_id: us.chase.southwest-priority
+kind: statement_credit
+name: DoorDash non-restaurant discount
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.southwest-priority@2025-02-01
+  summary: "Up to $10 off one non-restaurant DoorDash order each quarter, $40 a year, while you are enrolled in the complimentary DashPass."
+  face_value:
+    amount: 4000
+    currency: USD
+  period:
+    cadence: quarterly
+    anchor: calendar
+  limit:
+    amount: 1000
+    max_transactions_per_period: 1
+  grants:
+  - entitlement: credit:doordash_nonrestaurant
+  conditions:
+  - type: enrollment_required
+    note: Enrolled in the complimentary DashPass
+  - type: merchant_in
+    merchants:
+    - doordash_nonrestaurant
+  beneficiaries:
+  - primary
+  notes: Up to $10 off one non-restaurant DoorDash order each quarter while enrolled in DashPass. Applies to enrollees from
+    February 1, 2025 through August 31, 2026; it is a checkout discount, modeled as a credit.
+  confidence: '0.65'
+- version: 2
+  supersedes: 1
+  change_type: terms_changed
+  release: us.chase.southwest-priority@2026-09-01
+  summary: "Up to $10 off one non-restaurant DoorDash order each month, $120 a year, if you enrolled in the complimentary DashPass on or after September 1, 2026."
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 1000
+    max_transactions_per_period: 1
+  grants:
+  - entitlement: credit:doordash_nonrestaurant
+  conditions:
+  - type: enrollment_required
+    note: Enrolled in the complimentary DashPass on or after September 1, 2026
+  - type: merchant_in
+    merchants:
+    - doordash_nonrestaurant
+  beneficiaries:
+  - primary
+  notes: Up to $10 off one non-restaurant DoorDash order each month for DashPass enrollees from September 1, 2026. Earlier
+    enrollees keep the quarterly discount; which version applies depends on the enrollment date, which the schema cannot express.
+  machine_readable: false
+  confidence: '0.65'

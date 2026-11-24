@@ -1,0 +1,38 @@
+id: us.amex.delta-gold/second-checked-bag
+card_id: us.amex.delta-gold
+kind: fee_waiver
+name: Second checked bag free on domestic Delta flights
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-gold@2026-06-04
+  summary: "Free second checked bag for you on US domestic Delta-operated flights; companions on your reservation do not get it."
+  waives: checked_bag
+  count: 1
+  companions: 0
+  grants:
+  - entitlement: fee_waiver:checked_bag_delta_second
+    attributes:
+      bag_number: 2
+  conditions:
+  - type: same_day_flight
+    carrier:
+    - DL
+    note: Delta-operated flights only
+  - type: region
+    countries:
+    - US
+    note: U.S. domestic itineraries only
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Second bag waived on U.S. domestic Delta-operated flights for the card member only (companions do not get it unless
+    they also hold an eligible card). The schema cannot say 'the 2nd bag', so the grant carries a non-standard bag_number
+    attribute.
+  sources:
+  - url: https://awardwallet.com/news/delta-skymiles/delta-credit-card-changes-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://thriftytraveler.com/news/credit-card/amex-adds-new-delta-skymiles-card-benefits-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review

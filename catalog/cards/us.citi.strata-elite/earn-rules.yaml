@@ -1,0 +1,51 @@
+card_id: us.citi.strata-elite
+rules:
+- id: us.citi.strata-elite/citi-travel-12x
+  categories:
+  - cat:travel.portal.citi.hotels
+  - cat:travel.portal.citi.cars
+  - cat:travel.portal.citi.attractions
+  versions:
+  - version: 1
+    release: us.citi.strata-elite@2025-07-27
+    multiplier: "12"
+- id: us.citi.strata-elite/citi-travel-air-6x
+  categories:
+  - cat:travel.portal.citi.flights
+  versions:
+  - version: 1
+    release: us.citi.strata-elite@2025-07-27
+    multiplier: "6"
+- id: us.citi.strata-elite/citi-nights-6x
+  name: Citi Nights dining
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.citi.strata-elite@2025-07-27
+    multiplier: "6"
+    conditions:
+    - type: selection_is
+      name: citi_nights_window
+      value: true
+      note: >-
+        Only purchases made Friday and Saturday between 6 PM and 6 AM Eastern. The schema has no day-of-week or time-of-day
+        predicate, so this rule applies only when a holder records that their dining spend falls in the window.
+    notes: >-
+      Citi Nights: 6x at restaurants (including delivery) Friday and Saturday, 6 PM to 6 AM ET; 3x at other times.
+      Approximated with a holder selection because the window cannot be expressed.
+- id: us.citi.strata-elite/dining-3x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.citi.strata-elite@2025-07-27
+    multiplier: "3"
+    notes: Restaurants, including restaurant delivery, outside the Citi Nights window.
+- id: us.citi.strata-elite/base-1-5x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.citi.strata-elite@2025-07-27
+    multiplier: "1.5"

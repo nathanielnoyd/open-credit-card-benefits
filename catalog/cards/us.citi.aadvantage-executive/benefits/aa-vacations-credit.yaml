@@ -1,0 +1,36 @@
+id: us.citi.aadvantage-executive/aa-vacations-credit
+card_id: us.citi.aadvantage-executive
+kind: statement_credit
+name: American Airlines Vacations credit
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-executive@2026-08-23
+  summary: "Up to $250 from January to June and $250 from July to December, $500 a year, on American Airlines Vacations packages or experiences booked at aavacations.com."
+  face_value:
+    amount: 50000
+    currency: USD
+  period:
+    cadence: semiannual
+    anchor: calendar
+  limit:
+    amount: 25000
+  grants:
+  - entitlement: credit:american_vacations
+  beneficiaries:
+  - primary
+  conditions:
+  - type: booking_channel
+    channel: aa_vacations
+    note: Packages or experiences booked at aavacations.com
+  notes: Up to $250 from January to June and $250 from July to December on eligible American Airlines Vacations packages or experiences. Reported to require a package of two or more components.
+  sources:
+  - url: https://www.citi.com/credit-cards/citi-aadvantage-executive-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://thepointsguy.com/news/citi-aadvantage-executive-mastercard-refresh-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://onemileatatime.com/news/citi-aadvantage-executive-card-changes-higher-fee-new-benefits/
+    retrieved_at: '2026-11-13'
+    publisher: review

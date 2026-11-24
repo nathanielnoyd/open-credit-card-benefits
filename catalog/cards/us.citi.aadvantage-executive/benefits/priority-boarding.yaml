@@ -1,0 +1,25 @@
+id: us.citi.aadvantage-executive/priority-boarding
+card_id: us.citi.aadvantage-executive
+kind: access
+name: Priority check-in, screening and boarding
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-executive@2023-07-23
+  summary: "Priority check-in, airport screening where available and Group 4 boarding on American for you and up to 8 companions on the same reservation."
+  grants:
+  - entitlement: priority_boarding:american
+    attributes:
+      group: 4
+      companions: 8
+  beneficiaries:
+  - primary
+  - companion
+  notes: Priority check-in, airport screening where available, and Group 4 boarding on American for the primary cardmember and up to eight companions on the same reservation.
+  sources:
+  - url: https://news.aa.com/news/news-details/2023/American-Airlines-and-Citi-enhance-the-Citi-AAdvantage-Executive-World-Elite-Mastercard-with-more-benefits-AADV-07/default.aspx
+    retrieved_at: '2026-11-13'
+    publisher: press
+  - url: https://onemileatatime.com/reviews/credit-cards/citi/citi-aadvantage-executive-card/
+    retrieved_at: '2026-11-13'
+    publisher: review

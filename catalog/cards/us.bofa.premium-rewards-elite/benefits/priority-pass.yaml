@@ -1,0 +1,26 @@
+id: us.bofa.premium-rewards-elite/priority-pass
+card_id: us.bofa.premium-rewards-elite
+kind: membership
+name: Priority Pass Select (up to 4 memberships)
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards-elite@2026-11-14
+  summary: "Up to 4 Priority Pass Select memberships with unlimited lounge visits, one for you and three for anyone you choose, after you enroll."
+  face_value: null
+  limit:
+    count: 4
+    unit:
+      unit: membership
+  grants:
+  - entitlement: membership:priority_pass
+    attributes:
+      restaurants: true
+  conditions:
+  - type: enrollment_required
+  beneficiaries:
+  - primary
+  - authorized_user
+  - guest
+  notes: 'Up to four Priority Pass Select memberships; the extra three can go to anyone, not only authorized users, and each enrollment stays with that person for the life of the account. AwardWallet says restaurants and other non-lounge experiences are included; one other review says they are not, so restaurants carries lower confidence. Guest allowance is reported inconsistently (two guests or unlimited) and is left out.'
+  confidence: "0.6"

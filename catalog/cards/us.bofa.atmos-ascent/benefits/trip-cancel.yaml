@@ -1,0 +1,22 @@
+id: us.bofa.atmos-ascent/trip-cancel
+card_id: us.bofa.atmos-ascent
+kind: protection
+name: Trip cancellation and interruption
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-ascent@2025-08-20
+  summary: "Reimburses up to $1,500 per trip in prepaid costs when a trip paid with the card is canceled or interrupted for a covered reason."
+  face_value: null
+  grants:
+  - entitlement: protection:trip_cancellation
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  coverage:
+    per_trip:
+      amount: 150000
+      currency: USD
+  notes: Up to $1,500 per trip per one review; another review says the card has no travel insurance.
+  confidence: "0.5"

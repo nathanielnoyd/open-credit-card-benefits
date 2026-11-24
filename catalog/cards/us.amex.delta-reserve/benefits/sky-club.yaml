@@ -1,0 +1,42 @@
+id: us.amex.delta-reserve/sky-club
+card_id: us.amex.delta-reserve
+kind: access
+name: Delta Sky Club (15 visits a year)
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-reserve@2025-02-01
+  summary: "15 Delta Sky Club visits per Medallion Year (February 1 to January 31) when flying Delta on a fare other than Basic Economy; each visit gives 24 hours of access."
+  period:
+    cadence: annual
+    anchor: fixed_date
+    anchor_month: 2
+    anchor_day: 1
+  limit:
+    count: 15
+    unit:
+      unit: visit
+      window_hours: 24
+  grants:
+  - entitlement: lounge_network:delta_sky_club
+    combine: max
+    attributes:
+      visits: 15
+  conditions:
+  - type: same_day_flight
+    carrier:
+    - DL
+  - type: fare_class_not_in
+    classes:
+    - delta_basic
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: 15 visits per Medallion Year (Feb 1 - Jan 31); each authorized user gets their own 15. A visit is 24 hours of access.
+  sources:
+  - url: https://upgradedpoints.com/credit-cards/reviews/delta-reserve-credit-card-american-express/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://awardwallet.com/credit-cards/delta-skymiles/authorized-user-benefits
+    retrieved_at: '2026-11-13'
+    publisher: review

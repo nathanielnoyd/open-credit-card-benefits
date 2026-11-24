@@ -1,0 +1,17 @@
+id: us.chase.ihg-premier@2027-01-01
+card_id: us.chase.ihg-premier
+kind: change
+announced_on: '2026-10-01'
+notes: The broad 5x travel category ends for all cardmembers after December 31, 2026; direct airfare and car rentals keep
+  5x.
+effective_for_new: '2027-01-01'
+changes:
+- target: earn_rule:us.chase.ihg-premier/travel-5x
+  change_type: retired
+sources:
+- url: https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier
+  retrieved_at: '2026-11-13'
+  publisher: issuer
+- url: https://frequentmiler.com/?p=297051
+  retrieved_at: '2026-11-13'
+  publisher: review

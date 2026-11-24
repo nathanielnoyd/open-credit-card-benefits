@@ -1,0 +1,17 @@
+id: us.barclays.wyndham-earner-plus/room-rate-discount
+card_id: us.barclays.wyndham-earner-plus
+kind: other
+name: Cardmember discount on paid stays
+versions:
+- version: 1
+  change_type: added
+  release: us.barclays.wyndham-earner-plus@2026-06-17
+  summary: A cardmember discount off the standard rate on paid stays at participating Wyndham hotels.
+  face_value: null
+  grants:
+  - entitlement: discount:wyndham_room_rate
+  beneficiaries:
+  - primary
+  notes: The issuer does not publish the percentage; the discount is off the standard rate at participating properties.
+  machine_readable: false
+  confidence: '0.65'

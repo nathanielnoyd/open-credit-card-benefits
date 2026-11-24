@@ -1,0 +1,27 @@
+id: us.citi.aadvantage-executive/admirals-club
+card_id: us.citi.aadvantage-executive
+kind: membership
+name: Admirals Club membership
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-executive@2023-07-23
+  summary: "Admirals Club membership for you with up to two guests, plus Admirals Club access for authorized users."
+  grants:
+  - entitlement: lounge_network:admirals_club
+    attributes:
+      guests: 2
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Full Admirals Club membership for the primary cardmember, who may bring up to two guests or immediate family. Authorized users get Admirals Club access (not membership) when flying American or a oneworld airline that day, and cannot use partner lounges.
+  sources:
+  - url: https://www.citi.com/credit-cards/citi-aadvantage-executive-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://onemileatatime.com/reviews/credit-cards/citi/citi-aadvantage-executive-card/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://thepointsguy.com/news/citi-aadvantage-executive-mastercard-refresh-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review

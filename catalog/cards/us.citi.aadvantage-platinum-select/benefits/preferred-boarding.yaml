@@ -1,0 +1,19 @@
+id: us.citi.aadvantage-platinum-select/preferred-boarding
+card_id: us.citi.aadvantage-platinum-select
+kind: access
+name: Preferred boarding on American
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-platinum-select@2025-10-19
+  summary: "Group 5 boarding on American for you and up to 4 companions on the same reservation."
+  grants:
+  - entitlement: priority_boarding:american
+    attributes:
+      group: 5
+      companions: 4
+  beneficiaries:
+  - primary
+  - companion
+  notes: Preferred boarding (Group 5) for the cardmember and up to four companions on the same reservation.
+  confidence: '0.75'

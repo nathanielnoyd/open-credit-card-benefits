@@ -1,0 +1,21 @@
+id: us.amex.hilton-business/extended-warranty
+card_id: us.amex.hilton-business
+kind: protection
+name: Extended warranty
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.hilton-business@2024-03-28
+  summary: "Adds up to 1 extra year to original manufacturer warranties of 5 years or less on items paid with the card."
+  face_value: null
+  coverage:
+    extends_years: 1
+    max_original_warranty_years: 5
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Matches the original U.S. manufacturer warranty for up to one additional year on warranties of 5 years or less. Per-item and yearly maximums for this card were not confirmed.
+  grants:
+  - entitlement: protection:extended_warranty

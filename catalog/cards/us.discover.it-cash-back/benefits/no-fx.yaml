@@ -1,0 +1,22 @@
+id: us.discover.it-cash-back/no-fx
+card_id: us.discover.it-cash-back
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.discover.it-cash-back@2026-01-01
+  summary: "No foreign transaction fees on purchases made abroad, for you and authorized users."
+  waives: foreign_transaction_fee
+  grants:
+  - entitlement: fee_waiver:foreign_transaction
+  sources:
+  - url: https://www.insideflyer.com/posts/cash-back-card-shifts-to-new-payment-network/
+    retrieved_at: "2026-11-13"
+    publisher: press
+  - url: https://www.discover.com/credit-cards/cash-back/it-card.html
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  beneficiaries:
+  - primary
+  - authorized_user

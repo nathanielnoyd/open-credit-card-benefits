@@ -1,0 +1,36 @@
+id: us.chase.united-explorer
+issuer_id: us.chase
+name: United Explorer Card
+summary: "A $150-a-year United card earning 3x on United purchases and 2x on dining and hotel stays, with a free first checked bag, two United Club passes a year, and United Hotels, JSX, rideshare and Instacart credits."
+network: visa
+segment: personal
+tier: mid
+family: chase-united
+earns: pts:united_mileageplus
+open_to_applicants: true
+url: https://creditcards.chase.com/travel-credit-cards/united/united-explorer
+aliases:
+- United Explorer
+- Chase United Explorer
+- United MileagePlus Explorer
+cobrand:
+  partner: United Airlines
+  program: pts:united_mileageplus
+fee_posting:
+  anchor: account_open
+provenance:
+  sources:
+  - url: https://creditcards.chase.com/travel-credit-cards/united/united-explorer
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://upgradedpoints.com/news/united-airlines-personal-credit-card-changes-2025/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://thepointsguy.com/news/united-credit-card-refresh-2025
+    retrieved_at: '2026-11-13'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.8'
+  last_reviewed: '2026-11-13'
+related:
+  - { card_id: us.chase.united-business, relation: business_counterpart }

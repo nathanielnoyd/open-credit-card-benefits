@@ -1,0 +1,28 @@
+id: us.bofa.atmos-ascent/companion-fare
+card_id: us.bofa.atmos-ascent
+kind: certificate
+name: Annual $99 companion fare
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-ascent@2025-08-20
+  summary: "A companion fare on Alaska or Hawaiian for $99 plus taxes and fees, issued each account anniversary after you spend $6,000 in the prior anniversary year."
+  face_value: null
+  issued_on: anniversary
+  companions: 1
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  grants:
+  - entitlement: certificate:us.bofa.atmos-ascent.companion-fare
+  conditions:
+  - type: spend_gte
+    amount: 600000
+    currency: USD
+    period: cardmember_year
+    note: $6,000 in purchases in the prior anniversary year
+  beneficiaries:
+  - primary
+  machine_readable: false
+  confidence: "0.75"
+  notes: Companion ticket on Alaska or Hawaiian for $99 plus taxes and fees from $23, issued at each account anniversary after $6,000 in purchases in the prior anniversary year (one review says calendar year). Economy, within North America, booked on alaskaair.com. The companion’s co-pay has no structured field; how long the certificate stays valid is not confirmed.

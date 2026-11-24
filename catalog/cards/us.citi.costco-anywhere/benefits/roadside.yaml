@@ -1,0 +1,15 @@
+id: us.citi.costco-anywhere/roadside
+card_id: us.citi.costco-anywhere
+kind: protection
+name: Roadside assistance dispatch
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.costco-anywhere@2026-11-13
+  summary: "Roadside assistance dispatch in the US, Puerto Rico and the US Virgin Islands; you pay for the services provided."
+  grants:
+  - entitlement: protection:roadside
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Dispatch service in the U.S., Puerto Rico and the U.S. Virgin Islands; the cardmember pays for services provided.

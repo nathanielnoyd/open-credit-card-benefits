@@ -1,0 +1,27 @@
+id: us.amex.gold/resy-credit
+card_id: us.amex.gold
+kind: statement_credit
+name: Resy credit
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.gold@2024-07-25
+  summary: "Up to $50 every six months (January to June and July to December) in statement credits at US Resy restaurants, $100 a year in total; enrollment required."
+  face_value:
+    amount: 10000
+    currency: USD
+  period:
+    cadence: semiannual
+    anchor: calendar
+  limit:
+    amount: 5000
+  grants:
+  - entitlement: credit:resy
+  conditions:
+  - type: enrollment_required
+  - type: merchant_in
+    merchants:
+    - resy_network
+    note: Eligible US Resy restaurants, Resy.com and the Resy app
+  beneficiaries:
+  - primary

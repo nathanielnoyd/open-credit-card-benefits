@@ -1,0 +1,27 @@
+id: us.bilt.blue
+issuer_id: us.bilt
+name: Bilt Blue Card
+summary: "A no-annual-fee Mastercard earning points on rent and mortgage paid through Bilt with no fee, 3x on Bilt Travel hotels and Lyft, 2x on Bilt Travel flights and 1x elsewhere, with no foreign transaction fees."
+network: mastercard
+segment: personal
+tier: no_fee
+family: bilt
+earns: pts:bilt
+open_to_applicants: true
+url: https://www.bilt.com/card/blue
+aliases:
+- Bilt Blue
+- Bilt Card 2.0 Blue
+fee_posting:
+  anchor: account_open
+notes: Issued by Column N.A. and serviced by Cardless; launched 2026-02-07 to replace the Wells Fargo-issued Bilt Mastercard.
+provenance:
+  sources:
+  - url: https://www.bilt.com/card/blue
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://www.bilt.com/terms/bilt-card-offer-terms
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  verified_by: agent:occb-research
+  confidence: '0.8'

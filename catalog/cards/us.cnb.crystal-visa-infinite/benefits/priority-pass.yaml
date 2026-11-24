@@ -1,0 +1,33 @@
+id: us.cnb.crystal-visa-infinite/priority-pass
+card_id: us.cnb.crystal-visa-infinite
+kind: membership
+name: Priority Pass Select
+versions:
+- version: 1
+  change_type: added
+  release: us.cnb.crystal-visa-infinite@2020-01-01
+  summary: "Priority Pass Select lounge membership with unlimited visits for the cardholder; guests pay a per-visit fee."
+  grants:
+  - entitlement: membership:priority_pass
+    attributes:
+      guests: 0
+  conditions:
+  - type: enrollment_required
+  notes: >-
+    Since January 1, 2020 guest visits are charged ($32 per guest per visit when announced in 2019; the current fee is
+    not confirmed). Reviews say the account gets two Priority Pass Select memberships, the primary's and one more for a
+    designated user; the issuer page does not say. Whether Priority Pass restaurants are included is not confirmed.
+  beneficiaries:
+  - primary
+  - authorized_user
+  sources:
+  - url: https://www.cnb.com/lending/cards/individual/crystal-credit-card.asp
+    retrieved_at: "2026-11-14"
+    publisher: issuer
+  - url: https://www.doctorofcredit.com/rumor-city-national-bank-to-change-250-airline-credit-per-user-to-350-across-all-cards
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://www.uscreditcardguide.com/cnb-city-national-bank-crystal-visa-infinite-credit-card/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  confidence: "0.65"

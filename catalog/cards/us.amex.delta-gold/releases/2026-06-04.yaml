@@ -1,0 +1,19 @@
+id: us.amex.delta-gold@2026-06-04
+card_id: us.amex.delta-gold
+kind: change
+announced_on: '2026-06-04'
+effective_for_new: '2026-06-04'
+notes: '30th-anniversary enhancements: free second checked bag on U.S. domestic Delta-operated flights, and a $10 monthly
+  rideshare credit from the second card year. Live for existing holders the same day. Annual fees unchanged.'
+changes:
+- target: benefit:us.amex.delta-gold/second-checked-bag
+  version: 1
+- target: benefit:us.amex.delta-gold/rideshare
+  version: 1
+sources:
+- url: https://awardwallet.com/news/delta-skymiles/delta-credit-card-changes-2026/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://thriftytraveler.com/news/credit-card/amex-adds-new-delta-skymiles-card-benefits-2026/
+  retrieved_at: '2026-11-13'
+  publisher: review

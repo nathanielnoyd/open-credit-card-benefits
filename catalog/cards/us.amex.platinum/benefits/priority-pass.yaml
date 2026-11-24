@@ -1,0 +1,32 @@
+id: us.amex.platinum/priority-pass
+card_id: us.amex.platinum
+kind: membership
+name: Priority Pass
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2024-01-01
+    summary: "Priority Pass Select membership with lounge access for you and 2 guests after you enroll; Priority Pass restaurants are not included."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: membership:priority_pass
+        combine: any
+        attributes:
+          guests: 2
+          restaurants: false
+    conditions:
+      - type: enrollment_required
+    beneficiaries:
+      - primary
+      - authorized_user
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

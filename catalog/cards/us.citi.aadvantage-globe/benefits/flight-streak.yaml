@@ -1,0 +1,25 @@
+id: us.citi.aadvantage-globe/flight-streak
+card_id: us.citi.aadvantage-globe
+kind: milestone
+name: Flight Streak Loyalty Point bonus
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-globe@2025-10-19
+  summary: "5,000 bonus Loyalty Points after every 4 qualifying American flights, up to 15,000 each status qualification year."
+  reward:
+    currency: pts:aa_loyalty_points
+    points: 15000
+  period:
+    cadence: annual
+    anchor: fixed_date
+    anchor_month: 3
+    anchor_day: 1
+  grants:
+  - entitlement: milestone:us.citi.aadvantage-globe.flight-streak
+  beneficiaries: [primary]
+  notes: >-
+    Flight Streak: 5,000 Loyalty Points after every four qualifying American Airlines flights, up to three times (12 flights,
+    15,000 Loyalty Points) per status qualification year (March 1 to the last day of February). The threshold counts flights, not
+    card spend, so it cannot be expressed; reward is the maximum.
+  machine_readable: false

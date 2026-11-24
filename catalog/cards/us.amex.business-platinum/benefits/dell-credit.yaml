@@ -1,0 +1,34 @@
+id: us.amex.business-platinum/dell-credit
+card_id: us.amex.business-platinum
+kind: statement_credit
+name: Dell credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-platinum@2025-07-01
+    summary: "Up to $150 back each calendar year on US purchases made directly with Dell Technologies; enrollment required."
+    face_value:
+      amount: 15000
+      currency: USD
+    period:
+      cadence: annual
+      anchor: calendar
+    limit:
+      amount: 15000
+    grants:
+      - entitlement: credit:dell
+    conditions:
+      - type: enrollment_required
+      - type: merchant_in
+        merchants:
+          - dell
+    beneficiaries:
+      - primary
+    notes: U.S. purchases made directly with Dell Technologies. Restructured July 1, 2025 (earlier history not modeled).
+    sources:
+      - url: https://thepointsguy.com/credit-cards/amex-business-platinum-2025-refresh/
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-business-platinum-card/
+        retrieved_at: "2026-11-13"
+        publisher: review

@@ -1,0 +1,19 @@
+id: pts:bofa_cash
+name: Bank of America cash rewards
+kind: cashback
+issuer: Bank of America
+url: https://www.bankofamerica.com/credit-cards/products/cash-back-credit-card/
+cents_per_point: "1.0"
+expiry: none while the account is open
+paths:
+  - id: statement-credit
+    kind: statement_credit
+    rate: "1.0"
+  - id: deposit
+    kind: deposit
+    rate: "1.0"
+    notes: Deposit to a Bank of America checking or savings account, or a Merrill account (529 or Cash Management Account).
+sources:
+  - url: https://www.bankofamerica.com/credit-cards/products/cash-back-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer

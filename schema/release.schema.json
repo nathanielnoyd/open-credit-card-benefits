@@ -1,0 +1,228 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nathanielnoyd.github.io/open-credit-card-benefits/schema/0.3/release.schema.json",
+  "title": "OCCB card release",
+  "type": "object",
+  "required": [
+    "id",
+    "card_id",
+    "kind",
+    "effective_for_new",
+    "changes",
+    "sources"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/release_id"
+    },
+    "card_id": {
+      "$ref": "common.schema.json#/$defs/card_id"
+    },
+    "kind": {
+      "enum": [
+        "baseline",
+        "refresh",
+        "change"
+      ]
+    },
+    "announced_on": {
+      "$ref": "common.schema.json#/$defs/date"
+    },
+    "first_seen_on": {
+      "$ref": "common.schema.json#/$defs/date"
+    },
+    "effective_for_new": {
+      "$ref": "common.schema.json#/$defs/date"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "changes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "target"
+        ],
+        "properties": {
+          "target": {
+            "type": "string",
+            "pattern": "^(benefit|earn_rule|fee|path):.+$"
+          },
+          "version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "change_type": {
+            "const": "retired"
+          },
+          "to": {
+            "$ref": "common.schema.json#/$defs/money",
+            "description": "fee: the regular amount. First-year waivers are acquisition offers and are not recorded; a user records what they paid in the user layer (fee_paid)."
+          },
+          "free_count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "fee:authorized_user: how many cards are free before the fee applies"
+          },
+          "notes": {
+            "type": "string"
+          },
+          "rate": {
+            "$ref": "common.schema.json#/$defs/decimal",
+            "description": "fee: a percentage fee as a fraction, such as \"0.03\" for a 3% foreign transaction fee"
+          }
+        },
+        "additionalProperties": false,
+        "oneOf": [
+          {
+            "required": [
+              "version"
+            ]
+          },
+          {
+            "required": [
+              "change_type"
+            ]
+          },
+          {
+            "required": [
+              "to"
+            ]
+          },
+          {
+            "required": [
+              "rate"
+            ]
+          }
+        ]
+      }
+    },
+    "transition": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "applies_to"
+        ],
+        "properties": {
+          "applies_to": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "on": {
+            "$ref": "common.schema.json#/$defs/date"
+          },
+          "next_renewal_on_or_after": {
+            "$ref": "common.schema.json#/$defs/date"
+          },
+          "never": {
+            "const": true,
+            "description": "Existing holders never get these changes; they keep their old terms (grandfathering). Only new applicants from effective_for_new get them."
+          }
+        },
+        "additionalProperties": false,
+        "oneOf": [
+          {
+            "required": [
+              "on"
+            ]
+          },
+          {
+            "required": [
+              "next_renewal_on_or_after"
+            ]
+          },
+          {
+            "required": [
+              "never"
+            ]
+          }
+        ]
+      }
+    },
+    "legacy": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "effective_to"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "rate": {
+            "$ref": "common.schema.json#/$defs/decimal"
+          },
+          "applies_to_lots": {
+            "type": "object",
+            "properties": {
+              "earned_before": {
+                "$ref": "common.schema.json#/$defs/date"
+              }
+            },
+            "additionalProperties": false
+          },
+          "effective_to": {
+            "$ref": "common.schema.json#/$defs/date"
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "sources": {
+      "allOf": [
+        {
+          "$ref": "common.schema.json#/$defs/sources"
+        },
+        {
+          "minItems": 1
+        }
+      ]
+    },
+    "confidence": {
+      "$ref": "common.schema.json#/$defs/confidence"
+    },
+    "verified_by": {
+      "type": "string"
+    },
+    "last_reviewed": {
+      "$ref": "common.schema.json#/$defs/date"
+    },
+    "follows": {
+      "type": "string",
+      "description": "On a variant's release: the base card's release whose changes this release ships for the variant (spec section 8)"
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "baseline"
+          }
+        }
+      },
+      "then": {
+        "not": {
+          "required": [
+            "transition"
+          ]
+        }
+      }
+    }
+  ]
+}

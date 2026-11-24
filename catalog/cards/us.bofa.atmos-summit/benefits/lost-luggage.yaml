@@ -1,0 +1,26 @@
+id: us.bofa.atmos-summit/lost-luggage
+card_id: us.bofa.atmos-summit
+kind: protection
+name: Lost luggage
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-summit@2026-11-14
+  summary: "Covers checked or carry-on luggage lost by the airline through theft or misdirection up to $3,000 when the trip is paid with the card."
+  face_value: null
+  grants:
+  - entitlement: protection:lost_luggage
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  coverage:
+    per_trip:
+      amount: 300000
+      currency: USD
+  notes: Up to $3,000 ($2,000 for New York residents).
+  confidence: "0.65"
+  sources:
+  - url: https://onemileatatime.com/guides/atmos-rewards-summit-card-travel-coverage/
+    retrieved_at: "2026-11-14"
+    publisher: review

@@ -1,0 +1,19 @@
+id: us.chase.southwest-priority@2026-11-13
+card_id: us.chase.southwest-priority
+kind: change
+first_seen_on: '2026-11-13'
+effective_for_new: '2026-11-13'
+notes: The Instacart credit and Instacart+ trial were first seen on this date;
+  their start date is not verified.
+changes:
+- target: benefit:us.chase.southwest-priority/instacart
+  version: 1
+- target: benefit:us.chase.southwest-priority/instacart-plus
+  version: 1
+sources:
+- url: https://creditcards.chase.com/travel-credit-cards/southwest/priority
+  retrieved_at: '2026-11-13'
+  publisher: issuer
+- url: https://thepointsguy.com/loyalty-programs/southwest-rapid-rewards-reboot-and-companion-pass-changes
+  retrieved_at: '2026-11-13'
+  publisher: review

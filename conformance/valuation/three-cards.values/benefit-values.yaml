@@ -1,0 +1,887 @@
+scope: publisher
+source: Frozen copy of the example value set for the three cards in
+  examples/three-cards.json, so conformance checks the math against fixed inputs
+as_of: 2026-11-14
+method: what a typical holder would prepay on the fee date (docs/value-sets.md)
+values:
+  us.amex.platinum/airline-fee:
+    usage_probability: '0.25'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 20000
+      currency: USD
+    note: Worth near face to people who already use the merchant or service
+      regularly, little to others; half of expected use for a typical holder.
+  us.amex.platinum/avis-pp:
+    personal_value:
+      amount: 0
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 7500
+      currency: USD
+    note: Useful only to people who rent from Avis.
+  us.amex.platinum/baggage:
+    personal_value:
+      amount: 0
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 5000
+      currency: USD
+    note: Claims are rare; few would prepay for it.
+  us.amex.platinum/cell-phone:
+    personal_value:
+      amount: 1000
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 10000
+      currency: USD
+    note: Saves buying separate phone insurance for people who would.
+  us.amex.platinum/centurion:
+    personal_value:
+      amount: 10000
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 60000
+      currency: USD
+    note: "The card's main lounge network: worth a lot to frequent flyers at
+      airports that have one, nothing to others."
+  us.amex.platinum/centurion-guests:
+    personal_value:
+      amount: 0
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 20000
+      currency: USD
+    note: Only after a high spend threshold, and only for people who travel with
+      guests.
+  us.amex.platinum/clear:
+    usage_probability: '0.2'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 21900
+      currency: USD
+    note: Needs a specific merchant or travel provider that many holders use only
+      sometimes.
+  us.amex.platinum/delta-sky-club:
+    personal_value:
+      amount: 2500
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 50000
+      currency: USD
+    note: Valuable only to people who fly Delta; a second network adds little to the
+      card's main one.
+  us.amex.platinum/delta-unlimited:
+    personal_value:
+      amount: 2500
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 50000
+      currency: USD
+    note: Valuable only to people who fly Delta; a second network adds little to the
+      card's main one.
+  us.amex.platinum/digital-entertainment:
+    usage_probability: '0.25'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 30000
+      currency: USD
+    note: Worth near face to people who already use the merchant or service
+      regularly, little to others; half of expected use for a typical holder.
+  us.amex.platinum/equinox:
+    usage_probability: '0'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 30000
+      currency: USD
+    note: A premium membership or boutique merchant almost no one would prepay for.
+  us.amex.platinum/escape:
+    personal_value:
+      amount: 500
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 10000
+      currency: USD
+    note: Few locations; overlaps the card's other networks.
+  us.amex.platinum/extended-warranty:
+    personal_value:
+      amount: 0
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 5000
+      currency: USD
+    note: Claims are rare; few would prepay for it.
+  us.amex.platinum/fhr:
+    personal_value:
+      amount: 1000
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 30000
+      currency: USD
+    note: Perks on luxury hotel bookings for people who book such hotels.
+  us.amex.platinum/hertz-pc:
+    personal_value:
+      amount: 500
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 10000
+      currency: USD
+    note: Useful only to people who rent from Hertz.
+  us.amex.platinum/hilton-gold:
+    personal_value:
+      amount: 2500
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 30000
+      currency: USD
+    note: Breakfast or a food credit at Hilton for people who stay a few nights a
+      year.
+  us.amex.platinum/hotel-credit:
+    usage_probability: '0.15'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 60000
+      currency: USD
+    note: Needs a particular merchant, booking channel, stay or minimum that many
+      holders won't use; few would prepay much for it.
+  us.amex.platinum/lhw-sterling:
+    personal_value:
+      amount: 0
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 5000
+      currency: USD
+    note: Adds little over base membership.
+  us.amex.platinum/lufthansa:
+    personal_value:
+      amount: 0
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 10000
+      currency: USD
+    note: Only when flying Lufthansa Group airlines.
+  us.amex.platinum/lululemon:
+    usage_probability: '0.05'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 30000
+      currency: USD
+    note: One merchant most holders don't already use.
+  us.amex.platinum/marriott-gold:
+    personal_value:
+      amount: 500
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 15000
+      currency: USD
+    note: Gold adds little; higher tiers matter only to frequent Marriott guests.
+  us.amex.platinum/member-airfares:
+    personal_value:
+      amount: 0
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 20000
+      currency: USD
+    note: Occasional discounted fares through Amex Travel.
+  us.amex.platinum/national-exec:
+    personal_value:
+      amount: 1500
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 15000
+      currency: USD
+    note: Useful to people who rent cars several times a year.
+  us.amex.platinum/no-fx:
+    personal_value:
+      amount: 500
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 30000
+      currency: USD
+    note: Worth something only to people who spend abroad; most premium cards waive
+      it too.
+  us.amex.platinum/oura:
+    usage_probability: '0.02'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 20000
+      currency: USD
+    note: One merchant or service few holders use.
+  us.amex.platinum/plaza-premium:
+    personal_value:
+      amount: 500
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 15000
+      currency: USD
+    note: Few US locations; overlaps the card's other networks.
+  us.amex.platinum/priority-pass:
+    personal_value:
+      amount: 2500
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 45000
+      currency: USD
+    note: A second lounge network adds little when the card already has a main one.
+  us.amex.platinum/purchase-protection:
+    personal_value:
+      amount: 0
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 5000
+      currency: USD
+    note: Claims are rare; few would prepay for it.
+  us.amex.platinum/rental-coverage:
+    personal_value:
+      amount: 1000
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 15000
+      currency: USD
+    note: Worth more to people who rent cars often, and when primary.
+  us.amex.platinum/resy-credit:
+    usage_probability: '0.25'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 40000
+      currency: USD
+    note: Worth near face to people who already use the merchant or service
+      regularly, little to others; half of expected use for a typical holder.
+  us.amex.platinum/return-protection:
+    personal_value:
+      amount: 0
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 5000
+      currency: USD
+    note: Claims are rare; few would prepay for it.
+  us.amex.platinum/saks-credit:
+    usage_probability: '0.05'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 10000
+      currency: USD
+    note: One merchant most holders don't already use.
+  us.amex.platinum/soulcycle:
+    usage_probability: '0'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 30000
+      currency: USD
+    note: A premium membership or boutique merchant almost no one would prepay for.
+  us.amex.platinum/trip-cancel:
+    personal_value:
+      amount: 1000
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 15000
+      currency: USD
+    note: Claims are rare; worth more to people with expensive nonrefundable trips.
+  us.amex.platinum/trip-delay:
+    personal_value:
+      amount: 1000
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 15000
+      currency: USD
+    note: Claims are rare; worth more to people who fly often.
+  us.amex.platinum/trusted-traveler:
+    usage_probability: '0.6'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 3000
+      currency: USD
+    note: Comes off a bill most people already pay, but needs enrolling and tracking.
+  us.amex.platinum/uber-cash:
+    usage_probability: '0.35'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 20000
+      currency: USD
+    note: Broad merchant, but monthly amounts expire if unused; worth near face only
+      to people who use the merchant every month.
+  us.amex.platinum/uber-one:
+    usage_probability: '0.1'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 12000
+      currency: USD
+    note: Worth its price only to people who would subscribe anyway.
+  us.amex.platinum/walmart-plus:
+    usage_probability: '0.1'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 15540
+      currency: USD
+    note: Worth its price only to people who would subscribe anyway.
+  us.chase.sapphire-preferred/anniversary-bonus:
+    personal_value:
+      amount: 0
+      currency: USD
+  us.chase.sapphire-preferred/apple-tv:
+    usage_probability: '0.2'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 11900
+      currency: USD
+    note: Worth its price only to people who would subscribe anyway.
+  us.chase.sapphire-preferred/baggage-delay:
+    personal_value:
+      amount: 0
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 5000
+      currency: USD
+    note: Claims are rare; few would prepay for it.
+  us.chase.sapphire-preferred/dashpass:
+    usage_probability: '0.1'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 12000
+      currency: USD
+    note: Worth its price only to people who would subscribe anyway.
+  us.chase.sapphire-preferred/doordash-other:
+    usage_probability: '0.15'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 12000
+      currency: USD
+    note: Needs a particular merchant, booking channel, stay or minimum that many
+      holders won't use; few would prepay much for it.
+  us.chase.sapphire-preferred/evacuation:
+    personal_value:
+      amount: 0
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 10000
+      currency: USD
+    note: Claims are rare; peace of mind on international trips.
+  us.chase.sapphire-preferred/hotel-credit:
+    usage_probability: '0.25'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 10000
+      currency: USD
+    note: Worth near face to people who already use the merchant or service
+      regularly, little to others; half of expected use for a typical holder.
+  us.chase.sapphire-preferred/lost-luggage:
+    personal_value:
+      amount: 0
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 5000
+      currency: USD
+    note: Claims are rare; few would prepay for it.
+  us.chase.sapphire-preferred/no-fx:
+    personal_value:
+      amount: 500
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 30000
+      currency: USD
+    note: Worth something only to people who spend abroad; most premium cards waive
+      it too.
+  us.chase.sapphire-preferred/points-boost:
+    personal_value:
+      amount: 0
+      currency: USD
+  us.chase.sapphire-preferred/rental-cdw:
+    personal_value:
+      amount: 1000
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 15000
+      currency: USD
+    note: Worth more to people who rent cars often, and when primary.
+  us.chase.sapphire-preferred/trip-cancel:
+    personal_value:
+      amount: 1000
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 15000
+      currency: USD
+    note: Claims are rare; worth more to people with expensive nonrefundable trips.
+  us.chase.sapphire-preferred/trip-delay:
+    personal_value:
+      amount: 1000
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 15000
+      currency: USD
+    note: Claims are rare; worth more to people who fly often.
+  us.chase.sapphire-preferred/trusted-traveler:
+    usage_probability: '0.6'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 3000
+      currency: USD
+    note: Comes off a bill most people already pay, but needs enrolling and tracking.
+  us.chase.sapphire-reserve/air-canada-lounges:
+    personal_value:
+      amount: 500
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 10000
+      currency: USD
+    note: Only when flying Star Alliance through Canada.
+  us.chase.sapphire-reserve/apple:
+    usage_probability: '0.2'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 32400
+      currency: USD
+    note: Worth its price only to people who would subscribe anyway.
+  us.chase.sapphire-reserve/baggage-delay:
+    personal_value:
+      amount: 0
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 5000
+      currency: USD
+    note: Claims are rare; few would prepay for it.
+  us.chase.sapphire-reserve/dashpass:
+    usage_probability: '0.1'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 12000
+      currency: USD
+    note: Worth its price only to people who would subscribe anyway.
+  us.chase.sapphire-reserve/dining-credit:
+    usage_probability: '0.15'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 30000
+      currency: USD
+    note: Needs a particular merchant, booking channel, stay or minimum that many
+      holders won't use; few would prepay much for it.
+  us.chase.sapphire-reserve/doordash-other:
+    usage_probability: '0.15'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 24000
+      currency: USD
+    note: Needs a particular merchant, booking channel, stay or minimum that many
+      holders won't use; few would prepay much for it.
+  us.chase.sapphire-reserve/doordash-restaurant:
+    usage_probability: '0.2'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 18000
+      currency: USD
+    note: Needs a specific merchant or travel provider that many holders use only
+      sometimes.
+  us.chase.sapphire-reserve/edit-hotel-credit:
+    usage_probability: '0.1'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 50000
+      currency: USD
+    note: Needs a narrow merchant list or a multi-night portal booking at portal
+      prices; few would prepay much for it.
+  us.chase.sapphire-reserve/evacuation:
+    personal_value:
+      amount: 0
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 10000
+      currency: USD
+    note: Claims are rare; peace of mind on international trips.
+  us.chase.sapphire-reserve/extended-warranty:
+    personal_value:
+      amount: 0
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 5000
+      currency: USD
+    note: Claims are rare; few would prepay for it.
+  us.chase.sapphire-reserve/hertz-five-star:
+    personal_value:
+      amount: 500
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 10000
+      currency: USD
+    note: Useful only to people who rent from Hertz.
+  us.chase.sapphire-reserve/hyatt-explorist:
+    personal_value:
+      amount: 500
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 15000
+      currency: USD
+    note: Explorist adds little unless you stay at Hyatt often.
+  us.chase.sapphire-reserve/ihg-diamond:
+    personal_value:
+      amount: 500
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 20000
+      currency: USD
+    note: Platinum adds little beyond occasional upgrades; Diamond adds breakfast
+      for frequent IHG guests.
+  us.chase.sapphire-reserve/ihg-platinum:
+    personal_value:
+      amount: 500
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 20000
+      currency: USD
+    note: Platinum adds little beyond occasional upgrades; Diamond adds breakfast
+      for frequent IHG guests.
+  us.chase.sapphire-reserve/lost-luggage:
+    personal_value:
+      amount: 0
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 5000
+      currency: USD
+    note: Claims are rare; few would prepay for it.
+  us.chase.sapphire-reserve/lyft-credit:
+    usage_probability: '0.1'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 12000
+      currency: USD
+    note: Needs a narrow merchant list or a multi-night portal booking at portal
+      prices; few would prepay much for it.
+  us.chase.sapphire-reserve/no-fx:
+    personal_value:
+      amount: 500
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 30000
+      currency: USD
+    note: Worth something only to people who spend abroad; most premium cards waive
+      it too.
+  us.chase.sapphire-reserve/peloton-credit:
+    usage_probability: '0'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 12000
+      currency: USD
+    note: A premium membership or boutique merchant almost no one would prepay for.
+  us.chase.sapphire-reserve/points-boost:
+    personal_value:
+      amount: 0
+      currency: USD
+  us.chase.sapphire-reserve/priority-pass:
+    personal_value:
+      amount: 10000
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 60000
+      currency: USD
+    note: "The card's main lounge network: worth a lot to frequent flyers at
+      airports that have one, nothing to others."
+  us.chase.sapphire-reserve/purchase-protection:
+    personal_value:
+      amount: 0
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 5000
+      currency: USD
+    note: Claims are rare; few would prepay for it.
+  us.chase.sapphire-reserve/rental-cdw:
+    personal_value:
+      amount: 1000
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 15000
+      currency: USD
+    note: Worth more to people who rent cars often, and when primary.
+  us.chase.sapphire-reserve/return-protection:
+    personal_value:
+      amount: 0
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 5000
+      currency: USD
+    note: Claims are rare; few would prepay for it.
+  us.chase.sapphire-reserve/roadside:
+    personal_value:
+      amount: 0
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 5000
+      currency: USD
+    note: Useful to people without another roadside plan.
+  us.chase.sapphire-reserve/sapphire-lounges:
+    personal_value:
+      amount: 2000
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 40000
+      currency: USD
+    note: A handful of airports; a second network adds little to Priority Pass.
+  us.chase.sapphire-reserve/select-hotels-2026:
+    usage_probability: '0.05'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 25000
+      currency: USD
+    note: One merchant most holders don't already use.
+  us.chase.sapphire-reserve/shops-credit:
+    usage_probability: '0.2'
+  us.chase.sapphire-reserve/southwest-alist:
+    personal_value:
+      amount: 1000
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 30000
+      currency: USD
+    note: Valuable only to people who fly Southwest often.
+  us.chase.sapphire-reserve/southwest-credit:
+    usage_probability: '0.3'
+  us.chase.sapphire-reserve/stubhub-credit:
+    usage_probability: '0.05'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 30000
+      currency: USD
+    note: One merchant most holders don't already use.
+  us.chase.sapphire-reserve/travel-credit:
+    usage_probability: '0.85'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 30000
+      currency: USD
+    note: 'Near cash: comes off most travel purchases automatically, so most holders
+      would prepay nearly its face value.'
+  us.chase.sapphire-reserve/trip-cancel:
+    personal_value:
+      amount: 1000
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 15000
+      currency: USD
+    note: Claims are rare; worth more to people with expensive nonrefundable trips.
+  us.chase.sapphire-reserve/trip-delay:
+    personal_value:
+      amount: 1000
+      currency: USD
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 15000
+      currency: USD
+    note: Claims are rare; worth more to people who fly often.
+  us.chase.sapphire-reserve/trusted-traveler:
+    usage_probability: '0.6'
+    low:
+      amount: 0
+      currency: USD
+    high:
+      amount: 3000
+      currency: USD
+    note: Comes off a bill most people already pay, but needs enrolling and tracking.

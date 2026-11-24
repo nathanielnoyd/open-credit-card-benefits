@@ -1,0 +1,14 @@
+id: pts:copa_connectmiles
+name: Copa ConnectMiles
+kind: airline
+issuer: Copa Airlines
+url: https://www.copaair.com/en-us/connectmiles/
+expiry: Miles expire after 24 months of inactivity.
+paths: []
+sources:
+  - url: https://www.copaair.com/en-us/connectmiles/
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://www.nerdwallet.com/travel/learn/when-do-your-frequent-flyer-miles-expire
+    retrieved_at: "2026-11-13"
+    publisher: review

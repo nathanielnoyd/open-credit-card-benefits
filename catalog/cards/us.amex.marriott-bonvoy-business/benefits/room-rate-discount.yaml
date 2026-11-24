@@ -1,0 +1,20 @@
+id: us.amex.marriott-bonvoy-business/room-rate-discount
+card_id: us.amex.marriott-bonvoy-business
+kind: other
+name: 7% off standard Marriott room rates
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.marriott-bonvoy-business@2024-01-01
+  summary: "7% off standard room rates when you book direct at participating Marriott hotels using the Amex Business Card Rate."
+  face_value: null
+  conditions:
+  - type: booking_channel
+    channel: marriott_amex_business_rate
+    note: Book direct with Marriott while logged in as the primary card member and choose the Amex Business Card Rate
+  beneficiaries:
+  - primary
+  machine_readable: false
+  notes: 7% off the standard flexible rate at participating properties, not necessarily below other discounted rates such as AAA or advance purchase. No field expresses a percentage off a room rate.
+  grants:
+  - entitlement: discount:marriott_room_rate

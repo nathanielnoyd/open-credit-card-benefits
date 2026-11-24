@@ -1,0 +1,217 @@
+id: pts:chase_ur
+kind: transferable
+name: Chase Ultimate Rewards
+issuer: Chase
+url: https://www.chase.com/ultimaterewards
+paths:
+  - id: cash
+    kind: statement_credit
+    rate: "1.0"
+    notes: Cash back as a statement credit or deposit.
+  - id: gift-cards
+    kind: gift_card
+    rate: "1.0"
+    rate_max: "1.1"
+    notes: Usually 1¢; some retailers are periodically discounted (about 1.1¢).
+  - id: amazon-shop-with-points
+    kind: pay_with_points
+    rate: "0.8"
+    notes: Shop with Points at Amazon.
+  - id: chase-travel
+    kind: portal
+    rate: "1.0"
+    notes: Base Chase Travel rate for cards without Points Boost (Freedom, Ink Cash, Ink Unlimited).
+  - id: points-boost-reserve
+    kind: portal
+    effective_from: "2025-06-23"
+    rate_min: "1.0"
+    rate_max: "2.5"
+    rate_expected: "1.0"
+    requires:
+      - card_id: us.chase.sapphire-reserve
+        type: wallet_holds
+  - id: points-boost-reserve-business
+    kind: portal
+    effective_from: "2025-06-23"
+    rate_min: "1.0"
+    rate_max: "2.0"
+    rate_expected: "1.0"
+    notes: Points Boost on the Sapphire Reserve for Business, up to 2 cents a point on select flights and hotels through Chase Travel.
+    requires:
+      - card_id: us.chase.sapphire-reserve-business
+        type: wallet_holds
+  - id: points-boost-preferred
+    kind: portal
+    rate_min: "1.0"
+    rate_max: "1.75"
+    rate_expected: "1.0"
+    requires:
+      - card_id: us.chase.sapphire-preferred
+        type: wallet_holds
+  - id: points-boost-ink-preferred
+    kind: portal
+    effective_from: "2025-06-23"
+    rate_min: "1.0"
+    rate_max: "1.75"
+    rate_expected: "1.0"
+    requires:
+      - card_id: us.chase.ink-business-preferred
+        type: wallet_holds
+  - id: chase-travel-legacy
+    kind: portal
+    effective_to: "2027-10-25"
+    notes: Legacy rate from the Reserve’s 2025 refresh.
+    rate: "1.5"
+    applies_to_lots:
+      earned_before: "2025-10-26"
+    requires:
+      - card_id: us.chase.sapphire-reserve
+        type: wallet_holds
+  - id: chase-travel-legacy-preferred
+    kind: portal
+    effective_to: "2027-10-25"
+    rate: "1.25"
+    applies_to_lots:
+      earned_before: "2025-10-26"
+    notes: Legacy 1.25¢ Chase Travel rate for points earned before October 26, 2025, for cardmembers who held the card before June 23, 2025 (holder-since dates are not modeled). Points Boost still applies when better.
+    requires:
+      - card_id: us.chase.sapphire-preferred
+        type: wallet_holds
+  - id: chase-travel-legacy-ink-preferred
+    kind: portal
+    effective_to: "2027-10-25"
+    rate: "1.25"
+    applies_to_lots:
+      earned_before: "2025-10-26"
+    notes: Legacy 1.25¢ Chase Travel rate for points earned before October 26, 2025, for cardmembers who held the card before June 23, 2025 (holder-since dates are not modeled).
+    requires:
+      - card_id: us.chase.ink-business-preferred
+        type: wallet_holds
+  - id: hyatt
+    kind: transfer
+    to: pts:world_of_hyatt
+    effective_to: "2026-06-14"
+    ratio: "1:1"
+    requires: &transfer-cards
+      - type: any_of
+        note: Transfers need a Sapphire Preferred, Sapphire Reserve (personal or business) or Ink Business Preferred (or legacy Ink Plus/Bold) in the pool; Freedom and Ink Cash/Unlimited points must be combined into one of them.
+        conditions:
+          - { type: wallet_holds, family: chase-sapphire }
+          - { type: wallet_holds, card_id: us.chase.ink-business-preferred }
+  - id: hyatt-reserve
+    kind: transfer
+    to: pts:world_of_hyatt
+    effective_from: "2026-06-15"
+    ratio: "1:1"
+    notes: Both Sapphire Reserves (personal and business) keep 1:1 to Hyatt; the Preferred moved to 4:3.
+    requires:
+      - type: wallet_holds
+        family: chase-sapphire
+        tier: premium
+  - id: hyatt-ink-preferred-transition
+    kind: transfer
+    to: pts:world_of_hyatt
+    effective_from: "2026-06-15"
+    effective_to: "2026-09-30"
+    ratio: "1:1"
+    notes: Ink Business Preferred holders (existing and new) kept 1:1 to Hyatt through September 30, 2026, then moved to 4:3.
+    requires:
+      - card_id: us.chase.ink-business-preferred
+        type: wallet_holds
+  - id: hyatt-reduced
+    kind: transfer
+    to: pts:world_of_hyatt
+    effective_from: "2026-06-15"
+    notes: Applies when no Sapphire Reserve is held. Existing Preferred holders kept 1:1 until October 1, 2026; path-level transitions are not modeled yet.
+    ratio: "4:3"
+    requires: *transfer-cards
+  - id: united
+    kind: transfer
+    to: pts:united_mileageplus
+    ratio: "1:1"
+    requires: *transfer-cards
+  - id: flying-blue
+    kind: transfer
+    to: pts:flying_blue
+    ratio: "1:1"
+    requires: *transfer-cards
+  - id: aer-lingus
+    kind: transfer
+    to: pts:aer_lingus_avios
+    ratio: "1:1"
+    requires: *transfer-cards
+  - id: aeroplan
+    kind: transfer
+    to: pts:aeroplan
+    ratio: "1:1"
+    requires: *transfer-cards
+  - id: british-airways
+    kind: transfer
+    to: pts:ba_avios
+    ratio: "1:1"
+    requires: *transfer-cards
+  - id: iberia
+    kind: transfer
+    to: pts:iberia_avios
+    ratio: "1:1"
+    requires: *transfer-cards
+  - id: jetblue
+    kind: transfer
+    to: pts:jetblue_trueblue
+    ratio: "1:1"
+    requires: *transfer-cards
+  - id: singapore
+    kind: transfer
+    to: pts:singapore_krisflyer
+    ratio: "1:1"
+    requires: *transfer-cards
+  - id: southwest
+    kind: transfer
+    to: pts:southwest_rr
+    ratio: "1:1"
+    requires: *transfer-cards
+  - id: virgin-atlantic
+    kind: transfer
+    to: pts:virgin_atlantic
+    ratio: "1:1"
+    requires: *transfer-cards
+  - id: ihg
+    kind: transfer
+    to: pts:ihg_one
+    ratio: "1:1"
+    requires: *transfer-cards
+  - id: marriott
+    kind: transfer
+    to: pts:marriott_bonvoy
+    ratio: "1:1"
+    transfer_days: 2
+    requires: *transfer-cards
+  - id: wyndham
+    kind: transfer
+    to: pts:wyndham_rewards
+    ratio: "1:1"
+    notes: Added in early 2026.
+    requires: *transfer-cards
+sources:
+  - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-preferred/
+    retrieved_at: "2026-11-12"
+  - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+    retrieved_at: "2026-11-12"
+  - url: https://thepointsguy.com/loyalty-programs/chase-ultimate-rewards-transfer-partners/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://awardwallet.com/mile-transfer-times?program=Chase
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://awardwallet.com/credit-cards/chase-ultimate-rewards/ink-business-preferred/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://frequentmiler.com/chase-travel-portal-ending-1-5c-1-25c-redemptions-replacing-with-points-boost/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://thepointsguy.com/news/chase-devalues-ultimate-rewards-amazon/
+    retrieved_at: "2026-11-13"
+    publisher: review
+expiry: none
+pooling:
+  family: chase-ultimate-rewards

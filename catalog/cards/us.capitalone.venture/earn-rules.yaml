@@ -1,0 +1,27 @@
+card_id: us.capitalone.venture
+rules:
+- id: us.capitalone.venture/c1-travel-5x
+  categories:
+  - cat:travel.portal.capitalone.hotels
+  - cat:travel.portal.capitalone.vacation_rentals
+  - cat:travel.portal.capitalone.cars
+  versions:
+  - version: 1
+    release: us.capitalone.venture@2024-01-01
+    multiplier: "5"
+    notes: Hotels, vacation rentals and rental cars booked through Capital One Travel. Flights booked there earn the base 2x.
+- id: us.capitalone.venture/c1-entertainment-5x
+  categories:
+  - cat:entertainment.capitalone
+  versions:
+  - version: 1
+    release: us.capitalone.venture@2024-01-01
+    multiplier: "5"
+    notes: Capital One Entertainment ticket purchases.
+- id: us.capitalone.venture/base-2x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.capitalone.venture@2024-01-01
+    multiplier: "2"

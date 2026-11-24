@@ -1,0 +1,19 @@
+id: us.barclays.wyndham-earner-business/room-rate-discount
+card_id: us.barclays.wyndham-earner-business
+kind: other
+name: Cardmember discount on paid stays
+versions:
+- version: 1
+  change_type: added
+  release: us.barclays.wyndham-earner-business@2021-08-18
+  summary: A cardmember discount off the standard rate on paid stays at participating Wyndham hotels.
+  face_value: null
+  grants:
+  - entitlement: discount:wyndham_room_rate
+  beneficiaries:
+  - primary
+  notes: The current issuer page and terms give no percentage (a Cardmember Booking Discount off the Standard Rate plus an
+    extra discount on the Wyndham Rewards Rate); Frequent Miler reported 7% or 12% off the best available rate, depending
+    on the property, at launch in 2021.
+  machine_readable: false
+  confidence: '0.65'

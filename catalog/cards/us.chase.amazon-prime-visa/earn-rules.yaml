@@ -1,0 +1,39 @@
+card_id: us.chase.amazon-prime-visa
+rules:
+- id: us.chase.amazon-prime-visa/amazon-wholefoods-5x
+  categories:
+  - cat:merchant.amazon
+  - cat:merchant.amazon_fresh
+  - cat:merchant.whole_foods
+  versions:
+  - version: 1
+    release: us.chase.amazon-prime-visa@2023-05-01
+    multiplier: "5"
+    notes: Requires an eligible Prime membership (the card itself requires one). Excludes Whole Foods stores outside the US. Some reviews also list Prime Video.
+- id: us.chase.amazon-prime-visa/chase-travel-5x
+  categories:
+  - cat:travel.portal.chase
+  versions:
+  - version: 1
+    release: us.chase.amazon-prime-visa@2023-05-01
+    multiplier: "5"
+    notes: Requires an eligible Prime membership.
+- id: us.chase.amazon-prime-visa/dining-gas-transit-2x
+  categories:
+  - cat:dining
+  - cat:gas_ev.gas
+  - cat:transit
+  - cat:travel.transit
+  - cat:travel.rideshare
+  versions:
+  - version: 1
+    release: us.chase.amazon-prime-visa@2023-05-01
+    multiplier: "2"
+    notes: Restaurants (including takeout and delivery), gas stations, and local transit and commuting including rideshare.
+- id: us.chase.amazon-prime-visa/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.amazon-prime-visa@2023-05-01
+    multiplier: "1"

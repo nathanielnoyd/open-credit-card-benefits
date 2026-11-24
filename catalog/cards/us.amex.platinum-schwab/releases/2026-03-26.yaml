@@ -1,0 +1,6 @@
+id: us.amex.platinum-schwab@2026-03-26
+card_id: us.amex.platinum-schwab
+follows: us.amex.platinum@2026-03-26
+effective_for_new: "2026-03-26"
+sources:
+  - { url: https://www.uscreditcardguide.com/amex-platinum-card-for-Schwab/, retrieved_at: "2026-11-14", publisher: review }

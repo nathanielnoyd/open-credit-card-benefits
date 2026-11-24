@@ -1,0 +1,26 @@
+id: us.bilt.palladium/priority-pass
+card_id: us.bilt.palladium
+kind: membership
+name: Priority Pass membership
+versions:
+- version: 1
+  change_type: added
+  release: us.bilt.palladium@2026-02-07
+  summary: "Priority Pass lounge membership for you and authorized users, with 2 guests admitted free on each visit."
+  grants:
+  - entitlement: membership:priority_pass
+    attributes:
+      guests: 2
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Cardholder plus two guests; extra guests $35 each. Authorized users also get access per the card FAQ. Whether Priority
+    Pass restaurants are included is not stated.
+  sources:
+  - url: https://www.bilt.com/terms/palladium-card-guide-to-benefits
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://www.bilt.com/card/palladium
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  face_value: null

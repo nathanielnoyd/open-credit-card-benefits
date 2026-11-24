@@ -1,0 +1,19 @@
+id: us.usbank.altitude-reserve/luxury-hotel-collection
+card_id: us.usbank.altitude-reserve
+kind: program_access
+name: Visa Infinite Luxury Hotel Collection
+versions:
+- version: 1
+  change_type: added
+  release: us.usbank.altitude-reserve@2024-11-11
+  summary: "Breakfast, a food and beverage credit, late checkout and upgrades when available at Visa Infinite Luxury Hotel Collection properties booked through the collection."
+  grants:
+  - entitlement: program:visa_infinite_lhc
+  conditions:
+  - type: booking_channel
+    channel: visa_luxury_hotel_collection
+  notes: Property-level perks at participating hotels booked through the Visa collection; the $25 credit is per stay and is not a statement credit.
+  machine_readable: false
+  beneficiaries:
+  - primary
+  - authorized_user

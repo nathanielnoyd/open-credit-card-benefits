@@ -1,0 +1,20 @@
+id: us.amex.delta-gold-business/rental-car
+card_id: us.amex.delta-gold-business
+kind: protection
+name: Car rental loss and damage insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-gold-business@2025-02-01
+  summary: "Secondary coverage for theft of or damage to a rental car when you pay for the rental with the card and decline the rental company's collision damage waiver."
+  coverage:
+    priority: secondary
+  grants:
+  - entitlement: protection:rental_cdw
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Secondary coverage for damage or theft of a rental car declined-CDW and paid with the card. Upgraded Points cites up to $50,000 per rental (secondary); not modeled as a field.
+  confidence: '0.7'

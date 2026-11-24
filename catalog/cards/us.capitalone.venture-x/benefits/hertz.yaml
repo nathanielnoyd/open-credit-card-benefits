@@ -1,0 +1,23 @@
+id: us.capitalone.venture-x/hertz
+card_id: us.capitalone.venture-x
+kind: status
+name: Hertz President’s Circle
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x@2025-03-01
+  summary: "Hertz President's Circle status for you and authorized users after you enroll through your Capital One account."
+  grants:
+  - entitlement: status:hertz
+    attributes:
+      tier: presidents_circle
+  conditions:
+  - type: enrollment_required
+  notes: Enroll through the Capital One account, not at Hertz. Authorized users can also enroll and kept this after the February 2026 changes.
+  sources:
+  - url: https://upgradedpoints.com/news/venture-x-authorized-users-worth-it-2026/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  beneficiaries:
+  - primary
+  - authorized_user

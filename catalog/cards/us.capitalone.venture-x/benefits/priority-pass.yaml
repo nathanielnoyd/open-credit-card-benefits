@@ -1,0 +1,50 @@
+id: us.capitalone.venture-x/priority-pass
+card_id: us.capitalone.venture-x
+kind: membership
+name: Priority Pass
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x@2025-03-01
+  summary: "Priority Pass lounge membership with unlimited free guests for you and authorized users after you enroll; Priority Pass restaurants are not included."
+  grants:
+  - entitlement: membership:priority_pass
+    attributes:
+      guests: null
+      restaurants: false
+  conditions:
+  - type: enrollment_required
+  notes: Unlimited complimentary guests (guests null means no limit); authorized users could enroll for their own membership at no cost. Lounges only, no Priority Pass restaurants.
+  beneficiaries:
+  - primary
+  - authorized_user
+  sources:
+  - url: https://upgradedpoints.com/news/capital-one-venture-x-lounge-access-changes/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  confidence: "0.75"
+- version: 2
+  supersedes: 1
+  change_type: terms_changed
+  release: us.capitalone.venture-x@2026-02-01
+  summary: "Priority Pass lounge membership for you after you enroll, with no free guests ($35 per guest visit); Priority Pass restaurants are not included."
+  grants:
+  - entitlement: membership:priority_pass
+    attributes:
+      guests: 0
+      restaurants: false
+  conditions:
+  - type: enrollment_required
+  notes: >-
+    No complimentary guests; each guest costs $35 per visit, and the $75,000 spend threshold does not change that. Authorized users
+    get a membership only if the primary pays $125 a year for each of them. Lounges only, no Priority Pass restaurants.
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://upgradedpoints.com/news/capital-one-venture-x-lounge-access-changes/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://upgradedpoints.com/news/venture-x-authorized-users-worth-it-2026/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  confidence: "0.8"

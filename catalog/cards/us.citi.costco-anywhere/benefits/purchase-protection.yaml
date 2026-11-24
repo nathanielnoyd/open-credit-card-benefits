@@ -1,0 +1,20 @@
+id: us.citi.costco-anywhere/purchase-protection
+card_id: us.citi.costco-anywhere
+kind: protection
+name: Damage and theft purchase protection
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.costco-anywhere@2026-11-13
+  summary: "Covers eligible purchases paid with the card against damage or theft for 120 days from purchase or delivery."
+  coverage:
+    window_days: 120
+  grants:
+  - entitlement: protection:purchase
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Covers eligible purchases damaged or stolen within 120 days of purchase or delivery (90 days for New York residents). Citi's page gives no dollar limits. Some 2026 reports claimed this benefit was removed; Citi's product page still lists it.
+  confidence: '0.7'

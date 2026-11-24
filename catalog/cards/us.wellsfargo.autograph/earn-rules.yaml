@@ -1,0 +1,59 @@
+card_id: us.wellsfargo.autograph
+rules:
+- id: us.wellsfargo.autograph/dining-3x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.wellsfargo.autograph@2022-07-01
+    multiplier: '3'
+    notes: Eating places, restaurants, drinking places, fast food and caterers.
+- id: us.wellsfargo.autograph/travel-3x
+  categories:
+  - cat:travel.flights
+  - cat:travel.hotels
+  - cat:travel.car_rental
+  - cat:travel.cruise
+  - cat:travel.other
+  - cat:travel.vacation_rentals
+  versions:
+  - version: 1
+    release: us.wellsfargo.autograph@2022-07-01
+    multiplier: '3'
+    notes: Airlines, hotels and motels, timeshares, car rental, cruise lines, travel agencies, discount travel sites and campgrounds. Vacation rentals count only when they code as timeshares or travel agencies.
+- id: us.wellsfargo.autograph/gas-transit-3x
+  categories:
+  - cat:gas_ev
+  - cat:transit
+  - cat:travel.transit
+  - cat:travel.rideshare
+  - cat:travel.parking_tolls
+  versions:
+  - version: 1
+    release: us.wellsfargo.autograph@2022-07-01
+    multiplier: '3'
+    notes: Gas stations, automated fuel dispensers and EV charging; passenger rail, taxis, limousines, ferries, tolls, and parking lots and garages.
+- id: us.wellsfargo.autograph/streaming-3x
+  categories:
+  - cat:streaming
+  versions:
+  - version: 1
+    release: us.wellsfargo.autograph@2022-07-01
+    multiplier: '3'
+    notes: Cable and other pay TV, digital goods, books, movies, music and subscription services, per the issuer's list at wellsfargo.com/autographstreaming.
+- id: us.wellsfargo.autograph/phone-plans-3x
+  categories:
+  - cat:telecom
+  versions:
+  - version: 1
+    release: us.wellsfargo.autograph@2022-07-01
+    multiplier: '3'
+    notes: Landline and cell phone providers coded as telecommunication services.
+- id: us.wellsfargo.autograph/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.wellsfargo.autograph@2022-07-01
+    multiplier: '1'
+    notes: Cash advances and cash equivalents earn nothing.

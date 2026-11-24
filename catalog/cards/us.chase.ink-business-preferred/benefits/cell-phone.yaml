@@ -1,0 +1,27 @@
+id: us.chase.ink-business-preferred/cell-phone
+card_id: us.chase.ink-business-preferred
+kind: protection
+name: Cell phone protection
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ink-business-preferred@2025-02-01
+  summary: "Covers theft or damage to phones on your monthly cell phone bill paid with the card, up to $1,000 per claim after a $100 deductible, 3 claims per 12 months."
+  face_value: null
+  coverage:
+    per_claim:
+      amount: 100000
+      currency: USD
+    deductible:
+      amount: 10000
+      currency: USD
+    max_claims_per_period: 3
+  grants:
+  - entitlement: protection:cell_phone
+  conditions:
+  - type: paid_with_card
+    note: Monthly cell phone bill paid with the card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Covers the cardholder and employees listed on the phone bill; three claims per rolling 12 months.

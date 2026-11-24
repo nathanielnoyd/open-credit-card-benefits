@@ -1,0 +1,24 @@
+id: us.amex.business-gold/thc
+card_id: us.amex.business-gold
+kind: program_access
+name: The Hotel Collection
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-gold@2024-02-01
+    summary: "On The Hotel Collection stays of 2 or more nights booked through Amex Travel, you get a $100 credit for dining, spa and resort charges and a room upgrade when available."
+    grants:
+      - entitlement: program:amex_thc
+    conditions:
+      - type: min_nights
+        nights: 2
+    beneficiaries:
+      - primary
+    notes: $100 credit on qualifying dining, spa and resort charges and a room upgrade when available on stays of 2+ nights booked through Amex Travel.
+    sources:
+      - url: https://upgradedpoints.com/credit-cards/reviews/american-express-business-gold-card/
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - url: https://frequentmiler.com/american-express-business-gold-credit-card-review/
+        retrieved_at: "2026-11-13"
+        publisher: review

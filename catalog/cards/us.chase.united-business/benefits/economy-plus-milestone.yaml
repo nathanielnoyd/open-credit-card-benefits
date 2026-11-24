@@ -1,0 +1,22 @@
+id: us.chase.united-business/economy-plus-milestone
+card_id: us.chase.united-business
+kind: milestone
+name: Two Economy Plus upgrades after $25,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-business@2025-03-24
+  summary: "After $25,000 in calendar-year spend, two Economy Plus seat upgrades for flights within the continental US, valid for 12 months, once per calendar year."
+  threshold:
+    amount: 2500000
+    currency: USD
+  threshold_period: calendar_year
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: milestone:us.chase.united-business.economy-plus
+  beneficiaries:
+  - primary
+  notes: Two Economy Plus seat upgrade certificates after $25,000 in purchases in a calendar year, usable within 12 months on flights within the continental US. No field holds a non-cash, non-points reward of this kind.
+  machine_readable: false

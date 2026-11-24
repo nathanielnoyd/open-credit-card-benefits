@@ -1,0 +1,30 @@
+id: us.bofa.premium-rewards-elite/lifestyle-credit
+card_id: us.bofa.premium-rewards-elite
+kind: statement_credit
+name: Lifestyle credit
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards-elite@2026-11-14
+  summary: "Up to $150 a calendar year in statement credits for video streaming, food delivery, fitness subscriptions and rideshare."
+  face_value:
+    amount: 15000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 15000
+  grants:
+  - entitlement: credit:streaming_general
+    value_share: "0.35"
+  - entitlement: credit:meal_delivery
+    value_share: "0.25"
+  - entitlement: credit:rideshare
+    value_share: "0.25"
+  - entitlement: credit:fitness_general
+    value_share: "0.15"
+  conditions: []
+  beneficiaries:
+  - primary
+  notes: One $150 calendar-year pool shared across video streaming, food delivery, fitness subscriptions and rideshare purchases; not monthly. The list of qualifying merchants is not published. Value shares are an estimate of how the pool is typically used.

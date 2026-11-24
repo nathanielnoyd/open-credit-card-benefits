@@ -1,0 +1,23 @@
+id: us.chase.ritz-carlton/roadside
+card_id: us.chase.ritz-carlton
+kind: protection
+name: Roadside assistance
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ritz-carlton@2024-07-01
+  summary: "Up to $50 per roadside service call, 4 times a year."
+  grants:
+  - entitlement: protection:roadside
+  coverage:
+    per_claim:
+      amount: 5000
+      currency: USD
+    max_claims_per_period: 4
+  period:
+    cadence: annual
+    anchor: calendar
+  conditions: []
+  beneficiaries:
+  - primary
+  notes: Up to $50 per incident, up to 4 incidents a year.

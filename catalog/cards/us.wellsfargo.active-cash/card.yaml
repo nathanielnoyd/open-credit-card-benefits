@@ -1,0 +1,27 @@
+id: us.wellsfargo.active-cash
+issuer_id: us.wellsfargo
+name: Wells Fargo Active Cash Card
+summary: "A $0-annual-fee Wells Fargo card earning unlimited 2% cash rewards on purchases, with cell phone protection when you pay your phone bill with the card."
+network: visa
+segment: personal
+tier: no_fee
+family: wells-fargo-rewards
+earns: pts:wells_fargo_rewards
+open_to_applicants: true
+url: https://creditcards.wellsfargo.com/active-cash-credit-card/
+aliases:
+- Active Cash
+- Wells Fargo Active Cash Visa Signature
+fee_posting:
+  anchor: account_open
+notes: Visa Signature. Earns Wells Fargo Rewards cash rewards (one point is one cent). 3% foreign transaction fee.
+provenance:
+  sources:
+  - url: https://creditcards.wellsfargo.com/active-cash-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://www.creditcards.com/reviews/wells-fargo-active-cash-card-review/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.85"

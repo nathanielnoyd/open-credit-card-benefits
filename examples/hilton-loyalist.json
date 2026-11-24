@@ -1,0 +1,40 @@
+{
+  "occb": "0.3",
+  "people": [
+    {
+      "id": "p1"
+    }
+  ],
+  "cards": [
+    {
+      "id": "w-aspire",
+      "card_id": "us.amex.hilton-aspire",
+      "holder": "p1",
+      "opened_on": "2024-06-01",
+      "status": "open"
+    },
+    {
+      "id": "w-surpass",
+      "card_id": "us.amex.hilton-surpass",
+      "holder": "p1",
+      "opened_on": "2024-06-01",
+      "status": "open"
+    }
+  ],
+  "spend_profile": {
+    "as_of": "2026-11-13",
+    "currency": "USD",
+    "amounts": {
+      "cat:travel.hotels.direct.hilton": 700000,
+      "cat:dining": 400000,
+      "cat:groceries.store": 500000,
+      "cat:all": 1500000
+    }
+  },
+  "finance": {
+    "discount_rate": "0.045",
+    "holding_period_months": 12,
+    "horizon_months": 12,
+    "include_offers": false
+  }
+}

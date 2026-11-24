@@ -1,0 +1,26 @@
+id: us.chase.ihg-business/expensify-credit
+card_id: us.chase.ihg-business
+kind: statement_credit
+name: Expensify credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-business@2026-10-01
+  summary: "Up to $100 in statement credits each calendar year on Expensify purchases made with the card."
+  face_value:
+    amount: 10000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 10000
+  grants:
+  - entitlement: credit:expensify
+  conditions:
+  - type: merchant_in
+    merchants:
+    - expensify
+  beneficiaries:
+  - primary
+  notes: Usable in one or several transactions.

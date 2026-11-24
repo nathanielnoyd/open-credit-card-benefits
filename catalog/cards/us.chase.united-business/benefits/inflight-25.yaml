@@ -1,0 +1,25 @@
+id: us.chase.united-business/inflight-25
+card_id: us.chase.united-business
+kind: statement_credit
+name: 25% back on United inflight purchases
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-business@2024-01-01
+  summary: "25% back as a statement credit on United inflight food, drinks and Wi-Fi, Wi-Fi subscriptions and United Club premium drinks paid with the card."
+  face_value: null
+  percent_back: '0.25'
+  grants:
+  - entitlement: discount:inflight_united
+  conditions:
+  - type: paid_with_card
+  - type: merchant_in
+    merchants:
+    - united_inflight
+    - united_wifi
+    - united_club_premium_drinks
+    note: Food, beverages and Wi-Fi on United and United Express flights, Wi-Fi subscriptions, and premium drinks in United
+      Clubs
+  beneficiaries:
+  - primary
+  - authorized_user

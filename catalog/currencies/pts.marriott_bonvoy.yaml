@@ -1,0 +1,14 @@
+id: pts:marriott_bonvoy
+name: Marriott Bonvoy
+kind: hotel
+issuer: Marriott
+url: https://www.marriott.com/loyalty.mi
+expiry: Points expire after 24 consecutive months with no qualifying activity.
+paths: []
+sources:
+  - url: https://www.marriott.com/loyalty.mi
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

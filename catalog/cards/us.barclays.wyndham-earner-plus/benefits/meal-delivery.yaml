@@ -1,0 +1,24 @@
+id: us.barclays.wyndham-earner-plus/meal-delivery
+card_id: us.barclays.wyndham-earner-plus
+kind: statement_credit
+name: Meal delivery credit
+versions:
+- version: 1
+  change_type: added
+  release: us.barclays.wyndham-earner-plus@2026-06-17
+  summary: Up to $25 in statement credits every six months on third-party meal delivery purchases, $50 a calendar year in
+    total.
+  face_value:
+    amount: 5000
+    currency: USD
+  period:
+    cadence: semiannual
+    anchor: calendar
+  limit:
+    amount: 2500
+  grants:
+  - entitlement: credit:meal_delivery
+  beneficiaries:
+  - primary
+  notes: Third-party services delivering for restaurants and other businesses, by merchant code; restaurant-run delivery and
+    recipe or meal kit services are excluded. No enrollment mentioned.

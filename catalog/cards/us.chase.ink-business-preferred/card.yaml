@@ -1,0 +1,33 @@
+id: us.chase.ink-business-preferred
+issuer_id: us.chase
+name: Ink Business Preferred Credit Card
+summary: "A $95-a-year business card earning 3x on travel, shipping, advertising and internet, cable and phone services on up to $150,000 a year, with cell phone protection, primary business rental car coverage and points that transfer to partners."
+network: visa
+segment: business
+tier: mid
+family: chase-ink
+earns: pts:chase_ur
+open_to_applicants: true
+url: https://creditcards.chase.com/business-credit-cards/ink/business-preferred
+aliases:
+- Ink Business Preferred
+- Chase Ink Preferred
+- CIP
+fee_posting:
+  anchor: account_open
+notes: Holding this card lets Ultimate Rewards earned on other Chase cards be combined here for partner transfers. World of Hyatt transfers from this card fell to 4:3 on October 1, 2026 (modeled on the
+  currency).
+provenance:
+  sources:
+  - url: https://creditcards.chase.com/business-credit-cards/ink/business-preferred
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://thepointsguy.com/credit-cards/reviews/ink-business-preferred-card-review/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://upgradedpoints.com/credit-cards/reviews/chase-ink-business-preferred-credit-card
+    retrieved_at: '2026-11-13'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.85'
+  last_reviewed: '2026-11-13'

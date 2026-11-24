@@ -1,0 +1,18 @@
+id: us.citi.aadvantage-platinum-select/checked-bag
+card_id: us.citi.aadvantage-platinum-select
+kind: fee_waiver
+name: First checked bag free on American
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-platinum-select@2025-10-19
+  summary: "First checked bag free on American for you and up to 4 companions on the same reservation."
+  waives: checked_bag
+  count: 1
+  companions: 4
+  grants:
+  - entitlement: fee_waiver:checked_bag_american
+  beneficiaries:
+  - primary
+  - companion
+  notes: First checked bag free on domestic American itineraries for the cardmember and up to four companions on the same reservation.

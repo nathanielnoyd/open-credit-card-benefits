@@ -1,0 +1,35 @@
+id: us.chase.united-club/club-passes
+card_id: us.chase.united-club
+kind: access
+name: Four United Club one-time passes with All Access and an authorized user
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club@2025-03-24
+  summary: "Four United Club one-time passes each cardmember anniversary if you have All Access and an authorized user on the account; each pass admits one person entering with you or an authorized user."
+  unlocked_only: true
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    count: 4
+    unit:
+      unit: visit
+  grants:
+  - entitlement: lounge_guests:united_club
+    attributes:
+      visits: 4
+  conditions:
+  - type: spend_gte
+    amount: 5000000
+    currency: USD
+    period: calendar_year
+    note: Requires All Access ($50,000 in calendar-year purchases or Premier Gold status)
+  beneficiaries:
+  - authorized_user
+  - guest
+  notes: Four passes on each anniversary, from the year after account opening, for primary cardmembers with All Access and at
+    least one authorized user. The primary cardmember or an authorized user must also be admitted. The authorized-user and
+    status requirements cannot be expressed as conditions.
+  machine_readable: false
+  confidence: '0.7'

@@ -1,0 +1,27 @@
+id: us.bofa.atmos-ascent/extended-warranty
+card_id: us.bofa.atmos-ascent
+kind: protection
+name: Extended warranty
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-ascent@2025-08-20
+  summary: "Adds 1 year to manufacturer warranties of 3 years or less, up to $10,000 per item and $50,000 a year, on items bought with the card."
+  face_value: null
+  grants:
+  - entitlement: protection:extended_warranty
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  coverage:
+    extends_years: 1
+    max_original_warranty_years: 3
+    per_item:
+      amount: 1000000
+      currency: USD
+    per_period:
+      amount: 5000000
+      currency: USD
+  notes: One extra year on warranties of three years or less; up to $10,000 per item and $50,000 a year.
+  confidence: "0.7"

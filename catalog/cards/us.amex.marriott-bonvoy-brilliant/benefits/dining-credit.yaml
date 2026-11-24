@@ -1,0 +1,22 @@
+id: us.amex.marriott-bonvoy-brilliant/dining-credit
+card_id: us.amex.marriott-bonvoy-brilliant
+kind: statement_credit
+name: Brilliant dining credit
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.marriott-bonvoy-brilliant@2024-01-01
+  summary: "Up to $25 a month in statement credits at restaurants worldwide, $300 a year in total."
+  face_value:
+    amount: 30000
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 2500
+  beneficiaries:
+  - primary
+  notes: Up to $25 in statement credits each month for eligible purchases at restaurants worldwide.
+  grants:
+  - entitlement: credit:marriott_dining

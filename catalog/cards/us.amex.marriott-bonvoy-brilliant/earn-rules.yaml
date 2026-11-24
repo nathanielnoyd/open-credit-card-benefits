@@ -1,0 +1,33 @@
+card_id: us.amex.marriott-bonvoy-brilliant
+rules:
+- id: us.amex.marriott-bonvoy-brilliant/marriott-6x
+  categories:
+  - cat:travel.hotels.direct.marriott
+  versions:
+  - version: 1
+    release: us.amex.marriott-bonvoy-brilliant@2024-01-01
+    multiplier: '6'
+    notes: Eligible purchases at hotels participating in Marriott Bonvoy.
+- id: us.amex.marriott-bonvoy-brilliant/dining-3x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.amex.marriott-bonvoy-brilliant@2024-01-01
+    multiplier: '3'
+    notes: Restaurants worldwide.
+- id: us.amex.marriott-bonvoy-brilliant/flights-3x
+  categories:
+  - cat:travel.flights.direct
+  versions:
+  - version: 1
+    release: us.amex.marriott-bonvoy-brilliant@2024-01-01
+    multiplier: '3'
+    notes: Flights booked directly with airlines.
+- id: us.amex.marriott-bonvoy-brilliant/base-2x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.marriott-bonvoy-brilliant@2024-01-01
+    multiplier: '2'

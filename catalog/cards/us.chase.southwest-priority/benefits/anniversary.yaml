@@ -1,0 +1,20 @@
+id: us.chase.southwest-priority/anniversary
+card_id: us.chase.southwest-priority
+kind: anniversary
+name: 7,500 anniversary points
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.southwest-priority@2024-01-01
+  summary: "7,500 Southwest Rapid Rewards points each cardmember anniversary."
+  reward:
+    currency: pts:southwest_rr
+    points: 7500
+  issued_on: anniversary
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  grants:
+  - entitlement: anniversary:us.chase.southwest-priority
+  beneficiaries:
+  - primary

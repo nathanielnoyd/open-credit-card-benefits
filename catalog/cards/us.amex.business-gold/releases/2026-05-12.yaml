@@ -1,0 +1,13 @@
+id: us.amex.business-gold@2026-05-12
+card_id: us.amex.business-gold
+kind: change
+first_seen_on: "2026-03-25"
+effective_for_new: "2026-05-12"
+notes: ChatGPT Business credit live May 12, 2026.
+changes:
+  - target: benefit:us.amex.business-gold/chatgpt-credit
+    version: 1
+sources:
+  - url: https://thepointsparty.com/articles/amex-business-gold-platinum-300-chatgpt-credit-spring-2026
+    retrieved_at: "2026-11-13"
+    publisher: review

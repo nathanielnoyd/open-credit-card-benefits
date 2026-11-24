@@ -1,0 +1,59 @@
+id: us.barclays.wyndham-earner-plus@2026-06-17
+card_id: us.barclays.wyndham-earner-plus
+kind: baseline
+notes: Terms for new applicants from the June 17, 2026 refresh, the date they were first observed. Cardmembers who opened
+  before June 17, 2026 keep the legacy Earner Plus terms ($75 fee, 7,500 anniversary points, 6x on Wyndham and gas, 4x on
+  dining and groceries, Platinum status), which are not modeled. The authorized user fee is not listed in the terms and is
+  recorded as free.
+confidence: '0.8'
+effective_for_new: '2026-06-17'
+changes:
+- target: fee:annual
+  to:
+    amount: 9500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.barclays.wyndham-earner-plus/wyndham-6x
+  version: 1
+- target: earn_rule:us.barclays.wyndham-earner-plus/travel-4x
+  version: 1
+- target: earn_rule:us.barclays.wyndham-earner-plus/dining-4x
+  version: 1
+- target: earn_rule:us.barclays.wyndham-earner-plus/groceries-4x
+  version: 1
+- target: earn_rule:us.barclays.wyndham-earner-plus/base-1x
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-plus/anniversary-points
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-plus/award-discount
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-plus/diamond-first-year
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-plus/meal-delivery
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-plus/national-executive
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-plus/no-fx
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-plus/paid-stay-bonus
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-plus/platinum
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-plus/room-rate-discount
+  version: 1
+sources:
+- url: https://www.barclaycardus.com/applycontent/TnCs.jsp?tc49153
+  retrieved_at: '2026-11-14'
+  publisher: issuer
+- url: https://investor.wyndhamhotels.com/news-events/press-releases/detail/422/wyndham-and-barclays-launch-updated-credit-card-suite
+  retrieved_at: '2026-11-14'
+  publisher: issuer
+- url: https://frequentmiler.com/wyndham-cards-refresh-new-premium-card-new-welcome-offers-new-benefits-and-new-changed-earning-rates-for-new-applicants/
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://www.doctorofcredit.com/barclays-refreshes-wyndham-personal-business-cards-increased-fees-added-credits-changed-points-earning/
+  retrieved_at: '2026-11-14'
+  publisher: review

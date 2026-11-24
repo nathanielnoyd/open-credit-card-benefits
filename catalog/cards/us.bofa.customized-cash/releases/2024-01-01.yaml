@@ -1,0 +1,39 @@
+id: us.bofa.customized-cash@2024-01-01
+card_id: us.bofa.customized-cash
+kind: baseline
+effective_for_new: "2024-01-01"
+notes: Current earn terms with the Preferred Rewards tiers in force before May 27, 2026. Earlier history (including the 2023 expansion of online shopping) is not modeled. Foreign transaction fee is 3%.
+changes:
+- target: fee:annual
+  to:
+    amount: 0
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.bofa.customized-cash/choice-3pct
+  version: 1
+- target: earn_rule:us.bofa.customized-cash/grocery-wholesale-2pct
+  version: 1
+- target: earn_rule:us.bofa.customized-cash/base-1pct
+  version: 1
+- target: earn_rule:us.bofa.customized-cash/rewards-boost-25
+  version: 1
+- target: earn_rule:us.bofa.customized-cash/rewards-boost-50
+  version: 1
+- target: earn_rule:us.bofa.customized-cash/rewards-boost-75
+  version: 1
+- target: benefit:us.bofa.customized-cash/rewards-bonus
+  version: 1
+sources:
+- url: https://www.bankofamerica.com/credit-cards/products/cash-back-credit-card/
+  retrieved_at: "2026-11-13"
+  publisher: issuer
+- url: https://upgradedpoints.com/credit-cards/reviews/bank-of-america-customized-cash-rewards-credit-card
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/
+  retrieved_at: "2026-11-13"
+  publisher: review
+confidence: "0.8"

@@ -1,0 +1,20 @@
+id: us.citi.strata-elite/trip-cancel
+card_id: us.citi.strata-elite
+kind: protection
+name: Enhanced trip cancellation and interruption
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.strata-elite@2025-07-27
+  summary: "Reimburses up to $5,000 per trip and $10,000 per 12 months when a round trip paid in full with the card is canceled or interrupted for a covered reason."
+  coverage:
+    per_trip: { amount: 500000, currency: USD }
+    per_period: { amount: 1000000, currency: USD }
+    requires_card_payment: full
+  grants:
+  - entitlement: protection:trip_cancellation
+  conditions:
+  - type: paid_with_card
+  beneficiaries: [primary, authorized_user]
+  notes: Round trips paid in full with the card; $5,000 per trip and $10,000 per account per 12 months.
+  confidence: "0.75"

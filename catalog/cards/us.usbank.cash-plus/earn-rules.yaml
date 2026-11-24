@@ -1,0 +1,117 @@
+card_id: us.usbank.cash-plus
+rules:
+- id: us.usbank.cash-plus/choice-5pct
+  name: 5% on two categories you choose
+  categories:
+  - cat:dining.fast_food
+  - cat:utilities
+  - cat:telecom
+  - cat:streaming
+  - cat:department_stores
+  - cat:telecom.wireless
+  - cat:electronics_stores
+  - cat:sporting_goods
+  - cat:furniture
+  - cat:entertainment.movie_theaters
+  - cat:transit
+  - cat:travel.transit
+  - cat:travel.rideshare
+  - cat:fitness
+  - cat:apparel
+  choice:
+    mode: holder_selects
+    pick: 2
+    selection: cash_plus_categories
+    period: quarter
+    changeable: each quarter
+    groups:
+    - id: dining_fast_food
+      categories:
+      - cat:dining.fast_food
+    - id: utilities
+      categories:
+      - cat:utilities
+    - id: department_stores
+      categories:
+      - cat:department_stores
+    - id: telecom_wireless
+      categories:
+      - cat:telecom.wireless
+    - id: electronics_stores
+      categories:
+      - cat:electronics_stores
+    - id: sporting_goods
+      categories:
+      - cat:sporting_goods
+    - id: furniture
+      categories:
+      - cat:furniture
+    - id: entertainment_movie_theaters
+      categories:
+      - cat:entertainment.movie_theaters
+    - id: fitness
+      categories:
+      - cat:fitness
+    - id: apparel
+      categories:
+      - cat:apparel
+    - id: tv_internet_streaming
+      name: TV, internet and streaming
+      categories:
+      - cat:telecom
+      - cat:streaming
+    - id: ground_transportation
+      name: Ground transportation
+      categories:
+      - cat:transit
+      - cat:travel.transit
+      - cat:travel.rideshare
+  versions:
+  - version: 1
+    release: us.usbank.cash-plus@2024-01-01
+    multiplier: '5'
+    cap:
+      amount: 200000
+      currency: USD
+    cap_period: quarter
+    notes: 'Choose two each quarter from: fast food; home utilities; TV, internet and streaming; department stores; cell phone; electronics
+      stores; sporting goods; furniture stores; movie theaters; ground transportation; gyms and fitness centers; select clothing stores.
+      Options are category groups (TV, internet and streaming spans cat:telecom and cat:streaming; ground transportation spans transit
+      and rideshare). Without a choice each quarter, everything earns 1%. Options may change quarterly; the list is the one shown on
+      the issuer page today.'
+- id: us.usbank.cash-plus/everyday-2pct
+  name: 2% on one everyday category you choose
+  categories:
+  - cat:groceries.store
+  - cat:groceries.online
+  - cat:dining
+  - cat:gas_ev
+  choice:
+    mode: holder_selects
+    pick: 1
+    selection: cash_plus_everyday_category
+    period: quarter
+    changeable: each quarter
+  versions:
+  - version: 1
+    release: us.usbank.cash-plus@2024-01-01
+    multiplier: '2'
+    notes: 'Choose one each quarter: grocery stores and grocery delivery; restaurants; gas stations and EV charging. Uncapped. Grocery
+      and gas at discount stores, supercenters and wholesale clubs earn 1%.'
+- id: us.usbank.cash-plus/travel-center-5pct
+  name: 5% on prepaid travel in the Travel Center
+  categories:
+  - cat:travel.portal.usbank
+  versions:
+  - version: 1
+    release: us.usbank.cash-plus@2024-01-01
+    multiplier: '5'
+    notes: Prepaid air, hotel and car reservations booked directly in the U.S. Bank Travel Center (1% base plus 4%). No cap stated.
+- id: us.usbank.cash-plus/base-1pct
+  name: 1% everything else
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.usbank.cash-plus@2024-01-01
+    multiplier: '1'

@@ -1,0 +1,64 @@
+card_id: us.citi.costco-anywhere
+rules:
+- id: us.citi.costco-anywhere/costco-gas-5x
+  name: 5% on gas at Costco
+  categories:
+  - cat:merchant.costco_gas
+  versions:
+  - version: 1
+    release: us.citi.costco-anywhere@2026-11-13
+    multiplier: '5'
+    cap:
+      amount: 700000
+      currency: USD
+    cap_period: calendar_year
+    cap_group: gas-ev
+    notes: Gas at Costco warehouses worldwide. Shares a $7,000 annual cap with the 4% gas and EV rule, then 1%.
+- id: us.citi.costco-anywhere/gas-ev-4x
+  name: 4% on other gas and EV charging
+  categories:
+  - cat:gas_ev
+  versions:
+  - version: 1
+    release: us.citi.costco-anywhere@2026-11-13
+    multiplier: '4'
+    cap:
+      amount: 700000
+      currency: USD
+    cap_period: calendar_year
+    cap_group: gas-ev
+    notes: Eligible gas and EV charging worldwide. Gas or fuel at superstores, supermarkets, convenience stores and warehouse clubs other than Costco may not qualify.
+- id: us.citi.costco-anywhere/dining-3x
+  name: 3% at restaurants
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.citi.costco-anywhere@2026-11-13
+    multiplier: '3'
+    notes: Certain bakeries, department store restaurants and restaurants in grocery stores or warehouse clubs earn 1%.
+- id: us.citi.costco-anywhere/travel-3x
+  name: 3% on eligible travel
+  categories:
+  - cat:travel
+  versions:
+  - version: 1
+    release: us.citi.costco-anywhere@2026-11-13
+    multiplier: '3'
+    notes: Includes Costco Travel. Timeshares, campgrounds, bed and breakfasts, and train or commuter travel earn 1%; that exclusion of transit is not modeled.
+- id: us.citi.costco-anywhere/costco-2x
+  name: 2% at Costco and Costco.com
+  categories:
+  - cat:merchant.costco
+  versions:
+  - version: 1
+    release: us.citi.costco-anywhere@2026-11-13
+    multiplier: '2'
+- id: us.citi.costco-anywhere/base-1x
+  name: 1% on everything else
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.citi.costco-anywhere@2026-11-13
+    multiplier: '1'

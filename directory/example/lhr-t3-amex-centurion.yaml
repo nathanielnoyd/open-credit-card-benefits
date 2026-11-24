@@ -1,0 +1,19 @@
+id: example:lhr-t3-amex-centurion
+name: American Express Centurion Lounge
+airport: LHR
+terminal: T3
+access_rules:
+  - entitlement: lounge_network:centurion
+    conditions:
+      - type: access_window_hours
+        before_departure: 3
+        note: Network-wide rule; confirm it applies at this location.
+    guests:
+      free: 0
+    effective_from: null
+  - entitlement: lounge_guests:centurion
+    notes: Cardholders who met the calendar-year spending threshold may bring guests free.
+    effective_from: null
+sources:
+  - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+    retrieved_at: "2026-11-12"

@@ -1,0 +1,32 @@
+id: us.chase.sapphire-reserve-business/rental-cdw
+card_id: us.chase.sapphire-reserve-business
+kind: protection
+name: Primary rental car coverage
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: Primary collision and theft coverage up to $75,000 on rental cars paid with the card when you decline the rental company's coverage.
+  coverage:
+    priority: primary
+    per_claim:
+      amount: 7500000
+      currency: USD
+    max_days: 31
+  grants:
+  - entitlement: protection:rental_cdw
+    attributes:
+      priority: primary
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://hellosafe.com/credit-card-insurance/united-states/chase/sapphire-reserve-business
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://creditcards.chase.com/business-credit-cards/sapphire/reserve
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  confidence: '0.6'
+  notes: Primary for business rentals in the US and all rentals abroad; rentals up to 31 consecutive days; no liability coverage.

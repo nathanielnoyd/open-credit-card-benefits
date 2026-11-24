@@ -1,0 +1,24 @@
+id: us.citi.prestige/cell-phone
+card_id: us.citi.prestige
+kind: protection
+name: Cell phone protection
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.prestige@2025-07-09
+  summary: "Covers theft or damage to up to 5 phones on a monthly wireless bill paid with the card, up to $800 per claim and $1,500 a year after a $50 deductible."
+  coverage:
+    per_claim: { amount: 80000, currency: USD }
+    per_period: { amount: 150000, currency: USD }
+    deductible: { amount: 5000, currency: USD }
+  grants:
+  - entitlement: protection:cell_phone
+  conditions:
+  - type: paid_with_card
+    note: Monthly wireless bill paid with the card
+  beneficiaries: [primary, authorized_user]
+  notes: >-
+    Up to five lines on the bill. The Points Guy (2025) and One Mile at a Time (2025) give $800 per claim with a $50 deductible,
+    and One Mile at a Time gives $1,500 a year; the benefit launched in 2019 at $1,000 per claim. Which beneficiaries are covered
+    (lines on the bill rather than authorized users) is approximated.
+  confidence: "0.6"

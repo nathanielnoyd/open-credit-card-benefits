@@ -1,0 +1,25 @@
+id: us.amex.marriott-bonvoy-brilliant/baggage
+card_id: us.amex.marriott-bonvoy-brilliant
+kind: protection
+name: Baggage insurance plan
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.marriott-bonvoy-brilliant@2024-01-01
+  summary: "Covers up to $3,000 per trip for lost, damaged or stolen bags beyond the carrier's coverage, with checked bags capped at $2,000, when the full common-carrier fare is paid with the card."
+  face_value: null
+  coverage:
+    priority: excess
+    per_trip:
+      amount: 300000
+      currency: USD
+  conditions:
+  - type: paid_with_card
+    note: Entire common carrier fare charged to the card
+  beneficiaries:
+  - primary
+  - authorized_user
+  machine_readable: false
+  notes: 'Lost, damaged or stolen baggage in excess of the carrier''s coverage: up to $3,000 combined for checked and carry-on, of which up to $2,000 for checked bags and up to $1,000 for high-risk items; $3,000 aggregate per covered trip. The schema has no sub-limits for checked bags or high-risk items.'
+  grants:
+  - entitlement: protection:lost_luggage

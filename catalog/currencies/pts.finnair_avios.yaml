@@ -1,0 +1,14 @@
+id: pts:finnair_avios
+name: Finnair Plus Avios
+kind: airline
+issuer: Finnair
+url: https://www.finnair.com/us-en/finnair-plus
+expiry: Avios expire after 18 months with no earning or redemption activity.
+paths: []
+sources:
+  - url: https://www.finnair.com/us-en/finnair-plus
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://www.nerdwallet.com/travel/learn/when-do-your-frequent-flyer-miles-expire
+    retrieved_at: "2026-11-13"
+    publisher: review

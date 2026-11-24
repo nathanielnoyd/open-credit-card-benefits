@@ -1,0 +1,48 @@
+id: us.chase.ritz-carlton/sapphire-lounges
+card_id: us.chase.ritz-carlton
+kind: access
+name: Chase Sapphire Lounges
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ritz-carlton@2024-07-01
+  summary: "Unlimited visits with unlimited free guests to Chase Sapphire Lounges for you and authorized users through the card's Priority Pass membership."
+  grants:
+  - entitlement: lounge_network:chase_sapphire
+    attributes:
+      guests: null
+      visits: null
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Entry through the Priority Pass Select membership issued with this card; guests null means no limit.
+  sources:
+  - url: https://upgradedpoints.com/news/ritz-carlton-card-lounge-guest-access-change/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://awardwallet.com/credit-cards/chase-ultimate-rewards/ritz-card-lounge-access/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  confidence: "0.75"
+- version: 2
+  supersedes: 1
+  change_type: terms_changed
+  release: us.chase.ritz-carlton@2026-01-15
+  summary: "Unlimited visits to Chase Sapphire Lounges for you and authorized users with 2 free guests per visit and a fee for extra guests."
+  grants:
+  - entitlement: lounge_network:chase_sapphire
+    attributes:
+      guests: 2
+      visits: null
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Entry with the physical card or the card's Priority Pass digital membership. Since August 15, 2026 Sapphire Lounges no longer admit other issuers' Priority Pass members, but Ritz-Carlton cardholders keep access.
+  sources:
+  - url: https://upgradedpoints.com/news/ritz-carlton-card-lounge-guest-access-change/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://onemileatatime.com/news/chase-sapphire-lounges-cut-priority-pass-access/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  confidence: "0.75"

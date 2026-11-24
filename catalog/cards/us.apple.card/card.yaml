@@ -1,0 +1,27 @@
+id: us.apple.card
+issuer_id: us.apple
+name: Apple Card
+summary: "A no-annual-fee Mastercard earning 3% Daily Cash at Apple and select Apple Pay partners, 2% on any Apple Pay purchase and 1% otherwise, with no foreign transaction fees."
+network: mastercard
+segment: personal
+tier: no_fee
+family: apple-card
+earns: pts:apple_daily_cash
+open_to_applicants: true
+url: https://www.apple.com/apple-card/
+aliases:
+- Apple Card
+- Apple Titanium Card
+fee_posting:
+  anchor: account_open
+notes: Issued by Goldman Sachs Bank USA on Mastercard. On January 7, 2026, JPMorgan Chase announced it will become the issuer in about 24 months, subject to regulatory approval; Mastercard stays the network and the announcement promises no change to Daily Cash. No effective date or term changes are known, so the issuer move is not modeled as a release. No annual, foreign transaction, late or over-the-limit fees. Apple Card Family lets co-owners and participants share an account at no cost. Apple Card Monthly Installments offer 0% APR on eligible Apple purchases. Daily Cash pays out daily to Apple Cash or Apple Savings.
+provenance:
+  sources:
+  - url: https://www.apple.com/apple-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://www.jpmorganchase.com/newsroom/press-releases/2026/chase-to-become-new-issuer-of-apple-card
+    retrieved_at: "2026-11-13"
+    publisher: press
+  verified_by: agent:occb-research
+  confidence: "0.85"

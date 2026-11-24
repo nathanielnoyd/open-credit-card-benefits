@@ -1,0 +1,13 @@
+id: us.chase.sapphire-preferred
+issuer_id: us.chase
+name: Sapphire Preferred
+summary: "A $95-a-year Chase card earning 5x on Chase Travel, 3x on dining, streaming, online groceries, gas and EV charging and 2x on other travel, with a $100 Chase Travel hotel credit, primary rental car coverage and points that transfer to partners."
+network: visa
+segment: personal
+family: chase-sapphire
+earns: pts:chase_ur
+open_to_applicants: true
+url: https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred
+fee_posting:
+  anchor: account_open
+tier: mid

@@ -1,0 +1,22 @@
+id: us.chase.world-of-hyatt/rental-cdw
+card_id: us.chase.world-of-hyatt
+kind: protection
+name: Auto rental collision damage waiver
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.world-of-hyatt@2024-01-01
+  summary: "Secondary coverage for theft or collision damage to a rental car paid with the card when you decline the rental company's CDW."
+  grants:
+  - entitlement: protection:rental_cdw
+    attributes:
+      priority: secondary
+  coverage:
+    priority: secondary
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Secondary to personal insurance in the US; decline the rental company CDW and pay the whole rental with the card.
+    Primary abroad is typical of Chase terms but not stated on the product page.

@@ -1,0 +1,20 @@
+id: us.citi.aadvantage-executive@2026-10-25
+card_id: us.citi.aadvantage-executive
+kind: change
+announced_on: '2026-10-25'
+effective_for_new: '2026-10-25'
+notes: inKind dining credit added for new and existing cardmembers.
+changes:
+- target: benefit:us.citi.aadvantage-executive/inkind-dining-credit
+  version: 1
+transition:
+- applies_to:
+  - benefits
+  'on': '2026-10-25'
+sources:
+- url: https://frequentmiler.com/200-inkind-dining-benefit-added-to-citi-aadvantage-executive-card/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://www.citi.com/credit-cards/citi-aadvantage-executive-credit-card/
+  retrieved_at: '2026-11-13'
+  publisher: issuer

@@ -1,0 +1,19 @@
+id: us.chase.united-club@2026-04-02
+card_id: us.chase.united-club
+kind: change
+announced_on: '2026-02-19'
+effective_for_new: '2026-04-02'
+notes: 'MileagePlus overhaul: card earn on United purchases rose from 4x to 5x and cardmembers get at least 10% off United
+  award pricing (15% for Premier members).'
+changes:
+- target: earn_rule:us.chase.united-club/united-purchases
+  version: 2
+- target: benefit:us.chase.united-club/award-pricing
+  version: 1
+sources:
+- url: https://awardwallet.com/news/united-mileageplus/mileage-earning-changes-2026/
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://creditcards.chase.com/travel-credit-cards/united/united-club
+  retrieved_at: '2026-11-14'
+  publisher: issuer

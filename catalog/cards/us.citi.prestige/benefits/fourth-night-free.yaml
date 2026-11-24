@@ -1,0 +1,25 @@
+id: us.citi.prestige/fourth-night-free
+card_id: us.citi.prestige
+kind: certificate
+name: Fourth night free
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.prestige@2025-07-09
+  summary: "The fourth night free on a stay of 4 or more consecutive nights booked through Citi Travel, twice each calendar year, based on the average nightly rate before taxes and fees."
+  period: { cadence: annual, anchor: calendar }
+  limit: { count: 2, unit: { unit: stay } }
+  grants:
+  - entitlement: certificate:us.citi.prestige.fourth-night-free
+  conditions:
+  - type: booking_channel
+    channel: citi_travel
+    note: Booked through Citi Travel (the ThankYou travel portal); no longer available through the concierge or hotel chains directly
+  - type: min_nights
+    nights: 4
+  beneficiaries: [primary]
+  notes: >-
+    Twice per calendar year. The discount equals the average nightly room rate of the stay, excluding taxes and fees. Portal
+    bookings generally earn no hotel points or elite benefits. Its value depends on the stay, so it is not machine-readable.
+  machine_readable: false
+  confidence: "0.75"

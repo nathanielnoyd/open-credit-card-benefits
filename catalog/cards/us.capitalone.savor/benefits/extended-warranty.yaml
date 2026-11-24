@@ -1,0 +1,17 @@
+id: us.capitalone.savor/extended-warranty
+card_id: us.capitalone.savor
+kind: protection
+name: Extended warranty
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.savor@2024-10-22
+  summary: "Extended warranty protection on eligible items you buy with the card; the length and limits are not published by the issuer."
+  conditions:
+  - type: paid_with_card
+  notes: Additional warranty protection on eligible items bought with the card; length and limits are not on the issuer page.
+  confidence: "0.7"
+  grants:
+  - entitlement: protection:extended_warranty
+  beneficiaries:
+  - primary

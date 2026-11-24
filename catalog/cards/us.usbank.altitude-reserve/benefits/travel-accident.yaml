@@ -1,0 +1,25 @@
+id: us.usbank.altitude-reserve/travel-accident
+card_id: us.usbank.altitude-reserve
+kind: protection
+name: Travel accident insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.usbank.altitude-reserve@2024-11-11
+  summary: "Up to $500,000 in travel accident insurance when you pay common-carrier fares with the card."
+  coverage:
+    per_person:
+      amount: 50000000
+      currency: USD
+  grants:
+  - entitlement: protection:travel_accident
+  conditions:
+  - type: paid_with_card
+  notes: Up to $500,000 per a single review source; other terms are in the Visa Infinite guide to benefits, which was not reviewed.
+  sources:
+  - url: https://awardwallet.com/credit-cards/us-bank-altitude-reserve-card/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  confidence: "0.6"
+  beneficiaries:
+  - primary

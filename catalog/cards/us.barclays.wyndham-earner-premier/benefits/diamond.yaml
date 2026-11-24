@@ -1,0 +1,15 @@
+id: us.barclays.wyndham-earner-premier/diamond
+card_id: us.barclays.wyndham-earner-premier
+kind: status
+name: Wyndham Rewards Diamond
+versions:
+- version: 1
+  change_type: added
+  release: us.barclays.wyndham-earner-premier@2026-06-17
+  summary: Wyndham Rewards Diamond status while you hold the card.
+  grants:
+  - entitlement: status:wyndham
+    attributes:
+      tier: diamond
+  beneficiaries:
+  - primary

@@ -1,0 +1,29 @@
+id: us.chase.united-club-business/dashpass
+card_id: us.chase.united-club-business
+kind: membership
+name: DashPass membership
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club-business@2025-03-24
+  summary: "A complimentary one-year DashPass membership for DoorDash and Caviar when you activate by December 31, 2027."
+  enroll_by: '2027-12-31'
+  period:
+    cadence: once
+  grants:
+  - entitlement: membership:dashpass
+  conditions:
+  - type: enrollment_required
+  beneficiaries:
+  - primary
+  notes: One year of complimentary DashPass when activated by December 31, 2027, per reviews. Chase's product page for this card
+    does not list it, and the date it was added is not confirmed. Dan's Deals also mentions a quarterly non-restaurant DoorDash
+    credit that no other source confirms, so it is not modeled.
+  confidence: '0.55'
+  sources:
+  - url: https://thepointsguy.com/credit-cards/reviews/united-club-business-card-review
+    retrieved_at: '2026-11-14'
+    publisher: review
+  - url: https://frequentmiler.com/?p=262194
+    retrieved_at: '2026-11-14'
+    publisher: review

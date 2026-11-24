@@ -1,0 +1,19 @@
+id: us.chase.freedom-unlimited/dashpass
+card_id: us.chase.freedom-unlimited
+kind: membership
+name: DashPass (6 months)
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.freedom-unlimited@2025-02-01
+  summary: "Six months of DashPass for DoorDash and Caviar at no cost when you activate by December 31, 2029; it then renews at the monthly rate unless you cancel."
+  grants:
+  - entitlement: membership:dashpass
+  period:
+    cadence: once
+  conditions:
+  - type: enrollment_required
+  enroll_by: "2029-12-31"
+  notes: Six months of DashPass (DoorDash and Caviar) at no cost when activated between February 1, 2025 and December 31, 2029; then auto-renews at the monthly rate unless cancelled. Requires a US address.
+  beneficiaries:
+  - primary

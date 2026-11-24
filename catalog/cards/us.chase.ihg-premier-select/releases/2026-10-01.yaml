@@ -1,0 +1,77 @@
+id: us.chase.ihg-premier-select@2026-10-01
+card_id: us.chase.ihg-premier-select
+kind: baseline
+announced_on: '2026-10-01'
+notes: Launch terms; Chase announced the card on October 1, 2026 and reviews reported it open to applicants that day. No
+  earlier history.
+effective_for_new: '2026-10-01'
+changes:
+- target: fee:annual
+  to:
+    amount: 35000
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+  notes: Authorized users are free per One Mile at a Time; the issuer page does not state a fee.
+- target: earn_rule:us.chase.ihg-premier-select/ihg-12x
+  version: 1
+- target: earn_rule:us.chase.ihg-premier-select/dining-6x
+  version: 1
+- target: earn_rule:us.chase.ihg-premier-select/travel-6x
+  version: 1
+- target: earn_rule:us.chase.ihg-premier-select/base-3x
+  version: 1
+- target: earn_rule:us.chase.ihg-premier-select/elite-night-credits-spend
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/airline-credit
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/baggage-delay
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/dashpass
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/diamond-spend
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/doordash-other
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/elite-night-credits
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/extended-warranty
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/food-beverage
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/fourth-night-free
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/free-night
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/instacart-credit
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/instacart-plus
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/lost-luggage
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/milestone-15k-enc
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/milestone-15k
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/milestone-40k
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/no-fx
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/platinum
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/purchase-protection
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/rental-cdw
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/spend-free-night
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/travel-accident
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/trip-cancel
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/trusted-traveler
+  version: 1
+- target: benefit:us.chase.ihg-premier-select/united-travelbank
+  version: 1

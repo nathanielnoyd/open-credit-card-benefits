@@ -1,0 +1,61 @@
+id: us.bofa.premium-rewards@2024-01-01
+card_id: us.bofa.premium-rewards
+kind: baseline
+effective_for_new: "2024-01-01"
+notes: Current card terms with the Preferred Rewards tiers in force before May 27, 2026. The card’s terms other than the relationship bonus have not changed in that time as far as reviews show; earlier history is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 9500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.bofa.premium-rewards/travel-dining-2x
+  version: 1
+- target: earn_rule:us.bofa.premium-rewards/base-1-5x
+  version: 1
+- target: earn_rule:us.bofa.premium-rewards/rewards-boost-25
+  version: 1
+- target: earn_rule:us.bofa.premium-rewards/rewards-boost-50
+  version: 1
+- target: earn_rule:us.bofa.premium-rewards/rewards-boost-75
+  version: 1
+- target: benefit:us.bofa.premium-rewards/rewards-bonus
+  version: 1
+- target: benefit:us.bofa.premium-rewards/airline-incidentals
+  version: 1
+- target: benefit:us.bofa.premium-rewards/trusted-traveler
+  version: 1
+- target: benefit:us.bofa.premium-rewards/no-fx
+  version: 1
+- target: benefit:us.bofa.premium-rewards/trip-delay
+  version: 1
+- target: benefit:us.bofa.premium-rewards/baggage-delay
+  version: 1
+- target: benefit:us.bofa.premium-rewards/lost-luggage
+  version: 1
+- target: benefit:us.bofa.premium-rewards/trip-cancel
+  version: 1
+- target: benefit:us.bofa.premium-rewards/evacuation
+  version: 1
+- target: benefit:us.bofa.premium-rewards/rental-cdw
+  version: 1
+- target: benefit:us.bofa.premium-rewards/purchase-security
+  version: 1
+- target: benefit:us.bofa.premium-rewards/extended-warranty
+  version: 1
+- target: benefit:us.bofa.premium-rewards/return-protection
+  version: 1
+sources:
+- url: https://www.bankofamerica.com/credit-cards/products/premium-rewards-credit-card/
+  retrieved_at: "2026-11-13"
+  publisher: issuer
+- url: https://frequentmiler.com/bank-of-america-premium-rewards-credit-card-complete-guide/
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/
+  retrieved_at: "2026-11-13"
+  publisher: review
+confidence: "0.8"

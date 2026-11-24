@@ -1,0 +1,45 @@
+id: us.chase.ihg-business/spend-free-night
+card_id: us.chase.ihg-business
+kind: certificate
+name: Free Night after $60,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-business@2024-01-01
+  summary: "A free night certificate earned through the spend milestone, good at an IHG hotel costing up to 40,000 points a night; you can add points to book pricier hotels."
+  cap:
+    currency: pts:ihg_one
+    points: 40000
+  issued_on: milestone
+  grants:
+  - entitlement: certificate:us.chase.ihg-business.spend-free-night
+  beneficiaries:
+  - primary
+  unlocked_only: true
+  notes: Earned through milestone-60k. IHG points may be added to book hotels above the cap; expiry assumed to match the anniversary
+    night but not confirmed.
+  machine_readable: false
+  sources:
+  - url: https://frequentmiler.com/all-the-existing-ihg-credit-cards-have-been-refreshed-here-are-the-changes/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.uscreditcardguide.com/chase-ihg-premier-business-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: review
+- version: 2
+  supersedes: 1
+  change_type: amount_changed
+  release: us.chase.ihg-business@2026-10-01
+  summary: "A free night certificate earned through the spend milestone, good at an IHG hotel costing up to 50,000 points a night; you can add points to book pricier hotels."
+  cap:
+    currency: pts:ihg_one
+    points: 50000
+  issued_on: milestone
+  grants:
+  - entitlement: certificate:us.chase.ihg-business.spend-free-night
+  beneficiaries:
+  - primary
+  unlocked_only: true
+  notes: Earned through milestone-60k. IHG points may be added to book hotels above the cap (no published top-off limit); expiry
+    not confirmed.
+  machine_readable: false

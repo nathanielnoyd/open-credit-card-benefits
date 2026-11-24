@@ -1,0 +1,28 @@
+id: us.amex.delta-reserve-business/companion-certificate
+card_id: us.amex.delta-reserve-business
+kind: certificate
+name: Companion certificate
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-reserve-business@2025-02-01
+  summary: A round-trip companion certificate at each renewal for First Class, Delta Comfort or Main Cabin with a paid fare
+    within the US, Mexico, the Caribbean and Central America; the companion pays taxes and fees.
+  issued_on: renewal
+  companions: 1
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  grants:
+  - entitlement: certificate:us.amex.delta-reserve-business.companion
+  conditions:
+  - type: card_year
+    min: 2
+    note: Issued at each renewal (card year 2 and later)
+  beneficiaries:
+  - companion
+  notes: Round-trip companion fare in Delta First, Delta Comfort or Delta Main with a paid adult round-trip fare, within the
+    48 contiguous U.S. states, Alaska, Hawaii, Mexico, the Caribbean and Central America. Companion pays government taxes
+    and fees ($22 to $250 for itineraries of up to four segments). Delta Basic excluded. The schema has no field for a companion
+    fare (cap and top_up are in points), so the fare rule is in notes.
+  machine_readable: false

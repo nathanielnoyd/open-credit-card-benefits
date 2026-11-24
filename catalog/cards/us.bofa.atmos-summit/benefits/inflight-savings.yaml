@@ -1,0 +1,19 @@
+id: us.bofa.atmos-summit/inflight-savings
+card_id: us.bofa.atmos-summit
+kind: statement_credit
+name: 20% back on in-flight purchases
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-summit@2026-11-14
+  summary: "20% back on in-flight food, drinks and Wi-Fi on Alaska flights."
+  face_value: null
+  percent_back: "0.20"
+  grants:
+  - entitlement: discount:inflight_alaska
+  conditions: []
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Listed on the Upgraded Points benefits page (credited within 7 days of posting); the issuer page and The Points Guy do not mention it, and another Upgraded Points page lists it only for the Ascent. Hawaiian is not confirmed.
+  confidence: "0.5"

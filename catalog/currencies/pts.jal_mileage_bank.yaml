@@ -1,0 +1,14 @@
+id: pts:jal_mileage_bank
+name: Japan Airlines Mileage Bank
+kind: airline
+issuer: Japan Airlines
+url: https://www.jal.co.jp/jp/en/jmb/
+expiry: "Fixed term: miles expire at the end of the month 36 months after they are earned; JAL has announced five-year validity for miles earned from January 2025."
+paths: []
+sources:
+  - url: https://www.jal.co.jp/jp/en/jmb/
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardwallet.com/travel/loyalty-program-expiration-policies/
+    retrieved_at: "2026-11-13"
+    publisher: review

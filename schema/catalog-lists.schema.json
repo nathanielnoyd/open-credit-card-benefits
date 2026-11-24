@@ -1,0 +1,259 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nathanielnoyd.github.io/open-credit-card-benefits/schema/0.3/catalog-lists.schema.json",
+  "title": "OCCB catalog list files",
+  "$defs": {
+    "issuers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "region"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "region": {
+            "type": "string"
+          },
+          "tz": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "entitlement_types": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "combine"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z_]+:([a-z0-9_.\\-]+|\\*)$",
+            "description": "A canonical key, or <type>:* to set the rule for every key of that type"
+          },
+          "combine": {
+            "$ref": "common.schema.json#/$defs/combine_rule"
+          },
+          "attribute_rules": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "common.schema.json#/$defs/combine_rule"
+            }
+          },
+          "tiers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "spend_category": {
+            "$ref": "common.schema.json#/$defs/category_id",
+            "description": "For credits: the spend category of the purchases that use the credit. Valuation charges the points forgone by putting that purchase on this card instead of the wallet's best card for the category (spec section 12)."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "spend_categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "common.schema.json#/$defs/category_id"
+          },
+          "parent": {
+            "$ref": "common.schema.json#/$defs/category_id"
+          },
+          "name": {
+            "type": "string"
+          },
+          "issuer_mappings": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "includes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "excludes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "notes": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "description": {
+            "type": "string"
+          },
+          "mcc": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^\\d{4}(-\\d{4})?$"
+            },
+            "description": "Merchant category codes typically in this category"
+          },
+          "explicit_only": {
+            "type": "boolean",
+            "description": "Spend here earns only on rules that name this category or one below it; broader rules such as cat:all don't apply. Used for rent and mortgage, which most cards can't pay without a fee."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "benefit_values": {
+      "type": "object",
+      "required": [
+        "scope",
+        "values"
+      ],
+      "properties": {
+        "scope": {
+          "enum": [
+            "default",
+            "publisher",
+            "community",
+            "user"
+          ]
+        },
+        "source": {
+          "type": "string",
+          "description": "Who set these values: a publisher name, a URL, or a method"
+        },
+        "as_of": {
+          "$ref": "common.schema.json#/$defs/date"
+        },
+        "values": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "usage_probability": {
+                "$ref": "common.schema.json#/$defs/confidence"
+              },
+              "personal_value": {
+                "$ref": "common.schema.json#/$defs/money"
+              },
+              "basis": {
+                "enum": [
+                  "annual",
+                  "present_value"
+                ],
+                "description": "annual (default): the value of a year of use, which valuation discounts across the year. present_value: what the user would pay up front for it, used as is."
+              },
+              "note": {
+                "type": "string",
+                "description": "Why this value was chosen, for showing next to it"
+              },
+              "low": {
+                "$ref": "common.schema.json#/$defs/money",
+                "description": "What the perk is worth to a holder who gets the least from it, usually nothing"
+              },
+              "high": {
+                "$ref": "common.schema.json#/$defs/money",
+                "description": "What the perk is worth to a holder who gets the most from it, usually its face value"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "method": {
+          "type": "string",
+          "description": "How the values were set, such as 'willingness to pay up front' or 'face value times expected use'"
+        }
+      }
+    },
+    "valuations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/valuation"
+      }
+    },
+    "valuation": {
+      "type": "object",
+      "required": [
+        "currency",
+        "cpp",
+        "method",
+        "scope",
+        "as_of"
+      ],
+      "properties": {
+        "currency": {
+          "$ref": "common.schema.json#/$defs/currency_id"
+        },
+        "cpp": {
+          "$ref": "common.schema.json#/$defs/decimal"
+        },
+        "method": {
+          "enum": [
+            "floor",
+            "target",
+            "realized",
+            "benchmark"
+          ]
+        },
+        "scope": {
+          "enum": [
+            "default",
+            "publisher",
+            "community",
+            "user"
+          ]
+        },
+        "source": {
+          "type": "string"
+        },
+        "as_of": {
+          "$ref": "common.schema.json#/$defs/date"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

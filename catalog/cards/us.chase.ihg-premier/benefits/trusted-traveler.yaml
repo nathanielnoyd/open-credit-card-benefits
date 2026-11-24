@@ -1,0 +1,35 @@
+id: us.chase.ihg-premier/trusted-traveler
+card_id: us.chase.ihg-premier
+kind: statement_credit
+name: Global Entry, TSA PreCheck or NEXUS credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier@2024-01-01
+  summary: "A statement credit of up to $120 every 4 years for a Global Entry, TSA PreCheck or NEXUS application fee."
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: every_n_years
+    n: 4
+    anchor: calendar
+  limit:
+    amount: 12000
+  grants:
+  - entitlement: credit:trusted_traveler
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://frequentmiler.com/?p=297051
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://onemileatatime.com/news/ihg-chase-credit-card-changes/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.chase.com/personal/credit-cards/ihg/premier/premier-protection
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier
+    retrieved_at: '2026-11-13'
+    publisher: issuer

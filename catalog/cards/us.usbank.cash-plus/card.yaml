@@ -1,0 +1,24 @@
+id: us.usbank.cash-plus
+issuer_id: us.usbank
+name: U.S. Bank Cash+ Visa Signature Card
+summary: "A $0-annual-fee U.S. Bank card earning 5% cash back on 2 categories you choose each quarter (first $2,000 combined), 2% on 1 everyday category you choose, 5% on prepaid travel in the Travel Center and 1% elsewhere."
+network: visa
+segment: personal
+tier: no_fee
+family: usbank-cash
+earns: pts:usbank_cash
+open_to_applicants: true
+url: https://www.usbank.com/credit-cards/cash-plus-visa-signature-credit-card.html
+aliases:
+- Cash+
+- Cash Plus
+- US Bank Cash Plus
+fee_posting:
+  anchor: account_open
+provenance:
+  sources:
+  - url: https://www.usbank.com/credit-cards/cash-plus-visa-signature-credit-card.html
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  verified_by: agent:occb-research
+  confidence: "0.8"

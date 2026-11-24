@@ -1,0 +1,23 @@
+id: us.chase.sapphire-reserve-business/ihg-diamond
+card_id: us.chase.sapphire-reserve-business
+kind: status
+name: IHG Diamond
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: After $120,000 in calendar-year spend on the card, IHG One Rewards Diamond Elite status.
+  unlocked_only: true
+  grants:
+  - entitlement: status:ihg
+    attributes:
+      tier: diamond
+  conditions:
+  - type: spend_gte
+    amount: 12000000
+    currency: USD
+    period: calendar_year
+    note: $120,000 in purchases on this card in a calendar year
+  beneficiaries:
+  - primary
+  notes: Lasts through the rest of the qualifying year and the following year.

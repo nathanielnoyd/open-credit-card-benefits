@@ -1,0 +1,38 @@
+id: us.amex.business-platinum/amex-travel-flight-credit
+card_id: us.amex.business-platinum
+kind: milestone
+name: Amex Travel flight credit at $250,000 spend
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-platinum@2025-09-18
+    summary: "After $250,000 in eligible purchases in a calendar year, you get up to $1,200 in statement credits the following year on flights booked through Amex Travel."
+    face_value:
+      amount: 120000
+      currency: USD
+    threshold:
+      amount: 25000000
+      currency: USD
+    threshold_period: calendar_year
+    reward_cash:
+      amount: 120000
+      currency: USD
+    period:
+      cadence: annual
+      anchor: calendar
+    grants:
+      - entitlement: credit:amex_travel_flights
+    conditions:
+      - type: booking_channel
+        channel: amex_travel
+        note: Flights booked through Amex Travel
+    beneficiaries:
+      - primary
+    notes: Spend $250,000 on eligible purchases in a calendar year to unlock up to $1,200 in Amex Travel flight statement credits usable in the following calendar year.
+    sources:
+      - url: https://thepointsguy.com/credit-cards/amex-business-platinum-2025-refresh/
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - url: https://www.doctorofcredit.com/american-express-refreshes-platinum-business-platinum-cards-895-fee-175k-200k-bonus-many-new-credits
+        retrieved_at: "2026-11-13"
+        publisher: review

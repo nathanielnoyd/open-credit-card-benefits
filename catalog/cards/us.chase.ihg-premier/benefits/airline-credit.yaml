@@ -1,0 +1,32 @@
+id: us.chase.ihg-premier/airline-credit
+card_id: us.chase.ihg-premier
+kind: statement_credit
+name: Annual airline credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier@2026-10-01
+  summary: "$100 back once each calendar year on a single airfare purchase of $250 or more booked directly with an airline, through December 31, 2027."
+  effective_to: '2027-12-31'
+  face_value:
+    amount: 10000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 10000
+    max_transactions_per_period: 1
+  grants:
+  - entitlement: credit:airline_purchase
+  conditions:
+  - type: min_transaction
+    amount: 25000
+    currency: USD
+    note: A single purchase of $250 or more
+  - type: booking_channel
+    channel: airline_direct
+    note: Flights booked directly with the airline
+  beneficiaries:
+  - primary
+  notes: Once per calendar year, through December 31, 2027.

@@ -1,0 +1,41 @@
+id: us.chase.marriott-bonvoy-boundless/airline-credit
+card_id: us.chase.marriott-bonvoy-boundless
+kind: statement_credit
+name: Airline credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.marriott-bonvoy-boundless@2026-01-01
+  summary: "Up to $50 back each half-year, $100 a year, on purchases made directly with airlines, through June 30, 2027."
+  effective_to: '2027-06-30'
+  face_value:
+    amount: 10000
+    currency: USD
+  period:
+    cadence: semiannual
+    anchor: calendar
+  limit:
+    amount: 5000
+  grants:
+  - entitlement: credit:airline_purchase
+  conditions:
+  - type: booking_channel
+    channel: airline_direct
+    note: Purchased directly from an airline
+  beneficiaries:
+  - primary
+  confidence: '0.7'
+  notes: '$50 statement credit each half-year (January-June, July-December) after $250 of purchases made directly with airlines
+    in that half; airfare, seats, bags and in-flight purchases count. Limited-time: first described for 2026, now through
+    June 30, 2027. The half-year spend threshold is not expressible as a condition.'
+  machine_readable: false
+  sources:
+  - url: https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/boundless
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://upgradedpoints.com/news/chases-marriott-boundless-card-airfare-benefit/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://thepointsguy.com/credit-cards/chase/reviews/marriott-bonvoy-boundless-credit-card-review/
+    retrieved_at: '2026-11-13'
+    publisher: review

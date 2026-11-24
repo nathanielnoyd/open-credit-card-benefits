@@ -1,0 +1,22 @@
+id: us.chase.united-business/award-availability
+card_id: us.chase.united-business
+kind: program_access
+name: Expanded award availability
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-business@2026-04-02
+  summary: "Access to more saver award seats on United-operated flights than other MileagePlus members get, including extra Polaris business class saver space."
+  grants:
+  - entitlement: program:expanded_award_availability_united
+  beneficiaries:
+  - primary
+  notes: Reviews describe expanded saver (XN) award space for cardmembers and, with the April 2026 MileagePlus changes, extra Polaris saver inventory for cardholders. Chase's product page does not list it for this card, and whether business cardmembers had expanded saver access before April 2026 is not confirmed, so it is dated to that change.
+  confidence: '0.55'
+  sources:
+  - url: https://www.insideflyer.com/posts/united-cardholders-now-earn-more-miles-and-save-on-awards/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.uscreditcardguide.com/chase-united-mileageplus-explorer-business-credit-card
+    retrieved_at: '2026-11-13'
+    publisher: review

@@ -1,0 +1,33 @@
+id: us.wellsfargo.autograph-journey/trip-cancel
+card_id: us.wellsfargo.autograph-journey
+kind: protection
+name: Trip cancellation and interruption
+versions:
+- version: 1
+  change_type: added
+  release: us.wellsfargo.autograph-journey@2024-03-01
+  summary: "Reimburses up to $15,000 per person in prepaid non-refundable costs when a trip paid with the card is canceled or interrupted for a covered reason; secondary to other coverage."
+  face_value: null
+  grants:
+  - entitlement: protection:trip_cancellation
+  coverage:
+    priority: secondary
+    per_person:
+      amount: 1500000
+      currency: USD
+  conditions:
+  - type: paid_with_card
+    note: Full trip cost, less vouchers or certificates, paid with the card
+  beneficiaries:
+  - primary
+  - authorized_user
+  - companion
+  notes: Up to $15,000 for prepaid non-refundable lodging, flights and activities when a trip is canceled or interrupted for a covered reason. A review describes $15,000 per person for cancellation and up to $20,000 per trip for interruption; the issuer page gives only the $15,000 figure.
+  confidence: "0.7"
+  sources:
+  - url: https://creditcards.wellsfargo.com/autograph-journey-visa-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://upgradedpoints.com/credit-cards/reviews/wells-fargo-autograph-journey-card/
+    retrieved_at: "2026-11-13"
+    publisher: review

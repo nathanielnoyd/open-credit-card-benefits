@@ -1,0 +1,27 @@
+id: us.usbank.cash-plus@2024-01-01
+card_id: us.usbank.cash-plus
+kind: baseline
+effective_for_new: "2024-01-01"
+notes: Current terms recorded as the baseline; category history is not modeled. Cash rewards expire 36 months after they are earned. Foreign transaction fee applies (3%, not confirmed on the issuer page).
+changes:
+- target: fee:annual
+  to:
+    amount: 0
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.usbank.cash-plus/choice-5pct
+  version: 1
+- target: earn_rule:us.usbank.cash-plus/everyday-2pct
+  version: 1
+- target: earn_rule:us.usbank.cash-plus/travel-center-5pct
+  version: 1
+- target: earn_rule:us.usbank.cash-plus/base-1pct
+  version: 1
+sources:
+- url: https://www.usbank.com/credit-cards/cash-plus-visa-signature-credit-card.html
+  retrieved_at: "2026-11-13"
+  publisher: issuer
+confidence: "0.75"

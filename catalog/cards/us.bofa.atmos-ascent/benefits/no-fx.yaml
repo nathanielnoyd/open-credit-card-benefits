@@ -1,0 +1,17 @@
+id: us.bofa.atmos-ascent/no-fx
+card_id: us.bofa.atmos-ascent
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-ascent@2025-08-20
+  summary: "No foreign transaction fees on purchases made abroad or in a foreign currency."
+  face_value: null
+  waives: foreign_transaction_fee
+  grants:
+  - entitlement: fee_waiver:foreign_transaction
+  conditions: []
+  beneficiaries:
+  - primary
+  - authorized_user

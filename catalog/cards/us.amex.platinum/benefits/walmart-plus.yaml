@@ -1,0 +1,33 @@
+id: us.amex.platinum/walmart-plus
+card_id: us.amex.platinum
+kind: statement_credit
+name: Walmart+ membership credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2024-01-01
+    summary: "Up to $12.95 a month in statement credits toward a monthly Walmart+ membership, $155.40 a year in total; enrollment required."
+    effective_from: "2024-01-01"
+    face_value:
+      amount: 15540
+      currency: USD
+    period:
+      cadence: monthly
+      anchor: calendar
+      tz: America/New_York
+    limit:
+      amount: 1295
+    grants:
+      - entitlement: membership:walmart_plus
+        combine: any
+    conditions:
+      - type: enrollment_required
+    beneficiaries:
+      - primary
+    notes: $12.95 a month plus tax.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

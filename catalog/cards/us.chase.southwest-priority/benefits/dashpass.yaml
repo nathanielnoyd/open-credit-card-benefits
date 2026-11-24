@@ -1,0 +1,24 @@
+id: us.chase.southwest-priority/dashpass
+card_id: us.chase.southwest-priority
+kind: membership
+name: Complimentary DashPass for a year
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.southwest-priority@2025-02-01
+  summary: "One year of DoorDash DashPass, a $120 value, when you activate with the card by December 31, 2027, then the regular monthly rate."
+  face_value:
+    amount: 12000
+    currency: USD
+  enroll_by: '2027-12-31'
+  period:
+    cadence: once
+  grants:
+  - entitlement: membership:dashpass
+  conditions:
+  - type: enrollment_required
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: One year of DashPass, then the monthly rate. Activate by December 31, 2027.
+  confidence: '0.7'

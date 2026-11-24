@@ -1,0 +1,11 @@
+id: pts:marriott_enc
+name: Marriott Bonvoy elite night credits
+kind: status_credit
+issuer: Marriott
+url: https://www.marriott.com/loyalty/member-benefits.mi
+expiry: Status-qualification credit; resets each calendar year.
+paths: []
+sources:
+  - url: https://www.marriott.com/loyalty/member-benefits.mi
+    retrieved_at: "2026-11-13"
+    publisher: partner

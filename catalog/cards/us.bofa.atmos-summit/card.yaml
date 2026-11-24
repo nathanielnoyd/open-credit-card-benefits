@@ -1,0 +1,37 @@
+id: us.bofa.atmos-summit
+issuer_id: us.bofa
+name: Atmos Rewards Summit Visa Infinite
+summary: "A $395-a-year Visa Infinite earning 3x on Alaska and Hawaiian, dining and rent paid through Bilt, with a 25,000-point Global Companion Award each anniversary, a 100,000-point award after $60,000 in spend, 8 Alaska Lounge passes a year and a free checked bag."
+network: visa
+segment: personal
+tier: premium
+family: atmos
+earns: pts:atmos_rewards
+open_to_applicants: true
+url: https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/
+aliases:
+- Atmos Summit
+- Alaska Airlines Visa Infinite
+fee_posting:
+  anchor: account_open
+cobrand:
+  partner: Alaska Airlines
+  program: pts:atmos_rewards
+notes: Launched August 2025 with Atmos Rewards. The card also earns 3 points per dollar on foreign purchases, which no spend category can express yet, so it is not modeled as an earn rule. The issuer page lists Visa Infinite car rental perks (VIP amenities, status upgrades and discounts with Avis, Hertz and National) without a tier, and roadside assistance; these are not modeled.
+provenance:
+  sources:
+  - url: https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/
+    retrieved_at: "2026-11-14"
+    publisher: issuer
+  - url: https://upgradedpoints.com/credit-cards/reviews/atmos-rewards-summit-visa-infinite-card/benefits/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://thepointsguy.com/credit-cards/reviews/atmos-rewards-summit-card-review/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://www.bankrate.com/credit-cards/reviews/atmos-summit-card/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.8"
+  last_reviewed: "2026-11-14"

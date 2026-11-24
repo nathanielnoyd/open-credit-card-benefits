@@ -1,0 +1,34 @@
+id: us.amex.business-platinum/airbnb-experiences
+card_id: us.amex.business-platinum
+kind: statement_credit
+name: Airbnb Experiences credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-platinum@2026-10-22
+    summary: "Up to $250 back each calendar year on Airbnb Experiences bought directly from Airbnb, unlocked by a prepaid Airbnb Luxe booking through Amex Travel in the same year."
+    face_value:
+      amount: 25000
+      currency: USD
+    period:
+      cadence: annual
+      anchor: calendar
+    limit:
+      amount: 25000
+    grants:
+      - entitlement: credit:airbnb_experiences
+    conditions:
+      - type: merchant_in
+        merchants:
+          - airbnb
+    beneficiaries:
+      - primary
+    machine_readable: false
+    notes: Up to $250 per calendar year on Airbnb Experiences bought directly from Airbnb, unlocked by a confirmed prepaid Airbnb Luxe booking through Amex Travel in the same year. Cancelling all qualifying Luxe bookings can claw it back. No condition type expresses "unlocked by a booking on another channel".
+    sources:
+      - url: https://www.nerdwallet.com/travel/news/amex-adds-airbnb-and-restricts-platinum-credit
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - url: https://cardstack.money/articles/credit-card-reviews/amex-business-platinum-benefits-2026
+        retrieved_at: "2026-11-13"
+        publisher: review

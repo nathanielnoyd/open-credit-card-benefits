@@ -1,0 +1,31 @@
+id: us.amex.gold/uber-one-2026
+card_id: us.amex.gold
+kind: statement_credit
+name: Uber One membership credit (60th anniversary, limited time)
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.gold@2026-04-30
+  summary: "A one-time statement credit of up to $96 when you pay for an annual Uber One membership with the card, with enrollment, available through October 30, 2026."
+  effective_to: "2026-10-30"
+  face_value:
+    amount: 9600
+    currency: USD
+  period:
+    cadence: once
+  grants:
+  - entitlement: membership:uber_one
+  conditions:
+  - type: enrollment_required
+  - type: merchant_in
+    merchants:
+    - uber_one
+    note: Pay for an annual Uber One membership with the card
+  notes: One-time statement credit of up to $96 toward an annual Uber One membership, available through October 30, 2026. Expired.
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://thepointsguy.com/news/american-express-gold-refresh-2026/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  confidence: "0.75"

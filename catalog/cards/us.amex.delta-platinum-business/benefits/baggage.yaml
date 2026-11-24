@@ -1,0 +1,26 @@
+id: us.amex.delta-platinum-business/baggage
+card_id: us.amex.delta-platinum-business
+kind: protection
+name: Baggage insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-platinum-business@2025-02-01
+  summary: "Covers up to $1,250 per person for lost, damaged or stolen bags, with a lower sublimit for checked bags, when the fare is paid with the card."
+  coverage:
+    per_person:
+      amount: 125000
+      currency: USD
+  grants:
+  - entitlement: protection:lost_luggage
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Up to $1,250 per person for carry-on and checked bags combined, of which $500 for checked bags; $250 high-risk items.
+    Excess of the carrier.
+  sources:
+  - url: https://upgradedpoints.com/travel/amex-travel-insurance-benefits-guide/
+    retrieved_at: '2026-11-13'
+    publisher: review

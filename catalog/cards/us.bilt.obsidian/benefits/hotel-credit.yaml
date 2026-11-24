@@ -1,0 +1,34 @@
+id: us.bilt.obsidian/hotel-credit
+card_id: us.bilt.obsidian
+kind: statement_credit
+name: $100 Bilt Travel hotel credit
+versions:
+- version: 1
+  change_type: added
+  release: us.bilt.obsidian@2026-02-07
+  summary: "Up to $50 in each half of the calendar year, $100 a year in total, on Bilt Travel hotel bookings of 2 or more nights."
+  face_value:
+    amount: 10000
+    currency: USD
+  period:
+    cadence: semiannual
+    anchor: calendar
+  limit:
+    amount: 5000
+  grants:
+  - entitlement: credit:hotel_portal
+  conditions:
+  - type: booking_channel
+    channel: bilt_travel
+  - type: min_nights
+    nights: 2
+  trigger: booking_date
+  notes: Up to $50 in each of January-June and July-December on Bilt Travel hotel bookings of 2+ nights paid with the card;
+    the holder opts in at checkout. No rollover. Accounts opened from 2027-01-01, and existing holders from their first 2027
+    anniversary without a Legacy Election, get annual Bilt Cash instead.
+  sources:
+  - url: https://www.bilt.com/terms/bilt-card-offer-terms
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  beneficiaries:
+  - primary

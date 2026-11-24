@@ -1,0 +1,51 @@
+id: us.bilt.palladium/annual-bilt-cash
+card_id: us.bilt.palladium
+kind: statement_credit
+name: Annual Bilt Cash
+versions:
+- version: 1
+  change_type: added
+  release: us.bilt.palladium@2026-02-07
+  summary: "$200 in Bilt Cash at account opening and each card anniversary; Bilt Cash expires 12 months after it is earned."
+  face_value:
+    amount: 20000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    amount: 20000
+  grants:
+  - entitlement: credit:bilt_cash
+  notes: $200 of Bilt Cash at account opening and each card anniversary (the launch FAQ said January 1; the offer terms say
+    anniversary). Paid in Bilt Cash, which expires 12 months after it is earned and is spent inside the Bilt ecosystem.
+  sources:
+  - url: https://www.bilt.com/terms/bilt-card-offer-terms
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  beneficiaries:
+  - primary
+- version: 2
+  supersedes: 1
+  change_type: amount_changed
+  release: us.bilt.palladium@2027-01-01
+  summary: "$600 in Bilt Cash at account opening and each card anniversary; Bilt Cash expires 12 months after it is earned."
+  face_value:
+    amount: 60000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    amount: 60000
+  grants:
+  - entitlement: credit:bilt_cash
+  notes: $600 of Bilt Cash at account opening and each card anniversary, replacing the $200 Bilt Cash and $400 hotel credit
+    for accounts opened from 2027-01-01 (and existing holders from their first 2027 anniversary without a Legacy Election).
+    Bilt Cash expires 12 months after it is earned.
+  sources:
+  - url: https://www.bilt.com/terms/bilt-card-offer-terms
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  beneficiaries:
+  - primary

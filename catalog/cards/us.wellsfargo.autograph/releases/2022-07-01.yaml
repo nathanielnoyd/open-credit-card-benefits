@@ -1,0 +1,40 @@
+id: us.wellsfargo.autograph@2022-07-01
+card_id: us.wellsfargo.autograph
+kind: baseline
+effective_for_new: "2022-07-01"
+notes: Current terms (observed 2026-11-13) recorded as the baseline; the card launched in mid-2022 and the date approximates the launch month. Earlier changes (for example the addition of transfer partners, which lives on the currency) are not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 0
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.wellsfargo.autograph/dining-3x
+  version: 1
+- target: earn_rule:us.wellsfargo.autograph/travel-3x
+  version: 1
+- target: earn_rule:us.wellsfargo.autograph/gas-transit-3x
+  version: 1
+- target: earn_rule:us.wellsfargo.autograph/streaming-3x
+  version: 1
+- target: earn_rule:us.wellsfargo.autograph/phone-plans-3x
+  version: 1
+- target: earn_rule:us.wellsfargo.autograph/base-1x
+  version: 1
+- target: benefit:us.wellsfargo.autograph/no-fx
+  version: 1
+- target: benefit:us.wellsfargo.autograph/cell-phone
+  version: 1
+- target: benefit:us.wellsfargo.autograph/rental-cdw
+  version: 1
+- target: benefit:us.wellsfargo.autograph/roadside
+  version: 1
+- target: benefit:us.wellsfargo.autograph/luxury-hotel-collection
+  version: 1
+- target: benefit:us.wellsfargo.autograph/my-wells-fargo-deals
+  version: 1
+- target: benefit:us.wellsfargo.autograph/card-exclusives
+  version: 1

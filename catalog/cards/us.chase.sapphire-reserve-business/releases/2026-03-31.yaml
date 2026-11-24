@@ -1,0 +1,17 @@
+id: us.chase.sapphire-reserve-business@2026-03-31
+card_id: us.chase.sapphire-reserve-business
+kind: change
+first_seen_on: "2026-03-31"
+effective_for_new: "2026-03-31"
+notes: World of Hyatt Explorist added to the $120,000 spend perks; reported live on March 31, 2026, exact start date not confirmed.
+changes:
+- target: benefit:us.chase.sapphire-reserve-business/hyatt-explorist
+  version: 1
+sources:
+- url: https://www.thepointsguy.com/news/new-hyatt-explorist-sapphire-reserve-benefit
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://upgradedpoints.com/news/chase-sapphire-cardholders-spend-hyatt-explorist/
+  retrieved_at: "2026-11-13"
+  publisher: review
+confidence: '0.7'

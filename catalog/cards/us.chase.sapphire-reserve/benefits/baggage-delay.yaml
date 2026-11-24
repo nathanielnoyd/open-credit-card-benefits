@@ -1,0 +1,29 @@
+id: us.chase.sapphire-reserve/baggage-delay
+card_id: us.chase.sapphire-reserve
+kind: protection
+name: Baggage delay
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-reserve@2024-01-01
+    summary: "Up to $100 a day for up to 5 days for essentials when your bags are delayed more than 6 hours on a trip paid with the card."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: protection:baggage_delay
+        combine: max
+    conditions:
+      - type: paid_with_card
+    beneficiaries:
+      - primary
+    notes: $100 a day for up to 5 days after a 6-hour delay.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

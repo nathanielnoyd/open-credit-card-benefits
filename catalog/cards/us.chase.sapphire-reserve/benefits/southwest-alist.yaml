@@ -1,0 +1,35 @@
+id: us.chase.sapphire-reserve/southwest-alist
+card_id: us.chase.sapphire-reserve
+kind: status
+name: Southwest A-List
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-reserve@2025-06-23
+    summary: "After $75,000 in calendar-year spend on the card, Southwest A-List status."
+    effective_from: "2025-06-23"
+    unlocked_only: true
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: status:southwest
+        combine: max
+        attributes:
+          tier: a_list
+    conditions:
+      - period: calendar_year
+        type: spend_gte
+        amount: 7500000
+        currency: USD
+        note: $75,000 in a calendar year on this card
+    beneficiaries:
+      - primary
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

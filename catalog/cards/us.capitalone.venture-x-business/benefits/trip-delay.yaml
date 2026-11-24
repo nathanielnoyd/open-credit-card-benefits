@@ -1,0 +1,27 @@
+id: us.capitalone.venture-x-business/trip-delay
+card_id: us.capitalone.venture-x-business
+kind: protection
+name: Trip delay reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x-business@2025-11-01
+  summary: "Up to $500 per trip for expenses when a trip paid at least partly with the card is delayed more than 6 hours or needs an overnight stay."
+  coverage:
+    per_trip:
+      amount: 50000
+      currency: USD
+    waiting_hours: 6
+    requires_card_payment: partial
+  grants:
+  - entitlement: protection:trip_delay
+  conditions:
+  - type: paid_with_card
+  notes: After a 6-hour delay or overnight stay when at least part of the fare is on the card; covers cardholder, spouse and dependent children.
+  confidence: "0.75"
+  sources:
+  - url: https://frequentmiler.com/capital-one-venture-x-business-credit-card-review/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  beneficiaries:
+  - primary

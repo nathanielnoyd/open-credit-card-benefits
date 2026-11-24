@@ -1,0 +1,50 @@
+id: us.barclays.wyndham-earner-business@2021-08-18
+card_id: us.barclays.wyndham-earner-business
+kind: baseline
+notes: Pre-refresh terms, first observed in Frequent Miler's August 18, 2021 review of the newly launched Earner cards and
+  still held by cardmembers approved before June 17, 2026. Intermediate changes between 2021 and 2026 (such as the dropped
+  Visa Savings Edge offers and the cardmember discount percentage) are not modeled. Employee cards are recorded as free from
+  the current issuer page and TPG; the pre-refresh employee card fee was not separately confirmed.
+confidence: '0.7'
+effective_for_new: '2021-08-18'
+changes:
+- target: fee:annual
+  to:
+    amount: 9500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+  notes: Employee cards at no additional cost.
+- target: earn_rule:us.barclays.wyndham-earner-business/wyndham-8x
+  version: 1
+- target: earn_rule:us.barclays.wyndham-earner-business/gas-8x
+  version: 1
+- target: earn_rule:us.barclays.wyndham-earner-business/business-5x
+  version: 1
+- target: earn_rule:us.barclays.wyndham-earner-business/base-1x
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-business/anniversary-points
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-business/award-discount
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-business/diamond
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-business/no-fx
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-business/room-rate-discount
+  version: 1
+sources:
+- url: https://frequentmiler.com/new-wyndham-earner-credit-cards-review-surprisingly-strong/
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://www.uscreditcardguide.com/barclays-wyndham-earner-business-credit-card
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://www.doctorofcredit.com/barclays-refreshes-wyndham-personal-business-cards-increased-fees-added-credits-changed-points-earning/
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://frequentmiler.com/wyndham-cards-refresh-new-premium-card-new-welcome-offers-new-benefits-and-new-changed-earning-rates-for-new-applicants/
+  retrieved_at: '2026-11-14'
+  publisher: review

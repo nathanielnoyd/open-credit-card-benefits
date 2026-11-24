@@ -1,0 +1,67 @@
+card_id: us.chase.sapphire-preferred
+rules:
+  - id: us.chase.sapphire-preferred/chase-travel-5x
+    categories:
+      - cat:travel.portal.chase
+    versions:
+      - version: 1
+        release: us.chase.sapphire-preferred@2024-01-01
+        multiplier: "5"
+  - id: us.chase.sapphire-preferred/dining-3x
+    categories:
+      - cat:dining
+    versions:
+      - version: 1
+        release: us.chase.sapphire-preferred@2024-01-01
+        multiplier: "3"
+  - id: us.chase.sapphire-preferred/streaming-3x
+    categories:
+      - cat:streaming
+    versions:
+      - version: 1
+        release: us.chase.sapphire-preferred@2024-01-01
+        multiplier: "3"
+  - id: us.chase.sapphire-preferred/online-grocery-3x
+    categories:
+      - cat:groceries.online
+    versions:
+      - version: 1
+        release: us.chase.sapphire-preferred@2024-01-01
+        notes: Excludes Target, Walmart and wholesale clubs.
+        multiplier: "3"
+  - id: us.chase.sapphire-preferred/travel-2x
+    categories:
+      - cat:travel
+    versions:
+      - version: 1
+        release: us.chase.sapphire-preferred@2024-01-01
+        multiplier: "2"
+  - id: us.chase.sapphire-preferred/lyft-5x
+    categories:
+      - cat:travel.rideshare.lyft
+    versions:
+      - version: 1
+        release: us.chase.sapphire-preferred@2024-01-01
+        effective_to: "2027-09-30"
+        multiplier: "5"
+  - id: us.chase.sapphire-preferred/gas-ev-3x
+    categories:
+      - cat:gas_ev
+    versions:
+      - version: 1
+        release: us.chase.sapphire-preferred@2026-06-15
+        multiplier: "3"
+  - id: us.chase.sapphire-preferred/vacation-rentals-3x
+    categories:
+      - cat:travel.vacation_rentals
+    versions:
+      - version: 1
+        release: us.chase.sapphire-preferred@2026-06-15
+        multiplier: "3"
+  - id: us.chase.sapphire-preferred/base-1x
+    categories:
+      - cat:all
+    versions:
+      - version: 1
+        release: us.chase.sapphire-preferred@2024-01-01
+        multiplier: "1"

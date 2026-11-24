@@ -1,0 +1,22 @@
+id: us.usbank.altitude-reserve/trusted-traveler
+card_id: us.usbank.altitude-reserve
+kind: statement_credit
+name: Global Entry or TSA PreCheck credit
+versions:
+- version: 1
+  change_type: added
+  release: us.usbank.altitude-reserve@2024-11-11
+  summary: "Up to $120 back on a Global Entry or TSA PreCheck application fee charged to the card, once every 4 years."
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: every_n_years
+    n: 4
+    anchor: calendar
+  limit:
+    amount: 12000
+  grants:
+  - entitlement: credit:trusted_traveler
+  beneficiaries:
+  - primary

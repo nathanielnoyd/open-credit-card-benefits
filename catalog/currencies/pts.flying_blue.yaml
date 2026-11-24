@@ -1,0 +1,14 @@
+id: pts:flying_blue
+name: Air France-KLM Flying Blue
+kind: airline
+issuer: Air France-KLM
+url: https://www.flyingblue.com/
+expiry: Miles expire 24 months after the last qualifying activity.
+paths: []
+sources:
+  - url: https://www.flyingblue.com/
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

@@ -1,0 +1,23 @@
+id: us.chase.sapphire-reserve-business/no-fx
+card_id: us.chase.sapphire-reserve-business
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: No foreign transaction fees on purchases made outside the US.
+  waives: foreign_transaction_fee
+  grants:
+  - entitlement: fee_waiver:foreign_transaction
+  conditions: []
+  beneficiaries:
+  - primary
+  - authorized_user
+  sources:
+  - url: https://onemileatatime.com/go/cc-chase-csrbiz-review/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://www.uscreditcardguide.com/chase-sapphire-reserve-for-business/
+    retrieved_at: "2026-11-13"
+    publisher: review

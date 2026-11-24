@@ -1,0 +1,14 @@
+id: pts:tap_miles_go
+name: TAP Miles&Go
+kind: airline
+issuer: TAP Air Portugal
+url: https://www.flytap.com/en-us/miles-and-go
+expiry: "Fixed term: miles expire 3 years after they are earned; some bonus miles expire after 1 year."
+paths: []
+sources:
+  - url: https://www.flytap.com/en-us/miles-and-go
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardwallet.com/travel/loyalty-program-expiration-policies/
+    retrieved_at: "2026-11-13"
+    publisher: review

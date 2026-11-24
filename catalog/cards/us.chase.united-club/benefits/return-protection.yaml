@@ -1,0 +1,25 @@
+id: us.chase.united-club/return-protection
+card_id: us.chase.united-club
+kind: protection
+name: Return protection
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club@2024-01-01
+  summary: "Refunds items paid with the card that a store won't take back, up to $500 per item and $1,000 a year."
+  coverage:
+    per_item:
+      amount: 50000
+      currency: USD
+    per_period:
+      amount: 100000
+      currency: USD
+  grants:
+  - entitlement: protection:return
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Up to $500 per item and $1,000 per 12 months.
+  confidence: '0.7'

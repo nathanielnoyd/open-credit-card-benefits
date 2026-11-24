@@ -1,0 +1,25 @@
+id: us.bofa.atmos-summit/checked-bag
+card_id: us.bofa.atmos-summit
+kind: fee_waiver
+name: Free first checked bag
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-summit@2026-11-14
+  summary: "Free first checked bag on Alaska and Hawaiian flights for you and up to 6 guests on the same reservation when the airfare is paid with the card."
+  face_value: null
+  waives: checked_bag
+  count: 1
+  companions: 6
+  grants:
+  - entitlement: fee_waiver:checked_bag_alaska
+    value_share: "0.85"
+  - entitlement: fee_waiver:checked_bag_hawaiian
+    value_share: "0.15"
+  conditions:
+  - type: paid_with_card
+    note: Airfare purchased with the card
+  beneficiaries:
+  - primary
+  - authorized_user
+  - companion

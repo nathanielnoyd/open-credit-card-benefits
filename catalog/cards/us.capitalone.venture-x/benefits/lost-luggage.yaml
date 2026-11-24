@@ -1,0 +1,25 @@
+id: us.capitalone.venture-x/lost-luggage
+card_id: us.capitalone.venture-x
+kind: protection
+name: Lost luggage
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x@2025-03-01
+  summary: "Up to $3,000 per traveler for checked or carry-on bags lost or stolen by a common carrier when you pay the fare with the card."
+  coverage:
+    per_person:
+      amount: 300000
+      currency: USD
+  grants:
+  - entitlement: protection:lost_luggage
+  conditions:
+  - type: paid_with_card
+  notes: Loss or theft of checked or carry-on bags by a common carrier when the fare was bought with the card; $3,000 per traveler per reviews, not confirmed by the issuer.
+  sources:
+  - url: https://financebuzz.com/capital-one-venture-x-travel-insurance
+    retrieved_at: "2026-11-13"
+    publisher: review
+  confidence: "0.6"
+  beneficiaries:
+  - primary

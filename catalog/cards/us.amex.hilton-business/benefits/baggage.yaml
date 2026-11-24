@@ -1,0 +1,24 @@
+id: us.amex.hilton-business/baggage
+card_id: us.amex.hilton-business
+kind: protection
+name: Baggage insurance plan
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.hilton-business@2024-03-28
+  summary: "Covers up to $1,250 per person for lost, damaged or stolen bags beyond the carrier's coverage, with a lower sublimit for checked bags, when the full common-carrier fare is paid with the card."
+  face_value: null
+  coverage:
+    priority: excess
+    per_person:
+      amount: 125000
+      currency: USD
+  conditions:
+  - type: paid_with_card
+    note: Entire common carrier fare charged to the card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: 'Lost, damaged or stolen baggage in excess of the carrier''s coverage: up to $1,250 for carry-on and $500 for checked baggage per covered person. The checked-bag sublimit is in notes only.'
+  grants:
+  - entitlement: protection:lost_luggage

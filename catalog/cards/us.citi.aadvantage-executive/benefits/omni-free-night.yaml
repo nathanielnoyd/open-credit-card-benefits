@@ -1,0 +1,36 @@
+id: us.citi.aadvantage-executive/omni-free-night
+card_id: us.citi.aadvantage-executive
+kind: certificate
+name: Omni free night
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-executive@2026-08-23
+  summary: "One Omni free night each calendar year after a qualifying stay of 2 or more nights booked directly with Omni, once you enroll in Champion status."
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    count: 1
+  issued_on: milestone
+  grants:
+  - entitlement: certificate:us.citi.aadvantage-executive.omni-free-night
+  beneficiaries:
+  - primary
+  conditions:
+  - type: enrollment_required
+    note: Requires the Omni Champion status enrollment
+  - type: min_nights
+    nights: 2
+  - type: booking_channel
+    channel: direct
+    note: Booked directly at omnihotels.com
+  notes: Once per calendar year, an Omni Free Night Award after a qualifying stay of two or more consecutive nights booked directly with Omni. The award is earned by a stay, not issued on a date, and has no points cap since Omni has no points currency.
+  machine_readable: false
+  sources:
+  - url: https://www.citi.com/credit-cards/citi-aadvantage-executive-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://thepointsguy.com/news/citi-aadvantage-executive-mastercard-refresh-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review

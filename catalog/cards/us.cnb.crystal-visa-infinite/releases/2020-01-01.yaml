@@ -1,0 +1,69 @@
+id: us.cnb.crystal-visa-infinite@2020-01-01
+card_id: us.cnb.crystal-visa-infinite
+kind: baseline
+effective_for_new: "2020-01-01"
+notes: >-
+  Current terms recorded as the baseline from January 1, 2020, when City National restructured the card: the airline
+  credit went from $250 per card to $350 per account, authorized user cards began costing $95, Priority Pass guests
+  became paid, gas and groceries left the 3x categories and the Visa Infinite discount air benefit ended. Terms
+  before 2020 are not modeled, and terms are as observed on the issuer page on November 14, 2026; the Global Entry
+  credit was $100 in older reviews and its increase to $120 is not dated.
+changes:
+- target: fee:annual
+  to:
+    amount: 40000
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 9500
+    currency: USD
+  notes: $95 a year for each additional card; up to three authorized users per reviews.
+- target: fee:foreign_transaction
+  rate: "0"
+- target: earn_rule:us.cnb.crystal-visa-infinite/travel-dining-3x
+  version: 1
+- target: earn_rule:us.cnb.crystal-visa-infinite/base-1x
+  version: 1
+- target: benefit:us.cnb.crystal-visa-infinite/airline-credit
+  version: 1
+- target: benefit:us.cnb.crystal-visa-infinite/priority-pass
+  version: 1
+- target: benefit:us.cnb.crystal-visa-infinite/lounge-club-credit
+  version: 1
+- target: benefit:us.cnb.crystal-visa-infinite/trusted-traveler
+  version: 1
+- target: benefit:us.cnb.crystal-visa-infinite/luxury-hotel-collection
+  version: 1
+- target: benefit:us.cnb.crystal-visa-infinite/no-fx
+  version: 1
+- target: benefit:us.cnb.crystal-visa-infinite/rental-cdw
+  version: 1
+- target: benefit:us.cnb.crystal-visa-infinite/trip-cancel
+  version: 1
+- target: benefit:us.cnb.crystal-visa-infinite/trip-delay
+  version: 1
+- target: benefit:us.cnb.crystal-visa-infinite/lost-luggage
+  version: 1
+- target: benefit:us.cnb.crystal-visa-infinite/travel-accident
+  version: 1
+- target: benefit:us.cnb.crystal-visa-infinite/evacuation
+  version: 1
+- target: benefit:us.cnb.crystal-visa-infinite/purchase-protection
+  version: 1
+- target: benefit:us.cnb.crystal-visa-infinite/return-protection
+  version: 1
+- target: benefit:us.cnb.crystal-visa-infinite/price-protection
+  version: 1
+- target: benefit:us.cnb.crystal-visa-infinite/extended-warranty
+  version: 1
+sources:
+- url: https://www.cnb.com/lending/cards/individual/crystal-credit-card.asp
+  retrieved_at: "2026-11-14"
+  publisher: issuer
+- url: https://www.doctorofcredit.com/rumor-city-national-bank-to-change-250-airline-credit-per-user-to-350-across-all-cards
+  retrieved_at: "2026-11-14"
+  publisher: review
+- url: https://www.uscreditcardguide.com/cnb-city-national-bank-crystal-visa-infinite-credit-card/
+  retrieved_at: "2026-11-14"
+  publisher: review
+confidence: "0.75"

@@ -1,0 +1,45 @@
+{
+  "occb": "0.3",
+  "people": [{ "id": "p1", "label": "Cardholder", "home_airports": ["EWR"] }],
+  "cards": [
+    { "id": "w-csr", "card_id": "us.chase.sapphire-reserve", "holder": "p1", "opened_on": "2023-04-10", "status": "open" },
+    { "id": "w-plat", "card_id": "us.amex.platinum", "holder": "p1", "opened_on": "2022-08-01", "status": "open" },
+    { "id": "w-gold", "card_id": "us.amex.gold", "holder": "p1", "opened_on": "2021-02-15", "status": "open" },
+    { "id": "w-vx", "card_id": "us.capitalone.venture-x", "holder": "p1", "opened_on": "2024-06-20", "status": "open" },
+    { "id": "w-quest", "card_id": "us.chase.united-quest", "holder": "p1", "opened_on": "2024-01-05", "status": "open" },
+    { "id": "w-explorer", "card_id": "us.chase.united-explorer", "holder": "p1", "opened_on": "2020-09-12", "status": "open" },
+    { "id": "w-aspire", "card_id": "us.amex.hilton-aspire", "holder": "p1", "opened_on": "2023-11-30", "status": "open" }
+  ],
+  "spend_profile": {
+    "as_of": "2026-11-13",
+    "currency": "USD",
+    "amounts": {
+      "cat:groceries.store": 700000,
+      "cat:travel.flights.direct": 300000,
+      "cat:travel.hotels.direct": 200000,
+      "cat:all": 1200000
+    }
+  },
+  "benefit_values": {
+    "us.amex.platinum/resy-credit": { "personal_value": { "amount": 30000, "currency": "USD" }, "basis": "present_value", "note": "Two Resy restaurants nearby; I use most of each quarter's credit." },
+    "us.amex.platinum/lululemon": { "personal_value": { "amount": 0, "currency": "USD" }, "note": "I don't shop there." },
+    "us.chase.sapphire-reserve/edit-hotel-credit": { "personal_value": { "amount": 10000, "currency": "USD" }, "basis": "present_value", "note": "Two-night minimum; one stay a year at most." },
+    "us.amex.hilton-aspire/free-night": { "personal_value": { "amount": 40000, "currency": "USD" }, "basis": "present_value", "note": "A weekend at a resort I'd otherwise pay for." },
+    "us.chase.united-quest/united-credit": { "usage_probability": "1", "note": "I fly United several times a year." }
+  },
+  "earn_values": {
+    "us.amex.gold/dining-4x": { "personal_value": { "amount": 15000, "currency": "USD" }, "basis": "present_value", "note": "Most of my restaurant spend goes here; I'd pay about this much for 4x." }
+  },
+  "custom_benefits": [
+    {
+      "id": "us.amex.gold/user-retention-history",
+      "card_id": "us.amex.gold",
+      "wallet_card_id": "w-gold",
+      "scope": "user",
+      "kind": "other",
+      "name": "Retention offers I usually get",
+      "versions": [{ "version": 1, "change_type": "added", "face_value": { "amount": 5000, "currency": "USD" }, "period": { "cadence": "annual" }, "notes": "Typically 10,000 points or $50 when I call before renewal." }]
+    }
+  ],
+  "finance": { "discount_rate": "0.045", "horizon_months": 12 }
+}

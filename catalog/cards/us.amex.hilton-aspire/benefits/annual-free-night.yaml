@@ -1,0 +1,18 @@
+id: us.amex.hilton-aspire/annual-free-night
+card_id: us.amex.hilton-aspire
+kind: certificate
+name: Annual Free Night Reward
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.hilton-aspire@2024-02-01
+  summary: "A weekend or weekday standard-room Free Night Reward at almost any Hilton Honors property, issued at each renewal and valid for 1 year."
+  face_value: null
+  issued_on: renewal
+  expires_after_days: 365
+  beneficiaries:
+  - primary
+  notes: Issued in the first year of membership and again on each renewal. One weekend or weekday standard-room Free Night Reward at almost any Hilton Honors property, with no points cap; a few properties are excluded. Expires one year after issue. The schema cannot say "no cap"; leaving `cap` out is ambiguous.
+  machine_readable: false
+  grants:
+  - entitlement: certificate:us.amex.hilton-aspire.annual-free-night

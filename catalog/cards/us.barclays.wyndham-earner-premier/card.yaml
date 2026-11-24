@@ -1,0 +1,41 @@
+id: us.barclays.wyndham-earner-premier
+issuer_id: us.barclays
+name: Wyndham Rewards Earner Premier Card
+summary: "A $395-a-year Wyndham card earning 8x at Hotels by Wyndham and 4x on travel, gas, dining and groceries, with 30,000 points each anniversary, Diamond status, 25% off award nights, Insider membership and $385 a year in hotel, meal delivery, streaming and wholesale club credits."
+network: visa
+segment: personal
+tier: premium
+family: barclays-wyndham
+earns: pts:wyndham_rewards
+open_to_applicants: true
+url: https://www.wyndhamrewardscreditcard.com/earner-premier-card/
+aliases:
+- Wyndham Earner Premier
+- Barclays Wyndham Earner Premier
+cobrand:
+  partner: Wyndham Rewards
+  program: pts:wyndham_rewards
+fee_posting:
+  anchor: account_open
+provenance:
+  sources:
+  - url: https://www.wyndhamrewardscreditcard.com/earner-premier-card/
+    retrieved_at: '2026-11-14'
+    publisher: issuer
+  - url: https://www.barclaycardus.com/applycontent/TnCs.jsp?tc49152
+    retrieved_at: '2026-11-14'
+    publisher: issuer
+  - url: https://investor.wyndhamhotels.com/news-events/press-releases/detail/422/wyndham-and-barclays-launch-updated-credit-card-suite
+    retrieved_at: '2026-11-14'
+    publisher: issuer
+  - url: https://frequentmiler.com/wyndham-cards-refresh-new-premium-card-new-welcome-offers-new-benefits-and-new-changed-earning-rates-for-new-applicants/
+    retrieved_at: '2026-11-14'
+    publisher: review
+  - url: https://www.uscreditcardguide.com/barclays-wyndham-earner-premier-credit-card/
+    retrieved_at: '2026-11-14'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.8'
+  last_reviewed: '2026-11-14'
+related:
+  - { card_id: us.barclays.wyndham-earner-business, relation: business_counterpart }

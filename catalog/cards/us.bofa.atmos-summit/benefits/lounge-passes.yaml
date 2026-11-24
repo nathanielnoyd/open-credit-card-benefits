@@ -1,0 +1,27 @@
+id: us.bofa.atmos-summit/lounge-passes
+card_id: us.bofa.atmos-summit
+kind: access
+name: Alaska Lounge passes
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-summit@2026-11-14
+  summary: "8 Alaska Lounge day passes a calendar year, issued 2 per quarter, for you or a guest flying the same day; unused passes expire at the end of the quarter."
+  face_value: null
+  period:
+    cadence: quarterly
+    anchor: calendar
+  limit:
+    count: 2
+    unit:
+      unit: pass
+  grants:
+  - entitlement: lounge_network:alaska_lounge
+    attributes:
+      visits: 8
+  conditions:
+  - type: same_day_flight
+  beneficiaries:
+  - primary
+  - guest
+  notes: Two passes each calendar quarter, eight a year, usable by the cardholder or guests with a same-day ticketed flight on a qualifying airline; passes do not roll over. Authorized users do not get their own passes.

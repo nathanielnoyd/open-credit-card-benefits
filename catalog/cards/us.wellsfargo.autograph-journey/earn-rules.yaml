@@ -1,0 +1,45 @@
+card_id: us.wellsfargo.autograph-journey
+rules:
+- id: us.wellsfargo.autograph-journey/hotels-5x
+  categories:
+  - cat:travel.hotels
+  versions:
+  - version: 1
+    release: us.wellsfargo.autograph-journey@2024-03-01
+    multiplier: '5'
+    notes: Merchants classified as hotels and motels, booked directly or through an agency.
+- id: us.wellsfargo.autograph-journey/airlines-4x
+  categories:
+  - cat:travel.flights
+  versions:
+  - version: 1
+    release: us.wellsfargo.autograph-journey@2024-03-01
+    multiplier: '4'
+    notes: Merchants classified as airlines and air carriers.
+- id: us.wellsfargo.autograph-journey/dining-3x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.wellsfargo.autograph-journey@2024-03-01
+    multiplier: '3'
+    notes: Eating places, restaurants, drinking places, fast food and caterers.
+- id: us.wellsfargo.autograph-journey/other-travel-3x
+  categories:
+  - cat:travel.car_rental
+  - cat:travel.cruise
+  - cat:travel.other
+  - cat:travel.vacation_rentals
+  versions:
+  - version: 1
+    release: us.wellsfargo.autograph-journey@2024-03-01
+    multiplier: '3'
+    notes: Timeshares, car rental, cruise lines, travel agencies, discount travel sites and campgrounds. Transit, rideshare, parking and tolls are not in the issuer's definition and earn 1x.
+- id: us.wellsfargo.autograph-journey/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.wellsfargo.autograph-journey@2024-03-01
+    multiplier: '1'
+    notes: Cash advances and cash equivalents earn nothing.

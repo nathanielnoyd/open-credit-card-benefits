@@ -1,0 +1,60 @@
+card_id: us.capitalone.savor
+rules:
+- id: us.capitalone.savor/c1-entertainment-8x
+  categories:
+  - cat:entertainment.capitalone
+  versions:
+  - version: 1
+    release: us.capitalone.savor@2024-10-22
+    multiplier: "8"
+    notes: Capital One Entertainment purchases.
+- id: us.capitalone.savor/c1-travel-5x
+  categories:
+  - cat:travel.portal.capitalone.hotels
+  - cat:travel.portal.capitalone.vacation_rentals
+  - cat:travel.portal.capitalone.cars
+  versions:
+  - version: 1
+    release: us.capitalone.savor@2024-10-22
+    multiplier: "5"
+    notes: Hotels, vacation rentals and rental cars booked through Capital One Travel.
+- id: us.capitalone.savor/dining-3x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.capitalone.savor@2024-10-22
+    multiplier: "3"
+    notes: Restaurants, cafes, bars, lounges, fast food and bakeries; some hotel restaurants, food counters and food trucks may not
+      code as dining.
+- id: us.capitalone.savor/grocery-3x
+  categories:
+  - cat:groceries.store
+  versions:
+  - version: 1
+    release: us.capitalone.savor@2024-10-22
+    multiplier: "3"
+    notes: Grocery stores; superstores such as Walmart and Target are excluded, and wholesale clubs are not grocery stores.
+- id: us.capitalone.savor/entertainment-3x
+  categories:
+  - cat:entertainment
+  versions:
+  - version: 1
+    release: us.capitalone.savor@2024-10-22
+    multiplier: "3"
+    notes: Excludes golf courses, collegiate sporting events, cable, digital streaming and membership services.
+- id: us.capitalone.savor/streaming-3x
+  categories:
+  - cat:streaming
+  versions:
+  - version: 1
+    release: us.capitalone.savor@2024-10-22
+    multiplier: "3"
+    notes: Popular streaming services only, per Capital One’s merchant list.
+- id: us.capitalone.savor/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.capitalone.savor@2024-10-22
+    multiplier: "1"

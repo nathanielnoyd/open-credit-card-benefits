@@ -1,0 +1,22 @@
+id: us.chase.amazon-prime-visa/baggage-delay
+card_id: us.chase.amazon-prime-visa
+kind: protection
+name: Baggage delay
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.amazon-prime-visa@2023-05-01
+  summary: "Up to $100 a day for up to 3 days for essential purchases when a common carrier delays your bags more than 6 hours on a trip paid with the card."
+  coverage:
+    per_claim:
+      amount: 30000
+      currency: USD
+    waiting_hours: 6
+    max_days: 3
+  grants:
+  - entitlement: protection:baggage_delay
+  conditions:
+  - type: paid_with_card
+  notes: Essential purchases up to $100 a day for up to 3 days when a common carrier delays bags more than 6 hours.
+  beneficiaries:
+  - primary

@@ -1,0 +1,28 @@
+id: us.amex.delta-reserve-business/delta-stays
+card_id: us.amex.delta-reserve-business
+kind: statement_credit
+name: Delta Stays credit
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-reserve-business@2025-02-01
+  summary: Up to $250 a calendar year in statement credits on prepaid hotels or vacation rentals booked through Delta Stays
+    on delta.com.
+  face_value:
+    amount: 25000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 25000
+  grants:
+  - entitlement: credit:delta_stays
+  conditions:
+  - type: merchant_in
+    merchants:
+    - delta_stays
+  beneficiaries:
+  - primary
+  notes: Prepaid hotels or vacation rentals booked through Delta Stays on delta.com; calendar-year credit. The business card
+    gets $250, against $200 on the personal Reserve.

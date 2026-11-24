@@ -1,0 +1,22 @@
+id: us.chase.ihg-premier-select/extended-warranty
+card_id: us.chase.ihg-premier-select
+kind: protection
+name: Extended warranty
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier-select@2026-10-01
+  summary: "Adds one year to eligible US manufacturer warranties of three years or less on items you buy with the card."
+  grants:
+  - entitlement: protection:extended_warranty
+  coverage:
+    extends_years: 1
+    max_original_warranty_years: 3
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://www.chase.com/personal/credit-cards/ihg/premierselect
+    retrieved_at: '2026-11-14'
+    publisher: issuer

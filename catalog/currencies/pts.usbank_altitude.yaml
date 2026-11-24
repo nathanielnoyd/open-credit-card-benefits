@@ -1,0 +1,78 @@
+id: pts:usbank_altitude
+name: U.S. Bank Altitude Points
+kind: fixed_value
+issuer: U.S. Bank
+url: https://www.usbank.com/credit-cards/altitude-reserve-visa-infinite-credit-card.html
+cents_per_point: "1.0"
+expiry: none while the account is open
+paths:
+  - id: cash
+    kind: statement_credit
+    rate: "1.0"
+    notes: Statement credit or deposit to a U.S. Bank account.
+  - id: travel-center
+    kind: portal
+    rate: "1.0"
+    effective_from: "2025-12-15"
+  - id: real-time-rewards-reserve
+    kind: statement_credit
+    rate: "1.5"
+    effective_to: "2025-12-14"
+    notes: Altitude Reserve Real-Time Rewards and travel-center bookings were 1.5¢ until U.S. Bank cut them to 1¢ on December 15, 2025.
+    requires:
+      - { type: wallet_holds, card_id: us.usbank.altitude-reserve }
+  - id: real-time-rewards
+    kind: statement_credit
+    rate: "1.0"
+    effective_from: "2025-12-15"
+    notes: Real-Time Rewards against travel purchases.
+  - id: flying-blue
+    kind: transfer
+    to: pts:flying_blue
+    ratio: "1:1"
+    effective_from: "2026-08-11"
+    notes: Altitude Reserve only. Transfers launched August 11, 2026; Flying Blue was briefly removed on August 12 and restored August 17.
+    requires:
+      - { type: wallet_holds, card_id: us.usbank.altitude-reserve }
+  - id: avianca
+    kind: transfer
+    to: pts:avianca_lifemiles
+    ratio: "1:1"
+    effective_from: "2026-08-30"
+    notes: Altitude Reserve only. Added August 30, 2026.
+    requires:
+      - { type: wallet_holds, card_id: us.usbank.altitude-reserve }
+  - id: qantas
+    kind: transfer
+    to: pts:qantas
+    ratio: "1:1"
+    effective_from: "2026-08-11"
+    notes: Altitude Reserve only. Removed August 12 and restored August 27, 2026 per Doctor of Credit; one later report says transfers were still suspended.
+    requires:
+      - { type: wallet_holds, card_id: us.usbank.altitude-reserve }
+  - id: ethiopian
+    kind: transfer
+    to: pts:ethiopian_shebamiles
+    ratio: "1:1"
+    effective_from: "2026-08-11"
+    notes: Altitude Reserve only.
+    requires:
+      - { type: wallet_holds, card_id: us.usbank.altitude-reserve }
+  - id: accor
+    kind: transfer
+    to: pts:accor_all
+    ratio: "2:1"
+    effective_from: "2026-08-11"
+    notes: Altitude Reserve only.
+    requires:
+      - { type: wallet_holds, card_id: us.usbank.altitude-reserve }
+sources:
+  - url: https://www.usbank.com/credit-cards/altitude-reserve-visa-infinite-credit-card.html
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://www.doctorofcredit.com/u-s-bank-finally-adds-transfer-partners-accor-flying-blue-qantas-ethiopian/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://awardtravelfinder.com/credit-card-transfers/us-bank-altitude
+    retrieved_at: "2026-11-13"
+    publisher: review

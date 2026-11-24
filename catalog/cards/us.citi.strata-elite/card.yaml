@@ -1,0 +1,32 @@
+id: us.citi.strata-elite
+issuer_id: us.citi
+name: Citi Strata Elite Card
+summary: "A $595-a-year Citi card earning 12x on hotels, car rentals and attractions and 6x on flights through Citi Travel plus 6x Citi Nights dining, with a $300 hotel credit, $200 Splurge and Blacklane credits and 4 Admirals Club passes a year."
+network: mastercard
+segment: personal
+tier: ultra_premium
+family: citi-thankyou
+earns: pts:citi_ty
+open_to_applicants: true
+url: https://www.citi.com/credit-cards/citi-strata-elite-credit-card
+aliases:
+- Strata Elite
+fee_posting:
+  anchor: account_open
+notes: >-
+  Launched July 27, 2025. A premium ThankYou card: unlocks full-ratio transfers to every partner, including American AAdvantage
+  (added the same day). No foreign transaction fees.
+provenance:
+  sources:
+  - url: https://www.citi.com/credit-cards/citi-strata-elite-credit-card
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://frequentmiler.com/citi-strata-elite-review/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://awardwallet.com/blog/citi-strata-elite-card-review
+    retrieved_at: "2026-11-13"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.8"
+  last_reviewed: "2026-11-13"

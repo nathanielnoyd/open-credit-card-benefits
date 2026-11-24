@@ -1,0 +1,20 @@
+id: us.bofa.premium-rewards/rental-cdw
+card_id: us.bofa.premium-rewards
+kind: protection
+name: Auto rental collision damage waiver
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards@2024-01-01
+  summary: "Secondary collision damage coverage in the US on car rentals paid with the card when you decline the rental company's coverage."
+  face_value: null
+  grants:
+  - entitlement: protection:rental_cdw
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  coverage:
+    priority: secondary
+  notes: Secondary in the U.S.; decline the rental company’s CDW.

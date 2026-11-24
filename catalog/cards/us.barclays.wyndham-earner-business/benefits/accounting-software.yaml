@@ -1,0 +1,22 @@
+id: us.barclays.wyndham-earner-business/accounting-software
+card_id: us.barclays.wyndham-earner-business
+kind: statement_credit
+name: Accounting software credit
+versions:
+- version: 1
+  change_type: added
+  release: us.barclays.wyndham-earner-business@2026-06-17
+  summary: Up to $50 in statement credits each calendar year on qualifying accounting software purchases.
+  face_value:
+    amount: 5000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 5000
+  grants:
+  - entitlement: credit:accounting_software
+  beneficiaries:
+  - primary
+  notes: Qualifying purchases are identified by merchant code; the terms name no software merchants. Posts within 2 weeks.

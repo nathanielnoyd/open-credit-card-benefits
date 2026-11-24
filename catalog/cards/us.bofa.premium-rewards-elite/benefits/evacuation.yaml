@@ -1,0 +1,18 @@
+id: us.bofa.premium-rewards-elite/evacuation
+card_id: us.bofa.premium-rewards-elite
+kind: protection
+name: Emergency evacuation and transportation
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards-elite@2026-11-14
+  summary: "Emergency evacuation and transportation coverage on trips paid with the card; the coverage amount is not confirmed."
+  face_value: null
+  grants:
+  - entitlement: protection:emergency_evacuation
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Listed on the issuer page; coverage amount not confirmed.
+  confidence: "0.6"

@@ -1,0 +1,139 @@
+id: pts:bilt
+name: Bilt Points
+kind: transferable
+issuer: Bilt
+url: https://www.bilt.com/rewards
+expiry: none
+paths:
+  - id: bilt-travel
+    kind: portal
+    rate: "1.25"
+    notes: Flights, hotels, cars and activities through Bilt Travel (Blade flights 0.7¢).
+  - id: rent
+    kind: statement_credit
+    rate: "0.55"
+    notes: Points toward rent.
+  - id: amazon
+    kind: pay_with_points
+    rate: "0.7"
+  - id: home-down-payment
+    kind: deposit
+    rate: "1.5"
+    notes: Toward a home down payment; requires sending Bilt proof of purchase.
+  - id: aer-lingus
+    kind: transfer
+    to: pts:aer_lingus_avios
+    ratio: "1:1"
+  - id: aeroplan
+    kind: transfer
+    to: pts:aeroplan
+    ratio: "1:1"
+  - id: flying-blue
+    kind: transfer
+    to: pts:flying_blue
+    ratio: "1:1"
+  - id: atmos
+    kind: transfer
+    to: pts:atmos_rewards
+    ratio: "1:1"
+  - id: avianca
+    kind: transfer
+    to: pts:avianca_lifemiles
+    ratio: "1:1"
+  - id: british-airways
+    kind: transfer
+    to: pts:ba_avios
+    ratio: "1:1"
+  - id: cathay
+    kind: transfer
+    to: pts:cathay_asia_miles
+    ratio: "1:1"
+  - id: emirates
+    kind: transfer
+    to: pts:emirates_skywards
+    ratio: "1:1"
+  - id: etihad
+    kind: transfer
+    to: pts:etihad_guest
+    ratio: "1:1"
+  - id: iberia
+    kind: transfer
+    to: pts:iberia_avios
+    ratio: "1:1"
+  - id: jal
+    kind: transfer
+    to: pts:jal_mileage_bank
+    ratio: "1:1"
+    notes: Added October 2025.
+  - id: jetblue
+    kind: transfer
+    to: pts:jetblue_trueblue
+    ratio: "1:1"
+  - id: qatar
+    kind: transfer
+    to: pts:qatar_avios
+    ratio: "1:1"
+    effective_from: "2025-05-22"
+    notes: Added May 22, 2025.
+  - id: southwest
+    kind: transfer
+    to: pts:southwest_rr
+    ratio: "1:1"
+    effective_from: "2025-04-24"
+    notes: Added April 24, 2025.
+  - id: tap
+    kind: transfer
+    to: pts:tap_miles_go
+    ratio: "1:1"
+  - id: turkish
+    kind: transfer
+    to: pts:turkish_miles_smiles
+    ratio: "1:1"
+  - id: united
+    kind: transfer
+    to: pts:united_mileageplus
+    ratio: "1:1"
+  - id: virgin-atlantic
+    kind: transfer
+    to: pts:virgin_atlantic
+    ratio: "1:1"
+  - id: hilton
+    kind: transfer
+    to: pts:hilton_honors
+    ratio: "1:1"
+  - id: hyatt
+    kind: transfer
+    to: pts:world_of_hyatt
+    ratio: "1:1"
+  - id: ihg
+    kind: transfer
+    to: pts:ihg_one
+    ratio: "1:1"
+  - id: marriott
+    kind: transfer
+    to: pts:marriott_bonvoy
+    ratio: "1:1"
+  - id: wyndham
+    kind: transfer
+    to: pts:wyndham_rewards
+    ratio: "1:1"
+    effective_from: "2026-03-25"
+    notes: Added March 25, 2026.
+  - id: i-prefer
+    kind: transfer
+    to: pts:i_prefer
+    ratio: "1:2"
+    effective_from: "2026-06-22"
+    notes: Added June 22, 2026.
+  - id: accor
+    kind: transfer
+    to: pts:accor_all
+    ratio: "3:2"
+    notes: Minimum transfer 3,000 points.
+sources:
+  - url: https://awardwallet.com/mile-transfer-times?program=Bilt
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://onemileatatime.com/deals/free-bilt-points/
+    retrieved_at: "2026-11-13"
+    publisher: review

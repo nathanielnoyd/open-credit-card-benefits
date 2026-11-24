@@ -1,0 +1,17 @@
+id: us.citi.prestige/travel-credit
+card_id: us.citi.prestige
+kind: statement_credit
+name: $250 travel credit
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.prestige@2025-07-09
+  summary: "Up to $250 back each calendar year, applied automatically to purchases coded as travel."
+  face_value: { amount: 25000, currency: USD }
+  period: { cadence: annual, anchor: calendar }
+  limit: { amount: 25000 }
+  grants:
+  - entitlement: credit:travel_general
+  beneficiaries: [primary]
+  notes: Posts automatically on the first $250 of travel purchases each calendar year; no registration. Older descriptions called it an air travel credit; current reviews describe any purchase coded as travel.
+  confidence: "0.75"

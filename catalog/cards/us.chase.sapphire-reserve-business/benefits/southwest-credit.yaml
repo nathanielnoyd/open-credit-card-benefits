@@ -1,0 +1,32 @@
+id: us.chase.sapphire-reserve-business/southwest-credit
+card_id: us.chase.sapphire-reserve-business
+kind: statement_credit
+name: $500 Southwest credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: After $120,000 in calendar-year spend on the card, a credit of up to $500 for Southwest flights booked through Chase Travel.
+  unlocked_only: true
+  face_value:
+    amount: 50000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 50000
+  grants:
+  - entitlement: credit:southwest_chase_travel
+  conditions:
+  - type: spend_gte
+    amount: 12000000
+    currency: USD
+    period: calendar_year
+    note: $120,000 in purchases on this card in a calendar year
+  - type: booking_channel
+    channel: chase_travel
+    note: Southwest flights through Chase Travel
+  beneficiaries:
+  - primary
+  notes: Bookings covered by the credit earn no points.

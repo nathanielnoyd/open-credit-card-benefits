@@ -1,0 +1,16 @@
+id: us.bofa.atmos-summit/same-day-change
+card_id: us.bofa.atmos-summit
+kind: fee_waiver
+name: Same-day change fee waiver
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-summit@2026-11-14
+  summary: "No fee for same-day confirmed changes on Alaska flights."
+  face_value: null
+  grants:
+  - entitlement: fee_waiver:same_day_change_alaska
+  conditions: []
+  beneficiaries:
+  - primary
+  notes: Same-day confirmed changes on Alaska flights; the issuer puts the saving at up to $75 per change. No waives value fits, so the waiver is carried by the grant.

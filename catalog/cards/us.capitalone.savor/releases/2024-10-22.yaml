@@ -1,0 +1,44 @@
+id: us.capitalone.savor@2024-10-22
+card_id: us.capitalone.savor
+kind: baseline
+effective_for_new: "2024-10-22"
+notes: Terms as of the rename of SavorOne to Savor, first reported October 22, 2024; the earn structure did not change at the rename.
+  Earlier SavorOne history is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 0
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.capitalone.savor/c1-entertainment-8x
+  version: 1
+- target: earn_rule:us.capitalone.savor/c1-travel-5x
+  version: 1
+- target: earn_rule:us.capitalone.savor/dining-3x
+  version: 1
+- target: earn_rule:us.capitalone.savor/grocery-3x
+  version: 1
+- target: earn_rule:us.capitalone.savor/entertainment-3x
+  version: 1
+- target: earn_rule:us.capitalone.savor/streaming-3x
+  version: 1
+- target: earn_rule:us.capitalone.savor/base-1x
+  version: 1
+- target: benefit:us.capitalone.savor/hertz
+  version: 1
+- target: benefit:us.capitalone.savor/no-fx
+  version: 1
+- target: benefit:us.capitalone.savor/extended-warranty
+  version: 1
+- target: benefit:us.capitalone.savor/travel-accident
+  version: 1
+sources:
+- url: https://onemileatatime.com/news/capital-one-savorone-rebrands-savor/
+  retrieved_at: "2026-11-13"
+  publisher: press
+- url: https://www.capitalone.com/credit-cards/savor/
+  retrieved_at: "2026-11-13"
+  publisher: issuer

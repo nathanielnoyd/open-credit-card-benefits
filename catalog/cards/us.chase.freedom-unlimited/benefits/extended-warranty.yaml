@@ -1,0 +1,19 @@
+id: us.chase.freedom-unlimited/extended-warranty
+card_id: us.chase.freedom-unlimited
+kind: protection
+name: Extended warranty
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.freedom-unlimited@2024-01-01
+  summary: "Adds one year to eligible US manufacturer warranties of three years or less on items you buy with the card."
+  coverage:
+    extends_years: 1
+    max_original_warranty_years: 3
+  grants:
+  - entitlement: protection:extended_warranty
+  conditions:
+  - type: paid_with_card
+  notes: Adds one year to eligible US manufacturer warranties of three years or less.
+  beneficiaries:
+  - primary

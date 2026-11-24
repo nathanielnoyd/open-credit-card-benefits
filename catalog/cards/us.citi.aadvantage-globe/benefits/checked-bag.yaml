@@ -1,0 +1,16 @@
+id: us.citi.aadvantage-globe/checked-bag
+card_id: us.citi.aadvantage-globe
+kind: fee_waiver
+name: First checked bag free on American
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-globe@2025-10-19
+  summary: "First checked bag free on domestic American itineraries for you and up to 8 companions on the same reservation."
+  waives: checked_bag
+  count: 1
+  companions: 8
+  grants:
+  - entitlement: fee_waiver:checked_bag_american
+  beneficiaries: [primary, companion]
+  notes: First checked bag free on domestic American itineraries for the cardmember and up to eight companions on the same reservation.

@@ -1,0 +1,26 @@
+id: us.chase.ihg-premier-select/baggage-delay
+card_id: us.chase.ihg-premier-select
+kind: protection
+name: Baggage delay insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier-select@2026-10-01
+  summary: "Up to $100 a day for up to 3 days, $300 in total, for essentials when your bags are delayed more than 6 hours on a trip paid with the card."
+  grants:
+  - entitlement: protection:baggage_delay
+  coverage:
+    per_period:
+      amount: 30000
+      currency: USD
+    waiting_hours: 6
+    max_days: 3
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Up to $100 a day for up to 3 days when bags are delayed over 6 hours.
+  sources:
+  - url: https://www.chase.com/personal/credit-cards/ihg/premierselect
+    retrieved_at: '2026-11-14'
+    publisher: issuer

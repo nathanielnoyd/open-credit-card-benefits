@@ -1,0 +1,21 @@
+id: us.capitalone.venture-x-business/purchase-protection
+card_id: us.capitalone.venture-x-business
+kind: protection
+name: Purchase protection
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x-business@2025-11-01
+  summary: "Purchase protection on items bought with the card; coverage amounts are not confirmed."
+  grants:
+  - entitlement: protection:purchase
+  conditions:
+  - type: paid_with_card
+  notes: Listed by reviewers; coverage amounts not confirmed.
+  confidence: "0.5"
+  sources:
+  - url: https://thepointsguy.com/credit-cards/reviews/capital-one-venture-x-business-review-huge-earning-potential-for-businesses/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  beneficiaries:
+  - primary

@@ -1,0 +1,34 @@
+id: us.chase.sapphire-reserve-business/cell-phone
+card_id: us.chase.sapphire-reserve-business
+kind: protection
+name: Cell phone protection
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: Covers theft or damage to phones on your monthly cell phone bill paid with the card, up to $1,000 per claim after a $100 deductible,
+    3 claims per 12 months.
+  coverage:
+    per_claim:
+      amount: 100000
+      currency: USD
+    deductible:
+      amount: 10000
+      currency: USD
+    max_claims_per_period: 3
+  grants:
+  - entitlement: protection:cell_phone
+  conditions:
+  - type: paid_with_card
+    note: Monthly cell phone bill paid with the card
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://hellosafe.com/credit-card-insurance/united-states/chase/sapphire-reserve-business
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://creditcards.chase.com/business-credit-cards/sapphire/reserve
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  confidence: '0.6'
+  notes: Only one review source itemizes this coverage; the issuer page lists it without amounts.

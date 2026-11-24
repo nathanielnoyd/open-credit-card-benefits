@@ -1,0 +1,39 @@
+id: us.chase.united-business
+issuer_id: us.chase
+name: United Business Card
+summary: "A $150-a-year United business card earning 2x on United purchases, dining, gas, office supply stores and local transit, with a free first checked bag, two United Club passes a year, a $125 United travel credit after five United purchases and rideshare, United Hotels, JSX and Instacart credits."
+network: visa
+segment: business
+tier: mid
+family: chase-united
+earns: pts:united_mileageplus
+open_to_applicants: true
+url: https://creditcards.chase.com/business-credit-cards/united/united-business-card
+aliases:
+- United Business
+- Chase United Business
+- United Explorer Business
+- United MileagePlus Explorer Business
+cobrand:
+  partner: United Airlines
+  program: pts:united_mileageplus
+fee_posting:
+  anchor: account_open
+related:
+- card_id: us.chase.united-explorer
+  relation: personal_counterpart
+notes: Employee cards are free. Chase advertises 8x total on United flights, of which 6x is the MileagePlus cardmember flight earn and only 2x is card earn. Premier members flying on award tickets can get complimentary Premier upgrades per Chase's page, but reviews report the perk ended for the personal cards in 2025, so it is not modeled.
+provenance:
+  sources:
+  - url: https://creditcards.chase.com/business-credit-cards/united/united-business-card
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://onemileatatime.com/reviews/credit-cards/chase/united-business-card/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://upgradedpoints.com/credit-cards/reviews/the-chase-united-business-card-review/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.75'
+  last_reviewed: '2026-11-13'

@@ -1,0 +1,18 @@
+id: us.chase.united-club-business/instacart-plus
+card_id: us.chase.united-club-business
+kind: membership
+name: Complimentary Instacart+
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club-business@2025-03-24
+  summary: "A complimentary Instacart+ membership when you enroll with the card, through December 31, 2027."
+  effective_to: '2027-12-31'
+  grants:
+  - entitlement: membership:instacart_plus
+  conditions:
+  - type: enrollment_required
+  beneficiaries:
+  - primary
+  notes: Complimentary through December 31, 2027 (or at least a year from activation), then renews at the regular $99 a year
+    unless canceled.

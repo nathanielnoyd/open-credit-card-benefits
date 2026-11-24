@@ -1,0 +1,30 @@
+id: us.chase.marriott-bonvoy-boundless
+issuer_id: us.chase
+name: Marriott Bonvoy Boundless Credit Card
+summary: "A $95-a-year Marriott card earning 6x at Marriott hotels, 3x on gas, groceries and dining on up to $6,000 a year and 2x elsewhere, with an anniversary free night, Silver Elite status and 15 Elite Night Credits a year."
+network: visa
+segment: personal
+tier: mid
+family: chase-marriott
+earns: pts:marriott_bonvoy
+open_to_applicants: true
+url: https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/boundless
+aliases:
+- Marriott Boundless
+- Chase Marriott Boundless
+- Marriott Rewards Premier Plus
+cobrand:
+  partner: Marriott Bonvoy
+  program: pts:marriott_bonvoy
+fee_posting:
+  anchor: account_open
+provenance:
+  sources:
+  - url: https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/boundless
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://thepointsguy.com/credit-cards/chase/reviews/marriott-bonvoy-boundless-credit-card-review/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.85'

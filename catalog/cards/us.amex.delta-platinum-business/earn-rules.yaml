@@ -1,0 +1,73 @@
+card_id: us.amex.delta-platinum-business
+rules:
+- id: us.amex.delta-platinum-business/delta-3x
+  categories:
+  - cat:travel.flights.direct.dl
+  versions:
+  - version: 1
+    release: us.amex.delta-platinum-business@2025-02-01
+    multiplier: '3'
+    notes: Purchases made directly with Delta.
+- id: us.amex.delta-platinum-business/hotels-3x
+  categories:
+  - cat:travel.hotels.direct
+  versions:
+  - version: 1
+    release: us.amex.delta-platinum-business@2025-02-01
+    multiplier: '3'
+    notes: Eligible purchases made directly with hotels.
+- id: us.amex.delta-platinum-business/transit-shipping
+  name: Transit and U.S. shipping
+  categories:
+  - cat:transit
+  - cat:travel.transit
+  - cat:travel.rideshare
+  - cat:travel.parking_tolls
+  - cat:business.shipping
+  versions:
+  - version: 1
+    release: us.amex.delta-platinum-business@2025-02-01
+    multiplier: '1.5'
+    cap:
+      amount: 10000000
+      currency: USD
+    cap_period: calendar_year
+    cap_group: one-point-five-x
+    notes: Eligible transit (Amex's definition includes trains, taxis, rideshare, ferries, tolls, parking, buses and subways)
+      and U.S. shipping providers. Shares a $100,000 combined yearly cap with large purchases (50,000 bonus miles), then 1x.
+- id: us.amex.delta-platinum-business/large-purchase
+  name: Purchases of $5,000 or more
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.delta-platinum-business@2025-02-01
+    multiplier: '1.5'
+    cap:
+      amount: 10000000
+      currency: USD
+    cap_period: calendar_year
+    cap_group: one-point-five-x
+    conditions:
+    - type: min_transaction
+      amount: 500000
+      currency: USD
+    notes: Single eligible purchases of $5,000 or more; shares the $100,000 combined yearly cap with transit and shipping.
+- id: us.amex.delta-platinum-business/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.delta-platinum-business@2025-02-01
+    multiplier: '1'
+- id: us.amex.delta-platinum-business/mqd-boost
+  name: MQD Boost
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.delta-platinum-business@2025-02-01
+    currency: pts:delta_mqd
+    multiplier: '0.05'
+    stacks: true
+    notes: $1 MQD per $20 of eligible purchases, uncapped. Earns MQDs alongside miles.

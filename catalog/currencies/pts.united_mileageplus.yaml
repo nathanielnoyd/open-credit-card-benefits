@@ -1,0 +1,14 @@
+id: pts:united_mileageplus
+name: United MileagePlus
+kind: airline
+issuer: United Airlines
+url: https://www.united.com/en/us/fly/mileageplus.html
+expiry: Miles do not expire.
+paths: []
+sources:
+  - url: https://www.united.com/en/us/fly/mileageplus.html
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

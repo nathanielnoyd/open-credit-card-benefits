@@ -1,0 +1,23 @@
+id: us.amex.platinum-morgan-stanley/spend-award
+card_id: us.amex.platinum-morgan-stanley
+kind: milestone
+name: $500 Anniversary Spend Award
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum-morgan-stanley@2024-01-01
+    summary: "$500 from Morgan Stanley after $100,000 in purchases on the card in a card member year, by your anniversary date."
+    threshold:
+      amount: 10000000
+      currency: USD
+    threshold_period: cardmember_year
+    reward_cash:
+      amount: 50000
+      currency: USD
+    period:
+      cadence: annual
+      anchor: cardmember_year
+    grants:
+      - entitlement: milestone:us.amex.platinum-morgan-stanley.spend-award
+    beneficiaries:
+      - primary

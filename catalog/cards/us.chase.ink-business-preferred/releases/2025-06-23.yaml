@@ -1,0 +1,20 @@
+id: us.chase.ink-business-preferred@2025-06-23
+card_id: us.chase.ink-business-preferred
+kind: change
+announced_on: '2025-06-23'
+effective_for_new: '2025-06-23'
+notes: Points Boost replaced the fixed 1.25-cent Chase Travel rate. Existing cardmembers keep 1.25 cents on points earned before October 26, 2025, until October 25, 2027; the lot-based legacy is not expressible
+  without an Ink path on the currency.
+changes:
+- target: benefit:us.chase.ink-business-preferred/chase-travel-125
+  change_type: retired
+- target: benefit:us.chase.ink-business-preferred/points-boost
+  version: 1
+transition:
+- applies_to:
+  - benefit:us.chase.ink-business-preferred/chase-travel-125
+  'on': '2025-10-26'
+sources:
+- url: https://onemileatatime.com/?p=343735
+  retrieved_at: '2026-11-13'
+  publisher: review

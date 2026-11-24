@@ -1,0 +1,74 @@
+id: us.amex.hilton-aspire@2024-02-01
+card_id: us.amex.hilton-aspire
+kind: baseline
+effective_for_new: '2024-02-01'
+notes: 'Current terms recorded as the baseline. They come from the refresh announced October 2023: fee $450 to $550 (existing holders at renewals from February 1, 2024), resort credit $250 to $400 in two halves and new $200 flight credit (from January 1, 2024), Priority Pass and the $250 airline fee credit removed (February 1, 2024), CLEAR, National Executive, cell phone protection and $30,000/$60,000 spend nights added. Pre-refresh terms are not modeled. No 2025-2026 change was found apart from the CLEAR+ credit tracking the CLEAR+ price.'
+changes:
+- target: fee:annual
+  to:
+    amount: 55000
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.amex.hilton-aspire/hilton-14x
+  version: 1
+- target: earn_rule:us.amex.hilton-aspire/travel-7x
+  version: 1
+- target: earn_rule:us.amex.hilton-aspire/dining-7x
+  version: 1
+- target: earn_rule:us.amex.hilton-aspire/base-3x
+  version: 1
+- target: benefit:us.amex.hilton-aspire/diamond-status
+  version: 1
+- target: benefit:us.amex.hilton-aspire/resort-credit
+  version: 1
+- target: benefit:us.amex.hilton-aspire/flight-credit
+  version: 1
+- target: benefit:us.amex.hilton-aspire/clear-credit
+  version: 1
+- target: benefit:us.amex.hilton-aspire/property-credit
+  version: 1
+- target: benefit:us.amex.hilton-aspire/annual-free-night
+  version: 1
+- target: benefit:us.amex.hilton-aspire/spend-free-night-30k
+  version: 1
+- target: benefit:us.amex.hilton-aspire/spend-free-night-60k
+  version: 1
+- target: benefit:us.amex.hilton-aspire/spend-30k
+  version: 1
+- target: benefit:us.amex.hilton-aspire/spend-60k
+  version: 1
+- target: benefit:us.amex.hilton-aspire/national-executive
+  version: 1
+- target: benefit:us.amex.hilton-aspire/resy-access
+  version: 1
+- target: benefit:us.amex.hilton-aspire/no-fx
+  version: 1
+- target: benefit:us.amex.hilton-aspire/rental-cdw
+  version: 1
+- target: benefit:us.amex.hilton-aspire/purchase-protection
+  version: 1
+- target: benefit:us.amex.hilton-aspire/extended-warranty
+  version: 1
+- target: benefit:us.amex.hilton-aspire/baggage
+  version: 1
+- target: benefit:us.amex.hilton-aspire/trip-delay
+  version: 1
+- target: benefit:us.amex.hilton-aspire/trip-cancel
+  version: 1
+- target: benefit:us.amex.hilton-aspire/return-protection
+  version: 1
+- target: benefit:us.amex.hilton-aspire/cell-phone
+  version: 1
+sources:
+- url: https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/
+  retrieved_at: '2026-11-13'
+  publisher: issuer
+- url: https://frequentmiler.com/?p=35649
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://thriftytraveler.com/news/credit-card/hilton-aspire-card-changes/
+  retrieved_at: '2026-11-13'
+  publisher: review

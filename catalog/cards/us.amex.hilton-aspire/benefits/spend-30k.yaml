@@ -1,0 +1,19 @@
+id: us.amex.hilton-aspire/spend-30k
+card_id: us.amex.hilton-aspire
+kind: milestone
+name: Free Night Reward after $30,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.hilton-aspire@2024-02-01
+  summary: "After $30,000 in calendar-year spend, you earn a Free Night Reward."
+  face_value: null
+  threshold:
+    amount: 3000000
+    currency: USD
+  threshold_period: calendar_year
+  reward_benefit: us.amex.hilton-aspire/spend-free-night-30k
+  beneficiaries:
+  - primary
+  grants:
+  - entitlement: milestone:us.amex.hilton-aspire.spend-30k

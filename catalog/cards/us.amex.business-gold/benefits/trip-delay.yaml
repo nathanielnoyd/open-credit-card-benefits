@@ -1,0 +1,36 @@
+id: us.amex.business-gold/trip-delay
+card_id: us.amex.business-gold
+kind: protection
+name: Trip delay insurance
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-gold@2024-02-01
+    summary: "Covers up to $300 per trip in extra expenses when a trip paid with the card is delayed more than 12 hours, up to 2 claims per 12 months."
+    coverage:
+      per_trip:
+        amount: 30000
+        currency: USD
+      waiting_hours: 12
+      max_claims_per_period: 2
+    period:
+      cadence: rolling
+      window_days: 365
+    limit:
+      count: 2
+    grants:
+      - entitlement: protection:trip_delay
+    conditions:
+      - type: paid_with_card
+    beneficiaries:
+      - primary
+      - authorized_user
+    confidence: "0.6"
+    notes: Up to $300 per covered trip, 2 claims per 12 months. Sources disagree on the trigger (6 vs 12 hours); 12 hours matches the personal Gold Card terms.
+    sources:
+      - url: https://upgradedpoints.com/credit-cards/reviews/american-express-business-gold-card/
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - url: https://frequentmiler.com/american-express-business-gold-credit-card-review/
+        retrieved_at: "2026-11-13"
+        publisher: review

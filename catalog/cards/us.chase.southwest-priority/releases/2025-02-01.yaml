@@ -1,0 +1,16 @@
+id: us.chase.southwest-priority@2025-02-01
+card_id: us.chase.southwest-priority
+kind: change
+first_seen_on: '2026-11-13'
+confidence: '0.7'
+effective_for_new: '2025-02-01'
+notes: DoorDash benefits for cards enrolling from February 1, 2025, per Chase's current terms.
+changes:
+- target: benefit:us.chase.southwest-priority/dashpass
+  version: 1
+- target: benefit:us.chase.southwest-priority/doordash
+  version: 1
+sources:
+- url: https://creditcards.chase.com/travel-credit-cards/southwest/priority
+  retrieved_at: '2026-11-13'
+  publisher: issuer

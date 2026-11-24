@@ -1,0 +1,47 @@
+id: us.bilt.obsidian/point-accelerator
+card_id: us.bilt.obsidian
+kind: other
+name: Point Accelerator (Bilt Cash redemption)
+versions:
+- version: 1
+  change_type: added
+  release: us.bilt.obsidian@2026-02-07
+  summary: "Redeem $200 of Bilt Cash for 1 extra point per dollar on your next $5,000 of everyday purchases, up to 5 times a calendar year, with the Flexible Bilt Cash option."
+  grants:
+  - entitlement: earn_boost:us.bilt.obsidian
+  conditions:
+  - type: selection_is
+    name: rewards_option
+    value: flexible_bilt_cash
+  machine_readable: false
+  notes: 'Point Accelerator: redeem $200 of Bilt Cash for +1 point per dollar on the next $5,000 of everyday purchases (not
+    housing), up to 5 times per calendar year ($25,000); unused bonus expires at year end. Accounts opened before 2027-01-01
+    need the Flexible Bilt Cash option.'
+  sources:
+  - url: https://www.bilt.com/terms/bilt-cash
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  face_value: null
+  beneficiaries:
+  - primary
+- version: 2
+  supersedes: 1
+  change_type: terms_changed
+  release: us.bilt.obsidian@2027-01-01
+  summary: "Redeem $200 of Bilt Cash for 1 extra point per dollar on your next $5,000 of everyday purchases, up to 5 times a calendar year, with no rewards option required."
+  grants:
+  - entitlement: earn_boost:us.bilt.obsidian
+  machine_readable: false
+  notes: 'Point Accelerator: redeem $200 of Bilt Cash for +1 point per dollar on the next $5,000 of everyday purchases (not
+    housing), up to 5 times per calendar year ($25,000); unused bonus expires at year end. From 2027 it is available under
+    the Housing-only option too.'
+  sources:
+  - url: https://www.bilt.com/terms/bilt-cash
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://www.doctorofcredit.com/bilt-revamps-credit-card-rewards-in-2027-discontinuing-4-bilt-cash-for-new-applicants-more/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  face_value: null
+  beneficiaries:
+  - primary

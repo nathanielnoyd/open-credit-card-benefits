@@ -1,0 +1,25 @@
+id: us.amex.gold/uber-cash
+card_id: us.amex.gold
+kind: statement_credit
+name: Uber Cash
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.gold@2024-07-25
+  summary: "Up to $10 a month in Uber Cash for US Uber rides and Uber Eats orders, $120 a year in total, once the card is added to your Uber account."
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 1000
+  grants:
+  - entitlement: credit:uber_cash
+  conditions:
+  - type: payment_method
+    method: card_on_uber_account
+    note: Card added to the Uber account; US Uber and Uber Eats
+  beneficiaries:
+  - primary

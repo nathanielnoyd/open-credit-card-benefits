@@ -1,0 +1,14 @@
+id: pts:eva_infinity
+name: EVA Air Infinity MileageLands
+kind: airline
+issuer: EVA Air
+url: https://www.evaair.com/en-us/infinity-mileagelands/
+expiry: "Fixed term: miles expire at the end of the month 36 months after they are earned."
+paths: []
+sources:
+  - url: https://www.evaair.com/en-us/infinity-mileagelands/
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardwallet.com/travel/loyalty-program-expiration-policies/
+    retrieved_at: "2026-11-13"
+    publisher: review

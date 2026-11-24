@@ -1,0 +1,14 @@
+id: pts:qatar_avios
+name: Qatar Airways Privilege Club Avios
+kind: airline
+issuer: Qatar Airways
+url: https://www.qatarairways.com/en-us/Privilege-Club.html
+expiry: Avios expire 36 months after the last earning or redemption activity.
+paths: []
+sources:
+  - url: https://www.qatarairways.com/en-us/Privilege-Club.html
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

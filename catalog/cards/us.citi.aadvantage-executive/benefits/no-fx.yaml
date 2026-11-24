@@ -1,0 +1,19 @@
+id: us.citi.aadvantage-executive/no-fx
+card_id: us.citi.aadvantage-executive
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-executive@2023-07-23
+  summary: "No foreign transaction fees on purchases made abroad or in a foreign currency."
+  waives: foreign_transaction_fee
+  grants:
+  - entitlement: fee_waiver:foreign_transaction
+  beneficiaries:
+  - primary
+  - authorized_user
+  sources:
+  - url: https://www.citi.com/credit-cards/citi-aadvantage-executive-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: issuer

@@ -1,0 +1,80 @@
+id: us.chase.ritz-carlton@2024-07-01
+card_id: us.chase.ritz-carlton
+kind: baseline
+notes: Current core terms recorded as of July 1, 2024, when Chase removed Priority Pass restaurant access from this card; earlier history, including the 2018 closure and benefit changes, is not modeled. Authorized users are free and get their own Priority Pass membership.
+effective_for_new: '2024-07-01'
+changes:
+- target: fee:annual
+  to:
+    amount: 45000
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.chase.ritz-carlton/marriott-6x
+  version: 1
+- target: earn_rule:us.chase.ritz-carlton/dining-3x
+  version: 1
+- target: earn_rule:us.chase.ritz-carlton/car-rental-3x
+  version: 1
+- target: earn_rule:us.chase.ritz-carlton/flights-3x
+  version: 1
+- target: earn_rule:us.chase.ritz-carlton/base-2x
+  version: 1
+- target: benefit:us.chase.ritz-carlton/airline-credit
+  version: 1
+- target: benefit:us.chase.ritz-carlton/baggage-delay
+  version: 1
+- target: benefit:us.chase.ritz-carlton/club-upgrades
+  version: 1
+- target: benefit:us.chase.ritz-carlton/elite-night-credits
+  version: 1
+- target: benefit:us.chase.ritz-carlton/evacuation
+  version: 1
+- target: benefit:us.chase.ritz-carlton/extended-warranty
+  version: 1
+- target: benefit:us.chase.ritz-carlton/free-night
+  version: 1
+- target: benefit:us.chase.ritz-carlton/gold-elite
+  version: 1
+- target: benefit:us.chase.ritz-carlton/lost-luggage
+  version: 1
+- target: benefit:us.chase.ritz-carlton/no-fx
+  version: 1
+- target: benefit:us.chase.ritz-carlton/platinum-elite-spend
+  version: 1
+- target: benefit:us.chase.ritz-carlton/priority-pass
+  version: 1
+- target: benefit:us.chase.ritz-carlton/property-credit
+  version: 1
+- target: benefit:us.chase.ritz-carlton/purchase-protection
+  version: 1
+- target: benefit:us.chase.ritz-carlton/rental-cdw
+  version: 1
+- target: benefit:us.chase.ritz-carlton/return-protection
+  version: 1
+- target: benefit:us.chase.ritz-carlton/roadside
+  version: 1
+- target: benefit:us.chase.ritz-carlton/sapphire-lounges
+  version: 1
+- target: benefit:us.chase.ritz-carlton/travel-accident
+  version: 1
+- target: benefit:us.chase.ritz-carlton/travel-medical
+  version: 1
+- target: benefit:us.chase.ritz-carlton/trip-cancel
+  version: 1
+- target: benefit:us.chase.ritz-carlton/trip-delay
+  version: 1
+- target: benefit:us.chase.ritz-carlton/trusted-traveler
+  version: 1
+sources:
+- url: https://marriott.chase.com/ritz-carlton/benefits
+  retrieved_at: '2026-11-14'
+  publisher: issuer
+- url: https://thepointsguy.com/credit-cards/reviews/ritz-carlton-rewards-card-review/
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://frequentmiler.com/chase-sapphire-reserve-ritz-carlton-cardholders-losing-restaurant-access-from-priority-pass/
+  retrieved_at: '2026-11-14'
+  publisher: review

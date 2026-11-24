@@ -1,0 +1,66 @@
+id: us.amex.business-gold/flexible-credit
+card_id: us.amex.business-gold
+kind: statement_credit
+name: Flexible business credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-gold@2024-02-01
+    summary: "Up to $20 a month back on US purchases at FedEx, Grubhub and office supply stores, $240 a year in total; enrollment required."
+    face_value:
+      amount: 24000
+      currency: USD
+    period: &a1
+      cadence: monthly
+      anchor: calendar
+    limit:
+      amount: 2000
+    grants:
+      - entitlement: credit:amex_business_flexible
+    conditions:
+      - &a2
+        type: enrollment_required
+      - type: merchant_in
+        merchants:
+          - fedex
+          - grubhub
+          - office_supply_stores
+    beneficiaries: &a3
+      - primary
+    notes: Up to $20 a month on eligible U.S. purchases at FedEx, Grubhub and office supply stores.
+    sources:
+      - url: https://www.cnbc.com/select/amex-business-gold-changes/
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - url: https://cardstack.money/articles/credit-card-reviews/amex-business-gold-benefits-2026
+        retrieved_at: "2026-11-13"
+        publisher: review
+  - version: 2
+    supersedes: 1
+    change_type: terms_changed
+    release: us.amex.business-gold@2026-10-01
+    summary: "Up to $20 a month back on US purchases at UPS.com, Grubhub and office supply stores, $240 a year in total; enrollment required."
+    face_value:
+      amount: 24000
+      currency: USD
+    period: *a1
+    limit:
+      amount: 2000
+    grants:
+      - entitlement: credit:amex_business_flexible
+    conditions:
+      - *a2
+      - type: merchant_in
+        merchants:
+          - ups_com
+          - grubhub
+          - office_supply_stores
+    beneficiaries: *a3
+    notes: Up to $20 a month on eligible U.S. purchases at UPS.com (online only), Grubhub and office supply stores; FedEx removed.
+    sources:
+      - url: https://frequentmiler.com/fedex-being-removed-from-flexible-business-credit-on-american-express-business-gold-card-from-10-1-26/
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - url: https://upgradedpoints.com/credit-cards/reviews/american-express-business-gold-card/
+        retrieved_at: "2026-11-13"
+        publisher: review

@@ -1,0 +1,24 @@
+id: us.chase.ihg-premier-select/travel-accident
+card_id: us.chase.ihg-premier-select
+kind: protection
+name: Travel accident insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier-select@2026-10-01
+  summary: "Up to $500,000 in accidental death and dismemberment coverage when you travel on a common carrier paid with the card."
+  grants:
+  - entitlement: protection:travel_accident
+  coverage:
+    per_person:
+      amount: 50000000
+      currency: USD
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Accidental death or dismemberment on air, bus, train or cruise travel paid with the card.
+  sources:
+  - url: https://www.chase.com/personal/credit-cards/ihg/premierselect
+    retrieved_at: '2026-11-14'
+    publisher: issuer

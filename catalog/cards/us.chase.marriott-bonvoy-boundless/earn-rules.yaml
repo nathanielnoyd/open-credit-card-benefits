@@ -1,0 +1,66 @@
+card_id: us.chase.marriott-bonvoy-boundless
+rules:
+- id: us.chase.marriott-bonvoy-boundless/marriott-6x
+  categories:
+  - cat:travel.hotels.direct.marriott
+  versions:
+  - version: 1
+    release: us.chase.marriott-bonvoy-boundless@2024-01-01
+    multiplier: '6'
+    notes: Card points at participating Marriott Bonvoy hotels; Marriott base points (10x) and Silver Elite bonus are earned
+      separately from the program.
+- id: us.chase.marriott-bonvoy-boundless/gas-3x
+  categories:
+  - cat:gas_ev.gas
+  versions:
+  - version: 1
+    release: us.chase.marriott-bonvoy-boundless@2024-01-01
+    multiplier: '3'
+    cap:
+      amount: 600000
+      currency: USD
+    cap_period: calendar_year
+    cap_group: everyday-3x
+    notes: 3x on the first $6,000 of combined purchases at gas stations, grocery stores and restaurants each year, then 2x.
+- id: us.chase.marriott-bonvoy-boundless/groceries-3x
+  categories:
+  - cat:groceries.store
+  versions:
+  - version: 1
+    release: us.chase.marriott-bonvoy-boundless@2024-01-01
+    multiplier: '3'
+    cap:
+      amount: 600000
+      currency: USD
+    cap_period: calendar_year
+    cap_group: everyday-3x
+    notes: 3x on the first $6,000 of combined purchases at gas stations, grocery stores and restaurants each year, then 2x.
+- id: us.chase.marriott-bonvoy-boundless/dining-3x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.chase.marriott-bonvoy-boundless@2024-01-01
+    multiplier: '3'
+    cap:
+      amount: 600000
+      currency: USD
+    cap_period: calendar_year
+    cap_group: everyday-3x
+    notes: 3x on the first $6,000 of combined purchases at gas stations, grocery stores and restaurants each year, then 2x.
+- id: us.chase.marriott-bonvoy-boundless/base-2x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.marriott-bonvoy-boundless@2024-01-01
+    multiplier: '2'
+- id: us.chase.marriott-bonvoy-boundless/elite-night-credits-spend
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.marriott-bonvoy-boundless@2024-01-01
+    multiplier: '0.0002'
+    currency: pts:marriott_enc
+    notes: 1 Elite Night Credit for every $5,000 spent; whole credits only.

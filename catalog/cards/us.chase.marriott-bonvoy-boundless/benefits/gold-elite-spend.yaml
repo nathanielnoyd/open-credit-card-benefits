@@ -1,0 +1,23 @@
+id: us.chase.marriott-bonvoy-boundless/gold-elite-spend
+card_id: us.chase.marriott-bonvoy-boundless
+kind: status
+name: Marriott Bonvoy Gold Elite with $35,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.marriott-bonvoy-boundless@2024-01-01
+  summary: "Marriott Bonvoy Gold Elite status for the next status year after you spend $35,000 on the card in a calendar year."
+  grants:
+  - entitlement: status:marriott
+    attributes:
+      tier: gold
+  conditions:
+  - type: spend_gte
+    amount: 3500000
+    currency: USD
+    period: calendar_year
+    note: $35,000 in a calendar year
+  beneficiaries:
+  - primary
+  notes: Gold Elite is earned for the following status year once the spend is met.
+  machine_readable: false

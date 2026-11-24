@@ -1,0 +1,50 @@
+id: us.amex.marriott-bonvoy-business@2024-01-01
+card_id: us.amex.marriott-bonvoy-business
+kind: baseline
+effective_for_new: '2024-01-01'
+notes: Current terms recorded as the baseline on the same date as the Brilliant's; they date from the 2022 refresh (4x categories, Gold status, second free night after 60,000 dollars of spend), whose history is not modeled. The baseline date marks when terms are taken as first observed in this catalog, not a change date. Employee (additional) cards carry no fee.
+changes:
+- target: fee:annual
+  to:
+    amount: 12500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+  notes: Additional cards at no cost per reviews.
+- target: earn_rule:us.amex.marriott-bonvoy-business/marriott-6x
+  version: 1
+- target: earn_rule:us.amex.marriott-bonvoy-business/business-4x
+  version: 1
+- target: earn_rule:us.amex.marriott-bonvoy-business/base-2x
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-business/free-night
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-business/spend-60k
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-business/spend-free-night
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-business/gold-status
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-business/elite-night-credits
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-business/room-rate-discount
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-business/no-fx
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-business/rental-cdw
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-business/purchase-protection
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-business/extended-warranty
+  version: 1
+- target: benefit:us.amex.marriott-bonvoy-business/baggage
+  version: 1
+sources:
+- url: https://thepointsguy.com/credit-cards/reviews/marriott-bonvoy-business-amex-credit-card-review/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://onemileatatime.com/reviews/credit-cards/american-express/marriott-bonvoy-business-card/
+  retrieved_at: '2026-11-13'
+  publisher: review

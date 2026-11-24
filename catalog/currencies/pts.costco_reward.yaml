@@ -1,0 +1,19 @@
+id: pts:costco_reward
+name: Costco annual reward (Citi)
+kind: cashback
+issuer: Citi
+url: https://www.citi.com/credit-cards/credit-card-rewards/how-to-redeem-costco-credit-card-rewards
+cents_per_point: "1.0"
+expiry: Paid once a year as a certificate with the February statement; it expires December 31 of the year issued.
+paths:
+  - id: certificate
+    kind: cash
+    rate: "1.0"
+    notes: Annual reward certificate redeemed for cash or merchandise in person at a US Costco warehouse; requires an active Costco membership; not usable online or as a card credit.
+sources:
+  - url: https://www.citi.com/credit-cards/credit-card-rewards/how-to-redeem-costco-credit-card-rewards
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://www.citi.com/usc/lpaca/costco/cards/consumer/legal/index.html
+    retrieved_at: "2026-11-13"
+    publisher: issuer

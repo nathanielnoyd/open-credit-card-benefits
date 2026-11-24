@@ -1,0 +1,24 @@
+id: us.bilt.obsidian/rental-cdw
+card_id: us.bilt.obsidian
+kind: protection
+name: MasterRental coverage
+versions:
+- version: 1
+  change_type: added
+  release: us.bilt.obsidian@2026-02-07
+  summary: "Secondary collision damage coverage on car rentals of 31 days or less when you pay for the rental with the card."
+  grants:
+  - entitlement: protection:rental_cdw
+  coverage:
+    priority: secondary
+    max_days: 31
+  conditions:
+  - type: paid_with_card
+  notes: Secondary; primary outside the US when no other insurance applies. Rentals of 31 days or less.
+  sources:
+  - url: https://www.bilt.com/terms/obsidian-card-guide-to-benefits
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  face_value: null
+  beneficiaries:
+  - primary

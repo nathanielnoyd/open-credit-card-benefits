@@ -1,0 +1,26 @@
+id: us.amex.delta-platinum/delta-stays
+card_id: us.amex.delta-platinum
+kind: statement_credit
+name: Delta Stays credit
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-platinum@2025-02-01
+  summary: "Up to $150 back each calendar year on prepaid hotels or vacation rentals booked through Delta Stays on delta.com."
+  face_value:
+    amount: 15000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 15000
+  grants:
+  - entitlement: credit:delta_stays
+  conditions:
+  - type: merchant_in
+    merchants:
+    - delta_stays
+  beneficiaries:
+  - primary
+  notes: Prepaid hotels or vacation rentals booked through Delta Stays on delta.com.

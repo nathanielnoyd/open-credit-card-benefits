@@ -1,0 +1,32 @@
+id: us.citi.aadvantage-executive/trip-cancel
+card_id: us.citi.aadvantage-executive
+kind: protection
+name: Trip cancellation and interruption
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-executive@2023-07-23
+  summary: "Reimburses up to $5,000 per trip, secondary to other coverage, when a covered reason cancels or interrupts a trip whose fare is paid with the card."
+  coverage:
+    per_trip:
+      amount: 500000
+      currency: USD
+    priority: secondary
+  grants:
+  - entitlement: protection:trip_cancellation
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Up to $5,000 per trip when the common-carrier fare is paid with the card or AAdvantage miles; secondary to other coverage.
+  sources:
+  - url: https://www.nerdwallet.com/travel/learn/the-guide-to-citi-credit-card-travel-insurance
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.squaremouth.com/travel-advice/citi-travel-insurance
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.citi.com/credit-cards/citi-aadvantage-executive-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  confidence: '0.6'

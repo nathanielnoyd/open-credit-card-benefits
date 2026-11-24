@@ -1,0 +1,19 @@
+id: us.cnb.crystal-visa-infinite/luxury-hotel-collection
+card_id: us.cnb.crystal-visa-infinite
+kind: program_access
+name: Visa Infinite Luxury Hotel Collection
+versions:
+- version: 1
+  change_type: added
+  release: us.cnb.crystal-visa-infinite@2020-01-01
+  summary: "Room upgrades when available, breakfast, late checkout and other perks at Visa Infinite Luxury Hotel Collection properties booked through the collection."
+  grants:
+  - entitlement: program:visa_infinite_lhc
+  conditions:
+  - type: booking_channel
+    channel: visa_luxury_hotel_collection
+  notes: Property-level perks at participating hotels booked through the Visa collection site or Visa concierge.
+  machine_readable: false
+  beneficiaries:
+  - primary
+  - authorized_user

@@ -1,0 +1,25 @@
+id: us.chase.united-quest/rental-cdw
+card_id: us.chase.united-quest
+kind: protection
+name: Auto rental collision damage waiver
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-quest@2024-01-01
+  summary: "Primary coverage up to $60,000 for theft or collision damage to a rental car paid with the card when you decline the rental company's CDW."
+  coverage:
+    priority: primary
+    per_claim:
+      amount: 6000000
+      currency: USD
+  grants:
+  - entitlement: protection:rental_cdw
+    attributes:
+      priority: primary
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Primary coverage up to $60,000 for theft and collision damage on vehicles with MSRP of $125,000 or less, when the
+    rental company's CDW is declined. Secondary for New York residents.

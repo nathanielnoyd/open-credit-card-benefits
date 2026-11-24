@@ -1,0 +1,19 @@
+id: us.citi.prestige/priority-pass
+card_id: us.citi.prestige
+kind: membership
+name: Priority Pass Select
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.prestige@2025-07-09
+  summary: "Priority Pass Select membership for you and authorized users once enrolled, with free entry for 2 guests, including Priority Pass restaurants."
+  grants:
+  - entitlement: membership:priority_pass
+    attributes: { guests: 2, restaurants: true }
+  conditions:
+  - type: enrollment_required
+  beneficiaries: [primary, authorized_user]
+  notes: >-
+    Covers the cardholder, immediate family and up to two guests; authorized users get their own membership. Reviews say
+    restaurant and other non-lounge experiences are included.
+  confidence: "0.7"

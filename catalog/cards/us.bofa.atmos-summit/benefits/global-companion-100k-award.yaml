@@ -1,0 +1,24 @@
+id: us.bofa.atmos-summit/global-companion-100k-award
+card_id: us.bofa.atmos-summit
+kind: certificate
+name: 100K Global Companion Award
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-summit@2026-11-14
+  summary: "A Global Companion Award that covers a companion's award ticket of up to 100,000 points on the same itinerary as your award booking, issued by the anniversary-year spend milestone."
+  face_value: null
+  issued_on: milestone
+  companions: 1
+  cap:
+    currency: pts:atmos_rewards
+    points: 100000
+  unlocked_only: true
+  grants:
+  - entitlement: certificate:us.bofa.atmos-summit.global-companion-100k-award
+  beneficiaries:
+  - primary
+  - companion
+  machine_readable: false
+  confidence: "0.7"
+  notes: Issued by the 100K milestone. Covers the points for a companion on the same award itinerary, up to 100,000 points; taxes and fees apply. Validity is not confirmed.

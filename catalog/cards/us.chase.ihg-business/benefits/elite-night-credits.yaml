@@ -1,0 +1,25 @@
+id: us.chase.ihg-business/elite-night-credits
+card_id: us.chase.ihg-business
+kind: anniversary
+name: 15 Elite Night Credits each year
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-business@2026-10-01
+  summary: "15 IHG Elite Night Credits toward status each calendar year while you hold the card."
+  reward:
+    currency: pts:ihg_qn
+    points: 15
+  issued_on: calendar_year
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: status_credit:ihg
+    attributes:
+      nights: 15
+  beneficiaries:
+  - primary
+  notes: Deposited by February 1 each year per the product page. Whether the card already had this before the refresh is unclear
+    (one review says retained); modeled as new, matching the personal card.
+  confidence: '0.7'

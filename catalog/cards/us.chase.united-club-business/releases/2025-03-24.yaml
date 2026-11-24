@@ -1,0 +1,58 @@
+id: us.chase.united-club-business@2025-03-24
+card_id: us.chase.united-club-business
+kind: refresh
+announced_on: '2025-03-24'
+transition:
+- applies_to:
+  - fee:annual
+  next_renewal_on_or_after: '2025-08-01'
+effective_for_new: '2025-03-24'
+notes: The fee rose to $695, applying to existing cardmembers from their first renewal on or after August 1, 2025. The standard
+  membership dropped to one adult guest and children under 18 and lost Star Alliance lounges, which now come with All Access;
+  Dan's Deals reports the membership change reached existing cardmembers at their next renewal on or after August 1, which is
+  not modeled. The spend PQP cap rose from 15,000 to 28,000. New credits took effect for new and existing cardmembers.
+changes:
+- target: fee:annual
+  to:
+    amount: 69500
+    currency: USD
+- target: earn_rule:us.chase.united-club-business/renowned-hotels-5x
+  version: 1
+- target: earn_rule:us.chase.united-club-business/pqp
+  version: 2
+- target: benefit:us.chase.united-club-business/club-membership
+  version: 2
+- target: benefit:us.chase.united-club-business/all-access
+  version: 1
+- target: benefit:us.chase.united-club-business/club-passes
+  version: 1
+- target: benefit:us.chase.united-club-business/economy-plus-milestone
+  version: 1
+- target: benefit:us.chase.united-club-business/anniversary-miles
+  version: 1
+- target: benefit:us.chase.united-club-business/farelock
+  version: 1
+- target: benefit:us.chase.united-club-business/renowned-hotels
+  version: 1
+- target: benefit:us.chase.united-club-business/rideshare
+  version: 1
+- target: benefit:us.chase.united-club-business/avis-budget
+  version: 1
+- target: benefit:us.chase.united-club-business/jsx
+  version: 1
+- target: benefit:us.chase.united-club-business/instacart
+  version: 1
+- target: benefit:us.chase.united-club-business/instacart-plus
+  version: 1
+- target: benefit:us.chase.united-club-business/dashpass
+  version: 1
+sources:
+- url: https://upgradedpoints.com/news/united-airlines-business-credit-card-changes-2025/
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://frequentmiler.com/?p=262194
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://www.dansdeals.com/credit-cards/wow-united-massively-overhauls-credit-card-program-and-lounge-access-the-good-the-bad-and-the-ugly
+  retrieved_at: '2026-11-14'
+  publisher: review

@@ -1,0 +1,242 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nathanielnoyd.github.io/open-credit-card-benefits/schema/0.3/earn-rules.schema.json",
+  "title": "OCCB earn rules for one card",
+  "type": "object",
+  "required": [
+    "card_id",
+    "rules"
+  ],
+  "properties": {
+    "card_id": {
+      "$ref": "common.schema.json#/$defs/card_id"
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "categories",
+          "versions"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "common.schema.json#/$defs/benefit_id"
+          },
+          "categories": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "common.schema.json#/$defs/category_id"
+            }
+          },
+          "versions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "version",
+                "release"
+              ],
+              "properties": {
+                "version": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "release": {
+                  "$ref": "common.schema.json#/$defs/release_id"
+                },
+                "multiplier": {
+                  "$ref": "common.schema.json#/$defs/decimal",
+                  "description": "Points per dollar; for cashback currencies, percent back"
+                },
+                "cap": {
+                  "$ref": "common.schema.json#/$defs/money"
+                },
+                "cap_period": {
+                  "enum": [
+                    "calendar_year",
+                    "cardmember_year",
+                    "quarter",
+                    "month",
+                    "statement"
+                  ]
+                },
+                "channel": {
+                  "type": "string"
+                },
+                "effective_to": {
+                  "$ref": "common.schema.json#/$defs/date"
+                },
+                "notes": {
+                  "type": "string"
+                },
+                "boost": {
+                  "$ref": "common.schema.json#/$defs/decimal",
+                  "description": "Instead of a multiplier: a fraction added to every other rule's earn on this card, such as \"0.75\" for a 75% relationship bonus"
+                },
+                "currency": {
+                  "$ref": "common.schema.json#/$defs/currency_id",
+                  "description": "Earns this currency instead of the card's, such as status-qualifying dollars"
+                },
+                "conditions": {
+                  "$ref": "common.schema.json#/$defs/conditions"
+                },
+                "schedule": {
+                  "type": "array",
+                  "description": "rotating: categories by date range",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "from",
+                      "to",
+                      "categories"
+                    ],
+                    "properties": {
+                      "from": {
+                        "$ref": "common.schema.json#/$defs/date"
+                      },
+                      "to": {
+                        "$ref": "common.schema.json#/$defs/date"
+                      },
+                      "categories": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                          "$ref": "common.schema.json#/$defs/category_id"
+                        }
+                      },
+                      "notes": {
+                        "type": "string"
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                },
+                "effective_from": {
+                  "$ref": "common.schema.json#/$defs/date"
+                },
+                "sources": {
+                  "$ref": "common.schema.json#/$defs/sources"
+                },
+                "confidence": {
+                  "$ref": "common.schema.json#/$defs/confidence"
+                },
+                "verified_by": {
+                  "type": "string"
+                },
+                "cap_group": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9_-]+$",
+                  "description": "Rules on one card with the same cap_group share one cap; give the same cap on each"
+                },
+                "stacks": {
+                  "type": "boolean",
+                  "description": "true: adds to the best non-stacking rule instead of competing with it, such as an extra 1% at one merchant"
+                }
+              },
+              "additionalProperties": false,
+              "oneOf": [
+                {
+                  "required": [
+                    "multiplier"
+                  ]
+                },
+                {
+                  "required": [
+                    "boost"
+                  ]
+                }
+              ]
+            }
+          },
+          "choice": {
+            "description": "The rule applies to only some of its categories at a time.",
+            "type": "object",
+            "required": [
+              "mode"
+            ],
+            "properties": {
+              "mode": {
+                "enum": [
+                  "holder_selects",
+                  "top_spend",
+                  "rotating"
+                ],
+                "description": "holder_selects: the holder picks (selection named by `selection`); top_spend: the issuer applies it to the eligible category with the most spend each period; rotating: the issuer's calendar in `schedule`"
+              },
+              "pick": {
+                "type": "integer",
+                "minimum": 1,
+                "description": "How many categories apply at once"
+              },
+              "selection": {
+                "type": "string",
+                "description": "holder_selects: name of the wallet-card selection that stores the choice"
+              },
+              "period": {
+                "enum": [
+                  "statement",
+                  "month",
+                  "quarter",
+                  "calendar_year"
+                ]
+              },
+              "changeable": {
+                "type": "string"
+              },
+              "groups": {
+                "type": "array",
+                "minItems": 2,
+                "description": "Options that each cover several categories, such as \"transit\". `pick` counts groups, a holder_selects selection stores group ids, and top_spend ranks groups by their combined spend. Every category in a group must also be in the rule's categories.",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "categories"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9_]+$"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "categories": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "$ref": "common.schema.json#/$defs/category_id"
+                      }
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          },
+          "name": {
+            "type": "string"
+          },
+          "exclude_categories": {
+            "type": "array",
+            "items": {
+              "$ref": "common.schema.json#/$defs/category_id"
+            },
+            "description": "Spend in these categories (and below) never earns on this rule"
+          },
+          "based_on": {
+            "type": "string",
+            "description": "On a variant's inherited earn rule: the base card's earn rule it was expanded from. Set by loading, not authored."
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

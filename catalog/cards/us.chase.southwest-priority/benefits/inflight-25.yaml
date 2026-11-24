@@ -1,0 +1,22 @@
+id: us.chase.southwest-priority/inflight-25
+card_id: us.chase.southwest-priority
+kind: statement_credit
+name: 25% back on Southwest inflight purchases
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.southwest-priority@2024-01-01
+  summary: "25% back as a statement credit on Southwest inflight drinks and Wi-Fi paid with the card."
+  face_value: null
+  percent_back: '0.25'
+  grants:
+  - entitlement: discount:inflight_southwest
+  conditions:
+  - type: paid_with_card
+  - type: merchant_in
+    merchants:
+    - southwest_inflight
+    note: Inflight drinks and Wi-Fi
+  beneficiaries:
+  - primary
+  - authorized_user

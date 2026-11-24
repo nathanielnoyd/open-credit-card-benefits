@@ -1,0 +1,111 @@
+card_id: us.bofa.premium-rewards-elite
+rules:
+- id: us.bofa.premium-rewards-elite/travel-dining-2x
+  name: 2 points on travel and dining
+  categories:
+  - cat:travel
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.bofa.premium-rewards-elite@2026-11-14
+    multiplier: "2"
+- id: us.bofa.premium-rewards-elite/base-1-5x
+  name: 1.5 points on everything else
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.bofa.premium-rewards-elite@2026-11-14
+    multiplier: "1.5"
+- id: us.bofa.premium-rewards-elite/rewards-boost-10
+  name: BofA Rewards Member bonus (10%)
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.bofa.premium-rewards-elite@2026-11-14
+    boost: "0.10"
+    conditions:
+    - type: selection_is
+      name: preferred_rewards_tier
+      value: member
+    notes: 'BofA Rewards Member tier: a Bank of America checking account, no minimum balance.'
+    sources:
+    - url: https://upgradedpoints.com/credit-cards/reviews/bank-of-america-premium-rewards-elite-credit-card/
+      retrieved_at: "2026-11-14"
+      publisher: review
+    - url: https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/
+      retrieved_at: "2026-11-13"
+      publisher: review
+    - url: https://upgradedpoints.com/news/bofa-rewards-program-launch
+      retrieved_at: "2026-11-13"
+      publisher: review
+- id: us.bofa.premium-rewards-elite/rewards-boost-25
+  name: Relationship bonus (25%)
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.bofa.premium-rewards-elite@2026-11-14
+    boost: "0.25"
+    conditions:
+    - type: selection_is
+      name: preferred_rewards_tier
+      value: preferred_plus
+    notes: 'BofA Rewards Preferred Plus: $30,000 to $99,999 three-month average combined balance.'
+    sources:
+    - url: https://upgradedpoints.com/credit-cards/reviews/bank-of-america-premium-rewards-elite-credit-card/
+      retrieved_at: "2026-11-14"
+      publisher: review
+    - url: https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/
+      retrieved_at: "2026-11-13"
+      publisher: review
+    - url: https://upgradedpoints.com/news/bofa-rewards-program-launch
+      retrieved_at: "2026-11-13"
+      publisher: review
+- id: us.bofa.premium-rewards-elite/rewards-boost-50
+  name: Relationship bonus (50%)
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.bofa.premium-rewards-elite@2026-11-14
+    boost: "0.50"
+    conditions:
+    - type: selection_is
+      name: preferred_rewards_tier
+      value: preferred_honors
+    notes: 'BofA Rewards Preferred Honors: $100,000 to $999,999.'
+    sources:
+    - url: https://upgradedpoints.com/credit-cards/reviews/bank-of-america-premium-rewards-elite-credit-card/
+      retrieved_at: "2026-11-14"
+      publisher: review
+    - url: https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/
+      retrieved_at: "2026-11-13"
+      publisher: review
+    - url: https://upgradedpoints.com/news/bofa-rewards-program-launch
+      retrieved_at: "2026-11-13"
+      publisher: review
+- id: us.bofa.premium-rewards-elite/rewards-boost-75
+  name: Relationship bonus (75%)
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.bofa.premium-rewards-elite@2026-11-14
+    boost: "0.75"
+    conditions:
+    - type: selection_is
+      name: preferred_rewards_tier
+      value: premier
+    notes: 'BofA Rewards Premier: $1,000,000+.'
+    sources:
+    - url: https://upgradedpoints.com/credit-cards/reviews/bank-of-america-premium-rewards-elite-credit-card/
+      retrieved_at: "2026-11-14"
+      publisher: review
+    - url: https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/
+      retrieved_at: "2026-11-13"
+      publisher: review
+    - url: https://upgradedpoints.com/news/bofa-rewards-program-launch
+      retrieved_at: "2026-11-13"
+      publisher: review

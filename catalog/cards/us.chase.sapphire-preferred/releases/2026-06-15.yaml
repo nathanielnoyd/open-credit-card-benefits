@@ -1,0 +1,31 @@
+id: us.chase.sapphire-preferred@2026-06-15
+card_id: us.chase.sapphire-preferred
+kind: refresh
+first_seen_on: '2026-06-15'
+effective_for_new: '2026-06-15'
+notes: New benefits reached existing holders immediately; the two reductions reached them on October 1, 2026.
+changes:
+- target: earn_rule:us.chase.sapphire-preferred/gas-ev-3x
+  version: 1
+- target: earn_rule:us.chase.sapphire-preferred/vacation-rentals-3x
+  version: 1
+- target: benefit:us.chase.sapphire-preferred/hotel-credit
+  version: 2
+- target: benefit:us.chase.sapphire-preferred/anniversary-bonus
+  change_type: retired
+- target: benefit:us.chase.sapphire-preferred/trusted-traveler
+  version: 1
+- target: benefit:us.chase.sapphire-preferred/apple-tv
+  version: 1
+- target: benefit:us.chase.sapphire-preferred/evacuation
+  version: 1
+transition:
+- applies_to:
+  - benefit:us.chase.sapphire-preferred/anniversary-bonus
+  - paths
+  'on': '2026-10-01'
+sources:
+- url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-preferred/
+  retrieved_at: '2026-11-12'
+- url: https://eyeoftheflyer.com/chase-sapphire-pref-visa
+  retrieved_at: '2026-11-12'

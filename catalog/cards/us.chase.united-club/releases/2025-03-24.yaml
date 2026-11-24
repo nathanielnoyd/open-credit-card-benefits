@@ -1,0 +1,53 @@
+id: us.chase.united-club@2025-03-24
+card_id: us.chase.united-club
+kind: refresh
+announced_on: '2025-03-24'
+transition:
+- applies_to:
+  - fee:annual
+  next_renewal_on_or_after: '2025-08-01'
+effective_for_new: '2025-03-24'
+notes: The card was renamed from United Club Infinite to United Club Card. The fee rose from $525 to $695, applying to existing
+  cardmembers from their first renewal on or after August 1, 2025. The standard membership dropped to one adult guest and children
+  under 18 and lost Star Alliance lounges, which now come with All Access; the date the membership change reached existing
+  cardmembers is not modeled. New credits took effect for new and existing cardmembers.
+changes:
+- target: fee:annual
+  to:
+    amount: 69500
+    currency: USD
+- target: earn_rule:us.chase.united-club/renowned-hotels-5x
+  version: 1
+- target: earn_rule:us.chase.united-club/pqp
+  version: 2
+- target: benefit:us.chase.united-club/club-membership
+  version: 2
+- target: benefit:us.chase.united-club/all-access
+  version: 1
+- target: benefit:us.chase.united-club/club-passes
+  version: 1
+- target: benefit:us.chase.united-club/renowned-hotels
+  version: 1
+- target: benefit:us.chase.united-club/rideshare
+  version: 1
+- target: benefit:us.chase.united-club/avis-budget
+  version: 1
+- target: benefit:us.chase.united-club/jsx
+  version: 1
+- target: benefit:us.chase.united-club/instacart
+  version: 1
+- target: benefit:us.chase.united-club/instacart-plus
+  version: 1
+- target: benefit:us.chase.united-club/award-discount-milestone
+  version: 1
+- target: benefit:us.chase.united-club/award-discount-milestone-2
+  version: 1
+- target: benefit:us.chase.united-club/pqp-bonus
+  version: 1
+sources:
+- url: https://thepointsguy.com/news/united-credit-card-refresh-2025
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://upgradedpoints.com/news/united-airlines-personal-credit-card-changes-2025/
+  retrieved_at: '2026-11-14'
+  publisher: review

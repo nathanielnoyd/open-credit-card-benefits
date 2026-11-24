@@ -1,0 +1,56 @@
+id: us.chase.world-of-hyatt@2024-01-01
+card_id: us.chase.world-of-hyatt
+kind: baseline
+notes: Terms unchanged in 2025-2026 per the issuer page; recorded as of a known date, earlier history not modeled. Authorized
+  user fee of $0 is assumed from Chase practice; authorized users get no free nights, status or tier credits.
+effective_for_new: '2024-01-01'
+changes:
+- target: fee:annual
+  to:
+    amount: 9500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+  notes: Not stated on the product page.
+- target: earn_rule:us.chase.world-of-hyatt/hyatt-4x
+  version: 1
+- target: earn_rule:us.chase.world-of-hyatt/dining-2x
+  version: 1
+- target: earn_rule:us.chase.world-of-hyatt/airfare-2x
+  version: 1
+- target: earn_rule:us.chase.world-of-hyatt/transit-2x
+  version: 1
+- target: earn_rule:us.chase.world-of-hyatt/fitness-2x
+  version: 1
+- target: earn_rule:us.chase.world-of-hyatt/base-1x
+  version: 1
+- target: earn_rule:us.chase.world-of-hyatt/tier-credits-spend
+  version: 1
+- target: benefit:us.chase.world-of-hyatt/anniversary-free-night
+  version: 1
+- target: benefit:us.chase.world-of-hyatt/milestone-free-night
+  version: 1
+- target: benefit:us.chase.world-of-hyatt/milestone-15k
+  version: 1
+- target: benefit:us.chase.world-of-hyatt/tier-credits
+  version: 1
+- target: benefit:us.chase.world-of-hyatt/discoverist
+  version: 1
+- target: benefit:us.chase.world-of-hyatt/baggage-delay
+  version: 1
+- target: benefit:us.chase.world-of-hyatt/lost-luggage
+  version: 1
+- target: benefit:us.chase.world-of-hyatt/trip-cancel
+  version: 1
+- target: benefit:us.chase.world-of-hyatt/purchase-protection
+  version: 1
+- target: benefit:us.chase.world-of-hyatt/rental-cdw
+  version: 1
+- target: benefit:us.chase.world-of-hyatt/no-fx
+  version: 1
+sources:
+- url: https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card
+  retrieved_at: '2026-11-13'
+  publisher: issuer

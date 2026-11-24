@@ -1,0 +1,39 @@
+id: us.usbank.altitude-reserve
+issuer_id: us.usbank
+name: U.S. Bank Altitude Reserve Visa Infinite Card
+summary: "A $400-a-year U.S. Bank card, closed to applicants since November 2024, earning 10x on hotels and cars and 5x on flights in the U.S. Bank Travel Center, 3x on travel and capped mobile wallet spending, with a $325 Travel Center credit and 8 Priority Pass visits a year."
+network: visa
+segment: personal
+tier: premium
+family: usbank-altitude
+earns: pts:usbank_altitude
+open_to_applicants: false
+closed_to_applicants_on: "2024-11-11"
+aliases:
+- Altitude Reserve
+- U.S. Bank Altitude Reserve
+- USBAR
+fee_posting:
+  anchor: account_open
+notes: >-
+  U.S. Bank stopped taking applications on November 11, 2024; existing cardholders keep and renew the card, and some
+  holders of other Altitude cards report product changing into it. Authorized user cards have been free since early
+  2021. Points transfer to airline and hotel programs from August 11, 2026 (see the pts:usbank_altitude currency).
+  The issuer's product page no longer exists, so terms come from review sites.
+provenance:
+  sources:
+  - url: https://frequentmiler.com/us-bank-altitude-reserve-no-longer-accepting-new-applications/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://upgradedpoints.com/news/us-bank-altitude-reserve-card-discontinued/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://awardwallet.com/credit-cards/us-bank-altitude-reserve-card/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://thepointsguy.com/credit-cards/reviews/it-pays-to-go-mobile-u-s-bank-altitude-reserve-visa-infinite-card-review/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.75"
+  last_reviewed: "2026-11-14"

@@ -1,0 +1,19 @@
+id: us.capitalone.venture-x-business/trusted-traveler
+card_id: us.capitalone.venture-x-business
+kind: statement_credit
+name: Global Entry or TSA PreCheck credit
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x-business@2025-11-01
+  summary: "Up to $120 back on a Global Entry or TSA PreCheck application fee, once every 4 years."
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: every_n_years
+    n: 4
+  grants:
+  - entitlement: credit:trusted_traveler
+  beneficiaries:
+  - primary

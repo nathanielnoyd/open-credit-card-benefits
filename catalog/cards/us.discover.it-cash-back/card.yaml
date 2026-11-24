@@ -1,0 +1,32 @@
+id: us.discover.it-cash-back
+issuer_id: us.discover
+name: Discover it Cash Back
+summary: "A $0-annual-fee Discover card earning 5% cash back on quarterly rotating categories you activate (first $1,500 a quarter) and 1% elsewhere."
+network: discover
+segment: personal
+tier: no_fee
+family: discover-it
+earns: pts:discover_cashback
+open_to_applicants: true
+url: https://www.discover.com/credit-cards/cash-back/it-card.html
+aliases:
+- Discover it
+- Discover it Cash Back Card
+fee_posting:
+  anchor: account_open
+notes: Discover is now part of Capital One. A September 2026 report says this card will move to a different payment network in the coming months
+  without naming it; not modeled until confirmed.
+provenance:
+  sources:
+  - url: https://www.discover.com/credit-cards/cash-back/it-card.html
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://www.discover.com/credit-cards/cashback-bonus/cashback-calendar.html
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://awardwallet.com/news/cash-back/discover-cashback-calendar/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.85"
+  last_reviewed: "2026-11-13"

@@ -1,0 +1,27 @@
+id: us.bilt.obsidian
+issuer_id: us.bilt
+name: Bilt Obsidian Card
+summary: "A $95-a-year Mastercard earning 3x on dining or groceries (your choice; groceries up to $25,000 a year), 2x on travel and points on rent paid through Bilt with no fee, with a $100 yearly Bilt Travel hotel credit."
+network: mastercard
+segment: personal
+tier: mid
+family: bilt
+earns: pts:bilt
+open_to_applicants: true
+url: https://www.bilt.com/card/obsidian
+aliases:
+- Bilt Obsidian
+- Bilt Card 2.0 Obsidian
+fee_posting:
+  anchor: account_open
+notes: Issued by Column N.A. and serviced by Cardless; launched 2026-02-07 to replace the Wells Fargo-issued Bilt Mastercard.
+provenance:
+  sources:
+  - url: https://www.bilt.com/card/obsidian
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://www.bilt.com/terms/bilt-card-offer-terms
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  verified_by: agent:occb-research
+  confidence: '0.8'

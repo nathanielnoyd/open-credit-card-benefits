@@ -1,0 +1,21 @@
+id: us.amex.delta-reserve/award-discount
+card_id: us.amex.delta-reserve
+kind: redemption_modifier
+name: 'TakeOff 15: 15% off Delta award flights'
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-reserve@2025-02-01
+  summary: "15% fewer miles on Delta-operated award flights booked on delta.com or the Fly Delta app; partner flights and taxes and fees are not discounted."
+  percent_rebate: '0.15'
+  grants:
+  - entitlement: program:reduced_award_pricing_delta
+  conditions:
+  - type: booking_channel
+    channel: delta_com_or_fly_delta_app
+  beneficiaries:
+  - primary
+  notes: 15% fewer miles on award flights operated by Delta booked on delta.com or the Fly Delta app. Excludes partner-operated
+    flights and taxes/fees. It is an upfront discount, approximated as percent_rebate; no applies_to_path because the Delta
+    SkyMiles currency has no redemption paths yet.
+  machine_readable: false

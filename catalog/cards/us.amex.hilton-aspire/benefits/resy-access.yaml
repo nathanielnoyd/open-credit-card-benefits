@@ -1,0 +1,17 @@
+id: us.amex.hilton-aspire/resy-access
+card_id: us.amex.hilton-aspire
+kind: program_access
+name: Global Dining Access by Resy
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.hilton-aspire@2024-02-01
+  summary: "Access to Amex dining reservation benefits on Resy once you add the card to your Resy profile."
+  face_value: null
+  conditions:
+  - type: enrollment_required
+    note: Add the card to a Resy profile
+  beneficiaries:
+  - primary
+  grants:
+  - entitlement: program:dining_reservations

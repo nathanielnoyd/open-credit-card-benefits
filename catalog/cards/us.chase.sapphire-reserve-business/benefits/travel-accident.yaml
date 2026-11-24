@@ -1,0 +1,28 @@
+id: us.chase.sapphire-reserve-business/travel-accident
+card_id: us.chase.sapphire-reserve-business
+kind: protection
+name: Travel accident insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: Up to $1,000,000 in accidental death and dismemberment coverage when you travel on a common carrier paid with the card.
+  coverage:
+    per_person:
+      amount: 100000000
+      currency: USD
+  grants:
+  - entitlement: protection:travel_accident
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://hellosafe.com/credit-card-insurance/united-states/chase/sapphire-reserve-business
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://creditcards.chase.com/business-credit-cards/sapphire/reserve
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  confidence: '0.6'
+  notes: One source also cites $100,000 of 24-hour coverage while traveling.

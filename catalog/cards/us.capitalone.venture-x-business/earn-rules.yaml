@@ -1,0 +1,27 @@
+card_id: us.capitalone.venture-x-business
+rules:
+- id: us.capitalone.venture-x-business/c1-travel-hotels-cars-10x
+  categories:
+  - cat:travel.portal.capitalone.hotels
+  - cat:travel.portal.capitalone.cars
+  versions:
+  - version: 1
+    release: us.capitalone.venture-x-business@2025-11-01
+    multiplier: '10'
+    notes: Booked through Capital One Business Travel.
+- id: us.capitalone.venture-x-business/c1-travel-flights-5x
+  categories:
+  - cat:travel.portal.capitalone.flights
+  - cat:travel.portal.capitalone.vacation_rentals
+  versions:
+  - version: 1
+    release: us.capitalone.venture-x-business@2025-11-01
+    multiplier: '5'
+    notes: Flights and vacation rentals booked through Capital One Business Travel.
+- id: us.capitalone.venture-x-business/base-2x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.capitalone.venture-x-business@2025-11-01
+    multiplier: '2'

@@ -1,0 +1,32 @@
+id: us.chase.sapphire-reserve/sapphire-lounges
+card_id: us.chase.sapphire-reserve
+kind: access
+name: Chase Sapphire Lounges
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-reserve@2024-01-01
+    summary: "Unlimited visits with 2 guests to Chase Sapphire Lounges through the Priority Pass membership issued with the card."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: lounge_network:chase_sapphire
+        combine: any
+        attributes:
+          guests: 2
+          visits: null
+    conditions: []
+    beneficiaries:
+      - primary
+      - authorized_user
+    notes: Unlimited visits through the Priority Pass issued with this card.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

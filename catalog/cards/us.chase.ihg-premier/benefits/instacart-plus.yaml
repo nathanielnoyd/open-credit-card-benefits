@@ -1,0 +1,20 @@
+id: us.chase.ihg-premier/instacart-plus
+card_id: us.chase.ihg-premier
+kind: membership
+name: Instacart+ for three months
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier@2026-10-01
+  summary: "Three months of Instacart+ at no cost when you activate by December 31, 2027; it then renews at the member price."
+  enroll_by: '2027-12-31'
+  period:
+    cadence: once
+  grants:
+  - entitlement: membership:instacart_plus
+  conditions:
+  - type: enrollment_required
+  beneficiaries:
+  - primary
+  confidence: '0.7'
+  notes: Three complimentary months, then auto-renews at the member price.

@@ -1,0 +1,24 @@
+id: us.usbank.altitude-reserve/purchase-protection
+card_id: us.usbank.altitude-reserve
+kind: protection
+name: Purchase security
+versions:
+- version: 1
+  change_type: added
+  release: us.usbank.altitude-reserve@2024-11-11
+  summary: "Purchase security against theft or damage of new items bought with the card; limits are not confirmed."
+  grants:
+  - entitlement: protection:purchase
+  conditions:
+  - type: paid_with_card
+  notes: Listed as a card benefit by reviews; window and limits were not confirmed.
+  sources:
+  - url: https://awardwallet.com/credit-cards/us-bank-altitude-reserve-card/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://thepointsguy.com/credit-cards/reviews/it-pays-to-go-mobile-u-s-bank-altitude-reserve-visa-infinite-card-review/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  confidence: "0.6"
+  beneficiaries:
+  - primary

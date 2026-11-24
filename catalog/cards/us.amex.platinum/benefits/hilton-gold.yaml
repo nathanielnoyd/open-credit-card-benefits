@@ -1,0 +1,31 @@
+id: us.amex.platinum/hilton-gold
+card_id: us.amex.platinum
+kind: status
+name: Hilton Honors Gold
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2024-01-01
+    summary: "Gold status with Hilton Honors after you enroll."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: status:hilton
+        combine: max
+        attributes:
+          tier: gold
+    conditions:
+      - type: enrollment_required
+    beneficiaries:
+      - primary
+      - authorized_user
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

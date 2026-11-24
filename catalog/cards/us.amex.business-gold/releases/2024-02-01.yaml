@@ -1,0 +1,52 @@
+id: us.amex.business-gold@2024-02-01
+card_id: us.amex.business-gold
+kind: baseline
+effective_for_new: "2024-02-01"
+notes: Terms after the February 1, 2024 refresh (fee $295 to $375, new 4x categories, flexible business and Walmart+ credits, cell phone protection, 25% Pay with Points rebate removed). Earlier history is not modeled.
+changes:
+  - target: fee:annual
+    to:
+      amount: 37500
+      currency: USD
+  - target: fee:authorized_user
+    to:
+      amount: 9500
+      currency: USD
+    notes: Employee Business Gold Card; Employee Business Expense Cards are free.
+  - target: earn_rule:us.amex.business-gold/top-two-4x
+    version: 1
+  - target: earn_rule:us.amex.business-gold/amex-travel-3x
+    version: 1
+  - target: earn_rule:us.amex.business-gold/base-1x
+    version: 1
+  - target: benefit:us.amex.business-gold/flexible-credit
+    version: 1
+  - target: benefit:us.amex.business-gold/walmart-plus
+    version: 1
+  - target: benefit:us.amex.business-gold/thc
+    version: 1
+  - target: benefit:us.amex.business-gold/no-fx
+    version: 1
+  - target: benefit:us.amex.business-gold/rental-coverage
+    version: 1
+  - target: benefit:us.amex.business-gold/trip-delay
+    version: 1
+  - target: benefit:us.amex.business-gold/baggage
+    version: 1
+  - target: benefit:us.amex.business-gold/purchase-protection
+    version: 1
+  - target: benefit:us.amex.business-gold/extended-warranty
+    version: 1
+  - target: benefit:us.amex.business-gold/cell-phone
+    version: 1
+sources:
+  - url: https://www.cnbc.com/select/amex-business-gold-changes/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://upgradedpoints.com/news/amex-business-platinum-pay-with-points-changes/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://frequentmiler.com/american-express-business-gold-credit-card-review/
+    retrieved_at: "2026-11-13"
+    publisher: review
+confidence: "0.8"

@@ -1,0 +1,22 @@
+id: us.chase.united-club/pqp-bonus
+card_id: us.chase.united-club
+kind: anniversary
+name: 1,500 annual bonus PQP
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club@2025-03-24
+  summary: "1,500 Premier qualifying points toward United status each calendar year from 2026, posted within 8 weeks of February 1, starting the year after account opening."
+  reward:
+    currency: pts:united_pqp
+    points: 1500
+  issued_on: calendar_year
+  effective_from: '2026-01-01'
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: status_credit:united
+  beneficiaries:
+  - primary
+  notes: 1,500 PQP posted within 8 weeks of February 1 each year from 2026, starting in the calendar year after account opening.

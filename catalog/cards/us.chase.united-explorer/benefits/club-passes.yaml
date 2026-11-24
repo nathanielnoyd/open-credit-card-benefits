@@ -1,0 +1,47 @@
+id: us.chase.united-explorer/club-passes
+card_id: us.chase.united-explorer
+kind: access
+name: Two United Club one-time passes
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-explorer@2024-01-01
+  summary: "Two United Club one-time passes each cardmember year, which you can give to anyone."
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    count: 2
+    unit:
+      unit: visit
+  grants:
+  - entitlement: lounge_network:united_club
+    attributes:
+      visits: 2
+  beneficiaries:
+  - primary
+  - guest
+  notes: Two one-time passes deposited after account opening and every 12 months. Passes could be given to anyone.
+  confidence: '0.75'
+- version: 2
+  supersedes: 1
+  change_type: terms_changed
+  release: us.chase.united-explorer@2025-03-24
+  summary: "Two United Club one-time passes each cardmember year; a guest using a pass must enter with you or an authorized user."
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    count: 2
+    unit:
+      unit: visit
+  grants:
+  - entitlement: lounge_network:united_club
+    attributes:
+      visits: 2
+  beneficiaries:
+  - primary
+  - authorized_user
+  - guest
+  notes: Two one-time passes deposited after account opening and every 12 months, subject to space. Since the refresh, a guest
+    using a pass must enter with the primary cardmember or an authorized user.

@@ -1,0 +1,24 @@
+id: us.chase.southwest-priority/extra-legroom
+card_id: us.chase.southwest-priority
+kind: access
+name: Extra Legroom upgrades within 48 hours
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.southwest-priority@2025-07-24
+  summary: "Free upgrades to Extra Legroom seats within 48 hours of departure, when available, for you and companions on your Southwest reservation, on flights from January 27, 2026."
+  effective_from: '2026-01-27'
+  grants:
+  - entitlement: upgrade_priority:southwest
+    attributes:
+      cabin: extra_legroom
+      window_hours: 48
+  conditions:
+  - type: same_day_flight
+    carrier:
+    - WN
+  beneficiaries:
+  - primary
+  - companion
+  notes: Unlimited complimentary upgrades to Extra Legroom seats within 48 hours of departure, when available, for the cardmember
+    and up to 8 others.

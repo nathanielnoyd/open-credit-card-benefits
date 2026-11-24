@@ -1,0 +1,66 @@
+card_id: us.citi.aadvantage-executive
+rules:
+- id: us.citi.aadvantage-executive/aa-4x
+  name: 4x on American Airlines purchases
+  categories:
+  - cat:travel.flights.direct.aa
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-executive@2023-07-23
+    multiplier: '4'
+- id: us.citi.aadvantage-executive/aa-5x-after-150k
+  name: Extra 1x on American after $150,000 a year
+  categories:
+  - cat:travel.flights.direct.aa
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-executive@2023-07-23
+    multiplier: '1'
+    stacks: true
+    conditions:
+    - type: spend_gte
+      amount: 15000000
+      currency: USD
+      period: calendar_year
+      note: Applies only to American purchases made after $150,000 of total card purchases in the calendar year
+    notes: 5x total on eligible American purchases for the rest of the calendar year once $150,000 has been spent on the card that year. The extra mile applies only to spend after the threshold, which spend_gte cannot express.
+- id: us.citi.aadvantage-executive/aadvantage-hotels-cars
+  name: AAdvantage Hotels and Cars
+  categories:
+  - cat:travel.portal.aadvantage
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-executive@2023-07-23
+    multiplier: '10'
+    notes: Eligible hotels booked at aa.com/hotels and cars at aa.com/cars.
+  - version: 2
+    release: us.citi.aadvantage-executive@2026-08-23
+    multiplier: '12'
+    notes: Eligible bookings through AAdvantage Hotels and AAdvantage Cars.
+    sources:
+    - url: https://worldairlinenews.com/2026/08/03/american-airlines-and-citi-elevate-premium-travel-with-enhanced-citi-aadvantage-executive-world-legend-mastercard/
+      retrieved_at: '2026-11-13'
+      publisher: press
+    - url: https://onemileatatime.com/reviews/credit-cards/citi/citi-aadvantage-executive-card/
+      retrieved_at: '2026-11-13'
+      publisher: review
+- id: us.citi.aadvantage-executive/base-1x
+  name: 1x on everything else
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-executive@2023-07-23
+    multiplier: '1'
+- id: us.citi.aadvantage-executive/loyalty-points
+  name: Loyalty Points on purchases
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-executive@2023-07-23
+    multiplier: '1'
+    stacks: true
+    currency: pts:aa_loyalty_points
+    notes: 1 Loyalty Point per eligible base mile earned from purchases. Reviews describe this as 1 per eligible dollar; whether bonus-category miles also count is not confirmed, so only the base rate is modeled.
+    confidence: '0.7'

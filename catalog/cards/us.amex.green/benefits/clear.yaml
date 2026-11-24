@@ -1,0 +1,27 @@
+id: us.amex.green/clear
+card_id: us.amex.green
+kind: statement_credit
+name: CLEAR+ credit
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.green@2026-01-01
+  summary: "Up to $219 a calendar year in statement credits toward a CLEAR+ membership charged to the card."
+  face_value:
+    amount: 21900
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: membership:clear
+  conditions:
+  - type: merchant_in
+    merchants:
+    - clear
+    note: CLEAR+ membership charged to the card
+  notes: Up to $219 a calendar year toward a CLEAR+ membership. Reviews disagree on the amount ($209 and $219 both appear); $219 is the
+    most recent figure. One reader report says the credit no longer shows in the app, which is unconfirmed.
+  beneficiaries:
+  - primary
+  confidence: "0.65"

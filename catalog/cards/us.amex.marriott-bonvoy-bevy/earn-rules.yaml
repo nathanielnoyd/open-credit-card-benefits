@@ -1,0 +1,47 @@
+card_id: us.amex.marriott-bonvoy-bevy
+rules:
+- id: us.amex.marriott-bonvoy-bevy/marriott-6x
+  categories:
+  - cat:travel.hotels.direct.marriott
+  versions:
+  - version: 1
+    release: us.amex.marriott-bonvoy-bevy@2024-01-01
+    multiplier: '6'
+    notes: Eligible purchases at hotels participating in Marriott Bonvoy.
+- id: us.amex.marriott-bonvoy-bevy/dining-4x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.amex.marriott-bonvoy-bevy@2024-01-01
+    multiplier: '4'
+    cap:
+      amount: 1500000
+      currency: USD
+    cap_period: calendar_year
+    cap_group: dining-supermarkets-4x
+    notes: Restaurants worldwide; 4x on up to $15,000 of combined restaurant and US supermarket purchases each calendar year, then 2x.
+- id: us.amex.marriott-bonvoy-bevy/us-supermarkets-4x
+  categories:
+  - cat:groceries.store
+  versions:
+  - version: 1
+    release: us.amex.marriott-bonvoy-bevy@2024-01-01
+    multiplier: '4'
+    cap:
+      amount: 1500000
+      currency: USD
+    cap_period: calendar_year
+    cap_group: dining-supermarkets-4x
+    conditions:
+    - type: region
+      countries:
+      - US
+    notes: US supermarkets only; 4x on up to $15,000 of combined restaurant and US supermarket purchases each calendar year, then 2x.
+- id: us.amex.marriott-bonvoy-bevy/base-2x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.marriott-bonvoy-bevy@2024-01-01
+    multiplier: '2'

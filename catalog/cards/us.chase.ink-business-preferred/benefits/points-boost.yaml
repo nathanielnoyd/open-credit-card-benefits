@@ -1,0 +1,30 @@
+id: us.chase.ink-business-preferred/points-boost
+card_id: us.chase.ink-business-preferred
+kind: redemption_modifier
+name: Points Boost redemptions
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ink-business-preferred@2025-06-23
+  summary: "Points are worth 1 to 1.75 cents each when redeemed through Chase Travel, with higher rates on select hotels, flights and premium cabin fares."
+  face_value: null
+  rate_min: '1.0'
+  rate_max: '1.75'
+  grants:
+  - entitlement: redemption:chase_points_boost
+    attributes:
+      rate_min: '1.0'
+      rate_max: '1.75'
+  conditions: []
+  beneficiaries:
+  - primary
+  notes: Up to 1.5 cents on select hotels and flights and up to 1.75 cents on select premium cabin fares in Chase Travel; 1 cent otherwise. pts:chase_ur has no Ink Business Preferred path, so applies_to_path
+    is omitted.
+  machine_readable: false
+  sources:
+  - url: https://onemileatatime.com/?p=343735
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://thepointsguy.com/credit-cards/reviews/ink-business-preferred-card-review/
+    retrieved_at: '2026-11-13'
+    publisher: review

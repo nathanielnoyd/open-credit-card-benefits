@@ -1,0 +1,72 @@
+id: us.bofa.premium-rewards-elite@2026-11-14
+card_id: us.bofa.premium-rewards-elite
+kind: baseline
+effective_for_new: "2026-11-14"
+notes: Current terms as first observed on November 14, 2026, with the BofA Rewards tiers in force since May 27, 2026. Earlier history, including the Preferred Rewards tiers before May 27, 2026, is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 55000
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.bofa.premium-rewards-elite/travel-dining-2x
+  version: 1
+- target: earn_rule:us.bofa.premium-rewards-elite/base-1-5x
+  version: 1
+- target: earn_rule:us.bofa.premium-rewards-elite/rewards-boost-10
+  version: 1
+- target: earn_rule:us.bofa.premium-rewards-elite/rewards-boost-25
+  version: 1
+- target: earn_rule:us.bofa.premium-rewards-elite/rewards-boost-50
+  version: 1
+- target: earn_rule:us.bofa.premium-rewards-elite/rewards-boost-75
+  version: 1
+- target: benefit:us.bofa.premium-rewards-elite/rewards-bonus
+  version: 1
+- target: benefit:us.bofa.premium-rewards-elite/airline-incidentals
+  version: 1
+- target: benefit:us.bofa.premium-rewards-elite/lifestyle-credit
+  version: 1
+- target: benefit:us.bofa.premium-rewards-elite/trusted-traveler
+  version: 1
+- target: benefit:us.bofa.premium-rewards-elite/airfare-points-discount
+  version: 1
+- target: benefit:us.bofa.premium-rewards-elite/priority-pass
+  version: 1
+- target: benefit:us.bofa.premium-rewards-elite/no-fx
+  version: 1
+- target: benefit:us.bofa.premium-rewards-elite/trip-delay
+  version: 1
+- target: benefit:us.bofa.premium-rewards-elite/trip-cancel
+  version: 1
+- target: benefit:us.bofa.premium-rewards-elite/baggage-delay
+  version: 1
+- target: benefit:us.bofa.premium-rewards-elite/lost-luggage
+  version: 1
+- target: benefit:us.bofa.premium-rewards-elite/rental-cdw
+  version: 1
+- target: benefit:us.bofa.premium-rewards-elite/evacuation
+  version: 1
+- target: benefit:us.bofa.premium-rewards-elite/purchase-security
+  version: 1
+- target: benefit:us.bofa.premium-rewards-elite/extended-warranty
+  version: 1
+- target: benefit:us.bofa.premium-rewards-elite/return-protection
+  version: 1
+sources:
+- url: https://www.bankofamerica.com/credit-cards/products/premium-rewards-elite-credit-card/
+  retrieved_at: "2026-11-14"
+  publisher: issuer
+- url: https://upgradedpoints.com/credit-cards/reviews/bank-of-america-premium-rewards-elite-credit-card/
+  retrieved_at: "2026-11-14"
+  publisher: review
+- url: https://awardwallet.com/blog/bank-of-america-premium-rewards-elite-review/
+  retrieved_at: "2026-11-14"
+  publisher: review
+- url: https://thepointcalculator.com/us/travel/boapts/bank-of-america-premium-rewards-elite-credit-card-calculator
+  retrieved_at: "2026-11-14"
+  publisher: review
+confidence: "0.75"

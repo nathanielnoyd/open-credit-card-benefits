@@ -1,0 +1,28 @@
+id: us.citi.prestige/citigold-credit
+card_id: us.citi.prestige
+kind: statement_credit
+name: Citigold relationship credit
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.prestige@2025-07-09
+  summary: "$145 credit each card year after the annual fee posts if you have a qualifying Citigold relationship."
+  face_value: { amount: 14500, currency: USD }
+  period: { cadence: annual, anchor: fee_post }
+  limit: { amount: 14500 }
+  grants:
+  - entitlement: credit:citi_relationship
+  conditions:
+  - type: selection_is
+    name: citi_banking_tier
+    value: citigold
+    note: Qualifying Citigold relationship
+  beneficiaries: [primary]
+  notes: >-
+    $145 statement credit within three billing cycles of the $495 annual fee posting, for cardmembers with a qualifying Citigold
+    relationship. A reported $25 Citigold reduction of the authorized user fee could not be confirmed and is not modeled.
+  sources:
+  - { url: https://onemileatatime.com/reviews/credit-cards/citi/citi-prestige-card/, retrieved_at: "2026-11-14", publisher: review }
+  - { url: https://www.bankrate.com/credit-cards/reviews/citi-prestige-card/, retrieved_at: "2026-11-14", publisher: review }
+  - { url: https://awardwallet.com/credit-cards/citi-thankyou-rewards/citi-prestige/, retrieved_at: "2026-11-14", publisher: review }
+  confidence: "0.7"

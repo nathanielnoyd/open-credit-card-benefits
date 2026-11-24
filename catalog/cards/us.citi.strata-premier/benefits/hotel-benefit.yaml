@@ -1,0 +1,24 @@
+id: us.citi.strata-premier/hotel-benefit
+card_id: us.citi.strata-premier
+kind: statement_credit
+name: $100 annual hotel benefit
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.strata-premier@2024-05-12
+  summary: "$100 off one hotel stay of $500 or more (before taxes and fees) each calendar year when booked through Citi Travel."
+  face_value: { amount: 10000, currency: USD }
+  period: { cadence: annual, anchor: calendar }
+  limit: { amount: 10000, max_transactions_per_period: 1 }
+  grants:
+  - entitlement: credit:citi_travel_hotel
+  conditions:
+  - type: booking_channel
+    channel: citi_travel
+    note: Booked at cititravel.com or 1-833-737-1288
+  - type: min_transaction
+    amount: 50000
+    currency: USD
+    note: Single stay of $500 or more, excluding taxes and fees
+  beneficiaries: [primary]
+  notes: $100 off one hotel stay of $500 or more (before taxes and fees) once per calendar year; applied instantly at booking, not as a statement credit.

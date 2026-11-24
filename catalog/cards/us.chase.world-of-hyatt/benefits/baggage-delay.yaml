@@ -1,0 +1,22 @@
+id: us.chase.world-of-hyatt/baggage-delay
+card_id: us.chase.world-of-hyatt
+kind: protection
+name: Baggage delay insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.world-of-hyatt@2024-01-01
+  summary: "Covers up to $500 per incident, for up to 5 days, for essentials when your bags are delayed more than 6 hours on a trip paid with the card."
+  grants:
+  - entitlement: protection:baggage_delay
+  coverage:
+    per_period:
+      amount: 50000
+      currency: USD
+    waiting_hours: 6
+    max_days: 5
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Up to $100 a day for up to 5 days when bags are delayed over 6 hours.

@@ -1,0 +1,17 @@
+id: us.citi.aadvantage-globe/trusted-traveler
+card_id: us.citi.aadvantage-globe
+kind: statement_credit
+name: Global Entry or TSA PreCheck credit
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-globe@2025-10-19
+  summary: "Up to $120 back once every 4 years for a Global Entry or TSA PreCheck application fee charged to the card."
+  face_value: { amount: 12000, currency: USD }
+  period: { cadence: every_n_years, n: 4, anchor: account_open }
+  limit: { amount: 12000 }
+  grants:
+  - entitlement: credit:trusted_traveler
+  conditions:
+  - type: paid_with_card
+  beneficiaries: [primary]

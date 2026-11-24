@@ -1,0 +1,23 @@
+id: us.chase.ritz-carlton/travel-medical
+card_id: us.chase.ritz-carlton
+kind: protection
+name: Emergency medical and dental
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ritz-carlton@2024-07-01
+  summary: "Up to $2,500 for emergency medical and dental costs, after a $50 deductible, on trips paid with the card at least 100 miles from home."
+  grants:
+  - entitlement: protection:travel_medical
+  coverage:
+    per_person:
+      amount: 250000
+      currency: USD
+    deductible:
+      amount: 5000
+      currency: USD
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Secondary coverage up to $2,500 with a $50 deductible, for trips of 100 miles or more from home.

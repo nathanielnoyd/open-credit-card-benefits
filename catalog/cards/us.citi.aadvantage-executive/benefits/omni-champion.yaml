@@ -1,0 +1,25 @@
+id: us.citi.aadvantage-executive/omni-champion
+card_id: us.citi.aadvantage-executive
+kind: status
+name: Omni Select Guest Champion status
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-executive@2026-08-23
+  summary: "Omni Select Guest Champion status when you enroll."
+  grants:
+  - entitlement: status:omni
+    attributes:
+      tier: champion
+  beneficiaries:
+  - primary
+  conditions:
+  - type: enrollment_required
+  notes: Complimentary Champion status, the second-highest Omni Select Guest tier, with enrollment.
+  sources:
+  - url: https://www.citi.com/credit-cards/citi-aadvantage-executive-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://thepointsguy.com/news/citi-aadvantage-executive-mastercard-refresh-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review

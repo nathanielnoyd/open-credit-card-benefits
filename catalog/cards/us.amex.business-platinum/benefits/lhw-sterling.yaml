@@ -1,0 +1,25 @@
+id: us.amex.business-platinum/lhw-sterling
+card_id: us.amex.business-platinum
+kind: status
+name: Leaders Club Sterling
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-platinum@2025-07-01
+    summary: "Leaders Club Sterling status with Leading Hotels of the World while you hold the card; enrollment required."
+    grants:
+      - entitlement: status:lhw
+        attributes:
+          tier: sterling
+    conditions:
+      - type: enrollment_required
+    beneficiaries:
+      - primary
+    notes: Leading Hotels of the World Leaders Club Sterling status; free Leaders Club signup required.
+    sources:
+      - url: https://thepointsguy.com/credit-cards/amex-business-platinum-2025-refresh/
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-business-platinum-card/
+        retrieved_at: "2026-11-13"
+        publisher: review

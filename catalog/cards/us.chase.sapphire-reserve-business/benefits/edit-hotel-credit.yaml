@@ -1,0 +1,80 @@
+id: us.chase.sapphire-reserve-business/edit-hotel-credit
+card_id: us.chase.sapphire-reserve-business
+kind: statement_credit
+name: The Edit hotel credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: Up to $500 back a year, as up to $250 in each half of the calendar year, on prepaid stays of 2 nights or more booked through The Edit
+    by Chase Travel.
+  face_value:
+    amount: 50000
+    currency: USD
+  period:
+    cadence: semiannual
+    anchor: calendar
+  limit:
+    amount: 25000
+  grants:
+  - entitlement: credit:chase_edit
+  conditions:
+  - type: booking_channel
+    channel: chase_travel_the_edit
+    note: Prepaid booking through The Edit by Chase Travel
+  - type: min_nights
+    nights: 2
+  beneficiaries:
+  - primary
+  notes: Launch terms split the credit January to June and July to December; the issuer page now describes it as $500 a calendar year with at
+    most $250 per transaction.
+  sources:
+  - url: https://thepointsguy.com/news/chase-unveils-the-chase-sapphire-reserve-for-business/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://onemileatatime.com/go/cc-chase-csrbiz-review/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://creditcards.chase.com/business-credit-cards/sapphire/reserve
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+- version: 2
+  supersedes: 1
+  change_type: amount_changed
+  release: us.chase.sapphire-reserve-business@2027-01-01
+  summary: Up to $1,000 back each calendar year, in up to four credits of up to $250, on prepaid stays of 2 nights or more booked through The
+    Edit by Chase Travel.
+  face_value:
+    amount: 100000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 100000
+    per_transaction: 25000
+    max_transactions_per_period: 4
+  grants:
+  - entitlement: credit:chase_edit
+  conditions:
+  - type: booking_channel
+    channel: chase_travel_the_edit
+    note: Prepaid booking through The Edit by Chase Travel
+  - type: min_nights
+    nights: 2
+  beneficiaries:
+  - primary
+  notes: Credits can be used at any time in the year; back-to-back two-night bookings each qualify.
+  sources:
+  - url: https://onemileatatime.com/news/sapphire-reserve-business-bigger-hotel-credit-bonus-category-cap/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://www.doctorofcredit.com/chase-sapphire-reserve-for-business-increases-the-edit-credit-to-1000-per-year-4-x-250/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://upgradedpoints.com/news/chase-sapphire-reserve-business-card-changes-2026/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://creditcards.chase.com/business-credit-cards/sapphire/reserve
+    retrieved_at: "2026-11-13"
+    publisher: issuer

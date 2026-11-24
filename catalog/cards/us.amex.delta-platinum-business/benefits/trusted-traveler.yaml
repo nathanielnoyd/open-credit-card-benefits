@@ -1,0 +1,23 @@
+id: us.amex.delta-platinum-business/trusted-traveler
+card_id: us.amex.delta-platinum-business
+kind: statement_credit
+name: Global Entry or TSA PreCheck credit
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-platinum-business@2025-02-01
+  summary: "A statement credit of up to $120 for the Global Entry or TSA PreCheck application fee, once every 4 years."
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: every_n_years
+    n: 4
+  limit:
+    amount: 12000
+  grants:
+  - entitlement: credit:trusted_traveler
+  beneficiaries:
+  - primary
+  notes: $120 toward Global Entry or up to $85 toward TSA PreCheck once every 4 years.
+  confidence: '0.75'

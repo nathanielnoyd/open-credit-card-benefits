@@ -1,0 +1,21 @@
+id: us.bofa.atmos-ascent/preferred-boarding
+card_id: us.bofa.atmos-ascent
+kind: access
+name: Preferred boarding
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-ascent@2025-08-20
+  summary: "Preferred boarding on Alaska flights for you and up to 6 companions on the same reservation when the ticket is paid with the card."
+  face_value: null
+  grants:
+  - entitlement: priority_boarding:alaska
+    attributes:
+      guests: 6
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  - companion
+  notes: Cardholder and up to six companions on the same Alaska reservation when the ticket is charged to the card.

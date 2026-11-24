@@ -1,0 +1,24 @@
+id: us.amex.platinum@2026-03-26
+card_id: us.amex.platinum
+kind: change
+announced_on: "2026-03-26"
+effective_for_new: "2026-03-26"
+notes: >-
+  Saks credit removed: applications from March 26, 2026 don't include it, and existing card members lose it from
+  July 1, 2026, after the January to June credit. One Amex statement quoted in coverage says the credit stayed
+  available to new and existing members through June 30, 2026.
+changes:
+  - target: benefit:us.amex.platinum/saks-credit
+    change_type: retired
+transition:
+  - applies_to: [benefits]
+    "on": "2026-07-01"
+sources:
+  - url: https://www.doctorofcredit.com/american-express-to-remove-100-saks-benefit-on-platinum-card/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://frequentmiler.com/amex-removes-saks-benefit-for-new-platinum-cardholders-cardholders-prior-to-3-26-unaffected/
+    retrieved_at: "2026-11-13"
+    publisher: review
+verified_by: agent:occb-research
+confidence: "0.8"

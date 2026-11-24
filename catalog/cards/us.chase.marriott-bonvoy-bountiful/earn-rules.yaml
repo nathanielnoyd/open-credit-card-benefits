@@ -1,0 +1,43 @@
+card_id: us.chase.marriott-bonvoy-bountiful
+rules:
+- id: us.chase.marriott-bonvoy-bountiful/marriott-6x
+  categories:
+  - cat:travel.hotels.direct.marriott
+  versions:
+  - version: 1
+    release: us.chase.marriott-bonvoy-bountiful@2024-01-01
+    multiplier: '6'
+    notes: Card points at participating Marriott Bonvoy hotels; Marriott base points and the Gold Elite bonus are earned separately from the program.
+- id: us.chase.marriott-bonvoy-bountiful/groceries-4x
+  categories:
+  - cat:groceries.store
+  versions:
+  - version: 1
+    release: us.chase.marriott-bonvoy-bountiful@2024-01-01
+    multiplier: '4'
+    cap:
+      amount: 1500000
+      currency: USD
+    cap_period: calendar_year
+    cap_group: everyday-4x
+    notes: 4x on the first $15,000 of combined purchases at grocery stores and restaurants (including takeout and eligible delivery) each year, then 2x.
+- id: us.chase.marriott-bonvoy-bountiful/dining-4x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.chase.marriott-bonvoy-bountiful@2024-01-01
+    multiplier: '4'
+    cap:
+      amount: 1500000
+      currency: USD
+    cap_period: calendar_year
+    cap_group: everyday-4x
+    notes: 4x on the first $15,000 of combined purchases at grocery stores and restaurants (including takeout and eligible delivery) each year, then 2x.
+- id: us.chase.marriott-bonvoy-bountiful/base-2x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.marriott-bonvoy-bountiful@2024-01-01
+    multiplier: '2'

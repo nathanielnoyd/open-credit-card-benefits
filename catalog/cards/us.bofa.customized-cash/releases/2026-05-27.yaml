@@ -1,0 +1,38 @@
+id: us.bofa.customized-cash@2026-05-27
+card_id: us.bofa.customized-cash
+kind: refresh
+announced_on: "2026-02-18"
+effective_for_new: "2026-05-27"
+notes: Preferred Rewards replaced by BofA Rewards. Existing members were mapped automatically (Gold and Platinum to Preferred Plus, Platinum Honors to Preferred Honors, Diamond Honors to Premier) and kept their prior card bonus for at least six months; Frequent Miler reports existing tier status is kept until three months after the first BofA Rewards anniversary after November 1, 2026. The transition below uses the six-month minimum; the per-member date cannot be expressed.
+changes:
+- target: earn_rule:us.bofa.customized-cash/rewards-boost-10
+  version: 1
+- target: earn_rule:us.bofa.customized-cash/rewards-boost-25
+  version: 2
+- target: earn_rule:us.bofa.customized-cash/rewards-boost-50
+  version: 2
+- target: earn_rule:us.bofa.customized-cash/rewards-boost-75
+  version: 2
+- target: benefit:us.bofa.customized-cash/rewards-bonus
+  version: 2
+transition:
+- applies_to:
+  - earn_rule:us.bofa.customized-cash/rewards-boost-25
+  - earn_rule:us.bofa.customized-cash/rewards-boost-50
+  - earn_rule:us.bofa.customized-cash/rewards-boost-75
+  - benefit:us.bofa.customized-cash/rewards-bonus
+  'on': "2026-11-27"
+sources:
+- url: https://frequentmiler.com/negative-bank-of-america-preferred-rewards-upcoming-changes-lower-bonus-rewards-higher-eligibility-requirements/
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://upgradedpoints.com/news/bofa-rewards-program-launch
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://onemileatatime.com/guides/bank-of-america-preferred-rewards/
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/02/new-bofa-rewards--program-to-reach-millions-more-clients-with-ex.html
+  retrieved_at: "2026-11-13"
+  publisher: issuer
+confidence: "0.75"

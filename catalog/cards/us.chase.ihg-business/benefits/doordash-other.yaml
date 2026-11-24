@@ -1,0 +1,30 @@
+id: us.chase.ihg-business/doordash-other
+card_id: us.chase.ihg-business
+kind: statement_credit
+name: DoorDash non-restaurant discount
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-business@2026-10-01
+  summary: "Up to $10 off non-restaurant DoorDash orders each month, $120 a year, through December 31, 2027 for members enrolled from September 1, 2026."
+  enroll_by: '2027-12-31'
+  effective_to: '2027-12-31'
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 1000
+  grants:
+  - entitlement: credit:doordash_nonrestaurant
+    stacking_confidence: '0.6'
+  conditions:
+  - type: enrollment_required
+  beneficiaries:
+  - primary
+  confidence: '0.7'
+  notes: Monthly for members who enrolled on or after September 1, 2026; those who activated between February 1, 2025 and
+    August 31, 2026 get the discount quarterly.
+  machine_readable: false

@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nathanielnoyd.github.io/open-credit-card-benefits/schema/0.3/offer.schema.json",
+  "title": "OCCB acquisition offer (spec Appendix F)",
+  "description": "A sign-up incentive for a card: a welcome bonus, a waived fee, an intro APR or an intro earn rate. Offers are not card terms. The OCCB catalog doesn't publish them; card sites, issuers and users can, and a wallet card records the offers its holder received.",
+  "type": "object",
+  "required": ["card_id", "components"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9_-]+:[a-z0-9._-]+$", "description": "<publisher namespace>:<slug>; optional inside a wallet" },
+    "card_id": { "$ref": "common.schema.json#/$defs/card_id" },
+    "publisher": { "type": "string", "description": "Who published this offer record" },
+    "audience": { "enum": ["public", "targeted", "referral", "in_branch", "upgrade", "existing_customer"], "description": "Who can get it" },
+    "summary": { "type": "string", "minLength": 10, "maxLength": 300, "pattern": "^[^\\n*#`]+$", "description": "One plain-language sentence describing the whole offer" },
+    "available_from": { "$ref": "common.schema.json#/$defs/date", "description": "First day applications qualify, when known" },
+    "available_to": { "$ref": "common.schema.json#/$defs/date", "description": "Last day applications qualify, when known" },
+    "first_seen_on": { "$ref": "common.schema.json#/$defs/date" },
+    "last_seen_on": { "$ref": "common.schema.json#/$defs/date" },
+    "eligibility": { "type": "string", "description": "Who is excluded, such as anyone who held the card in the past 48 months" },
+    "components": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/component" } },
+    "notes": { "type": "string" },
+    "sources": { "$ref": "common.schema.json#/$defs/sources" },
+    "confidence": { "$ref": "common.schema.json#/$defs/confidence" },
+    "accepted_on": { "$ref": "common.schema.json#/$defs/date", "description": "In a wallet: when the holder applied or accepted the offer" },
+    "earned_on": { "$ref": "common.schema.json#/$defs/date", "description": "In a wallet: when the bonus posted, if it has" }
+  },
+  "patternProperties": { "^x-": {} },
+  "additionalProperties": false,
+  "$defs": {
+    "component": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": { "enum": ["bonus", "fee_waiver", "intro_apr", "intro_earn", "other"] },
+        "summary": { "type": "string" },
+
+        "reward": { "$ref": "common.schema.json#/$defs/points", "description": "bonus: points or miles" },
+        "reward_max": { "$ref": "common.schema.json#/$defs/points", "description": "bonus: the most an applicant may be offered (\"as high as\")" },
+        "reward_cash": { "$ref": "common.schema.json#/$defs/money", "description": "bonus: cash or a statement credit" },
+        "reward_restricted_to": { "type": "string", "description": "bonus: when the cash reward is a credit usable only in one place, such as a travel portal or gift card" },
+        "reward_items": { "type": "array", "items": { "type": "object", "required": ["item", "count"], "properties": { "item": { "type": "string" }, "count": { "type": "integer", "minimum": 1 }, "cap": { "$ref": "common.schema.json#/$defs/points" } }, "additionalProperties": false }, "description": "bonus: certificates or other items, such as free nights" },
+        "spend_required": { "$ref": "common.schema.json#/$defs/money", "description": "bonus: spend needed to earn it; for a tiered offer, the cumulative total" },
+        "window_days": { "type": "integer", "minimum": 1, "description": "bonus: days from account opening to meet the spend" },
+
+        "fee": { "type": "string", "pattern": "^fee:[a-z_]+$", "description": "fee_waiver: which fee, such as fee:annual" },
+        "amount": { "$ref": "common.schema.json#/$defs/money", "description": "fee_waiver: what is charged instead, usually $0" },
+        "card_years": { "type": "array", "items": { "type": "integer", "minimum": 1 }, "minItems": 1, "description": "fee_waiver: the card years it covers" },
+
+        "applies_to": { "enum": ["purchases", "balance_transfers", "purchases_and_balance_transfers"], "description": "intro_apr" },
+        "rate": { "$ref": "common.schema.json#/$defs/decimal", "description": "intro_apr: the intro rate as a fraction, \"0\" for 0%" },
+        "months": { "type": "integer", "minimum": 1, "description": "intro_apr or intro_earn: how long it lasts from account opening" },
+        "transfer_fee": { "$ref": "common.schema.json#/$defs/decimal", "description": "intro_apr: balance transfer fee as a fraction" },
+
+        "categories": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/category_id" }, "minItems": 1, "description": "intro_earn: spend categories it applies to" },
+        "multiplier": { "$ref": "common.schema.json#/$defs/decimal", "description": "intro_earn: points per dollar, or percent back for cashback currencies" },
+        "boost": { "$ref": "common.schema.json#/$defs/decimal", "description": "intro_earn: a fraction added to all earn, such as \"1\" to match everything earned" },
+        "stacks": { "type": "boolean", "description": "intro_earn: adds to the card's own rate instead of replacing it" },
+        "cap": { "$ref": "common.schema.json#/$defs/money", "description": "intro_earn: spend cap over the offer's whole duration" },
+
+        "tier": { "type": "integer", "minimum": 1, "description": "Orders the components of a tiered offer" }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        { "if": { "properties": { "type": { "const": "bonus" } } }, "then": { "anyOf": [{ "required": ["reward"] }, { "required": ["reward_max"] }, { "required": ["reward_cash"] }, { "required": ["reward_items"] }] } },
+        { "if": { "properties": { "type": { "const": "fee_waiver" } } }, "then": { "required": ["fee", "amount", "card_years"] } },
+        { "if": { "properties": { "type": { "const": "intro_apr" } } }, "then": { "required": ["applies_to", "rate", "months"] } },
+        { "if": { "properties": { "type": { "const": "intro_earn" } } }, "then": { "required": ["categories", "months"], "oneOf": [{ "required": ["multiplier"] }, { "required": ["boost"] }] } }
+      ]
+    }
+  }
+}

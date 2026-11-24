@@ -1,0 +1,27 @@
+id: us.amex.hilton-business/hilton-credit
+card_id: us.amex.hilton-business
+kind: statement_credit
+name: Hilton credit
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.hilton-business@2024-03-28
+  summary: "Up to $60 each calendar quarter in statement credits on purchases made directly with a Hilton hotel or resort, $240 a year in total."
+  face_value:
+    amount: 24000
+    currency: USD
+  period:
+    cadence: quarterly
+    anchor: calendar
+  limit:
+    amount: 6000
+  conditions:
+  - type: merchant_in
+    merchants:
+    - hilton_portfolio_properties
+    note: Purchases made directly with a property in the Hilton portfolio
+  beneficiaries:
+  - primary
+  notes: Up to $60 in statement credits each calendar quarter on purchases made directly with a Hilton portfolio property, such as room rates and incidentals; unused amounts do not roll over.
+  grants:
+  - entitlement: credit:hilton_property

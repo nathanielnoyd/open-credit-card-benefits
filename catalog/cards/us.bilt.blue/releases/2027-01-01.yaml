@@ -1,0 +1,29 @@
+id: us.bilt.blue@2027-01-01
+card_id: us.bilt.blue
+kind: change
+announced_on: '2026-10-27'
+effective_for_new: '2027-01-01'
+notes: Bilt 2027 changes for accounts opened on or after 2027-01-01. Existing holders move at their first card anniversary
+  on or after 2027-01-01 unless they make a Legacy Election in the app to keep the Flexible Bilt Cash option and old credits.
+changes:
+- target: earn_rule:us.bilt.blue/housing-flexible
+  change_type: retired
+- target: earn_rule:us.bilt.blue/bilt-cash-4pct
+  change_type: retired
+- target: benefit:us.bilt.blue/housing-payments
+  version: 2
+transition:
+- applies_to:
+  - benefits
+  - earn_rules
+  next_renewal_on_or_after: '2027-01-01'
+sources:
+- url: https://www.bilt.com/terms/bilt-card-offer-terms
+  retrieved_at: '2026-11-13'
+  publisher: issuer
+- url: https://onemileatatime.com/?p=376131
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://www.doctorofcredit.com/bilt-revamps-credit-card-rewards-in-2027-discontinuing-4-bilt-cash-for-new-applicants-more/
+  retrieved_at: '2026-11-13'
+  publisher: review

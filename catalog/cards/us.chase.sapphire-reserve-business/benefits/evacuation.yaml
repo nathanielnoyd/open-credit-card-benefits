@@ -1,0 +1,28 @@
+id: us.chase.sapphire-reserve-business/evacuation
+card_id: us.chase.sapphire-reserve-business
+kind: protection
+name: Emergency evacuation and transportation
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: Up to $100,000 for emergency evacuation and transportation on a trip paid with the card.
+  coverage:
+    per_trip:
+      amount: 10000000
+      currency: USD
+  grants:
+  - entitlement: protection:emergency_evacuation
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://hellosafe.com/credit-card-insurance/united-states/chase/sapphire-reserve-business
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://creditcards.chase.com/business-credit-cards/sapphire/reserve
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  confidence: '0.6'
+  notes: Must be arranged by the benefit provider; trips of 5 to 60 days.

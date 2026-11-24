@@ -1,0 +1,25 @@
+id: us.chase.united-quest/trip-cancel
+card_id: us.chase.united-quest
+kind: protection
+name: Trip cancellation and interruption
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-quest@2024-01-01
+  summary: "Reimburses prepaid, non-refundable travel up to $1,500 per traveler and $6,000 per trip when a covered reason cancels or cuts short a trip paid with the card."
+  coverage:
+    per_person:
+      amount: 150000
+      currency: USD
+    per_trip:
+      amount: 600000
+      currency: USD
+  grants:
+  - entitlement: protection:trip_cancellation
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  - household
+  notes: Prepaid, non-refundable fares; up to $1,500 per covered traveler and $6,000 per trip.

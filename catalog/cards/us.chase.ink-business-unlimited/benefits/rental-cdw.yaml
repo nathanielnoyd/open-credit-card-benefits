@@ -1,0 +1,23 @@
+id: us.chase.ink-business-unlimited/rental-cdw
+card_id: us.chase.ink-business-unlimited
+kind: protection
+name: Auto rental collision damage waiver
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ink-business-unlimited@2025-01-01
+  summary: "Primary collision and theft coverage on rental cars paid with the card when renting for business and you decline the rental company's coverage; secondary for personal rentals."
+  face_value: null
+  coverage:
+    priority: primary
+  grants:
+  - entitlement: protection:rental_cdw
+    attributes:
+      priority: primary
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Primary when renting for business purposes; up to the actual cash value of most rental vehicles in the U.S. and abroad. Personal-use rentals are secondary. Decline the rental company CDW.
+  machine_readable: false

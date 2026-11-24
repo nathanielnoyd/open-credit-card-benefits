@@ -1,0 +1,14 @@
+id: pts:choice_privileges
+name: Choice Privileges
+kind: hotel
+issuer: Choice Hotels
+url: https://www.choicehotels.com/choice-privileges
+expiry: Points expire after 18 consecutive months of inactivity.
+paths: []
+sources:
+  - url: https://www.choicehotels.com/choice-privileges
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

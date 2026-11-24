@@ -1,0 +1,48 @@
+card_id: us.chase.ink-business-cash
+rules:
+- id: us.chase.ink-business-cash/office-telecom-5x
+  categories:
+  - cat:business.office_supplies
+  - cat:telecom
+  versions:
+  - version: 1
+    release: us.chase.ink-business-cash@2025-01-01
+    multiplier: '5'
+    cap:
+      amount: 2500000
+      currency: USD
+    cap_period: cardmember_year
+    notes: Combined $25,000 a year at office supply stores and on internet, cable and phone services; then 1x.
+- id: us.chase.ink-business-cash/gas-dining-2x
+  categories:
+  - cat:gas_ev.gas
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.chase.ink-business-cash@2025-01-01
+    multiplier: '2'
+    cap:
+      amount: 2500000
+      currency: USD
+    cap_period: cardmember_year
+    notes: Combined $25,000 a year at gas stations and restaurants; then 1x.
+- id: us.chase.ink-business-cash/lyft-5x
+  categories:
+  - cat:travel.rideshare.lyft
+  versions:
+  - version: 1
+    release: us.chase.ink-business-cash@2025-01-01
+    multiplier: '5'
+    effective_to: '2027-09-30'
+    notes: 5 points per $1 total on Lyft rides bought in the Lyft app; excludes gift cards, car rentals, vehicle service centers and other Lyft products. Start date of this promotion is not modeled.
+    sources:
+    - url: https://creditcards.chase.com/business-credit-cards/ink/cash
+      retrieved_at: '2026-11-13'
+      publisher: issuer
+- id: us.chase.ink-business-cash/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.ink-business-cash@2025-01-01
+    multiplier: '1'

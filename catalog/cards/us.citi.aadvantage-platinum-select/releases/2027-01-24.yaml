@@ -1,0 +1,46 @@
+id: us.citi.aadvantage-platinum-select@2027-01-24
+card_id: us.citi.aadvantage-platinum-select
+kind: change
+announced_on: '2026-10-27'
+effective_for_new: '2027-01-24'
+notes: 'Announced refresh effective 2027-01-24: $150 fee, new 3x/2x categories, $100 inflight credit replacing the 25% inflight savings, Global Entry/TSA PreCheck credit, $150 flight discount, Walmart+ and 50% off FOX One, and improved travel protections (amounts not yet published, so not modeled). How existing cardmembers transition was not published; the transition below assumes benefits on the effective date and the fee at the next renewal.'
+changes:
+- target: fee:annual
+  to:
+    amount: 15000
+    currency: USD
+- target: earn_rule:us.citi.aadvantage-platinum-select/gas-2x
+  change_type: retired
+- target: earn_rule:us.citi.aadvantage-platinum-select/gas-ev-2x
+  version: 1
+- target: earn_rule:us.citi.aadvantage-platinum-select/aadvantage-hotels-cars-3x
+  version: 1
+- target: earn_rule:us.citi.aadvantage-platinum-select/streaming-2x
+  version: 1
+- target: earn_rule:us.citi.aadvantage-platinum-select/rides-rails-2x
+  version: 1
+- target: benefit:us.citi.aadvantage-platinum-select/flight-discount
+  version: 2
+- target: benefit:us.citi.aadvantage-platinum-select/inflight-savings
+  change_type: retired
+- target: benefit:us.citi.aadvantage-platinum-select/inflight-credit
+  version: 1
+- target: benefit:us.citi.aadvantage-platinum-select/trusted-traveler
+  version: 1
+- target: benefit:us.citi.aadvantage-platinum-select/walmart-plus
+  version: 1
+- target: benefit:us.citi.aadvantage-platinum-select/fox-one
+  version: 1
+transition:
+- applies_to:
+  - benefits
+  - earn_rules
+  'on': '2027-01-24'
+- applies_to:
+  - fees
+  next_renewal_on_or_after: '2027-01-24'
+sources:
+- url: https://upgradedpoints.com/news/citi-aadvantage-card-changes-2026/
+  retrieved_at: '2026-11-13'
+  publisher: review
+confidence: '0.7'

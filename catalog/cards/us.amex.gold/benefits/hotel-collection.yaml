@@ -1,0 +1,19 @@
+id: us.amex.gold/hotel-collection
+card_id: us.amex.gold
+kind: program_access
+name: The Hotel Collection
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.gold@2024-07-25
+  summary: "A $100 on-property credit and a room upgrade when available on stays of 2 or more nights at The Hotel Collection booked through Amex Travel."
+  grants:
+  - entitlement: program:amex_thc
+  conditions:
+  - type: booking_channel
+    channel: amex_travel_thc
+  - type: min_nights
+    nights: 2
+  notes: $100 on-property credit and a room upgrade when available on stays of two or more nights.
+  beneficiaries:
+  - primary

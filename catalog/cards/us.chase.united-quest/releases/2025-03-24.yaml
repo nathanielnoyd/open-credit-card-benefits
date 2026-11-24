@@ -1,0 +1,56 @@
+id: us.chase.united-quest@2025-03-24
+card_id: us.chase.united-quest
+kind: refresh
+announced_on: '2025-03-24'
+transition:
+- applies_to:
+  - fee:annual
+  next_renewal_on_or_after: '2025-08-01'
+effective_for_new: '2025-03-24'
+notes: New credits took effect immediately for new and existing cardmembers. The $350 fee applies to existing cardmembers
+  from their first renewal on or after August 1, 2025. The $125 United purchase credit became $200 in TravelBank cash, and
+  the two 5,000-mile award credits became one 10,000-mile anniversary discount.
+changes:
+- target: fee:annual
+  to:
+    amount: 35000
+    currency: USD
+- target: earn_rule:us.chase.united-quest/renowned-hotels-5x
+  version: 1
+- target: earn_rule:us.chase.united-quest/pqp
+  version: 2
+- target: benefit:us.chase.united-quest/united-credit
+  version: 2
+- target: benefit:us.chase.united-quest/award-discount
+  version: 2
+- target: benefit:us.chase.united-quest/renowned-hotels
+  version: 1
+- target: benefit:us.chase.united-quest/rideshare
+  version: 1
+- target: benefit:us.chase.united-quest/avis-budget
+  version: 1
+- target: benefit:us.chase.united-quest/jsx
+  version: 1
+- target: benefit:us.chase.united-quest/instacart
+  version: 1
+- target: benefit:us.chase.united-quest/instacart-plus
+  version: 1
+- target: benefit:us.chase.united-quest/award-discount-milestone
+  version: 1
+- target: benefit:us.chase.united-quest/economy-plus-milestone
+  version: 1
+- target: benefit:us.chase.united-quest/pqp-bonus
+  version: 1
+sources:
+- url: https://upgradedpoints.com/news/united-airlines-personal-credit-card-changes-2025/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://thepointsguy.com/news/united-credit-card-refresh-2025
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://awardwallet.com/news/united-mileageplus/united-card-portfolio-overhaul/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://onemileatatime.com/news/united-chase-card-changes
+  retrieved_at: '2026-11-13'
+  publisher: review

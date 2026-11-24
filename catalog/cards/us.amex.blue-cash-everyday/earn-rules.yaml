@@ -1,0 +1,58 @@
+card_id: us.amex.blue-cash-everyday
+rules:
+- id: us.amex.blue-cash-everyday/us-supermarkets-3
+  categories:
+  - cat:groceries.store
+  versions:
+  - version: 1
+    release: us.amex.blue-cash-everyday@2025-08-01
+    multiplier: "3"
+    cap:
+      amount: 600000
+      currency: USD
+    cap_period: calendar_year
+    conditions:
+    - type: region
+      countries:
+      - US
+    notes: US supermarkets, up to $6,000 a year, then 1%; excludes superstores, warehouse clubs and specialty stores.
+- id: us.amex.blue-cash-everyday/us-online-retail-3
+  categories:
+  - cat:online_shopping
+  versions:
+  - version: 1
+    release: us.amex.blue-cash-everyday@2025-08-01
+    multiplier: "3"
+    cap:
+      amount: 600000
+      currency: USD
+    cap_period: calendar_year
+    conditions:
+    - type: region
+      countries:
+      - US
+    notes: US online retail purchases of goods, up to $6,000 a year (separate cap), then 1%; Amex excludes travel, restaurants, services and
+      several other online purchases.
+- id: us.amex.blue-cash-everyday/us-gas-3
+  categories:
+  - cat:gas_ev.gas
+  versions:
+  - version: 1
+    release: us.amex.blue-cash-everyday@2025-08-01
+    multiplier: "3"
+    cap:
+      amount: 600000
+      currency: USD
+    cap_period: calendar_year
+    conditions:
+    - type: region
+      countries:
+      - US
+    notes: US gas stations, up to $6,000 a year (separate cap), then 1%.
+- id: us.amex.blue-cash-everyday/base-1
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.blue-cash-everyday@2025-08-01
+    multiplier: "1"

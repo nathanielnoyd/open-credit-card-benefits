@@ -1,0 +1,33 @@
+id: us.amex.business-platinum/trip-delay
+card_id: us.amex.business-platinum
+kind: protection
+name: Trip delay insurance
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-platinum@2025-07-01
+    summary: "Covers up to $500 per trip in extra expenses when a trip paid with the card is delayed more than 6 hours, up to 2 claims per 12 months."
+    coverage:
+      per_trip:
+        amount: 50000
+        currency: USD
+      waiting_hours: 6
+      max_claims_per_period: 2
+    period:
+      cadence: rolling
+      window_days: 365
+    limit:
+      count: 2
+    grants:
+      - entitlement: protection:trip_delay
+    conditions:
+      - type: paid_with_card
+    beneficiaries:
+      - primary
+      - authorized_user
+    confidence: "0.75"
+    notes: Up to $500 per covered trip for delays over 6 hours; 2 claims per card per 12 months.
+    sources:
+      - url: https://hellosafe.com/credit-card-insurance/united-states/american-express/business-platinum
+        retrieved_at: "2026-11-13"
+        publisher: review

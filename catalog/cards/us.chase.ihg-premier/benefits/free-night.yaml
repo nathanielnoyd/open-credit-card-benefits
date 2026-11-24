@@ -1,0 +1,54 @@
+id: us.chase.ihg-premier/free-night
+card_id: us.chase.ihg-premier
+kind: certificate
+name: Anniversary Free Night
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier@2024-01-01
+  summary: "One free night each card anniversary at an IHG hotel costing up to 40,000 points a night, used within 12 months; you can add points to book pricier hotels."
+  cap:
+    currency: pts:ihg_one
+    points: 40000
+  expires_after_days: 365
+  issued_on: anniversary
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  grants:
+  - entitlement: certificate:us.chase.ihg-premier.free-night
+  beneficiaries:
+  - primary
+  notes: Stay must be booked and completed within 12 months of issue; IHG points may be added to book hotels above the cap
+    (no published top-off limit).
+  machine_readable: false
+  sources:
+  - url: https://frequentmiler.com/?p=297051
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://onemileatatime.com/news/ihg-chase-credit-card-changes/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.chase.com/personal/credit-cards/ihg/premier/premier-protection
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+- version: 2
+  supersedes: 1
+  change_type: amount_changed
+  release: us.chase.ihg-premier@2026-10-01
+  summary: "One free night each card anniversary at an IHG hotel costing up to 50,000 points a night, used within 12 months; you can add points to book pricier hotels."
+  cap:
+    currency: pts:ihg_one
+    points: 50000
+  expires_after_days: 365
+  issued_on: anniversary
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  grants:
+  - entitlement: certificate:us.chase.ihg-premier.free-night
+  beneficiaries:
+  - primary
+  notes: 'Stay must be booked and completed within 12 months of issue; IHG points may be added to book hotels above the cap
+    (no published top-off limit). Unlimited top-off is not expressible: `top_up` is left out.'
+  machine_readable: false

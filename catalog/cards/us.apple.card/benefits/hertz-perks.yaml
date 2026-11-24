@@ -1,0 +1,22 @@
+id: us.apple.card/hertz-perks
+card_id: us.apple.card
+kind: program_access
+name: Hertz rental perks
+versions:
+- version: 1
+  change_type: added
+  release: us.apple.card@2019-08-01
+  summary: "Hertz rental perks through the Apple Card Hertz portal, including at least 5% off Pay Later base rates, free roadside service and one free additional driver."
+  face_value: null
+  grants:
+  - entitlement: program:hertz_apple_card
+  conditions:
+  - type: booking_channel
+    channel: apple_card_hertz_portal
+  beneficiaries:
+  - primary
+  notes: 'Through the Apple Card Hertz portal: at least 5% off Pay Later base rates, free emergency roadside service, one free additional driver, and a discounted loss damage waiver at $16.95 a day.'
+  sources:
+  - url: https://www.apple.com/apple-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer

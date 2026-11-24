@@ -1,0 +1,29 @@
+id: us.chase.ihg-premier-select/spend-free-night
+card_id: us.chase.ihg-premier-select
+kind: certificate
+name: Free Night after $40,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier-select@2026-10-01
+  summary: "A free night certificate earned through the annual spend milestone, good at an IHG hotel costing up to 60,000 points a night; you can add points to book pricier hotels."
+  cap:
+    currency: pts:ihg_one
+    points: 60000
+  issued_on: milestone
+  grants:
+  - entitlement: certificate:us.chase.ihg-premier-select.spend-free-night
+  beneficiaries:
+  - primary
+  unlocked_only: true
+  notes: Earned through milestone-40k. The 60,000-point cap is from The Points Guy (issuer page only says an additional Free
+    Night); IHG points may be added to book hotels above the cap; expiry not confirmed.
+  machine_readable: false
+  confidence: '0.7'
+  sources:
+  - url: https://thepointsguy.com/news/ihg-premier-select-card-launch/
+    retrieved_at: '2026-11-14'
+    publisher: review
+  - url: https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier-select
+    retrieved_at: '2026-11-14'
+    publisher: issuer

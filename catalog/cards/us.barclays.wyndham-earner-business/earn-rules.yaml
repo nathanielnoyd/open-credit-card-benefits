@@ -1,0 +1,52 @@
+card_id: us.barclays.wyndham-earner-business
+rules:
+- id: us.barclays.wyndham-earner-business/wyndham-8x
+  categories:
+  - cat:travel.hotels.direct.wyndham
+  versions:
+  - version: 1
+    release: us.barclays.wyndham-earner-business@2021-08-18
+    multiplier: '8'
+    notes: Eligible net purchases at participating Hotels by Wyndham (including Wyndham Travel Bundles); the current terms add
+      Caesars Rewards and Trademark Collection lodging and Trademark Collection vacation club resorts, and exclude Echo Suites,
+      WaterWalk unfurnished suites and non-participating hotels. Unchanged in rate at the June 2026 refresh.
+- id: us.barclays.wyndham-earner-business/gas-8x
+  categories:
+  - cat:gas_ev.gas
+  versions:
+  - version: 1
+    release: us.barclays.wyndham-earner-business@2021-08-18
+    multiplier: '8'
+    notes: Pre-refresh terms; gas earned the same 8x as Wyndham stays. Retired for new applicants on June 17, 2026.
+- id: us.barclays.wyndham-earner-business/business-5x
+  categories:
+  - cat:business.advertising
+  - cat:utilities
+  versions:
+  - version: 1
+    release: us.barclays.wyndham-earner-business@2021-08-18
+    multiplier: '5'
+    notes: Pre-refresh terms; marketing, advertising and utilities by merchant code. Retired for new applicants on June 17, 2026.
+- id: us.barclays.wyndham-earner-business/bonus-5x
+  categories:
+  - cat:gas_ev.gas
+  - cat:gas_ev.ev_charging
+  - cat:business.advertising
+  - cat:business.office_supplies
+  - cat:business.shipping
+  versions:
+  - version: 1
+    release: us.barclays.wyndham-earner-business@2026-06-17
+    multiplier: '5'
+    notes: Gas, EV charging, marketing, advertising, shipping and office supply stores by merchant code. Club Wyndham, WorldMark,
+      Margaritaville and Shell vacation club resorts outside the Trademark Collection, their maintenance fees and timeshare
+      loan payments to Wyndham developers also earn 5x but have no spend category. Mobile card reader and third-party marketplace
+      purchases do not earn the bonus.
+- id: us.barclays.wyndham-earner-business/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.barclays.wyndham-earner-business@2021-08-18
+    multiplier: '1'
+    notes: Timeshare down payments to Wyndham developers earn nothing.

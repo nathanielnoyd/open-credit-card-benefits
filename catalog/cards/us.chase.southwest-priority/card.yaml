@@ -1,0 +1,33 @@
+id: us.chase.southwest-priority
+issuer_id: us.chase
+name: Southwest Rapid Rewards Priority Credit Card
+summary: "A $229-a-year Southwest card earning 4x on Southwest purchases and 2x at gas stations and restaurants, with 7,500 anniversary points, a free first checked bag, seat selection at booking and Group 5 boarding."
+network: visa
+segment: personal
+tier: mid
+family: chase-southwest
+earns: pts:southwest_rr
+open_to_applicants: true
+url: https://creditcards.chase.com/travel-credit-cards/southwest/priority
+aliases:
+- Southwest Priority
+- Chase Southwest Priority
+cobrand:
+  partner: Southwest Airlines
+  program: pts:southwest_rr
+fee_posting:
+  anchor: account_open
+provenance:
+  sources:
+  - url: https://creditcards.chase.com/travel-credit-cards/southwest/priority
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://media.chase.com/news/chase-southwest-introduce-new-card-benefits
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://upgradedpoints.com/news/changes-southwest-airlines-credit-cards-2025/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.8'
+  last_reviewed: '2026-11-13'

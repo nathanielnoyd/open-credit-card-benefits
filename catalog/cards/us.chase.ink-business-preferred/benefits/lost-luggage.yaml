@@ -1,0 +1,26 @@
+id: us.chase.ink-business-preferred/lost-luggage
+card_id: us.chase.ink-business-preferred
+kind: protection
+name: Lost luggage reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ink-business-preferred@2025-02-01
+  summary: "Up to $3,000 per person when your bags are lost or damaged on a trip paid with the card."
+  face_value: null
+  coverage:
+    per_person:
+      amount: 300000
+      currency: USD
+  grants:
+  - entitlement: protection:lost_luggage
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Listed by The Points Guy (Sept 2026); not shown on the issuer product page. Unverified.
+  sources:
+  - url: https://thepointsguy.com/credit-cards/reviews/ink-business-preferred-card-review/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  confidence: '0.5'

@@ -1,0 +1,31 @@
+id: us.bofa.premium-rewards-elite
+issuer_id: us.bofa
+name: Bank of America Premium Rewards Elite credit card
+summary: "A $550-a-year Visa Infinite earning 2 points per dollar on travel and dining and 1.5 elsewhere, with a $300 yearly airline incidental credit, a $150 yearly lifestyle credit, four Priority Pass Select memberships, 20% off airfare paid with points and up to 75% more points through BofA Rewards."
+network: visa
+segment: personal
+tier: premium
+family: bofa-rewards
+earns: pts:bofa_points
+open_to_applicants: true
+url: https://www.bankofamerica.com/credit-cards/products/premium-rewards-elite-credit-card/
+aliases:
+- BofA Premium Rewards Elite
+- Premium Rewards Elite
+fee_posting:
+  anchor: account_open
+notes: The issuer page also lists Visa Infinite Luxury Hotel Collection, Visa Infinite car rental perks (status upgrades and discounts with rental partners), roadside assistance and a concierge, without amounts; these are not modeled.
+provenance:
+  sources:
+  - url: https://www.bankofamerica.com/credit-cards/products/premium-rewards-elite-credit-card/
+    retrieved_at: "2026-11-14"
+    publisher: issuer
+  - url: https://upgradedpoints.com/credit-cards/reviews/bank-of-america-premium-rewards-elite-credit-card/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://awardwallet.com/blog/bank-of-america-premium-rewards-elite-review/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.8"
+  last_reviewed: "2026-11-14"

@@ -1,0 +1,60 @@
+{
+  "description": "Terms resolution cases (spec section 8). Each case resolves one holder's terms on one date against the seed catalog.",
+  "cases": [
+    {
+      "name": "Reserve holder from before the 2025 refresh, after launch but before the transition date",
+      "card_id": "us.chase.sapphire-reserve", "holder": { "opened_on": "2024-03-01", "fee_post_dates": ["2025-03-01", "2026-03-01"] }, "as_of": "2025-07-01",
+      "expect": { "fee_annual": 55000, "has": ["points-boost", "travel-credit"], "lacks": ["edit-hotel-credit"], "earn_has": ["travel-3x"], "earn_lacks": ["chase-travel-8x"], "legacy_count": 1 }
+    },
+    {
+      "name": "Same holder after October 26, 2025: new benefits, old fee until the next renewal",
+      "card_id": "us.chase.sapphire-reserve", "holder": { "opened_on": "2024-03-01", "fee_post_dates": ["2025-03-01", "2026-03-01"] }, "as_of": "2025-11-01",
+      "expect": { "fee_annual": 55000, "has": ["edit-hotel-credit", "dining-credit"], "earn_has": ["chase-travel-8x", "flights-direct-4x"], "earn_lacks": ["travel-3x"] }
+    },
+    {
+      "name": "Same holder after the first renewal on or after October 26, 2025",
+      "card_id": "us.chase.sapphire-reserve", "holder": { "opened_on": "2024-03-01", "fee_post_dates": ["2025-03-01", "2026-03-01"] }, "as_of": "2026-03-02",
+      "expect": { "fee_annual": 79500, "fee_authorized_user": 19500 }
+    },
+    {
+      "name": "Reserve holder who opened after the refresh launched gets everything at once and no legacy rules",
+      "card_id": "us.chase.sapphire-reserve", "holder": { "opened_on": "2025-08-01" }, "as_of": "2025-08-02",
+      "expect": { "fee_annual": 79500, "has": ["edit-hotel-credit"], "earn_lacks": ["travel-3x"], "legacy_count": 0 }
+    },
+    {
+      "name": "Platinum holder before the 2025 refresh has 10 Sky Club visits from February 2025",
+      "card_id": "us.amex.platinum", "holder": { "opened_on": "2023-05-10", "fee_post_dates": ["2025-05-10", "2026-05-10"] }, "as_of": "2025-03-01",
+      "expect": { "fee_annual": 69500, "versions": { "hotel-credit": 1, "delta-sky-club": 2 }, "lacks": ["resy-credit"] }
+    },
+    {
+      "name": "Platinum holder gets new benefits immediately on September 18, 2025, but keeps the old fee",
+      "card_id": "us.amex.platinum", "holder": { "opened_on": "2023-05-10", "fee_post_dates": ["2025-05-10", "2026-05-10"] }, "as_of": "2025-10-01",
+      "expect": { "fee_annual": 69500, "versions": { "hotel-credit": 2, "digital-entertainment": 2 }, "has": ["resy-credit"] }
+    },
+    {
+      "name": "Platinum fee rises at the first renewal on or after January 2, 2026",
+      "card_id": "us.amex.platinum", "holder": { "opened_on": "2023-05-10", "fee_post_dates": ["2025-05-10", "2026-05-10"] }, "as_of": "2026-05-11",
+      "expect": { "fee_annual": 89500, "has": ["lufthansa"] }
+    },
+    {
+      "name": "Lufthansa access is gone after October 1, 2026, and the 2027 hotel rule applies from January 1, 2027",
+      "card_id": "us.amex.platinum", "holder": { "opened_on": "2023-05-10" }, "as_of": "2027-01-02",
+      "expect": { "lacks": ["lufthansa"], "versions": { "hotel-credit": 3 } }
+    },
+    {
+      "name": "Preferred holder keeps the 10% anniversary bonus until October 1, 2026, but gets the $100 hotel credit at once",
+      "card_id": "us.chase.sapphire-preferred", "holder": { "opened_on": "2022-01-15" }, "as_of": "2026-07-01",
+      "expect": { "fee_annual": 9500, "versions": { "hotel-credit": 2 }, "has": ["anniversary-bonus", "trusted-traveler"], "earn_has": ["gas-ev-3x"] }
+    },
+    {
+      "name": "Preferred anniversary bonus retired for existing holders on October 1, 2026",
+      "card_id": "us.chase.sapphire-preferred", "holder": { "opened_on": "2022-01-15" }, "as_of": "2026-10-02",
+      "expect": { "lacks": ["anniversary-bonus"] }
+    },
+    {
+      "name": "Preferred holder who opened after the refresh never had the anniversary bonus",
+      "card_id": "us.chase.sapphire-preferred", "holder": { "opened_on": "2026-07-01" }, "as_of": "2026-07-02",
+      "expect": { "lacks": ["anniversary-bonus"], "versions": { "hotel-credit": 2 } }
+    }
+  ]
+}

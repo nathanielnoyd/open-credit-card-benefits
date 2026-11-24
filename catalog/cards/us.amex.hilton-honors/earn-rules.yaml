@@ -1,0 +1,56 @@
+card_id: us.amex.hilton-honors
+rules:
+- id: us.amex.hilton-honors/hilton-7x
+  categories:
+  - cat:travel.hotels.direct.hilton
+  versions:
+  - version: 1
+    release: us.amex.hilton-honors@2024-01-01
+    multiplier: '7'
+    notes: Purchases made directly with hotels and resorts in the Hilton portfolio.
+- id: us.amex.hilton-honors/dining-5x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.amex.hilton-honors@2024-01-01
+    multiplier: '5'
+    conditions:
+    - type: region
+      countries:
+      - US
+      note: U.S. merchants only
+    notes: U.S. restaurants, including takeout and delivery.
+- id: us.amex.hilton-honors/groceries-5x
+  categories:
+  - cat:groceries.store
+  versions:
+  - version: 1
+    release: us.amex.hilton-honors@2024-01-01
+    multiplier: '5'
+    conditions:
+    - type: region
+      countries:
+      - US
+      note: U.S. merchants only
+    notes: U.S. supermarkets; superstores, warehouse clubs and specialty stores excluded.
+- id: us.amex.hilton-honors/gas-5x
+  categories:
+  - cat:gas_ev.gas
+  versions:
+  - version: 1
+    release: us.amex.hilton-honors@2024-01-01
+    multiplier: '5'
+    conditions:
+    - type: region
+      countries:
+      - US
+      note: U.S. merchants only
+    notes: U.S. gas stations; superstores and warehouse clubs that sell fuel excluded.
+- id: us.amex.hilton-honors/base-3x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.hilton-honors@2024-01-01
+    multiplier: '3'

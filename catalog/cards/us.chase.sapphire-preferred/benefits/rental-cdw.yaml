@@ -1,0 +1,32 @@
+id: us.chase.sapphire-preferred/rental-cdw
+card_id: us.chase.sapphire-preferred
+kind: protection
+name: Primary rental car coverage
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-preferred@2024-01-01
+    summary: "Primary collision and theft coverage in the US and abroad on rental cars paid with the card when you decline the rental company's coverage."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: protection:rental_cdw
+        combine: primary_then_excess
+        attributes:
+          priority: primary
+    conditions:
+      - type: paid_with_card
+    beneficiaries:
+      - primary
+      - authorized_user
+    notes: Primary collision damage waiver in the US and abroad.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-preferred/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

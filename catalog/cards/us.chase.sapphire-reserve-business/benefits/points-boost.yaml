@@ -1,0 +1,20 @@
+id: us.chase.sapphire-reserve-business/points-boost
+card_id: us.chase.sapphire-reserve-business
+kind: redemption_modifier
+name: Points Boost redemptions
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: Points are worth 1 to 2 cents each when redeemed for select flights and hotels through Chase Travel with Points Boost.
+  grants:
+  - entitlement: redemption:chase_points_boost
+    attributes:
+      rate_min: '1.0'
+      rate_max: '2.0'
+  conditions: []
+  beneficiaries:
+  - primary
+  applies_to_path: pts:chase_ur/points-boost-reserve-business
+  notes: The issuer page says up to 2 cents a point for this card. The currency path it points at still requires the personal Sapphire Reserve
+    and allows up to 2.5 cents; a business-card path has been proposed.

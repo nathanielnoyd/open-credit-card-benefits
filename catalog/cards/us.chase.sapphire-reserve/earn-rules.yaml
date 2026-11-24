@@ -1,0 +1,67 @@
+card_id: us.chase.sapphire-reserve
+rules:
+  - id: us.chase.sapphire-reserve/travel-3x
+    categories:
+      - cat:travel
+    versions:
+      - version: 1
+        release: us.chase.sapphire-reserve@2024-01-01
+        multiplier: "3"
+  - id: us.chase.sapphire-reserve/chase-travel-hotels-cars-10x
+    categories:
+      - cat:travel.portal.chase.hotels_cars
+    versions:
+      - version: 1
+        release: us.chase.sapphire-reserve@2024-01-01
+        multiplier: "10"
+  - id: us.chase.sapphire-reserve/chase-travel-flights-5x
+    categories:
+      - cat:travel.portal.chase.flights
+    versions:
+      - version: 1
+        release: us.chase.sapphire-reserve@2024-01-01
+        multiplier: "5"
+  - id: us.chase.sapphire-reserve/dining-3x
+    categories:
+      - cat:dining
+    versions:
+      - version: 1
+        release: us.chase.sapphire-reserve@2024-01-01
+        multiplier: "3"
+  - id: us.chase.sapphire-reserve/chase-travel-8x
+    categories:
+      - cat:travel.portal.chase.flights
+      - cat:travel.portal.chase.hotels_cars
+    versions:
+      - version: 1
+        release: us.chase.sapphire-reserve@2025-06-23
+        multiplier: "8"
+  - id: us.chase.sapphire-reserve/flights-direct-4x
+    categories:
+      - cat:travel.flights.direct
+    versions:
+      - version: 1
+        release: us.chase.sapphire-reserve@2025-06-23
+        multiplier: "4"
+  - id: us.chase.sapphire-reserve/hotels-direct-4x
+    categories:
+      - cat:travel.hotels.direct
+    versions:
+      - version: 1
+        release: us.chase.sapphire-reserve@2025-06-23
+        multiplier: "4"
+  - id: us.chase.sapphire-reserve/lyft-5x
+    categories:
+      - cat:travel.rideshare.lyft
+    versions:
+      - version: 1
+        release: us.chase.sapphire-reserve@2025-06-23
+        effective_to: "2027-09-30"
+        multiplier: "5"
+  - id: us.chase.sapphire-reserve/base-1x
+    categories:
+      - cat:all
+    versions:
+      - version: 1
+        release: us.chase.sapphire-reserve@2024-01-01
+        multiplier: "1"

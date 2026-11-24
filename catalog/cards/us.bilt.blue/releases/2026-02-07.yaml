@@ -1,0 +1,59 @@
+id: us.bilt.blue@2026-02-07
+card_id: us.bilt.blue
+kind: baseline
+effective_for_new: '2026-02-07'
+notes: 'Bilt Card 2.0 launch: cards issued by Column N.A. and serviced by Cardless went live on 2026-02-07 (pre-orders from
+  2026-01-14). Terms per the issuer pages and offer terms last updated 2026-10-27.'
+changes:
+- target: fee:annual
+  to:
+    amount: 0
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+  notes: The offer terms list authorized user fees only for Obsidian and Palladium.
+- target: earn_rule:us.bilt.blue/base
+  version: 1
+- target: earn_rule:us.bilt.blue/bilt-travel-hotels
+  version: 1
+- target: earn_rule:us.bilt.blue/bilt-travel-flights
+  version: 1
+- target: earn_rule:us.bilt.blue/lyft
+  version: 1
+- target: earn_rule:us.bilt.blue/housing-tier-25
+  version: 1
+- target: earn_rule:us.bilt.blue/housing-tier-50
+  version: 1
+- target: earn_rule:us.bilt.blue/housing-tier-75
+  version: 1
+- target: earn_rule:us.bilt.blue/housing-tier-100
+  version: 1
+- target: earn_rule:us.bilt.blue/housing-flexible
+  version: 1
+- target: earn_rule:us.bilt.blue/bilt-cash-4pct
+  version: 1
+- target: benefit:us.bilt.blue/housing-payments
+  version: 1
+- target: benefit:us.bilt.blue/no-fx
+  version: 1
+- target: benefit:us.bilt.blue/cell-phone
+  version: 1
+- target: benefit:us.bilt.blue/purchase-assurance
+  version: 1
+- target: benefit:us.bilt.blue/rental-cdw
+  version: 1
+sources:
+- url: https://www.bilt.com/card
+  retrieved_at: '2026-11-13'
+  publisher: issuer
+- url: https://www.bilt.com/terms/bilt-card-offer-terms
+  retrieved_at: '2026-11-13'
+  publisher: issuer
+- url: https://thepointsguy.com/credit-cards/new-bilt-cards-2-0
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://onemileatatime.com/news/bilt-cardless-credit-cards/
+  retrieved_at: '2026-11-13'
+  publisher: review

@@ -1,0 +1,21 @@
+id: us.citi.strata-premier/trip-delay
+card_id: us.citi.strata-premier
+kind: protection
+name: Trip delay
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.strata-premier@2024-05-12
+  summary: "Covers up to $500 per trip when a round trip paid in full with the card is delayed more than 6 hours, with at most 2 claims per 12 months."
+  coverage:
+    per_trip: { amount: 50000, currency: USD }
+    waiting_hours: 6
+    max_claims_per_period: 2
+    requires_card_payment: full
+  grants:
+  - entitlement: protection:trip_delay
+  conditions:
+  - type: paid_with_card
+  beneficiaries: [primary, authorized_user]
+  notes: Round trips only; delays over 6 hours; up to $500 per trip; 2 claims per account per 12 months. One review cites a 3-hour trigger; most cite 6.
+  confidence: "0.7"

@@ -1,0 +1,13 @@
+id: us.citi.prestige/no-fx
+card_id: us.citi.prestige
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.prestige@2025-07-09
+  summary: "No foreign transaction fees on purchases made abroad, for you and authorized users."
+  waives: foreign_transaction_fee
+  grants:
+  - entitlement: fee_waiver:foreign_transaction
+  beneficiaries: [primary, authorized_user]

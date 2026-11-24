@@ -1,0 +1,17 @@
+id: us.amex.platinum
+issuer_id: us.amex
+name: Platinum Card
+summary: "An $895-a-year Amex card earning 5x on flights booked directly or through Amex Travel and on prepaid Amex Travel hotels, with Centurion, Priority Pass and Delta Sky Club lounge access and hotel, Resy, digital entertainment and Uber credits."
+network: amex
+segment: personal
+family: amex-platinum
+earns: pts:amex_mr
+open_to_applicants: true
+url: https://www.americanexpress.com/us/credit-cards/card/platinum/
+fee_posting:
+  anchor: account_open
+tier: premium
+related:
+  - { card_id: us.amex.business-platinum, relation: business_counterpart }
+  - { card_id: us.amex.platinum-morgan-stanley, relation: variant }
+  - { card_id: us.amex.platinum-schwab, relation: variant }

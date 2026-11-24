@@ -1,0 +1,27 @@
+id: us.amex.hilton-surpass/hilton-credit
+card_id: us.amex.hilton-surpass
+kind: statement_credit
+name: Hilton credit
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.hilton-surpass@2024-02-01
+  summary: "Up to $50 each calendar quarter in statement credits on purchases made directly with a Hilton hotel or resort, $200 a year in total."
+  face_value:
+    amount: 20000
+    currency: USD
+  period:
+    cadence: quarterly
+    anchor: calendar
+  limit:
+    amount: 5000
+  conditions:
+  - type: merchant_in
+    merchants:
+    - hilton_portfolio_properties
+    note: Purchases made directly with a property in the Hilton portfolio
+  beneficiaries:
+  - primary
+  notes: Up to $50 in statement credits each calendar quarter on purchases made directly with a Hilton portfolio property.
+  grants:
+  - entitlement: credit:hilton_property

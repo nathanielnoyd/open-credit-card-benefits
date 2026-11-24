@@ -1,0 +1,17 @@
+id: us.capitalone.quicksilver/travel-accident
+card_id: us.capitalone.quicksilver
+kind: protection
+name: Travel accident insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.quicksilver@2025-01-01
+  summary: "Travel accident insurance when you pay the fare with the card; the coverage amount is not published by the issuer."
+  conditions:
+  - type: paid_with_card
+  notes: Automatic coverage when the fare is bought with the card; amount not stated by the issuer.
+  confidence: "0.7"
+  grants:
+  - entitlement: protection:travel_accident
+  beneficiaries:
+  - primary

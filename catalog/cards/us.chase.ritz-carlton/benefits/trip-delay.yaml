@@ -1,0 +1,21 @@
+id: us.chase.ritz-carlton/trip-delay
+card_id: us.chase.ritz-carlton
+kind: protection
+name: Trip delay reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ritz-carlton@2024-07-01
+  summary: "Covers up to $500 per person in meals and lodging when a trip paid with the card is delayed more than 6 hours or needs an overnight stay."
+  grants:
+  - entitlement: protection:trip_delay
+  coverage:
+    per_person:
+      amount: 50000
+      currency: USD
+    waiting_hours: 6
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Delays over 6 hours or requiring an overnight stay. Chase's public page briefly showed 12 hours in error in 2026; Chase said the coverage did not change.

@@ -1,0 +1,24 @@
+id: us.citi.aadvantage-globe/turo-credit
+card_id: us.citi.aadvantage-globe
+kind: statement_credit
+name: Turo credit
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-globe@2025-10-19
+  summary: "Up to $30 back on each completed Turo trip, $240 a calendar year in total, after you link the card to your Turo account."
+  face_value: { amount: 24000, currency: USD }
+  period: { cadence: annual, anchor: calendar }
+  limit:
+    amount: 24000
+    per_transaction: 3000
+  grants:
+  - entitlement: credit:turo
+  conditions:
+  - type: enrollment_required
+    note: Link the card to a Turo account at turo.com/globe
+  - type: merchant_in
+    merchants: [turo]
+  - type: paid_with_card
+  beneficiaries: [primary]
+  notes: Up to $30 per eligible completed Turo trip, up to $240 per calendar year; reported limited to $30 per billing period.

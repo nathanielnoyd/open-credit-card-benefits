@@ -1,0 +1,50 @@
+id: us.chase.united-explorer@2025-03-24
+card_id: us.chase.united-explorer
+kind: refresh
+announced_on: '2025-03-24'
+transition:
+- applies_to:
+  - fee:annual
+  next_renewal_on_or_after: '2026-01-01'
+effective_for_new: '2025-03-24'
+notes: New credits took effect immediately for new and existing cardmembers. The $150 fee applies to existing cardmembers
+  from their first renewal on or after January 1, 2026. Reviews also report that Premier upgrades on award tickets ended August
+  1, 2025, but Chase's product page still lists them, so that change is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 15000
+    currency: USD
+- target: earn_rule:us.chase.united-explorer/pqp
+  version: 1
+- target: benefit:us.chase.united-explorer/club-passes
+  version: 2
+- target: benefit:us.chase.united-explorer/united-hotels
+  version: 1
+- target: benefit:us.chase.united-explorer/rideshare
+  version: 1
+- target: benefit:us.chase.united-explorer/avis-budget
+  version: 1
+- target: benefit:us.chase.united-explorer/jsx
+  version: 1
+- target: benefit:us.chase.united-explorer/instacart
+  version: 1
+- target: benefit:us.chase.united-explorer/instacart-plus
+  version: 1
+- target: benefit:us.chase.united-explorer/travelbank-milestone
+  version: 1
+- target: benefit:us.chase.united-explorer/award-discount-milestone
+  version: 1
+sources:
+- url: https://upgradedpoints.com/news/united-airlines-personal-credit-card-changes-2025/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://thepointsguy.com/news/united-credit-card-refresh-2025
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://awardwallet.com/news/united-mileageplus/united-card-portfolio-overhaul/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://onemileatatime.com/news/united-chase-card-changes
+  retrieved_at: '2026-11-13'
+  publisher: review

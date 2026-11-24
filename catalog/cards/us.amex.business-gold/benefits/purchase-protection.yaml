@@ -1,0 +1,32 @@
+id: us.amex.business-gold/purchase-protection
+card_id: us.amex.business-gold
+kind: protection
+name: Purchase protection
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-gold@2024-02-01
+    summary: "Covers theft or accidental damage within 90 days of purchase on items paid with the card, up to $1,000 per claim and $50,000 per calendar year."
+    coverage:
+      per_claim:
+        amount: 100000
+        currency: USD
+      per_period:
+        amount: 5000000
+        currency: USD
+      window_days: 90
+    grants:
+      - entitlement: protection:purchase
+    conditions:
+      - type: paid_with_card
+    beneficiaries:
+      - primary
+      - authorized_user
+    notes: Theft or accidental damage within 90 days; up to $1,000 per occurrence and $50,000 per calendar year.
+    sources:
+      - url: https://upgradedpoints.com/credit-cards/reviews/american-express-business-gold-card/
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - url: https://frequentmiler.com/american-express-business-gold-credit-card-review/
+        retrieved_at: "2026-11-13"
+        publisher: review

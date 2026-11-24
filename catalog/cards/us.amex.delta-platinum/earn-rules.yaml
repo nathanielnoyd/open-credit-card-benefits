@@ -1,0 +1,52 @@
+card_id: us.amex.delta-platinum
+rules:
+- id: us.amex.delta-platinum/delta-3x
+  categories:
+  - cat:travel.flights.direct.dl
+  versions:
+  - version: 1
+    release: us.amex.delta-platinum@2025-02-01
+    multiplier: '3'
+    notes: Purchases made directly with Delta.
+- id: us.amex.delta-platinum/hotels-3x
+  categories:
+  - cat:travel.hotels.direct
+  versions:
+  - version: 1
+    release: us.amex.delta-platinum@2025-02-01
+    multiplier: '3'
+    notes: Purchases made directly with hotels.
+- id: us.amex.delta-platinum/dining-2x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.amex.delta-platinum@2025-02-01
+    multiplier: '2'
+    notes: Restaurants worldwide, including takeout and delivery in the U.S.
+- id: us.amex.delta-platinum/supermarkets-2x
+  categories:
+  - cat:groceries.store
+  versions:
+  - version: 1
+    release: us.amex.delta-platinum@2025-02-01
+    multiplier: '2'
+    notes: U.S. supermarkets only.
+- id: us.amex.delta-platinum/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.delta-platinum@2025-02-01
+    multiplier: '1'
+- id: us.amex.delta-platinum/mqd-boost
+  name: MQD Boost
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.delta-platinum@2025-02-01
+    currency: pts:delta_mqd
+    multiplier: '0.05'
+    stacks: true
+    notes: $1 MQD per $20 of eligible purchases, uncapped. Earns MQDs alongside miles.

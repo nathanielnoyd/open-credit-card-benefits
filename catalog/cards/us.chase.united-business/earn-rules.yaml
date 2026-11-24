@@ -1,0 +1,89 @@
+card_id: us.chase.united-business
+rules:
+- id: us.chase.united-business/united-purchases
+  categories:
+  - cat:travel.flights.direct.ua
+  versions:
+  - version: 1
+    release: us.chase.united-business@2024-01-01
+    multiplier: '2'
+    notes: 'All purchases from United: tickets, Economy Plus, upgrades, inflight purchases, bag and other fees. Chase advertises
+      8x total on United flights from April 2026: 6x MileagePlus cardmember flight earn plus 2x card earn. Only the 2x is card
+      earn.'
+- id: us.chase.united-business/dining-2x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.chase.united-business@2024-01-01
+    multiplier: '2'
+    notes: Restaurants, including eligible delivery services.
+- id: us.chase.united-business/gas-2x
+  categories:
+  - cat:gas_ev.gas
+  versions:
+  - version: 1
+    release: us.chase.united-business@2024-01-01
+    multiplier: '2'
+    notes: Gas stations.
+- id: us.chase.united-business/office-supply-2x
+  categories:
+  - cat:business.office_supplies
+  versions:
+  - version: 1
+    release: us.chase.united-business@2024-01-01
+    multiplier: '2'
+    notes: Office supply stores.
+- id: us.chase.united-business/transit-2x
+  categories:
+  - cat:transit
+  - cat:travel.transit
+  - cat:travel.rideshare
+  - cat:travel.parking_tolls
+  versions:
+  - version: 1
+    release: us.chase.united-business@2024-01-01
+    multiplier: '2'
+    notes: Local transit and commuting, including rideshare, taxis, trains, tolls and mass transit. Parking is mapped with tolls
+      but may not qualify.
+- id: us.chase.united-business/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.united-business@2024-01-01
+    multiplier: '1'
+- id: us.chase.united-business/pqp
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.united-business@2024-01-01
+    multiplier: '0.05'
+    currency: pts:united_pqp
+    cap:
+      amount: 2000000
+      currency: USD
+    cap_period: calendar_year
+    notes: 1 Premier qualifying point per $20 of net purchases, up to 1,000 PQP a calendar year.
+    sources:
+    - url: https://upgradedpoints.com/news/united-airlines-business-credit-card-changes-2025/
+      retrieved_at: '2026-11-13'
+      publisher: review
+  - version: 2
+    release: us.chase.united-business@2025-03-24
+    multiplier: '0.05'
+    currency: pts:united_pqp
+    cap:
+      amount: 8000000
+      currency: USD
+    cap_period: calendar_year
+    notes: 1 Premier qualifying point per $20 of net purchases, up to 4,000 PQP a calendar year. Counts toward status up to
+      Premier 1K.
+    sources:
+    - url: https://creditcards.chase.com/business-credit-cards/united/united-business-card
+      retrieved_at: '2026-11-13'
+      publisher: issuer
+    - url: https://upgradedpoints.com/news/united-airlines-business-credit-card-changes-2025/
+      retrieved_at: '2026-11-13'
+      publisher: review

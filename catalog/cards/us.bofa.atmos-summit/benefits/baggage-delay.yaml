@@ -1,0 +1,28 @@
+id: us.bofa.atmos-summit/baggage-delay
+card_id: us.bofa.atmos-summit
+kind: protection
+name: Baggage delay
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-summit@2026-11-14
+  summary: "Covers up to $100 a day for 5 days, $500 in total, when your bags are delayed more than 6 hours on a trip paid with the card."
+  face_value: null
+  grants:
+  - entitlement: protection:baggage_delay
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  coverage:
+    waiting_hours: 6
+    max_days: 5
+    per_trip:
+      amount: 50000
+      currency: USD
+  notes: Up to $100 a day for up to 5 days; per_trip is the $500 total.
+  confidence: "0.65"
+  sources:
+  - url: https://onemileatatime.com/guides/atmos-rewards-summit-card-travel-coverage/
+    retrieved_at: "2026-11-14"
+    publisher: review

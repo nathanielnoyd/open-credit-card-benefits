@@ -1,0 +1,14 @@
+id: pts:atmos_rewards
+name: Atmos Rewards (Alaska and Hawaiian)
+kind: airline
+issuer: Alaska Air Group
+url: https://www.alaskaair.com/atmosrewards
+expiry: Points do not expire.
+paths: []
+sources:
+  - url: https://www.alaskaair.com/atmosrewards
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

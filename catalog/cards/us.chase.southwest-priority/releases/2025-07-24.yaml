@@ -1,0 +1,41 @@
+id: us.chase.southwest-priority@2025-07-24
+card_id: us.chase.southwest-priority
+kind: refresh
+announced_on: '2025-07-24'
+transition:
+- applies_to:
+  - fee:annual
+  next_renewal_on_or_after: '2026-01-01'
+effective_for_new: '2025-07-24'
+notes: New benefits took effect July 24, 2025 for new and existing cardmembers. Seat selection, Extra Legroom upgrades and
+  Group 5 boarding apply to flights from January 27, 2026, when Southwest began operating assigned seating. Existing cardmembers
+  pay $229 from their 2026 anniversary. Retired perks and earn categories ended December 31, 2025 (separate release).
+changes:
+- target: fee:annual
+  to:
+    amount: 22900
+    currency: USD
+- target: earn_rule:us.chase.southwest-priority/southwest
+  version: 2
+- target: earn_rule:us.chase.southwest-priority/gas-dining-2x
+  version: 1
+- target: earn_rule:us.chase.southwest-priority/tqp
+  version: 2
+- target: benefit:us.chase.southwest-priority/checked-bag
+  version: 1
+- target: benefit:us.chase.southwest-priority/seat-selection
+  version: 1
+- target: benefit:us.chase.southwest-priority/extra-legroom
+  version: 1
+- target: benefit:us.chase.southwest-priority/priority-boarding
+  version: 1
+sources:
+- url: https://media.chase.com/news/chase-southwest-introduce-new-card-benefits
+  retrieved_at: '2026-11-13'
+  publisher: issuer
+- url: https://upgradedpoints.com/news/changes-southwest-airlines-credit-cards-2025/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://onemileatatime.com/news/southwest-airlines-credit-cards-new-benefits/
+  retrieved_at: '2026-11-13'
+  publisher: review

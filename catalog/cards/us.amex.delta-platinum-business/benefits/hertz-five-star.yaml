@@ -1,0 +1,19 @@
+id: us.amex.delta-platinum-business/hertz-five-star
+card_id: us.amex.delta-platinum-business
+kind: status
+name: Hertz Five Star status
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-platinum-business@2025-02-01
+  summary: "Hertz Five Star status after you link a Hertz Gold Plus Rewards number to your SkyMiles account."
+  grants:
+  - entitlement: status:hertz
+    attributes:
+      tier: five_star
+  conditions:
+  - type: enrollment_required
+    note: Link a Hertz Gold Plus Rewards number to the SkyMiles account
+  beneficiaries:
+  - primary
+  confidence: '0.7'

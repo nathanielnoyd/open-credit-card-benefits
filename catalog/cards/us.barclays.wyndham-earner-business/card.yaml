@@ -1,0 +1,49 @@
+id: us.barclays.wyndham-earner-business
+issuer_id: us.barclays
+name: Wyndham Rewards Earner Business Card
+summary: "A $149-a-year Wyndham business card earning 8x at Hotels by Wyndham and 5x on gas, EV charging, advertising, office supplies and shipping, with 15,000 anniversary points, Diamond status, 20% off award nights and $65 wholesale club and $50 accounting software credits each year."
+network: visa
+segment: business
+tier: mid
+family: barclays-wyndham
+earns: pts:wyndham_rewards
+open_to_applicants: true
+url: https://www.wyndhamrewardscreditcard.com/earner-business-card/
+aliases:
+- Wyndham Earner Business
+- Wyndham Business Card
+- Barclays Wyndham Earner Business
+cobrand:
+  partner: Wyndham Rewards
+  program: pts:wyndham_rewards
+fee_posting:
+  anchor: account_open
+related:
+- { card_id: us.barclays.wyndham-earner-premier, relation: personal_counterpart }
+notes: Terms for new applicants changed on June 17, 2026; cardmembers approved before then keep the pre-refresh terms ($95 fee, 8x gas, 5x utilities, 10% award discount) until Barclays offers a product change. Employee cards are free. Points Payback (points for a statement credit on purchases from the last 90 days) and a 15% discount on buying Wyndham points with the card are not modeled.
+provenance:
+  sources:
+  - url: https://www.wyndhamrewardscreditcard.com/earner-business-card/
+    retrieved_at: '2026-11-14'
+    publisher: issuer
+  - url: https://www.barclaycardus.com/applycontent/TnCs.jsp?tc48504
+    retrieved_at: '2026-11-14'
+    publisher: issuer
+  - url: https://investor.wyndhamhotels.com/news-events/press-releases/detail/422/wyndham-and-barclays-launch-updated-credit-card-suite
+    retrieved_at: '2026-11-14'
+    publisher: issuer
+  - url: https://frequentmiler.com/wyndham-cards-refresh-new-premium-card-new-welcome-offers-new-benefits-and-new-changed-earning-rates-for-new-applicants/
+    retrieved_at: '2026-11-14'
+    publisher: review
+  - url: https://www.doctorofcredit.com/barclays-refreshes-wyndham-personal-business-cards-increased-fees-added-credits-changed-points-earning/
+    retrieved_at: '2026-11-14'
+    publisher: review
+  - url: https://thepointsguy.com/credit-cards/reviews/wyndham-earner-business-card-review
+    retrieved_at: '2026-11-14'
+    publisher: review
+  - url: https://www.uscreditcardguide.com/barclays-wyndham-earner-business-credit-card
+    retrieved_at: '2026-11-14'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.75'
+  last_reviewed: '2026-11-14'

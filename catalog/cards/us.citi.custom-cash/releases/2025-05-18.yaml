@@ -1,0 +1,27 @@
+id: us.citi.custom-cash@2025-05-18
+card_id: us.citi.custom-cash
+kind: baseline
+effective_for_new: "2025-05-18"
+notes: >-
+  Terms as of May 18, 2025, when Citi dropped the published end date of the Citi Travel bonus; earlier history (launch in 2021,
+  extended warranty restored November 17, 2024) is not modeled. The card closed to new applicants on May 28, 2026 without
+  changing existing holders' terms.
+changes:
+- target: fee:annual
+  to: { amount: 0, currency: USD }
+- target: fee:authorized_user
+  to: { amount: 0, currency: USD }
+- target: earn_rule:us.citi.custom-cash/top-category-5x
+  version: 1
+- target: earn_rule:us.citi.custom-cash/citi-travel-bonus
+  version: 1
+- target: earn_rule:us.citi.custom-cash/base-1x
+  version: 1
+- target: benefit:us.citi.custom-cash/extended-warranty
+  version: 1
+- target: benefit:us.citi.custom-cash/citi-entertainment
+  version: 1
+sources:
+- { url: https://frequentmiler.com/citi-custom-cash-complete-guide, retrieved_at: "2026-11-13", publisher: review }
+- { url: https://awardwallet.com/news/citi-thankyou-rewards/citi-custom-cash-closed-new-applications/, retrieved_at: "2026-11-13", publisher: review }
+confidence: "0.7"

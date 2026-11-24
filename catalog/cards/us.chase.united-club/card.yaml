@@ -1,0 +1,45 @@
+id: us.chase.united-club
+issuer_id: us.chase
+name: United Club Card
+summary: "A $695-a-year United card with a United Club membership, earning 5x on United purchases and prepaid Renowned Hotels stays and 2x on other travel and dining, with two free checked bags, Premier Access, up to 28,000 PQP a year from spend and Renowned Hotels, JSX, rideshare and Instacart credits."
+network: visa
+segment: personal
+tier: ultra_premium
+family: chase-united
+earns: pts:united_mileageplus
+open_to_applicants: true
+url: https://creditcards.chase.com/travel-credit-cards/united/united-club
+aliases:
+- United Club
+- United Club Infinite
+- United Club Infinite Card
+- Chase United Club
+- United MileagePlus Club
+cobrand:
+  partner: United Airlines
+  program: pts:united_mileageplus
+fee_posting:
+  anchor: account_open
+notes: Formerly the United Club Infinite Card. Authorized users are free but get no United Club access. Chase's page still
+  lists complimentary Premier upgrades on award tickets for Premier cardmembers, but reviews report the perk ended August
+  1, 2025, so it is not modeled. One Mile at a Time reports the spend PQP cap rising to 32,000 in 2027; not yet confirmed
+  by Chase, so not modeled.
+provenance:
+  sources:
+  - url: https://creditcards.chase.com/travel-credit-cards/united/united-club
+    retrieved_at: '2026-11-14'
+    publisher: issuer
+  - url: https://onemileatatime.com/reviews/credit-cards/chase/united-club-card/
+    retrieved_at: '2026-11-14'
+    publisher: review
+  - url: https://thepointsguy.com/news/united-credit-card-refresh-2025
+    retrieved_at: '2026-11-14'
+    publisher: review
+  - url: https://upgradedpoints.com/news/united-airlines-personal-credit-card-changes-2025/
+    retrieved_at: '2026-11-14'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.75'
+  last_reviewed: '2026-11-14'
+related:
+  - { card_id: us.chase.united-club-business, relation: business_counterpart }

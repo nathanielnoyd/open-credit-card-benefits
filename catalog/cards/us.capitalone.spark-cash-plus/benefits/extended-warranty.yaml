@@ -1,0 +1,17 @@
+id: us.capitalone.spark-cash-plus/extended-warranty
+card_id: us.capitalone.spark-cash-plus
+kind: protection
+name: Extended warranty
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.spark-cash-plus@2026-01-01
+  summary: "Extended warranty protection on eligible items bought with the card, with terms set by the Visa or Mastercard benefits guide for your card."
+  grants:
+  - entitlement: protection:extended_warranty
+  conditions:
+  - type: paid_with_card
+  notes: Listed by the issuer; terms depend on the Visa or Mastercard guide to benefits for the card issued, so no amounts are given.
+  confidence: "0.6"
+  beneficiaries:
+  - primary

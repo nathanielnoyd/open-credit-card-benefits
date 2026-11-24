@@ -1,0 +1,20 @@
+id: pts:apple_daily_cash
+name: Apple Daily Cash
+kind: cashback
+issuer: Apple
+url: https://www.apple.com/apple-card/
+cents_per_point: "1.0"
+expiry: none
+paths:
+  - id: apple-cash
+    kind: deposit
+    rate: "1.0"
+    notes: Daily Cash goes to Apple Cash or an Apple Card Savings account each day; it can be spent, sent, moved to a bank or applied to the Apple Card balance.
+  - id: statement-credit
+    kind: statement_credit
+    rate: "1.0"
+    notes: Applied as a credit on the Apple Card balance.
+sources:
+  - url: https://www.apple.com/apple-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer

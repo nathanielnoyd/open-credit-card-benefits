@@ -1,0 +1,99 @@
+card_id: us.citi.aadvantage-platinum-select
+rules:
+- id: us.citi.aadvantage-platinum-select/aa-2x
+  name: 2x on American Airlines purchases
+  categories:
+  - cat:travel.flights.direct.aa
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-platinum-select@2025-10-19
+    multiplier: '2'
+- id: us.citi.aadvantage-platinum-select/dining-2x
+  name: 2x at restaurants
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-platinum-select@2025-10-19
+    multiplier: '2'
+- id: us.citi.aadvantage-platinum-select/gas-2x
+  name: 2x at gas stations
+  categories:
+  - cat:gas_ev.gas
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-platinum-select@2025-10-19
+    multiplier: '2'
+- id: us.citi.aadvantage-platinum-select/base-1x
+  name: 1x on everything else
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-platinum-select@2025-10-19
+    multiplier: '1'
+- id: us.citi.aadvantage-platinum-select/loyalty-points
+  name: Loyalty Points on purchases
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-platinum-select@2025-10-19
+    multiplier: '1'
+    stacks: true
+    currency: pts:aa_loyalty_points
+    notes: 1 Loyalty Point per eligible base mile earned from purchases; bonus-category miles are reported not to earn extra Loyalty Points.
+    confidence: '0.7'
+    sources:
+    - url: https://citi.com/credit-cards/credit-card-miles/aadvantage-platinum-select-benefits
+      retrieved_at: '2026-11-13'
+      publisher: issuer
+    - &id001
+      url: https://upgradedpoints.com/news/citi-aadvantage-card-changes-2026/
+      retrieved_at: '2026-11-13'
+      publisher: review
+- id: us.citi.aadvantage-platinum-select/gas-ev-2x
+  name: 2x at gas stations and EV charging
+  categories:
+  - cat:gas_ev
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-platinum-select@2027-01-24
+    multiplier: '2'
+    sources:
+    - *id001
+- id: us.citi.aadvantage-platinum-select/aadvantage-hotels-cars-3x
+  name: 3x on AAdvantage Hotels and Cars
+  categories:
+  - cat:travel.portal.aadvantage
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-platinum-select@2027-01-24
+    multiplier: '3'
+    sources:
+    - *id001
+- id: us.citi.aadvantage-platinum-select/streaming-2x
+  name: 2x on select streaming
+  categories:
+  - cat:streaming
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-platinum-select@2027-01-24
+    multiplier: '2'
+    sources:
+    - *id001
+    notes: Select streaming services such as Netflix, Hulu, Disney+, HBO Max, Spotify and YouTube TV.
+- id: us.citi.aadvantage-platinum-select/rides-rails-2x
+  name: 2x on rides and rails
+  categories:
+  - cat:travel.rideshare
+  - cat:travel.transit
+  - cat:transit
+  - cat:travel.parking_tolls
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-platinum-select@2027-01-24
+    multiplier: '2'
+    sources:
+    - *id001
+    notes: Rideshare, taxis, transit, tolls, parking and similar, per Citi's Rides and Rails definition.

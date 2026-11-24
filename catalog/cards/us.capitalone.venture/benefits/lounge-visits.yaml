@@ -1,0 +1,31 @@
+id: us.capitalone.venture/lounge-visits
+card_id: us.capitalone.venture
+kind: access
+name: Two Capital One or Plaza Premium lounge visits a year
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture@2024-01-01
+  summary: "Two free visits a calendar year to Capital One Lounges or Plaza Premium lounges on the day of a flight; this benefit ended January 1, 2025."
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    count: 2
+    unit:
+      unit: visit
+  conditions:
+  - type: same_day_flight
+  notes: Two complimentary visits per calendar year, shared between Capital One Lounges and Plaza Premium lounges. Ended January 1,
+    2025; afterwards cardholders pay a discounted $45 per visit at Capital One Lounges.
+  sources:
+  - url: https://upgradedpoints.com/news/capital-one-removes-lounge-passes-venture-spark-miles-for-business/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  grants:
+  - entitlement: lounge_network:capital_one_lounge
+    value_share: "0.5"
+  - entitlement: lounge_network:plaza_premium
+    value_share: "0.5"
+  beneficiaries:
+  - primary

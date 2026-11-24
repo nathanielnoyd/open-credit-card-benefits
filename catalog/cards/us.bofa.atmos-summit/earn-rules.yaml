@@ -1,0 +1,76 @@
+card_id: us.bofa.atmos-summit
+rules:
+- id: us.bofa.atmos-summit/alaska-hawaiian-3x
+  name: 3 points on Alaska and Hawaiian
+  categories:
+  - cat:travel.flights.direct.as
+  - cat:travel.flights.direct.ha
+  versions:
+  - version: 1
+    release: us.bofa.atmos-summit@2026-11-14
+    multiplier: "3"
+- id: us.bofa.atmos-summit/dining-3x
+  name: 3 points on dining
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.bofa.atmos-summit@2026-11-14
+    multiplier: "3"
+- id: us.bofa.atmos-summit/rent-bilt-3x
+  name: 3 points on rent paid through Bilt
+  categories:
+  - cat:rent
+  versions:
+  - version: 1
+    release: us.bofa.atmos-summit@2026-11-14
+    multiplier: "3"
+    channel: bilt
+    cap:
+      amount: 5000000
+      currency: USD
+    cap_period: calendar_year
+    conditions:
+    - type: enrollment_required
+      note: Link the card to a Bilt account and pay rent through Bilt
+    notes: 3 points per dollar on rent paid through Bilt, including Bilt's 3% fee, up to $50,000 a calendar year, then 1 point per dollar (not modeled, since cat:rent earns only on rules that name it). Bilt charges a 3% fee on these payments. The Ascent card has the same benefit.
+    sources:
+    - url: https://www.nextcard.com/articles/earn-atmos-points-bilt-rent
+      retrieved_at: "2026-11-14"
+      publisher: review
+    - url: https://onemileatatime.com/insights/bilt-alaska-atmos-rewards
+      retrieved_at: "2026-11-14"
+      publisher: review
+- id: us.bofa.atmos-summit/base-1x
+  name: 1 point on everything else
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.bofa.atmos-summit@2026-11-14
+    multiplier: "1"
+- id: us.bofa.atmos-summit/status-points
+  name: Status points from spend
+  categories:
+  - cat:all
+  - cat:rent
+  versions:
+  - version: 1
+    release: us.bofa.atmos-summit@2026-11-14
+    currency: pts:atmos_status_points
+    multiplier: "0.5"
+    stacks: true
+    notes: 1 Atmos status point per $2 spent, with no cap per The Points Guy; NextCard says rent paid through Bilt earns at the same rate.
+- id: us.bofa.atmos-summit/bofa-account-boost
+  name: 10% bonus with an eligible Bank of America account
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.bofa.atmos-summit@2026-11-14
+    boost: "0.10"
+    conditions:
+    - type: selection_is
+      name: bofa_eligible_account
+      value: true
+    notes: Applies to Atmos points earned on purchases only, not to status points; boost cannot be scoped by currency.

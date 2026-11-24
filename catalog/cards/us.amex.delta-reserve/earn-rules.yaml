@@ -1,0 +1,28 @@
+card_id: us.amex.delta-reserve
+rules:
+- id: us.amex.delta-reserve/delta-3x
+  categories:
+  - cat:travel.flights.direct.dl
+  versions:
+  - version: 1
+    release: us.amex.delta-reserve@2025-02-01
+    multiplier: '3'
+    notes: Purchases made directly with Delta.
+- id: us.amex.delta-reserve/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.delta-reserve@2025-02-01
+    multiplier: '1'
+- id: us.amex.delta-reserve/mqd-boost
+  name: MQD Boost
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.delta-reserve@2025-02-01
+    currency: pts:delta_mqd
+    multiplier: '0.1'
+    stacks: true
+    notes: $1 MQD per $10 of eligible purchases, uncapped. Earns MQDs alongside miles.

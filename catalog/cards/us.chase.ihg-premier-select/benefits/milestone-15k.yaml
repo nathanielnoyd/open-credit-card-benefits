@@ -1,0 +1,24 @@
+id: us.chase.ihg-premier-select/milestone-15k
+card_id: us.chase.ihg-premier-select
+kind: milestone
+name: 20,000 points after $15,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier-select@2026-10-01
+  summary: "20,000 IHG One Rewards points after you spend $15,000 on the card in a calendar year."
+  threshold:
+    amount: 1500000
+    currency: USD
+  threshold_period: calendar_year
+  reward:
+    currency: pts:ihg_one
+    points: 20000
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: milestone:us.chase.ihg-premier-select.15k
+  beneficiaries:
+  - primary
+  notes: The same $15,000 also earns 5 Elite Night Credits (milestone-15k-enc).

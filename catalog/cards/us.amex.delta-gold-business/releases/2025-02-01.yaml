@@ -1,0 +1,49 @@
+id: us.amex.delta-gold-business@2025-02-01
+card_id: us.amex.delta-gold-business
+kind: baseline
+effective_for_new: '2025-02-01'
+notes: Current terms (minus the June 2026 additions) recorded as the baseline. The date is nominal and mirrors the personal
+  Delta Gold's baseline; the $150 Delta Stays credit and the fee date from the February 2024 Delta card refresh, and earlier
+  history is not modeled. No Gold Business-specific change on February 1, 2025 was found.
+changes:
+- target: fee:annual
+  to:
+    amount: 15000
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+  notes: Employee cards have no annual fee (up to 99 per the issuer's employee card page).
+- target: earn_rule:us.amex.delta-gold-business/delta-2x
+  version: 1
+- target: earn_rule:us.amex.delta-gold-business/dining-2x
+  version: 1
+- target: earn_rule:us.amex.delta-gold-business/shipping-2x
+  version: 1
+- target: earn_rule:us.amex.delta-gold-business/advertising-2x
+  version: 1
+- target: earn_rule:us.amex.delta-gold-business/base-1x
+  version: 1
+- target: benefit:us.amex.delta-gold-business/no-fx
+  version: 1
+- target: benefit:us.amex.delta-gold-business/first-checked-bag
+  version: 1
+- target: benefit:us.amex.delta-gold-business/priority-boarding
+  version: 1
+- target: benefit:us.amex.delta-gold-business/inflight-discount
+  version: 1
+- target: benefit:us.amex.delta-gold-business/award-discount
+  version: 1
+- target: benefit:us.amex.delta-gold-business/rental-car
+  version: 1
+- target: benefit:us.amex.delta-gold-business/extended-warranty
+  version: 1
+- target: benefit:us.amex.delta-gold-business/purchase-protection
+  version: 1
+- target: benefit:us.amex.delta-gold-business/baggage
+  version: 1
+- target: benefit:us.amex.delta-gold-business/flight-credit-milestone
+  version: 1
+- target: benefit:us.amex.delta-gold-business/delta-stays
+  version: 1

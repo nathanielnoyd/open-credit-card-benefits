@@ -1,0 +1,14 @@
+id: pts:virgin_atlantic
+name: Virgin Atlantic Flying Club
+kind: airline
+issuer: Virgin Atlantic
+url: https://www.virginatlantic.com/flying-club
+expiry: Points do not expire.
+paths: []
+sources:
+  - url: https://www.virginatlantic.com/flying-club
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

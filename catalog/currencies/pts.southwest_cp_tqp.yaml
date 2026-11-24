@@ -1,0 +1,11 @@
+id: pts:southwest_cp_tqp
+name: Southwest Companion Pass and tier qualifying points
+kind: status_credit
+issuer: Southwest Airlines
+url: https://www.southwest.com/rapid-rewards/
+expiry: Status-qualification credit; Companion Pass and A-List qualifying points reset each calendar year.
+paths: []
+sources:
+  - url: https://www.southwest.com/rapid-rewards/
+    retrieved_at: "2026-11-13"
+    publisher: partner

@@ -1,0 +1,18 @@
+id: us.citi.strata-premier/rental-cdw
+card_id: us.citi.strata-premier
+kind: protection
+name: MasterRental car rental coverage
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.strata-premier@2024-05-12
+  summary: "Secondary collision coverage on rental cars paid with the card in your country of residence, primary outside it."
+  coverage:
+    priority: secondary
+  grants:
+  - entitlement: protection:rental_cdw
+  conditions:
+  - type: paid_with_card
+  beneficiaries: [primary, authorized_user]
+  notes: Secondary in the cardholder's country of residence, primary outside it; modeled as secondary. Coverage limits not confirmed.
+  confidence: "0.7"

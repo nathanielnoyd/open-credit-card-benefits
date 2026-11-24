@@ -1,0 +1,17 @@
+id: us.chase.ihg-business/fourth-night-free
+card_id: us.chase.ihg-business
+kind: program_access
+name: Fourth reward night free
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-business@2024-01-01
+  summary: "The fourth night costs no points on IHG reward stays of 4 or more consecutive nights, with no annual limit."
+  grants:
+  - entitlement: program:ihg_fourth_night_free
+  conditions:
+  - type: min_nights
+    nights: 4
+  beneficiaries:
+  - primary
+  notes: On reward stays of 4 or more consecutive nights, the 4th night costs no points; unlimited stays each year.

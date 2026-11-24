@@ -1,0 +1,21 @@
+id: us.bofa.atmos-summit/preferred-boarding
+card_id: us.bofa.atmos-summit
+kind: access
+name: Preferred boarding
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-summit@2026-11-14
+  summary: "Preferred boarding on Alaska flights for you and up to 6 guests on the same reservation when the ticket is paid with the card."
+  face_value: null
+  grants:
+  - entitlement: priority_boarding:alaska
+    attributes:
+      guests: 6
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  - companion
+  notes: Group C per Upgraded Points. The Points Guy says Hawaiian flights also qualify; there is no Hawaiian boarding key yet.

@@ -1,0 +1,15 @@
+id: us.capitalone.quicksilver/no-fx
+card_id: us.capitalone.quicksilver
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.quicksilver@2025-01-01
+  summary: "No foreign transaction fees on purchases abroad for you and authorized users."
+  waives: foreign_transaction_fee
+  grants:
+  - entitlement: fee_waiver:foreign_transaction
+  beneficiaries:
+  - primary
+  - authorized_user

@@ -1,0 +1,12 @@
+id: us.citi.custom-cash/citi-entertainment
+card_id: us.citi.custom-cash
+kind: program_access
+name: Citi Entertainment
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.custom-cash@2025-05-18
+  summary: "Access to presale tickets and events through Citi Entertainment."
+  grants:
+  - entitlement: program:presale_tickets
+  beneficiaries: [primary]

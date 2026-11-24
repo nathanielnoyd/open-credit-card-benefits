@@ -1,0 +1,18 @@
+id: us.chase.ritz-carlton/extended-warranty
+card_id: us.chase.ritz-carlton
+kind: protection
+name: Extended warranty
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ritz-carlton@2024-07-01
+  summary: "Adds one year to US manufacturer warranties of three years or less on items you buy with the card."
+  grants:
+  - entitlement: protection:extended_warranty
+  coverage:
+    extends_years: 1
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Adds one year to eligible US warranties of 3 years or less, up to 4 years from purchase.

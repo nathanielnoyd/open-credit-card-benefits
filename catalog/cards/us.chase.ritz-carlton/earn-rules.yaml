@@ -1,0 +1,39 @@
+card_id: us.chase.ritz-carlton
+rules:
+- id: us.chase.ritz-carlton/marriott-6x
+  categories:
+  - cat:travel.hotels.direct.marriott
+  versions:
+  - version: 1
+    release: us.chase.ritz-carlton@2024-07-01
+    multiplier: '6'
+    notes: Card points at participating Marriott Bonvoy hotels, including The Ritz-Carlton; Marriott base points and the Gold Elite bonus are earned separately from the program.
+- id: us.chase.ritz-carlton/dining-3x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.chase.ritz-carlton@2024-07-01
+    multiplier: '3'
+- id: us.chase.ritz-carlton/car-rental-3x
+  categories:
+  - cat:travel.car_rental
+  versions:
+  - version: 1
+    release: us.chase.ritz-carlton@2024-07-01
+    multiplier: '3'
+- id: us.chase.ritz-carlton/flights-3x
+  categories:
+  - cat:travel.flights.direct
+  versions:
+  - version: 1
+    release: us.chase.ritz-carlton@2024-07-01
+    multiplier: '3'
+    notes: Airline purchases made directly with airlines.
+- id: us.chase.ritz-carlton/base-2x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.ritz-carlton@2024-07-01
+    multiplier: '2'

@@ -1,0 +1,23 @@
+id: us.chase.world-of-hyatt/anniversary-free-night
+card_id: us.chase.world-of-hyatt
+kind: certificate
+name: Category 1-4 free night each cardmember anniversary
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.world-of-hyatt@2024-01-01
+  summary: "A free night at a Category 1-4 Hyatt hotel each cardmember anniversary, valid for 12 months."
+  expires_after_days: 365
+  issued_on: anniversary
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  grants:
+  - entitlement: certificate:us.chase.world-of-hyatt.anniversary-free-night
+    attributes:
+      max_category: 4
+  beneficiaries:
+  - primary
+  notes: Category 1-4 Hyatt hotel, standard room; not valid at Miraval, Hyatt Zilara or Hyatt Ziva or for packages. Resort
+    and destination fees waived. Valid 12 months. The cap is a hotel category, not a points price, so `cap` is left out.
+  machine_readable: false

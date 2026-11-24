@@ -1,0 +1,40 @@
+card_id: us.chase.freedom-unlimited
+rules:
+- id: us.chase.freedom-unlimited/chase-travel-5x
+  categories:
+  - cat:travel.portal.chase
+  versions:
+  - version: 1
+    release: us.chase.freedom-unlimited@2024-01-01
+    multiplier: '5'
+- id: us.chase.freedom-unlimited/dining-3x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.chase.freedom-unlimited@2024-01-01
+    multiplier: '3'
+- id: us.chase.freedom-unlimited/drugstores-3x
+  categories:
+  - cat:drugstores
+  versions:
+  - version: 1
+    release: us.chase.freedom-unlimited@2024-01-01
+    multiplier: '3'
+- id: us.chase.freedom-unlimited/lyft-2x
+  categories:
+  - cat:travel.rideshare.lyft
+  versions:
+  - version: 1
+    release: us.chase.freedom-unlimited@2025-02-01
+    multiplier: '2'
+    effective_to: '2027-09-30'
+    notes: 2% total on Lyft rides, bike and scooter rides and Lyft subscriptions booked in the Lyft app; excludes gift cards, car rentals
+      and fees.
+- id: us.chase.freedom-unlimited/base-1-5x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.freedom-unlimited@2024-01-01
+    multiplier: '1.5'

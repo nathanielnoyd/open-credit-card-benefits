@@ -1,0 +1,31 @@
+id: us.amex.blue-business-plus
+issuer_id: us.amex
+name: Blue Business Plus Card
+summary: "A no-annual-fee Amex business card earning 2x Membership Rewards points on all purchases up to $50,000 a year, then 1x."
+network: amex
+segment: business
+tier: no_fee
+family: amex-membership-rewards
+earns: pts:amex_mr
+open_to_applicants: true
+url: https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/blue-business-plus-credit-card-amex/
+aliases:
+  - Amex Blue Business Plus
+  - BBP
+  - The Blue Business Plus Credit Card from American Express
+fee_posting:
+  anchor: account_open
+notes: 2.7% foreign transaction fee. Expanded Buying Power lets the account spend above its credit limit (amounts above the limit due in full).
+provenance:
+  sources:
+    - url: https://onemileatatime.com/insights/american-express-blue-business-card-worth-it/
+      retrieved_at: "2026-11-13"
+      publisher: review
+    - url: https://thepointsparty.com/articles/amex-blue-business-plus-cash-welcome-offers
+      retrieved_at: "2026-11-13"
+      publisher: review
+    - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-blue-business-plus-card/
+      retrieved_at: "2026-11-13"
+      publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.8"

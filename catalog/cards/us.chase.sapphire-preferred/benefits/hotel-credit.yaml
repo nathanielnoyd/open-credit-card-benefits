@@ -1,0 +1,64 @@
+id: us.chase.sapphire-preferred/hotel-credit
+card_id: us.chase.sapphire-preferred
+kind: statement_credit
+name: Chase Travel hotel credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-preferred@2024-01-01
+    summary: "Up to $50 back each card year on hotels booked through Chase Travel."
+    effective_from: "2024-01-01"
+    face_value:
+      amount: 5000
+      currency: USD
+    period:
+      cadence: annual
+      anchor: cardmember_year
+      tz: America/New_York
+    limit:
+      amount: 5000
+    grants:
+      - entitlement: credit:chase_travel_hotel
+        combine: sum
+    conditions:
+      - type: booking_channel
+        channel: chase_travel
+        note: Hotel booked through Chase Travel
+    beneficiaries:
+      - primary
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-preferred/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"
+  - version: 2
+    supersedes: 1
+    change_type: amount_changed
+    release: us.chase.sapphire-preferred@2026-06-15
+    summary: "Up to $100 back each card year on hotels booked through Chase Travel."
+    effective_from: "2026-06-15"
+    face_value:
+      amount: 10000
+      currency: USD
+    period:
+      cadence: annual
+      anchor: cardmember_year
+      tz: America/New_York
+    limit:
+      amount: 10000
+    grants:
+      - entitlement: credit:chase_travel_hotel
+        combine: sum
+    conditions:
+      - type: booking_channel
+        channel: chase_travel
+        note: Hotel booked through Chase Travel
+    beneficiaries:
+      - primary
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-preferred/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

@@ -1,0 +1,36 @@
+id: us.chase.sapphire-reserve/travel-credit
+card_id: us.chase.sapphire-reserve
+kind: statement_credit
+name: $300 travel credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-reserve@2024-01-01
+    summary: "Up to $300 back each card year, applied automatically to purchases coded as travel."
+    effective_from: "2024-01-01"
+    face_value:
+      amount: 30000
+      currency: USD
+    period:
+      cadence: annual
+      anchor: cardmember_year
+      tz: America/New_York
+    limit:
+      amount: 30000
+    grants:
+      - entitlement: credit:travel_general
+        combine: sum
+    conditions: []
+    beneficiaries:
+      - primary
+    credited_spend_earns: false
+    notes: Posts automatically on the first $300 of purchases coded as travel each card year; those purchases earn no points.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+        retrieved_at: "2026-11-12"
+      - url: https://account.chase.com/sapphire/reserve/benefits
+        retrieved_at: "2026-11-14"
+        publisher: issuer
+    verified_by: agent:occb-seed
+    confidence: "0.9"

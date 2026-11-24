@@ -1,0 +1,25 @@
+id: us.amex.blue-business-cash/extended-warranty
+card_id: us.amex.blue-business-cash
+kind: protection
+name: Extended warranty
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.blue-business-cash@2026-01-01
+    summary: "Adds 1 year to manufacturer warranties of 5 years or less on items paid with the card."
+    coverage:
+      extends_years: 1
+      max_original_warranty_years: 5
+    grants:
+      - entitlement: protection:extended_warranty
+    conditions:
+      - type: paid_with_card
+    beneficiaries:
+      - primary
+      - authorized_user
+    confidence: "0.7"
+    notes: Adds up to one year to U.S. manufacturer warranties of five years or less.
+    sources:
+      - url: https://www.cardsandpoints.com/amex-blue-business-cash
+        retrieved_at: "2026-11-13"
+        publisher: review

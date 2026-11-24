@@ -1,0 +1,71 @@
+id: us.chase.united-club@2024-01-01
+card_id: us.chase.united-club
+kind: baseline
+confidence: '0.65'
+effective_for_new: '2024-01-01'
+notes: Terms of the United Club Infinite Card before the March 24, 2025 refresh, limited to the fee, earn rates and benefits
+  that reviews of the refresh and Chase's current page confirm existed before it. The baseline date is nominal; earlier history
+  is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 52500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.chase.united-club/united-purchases
+  version: 1
+- target: earn_rule:us.chase.united-club/travel-2x
+  version: 1
+- target: earn_rule:us.chase.united-club/dining-2x
+  version: 1
+- target: earn_rule:us.chase.united-club/base-1x
+  version: 1
+- target: earn_rule:us.chase.united-club/pqp
+  version: 1
+- target: benefit:us.chase.united-club/club-membership
+  version: 1
+- target: benefit:us.chase.united-club/checked-bags
+  version: 1
+- target: benefit:us.chase.united-club/priority-boarding
+  version: 1
+- target: benefit:us.chase.united-club/award-availability
+  version: 1
+- target: benefit:us.chase.united-club/inflight-25
+  version: 1
+- target: benefit:us.chase.united-club/trusted-traveler
+  version: 1
+- target: benefit:us.chase.united-club/ihg-platinum
+  version: 1
+- target: benefit:us.chase.united-club/avis-presidents-club
+  version: 1
+- target: benefit:us.chase.united-club/no-fx
+  version: 1
+- target: benefit:us.chase.united-club/rental-cdw
+  version: 1
+- target: benefit:us.chase.united-club/baggage-delay
+  version: 1
+- target: benefit:us.chase.united-club/lost-luggage
+  version: 1
+- target: benefit:us.chase.united-club/trip-cancel
+  version: 1
+- target: benefit:us.chase.united-club/trip-delay
+  version: 1
+- target: benefit:us.chase.united-club/purchase-protection
+  version: 1
+- target: benefit:us.chase.united-club/return-protection
+  version: 1
+- target: benefit:us.chase.united-club/extended-warranty
+  version: 1
+sources:
+- url: https://thepointsguy.com/news/united-credit-card-refresh-2025
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://awardwallet.com/news/united-mileageplus/mileage-earning-changes-2026/
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://creditcards.chase.com/travel-credit-cards/united/united-club
+  retrieved_at: '2026-11-14'
+  publisher: issuer

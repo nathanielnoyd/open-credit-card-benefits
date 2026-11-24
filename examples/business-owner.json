@@ -1,0 +1,59 @@
+{
+  "occb": "0.3",
+  "people": [
+    {
+      "id": "p1"
+    }
+  ],
+  "cards": [
+    {
+      "id": "w-inkp",
+      "card_id": "us.chase.ink-business-preferred",
+      "holder": "p1",
+      "opened_on": "2024-06-01",
+      "status": "open"
+    },
+    {
+      "id": "w-inkc",
+      "card_id": "us.chase.ink-business-cash",
+      "holder": "p1",
+      "opened_on": "2024-06-01",
+      "status": "open"
+    },
+    {
+      "id": "w-bgold",
+      "card_id": "us.amex.business-gold",
+      "holder": "p1",
+      "opened_on": "2024-06-01",
+      "status": "open"
+    },
+    {
+      "id": "w-bbp",
+      "card_id": "us.amex.blue-business-plus",
+      "holder": "p1",
+      "opened_on": "2024-06-01",
+      "status": "open"
+    }
+  ],
+  "spend_profile": {
+    "as_of": "2026-11-13",
+    "currency": "USD",
+    "amounts": {
+      "cat:business.office_supplies": 1500000,
+      "cat:telecom": 1800000,
+      "cat:business.advertising": 4000000,
+      "cat:business.shipping": 600000,
+      "cat:business.software_cloud": 2500000,
+      "cat:travel.flights.direct": 1200000,
+      "cat:dining": 500000,
+      "cat:gas_ev.gas": 400000,
+      "cat:all": 6000000
+    }
+  },
+  "finance": {
+    "discount_rate": "0.045",
+    "holding_period_months": 12,
+    "horizon_months": 12,
+    "include_offers": false
+  }
+}

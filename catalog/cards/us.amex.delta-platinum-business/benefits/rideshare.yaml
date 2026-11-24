@@ -1,0 +1,30 @@
+id: us.amex.delta-platinum-business/rideshare
+card_id: us.amex.delta-platinum-business
+kind: statement_credit
+name: Rideshare credit
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-platinum-business@2025-02-01
+  summary: "Up to $10 a month back on US rides with Uber, Lyft, Curb or Alto, $120 a year in total; enrollment required."
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 1000
+  grants:
+  - entitlement: credit:rideshare
+  conditions:
+  - type: enrollment_required
+  - type: merchant_in
+    merchants:
+    - uber
+    - lyft
+    - curb
+    - alto
+  beneficiaries:
+  - primary
+  notes: U.S. rideshare purchases with select providers.

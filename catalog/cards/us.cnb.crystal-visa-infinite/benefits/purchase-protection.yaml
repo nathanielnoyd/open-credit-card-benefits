@@ -1,0 +1,17 @@
+id: us.cnb.crystal-visa-infinite/purchase-protection
+card_id: us.cnb.crystal-visa-infinite
+kind: protection
+name: Purchase security
+versions:
+- version: 1
+  change_type: added
+  release: us.cnb.crystal-visa-infinite@2020-01-01
+  summary: "Purchase security against theft or damage of new items bought with the card; limits are not confirmed."
+  grants:
+  - entitlement: protection:purchase
+  conditions:
+  - type: paid_with_card
+  notes: Listed by name on the issuer page; amounts and terms are in the Visa guide to benefits, which was not reviewed.
+  confidence: "0.65"
+  beneficiaries:
+  - primary

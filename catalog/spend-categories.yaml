@@ -1,0 +1,540 @@
+- id: cat:all
+  name: All purchases
+- id: cat:apparel
+  name: Clothing stores
+  parent: cat:all
+  mcc:
+  - '5611'
+  - '5621'
+  - '5631'
+  - '5641'
+  - '5651'
+  - '5655'
+  - '5661'
+  - '5691'
+  - '5699'
+- id: cat:business
+  name: Business services
+  parent: cat:all
+- id: cat:business.advertising
+  name: Advertising
+  parent: cat:business
+  description: Online advertising (search engines, social media) and other media
+  mcc:
+  - '7311'
+- id: cat:business.construction
+  name: Construction and contractors
+  parent: cat:business
+  mcc:
+  - '1520'
+  - '1711'
+  - '1731'
+  - '1740'
+  - '1750'
+  - '1761'
+  - '1771'
+- id: cat:business.electronics
+  name: Electronics and computer hardware
+  parent: cat:business
+  mcc:
+  - '5045'
+  - '5732'
+- id: cat:business.office_supplies
+  name: Office supply stores
+  parent: cat:business
+  mcc:
+  - '5111'
+  - '5943'
+- id: cat:business.payroll
+  name: Payroll and professional services
+  parent: cat:business
+- id: cat:business.shipping
+  name: Shipping
+  parent: cat:business
+  mcc:
+  - '4215'
+- id: cat:business.software_cloud
+  name: Software and cloud services
+  parent: cat:business
+  description: Computer software, SaaS and cloud computing
+  mcc:
+  - '5734'
+  - '5817'
+  - '5818'
+  - '7372'
+- id: cat:charity
+  name: Charitable donations
+  parent: cat:all
+  mcc:
+  - '8398'
+- id: cat:department_stores
+  name: Department stores
+  parent: cat:all
+  mcc:
+  - '5311'
+- id: cat:dining
+  name: Dining
+  parent: cat:all
+  mcc:
+  - '5811'
+  - '5812'
+  - '5813'
+  - '5814'
+- id: cat:dining.delivery
+  name: Food delivery apps
+  parent: cat:dining
+  description: DoorDash, Uber Eats, Grubhub and similar when they code as dining
+- id: cat:dining.fast_food
+  name: Fast food restaurants
+  parent: cat:dining
+  mcc:
+  - '5814'
+- id: cat:drugstores
+  name: Drugstores and pharmacies
+  parent: cat:all
+  mcc:
+  - '5912'
+- id: cat:education
+  name: Education and tuition
+  parent: cat:all
+  mcc:
+  - '8211'
+  - '8220'
+  - '8241'
+  - '8244'
+  - '8249'
+  - '8299'
+- id: cat:electronics_stores
+  name: Electronics stores
+  parent: cat:all
+  mcc:
+  - '5732'
+- id: cat:entertainment
+  name: Entertainment
+  parent: cat:all
+  description: Movies, concerts, sports, theme parks and live events
+  mcc:
+  - '7832'
+  - '7922'
+  - '7929'
+  - '7932'
+  - '7933'
+  - '7941'
+  - '7991'
+  - '7996'
+  - '7998'
+- id: cat:entertainment.capitalone
+  name: Capital One Entertainment purchases
+  parent: cat:entertainment
+- id: cat:entertainment.movie_theaters
+  name: Movie theaters
+  parent: cat:entertainment
+  mcc:
+  - '7832'
+- id: cat:fitness
+  name: Gyms and fitness clubs
+  parent: cat:all
+  mcc:
+  - '7997'
+- id: cat:furniture
+  name: Furniture and home furnishings
+  parent: cat:all
+  mcc:
+  - '5712'
+  - '5714'
+  - '5719'
+- id: cat:gas_ev
+  name: Gas and EV charging
+  parent: cat:all
+- id: cat:gas_ev.ev_charging
+  name: EV charging
+  parent: cat:gas_ev
+  mcc:
+  - '5552'
+- id: cat:gas_ev.gas
+  name: Gas stations
+  parent: cat:gas_ev
+  mcc:
+  - '5541'
+  - '5542'
+- id: cat:groceries
+  name: Groceries
+  parent: cat:all
+- id: cat:groceries.online
+  name: Online groceries
+  parent: cat:groceries
+  description: Grocery delivery and pickup ordered online; issuers usually exclude Target, Walmart and warehouse clubs
+- id: cat:groceries.store
+  name: Supermarkets
+  parent: cat:groceries
+  description: Excludes superstores, warehouse clubs and specialty markets at most issuers
+  mcc:
+  - '5411'
+- id: cat:groceries.wholesale
+  name: Wholesale clubs
+  parent: cat:groceries
+  mcc:
+  - '5300'
+- id: cat:healthcare
+  name: Medical and healthcare
+  parent: cat:all
+  mcc:
+  - '8011'
+  - '8021'
+  - '8031'
+  - '8041'
+  - '8042'
+  - '8043'
+  - '8049'
+  - '8050'
+  - '8062'
+  - '8071'
+  - '8099'
+- id: cat:home_improvement
+  name: Home improvement stores
+  parent: cat:all
+  mcc:
+  - '5200'
+  - '5211'
+  - '5231'
+  - '5251'
+  - '5261'
+- id: cat:insurance
+  name: Insurance premiums
+  parent: cat:all
+  mcc:
+  - '6300'
+- id: cat:merchant.ace_hardware
+  name: Ace Hardware
+  parent: cat:home_improvement
+- id: cat:merchant.amazon
+  name: Amazon.com
+  parent: cat:online_shopping
+- id: cat:merchant.amazon_fresh
+  name: Amazon Fresh
+  parent: cat:groceries.online
+- id: cat:merchant.american_heart_association
+  name: American Heart Association donations
+  parent: cat:charity
+- id: cat:merchant.american_red_cross
+  name: American Red Cross donations
+  parent: cat:charity
+- id: cat:merchant.apple
+  name: Apple
+  parent: cat:all
+  description: Apple Store, apple.com, App Store and Apple services
+- id: cat:merchant.booking_com
+  name: Booking.com
+  parent: cat:travel.other
+  description: Prepaid stays and car rentals on Booking.com
+- id: cat:merchant.chargepoint
+  name: ChargePoint
+  parent: cat:gas_ev.ev_charging
+- id: cat:merchant.costco
+  name: Costco
+  parent: cat:groceries.wholesale
+- id: cat:merchant.costco_gas
+  name: Costco Gas
+  parent: cat:gas_ev.gas
+  description: Fuel at Costco warehouse gas stations
+- id: cat:merchant.duane_reade
+  name: Duane Reade
+  parent: cat:drugstores
+- id: cat:merchant.exxon_mobil
+  name: Exxon and Mobil
+  parent: cat:gas_ev.gas
+  description: Exxon and Mobil stations
+- id: cat:merchant.feeding_america
+  name: Feeding America donations
+  parent: cat:charity
+- id: cat:merchant.hertz
+  name: Hertz
+  parent: cat:travel.car_rental
+- id: cat:merchant.nike
+  name: Nike
+  parent: cat:apparel
+  description: Nike stores and nike.com
+- id: cat:merchant.norwegian_cruise_line
+  name: Norwegian Cruise Line
+  parent: cat:travel.cruise
+- id: cat:merchant.target
+  name: Target
+  parent: cat:superstores
+- id: cat:merchant.uber_eats
+  name: Uber Eats
+  parent: cat:dining.delivery
+- id: cat:merchant.united_way
+  name: United Way donations
+  parent: cat:charity
+- id: cat:merchant.walgreens
+  name: Walgreens
+  parent: cat:drugstores
+- id: cat:merchant.walmart
+  name: Walmart
+  parent: cat:superstores
+- id: cat:merchant.whole_foods
+  name: Whole Foods Market
+  parent: cat:groceries.store
+- id: cat:mortgage
+  name: Mortgage payments
+  parent: cat:all
+  explicit_only: true
+- id: cat:online_shopping
+  name: Online shopping
+  parent: cat:all
+  description: Purchases from online retailers; issuer definitions vary widely
+- id: cat:pets
+  name: Pet stores and veterinarians
+  parent: cat:all
+  mcc:
+  - '0742'
+  - '5995'
+- id: cat:rent
+  name: Rent
+  parent: cat:all
+  description: Rent paid to a landlord, usually through the card issuer’s own rent payment channel
+  explicit_only: true
+- id: cat:sporting_goods
+  name: Sporting goods stores
+  parent: cat:all
+  mcc:
+  - '5941'
+- id: cat:streaming
+  name: Streaming services
+  parent: cat:all
+  description: Subscription video, music and audio streaming; issuers publish their own merchant lists
+- id: cat:superstores
+  name: Superstores
+  parent: cat:all
+  description: Walmart, Target and similar discount stores; most issuers exclude them from groceries
+  mcc:
+  - '5310'
+  - '5311'
+- id: cat:telecom
+  name: Phone, internet and cable
+  parent: cat:all
+  mcc:
+  - '4812'
+  - '4814'
+  - '4816'
+  - '4899'
+- id: cat:telecom.wireless
+  name: Wireless phone service
+  parent: cat:telecom
+  mcc:
+  - '4812'
+  - '4814'
+- id: cat:transit
+  name: Local transit and commuting
+  parent: cat:all
+  description: Trains, subways, buses, ferries and commuter transportation
+  mcc:
+  - '4111'
+  - '4112'
+  - '4131'
+- id: cat:travel
+  name: Travel
+  parent: cat:all
+- id: cat:travel.car_rental
+  name: Car rentals
+  parent: cat:travel
+  mcc:
+  - 3351-3441
+  - '7512'
+- id: cat:travel.cruise
+  name: Cruises
+  parent: cat:travel
+  mcc:
+  - '4411'
+- id: cat:travel.flights
+  name: Flights
+  parent: cat:travel
+  mcc:
+  - 3000-3350
+  - '4511'
+- id: cat:travel.flights.direct
+  name: Flights booked with the airline
+  parent: cat:travel.flights
+- id: cat:travel.flights.direct.aa
+  name: American Airlines purchases
+  parent: cat:travel.flights.direct
+  description: Tickets, fees and in-flight purchases bought directly from American Airlines
+- id: cat:travel.flights.direct.as
+  name: Alaska Airlines purchases
+  parent: cat:travel.flights.direct
+  description: Tickets, fees and in-flight purchases bought directly from Alaska Airlines
+- id: cat:travel.flights.direct.b6
+  name: JetBlue purchases
+  parent: cat:travel.flights.direct
+  description: Tickets, fees and in-flight purchases bought directly from JetBlue
+- id: cat:travel.flights.direct.dl
+  name: Delta purchases
+  parent: cat:travel.flights.direct
+  description: Tickets, fees and in-flight purchases bought directly from Delta
+- id: cat:travel.flights.direct.ha
+  name: Hawaiian Airlines
+  parent: cat:travel.flights.direct
+- id: cat:travel.flights.direct.ua
+  name: United purchases
+  parent: cat:travel.flights.direct
+  description: Tickets, fees and in-flight purchases bought directly from United
+- id: cat:travel.flights.direct.wn
+  name: Southwest purchases
+  parent: cat:travel.flights.direct
+  description: Tickets, fees and in-flight purchases bought directly from Southwest
+- id: cat:travel.hotels
+  name: Hotels
+  parent: cat:travel
+  mcc:
+  - 3501-3999
+  - '7011'
+- id: cat:travel.hotels.direct
+  name: Hotels booked with the hotel
+  parent: cat:travel.hotels
+- id: cat:travel.hotels.direct.hilton
+  name: Hilton hotels
+  parent: cat:travel.hotels.direct
+  description: Stays and on-property charges at Hilton hotels
+- id: cat:travel.hotels.direct.hyatt
+  name: Hyatt hotels
+  parent: cat:travel.hotels.direct
+  description: Stays and on-property charges at Hyatt hotels
+- id: cat:travel.hotels.direct.ihg
+  name: IHG hotels
+  parent: cat:travel.hotels.direct
+  description: Stays and on-property charges at IHG hotels
+- id: cat:travel.hotels.direct.marriott
+  name: Marriott hotels
+  parent: cat:travel.hotels.direct
+  description: Stays and on-property charges at Marriott hotels
+- id: cat:travel.hotels.direct.wyndham
+  name: Wyndham hotels
+  parent: cat:travel.hotels.direct
+  description: Stays and on-property charges at Wyndham hotels
+- id: cat:travel.other
+  name: Other travel
+  parent: cat:travel
+  mcc:
+  - '4722'
+  - '4789'
+- id: cat:travel.parking_tolls
+  name: Parking and tolls
+  parent: cat:travel
+  mcc:
+  - '4784'
+  - '7523'
+- id: cat:travel.portal
+  name: Issuer travel portals
+  parent: cat:travel
+- id: cat:travel.portal.aadvantage
+  name: AAdvantage Hotels and Cars
+  parent: cat:travel.portal
+  description: Hotels and car rentals booked through American Airlines (aa.com/hotels, aa.com/cars)
+- id: cat:travel.portal.aadvantage.hotels
+  name: AAdvantage Hotels
+  parent: cat:travel.portal.aadvantage
+  description: Hotels booked through AAdvantage Hotels (aa.com/hotels), for rules that exclude AAdvantage Cars
+- id: cat:travel.portal.amex
+  name: Amex Travel
+  parent: cat:travel.portal
+- id: cat:travel.portal.amex.cars_cruises
+  name: Prepaid Amex Travel car rentals and cruises
+  parent: cat:travel.portal.amex
+- id: cat:travel.portal.amex.flights
+  name: Amex Travel flights
+  parent: cat:travel.portal.amex
+- id: cat:travel.portal.amex.hotels_prepaid
+  name: Amex Travel prepaid hotels
+  parent: cat:travel.portal.amex
+- id: cat:travel.portal.bilt
+  name: Bilt Travel
+  parent: cat:travel.portal
+- id: cat:travel.portal.bilt.flights
+  name: Bilt Travel flights
+  parent: cat:travel.portal.bilt
+- id: cat:travel.portal.bilt.hotels
+  name: Bilt Travel hotels
+  parent: cat:travel.portal.bilt
+- id: cat:travel.portal.bofa
+  name: Bank of America Travel Center
+  parent: cat:travel.portal
+- id: cat:travel.portal.capitalone
+  name: Capital One Travel
+  parent: cat:travel.portal
+- id: cat:travel.portal.capitalone.cars
+  name: Capital One Travel car rentals
+  parent: cat:travel.portal.capitalone
+- id: cat:travel.portal.capitalone.flights
+  name: Capital One Travel flights
+  parent: cat:travel.portal.capitalone
+- id: cat:travel.portal.capitalone.hotels
+  name: Capital One Travel hotels
+  parent: cat:travel.portal.capitalone
+- id: cat:travel.portal.capitalone.vacation_rentals
+  name: Capital One Travel vacation rentals
+  parent: cat:travel.portal.capitalone
+- id: cat:travel.portal.chase
+  name: Chase Travel
+  parent: cat:travel.portal
+- id: cat:travel.portal.chase.flights
+  name: Chase Travel flights
+  parent: cat:travel.portal.chase
+- id: cat:travel.portal.chase.hotels_cars
+  name: Chase Travel hotels and cars
+  parent: cat:travel.portal.chase
+- id: cat:travel.portal.citi
+  name: Citi Travel
+  parent: cat:travel.portal
+- id: cat:travel.portal.citi.attractions
+  name: Citi Travel attractions
+  parent: cat:travel.portal.citi
+- id: cat:travel.portal.citi.cars
+  name: Citi Travel car rentals
+  parent: cat:travel.portal.citi
+- id: cat:travel.portal.citi.flights
+  name: Citi Travel flights
+  parent: cat:travel.portal.citi
+- id: cat:travel.portal.citi.hotels
+  name: Citi Travel hotels
+  parent: cat:travel.portal.citi
+- id: cat:travel.portal.usbank
+  name: U.S. Bank travel portal
+  parent: cat:travel.portal
+- id: cat:travel.portal.usbank.cars
+  name: U.S. Bank travel portal car rentals
+  parent: cat:travel.portal.usbank
+- id: cat:travel.portal.usbank.flights
+  name: U.S. Bank travel portal flights
+  parent: cat:travel.portal.usbank
+- id: cat:travel.portal.usbank.hotels
+  name: U.S. Bank travel portal hotels
+  parent: cat:travel.portal.usbank
+- id: cat:travel.portal.wellsfargo
+  name: Wells Fargo travel portal
+  parent: cat:travel.portal
+- id: cat:travel.rideshare
+  name: Rideshare
+  parent: cat:travel
+  mcc:
+  - '4121'
+- id: cat:travel.rideshare.lyft
+  name: Lyft
+  parent: cat:travel.rideshare
+- id: cat:travel.rideshare.uber
+  name: Uber
+  parent: cat:travel.rideshare
+- id: cat:travel.transit
+  name: Transit
+  parent: cat:travel
+  mcc:
+  - '4111'
+  - '4112'
+  - '4131'
+- id: cat:travel.vacation_rentals
+  name: Vacation rentals
+  parent: cat:travel
+- id: cat:utilities
+  name: Utilities
+  parent: cat:all
+  mcc:
+  - '4900'

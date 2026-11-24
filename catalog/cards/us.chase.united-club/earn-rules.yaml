@@ -1,0 +1,77 @@
+card_id: us.chase.united-club
+rules:
+- id: us.chase.united-club/united-purchases
+  categories:
+  - cat:travel.flights.direct.ua
+  versions:
+  - version: 1
+    release: us.chase.united-club@2024-01-01
+    multiplier: '4'
+    notes: 'All purchases from United: tickets, Economy Plus, upgrades, inflight purchases, bag and other fees.'
+    confidence: '0.7'
+  - version: 2
+    release: us.chase.united-club@2026-04-02
+    multiplier: '5'
+    notes: 'Chase advertises 11x total on United flights: 6x MileagePlus cardmember flight earn plus 5x card earn. Only the
+      5x is card earn. Includes United Card Events.'
+- id: us.chase.united-club/renowned-hotels-5x
+  categories:
+  - cat:travel.hotels
+  versions:
+  - version: 1
+    release: us.chase.united-club@2025-03-24
+    multiplier: '5'
+    channel: renowned_hotels_chase_travel
+    notes: Hotels prepaid through Renowned Hotels and Resorts for United Cardmembers, booked through Chase Travel.
+- id: us.chase.united-club/travel-2x
+  categories:
+  - cat:travel
+  versions:
+  - version: 1
+    release: us.chase.united-club@2024-01-01
+    multiplier: '2'
+    notes: 'Other travel: airfare, trains, transit, cruises, hotels, car rentals, taxis, resorts, rideshare, tolls.'
+    confidence: '0.75'
+- id: us.chase.united-club/dining-2x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.chase.united-club@2024-01-01
+    multiplier: '2'
+    notes: Including eligible delivery services.
+    confidence: '0.75'
+- id: us.chase.united-club/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.united-club@2024-01-01
+    multiplier: '1'
+- id: us.chase.united-club/pqp
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.united-club@2024-01-01
+    multiplier: '0.0667'
+    currency: pts:united_pqp
+    cap:
+      amount: 22500000
+      currency: USD
+    cap_period: calendar_year
+    notes: 1 PQP per $15 of net purchases, up to 15,000 PQP a calendar year.
+    sources:
+    - url: https://thepointsguy.com/news/united-credit-card-refresh-2025
+      retrieved_at: '2026-11-14'
+      publisher: review
+    confidence: '0.65'
+  - version: 2
+    release: us.chase.united-club@2025-03-24
+    multiplier: '0.0667'
+    currency: pts:united_pqp
+    cap:
+      amount: 42000000
+      currency: USD
+    cap_period: calendar_year
+    notes: 1 PQP per $15 of net purchases, up to 28,000 PQP a calendar year. Counts toward status up to Premier 1K.

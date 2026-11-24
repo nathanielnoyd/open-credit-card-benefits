@@ -1,0 +1,28 @@
+id: us.wellsfargo.autograph-journey/travel-accident
+card_id: us.wellsfargo.autograph-journey
+kind: protection
+name: Travel accident insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.wellsfargo.autograph-journey@2024-03-01
+  summary: "Up to $1,000,000 in accidental death and dismemberment coverage on common carrier trips when the fare is paid with the card."
+  face_value: null
+  grants:
+  - entitlement: protection:travel_accident
+  coverage:
+    per_person:
+      amount: 100000000
+      currency: USD
+  conditions:
+  - type: paid_with_card
+    note: Common carrier fare paid with the card
+  beneficiaries:
+  - primary
+  - authorized_user
+  - companion
+  notes: Up to $1,000,000 for accidental loss of life, limb, sight, speech or hearing on a covered common carrier trip.
+  sources:
+  - url: https://creditcards.wellsfargo.com/autograph-journey-visa-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer

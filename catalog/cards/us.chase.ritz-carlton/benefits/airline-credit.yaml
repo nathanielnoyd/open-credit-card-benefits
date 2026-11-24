@@ -1,0 +1,23 @@
+id: us.chase.ritz-carlton/airline-credit
+card_id: us.chase.ritz-carlton
+kind: statement_credit
+name: Airline incidental credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ritz-carlton@2024-07-01
+  summary: "Up to $300 each calendar year back on airline incidental fees such as checked bags, seat upgrades, lounge passes and in-flight purchases, credited when you request it from Chase."
+  face_value:
+    amount: 30000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 30000
+  grants:
+  - entitlement: credit:airline_incidentals
+  beneficiaries:
+  - primary
+  machine_readable: false
+  notes: Not automatic. The primary cardmember must call or message Chase (J.P. Morgan Priority Services) within 4 billing cycles of an eligible charge to have it credited; authorized users' charges count. Airfare is excluded. One review (The Points Guy) describes it as per account year; the issuer page says calendar year.

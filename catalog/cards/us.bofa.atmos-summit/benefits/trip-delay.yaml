@@ -1,0 +1,27 @@
+id: us.bofa.atmos-summit/trip-delay
+card_id: us.bofa.atmos-summit
+kind: protection
+name: Trip delay reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-summit@2026-11-14
+  summary: "Covers up to $500 in expenses when a trip paid with the card is delayed 6 hours or more or needs an overnight stay."
+  face_value: null
+  grants:
+  - entitlement: protection:trip_delay
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  coverage:
+    waiting_hours: 6
+    per_trip:
+      amount: 50000
+      currency: USD
+  notes: Up to $500 after a delay of 6 hours or more or one requiring an overnight stay; whether the limit is per person or per trip is not stated.
+  confidence: "0.65"
+  sources:
+  - url: https://onemileatatime.com/guides/atmos-rewards-summit-card-travel-coverage/
+    retrieved_at: "2026-11-14"
+    publisher: review

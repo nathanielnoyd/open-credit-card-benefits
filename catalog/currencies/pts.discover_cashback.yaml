@@ -1,0 +1,30 @@
+id: pts:discover_cashback
+name: Discover Cashback Bonus
+kind: cashback
+issuer: Discover
+url: https://www.discover.com/credit-cards/cash-back/
+cents_per_point: "1.0"
+expiry: none
+paths:
+  - id: statement-credit
+    kind: statement_credit
+    rate: "1.0"
+  - id: deposit
+    kind: deposit
+    rate: "1.0"
+    notes: Electronic deposit to a bank account, any amount.
+  - id: amazon
+    kind: pay_with_points
+    rate: "1.0"
+    notes: Pay with Cashback Bonus at Amazon.com.
+  - id: gift-cards
+    kind: gift_card
+    rate: "1.0"
+    notes: Partner gift cards and eCertificates, $5 minimum; some partner cards are sold at a discount.
+sources:
+  - url: https://www.discover.com/credit-cards/cash-back/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://www.nerdwallet.com/credit-cards/learn/benefits-discover-it
+    retrieved_at: "2026-11-13"
+    publisher: review

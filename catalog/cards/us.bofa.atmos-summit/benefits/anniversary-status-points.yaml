@@ -1,0 +1,21 @@
+id: us.bofa.atmos-summit/anniversary-status-points
+card_id: us.bofa.atmos-summit
+kind: anniversary
+name: 10,000 status points each anniversary
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-summit@2026-11-14
+  summary: "10,000 Atmos status points each account anniversary."
+  face_value: null
+  reward:
+    currency: pts:atmos_status_points
+    points: 10000
+  issued_on: anniversary
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  grants:
+  - entitlement: status_credit:alaska
+  beneficiaries:
+  - primary

@@ -1,0 +1,65 @@
+{
+  "occb": "0.3",
+  "people": [
+    {
+      "id": "p1"
+    }
+  ],
+  "cards": [
+    {
+      "id": "w-dc",
+      "card_id": "us.citi.double-cash",
+      "holder": "p1",
+      "opened_on": "2024-06-01",
+      "status": "open"
+    },
+    {
+      "id": "w-cc",
+      "card_id": "us.citi.custom-cash",
+      "holder": "p1",
+      "opened_on": "2024-06-01",
+      "status": "open"
+    },
+    {
+      "id": "w-flex",
+      "card_id": "us.chase.freedom-flex",
+      "holder": "p1",
+      "opened_on": "2024-06-01",
+      "status": "open"
+    },
+    {
+      "id": "w-bcp",
+      "card_id": "us.amex.blue-cash-preferred",
+      "holder": "p1",
+      "opened_on": "2024-06-01",
+      "status": "open"
+    },
+    {
+      "id": "w-ac",
+      "card_id": "us.wellsfargo.active-cash",
+      "holder": "p1",
+      "opened_on": "2024-06-01",
+      "status": "open"
+    }
+  ],
+  "spend_profile": {
+    "as_of": "2026-11-13",
+    "currency": "USD",
+    "amounts": {
+      "cat:groceries.store": 2000000,
+      "cat:gas_ev.gas": 300000,
+      "cat:dining": 400000,
+      "cat:streaming": 30000,
+      "cat:drugstores": 60000,
+      "cat:travel.transit": 60000,
+      "cat:travel.rideshare": 60000,
+      "cat:all": 2000000
+    }
+  },
+  "finance": {
+    "discount_rate": "0.045",
+    "holding_period_months": 12,
+    "horizon_months": 12,
+    "include_offers": false
+  }
+}

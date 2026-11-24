@@ -1,0 +1,33 @@
+id: us.citi.aadvantage-executive/trip-delay
+card_id: us.citi.aadvantage-executive
+kind: protection
+name: Trip delay
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-executive@2023-07-23
+  summary: "Covers up to $500 per trip in extra expenses, secondary to other coverage, when a trip paid with the card is delayed 6 hours or more."
+  coverage:
+    per_trip:
+      amount: 50000
+      currency: USD
+    waiting_hours: 6
+    priority: secondary
+  grants:
+  - entitlement: protection:trip_delay
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Up to $500 per trip after a delay of six hours or more.
+  sources:
+  - url: https://www.nerdwallet.com/travel/learn/the-guide-to-citi-credit-card-travel-insurance
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.squaremouth.com/travel-advice/citi-travel-insurance
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.citi.com/credit-cards/citi-aadvantage-executive-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  confidence: '0.6'

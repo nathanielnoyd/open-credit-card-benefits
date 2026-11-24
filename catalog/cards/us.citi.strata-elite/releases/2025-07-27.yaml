@@ -1,0 +1,53 @@
+id: us.citi.strata-elite@2025-07-27
+card_id: us.citi.strata-elite
+kind: baseline
+effective_for_new: "2025-07-27"
+notes: Launch terms, which are also the current terms as of 2026-11-13; no later changes to the card's terms were found.
+changes:
+- target: fee:annual
+  to: { amount: 59500, currency: USD }
+- target: fee:authorized_user
+  to: { amount: 7500, currency: USD }
+  notes: $75 per authorized user.
+- target: earn_rule:us.citi.strata-elite/citi-travel-12x
+  version: 1
+- target: earn_rule:us.citi.strata-elite/citi-travel-air-6x
+  version: 1
+- target: earn_rule:us.citi.strata-elite/citi-nights-6x
+  version: 1
+- target: earn_rule:us.citi.strata-elite/dining-3x
+  version: 1
+- target: earn_rule:us.citi.strata-elite/base-1-5x
+  version: 1
+- target: benefit:us.citi.strata-elite/hotel-benefit
+  version: 1
+- target: benefit:us.citi.strata-elite/splurge-credit
+  version: 1
+- target: benefit:us.citi.strata-elite/blacklane-credit
+  version: 1
+- target: benefit:us.citi.strata-elite/trusted-traveler
+  version: 1
+- target: benefit:us.citi.strata-elite/priority-pass
+  version: 1
+- target: benefit:us.citi.strata-elite/admirals-club-passes
+  version: 1
+- target: benefit:us.citi.strata-elite/citigold-credit
+  version: 1
+- target: benefit:us.citi.strata-elite/no-fx
+  version: 1
+- target: benefit:us.citi.strata-elite/trip-delay
+  version: 1
+- target: benefit:us.citi.strata-elite/trip-cancel
+  version: 1
+- target: benefit:us.citi.strata-elite/lost-luggage
+  version: 1
+- target: benefit:us.citi.strata-elite/rental-cdw
+  version: 1
+- target: benefit:us.citi.strata-elite/extended-warranty
+  version: 1
+- target: benefit:us.citi.strata-elite/purchase-protection
+  version: 1
+sources:
+- { url: https://thepointsguy.com/credit-cards/reviews/citi-strata-elite-review, retrieved_at: "2026-11-13", publisher: review }
+- { url: https://www.doctorofcredit.com/citi-announces-new-strata-elite-card-premium-card-set-to-launch-in-q3-2025/, retrieved_at: "2026-11-13", publisher: review }
+- { url: https://www.citi.com/credit-cards/citi-strata-elite-credit-card, retrieved_at: "2026-11-13", publisher: issuer }

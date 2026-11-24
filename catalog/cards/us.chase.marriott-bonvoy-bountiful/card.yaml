@@ -1,0 +1,35 @@
+id: us.chase.marriott-bonvoy-bountiful
+issuer_id: us.chase
+name: Marriott Bonvoy Bountiful Credit Card
+summary: "A $250-a-year Marriott card earning 6x at Marriott hotels, 4x at grocery stores and restaurants on up to $15,000 a year and 2x elsewhere, with Gold Elite status, 15 Elite Night Credits a year, 1,000 bonus points per eligible stay and a 50,000-point free night after $15,000 in yearly spend."
+network: visa
+segment: personal
+tier: premium
+family: chase-marriott
+earns: pts:marriott_bonvoy
+open_to_applicants: true
+url: https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/bountiful
+aliases:
+- Marriott Bountiful
+- Chase Marriott Bountiful
+- Bonvoy Bountiful
+cobrand:
+  partner: Marriott Bonvoy
+  program: pts:marriott_bonvoy
+fee_posting:
+  anchor: account_open
+notes: After 12 months, a personal Chase Marriott card such as this one can be product changed to The Ritz-Carlton Credit Card (us.chase.ritz-carlton), which is closed to new applicants.
+provenance:
+  sources:
+  - url: https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/bountiful
+    retrieved_at: "2026-11-14"
+    publisher: issuer
+  - url: https://thepointsguy.com/credit-cards/reviews/marriott-bonvoy-bountiful-card-review/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://upgradedpoints.com/credit-cards/reviews/marriott-bonvoy-bountiful-card
+    retrieved_at: "2026-11-14"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.8"
+  last_reviewed: "2026-11-14"

@@ -1,0 +1,74 @@
+id: us.bilt.blue/housing-payments
+card_id: us.bilt.blue
+kind: program_access
+name: Rent and mortgage payments with no fee; rewards options
+versions:
+- version: 1
+  change_type: added
+  release: us.bilt.blue@2026-02-07
+  summary: "Pay rent, mortgage and HOA through Bilt with no transaction fee and choose each billing cycle between 0.5x to 1.25x points on housing or 4% Bilt Cash on everyday spend."
+  grants:
+  - entitlement: program:bilt_housing_payments
+  selections:
+  - name: rewards_option
+    values:
+    - housing_only
+    - flexible_bilt_cash
+    changeable: billing_cycle
+  - name: everyday_spend_ratio_tier
+    values:
+    - under_25
+    - '25'
+    - '50'
+    - '75'
+    - '100'
+    changeable: billing_cycle
+  notes: 'Rent, mortgage and HOA payments made through the Bilt app or website are charged to the card with no transaction
+    fee and repaid from a linked bank account within 24 hours. For accounts opened before 2027-01-01 the holder picks a Rewards
+    Option (switchable each billing cycle, effective the next): Housing-only (0.5x-1.25x on housing by Everyday Spend Ratio,
+    250-point floor per billing cycle, default) or Flexible Bilt Cash (4% Bilt Cash on everyday spend; redeem $3 of Bilt Cash
+    per 100 points to unlock up to 1x on housing). The everyday_spend_ratio_tier selection is not a holder choice: it is the
+    billing cycle''s everyday spend as a share of the housing payment (under_25, 25, 50, 75, 100 meaning at least that percent).'
+  machine_readable: false
+  sources:
+  - url: https://www.bilt.com/terms/bilt-card-offer-terms
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  face_value: null
+  beneficiaries:
+  - primary
+- version: 2
+  supersedes: 1
+  change_type: terms_changed
+  release: us.bilt.blue@2027-01-01
+  summary: "Pay rent, mortgage and HOA through Bilt with no transaction fee and earn 0.5x to 1.25x points on housing based on your everyday spend, with at least 250 points per billing cycle."
+  grants:
+  - entitlement: program:bilt_housing_payments
+  selections:
+  - name: rewards_option
+    values:
+    - housing_only
+    changeable: billing_cycle
+  - name: everyday_spend_ratio_tier
+    values:
+    - under_25
+    - '25'
+    - '50'
+    - '75'
+    - '100'
+    changeable: billing_cycle
+  notes: 'From 2027-01-01 new accounts get only the Housing-only option: 0.5x-1.25x on housing by Everyday Spend Ratio with
+    a 250-point floor per billing cycle. Existing holders move at their first card anniversary on or after 2027-01-01 unless
+    they make a Legacy Election in the app before then to keep the Flexible Bilt Cash option (one-way afterwards). The everyday_spend_ratio_tier
+    selection is the billing cycle''s everyday spend as a share of the housing payment.'
+  machine_readable: false
+  sources:
+  - url: https://www.bilt.com/terms/bilt-card-offer-terms
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://onemileatatime.com/?p=376131
+    retrieved_at: '2026-11-13'
+    publisher: review
+  face_value: null
+  beneficiaries:
+  - primary

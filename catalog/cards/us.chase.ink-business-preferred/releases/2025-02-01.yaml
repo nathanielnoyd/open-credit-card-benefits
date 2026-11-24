@@ -1,0 +1,46 @@
+id: us.chase.ink-business-preferred@2025-02-01
+card_id: us.chase.ink-business-preferred
+kind: baseline
+effective_for_new: '2025-02-01'
+notes: Terms as known before Points Boost replaced the 1.25-cent Chase Travel rate. Earlier history is not modeled; DashPass and DoorDash start dates are not verified.
+changes:
+- target: fee:annual
+  to:
+    amount: 9500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.chase.ink-business-preferred/business-3x
+  version: 1
+- target: earn_rule:us.chase.ink-business-preferred/lyft-5x
+  version: 1
+- target: earn_rule:us.chase.ink-business-preferred/base-1x
+  version: 1
+- target: benefit:us.chase.ink-business-preferred/cell-phone
+  version: 1
+- target: benefit:us.chase.ink-business-preferred/rental-cdw
+  version: 1
+- target: benefit:us.chase.ink-business-preferred/trip-cancel
+  version: 1
+- target: benefit:us.chase.ink-business-preferred/trip-delay
+  version: 1
+- target: benefit:us.chase.ink-business-preferred/baggage-delay
+  version: 1
+- target: benefit:us.chase.ink-business-preferred/lost-luggage
+  version: 1
+- target: benefit:us.chase.ink-business-preferred/travel-accident
+  version: 1
+- target: benefit:us.chase.ink-business-preferred/purchase-protection
+  version: 1
+- target: benefit:us.chase.ink-business-preferred/extended-warranty
+  version: 1
+- target: benefit:us.chase.ink-business-preferred/no-fx
+  version: 1
+- target: benefit:us.chase.ink-business-preferred/dashpass
+  version: 1
+- target: benefit:us.chase.ink-business-preferred/doordash-credit
+  version: 1
+- target: benefit:us.chase.ink-business-preferred/chase-travel-125
+  version: 1

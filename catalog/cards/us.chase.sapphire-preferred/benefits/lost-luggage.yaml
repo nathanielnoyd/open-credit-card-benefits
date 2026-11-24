@@ -1,0 +1,29 @@
+id: us.chase.sapphire-preferred/lost-luggage
+card_id: us.chase.sapphire-preferred
+kind: protection
+name: Lost luggage reimbursement
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-preferred@2024-01-01
+    summary: "Up to $3,000 when your bags are lost or damaged on a trip paid with the card."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: protection:lost_luggage
+        combine: max
+    conditions:
+      - type: paid_with_card
+    beneficiaries:
+      - primary
+    notes: Up to $3,000.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-preferred/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

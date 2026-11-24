@@ -1,0 +1,39 @@
+id: us.chase.ihg-premier/united-travelbank
+card_id: us.chase.ihg-premier
+kind: statement_credit
+name: United TravelBank cash
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier@2024-01-01
+  summary: "$25 in United TravelBank cash twice a year, $50 a year in total, usable only on United, after you register the card with TravelBank."
+  face_value:
+    amount: 5000
+    currency: USD
+  period:
+    cadence: semiannual
+    anchor: calendar
+  limit:
+    amount: 2500
+  grants:
+  - entitlement: credit:united_travel
+  conditions:
+  - type: enrollment_required
+    note: Register the card with United TravelBank
+  beneficiaries:
+  - primary
+  notes: $25 deposited around January 5 and July 5; TravelBank cash is usable only on United.
+  sources:
+  - url: https://frequentmiler.com/?p=297051
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://onemileatatime.com/news/ihg-chase-credit-card-changes/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.chase.com/personal/credit-cards/ihg/premier/premier-protection
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  confidence: '0.7'

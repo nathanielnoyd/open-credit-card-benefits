@@ -1,0 +1,21 @@
+id: us.amex.business-platinum/avis-pp
+card_id: us.amex.business-platinum
+kind: status
+name: Avis Preferred Plus
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-platinum@2025-07-01
+    summary: "Avis Preferred Plus status while you hold the card; enrollment required."
+    grants:
+      - entitlement: status:avis
+        attributes:
+          tier: preferred_plus
+    conditions:
+      - type: enrollment_required
+    beneficiaries:
+      - primary
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-business-platinum-card/
+        retrieved_at: "2026-11-13"
+        publisher: review

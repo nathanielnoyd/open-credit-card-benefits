@@ -1,0 +1,19 @@
+id: us.capitalone.savor/hertz
+card_id: us.capitalone.savor
+kind: status
+name: Hertz Five Star
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.savor@2024-10-22
+  summary: "Hertz Five Star status while you hold the card, after you enroll through your Capital One account."
+  conditions:
+  - type: enrollment_required
+  notes: Enroll through the Capital One account. Listed on the issuer page as of 2026-11-13; when it was added to this card is not confirmed, so it may postdate the baseline date.
+  confidence: "0.6"
+  grants:
+  - entitlement: status:hertz
+    attributes:
+      tier: five_star
+  beneficiaries:
+  - primary

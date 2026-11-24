@@ -1,0 +1,22 @@
+id: us.bofa.atmos-summit/trusted-traveler
+card_id: us.bofa.atmos-summit
+kind: statement_credit
+name: TSA PreCheck or Global Entry credit
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-summit@2026-11-14
+  summary: "A statement credit of up to $120 every 4 years for the Global Entry or TSA PreCheck application fee."
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: every_n_years
+    n: 4
+  limit:
+    amount: 12000
+  grants:
+  - entitlement: credit:trusted_traveler
+  conditions: []
+  beneficiaries:
+  - primary

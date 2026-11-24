@@ -1,0 +1,33 @@
+id: us.chase.united-quest
+issuer_id: us.chase
+name: United Quest Card
+summary: "A $350-a-year United card earning 4x on United purchases, 5x on Renowned Hotels stays and 2x on other travel, dining and streaming, with two free checked bags, $200 in United TravelBank cash a year and an anniversary award discount."
+network: visa
+segment: personal
+tier: premium
+family: chase-united
+earns: pts:united_mileageplus
+open_to_applicants: true
+url: https://creditcards.chase.com/travel-credit-cards/united/united-quest
+aliases:
+- United Quest
+- Chase United Quest
+cobrand:
+  partner: United Airlines
+  program: pts:united_mileageplus
+fee_posting:
+  anchor: account_open
+provenance:
+  sources:
+  - url: https://creditcards.chase.com/travel-credit-cards/united/united-quest
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://upgradedpoints.com/news/united-airlines-personal-credit-card-changes-2025/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://thepointsguy.com/news/united-credit-card-refresh-2025
+    retrieved_at: '2026-11-13'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.8'
+  last_reviewed: '2026-11-13'

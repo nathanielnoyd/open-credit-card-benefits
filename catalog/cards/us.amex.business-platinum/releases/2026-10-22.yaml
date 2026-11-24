@@ -1,0 +1,18 @@
+id: us.amex.business-platinum@2026-10-22
+card_id: us.amex.business-platinum
+kind: change
+announced_on: "2026-10-22"
+effective_for_new: "2026-10-22"
+notes: Hotel credit becomes the Lodging Credit with Airbnb Luxe; new Airbnb Experiences credit.
+changes:
+  - target: benefit:us.amex.business-platinum/hotel-credit
+    version: 2
+  - target: benefit:us.amex.business-platinum/airbnb-experiences
+    version: 1
+sources:
+  - url: https://www.nerdwallet.com/travel/news/amex-adds-airbnb-and-restricts-platinum-credit
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://milestalk.com/amex-expands-platinum-and-business-platinum-600-lodging-credit-to-airbnb-adds-2-night-fhr-minimum/
+    retrieved_at: "2026-11-13"
+    publisher: review

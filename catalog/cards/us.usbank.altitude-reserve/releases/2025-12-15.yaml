@@ -1,0 +1,35 @@
+id: us.usbank.altitude-reserve@2025-12-15
+card_id: us.usbank.altitude-reserve
+kind: change
+announced_on: "2025-08-01"
+effective_for_new: "2025-12-15"
+notes: >-
+  Announced to cardholders in early August 2025 (Doctor of Credit confirmed it on August 1, 2025, after an image
+  leaked on July 28) and effective December 15, 2025 for all cardholders, since the card was already closed to
+  applicants. The $325 credit became Travel Center only, mobile wallet 3x was capped at $5,000 per billing cycle,
+  Travel Center hotels and cars rose to 10x and Travel Center flights got 5x. Points for travel fell from 1.5 to 1
+  cent the same day; that change is recorded on the pts:usbank_altitude currency. Transfer partners promised in this
+  announcement launched August 11, 2026 and are also recorded on the currency.
+changes:
+- target: earn_rule:us.usbank.altitude-reserve/travel-center-hotels-cars
+  version: 2
+- target: earn_rule:us.usbank.altitude-reserve/travel-center-flights
+  version: 1
+- target: earn_rule:us.usbank.altitude-reserve/mobile-wallet-3x
+  version: 2
+- target: benefit:us.usbank.altitude-reserve/travel-credit
+  version: 2
+transition:
+- applies_to: [benefits]
+  "on": "2025-12-15"
+sources:
+- url: https://www.doctorofcredit.com/u-s-bank-to-make-negative-changes-to-u-s-bank-altitude-reserve-travel-transfers-1%C2%A2-per-point-instead-of-1-5%C2%A2
+  retrieved_at: "2026-11-14"
+  publisher: review
+- url: https://awardwallet.com/news/credit-cards/us-bank-altitude-reserve-card-2025-changes/
+  retrieved_at: "2026-11-14"
+  publisher: review
+- url: https://upgradedpoints.com/news/us-bank-altitude-reserve-card-changes-coming
+  retrieved_at: "2026-11-14"
+  publisher: review
+confidence: "0.8"

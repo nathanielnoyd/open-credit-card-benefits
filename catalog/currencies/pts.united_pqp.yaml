@@ -1,0 +1,11 @@
+id: pts:united_pqp
+name: United Premier qualifying points
+kind: status_credit
+issuer: United Airlines
+url: https://www.united.com/en/us/fly/mileageplus/premier.html
+expiry: Status-qualification credit; resets each calendar year.
+paths: []
+sources:
+  - url: https://www.united.com/en/us/fly/mileageplus/premier.html
+    retrieved_at: "2026-11-13"
+    publisher: partner

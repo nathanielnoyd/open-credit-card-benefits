@@ -1,0 +1,53 @@
+id: us.citi.aadvantage-executive/trusted-traveler
+card_id: us.citi.aadvantage-executive
+kind: statement_credit
+name: Global Entry or TSA PreCheck credit
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-executive@2023-07-23
+  summary: "Up to $100 once every four years for a Global Entry or TSA PreCheck application fee charged to the card."
+  face_value:
+    amount: 10000
+    currency: USD
+  period:
+    cadence: every_n_years
+    n: 4
+    anchor: account_open
+  limit:
+    amount: 10000
+  grants:
+  - entitlement: credit:trusted_traveler
+  beneficiaries:
+  - primary
+  conditions: &id001
+  - type: paid_with_card
+  notes: Up to $100 toward a Global Entry or TSA PreCheck application fee once every four years.
+- version: 2
+  supersedes: 1
+  change_type: amount_changed
+  release: us.citi.aadvantage-executive@2026-08-23
+  summary: "Up to $120 once every four years for a Global Entry or TSA PreCheck application fee charged to the card."
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: every_n_years
+    n: 4
+    anchor: account_open
+  limit:
+    amount: 12000
+  grants:
+  - entitlement: credit:trusted_traveler
+  beneficiaries:
+  - primary
+  conditions: *id001
+  notes: Up to $120 once every four years. The increase from $100 predates this refresh (it followed the Global Entry fee rise); its exact date is unknown, so it is shipped here as first confirmed.
+  sources:
+  - url: https://www.citi.com/credit-cards/citi-aadvantage-executive-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://onemileatatime.com/reviews/credit-cards/citi/citi-aadvantage-executive-card/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  confidence: '0.7'

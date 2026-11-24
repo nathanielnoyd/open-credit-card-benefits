@@ -1,0 +1,23 @@
+id: us.capitalone.venture-x-business/extended-warranty
+card_id: us.capitalone.venture-x-business
+kind: protection
+name: Extended warranty
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x-business@2025-11-01
+  summary: "Adds one year to eligible warranties on items bought with the card."
+  coverage:
+    extends_years: 1
+  grants:
+  - entitlement: protection:extended_warranty
+  conditions:
+  - type: paid_with_card
+  notes: Issuer lists extended warranty; one added year is the usual Visa Infinite term.
+  confidence: "0.6"
+  sources:
+  - url: https://www.capitalone.com/small-business/credit-cards/venture-x-business/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  beneficiaries:
+  - primary

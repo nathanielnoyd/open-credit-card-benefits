@@ -1,0 +1,29 @@
+id: us.apple.card/uber-one-trial
+card_id: us.apple.card
+kind: membership
+name: Uber One trial
+versions:
+- version: 1
+  change_type: added
+  release: us.apple.card@2019-08-01
+  summary: "Six months of Uber One free, one time, when you sign up through Apple's link and pay with Apple Card in Apple Pay; it then renews at $9.99 a month."
+  face_value: null
+  period:
+    cadence: once
+  grants:
+  - entitlement: membership:uber_one
+    attributes:
+      trial_months: 6
+  conditions:
+  - type: booking_channel
+    channel: apple_card_uber_link
+  - type: payment_method
+    method: apple_pay
+  beneficiaries:
+  - primary
+  notes: Six months of Uber One free for new or returning members who sign up through Apple's link with Apple Card in Apple Pay; then renews at $9.99 a month until canceled. A one-time trial, not an ongoing membership.
+  machine_readable: false
+  sources:
+  - url: https://www.apple.com/apple-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer

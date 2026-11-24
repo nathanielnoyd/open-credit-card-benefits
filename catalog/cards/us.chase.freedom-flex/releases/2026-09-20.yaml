@@ -1,0 +1,23 @@
+id: us.chase.freedom-flex@2026-09-20
+card_id: us.chase.freedom-flex
+kind: change
+announced_on: "2026-07-14"
+effective_for_new: "2026-09-20"
+notes: Chase removed the 3% foreign transaction fee and ended cell phone protection on the same day for all cardholders (NerdWallet reported September 22; most sources and the Guide to Benefits say September 20).
+changes:
+- target: benefit:us.chase.freedom-flex/no-fx
+  version: 1
+- target: benefit:us.chase.freedom-flex/cell-phone
+  change_type: retired
+transition:
+- applies_to:
+  - benefits
+  "on": "2026-09-20"
+sources:
+- url: https://thepointsguy.com/news/chase-freedom-flex-cellphone-protection-ending/
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://awardwallet.com/news/credit-cards/chase-freedom-flex-removing-foreign-transaction-fees/
+  retrieved_at: "2026-11-13"
+  publisher: review
+confidence: "0.85"

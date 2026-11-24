@@ -1,0 +1,41 @@
+id: us.chase.sapphire-reserve/select-hotels-2026
+card_id: us.chase.sapphire-reserve
+kind: statement_credit
+name: Chase Travel select hotels credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-reserve@2025-06-23
+    summary: "A one-time credit of up to $250 in 2026 on prepaid Chase Travel stays of 2 nights or more at IHG, Montage, Pendry, Omni, Virgin, Minor or Pan Pacific hotels."
+    effective_from: "2026-01-01"
+    effective_to: "2026-12-31"
+    face_value:
+      amount: 25000
+      currency: USD
+    period:
+      cadence: once
+      anchor: calendar
+      tz: America/New_York
+    limit:
+      amount: 25000
+    grants:
+      - entitlement: credit:chase_travel_select_hotels
+        combine: sum
+    conditions:
+      - type: booking_channel
+        channel: chase_travel
+        note: Prepaid Chase Travel booking
+      - type: merchant_in
+        merchants: [ihg, montage, pendry, omni, virgin_hotels, minor_hotels, pan_pacific]
+        note: IHG, Montage, Pendry, Omni, Virgin, Minor or Pan Pacific hotels
+      - type: min_nights
+        nights: 2
+    beneficiaries:
+      - primary
+    notes: One-time credit for 2026 only.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.8"

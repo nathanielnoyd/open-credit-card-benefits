@@ -1,0 +1,14 @@
+id: pts:etihad_guest
+name: Etihad Guest
+kind: airline
+issuer: Etihad Airways
+url: https://www.etihad.com/en-us/etihadguest
+expiry: Miles expire after 18 months with no qualifying activity; Platinum and Diamond members are exempt.
+paths: []
+sources:
+  - url: https://www.etihad.com/en-us/etihadguest
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardwallet.com/travel/loyalty-program-expiration-policies/
+    retrieved_at: "2026-11-13"
+    publisher: review

@@ -1,0 +1,30 @@
+id: us.amex.hilton-honors
+issuer_id: us.amex
+name: Hilton Honors American Express Card
+summary: "A no-annual-fee Hilton card earning 7x points at Hilton hotels and 5x at US restaurants, supermarkets and gas stations, with Hilton Silver status and Gold status after $20,000 in calendar-year spend."
+network: amex
+segment: personal
+tier: no_fee
+family: amex-hilton
+earns: pts:hilton_honors
+open_to_applicants: true
+url: https://www.americanexpress.com/us/credit-cards/card/hilton-honors/
+aliases:
+- Hilton Honors Amex
+- Amex Hilton no annual fee card
+cobrand:
+  partner: Hilton
+  program: pts:hilton_honors
+fee_posting:
+  anchor: account_open
+provenance:
+  sources:
+  - url: https://www.americanexpress.com/us/credit-cards/card/hilton-honors/
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://frequentmiler.com/hilton-honors-american-express-card/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.85'
+  last_reviewed: '2026-11-13'

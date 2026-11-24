@@ -1,0 +1,23 @@
+id: us.bofa.premium-rewards/baggage-delay
+card_id: us.bofa.premium-rewards
+kind: protection
+name: Baggage delay
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards@2024-01-01
+  summary: "Covers up to $100 a day for 5 days, $500 in total, when your bags are delayed 6 hours or more on a trip paid with the card."
+  face_value: null
+  grants:
+  - entitlement: protection:baggage_delay
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  coverage:
+    waiting_hours: 6
+    max_days: 5
+    per_trip:
+      amount: 50000
+      currency: USD
+  notes: Up to $100 a day for up to 5 days after a 6-hour delay; per_trip is the $500 total.

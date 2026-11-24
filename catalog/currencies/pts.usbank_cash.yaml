@@ -1,0 +1,19 @@
+id: pts:usbank_cash
+name: U.S. Bank cash rewards
+kind: cashback
+issuer: U.S. Bank
+url: https://www.usbank.com/credit-cards/cash-back-credit-cards.html
+cents_per_point: "1.0"
+expiry: none while the account is open
+paths:
+  - id: statement-credit
+    kind: statement_credit
+    rate: "1.0"
+  - id: deposit
+    kind: deposit
+    rate: "1.0"
+    notes: Deposit to a U.S. Bank checking or savings account, or a U.S. Bank Rewards Card.
+sources:
+  - url: https://www.usbank.com/credit-cards/cash-back-credit-cards.html
+    retrieved_at: "2026-11-13"
+    publisher: issuer

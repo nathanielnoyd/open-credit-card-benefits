@@ -1,0 +1,24 @@
+id: us.amex.delta-reserve-business/rental-car
+card_id: us.amex.delta-reserve-business
+kind: protection
+name: Car rental loss and damage insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-reserve-business@2025-02-01
+  summary: Secondary coverage up to $75,000 per rental for damage to or theft of a rental car paid with the card when you
+    decline the rental company's collision damage waiver.
+  coverage:
+    priority: secondary
+    per_claim:
+      amount: 7500000
+      currency: USD
+  grants:
+  - entitlement: protection:rental_cdw
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Secondary coverage up to $75,000 per rental, as listed by AwardWallet; not confirmed on an issuer page.
+  confidence: '0.65'

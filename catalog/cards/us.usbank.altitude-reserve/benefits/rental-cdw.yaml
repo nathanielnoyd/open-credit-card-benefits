@@ -1,0 +1,26 @@
+id: us.usbank.altitude-reserve/rental-cdw
+card_id: us.usbank.altitude-reserve
+kind: protection
+name: Rental car coverage
+versions:
+- version: 1
+  change_type: added
+  release: us.usbank.altitude-reserve@2024-11-11
+  summary: "Primary collision damage coverage on car rentals paid with the card when you decline the rental company's waiver; limits are not confirmed."
+  coverage:
+    priority: primary
+  grants:
+  - entitlement: protection:rental_cdw
+  conditions:
+  - type: paid_with_card
+  notes: Listed as primary by one review; coverage limits and excluded countries were not confirmed.
+  sources:
+  - url: https://awardwallet.com/credit-cards/us-bank-altitude-reserve-card/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://thepointsguy.com/credit-cards/reviews/it-pays-to-go-mobile-u-s-bank-altitude-reserve-visa-infinite-card-review/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  confidence: "0.6"
+  beneficiaries:
+  - primary

@@ -1,0 +1,400 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nathanielnoyd.github.io/open-credit-card-benefits/schema/0.3/wallet.schema.json",
+  "title": "OCCB user layer (a wallet export)",
+  "type": "object",
+  "required": [
+    "occb",
+    "people",
+    "cards"
+  ],
+  "properties": {
+    "occb": {
+      "enum": [
+        "0.2",
+        "0.3"
+      ]
+    },
+    "people": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "home_airports": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Z]{3}$"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "cards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "card_id",
+          "holder",
+          "opened_on"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "card_id": {
+            "$ref": "common.schema.json#/$defs/card_id"
+          },
+          "holder": {
+            "type": "string"
+          },
+          "opened_on": {
+            "$ref": "common.schema.json#/$defs/date"
+          },
+          "fee_post_dates": {
+            "type": "array",
+            "items": {
+              "$ref": "common.schema.json#/$defs/date"
+            }
+          },
+          "fee_paid": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "date",
+                "amount"
+              ],
+              "properties": {
+                "date": {
+                  "$ref": "common.schema.json#/$defs/date"
+                },
+                "amount": {
+                  "$ref": "common.schema.json#/$defs/money"
+                }
+              }
+            }
+          },
+          "selections": {
+            "type": "object"
+          },
+          "terms_override": {
+            "type": "object"
+          },
+          "retention_offers": {
+            "type": "array"
+          },
+          "product_changes": {
+            "type": "array"
+          },
+          "last4": {
+            "type": "string",
+            "pattern": "^\\d{4}$"
+          },
+          "status": {
+            "enum": [
+              "open",
+              "closed"
+            ]
+          },
+          "offers": {
+            "type": "array",
+            "description": "Acquisition offers this person received on this card (spec Appendix F)",
+            "items": {
+              "$ref": "offer.schema.json"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "spend_profile": {
+      "type": "object",
+      "required": [
+        "amounts"
+      ],
+      "properties": {
+        "as_of": {
+          "$ref": "common.schema.json#/$defs/date"
+        },
+        "currency": {
+          "type": "string"
+        },
+        "amounts": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^cat:[a-z0-9_.]+$"
+          },
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "valuations": {
+      "$ref": "catalog-lists.schema.json#/$defs/valuations"
+    },
+    "benefit_values": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "usage_probability": {
+            "$ref": "common.schema.json#/$defs/confidence"
+          },
+          "personal_value": {
+            "$ref": "common.schema.json#/$defs/money"
+          },
+          "basis": {
+            "enum": [
+              "annual",
+              "present_value"
+            ],
+            "description": "annual (default): the value of a year of use, which valuation discounts across the year. present_value: what the user would pay up front for it, used as is."
+          },
+          "note": {
+            "type": "string",
+            "description": "The user's reason for this value"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "earn_values": {
+      "type": "object",
+      "description": "Direct values for earn rules, keyed by earn rule ID, for users who value a bonus category rather than give a spend profile. A valued rule is left out of spend assignment.",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "personal_value"
+        ],
+        "properties": {
+          "personal_value": {
+            "$ref": "common.schema.json#/$defs/money"
+          },
+          "basis": {
+            "enum": [
+              "annual",
+              "present_value"
+            ],
+            "description": "annual (default): the value of a year of use, which valuation discounts across the year. present_value: what the user would pay up front for it, used as is."
+          },
+          "note": {
+            "type": "string",
+            "description": "The user's reason for this value"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "entitlement_values": {
+      "type": "object",
+      "description": "The user's values by entitlement key, such as credit:resy or lounge_network:centurion. One answer applies to every benefit that grants the entitlement, on every card. A value for a specific benefit in benefit_values wins.",
+      "propertyNames": {
+        "pattern": "^[a-z_]+:[a-z0-9_.\\-]+$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "usage_probability": {
+            "$ref": "common.schema.json#/$defs/confidence"
+          },
+          "personal_value": {
+            "$ref": "common.schema.json#/$defs/money"
+          },
+          "basis": {
+            "enum": [
+              "annual",
+              "present_value"
+            ]
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "redemption_mix": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {
+          "$ref": "common.schema.json#/$defs/decimal"
+        }
+      }
+    },
+    "goals": {
+      "type": "object",
+      "properties": {
+        "spend_thresholds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "finance": {
+      "type": "object",
+      "properties": {
+        "discount_rate": {
+          "$ref": "common.schema.json#/$defs/decimal"
+        },
+        "devaluation": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "common.schema.json#/$defs/decimal"
+          }
+        },
+        "holding_period_months": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "multi_year_allocation": {
+          "enum": [
+            "cash_basis",
+            "amortize"
+          ]
+        },
+        "horizon_months": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "include_offers": {
+          "type": "boolean",
+          "description": "Count the holder's offers (bonuses, fee waivers, intro earn) for year-one value; off for steady-state value"
+        }
+      }
+    },
+    "custom_benefits": {
+      "type": "array",
+      "items": {
+        "$ref": "benefit.schema.json"
+      }
+    },
+    "usage_events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "benefit_id",
+          "wallet_card_id",
+          "transaction_date",
+          "amount"
+        ],
+        "properties": {
+          "benefit_id": {
+            "type": "string"
+          },
+          "wallet_card_id": {
+            "type": "string"
+          },
+          "beneficiary": {
+            "type": "string"
+          },
+          "transaction_date": {
+            "$ref": "common.schema.json#/$defs/date"
+          },
+          "posted_date": {
+            "$ref": "common.schema.json#/$defs/date"
+          },
+          "amount": {
+            "$ref": "common.schema.json#/$defs/money"
+          },
+          "period_key": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "redemptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "currency",
+          "points",
+          "date"
+        ],
+        "properties": {
+          "currency": {
+            "$ref": "common.schema.json#/$defs/currency_id"
+          },
+          "points": {
+            "type": "integer"
+          },
+          "path": {
+            "type": "string"
+          },
+          "cash_price": {
+            "$ref": "common.schema.json#/$defs/money"
+          },
+          "cash_paid": {
+            "$ref": "common.schema.json#/$defs/money"
+          },
+          "foregone_points": {
+            "type": "integer"
+          },
+          "date": {
+            "$ref": "common.schema.json#/$defs/date"
+          }
+        }
+      }
+    },
+    "balances": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "currency",
+          "points",
+          "as_of"
+        ],
+        "properties": {
+          "currency": {
+            "$ref": "common.schema.json#/$defs/currency_id"
+          },
+          "points": {
+            "type": "integer"
+          },
+          "as_of": {
+            "$ref": "common.schema.json#/$defs/date"
+          },
+          "lots": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "points"
+              ],
+              "properties": {
+                "points": {
+                  "type": "integer"
+                },
+                "earned_before": {
+                  "$ref": "common.schema.json#/$defs/date"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

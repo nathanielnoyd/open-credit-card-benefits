@@ -1,0 +1,21 @@
+id: us.chase.marriott-bonvoy-boundless/purchase-protection
+card_id: us.chase.marriott-bonvoy-boundless
+kind: protection
+name: Purchase protection
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.marriott-bonvoy-boundless@2024-01-01
+  summary: "Covers items you buy with the card against damage or theft for 120 days, up to $500 per item."
+  grants:
+  - entitlement: protection:purchase
+  coverage:
+    per_item:
+      amount: 50000
+      currency: USD
+    window_days: 120
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: 120 days (90 days for New York residents).

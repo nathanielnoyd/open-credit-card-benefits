@@ -1,0 +1,15 @@
+id: us.amex.green/no-fx
+card_id: us.amex.green
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.green@2026-01-01
+  summary: "No foreign transaction fees on purchases outside the US, for you and authorized users."
+  waives: foreign_transaction_fee
+  grants:
+  - entitlement: fee_waiver:foreign_transaction
+  beneficiaries:
+  - primary
+  - authorized_user

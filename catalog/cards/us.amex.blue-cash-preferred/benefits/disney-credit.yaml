@@ -1,0 +1,63 @@
+id: us.amex.blue-cash-preferred/disney-credit
+card_id: us.amex.blue-cash-preferred
+kind: statement_credit
+name: Disney streaming credit
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.blue-cash-preferred@2025-01-30
+  summary: "Up to $7 a month back on a Disney Bundle subscription of $9.99 or more bought on the US Disney+, Hulu or ESPN websites, $84 a year in total; enrollment required."
+  face_value:
+    amount: 8400
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 700
+  grants:
+  - entitlement: credit:disney_bundle
+  conditions:
+  - type: enrollment_required
+  - type: merchant_in
+    merchants:
+    - disney_plus
+    - hulu
+    - espn
+    note: Disney Bundle subscription on the US DisneyPlus.com, Hulu.com or ESPN websites
+  - type: min_transaction
+    amount: 999
+    currency: USD
+  notes: Required a Disney Bundle subscription purchase of $9.99 or more each month.
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://awardwallet.com/news/cash-back/amex-disney-streaming-credit-update/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  confidence: "0.8"
+- version: 2
+  supersedes: 1
+  change_type: amount_changed
+  release: us.amex.blue-cash-preferred@2025-08-01
+  summary: "Up to $10 a month back on any Disney+, Hulu or ESPN subscription bought on their US websites, $120 a year in total; enrollment required."
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 1000
+  grants:
+  - entitlement: credit:disney_bundle
+  conditions:
+  - type: enrollment_required
+  - type: merchant_in
+    merchants:
+    - disney_plus
+    - hulu
+    - espn
+    note: Any subscription, including bundles, on the US DisneyPlus.com, Hulu.com or Stream.ESPN.com websites; no minimum purchase
+  beneficiaries:
+  - primary

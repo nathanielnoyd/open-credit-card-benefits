@@ -1,0 +1,24 @@
+id: us.chase.southwest-priority/checked-bag
+card_id: us.chase.southwest-priority
+kind: fee_waiver
+name: First checked bag free on Southwest
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.southwest-priority@2025-07-24
+  summary: "First checked bag free on Southwest flights for you and up to 8 others on the same reservation when your Rapid Rewards number is on the booking."
+  waives: checked_bag
+  count: 1
+  companions: 8
+  grants:
+  - entitlement: fee_waiver:checked_bag_southwest
+  conditions:
+  - type: same_day_flight
+    carrier:
+    - WN
+    note: Southwest-operated flights; primary cardmember's Rapid Rewards number on the reservation
+  beneficiaries:
+  - primary
+  - companion
+  notes: First checked bag free for the primary cardmember and up to 8 others on the same reservation. Authorized users are
+    not eligible on their own.

@@ -1,0 +1,46 @@
+id: us.amex.delta-reserve-business/sky-club-unlimited
+card_id: us.amex.delta-reserve-business
+kind: access
+name: Unlimited Delta Sky Club visits
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-reserve-business@2025-02-01
+  summary: After $75,000 in calendar-year spend, unlimited Delta Sky Club visits when flying Delta on a fare other than Basic
+    Economy, through the end of the following Medallion Year.
+  unlocked_only: true
+  period:
+    cadence: annual
+    anchor: fixed_date
+    anchor_month: 2
+    anchor_day: 1
+  grants:
+  - entitlement: lounge_network:delta_sky_club
+    combine: max
+    attributes:
+      visits: null
+  conditions:
+  - type: spend_gte
+    amount: 7500000
+    currency: USD
+    period: calendar_year
+    note: $75,000 in a calendar year (authorized user spend counts) unlocks unlimited visits for the rest of that Medallion
+      Year and the next
+  - type: same_day_flight
+    carrier:
+    - DL
+  - type: fare_class_not_in
+    classes:
+    - delta_basic
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: The unlock lasts from reaching $75,000 through the end of the following Medallion Year; the schema's annual period
+    cannot express that carryover.
+  sources:
+  - url: https://www.delta.com/us/en/delta-sky-club/access
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://awardwallet.com/credit-cards/delta-skymiles/delta-reserve-business/
+    retrieved_at: '2026-11-13'
+    publisher: review

@@ -1,0 +1,33 @@
+card_id: us.amex.delta-gold
+rules:
+- id: us.amex.delta-gold/delta-2x
+  categories:
+  - cat:travel.flights.direct.dl
+  versions:
+  - version: 1
+    release: us.amex.delta-gold@2025-02-01
+    multiplier: '2'
+    notes: Purchases made directly with Delta.
+- id: us.amex.delta-gold/dining-2x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.amex.delta-gold@2025-02-01
+    multiplier: '2'
+    notes: Restaurants worldwide, including takeout and delivery in the U.S.
+- id: us.amex.delta-gold/supermarkets-2x
+  categories:
+  - cat:groceries.store
+  versions:
+  - version: 1
+    release: us.amex.delta-gold@2025-02-01
+    multiplier: '2'
+    notes: U.S. supermarkets only; superstores and warehouse clubs excluded.
+- id: us.amex.delta-gold/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.delta-gold@2025-02-01
+    multiplier: '1'

@@ -1,0 +1,28 @@
+id: us.chase.southwest-priority/upgraded-boardings
+card_id: us.chase.southwest-priority
+kind: access
+name: Four Upgraded Boardings a year
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.southwest-priority@2024-01-01
+  summary: "Four Upgraded Boardings in positions A1-A15 each cardmember year, when available, bought with the card."
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    count: 4
+    unit:
+      unit: boarding
+  grants:
+  - entitlement: priority_boarding:southwest
+    attributes:
+      position: A1-A15
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Up to four Upgraded Boardings (A1-A15) each anniversary year, when available. Last usable for flights operating in
+    2025.
+  confidence: '0.75'

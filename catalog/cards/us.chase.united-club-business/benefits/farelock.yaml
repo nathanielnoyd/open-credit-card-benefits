@@ -1,0 +1,27 @@
+id: us.chase.united-club-business/farelock
+card_id: us.chase.united-club-business
+kind: statement_credit
+name: United FareLock credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club-business@2025-03-24
+  summary: "Up to $50 each cardmember year in statement credits on United FareLock purchases for United or United Express flights."
+  face_value:
+    amount: 5000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    amount: 5000
+  grants:
+  - entitlement: credit:united_farelock
+  conditions:
+  - type: merchant_in
+    merchants:
+    - united_farelock
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Up to $50 per anniversary year on FareLock fees, which hold a United fare for a set period and are nonrefundable.

@@ -1,0 +1,49 @@
+id: us.citi.aadvantage-executive/lyft-credit
+card_id: us.citi.aadvantage-executive
+kind: statement_credit
+name: Lyft credit
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-executive@2023-07-23
+  summary: "A $10 Lyft credit each calendar month after you take three Lyft rides with the card that month, up to $120 a year."
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 1000
+  grants:
+  - entitlement: credit:lyft
+  beneficiaries:
+  - primary
+  notes: $10 Lyft credit in a calendar month after taking three eligible Lyft rides with the card that month. The three-ride trigger is not machine-readable.
+  machine_readable: false
+- version: 2
+  supersedes: 1
+  change_type: amount_changed
+  release: us.citi.aadvantage-executive@2026-08-23
+  summary: "A $15 Lyft credit each calendar month after you take three Lyft rides with the card that month, up to $180 a year."
+  face_value:
+    amount: 18000
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 1500
+  grants:
+  - entitlement: credit:lyft
+  beneficiaries:
+  - primary
+  notes: $15 Lyft credit in a calendar month after taking three eligible Lyft rides with the card that month. The three-ride trigger is not machine-readable.
+  machine_readable: false
+  sources:
+  - url: https://www.citi.com/credit-cards/citi-aadvantage-executive-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://thepointsguy.com/news/citi-aadvantage-executive-mastercard-refresh-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review

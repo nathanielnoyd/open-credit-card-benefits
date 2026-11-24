@@ -1,0 +1,23 @@
+id: us.chase.united-quest/economy-plus-milestone
+card_id: us.chase.united-quest
+kind: milestone
+name: Two Economy Plus upgrades after $40,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-quest@2025-03-24
+  summary: "After $40,000 in calendar-year spend, two Economy Plus seat upgrades valid for 12 months, once per calendar year."
+  threshold:
+    amount: 4000000
+    currency: USD
+  threshold_period: calendar_year
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: milestone:us.chase.united-quest.economy-plus
+  beneficiaries:
+  - primary
+  notes: Two global Economy Plus seat upgrade certificates after $40,000 in purchases in a calendar year, valid 12 months
+    and not transferable. No field holds a non-cash, non-points reward of this kind.
+  machine_readable: false

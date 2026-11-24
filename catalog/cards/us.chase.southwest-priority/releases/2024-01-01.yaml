@@ -1,0 +1,51 @@
+id: us.chase.southwest-priority@2024-01-01
+card_id: us.chase.southwest-priority
+kind: baseline
+confidence: '0.7'
+effective_for_new: '2024-01-01'
+notes: Terms before the July 24, 2025 refresh, limited to what coverage of the refresh confirms. Earlier history is not modeled;
+  other pre-2025 earn categories (such as local transit) were not verified and are left out.
+changes:
+- target: fee:annual
+  to:
+    amount: 14900
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.chase.southwest-priority/southwest
+  version: 1
+- target: earn_rule:us.chase.southwest-priority/rr-partners-2x
+  version: 1
+- target: earn_rule:us.chase.southwest-priority/telecom-2x
+  version: 1
+- target: earn_rule:us.chase.southwest-priority/base-1x
+  version: 1
+- target: earn_rule:us.chase.southwest-priority/tqp
+  version: 1
+- target: benefit:us.chase.southwest-priority/travel-credit
+  version: 1
+- target: benefit:us.chase.southwest-priority/upgraded-boardings
+  version: 1
+- target: benefit:us.chase.southwest-priority/anniversary
+  version: 1
+- target: benefit:us.chase.southwest-priority/inflight-25
+  version: 1
+- target: benefit:us.chase.southwest-priority/no-fx
+  version: 1
+- target: benefit:us.chase.southwest-priority/baggage-delay
+  version: 1
+- target: benefit:us.chase.southwest-priority/lost-luggage
+  version: 1
+- target: benefit:us.chase.southwest-priority/purchase-protection
+  version: 1
+- target: benefit:us.chase.southwest-priority/extended-warranty
+  version: 1
+sources:
+- url: https://upgradedpoints.com/news/changes-southwest-airlines-credit-cards-2025/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://media.chase.com/news/chase-southwest-introduce-new-card-benefits
+  retrieved_at: '2026-11-13'
+  publisher: issuer

@@ -1,0 +1,60 @@
+id: us.citi.aadvantage-executive@2023-07-23
+card_id: us.citi.aadvantage-executive
+kind: baseline
+effective_for_new: '2023-07-23'
+notes: Terms from the July 2023 refresh (announced 2023-07-10), the last refresh before August 2026. Changes between July 2023 and August 2026 are not modeled except where noted on a version.
+changes:
+- target: fee:annual
+  to:
+    amount: 59500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 17500
+    currency: USD
+  notes: One $175 annual fee covers up to three authorized users; each additional authorized user is $175.
+- target: earn_rule:us.citi.aadvantage-executive/aa-4x
+  version: 1
+- target: earn_rule:us.citi.aadvantage-executive/aa-5x-after-150k
+  version: 1
+- target: earn_rule:us.citi.aadvantage-executive/aadvantage-hotels-cars
+  version: 1
+- target: earn_rule:us.citi.aadvantage-executive/base-1x
+  version: 1
+- target: earn_rule:us.citi.aadvantage-executive/loyalty-points
+  version: 1
+- target: benefit:us.citi.aadvantage-executive/admirals-club
+  version: 1
+- target: benefit:us.citi.aadvantage-executive/checked-bag
+  version: 1
+- target: benefit:us.citi.aadvantage-executive/priority-boarding
+  version: 1
+- target: benefit:us.citi.aadvantage-executive/inflight-savings
+  version: 1
+- target: benefit:us.citi.aadvantage-executive/grubhub-credit
+  version: 1
+- target: benefit:us.citi.aadvantage-executive/lyft-credit
+  version: 1
+- target: benefit:us.citi.aadvantage-executive/avis-budget-credit
+  version: 1
+- target: benefit:us.citi.aadvantage-executive/trusted-traveler
+  version: 1
+- target: benefit:us.citi.aadvantage-executive/loyalty-point-bonus
+  version: 1
+- target: benefit:us.citi.aadvantage-executive/no-fx
+  version: 1
+- target: benefit:us.citi.aadvantage-executive/trip-cancel
+  version: 1
+- target: benefit:us.citi.aadvantage-executive/trip-delay
+  version: 1
+- target: benefit:us.citi.aadvantage-executive/lost-luggage
+  version: 1
+- target: benefit:us.citi.aadvantage-executive/rental-cdw
+  version: 1
+sources:
+- url: https://news.aa.com/news/news-details/2023/American-Airlines-and-Citi-enhance-the-Citi-AAdvantage-Executive-World-Elite-Mastercard-with-more-benefits-AADV-07/default.aspx
+  retrieved_at: '2026-11-13'
+  publisher: press
+- url: https://thepointsguy.com/news/citi-aadvantage-executive-mastercard-refresh-2026/
+  retrieved_at: '2026-11-13'
+  publisher: review

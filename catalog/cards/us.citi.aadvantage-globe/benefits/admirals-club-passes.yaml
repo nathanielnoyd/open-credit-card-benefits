@@ -1,0 +1,20 @@
+id: us.citi.aadvantage-globe/admirals-club-passes
+card_id: us.citi.aadvantage-globe
+kind: access
+name: Admirals Club Globe passes
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-globe@2025-10-19
+  summary: "4 Admirals Club Globe passes each calendar year, each giving you 24 hours of Admirals Club access."
+  period: { cadence: annual, anchor: calendar }
+  limit: { count: 4, unit: { unit: pass } }
+  grants:
+  - entitlement: lounge_network:admirals_club
+    attributes: { visits: 4, guests: 0 }
+  beneficiaries: [primary]
+  notes: >-
+    Four Admirals Club Globe passes per calendar year, delivered to the AAdvantage wallet. Each pass is valid for 24 hours (so one
+    pass can cover several lounges on a connecting itinerary), admits one adult, and requires the primary cardmember to be present.
+    Reported usable even when operational limits restrict other access. Whether children may accompany is not confirmed.
+  confidence: "0.75"

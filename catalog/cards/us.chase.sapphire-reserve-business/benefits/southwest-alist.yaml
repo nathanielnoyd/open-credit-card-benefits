@@ -1,0 +1,22 @@
+id: us.chase.sapphire-reserve-business/southwest-alist
+card_id: us.chase.sapphire-reserve-business
+kind: status
+name: Southwest A-List
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: After $120,000 in calendar-year spend on the card, Southwest Rapid Rewards A-List status.
+  unlocked_only: true
+  grants:
+  - entitlement: status:southwest
+    attributes:
+      tier: a_list
+  conditions:
+  - type: spend_gte
+    amount: 12000000
+    currency: USD
+    period: calendar_year
+    note: $120,000 in purchases on this card in a calendar year
+  beneficiaries:
+  - primary

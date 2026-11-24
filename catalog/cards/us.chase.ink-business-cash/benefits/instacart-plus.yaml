@@ -1,0 +1,32 @@
+id: us.chase.ink-business-cash/instacart-plus
+card_id: us.chase.ink-business-cash
+kind: membership
+name: Instacart+ membership
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ink-business-cash@2025-05-01
+  summary: "Three months of Instacart+ at no cost when you enroll by December 31, 2027; it then renews at $99 a year unless you cancel."
+  face_value:
+    amount: 2475
+    currency: USD
+  effective_to: '2027-12-31'
+  period:
+    cadence: once
+  grants:
+  - entitlement: membership:instacart_plus
+  conditions:
+  - type: enrollment_required
+  beneficiaries:
+  - primary
+  notes: Three months of complimentary Instacart+, then auto-renews at $99 a year unless canceled. Face value is a quarter of $99.
+  sources:
+  - url: https://creditcards.chase.com/business-credit-cards/ink/cash
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://upgradedpoints.com/news/chase-instacart-benefits-more-cards/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.nerdwallet.com/credit-cards/news/chase-adds-instacart-benefits-to-some-credit-cards
+    retrieved_at: '2026-11-13'
+    publisher: review

@@ -1,0 +1,32 @@
+id: us.chase.sapphire-reserve-business/shops-credit
+card_id: us.chase.sapphire-reserve-business
+kind: statement_credit
+name: $500 Shops at Chase credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: After $120,000 in calendar-year spend on the card, a credit of up to $500 for select brands on The Shops at Chase.
+  unlocked_only: true
+  face_value:
+    amount: 50000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 50000
+  grants:
+  - entitlement: credit:shops_at_chase
+  conditions:
+  - type: spend_gte
+    amount: 12000000
+    currency: USD
+    period: calendar_year
+    note: $120,000 in purchases on this card in a calendar year
+  - type: merchant_in
+    merchants:
+    - shops_at_chase
+    note: Select brands on The Shops at Chase
+  beneficiaries:
+  - primary

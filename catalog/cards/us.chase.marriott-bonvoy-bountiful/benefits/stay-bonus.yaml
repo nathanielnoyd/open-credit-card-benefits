@@ -1,0 +1,20 @@
+id: us.chase.marriott-bonvoy-bountiful/stay-bonus
+card_id: us.chase.marriott-bonvoy-bountiful
+kind: other
+name: 1,000 bonus points per eligible stay
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.marriott-bonvoy-bountiful@2024-01-01
+  summary: "Up to 1,000 bonus Marriott Bonvoy points for each eligible paid stay booked directly with Marriott."
+  face_value: null
+  conditions:
+  - type: booking_channel
+    channel: marriott_direct
+    note: Booked directly with Marriott on a qualifying rate
+  grants:
+  - entitlement: earn_boost:us.chase.marriott-bonvoy-bountiful.stay-bonus
+  beneficiaries:
+  - primary
+  machine_readable: false
+  notes: Up to 1,000 points per eligible stay at participating hotels, one room per hotel; the primary cardmember must be the member on the stay. Points post within about six weeks. No field expresses a fixed points reward per stay.

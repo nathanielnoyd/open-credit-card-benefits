@@ -1,0 +1,35 @@
+id: us.amex.blue-business-plus@2026-01-01
+card_id: us.amex.blue-business-plus
+kind: baseline
+effective_for_new: "2026-01-01"
+notes: Current terms recorded as the baseline; the 2x/2% on the first $50,000 per calendar year has been unchanged for years, but earlier history is not modeled and this date is nominal.
+changes:
+  - target: fee:annual
+    to:
+      amount: 0
+      currency: USD
+  - target: fee:authorized_user
+    to:
+      amount: 0
+      currency: USD
+    notes: Up to 99 employee cards at no cost.
+  - target: earn_rule:us.amex.blue-business-plus/base-2x
+    version: 1
+  - target: earn_rule:us.amex.blue-business-plus/base-1x
+    version: 1
+  - target: benefit:us.amex.blue-business-plus/rental-coverage
+    version: 1
+  - target: benefit:us.amex.blue-business-plus/purchase-protection
+    version: 1
+  - target: benefit:us.amex.blue-business-plus/extended-warranty
+    version: 1
+sources:
+  - url: https://onemileatatime.com/insights/american-express-blue-business-card-worth-it/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://thepointsparty.com/articles/amex-blue-business-plus-cash-welcome-offers
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-blue-business-plus-card/
+    retrieved_at: "2026-11-13"
+    publisher: review

@@ -1,0 +1,19 @@
+card_id: us.capitalone.spark-cash-plus
+rules:
+- id: us.capitalone.spark-cash-plus/c1-travel-5pct
+  categories:
+  - cat:travel.portal.capitalone.hotels
+  - cat:travel.portal.capitalone.vacation_rentals
+  - cat:travel.portal.capitalone.cars
+  versions:
+  - version: 1
+    release: us.capitalone.spark-cash-plus@2026-01-01
+    multiplier: '5'
+    notes: Hotels, vacation rentals and rental cars booked through Capital One Business Travel; flights earn the base 2%.
+- id: us.capitalone.spark-cash-plus/base-2pct
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.capitalone.spark-cash-plus@2026-01-01
+    multiplier: '2'

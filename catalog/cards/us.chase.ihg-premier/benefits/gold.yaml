@@ -1,0 +1,15 @@
+id: us.chase.ihg-premier/gold
+card_id: us.chase.ihg-premier
+kind: status
+name: IHG One Rewards Gold Elite
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier@2026-10-01
+  summary: "IHG One Rewards Gold Elite status while you hold the card."
+  grants:
+  - entitlement: status:ihg
+    attributes:
+      tier: gold
+  beneficiaries:
+  - primary

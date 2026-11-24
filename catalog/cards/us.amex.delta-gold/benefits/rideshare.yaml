@@ -1,0 +1,41 @@
+id: us.amex.delta-gold/rideshare
+card_id: us.amex.delta-gold
+kind: statement_credit
+name: Rideshare credit
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-gold@2026-06-04
+  summary: "From your second card year, up to $10 a month back on US rides with Uber, Lyft, Curb or Alto, $120 a year in total; enrollment required."
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 1000
+  grants:
+  - entitlement: credit:rideshare
+  conditions:
+  - type: enrollment_required
+  - type: merchant_in
+    merchants:
+    - uber
+    - lyft
+    - curb
+    - alto
+  - type: card_year
+    min: 2
+    note: From the first renewal on (card year 2+)
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://awardwallet.com/news/delta-skymiles/delta-credit-card-changes-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://thriftytraveler.com/news/credit-card/amex-adds-new-delta-skymiles-card-benefits-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  notes: Up to $10 a month on U.S. rides with select providers (Uber, Lyft, Curb, Alto). New card members get it after their
+    first renewal; holders of more than 12 months on June 4, 2026 got it immediately.

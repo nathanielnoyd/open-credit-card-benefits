@@ -1,0 +1,29 @@
+id: us.chase.sapphire-reserve/extended-warranty
+card_id: us.chase.sapphire-reserve
+kind: protection
+name: Extended warranty
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-reserve@2024-01-01
+    summary: "Adds one year to manufacturer warranties of three years or less on items you buy with the card."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: protection:extended_warranty
+        combine: max
+    conditions:
+      - type: paid_with_card
+    beneficiaries:
+      - primary
+    notes: Adds a year to warranties of 3 years or less.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

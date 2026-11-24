@@ -1,0 +1,52 @@
+id: us.capitalone.venture-x-business@2025-11-01
+card_id: us.capitalone.venture-x-business
+kind: baseline
+effective_for_new: "2025-11-01"
+notes: Terms in effect before the February 2026 lounge changes, as reported by reviews in late 2025. The date marks when these terms are known
+  to have applied, not when they began; earlier history is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 39500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.capitalone.venture-x-business/c1-travel-hotels-cars-10x
+  version: 1
+- target: earn_rule:us.capitalone.venture-x-business/c1-travel-flights-5x
+  version: 1
+- target: earn_rule:us.capitalone.venture-x-business/base-2x
+  version: 1
+- target: benefit:us.capitalone.venture-x-business/travel-credit
+  version: 1
+- target: benefit:us.capitalone.venture-x-business/anniversary-miles
+  version: 1
+- target: benefit:us.capitalone.venture-x-business/capital-one-lounges
+  version: 1
+- target: benefit:us.capitalone.venture-x-business/priority-pass
+  version: 1
+- target: benefit:us.capitalone.venture-x-business/premier-collection
+  version: 1
+- target: benefit:us.capitalone.venture-x-business/hertz
+  version: 1
+- target: benefit:us.capitalone.venture-x-business/trusted-traveler
+  version: 1
+- target: benefit:us.capitalone.venture-x-business/no-fx
+  version: 1
+- target: benefit:us.capitalone.venture-x-business/rental-cdw
+  version: 1
+- target: benefit:us.capitalone.venture-x-business/trip-delay
+  version: 1
+- target: benefit:us.capitalone.venture-x-business/trip-cancel
+  version: 1
+- target: benefit:us.capitalone.venture-x-business/lost-luggage
+  version: 1
+- target: benefit:us.capitalone.venture-x-business/cell-phone
+  version: 1
+- target: benefit:us.capitalone.venture-x-business/extended-warranty
+  version: 1
+- target: benefit:us.capitalone.venture-x-business/purchase-protection
+  version: 1
+confidence: "0.7"

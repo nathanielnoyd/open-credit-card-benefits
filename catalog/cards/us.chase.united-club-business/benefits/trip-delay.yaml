@@ -1,0 +1,23 @@
+id: us.chase.united-club-business/trip-delay
+card_id: us.chase.united-club-business
+kind: protection
+name: Trip delay reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club-business@2024-01-01
+  summary: "Covers up to $500 per traveler in extra expenses when a trip paid with the card is delayed more than 12 hours."
+  coverage:
+    per_person:
+      amount: 50000
+      currency: USD
+    waiting_hours: 12
+  grants:
+  - entitlement: protection:trip_delay
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  - household
+  notes: Up to $500 per covered traveler for delays of more than 12 hours or requiring an overnight stay.

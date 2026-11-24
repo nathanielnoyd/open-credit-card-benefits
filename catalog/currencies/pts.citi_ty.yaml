@@ -1,0 +1,430 @@
+id: pts:citi_ty
+name: Citi ThankYou Points
+kind: transferable
+issuer: Citi
+url: https://www.thankyou.com/
+expiry: none
+pooling:
+  family: citi-thankyou
+paths:
+  - id: cash-premium
+    kind: statement_credit
+    rate: "0.75"
+    effective_from: "2025-08-24"
+    notes: Strata Premier and Prestige cash back fell from 1¢ to 0.75¢ on August 24, 2025. Points held on a Double Cash or other no-fee card still redeem at 1¢.
+  - id: cash-premium-legacy
+    kind: statement_credit
+    rate: "1.0"
+    effective_to: "2025-08-23"
+  - id: cash-no-fee
+    kind: statement_credit
+    rate: "1.0"
+    notes: Cash back, statement credit or deposit at 1¢ from a no-fee card such as Double Cash; ThankYou points can be moved between one's own accounts.
+    requires:
+      - type: wallet_holds
+        card_id: us.citi.double-cash
+  - id: citi-travel
+    kind: portal
+    rate: "1.0"
+    notes: Citi Travel bookings at 1¢ for every ThankYou card.
+  - id: flying-blue
+    kind: transfer
+    to: pts:flying_blue
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: flying-blue-no-fee
+    kind: transfer
+    to: pts:flying_blue
+    ratio: "1:0.7"
+    requires:
+      - type: wallet_holds
+        family: citi-thankyou
+        note: Any ThankYou card (Double Cash, Custom Cash, Strata, ThankYou Preferred); points pooled into a Strata Premier or Elite get the full ratio instead.
+  - id: avianca
+    kind: transfer
+    to: pts:avianca_lifemiles
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: avianca-no-fee
+    kind: transfer
+    to: pts:avianca_lifemiles
+    ratio: "1:0.7"
+    requires:
+      - type: wallet_holds
+        family: citi-thankyou
+        note: Any ThankYou card (Double Cash, Custom Cash, Strata, ThankYou Preferred); points pooled into a Strata Premier or Elite get the full ratio instead.
+  - id: cathay
+    kind: transfer
+    to: pts:cathay_asia_miles
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: cathay-no-fee
+    kind: transfer
+    to: pts:cathay_asia_miles
+    ratio: "1:0.7"
+    requires:
+      - type: wallet_holds
+        family: citi-thankyou
+        note: Any ThankYou card (Double Cash, Custom Cash, Strata, ThankYou Preferred); points pooled into a Strata Premier or Elite get the full ratio instead.
+  - id: emirates
+    kind: transfer
+    to: pts:emirates_skywards
+    ratio: "5:4"
+    notes: Premium ratio reduced to 1,000:800 on July 27, 2025.
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: emirates-no-fee
+    kind: transfer
+    to: pts:emirates_skywards
+    ratio: "1:0.56"
+    requires:
+      - type: wallet_holds
+        family: citi-thankyou
+        note: Any ThankYou card (Double Cash, Custom Cash, Strata, ThankYou Preferred); points pooled into a Strata Premier or Elite get the full ratio instead.
+  - id: etihad
+    kind: transfer
+    to: pts:etihad_guest
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: etihad-no-fee
+    kind: transfer
+    to: pts:etihad_guest
+    ratio: "1:0.7"
+    requires:
+      - type: wallet_holds
+        family: citi-thankyou
+        note: Any ThankYou card (Double Cash, Custom Cash, Strata, ThankYou Preferred); points pooled into a Strata Premier or Elite get the full ratio instead.
+  - id: eva
+    kind: transfer
+    to: pts:eva_infinity
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: eva-no-fee
+    kind: transfer
+    to: pts:eva_infinity
+    ratio: "1:0.7"
+    requires:
+      - type: wallet_holds
+        family: citi-thankyou
+        note: Any ThankYou card (Double Cash, Custom Cash, Strata, ThankYou Preferred); points pooled into a Strata Premier or Elite get the full ratio instead.
+  - id: jal
+    kind: transfer
+    to: pts:jal_mileage_bank
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: jal-no-fee
+    kind: transfer
+    to: pts:jal_mileage_bank
+    ratio: "1:0.7"
+    requires:
+      - type: wallet_holds
+        family: citi-thankyou
+        note: Any ThankYou card (Double Cash, Custom Cash, Strata, ThankYou Preferred); points pooled into a Strata Premier or Elite get the full ratio instead.
+  - id: qantas
+    kind: transfer
+    to: pts:qantas
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: qantas-no-fee
+    kind: transfer
+    to: pts:qantas
+    ratio: "1:0.7"
+    requires:
+      - type: wallet_holds
+        family: citi-thankyou
+        note: Any ThankYou card (Double Cash, Custom Cash, Strata, ThankYou Preferred); points pooled into a Strata Premier or Elite get the full ratio instead.
+  - id: qatar
+    kind: transfer
+    to: pts:qatar_avios
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: qatar-no-fee
+    kind: transfer
+    to: pts:qatar_avios
+    ratio: "1:0.7"
+    requires:
+      - type: wallet_holds
+        family: citi-thankyou
+        note: Any ThankYou card (Double Cash, Custom Cash, Strata, ThankYou Preferred); points pooled into a Strata Premier or Elite get the full ratio instead.
+  - id: singapore
+    kind: transfer
+    to: pts:singapore_krisflyer
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: singapore-no-fee
+    kind: transfer
+    to: pts:singapore_krisflyer
+    ratio: "1:0.7"
+    requires:
+      - type: wallet_holds
+        family: citi-thankyou
+        note: Any ThankYou card (Double Cash, Custom Cash, Strata, ThankYou Preferred); points pooled into a Strata Premier or Elite get the full ratio instead.
+  - id: thai
+    kind: transfer
+    to: pts:thai_royal_orchid
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: thai-no-fee
+    kind: transfer
+    to: pts:thai_royal_orchid
+    ratio: "1:0.7"
+    requires:
+      - type: wallet_holds
+        family: citi-thankyou
+        note: Any ThankYou card (Double Cash, Custom Cash, Strata, ThankYou Preferred); points pooled into a Strata Premier or Elite get the full ratio instead.
+  - id: turkish
+    kind: transfer
+    to: pts:turkish_miles_smiles
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: turkish-no-fee
+    kind: transfer
+    to: pts:turkish_miles_smiles
+    ratio: "1:0.7"
+    requires:
+      - type: wallet_holds
+        family: citi-thankyou
+        note: Any ThankYou card (Double Cash, Custom Cash, Strata, ThankYou Preferred); points pooled into a Strata Premier or Elite get the full ratio instead.
+  - id: virgin-atlantic
+    kind: transfer
+    to: pts:virgin_atlantic
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: virgin-atlantic-no-fee
+    kind: transfer
+    to: pts:virgin_atlantic
+    ratio: "1:0.7"
+    requires:
+      - type: wallet_holds
+        family: citi-thankyou
+        note: Any ThankYou card (Double Cash, Custom Cash, Strata, ThankYou Preferred); points pooled into a Strata Premier or Elite get the full ratio instead.
+  - id: wyndham
+    kind: transfer
+    to: pts:wyndham_rewards
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: wyndham-no-fee
+    kind: transfer
+    to: pts:wyndham_rewards
+    ratio: "1:0.7"
+    requires:
+      - type: wallet_holds
+        family: citi-thankyou
+        note: Any ThankYou card (Double Cash, Custom Cash, Strata, ThankYou Preferred); points pooled into a Strata Premier or Elite get the full ratio instead.
+  - id: accor
+    kind: transfer
+    to: pts:accor_all
+    ratio: "2:1"
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: accor-no-fee
+    kind: transfer
+    to: pts:accor_all
+    ratio: "1:0.35"
+    requires:
+      - type: wallet_holds
+        family: citi-thankyou
+        note: Any ThankYou card (Double Cash, Custom Cash, Strata, ThankYou Preferred); points pooled into a Strata Premier or Elite get the full ratio instead.
+  - id: choice
+    kind: transfer
+    to: pts:choice_privileges
+    ratio: "1:1.5"
+    notes: Reduced from 1:2 (premium) and 1:1.4 (no-fee) on April 19, 2026.
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: choice-no-fee
+    kind: transfer
+    to: pts:choice_privileges
+    ratio: "1:1.05"
+    requires:
+      - type: wallet_holds
+        family: citi-thankyou
+        note: Any ThankYou card (Double Cash, Custom Cash, Strata, ThankYou Preferred); points pooled into a Strata Premier or Elite get the full ratio instead.
+  - id: i-prefer
+    kind: transfer
+    to: pts:i_prefer
+    ratio: "1:2"
+    notes: Reduced from 1:4 (premium) and 1:2.8 (no-fee) on April 19, 2026.
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: i-prefer-no-fee
+    kind: transfer
+    to: pts:i_prefer
+    ratio: "1:1.4"
+    requires:
+      - type: wallet_holds
+        family: citi-thankyou
+        note: Any ThankYou card (Double Cash, Custom Cash, Strata, ThankYou Preferred); points pooled into a Strata Premier or Elite get the full ratio instead.
+  - id: leaders-club
+    kind: transfer
+    to: pts:lhw_leaders_club
+    ratio: "5:1"
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: leaders-club-no-fee
+    kind: transfer
+    to: pts:lhw_leaders_club
+    ratio: "1:0.14"
+    requires:
+      - type: wallet_holds
+        family: citi-thankyou
+        note: Any ThankYou card (Double Cash, Custom Cash, Strata, ThankYou Preferred); points pooled into a Strata Premier or Elite get the full ratio instead.
+  - id: aadvantage
+    kind: transfer
+    to: pts:aa_aadvantage
+    ratio: "1:1"
+    effective_from: "2025-07-27"
+    notes: Premium cards only; not available from no-fee ThankYou cards.
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: jetblue
+    kind: transfer
+    to: pts:jetblue_trueblue
+    ratio: "1:1"
+    requires:
+      - type: any_of
+        note: Full ratios need a Citi Strata Premier, Strata Elite or Prestige (closed to applicants) in the ThankYou account.
+        conditions:
+          - { type: wallet_holds, card_id: us.citi.strata-premier }
+          - { type: wallet_holds, card_id: us.citi.strata-elite }
+          - { type: wallet_holds, card_id: us.citi.prestige }
+  - id: jetblue-no-fee
+    kind: transfer
+    to: pts:jetblue_trueblue
+    ratio: "1:0.7"
+    effective_to: "2026-09-19"
+    notes: JetBlue was removed for no-annual-fee ThankYou cards effective September 20, 2026.
+    requires:
+      - type: wallet_holds
+        family: citi-thankyou
+        note: Any ThankYou card (Double Cash, Custom Cash, Strata, ThankYou Preferred); points pooled into a Strata Premier or Elite get the full ratio instead.
+sources:
+  - url: https://awardwallet.com/mile-transfer-times?program=Citi
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://upgradedpoints.com/news/citi-expands-transfer-partners-no-annual-fee-cards/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://www.nerdwallet.com/travel/learn/best-citi-thankyou-transfer-partners
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://onemileatatime.com/?p=361533
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://pointsnav.com/award-systems/citi-thankyou-points
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://thepointsguy.com/news/citi-slashing-cash-back-strata-premier
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://www.point.me/insights/how-much-are-citi-thankyou-points-worth.md
+    retrieved_at: "2026-11-13"
+    publisher: review

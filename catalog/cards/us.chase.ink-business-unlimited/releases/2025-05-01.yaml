@@ -1,0 +1,18 @@
+id: us.chase.ink-business-unlimited@2025-05-01
+card_id: us.chase.ink-business-unlimited
+kind: change
+announced_on: '2025-05-01'
+effective_for_new: '2025-05-01'
+notes: Instacart+ membership and $20 monthly Instacart credit added for new and existing cardmembers, through December 31, 2027.
+changes:
+- target: benefit:us.chase.ink-business-unlimited/instacart-plus
+  version: 1
+- target: benefit:us.chase.ink-business-unlimited/instacart-credit
+  version: 1
+sources:
+- url: https://upgradedpoints.com/news/chase-instacart-benefits-more-cards/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://www.nerdwallet.com/credit-cards/news/chase-adds-instacart-benefits-to-some-credit-cards
+  retrieved_at: '2026-11-13'
+  publisher: review

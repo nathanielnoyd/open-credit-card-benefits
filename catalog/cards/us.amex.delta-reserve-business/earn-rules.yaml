@@ -1,0 +1,55 @@
+card_id: us.amex.delta-reserve-business
+rules:
+- id: us.amex.delta-reserve-business/delta-3x
+  categories:
+  - cat:travel.flights.direct.dl
+  versions:
+  - version: 1
+    release: us.amex.delta-reserve-business@2025-02-01
+    multiplier: '3'
+    notes: Purchases made directly with Delta.
+- id: us.amex.delta-reserve-business/business-1-5x
+  name: Transit, U.S. shipping and U.S. office supply stores
+  categories:
+  - cat:transit
+  - cat:travel.transit
+  - cat:business.shipping
+  - cat:business.office_supplies
+  versions:
+  - version: 1
+    release: us.amex.delta-reserve-business@2025-02-01
+    multiplier: '1.5'
+    notes: Eligible transit, U.S. shipping and U.S. office supply store purchases. No cap found in sources.
+- id: us.amex.delta-reserve-business/high-spend-1-5x
+  name: 1.5x after $150,000 in a calendar year
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.delta-reserve-business@2025-02-01
+    multiplier: '1.5'
+    conditions:
+    - type: spend_gte
+      amount: 15000000
+      currency: USD
+      period: calendar_year
+      note: Applies to eligible purchases after $150,000 of card purchases in the calendar year
+    notes: 1.5 miles per dollar on eligible purchases for the rest of the calendar year once $150,000 has been spent; spend before the threshold earns the normal rate, which spend_gte cannot express.
+- id: us.amex.delta-reserve-business/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.delta-reserve-business@2025-02-01
+    multiplier: '1'
+- id: us.amex.delta-reserve-business/mqd-boost
+  name: MQD Boost
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.delta-reserve-business@2025-02-01
+    currency: pts:delta_mqd
+    multiplier: '0.1'
+    stacks: true
+    notes: $1 MQD per $10 of eligible purchases, uncapped. Earns MQDs alongside miles.

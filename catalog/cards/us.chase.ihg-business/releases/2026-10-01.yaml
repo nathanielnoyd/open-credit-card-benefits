@@ -1,0 +1,84 @@
+id: us.chase.ihg-business@2026-10-01
+card_id: us.chase.ihg-business
+kind: refresh
+first_seen_on: '2026-10-01'
+notes: 'Card renamed IHG One Rewards Business; new terms for new applicants on October 1, 2026. Existing cardmembers: new
+  credits and earn categories at once (5x travel and office supply earn ends December 31, 2026 for everyone); Elite Night
+  Credits from January 1, 2027; $200 fee and 50,000-point free nights from the first renewal in 2027 (October-December 2026
+  renewals keep $99 and a 40,000-point night); United TravelBank ends after December 31, 2026. The date the old $20,000
+  milestone stopped for existing cardmembers, and when the $25,000 milestone starts for them, are not confirmed.'
+effective_for_new: '2026-10-01'
+changes:
+- target: fee:annual
+  to:
+    amount: 20000
+    currency: USD
+- target: earn_rule:us.chase.ihg-business/travel-5x
+  version: 2
+- target: earn_rule:us.chase.ihg-business/office-supplies-5x
+  version: 2
+- target: earn_rule:us.chase.ihg-business/airfare-5x
+  version: 1
+- target: earn_rule:us.chase.ihg-business/car-rental-5x
+  version: 1
+- target: earn_rule:us.chase.ihg-business/elite-night-credits-spend
+  version: 1
+- target: benefit:us.chase.ihg-business/free-night
+  version: 2
+- target: benefit:us.chase.ihg-business/spend-free-night
+  version: 2
+- target: benefit:us.chase.ihg-business/milestone-20k
+  change_type: retired
+  notes: Replaced by the $25,000 milestone; the date it stopped for existing cardmembers is not confirmed.
+- target: benefit:us.chase.ihg-business/milestone-25k
+  version: 1
+- target: benefit:us.chase.ihg-business/milestone-25k-enc
+  version: 1
+- target: benefit:us.chase.ihg-business/elite-night-credits
+  version: 1
+- target: benefit:us.chase.ihg-business/united-travelbank
+  change_type: retired
+  notes: Not available to new cardmembers; existing cardmembers keep it through December 31, 2026.
+- target: benefit:us.chase.ihg-business/airline-credit
+  version: 1
+- target: benefit:us.chase.ihg-business/expensify-credit
+  version: 1
+- target: benefit:us.chase.ihg-business/food-beverage
+  version: 1
+- target: benefit:us.chase.ihg-business/dashpass
+  version: 1
+- target: benefit:us.chase.ihg-business/doordash-other
+  version: 1
+- target: benefit:us.chase.ihg-business/instacart-credit
+  version: 1
+- target: benefit:us.chase.ihg-business/instacart-plus
+  version: 1
+transition:
+- applies_to:
+  - fee:annual
+  - benefit:us.chase.ihg-business/free-night
+  - benefit:us.chase.ihg-business/spend-free-night
+  next_renewal_on_or_after: '2027-01-01'
+- applies_to:
+  - benefit:us.chase.ihg-business/elite-night-credits
+  - earn_rule:us.chase.ihg-business/elite-night-credits-spend
+  - benefit:us.chase.ihg-business/milestone-25k
+  - benefit:us.chase.ihg-business/milestone-25k-enc
+  - benefit:us.chase.ihg-business/united-travelbank
+  'on': '2027-01-01'
+sources:
+- url: https://frequentmiler.com/all-the-existing-ihg-credit-cards-have-been-refreshed-here-are-the-changes/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://onemileatatime.com/news/ihg-chase-credit-card-changes/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://thepointsguy.com/news/ihg-credit-card-refresh-2026/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://upgradedpoints.com/news/ihg-credit-card-changes-2026
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://creditcards.chase.com/business-credit-cards/IHG/business
+  retrieved_at: '2026-11-13'
+  publisher: issuer

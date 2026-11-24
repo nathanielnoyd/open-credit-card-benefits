@@ -1,0 +1,14 @@
+id: pts:aa_aadvantage
+name: American Airlines AAdvantage
+kind: airline
+issuer: American Airlines
+url: https://www.aa.com/i18n/aadvantage-program/aadvantage-program.jsp
+expiry: Miles expire after 24 months with no qualifying activity.
+paths: []
+sources:
+  - url: https://www.aa.com/i18n/aadvantage-program/aadvantage-program.jsp
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

@@ -1,0 +1,23 @@
+id: us.bofa.premium-rewards-elite/purchase-security
+card_id: us.bofa.premium-rewards-elite
+kind: protection
+name: Purchase security
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards-elite@2026-11-14
+  summary: "Covers theft or damage of items bought with the card within 90 days of purchase, up to $10,000 per claim."
+  face_value: null
+  grants:
+  - entitlement: protection:purchase
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  coverage:
+    window_days: 90
+    per_claim:
+      amount: 1000000
+      currency: USD
+  notes: Up to $10,000 per claim and $50,000 per cardholder per Upgraded Points; the per-cardholder limit has no stated period and is left unstructured.
+  confidence: "0.7"

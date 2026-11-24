@@ -1,0 +1,14 @@
+id: pts:i_prefer
+name: I Prefer (Preferred Hotels & Resorts)
+kind: hotel
+issuer: Preferred Hotels & Resorts
+url: https://iprefer.com/
+expiry: Points expire after 24 months of inactivity; transfers in from bank programs do not reset the clock.
+paths: []
+sources:
+  - url: https://iprefer.com/
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://www.nerdwallet.com/travel/learn/hotel-points-expire
+    retrieved_at: "2026-11-13"
+    publisher: review

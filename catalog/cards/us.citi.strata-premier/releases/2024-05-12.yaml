@@ -1,0 +1,44 @@
+id: us.citi.strata-premier@2024-05-12
+card_id: us.citi.strata-premier
+kind: baseline
+effective_for_new: "2024-05-12"
+notes: >-
+  Launch terms of the Strata Premier (replacing the Citi Premier), which are also the current terms as of 2026-11-13;
+  the Citi Premier's earlier history is not modeled.
+changes:
+- target: fee:annual
+  to: { amount: 9500, currency: USD }
+- target: fee:authorized_user
+  to: { amount: 0, currency: USD }
+- target: earn_rule:us.citi.strata-premier/citi-travel-10x
+  version: 1
+- target: earn_rule:us.citi.strata-premier/air-hotels-3x
+  version: 1
+- target: earn_rule:us.citi.strata-premier/dining-3x
+  version: 1
+- target: earn_rule:us.citi.strata-premier/supermarkets-3x
+  version: 1
+- target: earn_rule:us.citi.strata-premier/gas-ev-3x
+  version: 1
+- target: earn_rule:us.citi.strata-premier/base-1x
+  version: 1
+- target: benefit:us.citi.strata-premier/hotel-benefit
+  version: 1
+- target: benefit:us.citi.strata-premier/no-fx
+  version: 1
+- target: benefit:us.citi.strata-premier/trip-delay
+  version: 1
+- target: benefit:us.citi.strata-premier/trip-cancel
+  version: 1
+- target: benefit:us.citi.strata-premier/lost-luggage
+  version: 1
+- target: benefit:us.citi.strata-premier/rental-cdw
+  version: 1
+- target: benefit:us.citi.strata-premier/extended-warranty
+  version: 1
+- target: benefit:us.citi.strata-premier/purchase-protection
+  version: 1
+sources:
+- { url: https://www.nerdwallet.com/article/credit-cards/citi-strata-premier-launches-as-a-refresh-of-its-predecessor, retrieved_at: "2026-11-13", publisher: review }
+- { url: https://dannydealguru.com/citi-strata-premier-card-review/, retrieved_at: "2026-11-13", publisher: review }
+- { url: https://www.citi.com/credit-cards/citi-strata-premier-credit-card, retrieved_at: "2026-11-13", publisher: issuer }

@@ -1,0 +1,26 @@
+id: us.chase.ink-business-preferred/travel-accident
+card_id: us.chase.ink-business-preferred
+kind: protection
+name: Travel accident insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ink-business-preferred@2025-02-01
+  summary: "Up to $500,000 in accidental death and dismemberment coverage when you travel on a common carrier paid with the card."
+  face_value: null
+  coverage:
+    per_person:
+      amount: 50000000
+      currency: USD
+  grants:
+  - entitlement: protection:travel_accident
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Common carrier fare paid with the card. Listed by The Points Guy (Sept 2026); not shown on the issuer product page. Unverified.
+  sources:
+  - url: https://thepointsguy.com/credit-cards/reviews/ink-business-preferred-card-review/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  confidence: '0.5'

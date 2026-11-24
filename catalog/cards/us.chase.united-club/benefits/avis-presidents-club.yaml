@@ -1,0 +1,19 @@
+id: us.chase.united-club/avis-presidents-club
+card_id: us.chase.united-club
+kind: status
+name: Avis President's Club
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club@2024-01-01
+  summary: "An invitation for the primary cardmember to enroll in Avis President's Club status."
+  grants:
+  - entitlement: status:avis
+    attributes:
+      tier: presidents_club
+  conditions:
+  - type: enrollment_required
+  beneficiaries:
+  - primary
+  notes: Listed on Chase's current product page; the date it was added is not confirmed, so it sits in the baseline.
+  confidence: '0.6'

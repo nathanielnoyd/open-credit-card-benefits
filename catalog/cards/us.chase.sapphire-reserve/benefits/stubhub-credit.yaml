@@ -1,0 +1,35 @@
+id: us.chase.sapphire-reserve/stubhub-credit
+card_id: us.chase.sapphire-reserve
+kind: statement_credit
+name: StubHub and viagogo credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-reserve@2025-06-23
+    summary: "Up to $150 back each half-year, $300 a year, on event tickets from StubHub or viagogo, through December 31, 2027."
+    effective_from: "2025-06-23"
+    effective_to: "2027-12-31"
+    face_value:
+      amount: 30000
+      currency: USD
+    period:
+      cadence: semiannual
+      anchor: calendar
+      tz: America/New_York
+    limit:
+      amount: 15000
+    grants:
+      - entitlement: credit:stubhub
+        combine: sum
+    conditions:
+      - type: merchant_in
+        merchants: [stubhub, viagogo]
+        note: Event tickets on StubHub or viagogo
+    beneficiaries:
+      - primary
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

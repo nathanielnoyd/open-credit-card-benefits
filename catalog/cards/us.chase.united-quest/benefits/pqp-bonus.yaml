@@ -1,0 +1,23 @@
+id: us.chase.united-quest/pqp-bonus
+card_id: us.chase.united-quest
+kind: anniversary
+name: 1,000 annual bonus PQP
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-quest@2025-03-24
+  summary: "1,000 Premier qualifying points toward United status each calendar year from 2026, posted in early February if your card was open at the end of the prior year."
+  reward:
+    currency: pts:united_pqp
+    points: 1000
+  issued_on: calendar_year
+  effective_from: '2026-01-01'
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: status_credit:united
+  beneficiaries:
+  - primary
+  notes: 1,000 PQP posted within 8 weeks of February 1 each year from 2026, if the card was open on December 31 of the prior
+    year. Does not count toward the 18,000 PQP spend cap.

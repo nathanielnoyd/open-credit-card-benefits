@@ -1,0 +1,15 @@
+id: us.chase.united-explorer/award-availability
+card_id: us.chase.united-explorer
+kind: program_access
+name: Expanded award availability
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-explorer@2024-01-01
+  summary: "Access to more saver award seats on United-operated flights than other MileagePlus members get."
+  grants:
+  - entitlement: program:expanded_award_availability_united
+  beneficiaries:
+  - primary
+  notes: Cardmembers see more saver award space on United-operated flights than other members.
+  confidence: '0.7'

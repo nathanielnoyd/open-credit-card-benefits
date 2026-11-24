@@ -1,0 +1,20 @@
+id: us.amex.hilton-aspire/spend-60k
+card_id: us.amex.hilton-aspire
+kind: milestone
+name: Free Night Reward after $60,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.hilton-aspire@2024-02-01
+  summary: "After $60,000 in calendar-year spend, you earn a second Free Night Reward."
+  face_value: null
+  threshold:
+    amount: 6000000
+    currency: USD
+  threshold_period: calendar_year
+  reward_benefit: us.amex.hilton-aspire/spend-free-night-60k
+  beneficiaries:
+  - primary
+  notes: A second spend-based night after an additional $30,000 in the same calendar year ($60,000 in total).
+  grants:
+  - entitlement: milestone:us.amex.hilton-aspire.spend-60k

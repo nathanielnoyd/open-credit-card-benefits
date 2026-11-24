@@ -1,0 +1,26 @@
+id: us.bofa.atmos-summit/rental-cdw
+card_id: us.bofa.atmos-summit
+kind: protection
+name: Auto rental collision damage waiver
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.atmos-summit@2026-11-14
+  summary: "Primary collision and theft coverage on car rentals of up to 15 days at home and 31 days abroad paid with the card, for cars below a set value."
+  face_value: null
+  grants:
+  - entitlement: protection:rental_cdw
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  coverage:
+    priority: primary
+    max_days: 31
+  notes: Primary coverage for cars with an MSRP up to $75,000; up to 15 consecutive days in the country of residence and 31 days abroad (max_days is the longer). Excludes Israel, Jamaica, the Republic of Ireland and Northern Ireland. Decline the rental company's CDW.
+  confidence: "0.7"
+  sources:
+  - url: https://onemileatatime.com/guides/atmos-rewards-summit-card-rental-car-coverage/
+    retrieved_at: "2026-11-14"
+    publisher: review

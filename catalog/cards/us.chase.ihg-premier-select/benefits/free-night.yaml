@@ -1,0 +1,24 @@
+id: us.chase.ihg-premier-select/free-night
+card_id: us.chase.ihg-premier-select
+kind: certificate
+name: Anniversary Free Night
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier-select@2026-10-01
+  summary: "One free night each card anniversary at an IHG hotel costing up to 60,000 points a night, used within 12 months; you can add points to book pricier hotels."
+  cap:
+    currency: pts:ihg_one
+    points: 60000
+  expires_after_days: 365
+  issued_on: anniversary
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  grants:
+  - entitlement: certificate:us.chase.ihg-premier-select.free-night
+  beneficiaries:
+  - primary
+  notes: 'Issued after each account anniversary and must be redeemed within 12 months; IHG points may be added to book hotels
+    above the cap (no published top-off limit). Unlimited top-off is not expressible: top_up is left out.'
+  machine_readable: false

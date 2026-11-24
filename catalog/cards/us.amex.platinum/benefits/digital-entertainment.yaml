@@ -1,0 +1,63 @@
+id: us.amex.platinum/digital-entertainment
+card_id: us.amex.platinum
+kind: statement_credit
+name: Digital entertainment credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2024-01-01
+    summary: "Up to $20 a month in statement credits on eligible digital entertainment subscriptions, $240 a year in total; enrollment required."
+    effective_from: "2024-01-01"
+    face_value:
+      amount: 24000
+      currency: USD
+    period:
+      cadence: monthly
+      anchor: calendar
+      tz: America/New_York
+    limit:
+      amount: 2000
+    grants:
+      - entitlement: credit:digital_entertainment
+        combine: sum
+    conditions:
+      - type: enrollment_required
+    beneficiaries:
+      - primary
+    machine_readable: true
+    sources:
+      - url: https://thepointsguy.com/credit-cards/amex-platinum-2025-refresh/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.8"
+  - version: 2
+    supersedes: 1
+    change_type: amount_changed
+    release: us.amex.platinum@2025-09-18
+    summary: "Up to $25 a month in statement credits at Disney+, Hulu, ESPN, Paramount+, Peacock, The New York Times, The Wall Street Journal, YouTube Premium or YouTube TV, $300 a year in total; enrollment required."
+    effective_from: "2025-09-18"
+    face_value:
+      amount: 30000
+      currency: USD
+    period:
+      cadence: monthly
+      anchor: calendar
+      tz: America/New_York
+    limit:
+      amount: 2500
+    grants:
+      - entitlement: credit:digital_entertainment
+        combine: sum
+    conditions:
+      - type: enrollment_required
+      - type: merchant_in
+        merchants: [disney_plus, hulu, espn_plus, paramount_plus, peacock, nytimes, wsj, youtube_premium, youtube_tv]
+        note: Disney+, Hulu, ESPN, Paramount+, Peacock, NYT, WSJ, YouTube Premium or YouTube TV
+    beneficiaries:
+      - primary
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

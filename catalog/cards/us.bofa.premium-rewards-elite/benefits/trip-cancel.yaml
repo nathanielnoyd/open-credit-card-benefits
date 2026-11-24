@@ -1,0 +1,22 @@
+id: us.bofa.premium-rewards-elite/trip-cancel
+card_id: us.bofa.premium-rewards-elite
+kind: protection
+name: Trip cancellation and interruption
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards-elite@2026-11-14
+  summary: "Reimburses up to $2,500 in non-refundable fares when a trip paid with the card is canceled or cut short for a covered reason such as illness."
+  face_value: null
+  grants:
+  - entitlement: protection:trip_cancellation
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  coverage:
+    per_trip:
+      amount: 250000
+      currency: USD
+  notes: Up to $2,500 for non-refundable passenger fares per Upgraded Points; the issuer page lists the coverage without an amount.
+  confidence: "0.6"

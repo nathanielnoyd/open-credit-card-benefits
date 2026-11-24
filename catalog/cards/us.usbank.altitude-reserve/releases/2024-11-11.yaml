@@ -1,0 +1,68 @@
+id: us.usbank.altitude-reserve@2024-11-11
+card_id: us.usbank.altitude-reserve
+kind: baseline
+effective_for_new: "2024-11-11"
+notes: >-
+  Terms as observed when the card closed to new applicants on November 11, 2024; this is the last date any new
+  applicant could get them. Earlier history (the card launched in 2017; the authorized user fee was dropped and the
+  $325 credit extended to dining in 2021) is not modeled. Points were then worth 1.5 cents for travel through
+  Real-Time Rewards and the Travel Center (see pts:usbank_altitude).
+changes:
+- target: fee:annual
+  to:
+    amount: 40000
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+  notes: Free since early 2021, when U.S. Bank dropped the $75 authorized user fee.
+- target: fee:foreign_transaction
+  rate: "0"
+- target: earn_rule:us.usbank.altitude-reserve/travel-center-hotels-cars
+  version: 1
+- target: earn_rule:us.usbank.altitude-reserve/travel-3x
+  version: 1
+- target: earn_rule:us.usbank.altitude-reserve/mobile-wallet-3x
+  version: 1
+- target: earn_rule:us.usbank.altitude-reserve/base-1x
+  version: 1
+- target: benefit:us.usbank.altitude-reserve/travel-credit
+  version: 1
+- target: benefit:us.usbank.altitude-reserve/priority-pass
+  version: 1
+- target: benefit:us.usbank.altitude-reserve/trusted-traveler
+  version: 1
+- target: benefit:us.usbank.altitude-reserve/luxury-hotel-collection
+  version: 1
+- target: benefit:us.usbank.altitude-reserve/no-fx
+  version: 1
+- target: benefit:us.usbank.altitude-reserve/travel-accident
+  version: 1
+- target: benefit:us.usbank.altitude-reserve/rental-cdw
+  version: 1
+- target: benefit:us.usbank.altitude-reserve/trip-cancel
+  version: 1
+- target: benefit:us.usbank.altitude-reserve/trip-delay
+  version: 1
+- target: benefit:us.usbank.altitude-reserve/lost-luggage
+  version: 1
+- target: benefit:us.usbank.altitude-reserve/evacuation
+  version: 1
+- target: benefit:us.usbank.altitude-reserve/purchase-protection
+  version: 1
+- target: benefit:us.usbank.altitude-reserve/return-protection
+  version: 1
+- target: benefit:us.usbank.altitude-reserve/extended-warranty
+  version: 1
+sources:
+- url: https://frequentmiler.com/us-bank-altitude-reserve-no-longer-accepting-new-applications/
+  retrieved_at: "2026-11-14"
+  publisher: review
+- url: https://awardwallet.com/credit-cards/us-bank-altitude-reserve-card/
+  retrieved_at: "2026-11-14"
+  publisher: review
+- url: https://www.doctorofcredit.com/u-s-bank-altitude-reserve-325-credit-works-on-dining-purchases-permanent-change-0-authorized-user-fee/
+  retrieved_at: "2026-11-14"
+  publisher: review
+confidence: "0.75"

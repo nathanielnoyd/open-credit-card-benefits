@@ -1,0 +1,19 @@
+id: us.citi.strata-elite/admirals-club-passes
+card_id: us.citi.strata-elite
+kind: access
+name: Admirals Club passes
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.strata-elite@2025-07-27
+  summary: "4 Admirals Club passes each calendar year, each admitting you plus up to 3 children under 18."
+  period: { cadence: annual, anchor: calendar }
+  limit: { count: 4, unit: { unit: pass } }
+  grants:
+  - entitlement: lounge_network:admirals_club
+    attributes: { visits: 4, guests: 0, children_under_18: 3 }
+  beneficiaries: [primary]
+  notes: >-
+    Four Admirals Club Citi Strata Elite passes per calendar year. Each admits one adult plus up to three children under 18.
+    Whether a same-day American Airlines boarding pass is required is not confirmed.
+  confidence: "0.75"

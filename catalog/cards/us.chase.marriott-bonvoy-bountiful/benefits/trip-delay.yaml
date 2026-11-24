@@ -1,0 +1,32 @@
+id: us.chase.marriott-bonvoy-bountiful/trip-delay
+card_id: us.chase.marriott-bonvoy-bountiful
+kind: protection
+name: Trip delay reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.marriott-bonvoy-bountiful@2024-01-01
+  summary: "Covers up to $500 per person in meals and lodging when a trip paid with the card is delayed more than 12 hours."
+  grants:
+  - entitlement: protection:trip_delay
+  coverage:
+    per_person:
+      amount: 50000
+      currency: USD
+    waiting_hours: 12
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: Delays over 12 hours or requiring an overnight stay.
+  confidence: '0.7'
+  sources:
+  - url: https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/bountiful
+    retrieved_at: '2026-11-14'
+    publisher: issuer
+  - url: https://awardwallet.com/credit-cards/marriott-bonvoy/chase-marriott-bountiful/
+    retrieved_at: '2026-11-14'
+    publisher: review
+  - url: https://thepointsguy.com/credit-cards/reviews/marriott-bonvoy-bountiful-card-review/
+    retrieved_at: '2026-11-14'
+    publisher: review

@@ -1,0 +1,32 @@
+id: us.chase.ihg-business/milestone-60k
+card_id: us.chase.ihg-business
+kind: milestone
+name: Free Night after $60,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-business@2024-01-01
+  summary: "An additional IHG free night certificate after you spend $60,000 on the card in a calendar year."
+  threshold:
+    amount: 6000000
+    currency: USD
+  threshold_period: calendar_year
+  reward_benefit: us.chase.ihg-business/spend-free-night
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: milestone:us.chase.ihg-business.60k
+  beneficiaries:
+  - primary
+  notes: The certificate itself, with its points cap, is spend-free-night.
+  sources:
+  - url: https://frequentmiler.com/all-the-existing-ihg-credit-cards-have-been-refreshed-here-are-the-changes/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.uscreditcardguide.com/chase-ihg-premier-business-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://chase.com/personal/credit-cards/ihg/premierbusiness/premier-business-perks
+    retrieved_at: '2026-11-13'
+    publisher: issuer

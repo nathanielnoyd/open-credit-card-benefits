@@ -1,0 +1,23 @@
+id: us.wellsfargo.autograph-journey/luxury-hotel-collection
+card_id: us.wellsfargo.autograph-journey
+kind: program_access
+name: Visa Signature Luxury Hotel Collection
+versions:
+- version: 1
+  change_type: added
+  release: us.wellsfargo.autograph-journey@2024-03-01
+  summary: "Room upgrades when available, breakfast, late checkout and other perks at Visa Luxury Hotel Collection properties booked through the collection."
+  face_value: null
+  grants:
+  - entitlement: program:visa_infinite_lhc
+  conditions:
+  - type: booking_channel
+    channel: visa_luxury_hotel_collection
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: 'Visa Signature access to the Visa Luxury Hotel Collection (same program as the Visa Infinite collection, entitlement reused): room upgrade when available, breakfast, late checkout and property perks when booked through the collection site or Visa Concierge.'
+  sources:
+  - url: https://creditcards.wellsfargo.com/autograph-journey-visa-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer

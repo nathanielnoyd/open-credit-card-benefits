@@ -1,0 +1,28 @@
+id: us.capitalone.venture-x/trip-delay
+card_id: us.capitalone.venture-x
+kind: protection
+name: Trip delay reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x@2025-03-01
+  summary: "Up to $500 per ticket for expenses when a common-carrier trip paid at least partly with the card is delayed more than 6 hours or needs an overnight stay, one claim per trip."
+  coverage:
+    per_person:
+      amount: 50000
+      currency: USD
+    waiting_hours: 6
+    requires_card_payment: partial
+    max_claims_per_period: 1
+  grants:
+  - entitlement: protection:trip_delay
+  conditions:
+  - type: paid_with_card
+  notes: Up to $500 per ticket purchased with the card when a common-carrier trip is delayed more than 6 hours or needs an overnight stay; one claim per trip (max_claims_per_period here means per trip).
+  sources:
+  - url: https://upgradedpoints.com/credit-cards/reviews/capital-one-venture-x/travel-insurance-benefits/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  confidence: "0.75"
+  beneficiaries:
+  - primary

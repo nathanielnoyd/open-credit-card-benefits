@@ -1,0 +1,70 @@
+id: us.chase.united-business/travel-credit
+card_id: us.chase.united-business
+kind: statement_credit
+name: United travel credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-business@2024-01-01
+  summary: "A $100 United travel credit once a year after seven United flight purchases of $100 or more each."
+  face_value:
+    amount: 10000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 10000
+  grants:
+  - entitlement: credit:united_travel
+  conditions:
+  - type: paid_with_card
+    note: Seven United flight purchases of $100 or more each in the year
+  - type: merchant_in
+    merchants:
+    - united
+  beneficiaries:
+  - primary
+  notes: Earned after seven United flight purchases of $100 or more each in a year, then usable on United purchases. The purchase-count trigger has no structured field.
+  machine_readable: false
+  confidence: '0.6'
+  sources:
+  - url: https://www.uscreditcardguide.com/chase-united-mileageplus-explorer-business-credit-card
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://upgradedpoints.com/news/united-business-card-changing-rebate-benefit/
+    retrieved_at: '2026-11-13'
+    publisher: review
+- version: 2
+  supersedes: 1
+  change_type: terms_changed
+  release: us.chase.united-business@2025-03-24
+  summary: "$125 in United TravelBank cash once per calendar year after five qualifying United flight purchases, for United and United Express flights."
+  face_value:
+    amount: 12500
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 12500
+  grants:
+  - entitlement: credit:united_travel
+  conditions:
+  - type: paid_with_card
+    note: Five United flight-related purchases of $100 or more each in the calendar year, including seat upgrades, Economy Plus, inflight purchases and bag fees
+  - type: merchant_in
+    merchants:
+    - united
+    note: TravelBank cash for United and United Express flights; not for award taxes or codeshares
+  beneficiaries:
+  - primary
+  notes: One $125 TravelBank cash deposit per calendar year after five qualifying United purchases of $100 or more each; expires 12 months after issue. Not a statement credit. The purchase-count trigger has no structured field.
+  machine_readable: false
+  sources:
+  - url: https://creditcards.chase.com/business-credit-cards/united/united-business-card
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://upgradedpoints.com/news/united-airlines-business-credit-card-changes-2025/
+    retrieved_at: '2026-11-13'
+    publisher: review

@@ -1,0 +1,20 @@
+id: us.wellsfargo.autograph/no-fx
+card_id: us.wellsfargo.autograph
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.wellsfargo.autograph@2022-07-01
+  summary: "No foreign transaction fees on purchases made abroad, for you and authorized users."
+  face_value: null
+  waives: foreign_transaction_fee
+  grants:
+  - entitlement: fee_waiver:foreign_transaction
+  beneficiaries:
+  - primary
+  - authorized_user
+  sources:
+  - url: https://creditcards.wellsfargo.com/autograph-visa-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer

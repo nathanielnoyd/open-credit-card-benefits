@@ -1,0 +1,14 @@
+id: us.chase.freedom-unlimited@2025-02-01
+card_id: us.chase.freedom-unlimited
+kind: change
+first_seen_on: "2025-02-01"
+effective_for_new: "2025-02-01"
+notes: Start of the current DashPass activation window (February 1, 2025 to December 31, 2029) per Chase's product page. The current Lyft 2% term (through September 30, 2027) is placed here too; its exact start date is not confirmed.
+changes:
+- target: benefit:us.chase.freedom-unlimited/dashpass
+  version: 1
+- target: benefit:us.chase.freedom-unlimited/doordash-credit
+  version: 1
+- target: earn_rule:us.chase.freedom-unlimited/lyft-2x
+  version: 1
+confidence: "0.7"

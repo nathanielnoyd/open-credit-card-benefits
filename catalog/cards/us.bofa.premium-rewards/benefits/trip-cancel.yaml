@@ -1,0 +1,18 @@
+id: us.bofa.premium-rewards/trip-cancel
+card_id: us.bofa.premium-rewards
+kind: protection
+name: Trip cancellation and interruption
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards@2024-01-01
+  summary: "Trip cancellation and interruption coverage on trips paid with the card; the coverage amount is not confirmed."
+  face_value: null
+  grants:
+  - entitlement: protection:trip_cancellation
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  notes: 'Listed on the issuer page without an amount. Reviews disagree: $2,500 for common-carrier fares or $5,000 per person per trip. Coverage left unstructured.'
+  confidence: "0.5"

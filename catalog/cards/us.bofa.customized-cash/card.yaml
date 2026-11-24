@@ -1,0 +1,27 @@
+id: us.bofa.customized-cash
+issuer_id: us.bofa
+name: Bank of America Customized Cash Rewards credit card
+summary: "A no-annual-fee Visa earning 3% in a category you choose and 2% at grocery stores and wholesale clubs on up to $2,500 a quarter, then 1%, with up to 75% more through BofA Rewards."
+network: visa
+segment: personal
+tier: no_fee
+family: bofa-rewards
+earns: pts:bofa_cash
+open_to_applicants: true
+url: https://www.bankofamerica.com/credit-cards/products/cash-back-credit-card/
+aliases:
+- BofA Customized Cash
+- Customized Cash Rewards
+- BankAmericard Cash Rewards
+fee_posting:
+  anchor: account_open
+provenance:
+  sources:
+  - url: https://www.bankofamerica.com/credit-cards/products/cash-back-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://upgradedpoints.com/credit-cards/reviews/bank-of-america-customized-cash-rewards-credit-card
+    retrieved_at: "2026-11-13"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.85"

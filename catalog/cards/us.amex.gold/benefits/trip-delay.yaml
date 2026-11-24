@@ -1,0 +1,27 @@
+id: us.amex.gold/trip-delay
+card_id: us.amex.gold
+kind: protection
+name: Trip delay reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.gold@2024-07-25
+  summary: "Covers up to $300 per trip in expenses when a round trip paid with the card is delayed more than 12 hours, for at most 2 claims in any 12 months."
+  coverage:
+    per_trip:
+      amount: 30000
+      currency: USD
+    waiting_hours: 12
+    max_claims_per_period: 2
+  grants:
+  - entitlement: protection:trip_delay
+  conditions:
+  - type: paid_with_card
+  period:
+    cadence: rolling
+    window_days: 365
+  limit:
+    count: 2
+  notes: Round trip paid entirely with the card; delays over 12 hours; up to $300 per trip; at most 2 claims per card per 12 consecutive months.
+  beneficiaries:
+  - primary

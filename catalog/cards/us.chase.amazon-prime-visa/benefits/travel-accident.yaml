@@ -1,0 +1,17 @@
+id: us.chase.amazon-prime-visa/travel-accident
+card_id: us.chase.amazon-prime-visa
+kind: protection
+name: Travel accident insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.amazon-prime-visa@2023-05-01
+  summary: "Accidental death and dismemberment coverage on common-carrier travel when you charge the fare to the card; the benefit amount is not confirmed."
+  grants:
+  - entitlement: protection:travel_accident
+  conditions:
+  - type: paid_with_card
+  notes: Common-carrier accidental death and dismemberment cover when the fare is charged to the card. Listed by reviews; the benefit amount (commonly reported as up to $500,000) could not be confirmed, so no structured coverage is given.
+  confidence: "0.6"
+  beneficiaries:
+  - primary

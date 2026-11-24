@@ -1,0 +1,14 @@
+id: us.amex.platinum@2027-01-01
+card_id: us.amex.platinum
+kind: change
+first_seen_on: "2026-10-27"
+effective_for_new: "2027-01-01"
+notes: Fine Hotels + Resorts bookings need a 2-night minimum for the hotel credit.
+changes:
+  - target: benefit:us.amex.platinum/hotel-credit
+    version: 3
+sources:
+  - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+    retrieved_at: "2026-11-12"
+  - url: https://yourmileagemayvary.com/2026/10/27/amex-platinum-fhr-devaluation-worth-it/
+    retrieved_at: "2026-11-12"

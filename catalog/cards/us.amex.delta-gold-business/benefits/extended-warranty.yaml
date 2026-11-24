@@ -1,0 +1,20 @@
+id: us.amex.delta-gold-business/extended-warranty
+card_id: us.amex.delta-gold-business
+kind: protection
+name: Extended warranty
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-gold-business@2025-02-01
+  summary: "Adds 1 year to manufacturer warranties of 5 years or less on items paid with the card."
+  coverage:
+    extends_years: 1
+    max_original_warranty_years: 5
+  grants:
+  - entitlement: protection:extended_warranty
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  confidence: '0.7'

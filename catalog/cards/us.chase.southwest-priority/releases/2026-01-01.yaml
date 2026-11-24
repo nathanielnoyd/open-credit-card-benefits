@@ -1,0 +1,23 @@
+id: us.chase.southwest-priority@2026-01-01
+card_id: us.chase.southwest-priority
+kind: change
+announced_on: '2025-07-24'
+effective_for_new: '2026-01-01'
+notes: The $75 Southwest credit, the four Upgraded Boardings (for flights operating in 2025), and 2x on internet, cable, phone,
+  Rapid Rewards hotel and car rental partners ended after December 31, 2025.
+changes:
+- target: earn_rule:us.chase.southwest-priority/rr-partners-2x
+  change_type: retired
+- target: earn_rule:us.chase.southwest-priority/telecom-2x
+  change_type: retired
+- target: benefit:us.chase.southwest-priority/travel-credit
+  change_type: retired
+- target: benefit:us.chase.southwest-priority/upgraded-boardings
+  change_type: retired
+sources:
+- url: https://media.chase.com/news/chase-southwest-introduce-new-card-benefits
+  retrieved_at: '2026-11-13'
+  publisher: issuer
+- url: https://upgradedpoints.com/news/changes-southwest-airlines-credit-cards-2025/
+  retrieved_at: '2026-11-13'
+  publisher: review

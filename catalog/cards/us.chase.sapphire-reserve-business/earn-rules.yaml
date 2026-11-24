@@ -1,0 +1,74 @@
+card_id: us.chase.sapphire-reserve-business
+rules:
+- id: us.chase.sapphire-reserve-business/chase-travel-8x
+  categories:
+  - cat:travel.portal.chase.flights
+  - cat:travel.portal.chase.hotels_cars
+  versions:
+  - version: 1
+    release: us.chase.sapphire-reserve-business@2025-06-23
+    multiplier: '8'
+    notes: Includes The Edit; FROSCH and Valerie Wilson Travel bookings excluded.
+- id: us.chase.sapphire-reserve-business/flights-direct-4x
+  categories:
+  - cat:travel.flights.direct
+  versions:
+  - version: 1
+    release: us.chase.sapphire-reserve-business@2025-06-23
+    multiplier: '4'
+- id: us.chase.sapphire-reserve-business/hotels-direct-4x
+  categories:
+  - cat:travel.hotels.direct
+  versions:
+  - version: 1
+    release: us.chase.sapphire-reserve-business@2025-06-23
+    multiplier: '4'
+- id: us.chase.sapphire-reserve-business/advertising-3x
+  categories:
+  - cat:business.advertising
+  versions:
+  - version: 1
+    release: us.chase.sapphire-reserve-business@2025-06-23
+    multiplier: '3'
+    notes: Social media and search engine advertising only; other media does not qualify. Uncapped through November 14, 2026.
+    sources:
+    - url: https://thepointsguy.com/news/chase-unveils-the-chase-sapphire-reserve-for-business/
+      retrieved_at: "2026-11-13"
+      publisher: review
+    - url: https://creditcards.chase.com/business-credit-cards/sapphire/reserve
+      retrieved_at: "2026-11-13"
+      publisher: issuer
+  - version: 2
+    release: us.chase.sapphire-reserve-business@2026-11-15
+    multiplier: '3'
+    cap:
+      amount: 100000000
+      currency: USD
+    cap_period: cardmember_year
+    notes: Social media and search engine advertising only. The first anniversary year runs from November 15, 2026 to the next statement with
+      an annual fee.
+    sources:
+    - url: https://onemileatatime.com/news/sapphire-reserve-business-bigger-hotel-credit-bonus-category-cap/
+      retrieved_at: "2026-11-13"
+      publisher: review
+    - url: https://upgradedpoints.com/news/chase-sapphire-reserve-business-card-changes-2026/
+      retrieved_at: "2026-11-13"
+      publisher: review
+    - url: https://creditcards.chase.com/business-credit-cards/sapphire/reserve
+      retrieved_at: "2026-11-13"
+      publisher: issuer
+- id: us.chase.sapphire-reserve-business/lyft-5x
+  categories:
+  - cat:travel.rideshare.lyft
+  versions:
+  - version: 1
+    release: us.chase.sapphire-reserve-business@2025-06-23
+    effective_to: "2027-09-30"
+    multiplier: '5'
+- id: us.chase.sapphire-reserve-business/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.sapphire-reserve-business@2025-06-23
+    multiplier: '1'

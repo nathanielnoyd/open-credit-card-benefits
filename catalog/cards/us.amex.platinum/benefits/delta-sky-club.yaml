@@ -1,0 +1,75 @@
+id: us.amex.platinum/delta-sky-club
+card_id: us.amex.platinum
+kind: access
+name: Delta Sky Club
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2024-01-01
+    summary: "Unlimited Delta Sky Club access when you fly Delta the same day on a fare other than Basic Economy."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: lounge_network:delta_sky_club
+        combine: max
+        attributes:
+          visits: null
+    conditions:
+      - type: same_day_flight
+        carrier:
+          - DL
+      - type: fare_class_not_in
+        classes:
+          - delta_basic
+    beneficiaries:
+      - primary
+      - authorized_user
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.8"
+  - version: 2
+    supersedes: 1
+    change_type: terms_changed
+    release: us.amex.platinum@2025-02-01
+    summary: "10 Delta Sky Club visits per Medallion Year (February 1 to January 31) when you fly Delta the same day on a fare other than Basic Economy; each visit gives 24 hours of access."
+    effective_from: "2025-02-01"
+    face_value: null
+    period:
+      cadence: annual
+      anchor: fixed_date
+      tz: America/New_York
+      anchor_month: 2
+      anchor_day: 1
+    limit:
+      count: 10
+      unit:
+        unit: visit
+        window_hours: 24
+    grants:
+      - entitlement: lounge_network:delta_sky_club
+        combine: max
+        attributes:
+          visits: 10
+    conditions:
+      - type: same_day_flight
+        carrier:
+          - DL
+      - type: fare_class_not_in
+        classes:
+          - delta_basic
+    beneficiaries:
+      - primary
+      - authorized_user
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

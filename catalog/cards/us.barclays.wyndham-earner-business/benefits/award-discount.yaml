@@ -1,0 +1,31 @@
+id: us.barclays.wyndham-earner-business/award-discount
+card_id: us.barclays.wyndham-earner-business
+kind: redemption_modifier
+name: Discount on award nights
+versions:
+- version: 1
+  change_type: added
+  release: us.barclays.wyndham-earner-business@2021-08-18
+  summary: Wyndham Rewards free night awards cost 10% fewer points while you hold the card.
+  percent_rebate: '0.1'
+  grants:
+  - entitlement: program:reduced_award_pricing_wyndham
+  beneficiaries:
+  - primary
+  notes: Pre-refresh terms, kept by cardmembers approved before June 17, 2026. An upfront 10% reduction in the points price
+    of Wyndham free nights, approximated as percent_rebate; no applies_to_path because the Wyndham Rewards currency has no
+    redemption paths yet.
+  machine_readable: false
+- version: 2
+  supersedes: 1
+  change_type: amount_changed
+  release: us.barclays.wyndham-earner-business@2026-06-17
+  summary: Wyndham Rewards free night awards cost 20% fewer points while you hold the card.
+  percent_rebate: '0.2'
+  grants:
+  - entitlement: program:reduced_award_pricing_wyndham
+  beneficiaries:
+  - primary
+  notes: An upfront 20% reduction in the points price of Wyndham free nights, approximated as percent_rebate; no applies_to_path
+    because the Wyndham Rewards currency has no redemption paths yet.
+  machine_readable: false

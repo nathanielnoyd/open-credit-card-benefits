@@ -1,0 +1,17 @@
+id: us.amex.gold/hertz-five-star
+card_id: us.amex.gold
+kind: status
+name: Hertz Five Star
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.gold@2026-04-30
+  summary: "Hertz Five Star status after you enroll."
+  grants:
+  - entitlement: status:hertz
+    attributes:
+      tier: five_star
+  conditions:
+  - type: enrollment_required
+  beneficiaries:
+  - primary

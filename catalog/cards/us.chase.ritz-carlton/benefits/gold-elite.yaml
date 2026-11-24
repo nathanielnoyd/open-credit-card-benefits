@@ -1,0 +1,15 @@
+id: us.chase.ritz-carlton/gold-elite
+card_id: us.chase.ritz-carlton
+kind: status
+name: Marriott Bonvoy Gold Elite
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ritz-carlton@2024-07-01
+  summary: "Marriott Bonvoy Gold Elite status each calendar year while you hold the card."
+  grants:
+  - entitlement: status:marriott
+    attributes:
+      tier: gold
+  beneficiaries:
+  - primary

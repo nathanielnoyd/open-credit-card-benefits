@@ -1,0 +1,50 @@
+id: us.capitalone.venture-x-business/priority-pass
+card_id: us.capitalone.venture-x-business
+kind: membership
+name: Priority Pass
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x-business@2025-11-01
+  summary: "Priority Pass lounge membership with two free guests per visit after you enroll, for the primary cardholder only; Priority Pass restaurants are not included."
+  grants:
+  - entitlement: membership:priority_pass
+    attributes:
+      guests: 2
+      restaurants: false
+  conditions:
+  - type: enrollment_required
+  notes: Two complimentary guests; additional guests $35. Priority Pass restaurants not included. Employee cards had no access.
+  sources:
+  - url: https://frequentmiler.com/capital-one-venture-x-business-credit-card-review/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://frequentmiler.com/negative-venture-x-venture-x-business-lounge-access-changes-for-additional-cardholders-primary-cardholder-guests
+    retrieved_at: "2026-11-13"
+    publisher: review
+  beneficiaries:
+  - primary
+- version: 2
+  change_type: terms_changed
+  release: us.capitalone.venture-x-business@2026-02-01
+  summary: "Priority Pass lounge membership with two free guests per visit after you enroll; employee cards can be added for $125 a year each, and Priority Pass restaurants are not included."
+  supersedes: 1
+  grants:
+  - entitlement: membership:priority_pass
+    attributes:
+      guests: 2
+      restaurants: false
+  conditions:
+  - type: enrollment_required
+  notes: Primary keeps two complimentary guests (extra guests $35). Employee cards can be given Priority Pass with the same guest allowance only
+    if the primary pays $125 a year per card, up to four.
+  machine_readable: false
+  sources:
+  - url: https://frequentmiler.com/negative-venture-x-venture-x-business-lounge-access-changes-for-additional-cardholders-primary-cardholder-guests
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://onemileatatime.com/news/capital-one-venture-x-lounge-access-changes/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  beneficiaries:
+  - primary

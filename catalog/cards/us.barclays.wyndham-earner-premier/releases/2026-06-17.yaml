@@ -1,0 +1,67 @@
+id: us.barclays.wyndham-earner-premier@2026-06-17
+card_id: us.barclays.wyndham-earner-premier
+kind: baseline
+notes: New card launched June 17, 2026; these are its launch terms, unchanged as of November 2026. The authorized user fee
+  is not listed in the terms and is recorded as free.
+confidence: '0.8'
+effective_for_new: '2026-06-17'
+changes:
+- target: fee:annual
+  to:
+    amount: 39500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.barclays.wyndham-earner-premier/wyndham-8x
+  version: 1
+- target: earn_rule:us.barclays.wyndham-earner-premier/travel-4x
+  version: 1
+- target: earn_rule:us.barclays.wyndham-earner-premier/dining-4x
+  version: 1
+- target: earn_rule:us.barclays.wyndham-earner-premier/groceries-4x
+  version: 1
+- target: earn_rule:us.barclays.wyndham-earner-premier/base-1x
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-premier/anniversary-points
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-premier/award-discount
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-premier/diamond
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-premier/hotel-credit
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-premier/insider
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-premier/meal-delivery
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-premier/national-executive
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-premier/no-fx
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-premier/paid-stay-bonus
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-premier/points-no-expiration
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-premier/room-rate-discount
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-premier/streaming-credit
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-premier/trusted-traveler
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-premier/wholesale-club
+  version: 1
+sources:
+- url: https://www.barclaycardus.com/applycontent/TnCs.jsp?tc49152
+  retrieved_at: '2026-11-14'
+  publisher: issuer
+- url: https://investor.wyndhamhotels.com/news-events/press-releases/detail/422/wyndham-and-barclays-launch-updated-credit-card-suite
+  retrieved_at: '2026-11-14'
+  publisher: issuer
+- url: https://frequentmiler.com/wyndham-cards-refresh-new-premium-card-new-welcome-offers-new-benefits-and-new-changed-earning-rates-for-new-applicants/
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://www.uscreditcardguide.com/barclays-wyndham-earner-premier-credit-card/
+  retrieved_at: '2026-11-14'
+  publisher: review

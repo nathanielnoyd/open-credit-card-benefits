@@ -1,0 +1,14 @@
+id: pts:southwest_rr
+name: Southwest Rapid Rewards
+kind: airline
+issuer: Southwest Airlines
+url: https://www.southwest.com/rapid-rewards/
+expiry: Points do not expire.
+paths: []
+sources:
+  - url: https://www.southwest.com/rapid-rewards/
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

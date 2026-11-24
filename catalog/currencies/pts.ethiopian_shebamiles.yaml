@@ -1,0 +1,13 @@
+id: pts:ethiopian_shebamiles
+name: Ethiopian Airlines ShebaMiles
+kind: airline
+issuer: Ethiopian Airlines
+url: https://shebamiles.ethiopianairlines.com/
+paths: []
+sources:
+  - url: https://shebamiles.ethiopianairlines.com/
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://www.doctorofcredit.com/u-s-bank-finally-adds-transfer-partners-accor-flying-blue-qantas-ethiopian/
+    retrieved_at: "2026-11-13"
+    publisher: review

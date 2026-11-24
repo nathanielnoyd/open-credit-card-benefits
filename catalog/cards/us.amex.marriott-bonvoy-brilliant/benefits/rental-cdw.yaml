@@ -1,0 +1,21 @@
+id: us.amex.marriott-bonvoy-brilliant/rental-cdw
+card_id: us.amex.marriott-bonvoy-brilliant
+kind: protection
+name: Car rental loss and damage insurance
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.marriott-bonvoy-brilliant@2024-01-01
+  summary: "Secondary coverage for damage to or theft of a rental car paid in full with the card when you decline the rental company's collision damage waiver; no liability coverage."
+  face_value: null
+  coverage:
+    priority: secondary
+  conditions:
+  - type: paid_with_card
+    note: Reserve and pay for the entire rental with the card and decline the rental company CDW
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Secondary coverage for damage to or theft of the rental vehicle; no liability coverage. Not available in Australia, Italy or New Zealand. The per-incident maximum is in the benefit terms and was not confirmed.
+  grants:
+  - entitlement: protection:rental_cdw

@@ -1,0 +1,25 @@
+id: us.chase.ihg-premier-select/rental-cdw
+card_id: us.chase.ihg-premier-select
+kind: protection
+name: Auto rental collision damage waiver
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-premier-select@2026-10-01
+  summary: "Secondary collision and theft coverage on rental cars when you pay for the whole rental with the card and decline the rental company's collision coverage."
+  grants:
+  - entitlement: protection:rental_cdw
+    attributes:
+      priority: secondary
+  coverage:
+    priority: secondary
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Secondary to personal insurance in the US; decline the rental company CDW and pay the whole rental with the card.
+  sources:
+  - url: https://www.chase.com/personal/credit-cards/ihg/premierselect
+    retrieved_at: '2026-11-14'
+    publisher: issuer

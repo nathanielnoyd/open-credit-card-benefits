@@ -1,0 +1,33 @@
+id: us.chase.sapphire-reserve/doordash-restaurant
+card_id: us.chase.sapphire-reserve
+kind: statement_credit
+name: DoorDash restaurant credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-reserve@2025-06-23
+    summary: "Up to $15 off DoorDash restaurant orders each month, $180 a year."
+    effective_from: "2025-06-23"
+    face_value:
+      amount: 18000
+      currency: USD
+    period:
+      cadence: monthly
+      anchor: calendar
+      tz: America/New_York
+    limit:
+      amount: 1500
+    grants:
+      - entitlement: credit:doordash_restaurant
+        combine: sum
+        stacking_confidence: "0.6"
+    conditions: []
+    beneficiaries:
+      - primary
+    notes: Amount history before November 2026 is not modeled.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.7"

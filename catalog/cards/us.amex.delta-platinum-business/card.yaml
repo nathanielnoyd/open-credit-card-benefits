@@ -1,0 +1,38 @@
+id: us.amex.delta-platinum-business
+issuer_id: us.amex
+name: Delta SkyMiles Platinum Business American Express Card
+summary: "A $350-a-year Delta business cobrand card earning 3x miles on Delta and hotels and 1.5x on transit, US shipping and purchases of $5,000 or more, with a yearly companion certificate, MQD Headstart, a $200 Delta Stays credit, monthly Resy and rideshare credits and free checked bags."
+network: amex
+segment: business
+tier: premium
+family: amex-delta
+earns: pts:delta_skymiles
+open_to_applicants: true
+url: https://www.americanexpress.com/en-us/business/credit-cards/delta-skymiles-platinum/
+aliases:
+- Delta Platinum Business
+- Amex Delta Platinum Business
+- Delta SkyMiles Business Platinum
+cobrand:
+  partner: Delta Air Lines
+  program: pts:delta_skymiles
+fee_posting:
+  anchor: account_open
+notes: Employee cards have no annual fee. No Delta Sky Club access.
+related:
+- card_id: us.amex.delta-platinum
+  relation: personal_counterpart
+provenance:
+  sources:
+  - url: https://thepointsguy.com/credit-cards/reviews/platinum-delta-skymiles-business-card-review/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://awardwallet.com/blog/delta-business-platinum-review
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.nerdwallet.com/reviews/credit-cards/delta-skymiles-platinum-business-amex
+    retrieved_at: '2026-11-13'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.75'
+  last_reviewed: '2026-11-13'

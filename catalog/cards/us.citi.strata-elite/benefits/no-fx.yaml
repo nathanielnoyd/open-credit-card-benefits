@@ -1,0 +1,13 @@
+id: us.citi.strata-elite/no-fx
+card_id: us.citi.strata-elite
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.strata-elite@2025-07-27
+  summary: "No foreign transaction fees on purchases made abroad, for you and authorized users."
+  waives: foreign_transaction_fee
+  grants:
+  - entitlement: fee_waiver:foreign_transaction
+  beneficiaries: [primary, authorized_user]

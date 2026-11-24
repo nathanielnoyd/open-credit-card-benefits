@@ -1,0 +1,30 @@
+id: us.chase.ink-business-cash
+issuer_id: us.chase
+name: Ink Business Cash Credit Card
+summary: "A no-annual-fee business card earning 5x at office supply stores and on internet, cable and phone services and 2x at gas stations and restaurants, each on up to $25,000 a year, with a $20 monthly Instacart credit and primary business rental car coverage."
+network: visa
+segment: business
+tier: no_fee
+family: chase-ink
+earns: pts:chase_ur
+open_to_applicants: true
+url: https://creditcards.chase.com/business-credit-cards/ink/cash
+aliases:
+- Ink Business Cash
+- Chase Ink Cash
+- CIC
+fee_posting:
+  anchor: account_open
+notes: 'Marketed as cash back but earns Ultimate Rewards points; they transfer to partners only when combined with a Sapphire Preferred, Sapphire Reserve or Ink Business Preferred. 3% foreign transaction
+  fee (not expressible as a fee change). '
+provenance:
+  sources:
+  - url: https://creditcards.chase.com/business-credit-cards/ink/cash
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://thepointsguy.com/credit-cards/reviews/credit-card-review-ink-business-cash-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: '0.85'
+  last_reviewed: '2026-11-13'

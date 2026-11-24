@@ -1,0 +1,22 @@
+id: us.citi.aadvantage-platinum-select/aa-vacations-discount
+card_id: us.citi.aadvantage-platinum-select
+kind: other
+name: 10% off American Airlines Vacations
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-platinum-select@2025-10-19
+  summary: "10% off eligible American Airlines Vacations packages."
+  grants:
+  - entitlement: discount:american_vacations
+  beneficiaries:
+  - primary
+  notes: 10% off eligible American Airlines Vacations packages. Percentage discounts on a partner's own sales have no structured field.
+  machine_readable: false
+  sources:
+  - url: https://creditcards.aa.com/citi-platinum-card-american-airlines-cardmember
+    retrieved_at: '2026-11-13'
+    publisher: partner
+  - url: https://upgradedpoints.com/news/citi-aadvantage-card-changes-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review

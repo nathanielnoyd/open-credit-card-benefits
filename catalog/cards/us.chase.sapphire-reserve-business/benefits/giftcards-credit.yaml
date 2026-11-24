@@ -1,0 +1,28 @@
+id: us.chase.sapphire-reserve-business/giftcards-credit
+card_id: us.chase.sapphire-reserve-business
+kind: statement_credit
+name: Giftcards.com credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: Up to $50 back in each half of the calendar year, $100 a year, on gift cards bought at giftcards.com/reservebusiness, through October
+    31, 2028.
+  effective_to: "2028-10-31"
+  face_value:
+    amount: 10000
+    currency: USD
+  period:
+    cadence: semiannual
+    anchor: calendar
+  limit:
+    amount: 5000
+  grants:
+  - entitlement: credit:giftcards_com
+  conditions:
+  - type: merchant_in
+    merchants:
+    - giftcards_com
+    note: Curated gift cards at giftcards.com/reservebusiness
+  beneficiaries:
+  - primary

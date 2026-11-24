@@ -1,0 +1,23 @@
+id: us.amex.marriott-bonvoy-brilliant/trusted-traveler
+card_id: us.amex.marriott-bonvoy-brilliant
+kind: statement_credit
+name: Global Entry or TSA PreCheck credit
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.marriott-bonvoy-brilliant@2024-01-01
+  summary: "A statement credit of up to $120 for Global Entry or up to $85 for TSA PreCheck once every 4 years."
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: every_n_years
+    n: 4
+    anchor: calendar
+  limit:
+    amount: 12000
+  beneficiaries:
+  - primary
+  notes: $120 for Global Entry or up to $85 for TSA PreCheck (5-year plan, official enrollment provider); one credit per 4 years for whichever fee is charged first. The 4-year window runs from the credit, not the calendar; the schema period approximates it.
+  grants:
+  - entitlement: credit:trusted_traveler

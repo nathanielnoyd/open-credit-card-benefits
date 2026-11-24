@@ -1,0 +1,11 @@
+id: pts:hyatt_qn
+name: World of Hyatt qualifying night credits
+kind: status_credit
+issuer: Hyatt
+url: https://world.hyatt.com/content/gp/en/tiers-and-benefits.html
+expiry: Status-qualification credit; resets each calendar year.
+paths: []
+sources:
+  - url: https://world.hyatt.com/content/gp/en/tiers-and-benefits.html
+    retrieved_at: "2026-11-13"
+    publisher: partner

@@ -1,0 +1,32 @@
+id: us.chase.sapphire-preferred/points-boost
+card_id: us.chase.sapphire-preferred
+kind: redemption_modifier
+name: Points Boost redemptions
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-preferred@2024-01-01
+    summary: "Points are worth 1 to 1.75 cents each when redeemed for select travel through Chase Travel with Points Boost."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: redemption:chase_points_boost
+        combine: max
+        attributes:
+          rate_min: "1.0"
+          rate_max: "1.75"
+    conditions: []
+    beneficiaries:
+      - primary
+    applies_to_path: pts:chase_ur/points-boost-preferred
+    notes: Valued through the points engine, not as a benefit. Start date before the refresh not verified.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-preferred/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.7"

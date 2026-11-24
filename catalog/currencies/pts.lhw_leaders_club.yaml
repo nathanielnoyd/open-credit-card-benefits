@@ -1,0 +1,13 @@
+id: pts:lhw_leaders_club
+name: Leaders Club (The Leading Hotels of the World)
+kind: hotel
+issuer: The Leading Hotels of the World
+url: https://www.lhw.com/leaders-club
+paths: []
+sources:
+  - url: https://www.lhw.com/leaders-club
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardwallet.com/mile-transfer-times?program=Amex
+    retrieved_at: "2026-11-13"
+    publisher: review

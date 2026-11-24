@@ -1,0 +1,67 @@
+id: us.amex.delta-platinum-business@2025-02-01
+card_id: us.amex.delta-platinum-business
+kind: baseline
+effective_for_new: '2025-02-01'
+notes: Terms in force after the February 1, 2025 Delta changes, dated to match the personal Delta cards (MQD Headstart took
+  effect in early 2025; the $350 fee, Resy, rideshare and Delta Stays credits and upgrade eligibility date from the February
+  2024 refresh per reviews). The business card's own terms were observed on 2026-11-13 and recorded as they stood then,
+  less the June 2026 second bag; earlier history is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 35000
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.amex.delta-platinum-business/delta-3x
+  version: 1
+- target: earn_rule:us.amex.delta-platinum-business/hotels-3x
+  version: 1
+- target: earn_rule:us.amex.delta-platinum-business/transit-shipping
+  version: 1
+- target: earn_rule:us.amex.delta-platinum-business/large-purchase
+  version: 1
+- target: earn_rule:us.amex.delta-platinum-business/base-1x
+  version: 1
+- target: earn_rule:us.amex.delta-platinum-business/mqd-boost
+  version: 1
+- target: benefit:us.amex.delta-platinum-business/no-fx
+  version: 1
+- target: benefit:us.amex.delta-platinum-business/first-checked-bag
+  version: 1
+- target: benefit:us.amex.delta-platinum-business/priority-boarding
+  version: 1
+- target: benefit:us.amex.delta-platinum-business/inflight-discount
+  version: 1
+- target: benefit:us.amex.delta-platinum-business/award-discount
+  version: 1
+- target: benefit:us.amex.delta-platinum-business/rental-car
+  version: 1
+- target: benefit:us.amex.delta-platinum-business/extended-warranty
+  version: 1
+- target: benefit:us.amex.delta-platinum-business/mqd-headstart
+  version: 1
+- target: benefit:us.amex.delta-platinum-business/companion-certificate
+  version: 1
+- target: benefit:us.amex.delta-platinum-business/trusted-traveler
+  version: 1
+- target: benefit:us.amex.delta-platinum-business/resy
+  version: 1
+- target: benefit:us.amex.delta-platinum-business/rideshare
+  version: 1
+- target: benefit:us.amex.delta-platinum-business/delta-stays
+  version: 1
+- target: benefit:us.amex.delta-platinum-business/trip-delay
+  version: 1
+- target: benefit:us.amex.delta-platinum-business/baggage
+  version: 1
+- target: benefit:us.amex.delta-platinum-business/cell-phone
+  version: 1
+- target: benefit:us.amex.delta-platinum-business/purchase-protection
+  version: 1
+- target: benefit:us.amex.delta-platinum-business/upgrade-priority
+  version: 1
+- target: benefit:us.amex.delta-platinum-business/hertz-five-star
+  version: 1

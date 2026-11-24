@@ -1,0 +1,14 @@
+id: pts:ana_mileage_club
+name: ANA Mileage Club
+kind: airline
+issuer: ANA
+url: https://www.ana.co.jp/en/us/amc/
+expiry: "Fixed term: miles expire at the end of the 36th month after the month earned; activity does not extend them."
+paths: []
+sources:
+  - url: https://www.ana.co.jp/en/us/amc/
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

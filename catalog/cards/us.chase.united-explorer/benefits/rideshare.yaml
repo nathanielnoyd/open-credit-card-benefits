@@ -1,0 +1,30 @@
+id: us.chase.united-explorer/rideshare
+card_id: us.chase.united-explorer
+kind: statement_credit
+name: Rideshare credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-explorer@2025-03-24
+  summary: "Up to $5 a month in credits on Uber or Lyft rides, $60 a year, after you enroll each year."
+  face_value:
+    amount: 6000
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 500
+  grants:
+  - entitlement: credit:united_rideshare
+  conditions:
+  - type: enrollment_required
+    note: Yearly opt-in
+  - type: merchant_in
+    merchants:
+    - uber
+    - lyft
+  beneficiaries:
+  - primary
+  notes: Up to $5 a month, $60 a calendar year, on rideshare purchases after yearly enrollment.
+  confidence: '0.75'

@@ -1,0 +1,16 @@
+id: pts:bilt_cash
+name: Bilt Cash
+kind: fixed_value
+issuer: Bilt
+cents_per_point: '1.0'
+expiry: Last day of the month 12 months after it is earned
+paths:
+- id: bilt-ecosystem
+  kind: portal
+  rate: '1.0'
+  notes: One unit is $0.01 of Bilt Cash, spent on Bilt Travel, partner credits, housing points unlocks ($3 per 100 points) and the Point Accelerator; not redeemable for cash.
+url: https://www.bilt.com/terms/bilt-cash
+sources:
+- url: https://www.bilt.com/terms/bilt-cash
+  retrieved_at: '2026-11-13'
+  publisher: issuer

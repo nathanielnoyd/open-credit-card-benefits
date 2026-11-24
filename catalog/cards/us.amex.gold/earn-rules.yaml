@@ -1,0 +1,66 @@
+card_id: us.amex.gold
+rules:
+- id: us.amex.gold/dining-4x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.amex.gold@2024-07-25
+    multiplier: "4"
+    cap:
+      amount: 5000000
+      currency: USD
+    cap_period: calendar_year
+    notes: Restaurants worldwide, including takeout and delivery in the US; excludes restaurants inside other establishments.
+- id: us.amex.gold/us-supermarkets-4x
+  categories:
+  - cat:groceries.store
+  versions:
+  - version: 1
+    release: us.amex.gold@2024-07-25
+    multiplier: "4"
+    cap:
+      amount: 2500000
+      currency: USD
+    cap_period: calendar_year
+    notes: US supermarkets only; excludes superstores, warehouse clubs and specialty stores.
+    conditions:
+    - type: region
+      countries:
+      - US
+- id: us.amex.gold/flights-3x
+  categories:
+  - cat:travel.flights.direct
+  - cat:travel.portal.amex.flights
+  versions:
+  - version: 1
+    release: us.amex.gold@2024-07-25
+    multiplier: "3"
+    notes: Flights booked with the airline or Amex Travel.
+- id: us.amex.gold/amex-travel-hotels
+  categories:
+  - cat:travel.portal.amex.hotels_prepaid
+  versions:
+  - version: 1
+    release: us.amex.gold@2024-07-25
+    multiplier: "2"
+    notes: Before April 30, 2026, prepaid hotels on Amex Travel earned 2x like other prepaid Amex Travel bookings.
+  - version: 2
+    release: us.amex.gold@2026-04-30
+    multiplier: "5"
+    notes: Prepaid hotels booked through AmexTravel.com or the Amex Travel app.
+- id: us.amex.gold/amex-travel-cars-cruises-2x
+  categories:
+  - cat:travel.portal.amex.cars_cruises
+  versions:
+  - version: 1
+    release: us.amex.gold@2024-07-25
+    multiplier: "2"
+    notes: Prepaid car rentals booked through Amex Travel and cruises booked and paid through AmexTravel.com.
+- id: us.amex.gold/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.gold@2024-07-25
+    multiplier: "1"

@@ -1,0 +1,30 @@
+card_id: us.amex.hilton-business
+rules:
+- id: us.amex.hilton-business/hilton-12x
+  categories:
+  - cat:travel.hotels.direct.hilton
+  versions:
+  - version: 1
+    release: us.amex.hilton-business@2024-03-28
+    multiplier: '12'
+    notes: Eligible purchases made directly with hotels and resorts in the Hilton portfolio.
+- id: us.amex.hilton-business/base-5x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.hilton-business@2024-03-28
+    multiplier: '5'
+    cap:
+      amount: 10000000
+      currency: USD
+    cap_period: calendar_year
+    notes: Other eligible purchases, on the first $100,000 of purchases each calendar year.
+- id: us.amex.hilton-business/base-3x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.hilton-business@2024-03-28
+    multiplier: '3'
+    notes: Other eligible purchases after $100,000 in a calendar year.

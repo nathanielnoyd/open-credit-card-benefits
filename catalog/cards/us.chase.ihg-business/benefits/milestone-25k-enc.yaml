@@ -1,0 +1,25 @@
+id: us.chase.ihg-business/milestone-25k-enc
+card_id: us.chase.ihg-business
+kind: milestone
+name: 5 Elite Night Credits after $25,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-business@2026-10-01
+  summary: "5 IHG Elite Night Credits after you spend $25,000 on the card in a calendar year."
+  threshold:
+    amount: 2500000
+    currency: USD
+  threshold_period: calendar_year
+  reward:
+    currency: pts:ihg_qn
+    points: 5
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: status_credit:ihg
+    attributes:
+      nights: 5
+  beneficiaries:
+  - primary

@@ -1,0 +1,29 @@
+id: us.amex.blue-cash-everyday@2025-08-01
+card_id: us.amex.blue-cash-everyday
+kind: baseline
+effective_for_new: "2025-08-01"
+notes: Current terms, recorded from August 1, 2025, when the Disney credit's $9.99 minimum was removed. Earlier history (the Disney
+  minimum, and a Home Chef credit some reviews mentioned) is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 0
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.amex.blue-cash-everyday/us-supermarkets-3
+  version: 1
+- target: earn_rule:us.amex.blue-cash-everyday/us-online-retail-3
+  version: 1
+- target: earn_rule:us.amex.blue-cash-everyday/us-gas-3
+  version: 1
+- target: earn_rule:us.amex.blue-cash-everyday/base-1
+  version: 1
+- target: benefit:us.amex.blue-cash-everyday/disney-credit
+  version: 1
+- target: benefit:us.amex.blue-cash-everyday/rental-cdw
+  version: 1
+- target: benefit:us.amex.blue-cash-everyday/purchase-protection
+  version: 1

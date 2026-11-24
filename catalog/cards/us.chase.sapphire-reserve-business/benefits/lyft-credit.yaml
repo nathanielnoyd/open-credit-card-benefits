@@ -1,0 +1,24 @@
+id: us.chase.sapphire-reserve-business/lyft-credit
+card_id: us.chase.sapphire-reserve-business
+kind: statement_credit
+name: Lyft credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2025-06-23
+  summary: Up to $10 in Lyft credit each month, $120 a year, through September 30, 2027.
+  effective_to: "2027-09-30"
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 1000
+  grants:
+  - entitlement: credit:lyft
+  conditions: []
+  beneficiaries:
+  - primary
+  notes: Rides booked in the Lyft app; unused credit expires each month.

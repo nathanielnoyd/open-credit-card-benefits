@@ -1,0 +1,25 @@
+id: us.chase.ritz-carlton/property-credit
+card_id: us.chase.ritz-carlton
+kind: statement_credit
+name: Ritz-Carlton and St. Regis $100 hotel credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ritz-carlton@2024-07-01
+  summary: "Up to $100 toward dining, spa or recreation charges on each paid stay of 2 or more nights at a participating Ritz-Carlton or St. Regis hotel."
+  period:
+    cadence: per_event
+  limit:
+    per_transaction: 10000
+  conditions:
+  - type: merchant_in
+    merchants:
+    - ritz_carlton
+    - st_regis
+  - type: min_nights
+    nights: 2
+  grants:
+  - entitlement: credit:marriott_property
+  beneficiaries:
+  - primary
+  notes: Paid stays on eligible non-discounted rates only; does not cover room rate, alcohol, taxes or gratuities. No stated annual cap.

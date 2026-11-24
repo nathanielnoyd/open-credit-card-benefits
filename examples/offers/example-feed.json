@@ -1,0 +1,31 @@
+[
+  {
+    "id": "example-site:premium-travel-2026-11",
+    "card_id": "us.example.premium-travel",
+    "publisher": "example-site",
+    "audience": "public",
+    "summary": "Earn 60,000 points after $4,000 in purchases in the first 3 months, the $95 annual fee waived for the first year, and 0% APR on purchases for 12 months.",
+    "available_from": "2026-11-01",
+    "first_seen_on": "2026-11-01",
+    "eligibility": "Not available to anyone who received a bonus on this card in the past 48 months.",
+    "components": [
+      { "type": "bonus", "reward": { "currency": "pts:example_rewards", "points": 60000 }, "spend_required": { "amount": 400000, "currency": "USD" }, "window_days": 92 },
+      { "type": "fee_waiver", "fee": "fee:annual", "amount": { "amount": 0, "currency": "USD" }, "card_years": [1] },
+      { "type": "intro_apr", "applies_to": "purchases", "rate": "0", "months": 12 }
+    ],
+    "sources": [{ "url": "https://example.com/premium-travel/offer", "retrieved_at": "2026-11-01" }],
+    "confidence": "0.9"
+  },
+  {
+    "id": "example-site:cash-back-2026-11",
+    "card_id": "us.example.cash-back",
+    "publisher": "example-site",
+    "audience": "public",
+    "summary": "An extra 1.5% back on everything for the first year, on up to $20,000 of purchases, plus 0% APR on balance transfers for 18 months with a 3% transfer fee.",
+    "components": [
+      { "type": "intro_earn", "categories": ["cat:all"], "multiplier": "1.5", "stacks": true, "cap": { "amount": 2000000, "currency": "USD" }, "months": 12 },
+      { "type": "intro_apr", "applies_to": "balance_transfers", "rate": "0", "months": 18, "transfer_fee": "0.03" }
+    ],
+    "sources": [{ "url": "https://example.com/cash-back/offer", "retrieved_at": "2026-11-01" }]
+  }
+]

@@ -1,0 +1,25 @@
+id: us.amex.delta-reserve-business/hertz-presidents-circle
+card_id: us.amex.delta-reserve-business
+kind: status
+name: Hertz President's Circle
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-reserve-business@2025-02-01
+  summary: Hertz President's Circle status after you enroll and link your Hertz and SkyMiles accounts.
+  grants:
+  - entitlement: status:hertz
+    attributes:
+      tier: presidents_circle
+  conditions:
+  - type: enrollment_required
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://awardwallet.com/credit-cards/delta-skymiles/delta-reserve-business/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.americanexpress.com/en-us/campaigns/small-business/credit-cards/delta-reserve/explore-today/
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  confidence: '0.7'

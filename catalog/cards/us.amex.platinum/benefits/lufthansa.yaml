@@ -1,0 +1,35 @@
+id: us.amex.platinum/lufthansa
+card_id: us.amex.platinum
+kind: access
+name: Lufthansa lounges
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2024-01-01
+    summary: "Access to Lufthansa Group lounges on the day of a Lufthansa, SWISS, Austrian or Brussels Airlines flight; this benefit ended October 1, 2026."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: lounge_network:lufthansa
+        combine: any
+    conditions:
+      - type: same_day_flight
+        carrier:
+          - LH
+          - LX
+          - OS
+          - SN
+        note: Lufthansa Group flight
+    beneficiaries:
+      - primary
+    notes: Access rules before removal are not modeled in detail.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.7"

@@ -1,0 +1,13 @@
+id: us.amex.business-gold@2025-10-23
+card_id: us.amex.business-gold
+kind: change
+announced_on: "2025-10-23"
+effective_for_new: "2025-10-23"
+notes: Squarespace credit added.
+changes:
+  - target: benefit:us.amex.business-gold/squarespace-credit
+    version: 1
+sources:
+  - url: https://thriftytraveler.com/news/credit-card/amex-business-gold-squarespace-credit/
+    retrieved_at: "2026-11-13"
+    publisher: review

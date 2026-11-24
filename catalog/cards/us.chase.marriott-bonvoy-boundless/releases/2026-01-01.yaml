@@ -1,0 +1,21 @@
+id: us.chase.marriott-bonvoy-boundless@2026-01-01
+card_id: us.chase.marriott-bonvoy-boundless
+kind: change
+first_seen_on: '2026-01-08'
+notes: Limited-time airline credit for new and existing cardmembers; first reported for 2026 and later shown through June
+  30, 2027.
+effective_for_new: '2026-01-01'
+changes:
+- target: benefit:us.chase.marriott-bonvoy-boundless/airline-credit
+  version: 1
+transition:
+- applies_to:
+  - benefit:us.chase.marriott-bonvoy-boundless/airline-credit
+  'on': '2026-01-01'
+sources:
+- url: https://upgradedpoints.com/news/chases-marriott-boundless-card-airfare-benefit/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/boundless
+  retrieved_at: '2026-11-13'
+  publisher: issuer

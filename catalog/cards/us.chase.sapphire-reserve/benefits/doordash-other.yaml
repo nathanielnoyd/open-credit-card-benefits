@@ -1,0 +1,34 @@
+id: us.chase.sapphire-reserve/doordash-other
+card_id: us.chase.sapphire-reserve
+kind: statement_credit
+name: DoorDash grocery and retail credits
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-reserve@2025-06-23
+    summary: "Two $10 DoorDash credits each month, $20 a month and $240 a year, for grocery, retail and other non-restaurant orders."
+    effective_from: "2025-06-23"
+    face_value:
+      amount: 24000
+      currency: USD
+    period:
+      cadence: monthly
+      anchor: calendar
+      tz: America/New_York
+    limit:
+      amount: 2000
+      per_transaction: 1000
+      max_transactions_per_period: 2
+    grants:
+      - entitlement: credit:doordash_nonrestaurant
+        combine: sum
+        stacking_confidence: "0.6"
+    conditions: []
+    beneficiaries:
+      - primary
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.7"

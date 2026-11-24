@@ -1,0 +1,18 @@
+id: us.amex.delta-platinum-business@2026-06-04
+card_id: us.amex.delta-platinum-business
+kind: change
+announced_on: '2026-06-04'
+effective_for_new: '2026-06-04'
+notes: '30th-anniversary enhancements announced for personal and business Delta cards: free second checked bag on U.S. domestic
+  Delta-operated flights for the primary card member. Annual fee unchanged. Assumed live for existing holders the same day,
+  as on the personal cards.'
+changes:
+- target: benefit:us.amex.delta-platinum-business/second-checked-bag
+  version: 1
+sources:
+- url: https://upgradedpoints.com/news/amex-delta-credit-cards-new-benefits-2026/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://onemileatatime.com/news/delta-amex-card-second-free-checked-bag/
+  retrieved_at: '2026-11-13'
+  publisher: review

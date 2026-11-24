@@ -1,0 +1,54 @@
+id: us.chase.sapphire-preferred@2024-01-01
+card_id: us.chase.sapphire-preferred
+kind: baseline
+effective_for_new: "2024-01-01"
+notes: Terms as known before the June 2026 refresh. Earlier history is not modeled.
+changes:
+  - target: fee:annual
+    to:
+      amount: 9500
+      currency: USD
+  - target: fee:authorized_user
+    to:
+      amount: 0
+      currency: USD
+  - target: earn_rule:us.chase.sapphire-preferred/chase-travel-5x
+    version: 1
+  - target: earn_rule:us.chase.sapphire-preferred/dining-3x
+    version: 1
+  - target: earn_rule:us.chase.sapphire-preferred/streaming-3x
+    version: 1
+  - target: earn_rule:us.chase.sapphire-preferred/online-grocery-3x
+    version: 1
+  - target: earn_rule:us.chase.sapphire-preferred/travel-2x
+    version: 1
+  - target: earn_rule:us.chase.sapphire-preferred/lyft-5x
+    version: 1
+  - target: earn_rule:us.chase.sapphire-preferred/base-1x
+    version: 1
+  - target: benefit:us.chase.sapphire-preferred/hotel-credit
+    version: 1
+  - target: benefit:us.chase.sapphire-preferred/anniversary-bonus
+    version: 1
+  - target: benefit:us.chase.sapphire-preferred/dashpass
+    version: 1
+  - target: benefit:us.chase.sapphire-preferred/doordash-other
+    version: 1
+  - target: benefit:us.chase.sapphire-preferred/rental-cdw
+    version: 1
+  - target: benefit:us.chase.sapphire-preferred/trip-cancel
+    version: 1
+  - target: benefit:us.chase.sapphire-preferred/trip-delay
+    version: 1
+  - target: benefit:us.chase.sapphire-preferred/baggage-delay
+    version: 1
+  - target: benefit:us.chase.sapphire-preferred/lost-luggage
+    version: 1
+  - target: benefit:us.chase.sapphire-preferred/no-fx
+    version: 1
+  - target: benefit:us.chase.sapphire-preferred/points-boost
+    version: 1
+sources:
+  - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-preferred/
+    retrieved_at: "2026-11-12"
+confidence: "0.8"

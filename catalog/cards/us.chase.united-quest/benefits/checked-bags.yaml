@@ -1,0 +1,27 @@
+id: us.chase.united-quest/checked-bags
+card_id: us.chase.united-quest
+kind: fee_waiver
+name: First and second checked bags free on United
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-quest@2024-01-01
+  summary: "First and second checked bags free on United flights for you and one companion on the same reservation when the ticket is paid with the card."
+  waives: checked_bag
+  count: 2
+  companions: 1
+  grants:
+  - entitlement: fee_waiver:checked_bag_united
+    attributes:
+      bags: 2
+  conditions:
+  - type: paid_with_card
+    note: Ticket bought with the card (waived for the first 90 days); MileagePlus number on the reservation
+  - type: same_day_flight
+    carrier:
+    - UA
+    note: United and United Express flights
+  beneficiaries:
+  - primary
+  - companion
+  notes: First and second standard checked bags free for the primary cardmember and one companion on the same reservation.

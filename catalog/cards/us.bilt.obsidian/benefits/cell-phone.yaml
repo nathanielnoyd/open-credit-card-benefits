@@ -1,0 +1,32 @@
+id: us.bilt.obsidian/cell-phone
+card_id: us.bilt.obsidian
+kind: protection
+name: Cellular wireless telephone protection
+versions:
+- version: 1
+  change_type: added
+  release: us.bilt.obsidian@2026-02-07
+  summary: "Covers theft or damage to your phone up to $800 per claim and $1,000 per 12 months, with a $50 deductible, when you pay your monthly wireless bill with the card."
+  grants:
+  - entitlement: protection:cell_phone
+  coverage:
+    per_claim:
+      amount: 80000
+      currency: USD
+    per_period:
+      amount: 100000
+      currency: USD
+    deductible:
+      amount: 5000
+      currency: USD
+  conditions:
+  - type: paid_with_card
+    note: Pay the monthly wireless bill with the card; coverage starts the month after
+  notes: Theft or damage; $1,000 per card per 12 months.
+  sources:
+  - url: https://www.bilt.com/terms/obsidian-card-guide-to-benefits
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  face_value: null
+  beneficiaries:
+  - primary

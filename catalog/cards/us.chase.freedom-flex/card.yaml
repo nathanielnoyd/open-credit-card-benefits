@@ -1,0 +1,28 @@
+id: us.chase.freedom-flex
+issuer_id: us.chase
+name: Chase Freedom Flex
+summary: "A $0-a-year Chase card earning 5% on up to $1,500 a quarter in bonus categories you activate and on Chase Travel, and 3% at restaurants and drugstores, with six months of DashPass and a quarterly DoorDash credit."
+network: mastercard
+segment: personal
+tier: no_fee
+family: chase-ultimate-rewards
+earns: pts:chase_ur
+open_to_applicants: true
+url: https://creditcards.chase.com/cash-back-credit-cards/freedom/flex
+aliases:
+- Freedom Flex
+- CFF
+fee_posting:
+  anchor: account_open
+notes: World Elite Mastercard. Earns Ultimate Rewards points sold as cash back; points transfer to partners only when combined with a Sapphire Preferred, Sapphire Reserve or Ink Business Preferred. Charged a 3% foreign transaction fee until September 19, 2026.
+provenance:
+  sources:
+  - url: https://creditcards.chase.com/cash-back-credit-cards/freedom/flex
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://upgradedpoints.com/credit-cards/reviews/chase-freedom-flex-card/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.85"
+  last_reviewed: "2026-11-13"

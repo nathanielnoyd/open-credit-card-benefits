@@ -1,0 +1,33 @@
+id: us.chase.ihg-business/rental-cdw
+card_id: us.chase.ihg-business
+kind: protection
+name: Auto rental collision damage waiver
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-business@2024-01-01
+  summary: "Primary collision and theft coverage up to $60,000 on rental cars rented for business and paid with the card when you decline the rental company's coverage."
+  coverage:
+    priority: primary
+    per_claim:
+      amount: 6000000
+      currency: USD
+  grants:
+  - entitlement: protection:rental_cdw
+    attributes:
+      priority: primary
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Primary when renting for business purposes; up to $60,000 on vehicles with MSRP of $125,000 or less. Coverage for
+    personal rentals is not stated on the issuer page (secondary on similar Chase business cards).
+  machine_readable: false
+  sources:
+  - url: https://www.chase.com/business/credit-cards/ihg/business
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://chase.com/personal/credit-cards/ihg/premierbusiness/premier-business-perks
+    retrieved_at: '2026-11-13'
+    publisher: issuer

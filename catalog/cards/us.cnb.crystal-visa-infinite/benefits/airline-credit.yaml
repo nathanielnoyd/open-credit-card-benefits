@@ -1,0 +1,37 @@
+id: us.cnb.crystal-visa-infinite/airline-credit
+card_id: us.cnb.crystal-visa-infinite
+kind: statement_credit
+name: $350 airline credit
+versions:
+- version: 1
+  change_type: added
+  release: us.cnb.crystal-visa-infinite@2020-01-01
+  summary: "Up to $350 in statement credits each calendar year for qualifying airline purchases other than tickets, shared across the primary and authorized user cards on the account."
+  face_value:
+    amount: 35000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 35000
+  grants:
+  - entitlement: credit:airline_incidentals
+  notes: >-
+    Up to $350 per account per calendar year for Qualifying Airline Purchases, such as bag fees, seat upgrades, change
+    fees, in-flight purchases and lounge day passes; airline tickets are excluded per reviews. Before 2020 it was $250
+    per card, including each authorized user card.
+  beneficiaries:
+  - primary
+  - authorized_user
+  sources:
+  - url: https://www.cnb.com/lending/cards/individual/crystal-credit-card.asp
+    retrieved_at: "2026-11-14"
+    publisher: issuer
+  - url: https://www.doctorofcredit.com/rumor-city-national-bank-to-change-250-airline-credit-per-user-to-350-across-all-cards
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://www.uscreditcardguide.com/cnb-city-national-bank-crystal-visa-infinite-credit-card/
+    retrieved_at: "2026-11-14"
+    publisher: review
+  confidence: "0.8"

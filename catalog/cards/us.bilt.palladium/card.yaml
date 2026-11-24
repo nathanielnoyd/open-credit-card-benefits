@@ -1,0 +1,27 @@
+id: us.bilt.palladium
+issuer_id: us.bilt
+name: Bilt Palladium Card
+summary: "A $495-a-year Mastercard earning 2x on everyday spend and points on rent paid through Bilt with no fee, with a $400 yearly Bilt Travel hotel credit, $200 in annual Bilt Cash and Priority Pass lounge access."
+network: mastercard
+segment: personal
+tier: premium
+family: bilt
+earns: pts:bilt
+open_to_applicants: true
+url: https://www.bilt.com/card/palladium
+aliases:
+- Bilt Palladium
+- Bilt Card 2.0 Palladium
+fee_posting:
+  anchor: account_open
+notes: Issued by Column N.A. and serviced by Cardless; launched 2026-02-07 to replace the Wells Fargo-issued Bilt Mastercard.
+provenance:
+  sources:
+  - url: https://www.bilt.com/card/palladium
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://www.bilt.com/terms/bilt-card-offer-terms
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  verified_by: agent:occb-research
+  confidence: '0.8'

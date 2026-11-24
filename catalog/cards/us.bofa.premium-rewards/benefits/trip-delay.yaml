@@ -1,0 +1,22 @@
+id: us.bofa.premium-rewards/trip-delay
+card_id: us.bofa.premium-rewards
+kind: protection
+name: Trip delay reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.bofa.premium-rewards@2024-01-01
+  summary: "Covers up to $500 per person in expenses when a trip paid with the card is delayed more than 12 hours."
+  face_value: null
+  grants:
+  - entitlement: protection:trip_delay
+  conditions:
+  - type: paid_with_card
+  beneficiaries:
+  - primary
+  coverage:
+    waiting_hours: 12
+    per_person:
+      amount: 50000
+      currency: USD
+  notes: Up to $500 per ticket for delays over 12 hours.

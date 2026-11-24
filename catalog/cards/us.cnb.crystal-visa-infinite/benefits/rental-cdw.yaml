@@ -1,0 +1,19 @@
+id: us.cnb.crystal-visa-infinite/rental-cdw
+card_id: us.cnb.crystal-visa-infinite
+kind: protection
+name: Primary rental car coverage
+versions:
+- version: 1
+  change_type: added
+  release: us.cnb.crystal-visa-infinite@2020-01-01
+  summary: "Primary collision damage coverage on car rentals paid with the card when you decline the rental company's waiver; limits are not confirmed."
+  coverage:
+    priority: primary
+  grants:
+  - entitlement: protection:rental_cdw
+  conditions:
+  - type: paid_with_card
+  notes: The issuer says primary coverage; limits and exclusions are in the Visa guide to benefits, which was not reviewed.
+  beneficiaries:
+  - primary
+  - authorized_user

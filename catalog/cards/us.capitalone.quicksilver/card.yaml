@@ -1,0 +1,27 @@
+id: us.capitalone.quicksilver
+issuer_id: us.capitalone
+name: Capital One Quicksilver Cash Rewards
+summary: "A $0-a-year Capital One card earning 1.5% cash back on everything and 5% on hotels, vacation rentals and rental cars booked through Capital One Travel, with no foreign transaction fees."
+network: mastercard
+segment: personal
+tier: no_fee
+family: capital-one-cash
+earns: pts:capital_one_cash
+open_to_applicants: true
+url: https://www.capitalone.com/credit-cards/quicksilver/
+aliases:
+- Quicksilver
+fee_posting:
+  anchor: account_open
+notes: Authorized users are free. Rewards can be moved to Capital One miles when the holder also has a miles card such as Venture X.
+provenance:
+  sources:
+  - url: https://www.capitalone.com/credit-cards/quicksilver/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://thepointsguy.com/credit-cards/capital-one-best-welcome-offers
+    retrieved_at: "2026-11-13"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.8"
+  last_reviewed: "2026-11-13"

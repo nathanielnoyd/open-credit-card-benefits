@@ -1,0 +1,20 @@
+id: us.chase.marriott-bonvoy-bountiful@2026-03-12
+card_id: us.chase.marriott-bonvoy-bountiful
+kind: change
+announced_on: '2026-03-12'
+notes: Marriott Bonvoy raised the points top-off on all Free Night Awards from 15,000 to 25,000; program-wide, so it reached existing certificates at once.
+effective_for_new: '2026-03-12'
+changes:
+- target: benefit:us.chase.marriott-bonvoy-bountiful/spend-free-night
+  version: 2
+transition:
+- applies_to:
+  - benefit:us.chase.marriott-bonvoy-bountiful/spend-free-night
+  'on': '2026-03-12'
+sources:
+- url: https://onemileatatime.com/news/marriott-free-night-awards-top-off-points/
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://upgradedpoints.com/credit-cards/reviews/marriott-bonvoy-bountiful-card
+  retrieved_at: '2026-11-14'
+  publisher: review

@@ -1,0 +1,27 @@
+id: us.bilt.palladium/price-protection
+card_id: us.bilt.palladium
+kind: protection
+name: Price drop protection
+versions:
+- version: 1
+  change_type: added
+  release: us.bilt.palladium@2026-02-07
+  summary: "Refunds the price difference, up to $250 per claim and 4 claims per 12 months, when an item bought with the card drops in price within 90 days."
+  grants:
+  - entitlement: protection:price_protection
+  coverage:
+    per_claim:
+      amount: 25000
+      currency: USD
+    window_days: 90
+    max_claims_per_period: 4
+  conditions:
+  - type: paid_with_card
+  notes: Difference to a lower advertised price within 90 days, $25 minimum, up to $250 per claim and 4 claims per 12 months.
+  sources:
+  - url: https://www.bilt.com/terms/palladium-card-guide-to-benefits
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  face_value: null
+  beneficiaries:
+  - primary

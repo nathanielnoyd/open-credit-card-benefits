@@ -1,0 +1,40 @@
+id: pts:bofa_points
+name: Bank of America Points
+kind: fixed_value
+issuer: Bank of America
+url: https://www.bankofamerica.com/credit-cards/products/travel-rewards-credit-card/
+cents_per_point: "1.0"
+expiry: none while the account is open
+paths:
+  - id: travel-statement-credit
+    kind: statement_credit
+    rate: "1.0"
+    notes: Statement credit against travel and dining purchases (Travel Rewards), or any purchase on Premium Rewards cards.
+  - id: travel-center
+    kind: portal
+    rate: "1.0"
+  - id: cash
+    kind: deposit
+    rate: "0.6"
+    notes: Travel Rewards and Business Advantage Travel Rewards points cashed out to a Bank of America or Merrill account are worth 0.6¢.
+  - id: cash-premium
+    kind: deposit
+    rate: "1.0"
+    notes: Premium Rewards and Premium Rewards Elite points are worth 1¢ as cash. Card IDs for those cards are not yet in the catalog, so this path carries no requires.
+  - id: gift-cards
+    kind: gift_card
+    rate: "1.0"
+    notes: Premium Rewards cards.
+sources:
+  - url: https://www.bankofamerica.com/credit-cards/products/travel-rewards-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://www.thepointsguy.com/credit-cards/reviews/bank-of-america-travel-rewards-card-simplicity-for-points-beginners/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://wallethub.com/answers/cc/bank-of-america-travel-rewards-points-value-2140618647
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://www.thepointcalculator.com/us/bank-of-america-rewards-points/cards/bank-of-america-premium-rewards-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: review

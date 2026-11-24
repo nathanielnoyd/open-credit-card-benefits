@@ -1,0 +1,29 @@
+id: us.bilt.palladium/trip-cancel
+card_id: us.bilt.palladium
+kind: protection
+name: Trip cancellation and interruption
+versions:
+- version: 1
+  change_type: added
+  release: us.bilt.palladium@2026-02-07
+  summary: "Reimburses up to $2,000 per trip and $5,000 per 12 months in prepaid common carrier fares when a trip paid with the card is canceled or interrupted for a covered reason."
+  grants:
+  - entitlement: protection:trip_cancellation
+  coverage:
+    per_trip:
+      amount: 200000
+      currency: USD
+    per_period:
+      amount: 500000
+      currency: USD
+    priority: secondary
+  conditions:
+  - type: paid_with_card
+  notes: $2,000 per covered trip and $5,000 per account per 12 months; common carrier fares.
+  sources:
+  - url: https://www.bilt.com/terms/palladium-card-guide-to-benefits
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  face_value: null
+  beneficiaries:
+  - primary

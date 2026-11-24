@@ -1,0 +1,62 @@
+card_id: us.citi.aadvantage-globe
+rules:
+- id: us.citi.aadvantage-globe/aadvantage-hotels-6x
+  name: 6x on AAdvantage Hotels bookings
+  categories:
+  - cat:travel.portal.aadvantage.hotels
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-globe@2025-10-19
+    multiplier: "6"
+    notes: Eligible AAdvantage Hotels bookings only; AAdvantage Cars bookings earn 1x on this card.
+    confidence: "0.7"
+- id: us.citi.aadvantage-globe/aa-3x
+  name: 3x on American Airlines purchases
+  categories:
+  - cat:travel.flights.direct.aa
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-globe@2025-10-19
+    multiplier: "3"
+- id: us.citi.aadvantage-globe/dining-2x
+  name: 2x at restaurants
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-globe@2025-10-19
+    multiplier: "2"
+    notes: Restaurants, including takeout and delivery.
+- id: us.citi.aadvantage-globe/rides-rails-2x
+  name: 2x on rides and rails
+  categories:
+  - cat:travel.rideshare
+  - cat:travel.transit
+  - cat:transit
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-globe@2025-10-19
+    multiplier: "2"
+    notes: Taxis, rideshares and public transit, per Citi's Rides and Rails definition.
+- id: us.citi.aadvantage-globe/base-1x
+  name: 1x on everything else
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-globe@2025-10-19
+    multiplier: "1"
+- id: us.citi.aadvantage-globe/loyalty-points
+  name: Loyalty Points on purchases
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.citi.aadvantage-globe@2025-10-19
+    multiplier: "1"
+    stacks: true
+    currency: pts:aa_loyalty_points
+    notes: >-
+      Citi says 1 Loyalty Point per eligible AAdvantage mile earned from purchases, which includes bonus-category miles; only the
+      base rate is modeled, so Loyalty Points on bonus categories are understated.
+    confidence: "0.7"

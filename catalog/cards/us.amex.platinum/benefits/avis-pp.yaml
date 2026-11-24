@@ -1,0 +1,31 @@
+id: us.amex.platinum/avis-pp
+card_id: us.amex.platinum
+kind: status
+name: Avis Preferred Plus
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2024-01-01
+    summary: "Avis Preferred Plus status after you enroll."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: status:avis
+        combine: max
+        attributes:
+          tier: preferred_plus
+    conditions:
+      - type: enrollment_required
+    beneficiaries:
+      - primary
+      - authorized_user
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

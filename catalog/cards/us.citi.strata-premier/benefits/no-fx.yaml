@@ -1,0 +1,13 @@
+id: us.citi.strata-premier/no-fx
+card_id: us.citi.strata-premier
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.strata-premier@2024-05-12
+  summary: "No foreign transaction fees on purchases made abroad, for you and authorized users."
+  waives: foreign_transaction_fee
+  grants:
+  - entitlement: fee_waiver:foreign_transaction
+  beneficiaries: [primary, authorized_user]

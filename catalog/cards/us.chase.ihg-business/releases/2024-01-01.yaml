@@ -1,0 +1,73 @@
+id: us.chase.ihg-business@2024-01-01
+card_id: us.chase.ihg-business
+kind: baseline
+notes: Pre-refresh terms (before October 1, 2026) of the IHG One Rewards Premier Business card, as described by the refresh
+  coverage; the date is a placeholder matching the personal card and earlier history is not modeled. DoorDash and Instacart
+  perks existed in some form before the refresh but their earlier terms are not modeled. Protections are the current published
+  terms, assumed unchanged.
+confidence: '0.7'
+effective_for_new: '2024-01-01'
+changes:
+- target: fee:annual
+  to:
+    amount: 9900
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.chase.ihg-business/ihg-10x
+  version: 1
+- target: earn_rule:us.chase.ihg-business/travel-5x
+  version: 1
+- target: earn_rule:us.chase.ihg-business/office-supplies-5x
+  version: 1
+- target: earn_rule:us.chase.ihg-business/dining-5x
+  version: 1
+- target: earn_rule:us.chase.ihg-business/gas-5x
+  version: 1
+- target: earn_rule:us.chase.ihg-business/advertising-5x
+  version: 1
+- target: earn_rule:us.chase.ihg-business/base-3x
+  version: 1
+- target: benefit:us.chase.ihg-business/free-night
+  version: 1
+- target: benefit:us.chase.ihg-business/fourth-night-free
+  version: 1
+- target: benefit:us.chase.ihg-business/platinum
+  version: 1
+- target: benefit:us.chase.ihg-business/diamond-spend
+  version: 1
+- target: benefit:us.chase.ihg-business/milestone-20k
+  version: 1
+- target: benefit:us.chase.ihg-business/milestone-60k
+  version: 1
+- target: benefit:us.chase.ihg-business/spend-free-night
+  version: 1
+- target: benefit:us.chase.ihg-business/trusted-traveler
+  version: 1
+- target: benefit:us.chase.ihg-business/united-travelbank
+  version: 1
+- target: benefit:us.chase.ihg-business/trip-cancel
+  version: 1
+- target: benefit:us.chase.ihg-business/purchase-protection
+  version: 1
+- target: benefit:us.chase.ihg-business/extended-warranty
+  version: 1
+- target: benefit:us.chase.ihg-business/rental-cdw
+  version: 1
+- target: benefit:us.chase.ihg-business/no-fx
+  version: 1
+sources:
+- url: https://frequentmiler.com/all-the-existing-ihg-credit-cards-have-been-refreshed-here-are-the-changes/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://www.uscreditcardguide.com/chase-ihg-premier-business-credit-card/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://thepointsguy.com/news/ihg-credit-card-refresh-2026/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://www.chase.com/business/credit-cards/ihg/business
+  retrieved_at: '2026-11-13'
+  publisher: issuer

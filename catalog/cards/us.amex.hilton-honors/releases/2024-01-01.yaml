@@ -1,0 +1,41 @@
+id: us.amex.hilton-honors@2024-01-01
+card_id: us.amex.hilton-honors
+kind: baseline
+effective_for_new: '2024-01-01'
+notes: Current terms (observed 2026-11-13) recorded as the baseline. No 2025-2026 change to the card's own terms was found; earlier history is not modeled and the date is approximate.
+changes:
+- target: fee:annual
+  to:
+    amount: 0
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.amex.hilton-honors/hilton-7x
+  version: 1
+- target: earn_rule:us.amex.hilton-honors/dining-5x
+  version: 1
+- target: earn_rule:us.amex.hilton-honors/groceries-5x
+  version: 1
+- target: earn_rule:us.amex.hilton-honors/gas-5x
+  version: 1
+- target: earn_rule:us.amex.hilton-honors/base-3x
+  version: 1
+- target: benefit:us.amex.hilton-honors/gold-upgrade
+  version: 1
+- target: benefit:us.amex.hilton-honors/silver-status
+  version: 1
+- target: benefit:us.amex.hilton-honors/no-fx
+  version: 1
+- target: benefit:us.amex.hilton-honors/rental-cdw
+  version: 1
+- target: benefit:us.amex.hilton-honors/purchase-protection
+  version: 1
+sources:
+- url: https://www.americanexpress.com/us/credit-cards/card/hilton-honors/
+  retrieved_at: '2026-11-13'
+  publisher: issuer
+- url: https://frequentmiler.com/hilton-honors-american-express-card/
+  retrieved_at: '2026-11-13'
+  publisher: review

@@ -1,0 +1,28 @@
+id: us.chase.sapphire-reserve/roadside
+card_id: us.chase.sapphire-reserve
+kind: protection
+name: Roadside assistance
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-reserve@2024-01-01
+    summary: "Roadside assistance dispatch service in the US and Canada."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: protection:roadside
+        combine: max
+    conditions: []
+    beneficiaries:
+      - primary
+    notes: Dispatch service in the US and Canada.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

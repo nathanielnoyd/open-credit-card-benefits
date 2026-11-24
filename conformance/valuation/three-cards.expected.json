@@ -1,0 +1,15 @@
+{
+  "description": "Expected output for examples/three-cards.json. Amounts in US cents. Regenerate only when a spec or catalog change intends to move these numbers, and explain why in the pull request.",
+  "wallet": "examples/three-cards.json",
+  "as_of": "2026-11-12",
+  "net": 136254,
+  "benefits": 140365,
+  "earn": 174389,
+  "fees": 178500,
+  "double_count_removed": 14368,
+  "marginal": {
+    "w-csr": -3162,
+    "w-csp": 14338,
+    "w-plat": -17673
+  }
+}

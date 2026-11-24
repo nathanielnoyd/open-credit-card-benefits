@@ -1,0 +1,73 @@
+id: us.amex.delta-reserve-business@2025-02-01
+card_id: us.amex.delta-reserve-business
+kind: baseline
+effective_for_new: '2025-02-01'
+notes: Terms in force after the February 1, 2025 Delta changes (MQD Headstart and the Reserve Sky Club visit limits took effect in early 2025; the fee, the $250 Delta Stays credit and the Resy and rideshare credits date from the February 2024 refresh). Dated to match the personal Reserve; earlier history is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 65000
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 17500
+    currency: USD
+  notes: Employee Delta SkyMiles Reserve Business Card, per card per year.
+- target: earn_rule:us.amex.delta-reserve-business/delta-3x
+  version: 1
+- target: earn_rule:us.amex.delta-reserve-business/business-1-5x
+  version: 1
+- target: earn_rule:us.amex.delta-reserve-business/high-spend-1-5x
+  version: 1
+- target: earn_rule:us.amex.delta-reserve-business/base-1x
+  version: 1
+- target: earn_rule:us.amex.delta-reserve-business/mqd-boost
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/award-discount
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/baggage
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/cell-phone
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/centurion
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/companion-certificate
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/delta-stays
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/extended-warranty
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/first-checked-bag
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/hertz-presidents-circle
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/inflight-discount
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/mqd-headstart
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/no-fx
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/priority-boarding
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/purchase-protection
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/rental-car
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/resy
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/rideshare
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/sky-club
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/sky-club-guest-passes
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/sky-club-unlimited
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/trip-cancellation
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/trip-delay
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/trusted-traveler
+  version: 1
+- target: benefit:us.amex.delta-reserve-business/upgrade-priority
+  version: 1

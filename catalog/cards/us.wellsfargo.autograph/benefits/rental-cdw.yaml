@@ -1,0 +1,27 @@
+id: us.wellsfargo.autograph/rental-cdw
+card_id: us.wellsfargo.autograph
+kind: protection
+name: Auto rental collision damage waiver
+versions:
+- version: 1
+  change_type: added
+  release: us.wellsfargo.autograph@2022-07-01
+  summary: "Secondary collision damage coverage on rental cars when you pay for the full rental with the card and decline the rental company's coverage."
+  face_value: null
+  grants:
+  - entitlement: protection:rental_cdw
+    attributes:
+      priority: secondary
+  coverage:
+    priority: secondary
+  conditions:
+  - type: paid_with_card
+    note: Full rental paid with the card and the rental company's collision coverage declined
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Secondary coverage for damage or theft of the rental vehicle. Some vehicles are excluded and a maximum benefit applies; the issuer page does not state the maximum.
+  sources:
+  - url: https://creditcards.wellsfargo.com/autograph-visa-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer

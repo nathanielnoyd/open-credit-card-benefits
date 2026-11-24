@@ -1,0 +1,25 @@
+id: us.chase.united-explorer/travelbank-milestone
+card_id: us.chase.united-explorer
+kind: milestone
+name: $100 United TravelBank cash after $10,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-explorer@2025-03-24
+  summary: "After $10,000 in calendar-year spend, $100 in United TravelBank cash for United flights, once per calendar year."
+  threshold:
+    amount: 1000000
+    currency: USD
+  threshold_period: calendar_year
+  reward_cash:
+    amount: 10000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: milestone:us.chase.united-explorer.travelbank
+  beneficiaries:
+  - primary
+  notes: Reward is $100 in United TravelBank cash, usable on United flights only; modeled as reward_cash. One per calendar
+    year.

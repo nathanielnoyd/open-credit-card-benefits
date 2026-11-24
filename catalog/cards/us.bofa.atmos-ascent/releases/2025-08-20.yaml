@@ -1,0 +1,59 @@
+id: us.bofa.atmos-ascent@2025-08-20
+card_id: us.bofa.atmos-ascent
+kind: baseline
+effective_for_new: "2025-08-20"
+notes: Terms since the August 2025 rename to Atmos Rewards Ascent (Atmos Rewards launched August 20, 2025; Bank of America notified holders around August 22). Reviews say rates and perks did not change with the rename. Terms of the earlier Alaska Airlines Visa Signature are not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 9500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.bofa.atmos-ascent/alaska-hawaiian-3x
+  version: 1
+- target: earn_rule:us.bofa.atmos-ascent/everyday-2x
+  version: 1
+- target: earn_rule:us.bofa.atmos-ascent/base-1x
+  version: 1
+- target: earn_rule:us.bofa.atmos-ascent/status-points
+  version: 1
+- target: earn_rule:us.bofa.atmos-ascent/bofa-account-boost
+  version: 1
+- target: benefit:us.bofa.atmos-ascent/bofa-account-bonus
+  version: 1
+- target: benefit:us.bofa.atmos-ascent/companion-fare
+  version: 1
+- target: benefit:us.bofa.atmos-ascent/checked-bag
+  version: 1
+- target: benefit:us.bofa.atmos-ascent/preferred-boarding
+  version: 1
+- target: benefit:us.bofa.atmos-ascent/inflight-savings
+  version: 1
+- target: benefit:us.bofa.atmos-ascent/lounge-discount
+  version: 1
+- target: benefit:us.bofa.atmos-ascent/no-fx
+  version: 1
+- target: benefit:us.bofa.atmos-ascent/trip-delay
+  version: 1
+- target: benefit:us.bofa.atmos-ascent/trip-cancel
+  version: 1
+- target: benefit:us.bofa.atmos-ascent/lost-luggage
+  version: 1
+- target: benefit:us.bofa.atmos-ascent/rental-cdw
+  version: 1
+- target: benefit:us.bofa.atmos-ascent/extended-warranty
+  version: 1
+sources:
+- url: https://upgradedpoints.com/credit-cards/reviews/atmos-rewards-ascent-visa-card/
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://onemileatatime.com/guides/atmos-rewards-ascent-visa-card
+  retrieved_at: "2026-11-13"
+  publisher: review
+- url: https://www.doctorofcredit.com/bank-of-america-alaska-visa-signature-cards-transitioned-to-atmos-rewards-ascent-card
+  retrieved_at: "2026-11-13"
+  publisher: review
+confidence: "0.75"

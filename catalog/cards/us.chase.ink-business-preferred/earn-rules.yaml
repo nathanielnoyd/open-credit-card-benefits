@@ -1,0 +1,37 @@
+card_id: us.chase.ink-business-preferred
+rules:
+- id: us.chase.ink-business-preferred/business-3x
+  categories:
+  - cat:travel
+  - cat:business.shipping
+  - cat:business.advertising
+  - cat:telecom
+  versions:
+  - version: 1
+    release: us.chase.ink-business-preferred@2025-02-01
+    multiplier: '3'
+    cap:
+      amount: 15000000
+      currency: USD
+    cap_period: cardmember_year
+    notes: Combined cap across travel, shipping, social media and search engine advertising, and internet, cable and phone services; then 1x. Advertising counts only on social media and search engines.
+- id: us.chase.ink-business-preferred/lyft-5x
+  categories:
+  - cat:travel.rideshare.lyft
+  versions:
+  - version: 1
+    release: us.chase.ink-business-preferred@2025-02-01
+    multiplier: '5'
+    effective_to: '2027-09-30'
+    notes: 5 points per $1 total on Lyft rides bought in the Lyft app; excludes gift cards, car rentals, vehicle service centers and other Lyft products. Start date of this promotion is not modeled.
+    sources:
+    - url: https://creditcards.chase.com/business-credit-cards/ink/business-preferred
+      retrieved_at: '2026-11-13'
+      publisher: issuer
+- id: us.chase.ink-business-preferred/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.ink-business-preferred@2025-02-01
+    multiplier: '1'

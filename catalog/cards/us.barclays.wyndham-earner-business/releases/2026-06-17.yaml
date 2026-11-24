@@ -1,0 +1,47 @@
+id: us.barclays.wyndham-earner-business@2026-06-17
+card_id: us.barclays.wyndham-earner-business
+kind: refresh
+announced_on: '2026-06-17'
+effective_for_new: '2026-06-17'
+notes: Refresh for new applicants only. Cardmembers approved before June 17, 2026 keep the $95 fee, 8x gas, 5x marketing,
+  advertising and utilities and the 10% award discount with no announced end date; Barclays said an opt-in product change
+  would come later.
+confidence: '0.8'
+changes:
+- target: fee:annual
+  to:
+    amount: 14900
+    currency: USD
+- target: earn_rule:us.barclays.wyndham-earner-business/gas-8x
+  change_type: retired
+- target: earn_rule:us.barclays.wyndham-earner-business/business-5x
+  change_type: retired
+- target: earn_rule:us.barclays.wyndham-earner-business/bonus-5x
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-business/award-discount
+  version: 2
+- target: benefit:us.barclays.wyndham-earner-business/wholesale-club
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-business/accounting-software
+  version: 1
+- target: benefit:us.barclays.wyndham-earner-business/national-executive
+  version: 1
+sources:
+- url: https://www.barclaycardus.com/applycontent/TnCs.jsp?tc48504
+  retrieved_at: '2026-11-14'
+  publisher: issuer
+- url: https://investor.wyndhamhotels.com/news-events/press-releases/detail/422/wyndham-and-barclays-launch-updated-credit-card-suite
+  retrieved_at: '2026-11-14'
+  publisher: issuer
+- url: https://frequentmiler.com/wyndham-cards-refresh-new-premium-card-new-welcome-offers-new-benefits-and-new-changed-earning-rates-for-new-applicants/
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://www.doctorofcredit.com/barclays-refreshes-wyndham-personal-business-cards-increased-fees-added-credits-changed-points-earning/
+  retrieved_at: '2026-11-14'
+  publisher: review
+- url: https://www.uscreditcardguide.com/barclays-wyndham-earner-business-credit-card
+  retrieved_at: '2026-11-14'
+  publisher: review
+transition:
+- applies_to: [all]
+  never: true

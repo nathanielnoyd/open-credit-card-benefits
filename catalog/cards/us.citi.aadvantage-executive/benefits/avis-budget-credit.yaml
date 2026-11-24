@@ -1,0 +1,37 @@
+id: us.citi.aadvantage-executive/avis-budget-credit
+card_id: us.citi.aadvantage-executive
+kind: statement_credit
+name: Avis or Budget credit
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-executive@2023-07-23
+  summary: "Up to $120 each calendar year on prepaid Avis or Budget rentals booked directly at avis.com or budget.com."
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 12000
+  grants:
+  - entitlement: credit:avis_budget
+  beneficiaries:
+  - primary
+  conditions:
+  - type: merchant_in
+    merchants:
+    - avis
+    - budget
+  - type: booking_channel
+    channel: direct
+    note: Prepaid rentals booked at avis.com or budget.com
+  notes: Up to $120 per calendar year on eligible prepaid Avis or Budget rentals booked directly.
+  sources:
+  - url: https://www.citi.com/credit-cards/citi-aadvantage-executive-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://news.aa.com/news/news-details/2023/American-Airlines-and-Citi-enhance-the-Citi-AAdvantage-Executive-World-Elite-Mastercard-with-more-benefits-AADV-07/default.aspx
+    retrieved_at: '2026-11-13'
+    publisher: press

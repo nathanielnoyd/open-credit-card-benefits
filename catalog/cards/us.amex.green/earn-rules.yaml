@@ -1,0 +1,27 @@
+card_id: us.amex.green
+rules:
+- id: us.amex.green/travel-transit-3x
+  categories:
+  - cat:travel
+  - cat:transit
+  versions:
+  - version: 1
+    release: us.amex.green@2026-01-01
+    multiplier: "3"
+    notes: Travel includes airfare, hotels, cruises, tours, car rentals, campgrounds and vacation rentals; transit includes trains, taxis,
+      rideshare, ferries, tolls, parking, buses and subways. No cap.
+- id: us.amex.green/dining-3x
+  categories:
+  - cat:dining
+  versions:
+  - version: 1
+    release: us.amex.green@2026-01-01
+    multiplier: "3"
+    notes: Restaurants worldwide, including takeout and delivery in the US. No cap.
+- id: us.amex.green/base-1x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.amex.green@2026-01-01
+    multiplier: "1"

@@ -1,0 +1,52 @@
+id: us.chase.marriott-bonvoy-boundless@2024-01-01
+card_id: us.chase.marriott-bonvoy-boundless
+kind: baseline
+notes: Current core terms recorded as of a known date; the 2022 restructuring and earlier history are not modeled. Authorized
+  users are free.
+effective_for_new: '2024-01-01'
+changes:
+- target: fee:annual
+  to:
+    amount: 9500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.chase.marriott-bonvoy-boundless/marriott-6x
+  version: 1
+- target: earn_rule:us.chase.marriott-bonvoy-boundless/gas-3x
+  version: 1
+- target: earn_rule:us.chase.marriott-bonvoy-boundless/groceries-3x
+  version: 1
+- target: earn_rule:us.chase.marriott-bonvoy-boundless/dining-3x
+  version: 1
+- target: earn_rule:us.chase.marriott-bonvoy-boundless/base-2x
+  version: 1
+- target: earn_rule:us.chase.marriott-bonvoy-boundless/elite-night-credits-spend
+  version: 1
+- target: benefit:us.chase.marriott-bonvoy-boundless/free-night
+  version: 1
+- target: benefit:us.chase.marriott-bonvoy-boundless/elite-night-credits
+  version: 1
+- target: benefit:us.chase.marriott-bonvoy-boundless/silver-elite
+  version: 1
+- target: benefit:us.chase.marriott-bonvoy-boundless/gold-elite-spend
+  version: 1
+- target: benefit:us.chase.marriott-bonvoy-boundless/baggage-delay
+  version: 1
+- target: benefit:us.chase.marriott-bonvoy-boundless/lost-luggage
+  version: 1
+- target: benefit:us.chase.marriott-bonvoy-boundless/trip-delay
+  version: 1
+- target: benefit:us.chase.marriott-bonvoy-boundless/purchase-protection
+  version: 1
+- target: benefit:us.chase.marriott-bonvoy-boundless/no-fx
+  version: 1
+sources:
+- url: https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/boundless
+  retrieved_at: '2026-11-13'
+  publisher: issuer
+- url: https://thepointsguy.com/credit-cards/chase/reviews/marriott-bonvoy-boundless-credit-card-review/
+  retrieved_at: '2026-11-13'
+  publisher: review

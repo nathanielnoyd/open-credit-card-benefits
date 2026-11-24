@@ -1,0 +1,25 @@
+id: us.capitalone.venture-x/premier-collection
+card_id: us.capitalone.venture-x
+kind: program_access
+name: Premier and Lifestyle Collections
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x@2025-03-01
+  summary: "Up to a $100 experience credit, daily breakfast for two and upgrades when available on Premier Collection stays, and a $50 credit on Lifestyle Collection stays, booked through Capital One Travel."
+  grants:
+  - entitlement: program:capital_one_premier
+    value_share: "0.5"
+  - entitlement: program:capital_one_lifestyle
+    value_share: "0.5"
+  conditions:
+  - type: booking_channel
+    channel: capital_one_travel
+  notes: >-
+    Premier Collection hotels and vacation rentals booked through Capital One Travel: up to $100 experience credit per stay, daily
+    breakfast for two at hotels, Wi-Fi, and upgrade, early check-in and late checkout when available. Lifestyle Collection: up to $50
+    experience credit, Wi-Fi and the same space-available perks. The experience credit is a per-stay, property-level credit that the
+    schema cannot express as a statement credit.
+  machine_readable: false
+  beneficiaries:
+  - primary

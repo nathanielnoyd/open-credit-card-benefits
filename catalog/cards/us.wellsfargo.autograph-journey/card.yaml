@@ -1,0 +1,27 @@
+id: us.wellsfargo.autograph-journey
+issuer_id: us.wellsfargo
+name: Wells Fargo Autograph Journey Card
+summary: "A $95-a-year Wells Fargo card earning 5x on hotels, 4x on airlines and 3x on dining and other travel, with a $50 annual airline credit, trip protections, cell phone protection and no foreign transaction fees."
+network: visa
+segment: personal
+tier: mid
+family: wells-fargo-rewards
+earns: pts:wells_fargo_rewards
+open_to_applicants: true
+url: https://creditcards.wellsfargo.com/autograph-journey-visa-credit-card/
+aliases:
+- Autograph Journey
+- Wells Fargo Autograph Journey Visa Signature
+fee_posting:
+  anchor: account_open
+notes: Visa Signature. Points transfer to Wells Fargo Rewards travel partners.
+provenance:
+  sources:
+  - url: https://creditcards.wellsfargo.com/autograph-journey-visa-credit-card/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://upgradedpoints.com/credit-cards/reviews/wells-fargo-autograph-journey-card/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.85"

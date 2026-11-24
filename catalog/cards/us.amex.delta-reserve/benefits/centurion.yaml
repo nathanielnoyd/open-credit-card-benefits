@@ -1,0 +1,34 @@
+id: us.amex.delta-reserve/centurion
+card_id: us.amex.delta-reserve
+kind: access
+name: Centurion and Escape Lounges when flying Delta
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-reserve@2025-02-01
+  summary: "Access to Centurion Lounges and Escape Lounges on the day of a Delta flight bought with the card; guests are not included and cost $50 each."
+  grants:
+  - entitlement: lounge_network:centurion
+    value_share: '1'
+    attributes:
+      guests: 0
+  - entitlement: lounge_network:escape
+    value_share: '0'
+    attributes:
+      guests: 0
+  conditions:
+  - type: same_day_flight
+    carrier:
+    - DL
+  - type: paid_with_card
+    note: Delta flight ticket purchased with the card
+  beneficiaries:
+  - primary
+  notes: Guests $50 each ($30 children 2-17), up to two. value_share assigns the value to Centurion.
+  sources:
+  - url: https://upgradedpoints.com/credit-cards/reviews/delta-reserve-credit-card-american-express/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://thepointsguy.com/credit-cards/reviews/delta-reserve-amex-credit-card-review/
+    retrieved_at: '2026-11-13'
+    publisher: review

@@ -1,0 +1,40 @@
+id: us.citi.aadvantage-platinum-select/turo-credit
+card_id: us.citi.aadvantage-platinum-select
+kind: statement_credit
+name: Turo credit
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-platinum-select@2025-10-19
+  summary: "Up to $30 back on each completed Turo trip, $180 a calendar year in total, after you link the card to your Turo account."
+  face_value:
+    amount: 18000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: calendar
+  limit:
+    amount: 18000
+    per_transaction: 3000
+  grants:
+  - entitlement: credit:turo
+  beneficiaries:
+  - primary
+  conditions:
+  - type: enrollment_required
+    note: Link the card to a Turo account
+  - type: merchant_in
+    merchants:
+    - turo
+  notes: Up to $30 per eligible completed Turo trip, up to $180 per calendar year. Some coverage at launch described it as a 12-month promotion ending 2026-10-18; Turo's help center and a late-October 2026 review describe it as ongoing.
+  sources:
+  - url: https://help.turo.com/en_us/turo-partnership-with-citibank-and-american-airlines-us-guests-ByT_aHK0gg.md
+    retrieved_at: '2026-11-13'
+    publisher: partner
+  - url: https://frequentmiler.com/citi-aadvantage-platinum-select-card-has-a-limited-time-turo-benefit-30-per-rental-up-to-180-in-next-12-months/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://upgradedpoints.com/news/citi-aadvantage-card-changes-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  confidence: '0.65'

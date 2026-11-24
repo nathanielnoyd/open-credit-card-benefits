@@ -1,0 +1,30 @@
+id: us.chase.ink-business-preferred/dashpass
+card_id: us.chase.ink-business-preferred
+kind: membership
+name: DashPass membership
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ink-business-preferred@2025-02-01
+  summary: "DashPass membership for DoorDash at no cost for at least 12 months when you activate by December 31, 2027."
+  face_value:
+    amount: 11988
+    currency: USD
+  enroll_by: '2027-12-31'
+  period:
+    cadence: once
+  grants:
+  - entitlement: membership:dashpass
+  conditions: []
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: At least 12 months of complimentary DashPass when activated by December 31, 2027. Start date on this card is not verified; it was in place by early 2025.
+  sources:
+  - url: https://creditcards.chase.com/business-credit-cards/ink/business-preferred
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://help.doordash.com/consumers/s/article/Chase-Partnership?language=en_US
+    retrieved_at: '2026-11-13'
+    publisher: partner
+  confidence: '0.7'

@@ -1,0 +1,21 @@
+id: us.chase.united-club-business/award-pricing
+card_id: us.chase.united-club-business
+kind: redemption_modifier
+name: Cardmember award pricing
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club-business@2026-04-02
+  summary: "At least 10% fewer miles on United and United Express awards booked from your MileagePlus account as the primary cardmember, not valid for Money + Miles."
+  percent_rebate: '0.10'
+  grants:
+  - entitlement: program:reduced_award_pricing_united
+  conditions:
+  - type: beneficiary_role
+    roles:
+    - primary
+  beneficiaries:
+  - primary
+  notes: At least 10% fewer miles than the base price on United and United Express awards booked from the primary cardmember's
+    account (at least 15% for Premier members, per Chase terms). Not valid for Money + Miles. An upfront discount approximated as percent_rebate.
+  machine_readable: false

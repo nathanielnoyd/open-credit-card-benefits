@@ -1,0 +1,44 @@
+id: us.amex.platinum/delta-unlimited
+card_id: us.amex.platinum
+kind: access
+name: Unlimited Delta Sky Club visits
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2025-02-01
+    summary: "After $75,000 in calendar-year spend on the card, unlimited Delta Sky Club visits when you fly Delta the same day on a fare other than Basic Economy."
+    effective_from: "2025-02-01"
+    unlocked_only: true
+    face_value: null
+    period:
+      cadence: annual
+      anchor: fixed_date
+      tz: America/New_York
+      anchor_month: 2
+      anchor_day: 1
+    grants:
+      - entitlement: lounge_network:delta_sky_club
+        combine: max
+        attributes:
+          visits: null
+    conditions:
+      - period: calendar_year
+        type: spend_gte
+        amount: 7500000
+        currency: USD
+        note: $75,000 in a calendar year on this card
+      - type: same_day_flight
+        carrier:
+          - DL
+      - type: fare_class_not_in
+        classes:
+          - delta_basic
+    beneficiaries:
+      - primary
+      - authorized_user
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

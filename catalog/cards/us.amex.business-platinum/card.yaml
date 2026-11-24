@@ -1,0 +1,32 @@
+id: us.amex.business-platinum
+issuer_id: us.amex
+name: Business Platinum Card
+summary: "An $895-a-year Amex business card earning 5x on flights and prepaid hotels through Amex Travel and 2x on select business categories and purchases of $5,000 or more, with Centurion and Delta Sky Club access, a $600 lodging credit and many business credits."
+network: amex
+segment: business
+tier: premium
+family: amex-platinum
+earns: pts:amex_mr
+open_to_applicants: true
+url: https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-platinum-credit-card-amex/
+aliases:
+  - Amex Business Platinum
+  - The Business Platinum Card from American Express
+fee_posting:
+  anchor: account_open
+notes: Employee Business Expense Cards are free; the fee:authorized_user amount is the Employee Platinum Card fee. No foreign transaction fees.
+provenance:
+  sources:
+    - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-business-platinum-card/
+      retrieved_at: "2026-11-13"
+      publisher: review
+    - url: https://thepointsguy.com/credit-cards/amex-business-platinum-2025-refresh/
+      retrieved_at: "2026-11-13"
+      publisher: review
+    - url: https://cardstack.money/articles/credit-card-reviews/amex-business-platinum-benefits-2026
+      retrieved_at: "2026-11-13"
+      publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.85"
+related:
+  - { card_id: us.amex.platinum, relation: personal_counterpart }

@@ -1,0 +1,27 @@
+id: us.chase.sapphire-reserve-business/air-canada-lounges
+card_id: us.chase.sapphire-reserve-business
+kind: access
+name: Air Canada Maple Leaf Lounges
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.sapphire-reserve-business@2026-11-13
+  summary: Access to Air Canada Maple Leaf Lounges with one guest when you depart on a Star Alliance flight the same day.
+  grants:
+  - entitlement: lounge_network:air_canada_maple_leaf
+    attributes:
+      guests: 1
+  conditions:
+  - type: same_day_flight
+    carrier:
+    - AC
+    note: Same-day Air Canada or Star Alliance departure
+  beneficiaries:
+  - primary
+  notes: Excludes Signature Suites and Montreal lounges; extra guests cost $59. Listed on the issuer page; not in launch coverage and one review
+    says the business card lacks it, so the date added is unknown.
+  sources:
+  - url: https://creditcards.chase.com/business-credit-cards/sapphire/reserve
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  confidence: '0.65'

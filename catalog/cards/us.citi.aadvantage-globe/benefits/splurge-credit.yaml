@@ -1,0 +1,27 @@
+id: us.citi.aadvantage-globe/splurge-credit
+card_id: us.citi.aadvantage-globe
+kind: statement_credit
+name: Splurge credit
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-globe@2025-10-19
+  summary: "Up to $100 back each calendar year at up to 2 merchants you choose from 1stDibs, AAdvantage Hotels, Future Personal Training and Live Nation."
+  face_value: { amount: 10000, currency: USD }
+  period: { cadence: annual, anchor: calendar }
+  limit: { amount: 10000 }
+  selections:
+  - name: splurge_merchants
+    values: [1stdibs, aadvantage_hotels, future_personal_training, live_nation]
+  grants:
+  - entitlement: credit:splurge
+  conditions:
+  - type: enrollment_required
+    note: Choose up to two merchants
+  - type: merchant_in
+    merchants: [1stdibs, aadvantage_hotels, future_personal_training, live_nation]
+  - type: selection_is
+    name: splurge_merchants
+    note: Purchase must be at one of the (up to two) merchants the holder chose
+  beneficiaries: [primary]
+  notes: Up to $100 a calendar year combined across up to two chosen merchants; AAdvantage Hotels bookings must be eligible, and Live Nation has exclusions.

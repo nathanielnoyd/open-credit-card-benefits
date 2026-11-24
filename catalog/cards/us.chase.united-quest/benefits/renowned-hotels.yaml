@@ -1,0 +1,27 @@
+id: us.chase.united-quest/renowned-hotels
+card_id: us.chase.united-quest
+kind: statement_credit
+name: Renowned Hotels and Resorts credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-quest@2025-03-24
+  summary: "Up to $150 each cardmember year on prepaid Renowned Hotels and Resorts stays booked through Chase Travel."
+  face_value:
+    amount: 15000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    amount: 15000
+  grants:
+  - entitlement: credit:renowned_hotels_united
+  conditions:
+  - type: booking_channel
+    channel: renowned_hotels_chase_travel
+    note: Prepaid ('Pay Now') through Renowned Hotels and Resorts for United Cardmembers
+  beneficiaries:
+  - primary
+  notes: Up to $150 per anniversary year. Bookings also include a $100 property credit, breakfast for two and other amenities,
+    not modeled.

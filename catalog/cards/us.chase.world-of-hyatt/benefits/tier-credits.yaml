@@ -1,0 +1,23 @@
+id: us.chase.world-of-hyatt/tier-credits
+card_id: us.chase.world-of-hyatt
+kind: anniversary
+name: 5 tier-qualifying night credits each year
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.world-of-hyatt@2024-01-01
+  summary: "5 tier-qualifying night credits toward World of Hyatt status each calendar year."
+  reward:
+    currency: pts:hyatt_qn
+    points: 5
+  issued_on: calendar_year
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: status_credit:hyatt
+    attributes:
+      nights: 5
+  beneficiaries:
+  - primary
+  notes: Posted within 8 weeks of account opening and of each January 1; valid through December 31 of the year issued.

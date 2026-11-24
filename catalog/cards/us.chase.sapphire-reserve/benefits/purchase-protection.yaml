@@ -1,0 +1,29 @@
+id: us.chase.sapphire-reserve/purchase-protection
+card_id: us.chase.sapphire-reserve
+kind: protection
+name: Purchase protection
+versions:
+  - version: 1
+    change_type: added
+    release: us.chase.sapphire-reserve@2024-01-01
+    summary: "Covers items you buy with the card against damage or theft for 120 days, up to $10,000 per claim and $50,000 a year."
+    effective_from: "2024-01-01"
+    face_value: null
+    period:
+      cadence: ongoing
+      anchor: calendar
+      tz: America/New_York
+    grants:
+      - entitlement: protection:purchase
+        combine: max
+    conditions:
+      - type: paid_with_card
+    beneficiaries:
+      - primary
+    notes: 120 days; up to $10,000 per claim and $50,000 a year.
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/chase/chase-sapphire-reserve/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

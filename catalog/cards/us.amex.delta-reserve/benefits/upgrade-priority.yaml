@@ -1,0 +1,20 @@
+id: us.amex.delta-reserve/upgrade-priority
+card_id: us.amex.delta-reserve
+kind: status
+name: Complimentary upgrade priority
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-reserve@2025-02-01
+  summary: "Complimentary upgrade priority on Delta flights, even without Medallion status, placing you ahead of others with the same tier, product and fare."
+  grants:
+  - entitlement: upgrade_priority:delta
+  conditions:
+  - type: same_day_flight
+    carrier:
+    - DL
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: Placed on the complimentary upgrade list without Medallion status, and ahead of others with the same tier, product
+    and fare.

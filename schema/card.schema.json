@@ -1,0 +1,218 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nathanielnoyd.github.io/open-credit-card-benefits/schema/0.3/card.schema.json",
+  "title": "OCCB card product",
+  "type": "object",
+  "required": [
+    "id",
+    "issuer_id",
+    "name",
+    "network",
+    "segment",
+    "earns"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/card_id"
+    },
+    "issuer_id": {
+      "type": "string",
+      "pattern": "^[a-z]{2}\\.[a-z0-9-]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "network": {
+      "enum": [
+        "visa",
+        "mastercard",
+        "amex",
+        "discover",
+        "other"
+      ]
+    },
+    "segment": {
+      "enum": [
+        "personal",
+        "business"
+      ]
+    },
+    "family": {
+      "type": "string"
+    },
+    "tier": {
+      "enum": [
+        "no_fee",
+        "mid",
+        "premium",
+        "ultra_premium"
+      ],
+      "description": "Rough positioning, used by wallet_holds conditions and search"
+    },
+    "earns": {
+      "$ref": "common.schema.json#/$defs/currency_id"
+    },
+    "open_to_applicants": {
+      "type": "boolean"
+    },
+    "fee_posting": {
+      "type": "object",
+      "properties": {
+        "anchor": {
+          "enum": [
+            "account_open",
+            "statement"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "closed_to_applicants_on": {
+      "$ref": "common.schema.json#/$defs/date"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "The issuer's product page"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Other names people search for, including former names"
+    },
+    "cobrand": {
+      "type": "object",
+      "required": [
+        "partner"
+      ],
+      "properties": {
+        "partner": {
+          "type": "string"
+        },
+        "program": {
+          "$ref": "common.schema.json#/$defs/currency_id"
+        }
+      },
+      "additionalProperties": false
+    },
+    "card_material": {
+      "type": "string"
+    },
+    "provenance": {
+      "$ref": "common.schema.json#/$defs/provenance"
+    },
+    "sources": {
+      "$ref": "common.schema.json#/$defs/sources"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "selections": {
+      "type": "array",
+      "description": "Choices the cardholder makes that earn rules or benefits refer to, such as a bonus category or a banking relationship tier",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "values"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "values": {
+            "type": "array",
+            "minItems": 1
+          },
+          "changeable": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 300,
+      "pattern": "^[^\\n*#`]+$",
+      "description": "One or two plain-language sentences: who the card is for and what it is known for. No ranking or marketing claims."
+    },
+    "based_on": {
+      "type": "object",
+      "required": [
+        "card"
+      ],
+      "description": "This card is a variant: the issuer sells it as another card plus or minus a few terms (spec section 4). It is still its own product with its own IDs; its records are expanded from the base card's at load time, so this field is informational in published files.",
+      "properties": {
+        "card": {
+          "$ref": "common.schema.json#/$defs/card_id"
+        },
+        "exclude": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Benefit and earn rule IDs of the base card that the variant doesn't have"
+        },
+        "not_followed": {
+          "type": "array",
+          "description": "Base releases that didn't reach this variant",
+          "items": {
+            "type": "object",
+            "required": [
+              "release",
+              "reason"
+            ],
+            "properties": {
+              "release": {
+                "type": "string"
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "related": {
+      "type": "array",
+      "description": "Other products this one is commonly compared with. Informational; nothing is inherited.",
+      "items": {
+        "type": "object",
+        "required": [
+          "card_id",
+          "relation"
+        ],
+        "properties": {
+          "card_id": {
+            "$ref": "common.schema.json#/$defs/card_id"
+          },
+          "relation": {
+            "enum": [
+              "business_counterpart",
+              "personal_counterpart",
+              "variant",
+              "replaced",
+              "replaced_by"
+            ],
+            "description": "What the other card is to this one: its business or personal counterpart, a variant of this card, the card this one replaced, or the card that replaced it"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false
+}

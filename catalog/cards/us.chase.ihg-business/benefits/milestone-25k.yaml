@@ -1,0 +1,25 @@
+id: us.chase.ihg-business/milestone-25k
+card_id: us.chase.ihg-business
+kind: milestone
+name: 20,000 points after $25,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.ihg-business@2026-10-01
+  summary: "20,000 IHG One Rewards points after you spend $25,000 on the card in a calendar year."
+  threshold:
+    amount: 2500000
+    currency: USD
+  threshold_period: calendar_year
+  reward:
+    currency: pts:ihg_one
+    points: 20000
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: milestone:us.chase.ihg-business.25k
+  beneficiaries:
+  - primary
+  notes: The same $25,000 also earns 5 Elite Night Credits (milestone-25k-enc). One review says an additional purchase after
+    reaching the threshold is required.

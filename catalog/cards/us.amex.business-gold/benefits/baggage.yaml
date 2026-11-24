@@ -1,0 +1,30 @@
+id: us.amex.business-gold/baggage
+card_id: us.amex.business-gold
+kind: protection
+name: Baggage insurance
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-gold@2024-02-01
+    summary: "Covers up to $10,000 per person per trip for lost, damaged or stolen bags, with lower limits for carry-on and checked bags, when the fare is paid with the card."
+    coverage:
+      per_trip:
+        amount: 1000000
+        currency: USD
+    grants:
+      - entitlement: protection:lost_luggage
+    conditions:
+      - type: paid_with_card
+    beneficiaries:
+      - primary
+      - authorized_user
+    confidence: "0.75"
+    machine_readable: false
+    notes: Up to $1,250 for carry-on and $500 for checked bags, $10,000 aggregate per covered person per trip. Separate carry-on and checked sub-limits have no coverage field.
+    sources:
+      - url: https://upgradedpoints.com/credit-cards/reviews/american-express-business-gold-card/
+        retrieved_at: "2026-11-13"
+        publisher: review
+      - url: https://frequentmiler.com/american-express-business-gold-credit-card-review/
+        retrieved_at: "2026-11-13"
+        publisher: review

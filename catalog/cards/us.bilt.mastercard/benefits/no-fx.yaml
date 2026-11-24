@@ -1,0 +1,15 @@
+id: us.bilt.mastercard/no-fx
+card_id: us.bilt.mastercard
+kind: fee_waiver
+name: No foreign transaction fees
+versions:
+- version: 1
+  change_type: added
+  release: us.bilt.mastercard@2025-01-01
+  summary: "No foreign transaction fees on purchases made abroad or in a foreign currency."
+  grants:
+  - entitlement: fee_waiver:foreign_transaction
+  waives: foreign_transaction_fee
+  face_value: null
+  beneficiaries:
+  - primary

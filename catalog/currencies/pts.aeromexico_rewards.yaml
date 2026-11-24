@@ -1,0 +1,14 @@
+id: pts:aeromexico_rewards
+name: Aeromexico Rewards
+kind: airline
+issuer: Aeromexico
+url: https://www.aeromexicorewards.com/
+expiry: Points do not expire (since April 10, 2023).
+paths: []
+sources:
+  - url: https://www.aeromexicorewards.com/
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardwallet.com/airlines/do-aeromexico-points-expire/
+    retrieved_at: "2026-11-13"
+    publisher: review

@@ -1,0 +1,18 @@
+id: us.capitalone.venture-x-business/hertz
+card_id: us.capitalone.venture-x-business
+kind: status
+name: Hertz President’s Circle
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x-business@2025-11-01
+  summary: "Hertz President's Circle status after you enroll through the card's Benefits tab."
+  grants:
+  - entitlement: status:hertz
+    attributes:
+      tier: presidents_circle
+  conditions:
+  - type: enrollment_required
+  notes: Enroll through the card's Benefits tab.
+  beneficiaries:
+  - primary

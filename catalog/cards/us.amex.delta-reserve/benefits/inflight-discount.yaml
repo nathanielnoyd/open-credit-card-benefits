@@ -1,0 +1,22 @@
+id: us.amex.delta-reserve/inflight-discount
+card_id: us.amex.delta-reserve
+kind: statement_credit
+name: 20% back on Delta in-flight purchases
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-reserve@2025-02-01
+  summary: "20% back as a statement credit on Delta in-flight food, drinks and audio headsets paid with the card; Wi-Fi is excluded."
+  face_value: null
+  percent_back: '0.20'
+  grants:
+  - entitlement: discount:inflight_delta
+  conditions:
+  - type: paid_with_card
+  - type: merchant_in
+    merchants:
+    - delta_inflight
+    note: Food, beverages and audio headsets; Wi-Fi excluded
+  beneficiaries:
+  - primary
+  - authorized_user

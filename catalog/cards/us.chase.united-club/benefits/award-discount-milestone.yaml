@@ -1,0 +1,25 @@
+id: us.chase.united-club/award-discount-milestone
+card_id: us.chase.united-club
+kind: milestone
+name: 10,000-mile award discount after $20,000 spend
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club@2025-03-24
+  summary: "After $20,000 in calendar-year spend, a 10,000-mile discount on a United award flight, once per calendar year."
+  threshold:
+    amount: 2000000
+    currency: USD
+  threshold_period: calendar_year
+  reward:
+    currency: pts:united_mileageplus
+    points: 10000
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: milestone:us.chase.united-club.award-discount
+  beneficiaries:
+  - primary
+  notes: 'Not miles: a 10,000-mile discount on one United or United Express award costing more than 10,000 miles; expires 12
+    months after issue. Modeled as 10,000 miles.'

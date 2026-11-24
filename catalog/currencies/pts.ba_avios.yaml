@@ -1,0 +1,14 @@
+id: pts:ba_avios
+name: British Airways Club Avios
+kind: airline
+issuer: British Airways
+url: https://www.britishairways.com/en-us/the-british-airways-club
+expiry: Avios expire after 36 months with no activity.
+paths: []
+sources:
+  - url: https://www.britishairways.com/en-us/the-british-airways-club
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

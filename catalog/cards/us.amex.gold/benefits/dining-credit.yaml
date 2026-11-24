@@ -1,0 +1,104 @@
+id: us.amex.gold/dining-credit
+card_id: us.amex.gold
+kind: statement_credit
+name: Dining credit
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.gold@2024-07-25
+  summary: "Up to $10 a month in statement credits at Grubhub, Seamless, The Cheesecake Factory, Goldbelly, Wine.com and Five Guys in the US, $120 a year in total; enrollment required."
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 1000
+  grants:
+  - entitlement: credit:amex_dining_partners
+  posting_lag_days: 14
+  conditions:
+  - type: enrollment_required
+  - type: merchant_in
+    merchants:
+    - grubhub
+    - seamless
+    - cheesecake_factory
+    - goldbelly
+    - wine_com
+    - five_guys
+    note: US purchases only
+  notes: Five Guys was added with the July 2024 refresh; Milk Bar and Shake Shack also qualified until September 26, 2024 and are left out here.
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://awardwallet.com/news/credit-cards/american-express-gold-card-changes/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  confidence: "0.75"
+- version: 2
+  supersedes: 1
+  change_type: terms_changed
+  release: us.amex.gold@2026-04-30
+  summary: "Up to $10 a month in statement credits at Grubhub, Seamless, The Cheesecake Factory, Goldbelly, Wine.com, Five Guys, Buffalo Wild Wings and Wonder in the US, $120 a year in total; enrollment required."
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 1000
+  grants:
+  - entitlement: credit:amex_dining_partners
+  posting_lag_days: 14
+  conditions:
+  - type: enrollment_required
+  - type: merchant_in
+    merchants:
+    - grubhub
+    - seamless
+    - cheesecake_factory
+    - goldbelly
+    - wine_com
+    - five_guys
+    - buffalo_wild_wings
+    - wonder
+    note: US purchases only
+  notes: Buffalo Wild Wings and Wonder added; Goldbelly and Wine.com stayed through June 30, 2026.
+  beneficiaries:
+  - primary
+  sources:
+  - url: https://thepointsguy.com/news/american-express-gold-refresh-2026/
+    retrieved_at: "2026-11-13"
+    publisher: review
+- version: 3
+  supersedes: 2
+  change_type: terms_changed
+  release: us.amex.gold@2026-07-01
+  summary: "Up to $10 a month in statement credits at Grubhub, Seamless, Buffalo Wild Wings, Five Guys, The Cheesecake Factory and Wonder in the US, $120 a year in total; enrollment required."
+  face_value:
+    amount: 12000
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 1000
+  grants:
+  - entitlement: credit:amex_dining_partners
+  posting_lag_days: 14
+  conditions:
+  - type: enrollment_required
+  - type: merchant_in
+    merchants:
+    - grubhub
+    - seamless
+    - buffalo_wild_wings
+    - five_guys
+    - cheesecake_factory
+    - wonder
+    note: US purchases only
+  beneficiaries:
+  - primary

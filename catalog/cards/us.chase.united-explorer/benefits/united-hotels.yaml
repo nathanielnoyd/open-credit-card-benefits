@@ -1,0 +1,28 @@
+id: us.chase.united-explorer/united-hotels
+card_id: us.chase.united-explorer
+kind: statement_credit
+name: United Hotels credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-explorer@2025-03-24
+  summary: "Up to $50 back on each of your first two prepaid United Hotels stays per cardmember year, $100 a year in total."
+  face_value:
+    amount: 10000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    amount: 10000
+    per_transaction: 5000
+    max_transactions_per_period: 2
+  grants:
+  - entitlement: credit:united_hotels
+  conditions:
+  - type: booking_channel
+    channel: united_hotels
+    note: Prepaid ('Pay Now') stays booked through United Hotels
+  beneficiaries:
+  - primary
+  notes: $50 each on the first and second prepaid United Hotels stays per anniversary year.

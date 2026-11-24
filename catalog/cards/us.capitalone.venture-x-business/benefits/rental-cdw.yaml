@@ -1,0 +1,23 @@
+id: us.capitalone.venture-x-business/rental-cdw
+card_id: us.capitalone.venture-x-business
+kind: protection
+name: Rental car coverage
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x-business@2025-11-01
+  summary: "Primary collision and theft coverage in the US and abroad on car rentals paid with the card when you decline the rental company's waiver."
+  coverage:
+    priority: primary
+  grants:
+  - entitlement: protection:rental_cdw
+  conditions:
+  - type: paid_with_card
+  notes: Primary collision and theft coverage in the US and abroad when the rental company's waiver is declined (Visa Infinite).
+  confidence: "0.7"
+  sources:
+  - url: https://frequentmiler.com/capital-one-venture-x-business-credit-card-review/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  beneficiaries:
+  - primary

@@ -1,0 +1,66 @@
+card_id: us.chase.united-club-business
+rules:
+- id: us.chase.united-club-business/united-purchases
+  categories:
+  - cat:travel.flights.direct.ua
+  versions:
+  - version: 1
+    release: us.chase.united-club-business@2024-01-01
+    multiplier: '2'
+    notes: 'All purchases from United: tickets, Economy Plus, upgrades, inflight purchases, bag and other fees. Chase advertises
+      8x total on United flights: 6x MileagePlus cardmember flight earn plus 2x card earn. Only the 2x is card earn.'
+    confidence: '0.7'
+- id: us.chase.united-club-business/renowned-hotels-5x
+  categories:
+  - cat:travel.hotels
+  versions:
+  - version: 1
+    release: us.chase.united-club-business@2025-03-24
+    multiplier: '5'
+    channel: renowned_hotels_chase_travel
+    notes: Hotels prepaid through Renowned Hotels and Resorts for United Cardmembers.
+    sources:
+    - url: https://upgradedpoints.com/news/united-airlines-business-credit-card-changes-2025/
+      retrieved_at: '2026-11-14'
+      publisher: review
+    - url: https://creditcards.chase.com/business-credit-cards/united/united-club-business
+      retrieved_at: '2026-11-14'
+      publisher: issuer
+- id: us.chase.united-club-business/base-1-5x
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.united-club-business@2024-01-01
+    multiplier: '1.5'
+    confidence: '0.7'
+- id: us.chase.united-club-business/pqp
+  categories:
+  - cat:all
+  versions:
+  - version: 1
+    release: us.chase.united-club-business@2024-01-01
+    multiplier: '0.0667'
+    currency: pts:united_pqp
+    cap:
+      amount: 22500000
+      currency: USD
+    cap_period: calendar_year
+    notes: 1 PQP per $15 of net purchases, up to 15,000 PQP a calendar year.
+    sources:
+    - url: https://upgradedpoints.com/news/united-airlines-business-credit-card-changes-2025/
+      retrieved_at: '2026-11-14'
+      publisher: review
+    - url: https://frequentmiler.com/?p=262194
+      retrieved_at: '2026-11-14'
+      publisher: review
+    confidence: '0.65'
+  - version: 2
+    release: us.chase.united-club-business@2025-03-24
+    multiplier: '0.0667'
+    currency: pts:united_pqp
+    cap:
+      amount: 42000000
+      currency: USD
+    cap_period: calendar_year
+    notes: 1 PQP per $15 of net purchases, up to 28,000 PQP a calendar year. Counts toward status up to Premier 1K.

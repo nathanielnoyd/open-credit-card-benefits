@@ -1,0 +1,28 @@
+id: us.capitalone.venture-x-business/lost-luggage
+card_id: us.capitalone.venture-x-business
+kind: protection
+name: Lost luggage reimbursement
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x-business@2025-11-01
+  summary: "Up to $3,000 per trip for bags lost by a common carrier when you pay the fare with the card."
+  coverage:
+    per_trip:
+      amount: 300000
+      currency: USD
+  grants:
+  - entitlement: protection:lost_luggage
+  conditions:
+  - type: paid_with_card
+  notes: Amount is the Visa Infinite figure reported for Venture X; not confirmed in a Venture X Business guide to benefits.
+  confidence: "0.5"
+  sources:
+  - url: https://cardcritics.com/credit-cards/card-issuer/capital-one/capital-one-venture-x-benefits
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://thepointsguy.com/credit-cards/reviews/capital-one-venture-x-business-review-huge-earning-potential-for-businesses/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  beneficiaries:
+  - primary

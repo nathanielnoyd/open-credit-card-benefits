@@ -1,0 +1,25 @@
+id: us.citi.strata-elite/citigold-credit
+card_id: us.citi.strata-elite
+kind: statement_credit
+name: Citigold relationship credit
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.strata-elite@2025-07-27
+  summary: "$145 credit each card year after the annual fee posts if you have a qualifying Citigold or Citigold Private Client relationship."
+  face_value: { amount: 14500, currency: USD }
+  period: { cadence: annual, anchor: fee_post }
+  limit: { amount: 14500 }
+  grants:
+  - entitlement: credit:citi_relationship
+  conditions:
+  - type: selection_is
+    name: citi_banking_tier
+    value: citigold
+    note: Qualifying Citigold or Citigold Private Client relationship
+  beneficiaries: [primary]
+  notes: >-
+    $145 a year for qualifying Citigold clients once the annual fee posts. Citigold Private Clients get $595 in the first year
+    (offsetting the fee) and $145 after; the first-year amount for Private Clients is not modeled because it needs a
+    tier-dependent card-year amount.
+  machine_readable: true

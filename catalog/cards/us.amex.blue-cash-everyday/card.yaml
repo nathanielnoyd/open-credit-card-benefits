@@ -1,0 +1,28 @@
+id: us.amex.blue-cash-everyday
+issuer_id: us.amex
+name: Blue Cash Everyday Card
+summary: "A no-annual-fee Amex card earning 3% cash back at US supermarkets, US online retailers and US gas stations, each on up to $6,000 a year, with a monthly Disney streaming credit."
+network: amex
+segment: personal
+tier: no_fee
+family: amex-blue-cash
+earns: pts:amex_reward_dollars
+open_to_applicants: true
+url: https://www.americanexpress.com/us/credit-cards/card/blue-cash-everyday/
+aliases:
+- Amex Blue Cash Everyday
+- BCE
+fee_posting:
+  anchor: account_open
+notes: Foreign transaction fee 2.7%. Reward Dollars redeem for statement credits, deposits to an Amex savings account, or at Amazon.com checkout.
+provenance:
+  sources:
+  - url: https://www.americanexpress.com/us/credit-cards/card/blue-cash-everyday/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://awardwallet.com/news/cash-back/amex-disney-streaming-credit-update/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.85"
+  last_reviewed: "2026-11-13"

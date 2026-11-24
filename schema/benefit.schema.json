@@ -1,0 +1,411 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nathanielnoyd.github.io/open-credit-card-benefits/schema/0.3/benefit.schema.json",
+  "title": "OCCB benefit with version history",
+  "type": "object",
+  "required": [
+    "id",
+    "card_id",
+    "kind",
+    "name",
+    "versions"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/benefit_id"
+    },
+    "card_id": {
+      "$ref": "common.schema.json#/$defs/card_id"
+    },
+    "kind": {
+      "$ref": "#/$defs/kind"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "enum": [
+        "catalog",
+        "user"
+      ],
+      "description": "catalog (the default) or user, for a custom benefit in a user-layer document (spec section 10)"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_]+$"
+      }
+    },
+    "versions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/version"
+      }
+    },
+    "wallet_card_id": {
+      "type": "string",
+      "description": "User scope only: the wallet card this custom benefit belongs to. Without it, the benefit applies to every wallet card of card_id."
+    },
+    "based_on": {
+      "type": "string",
+      "description": "On a variant's inherited benefit: the base card's benefit it was expanded from. Set by loading, not authored."
+    }
+  },
+  "patternProperties": {
+    "^x-": {}
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "kind": {
+      "anyOf": [
+        {
+          "enum": [
+            "statement_credit",
+            "membership",
+            "status",
+            "access",
+            "program_access",
+            "certificate",
+            "protection",
+            "redemption_modifier",
+            "fee_waiver",
+            "milestone",
+            "anniversary",
+            "other"
+          ]
+        },
+        {
+          "type": "string",
+          "pattern": "^x-[a-z0-9-]+$"
+        }
+      ],
+      "description": "Acquisition offers (welcome bonuses, intro APRs, first-year promotions) are not benefits and are out of scope for the catalog; a user records the offer they received on their wallet card."
+    },
+    "version": {
+      "type": "object",
+      "required": [
+        "version",
+        "change_type"
+      ],
+      "properties": {
+        "version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "supersedes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "change_type": {
+          "enum": [
+            "added",
+            "amount_changed",
+            "terms_changed",
+            "extended"
+          ]
+        },
+        "release": {
+          "$ref": "common.schema.json#/$defs/release_id"
+        },
+        "announced_on": {
+          "$ref": "common.schema.json#/$defs/date"
+        },
+        "effective_from": {
+          "oneOf": [
+            {
+              "$ref": "common.schema.json#/$defs/date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "effective_to": {
+          "$ref": "common.schema.json#/$defs/date"
+        },
+        "enroll_by": {
+          "$ref": "common.schema.json#/$defs/date"
+        },
+        "unlocked_only": {
+          "type": "boolean"
+        },
+        "face_value": {
+          "oneOf": [
+            {
+              "$ref": "common.schema.json#/$defs/money"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "The issuer's stated value over a year (for every_n_years, over the whole cycle). The most per period is limit.amount."
+        },
+        "period": {
+          "$ref": "common.schema.json#/$defs/period"
+        },
+        "limit": {
+          "$ref": "common.schema.json#/$defs/limit"
+        },
+        "grants": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "common.schema.json#/$defs/grant"
+          }
+        },
+        "selections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "values"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "values": {
+                "type": "array",
+                "minItems": 1
+              },
+              "changeable": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "conditions": {
+          "$ref": "common.schema.json#/$defs/conditions"
+        },
+        "unlocks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "when"
+            ],
+            "properties": {
+              "when": {
+                "$ref": "common.schema.json#/$defs/conditions"
+              },
+              "set": {
+                "type": "object"
+              },
+              "add": {
+                "type": "array",
+                "items": {
+                  "$ref": "common.schema.json#/$defs/benefit_id"
+                }
+              },
+              "persists_periods": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "How many further periods the unlock lasts after the one in which its conditions were met, such as 1 for status that lasts through next year"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "beneficiaries": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/role"
+          }
+        },
+        "posting_lag_days": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "statement_credit: typical days from purchase to credit"
+        },
+        "trigger": {
+          "enum": [
+            "transaction_date",
+            "posting_date",
+            "booking_date",
+            "stay_date"
+          ],
+          "description": "statement_credit: which date decides the period"
+        },
+        "percent_back": {
+          "$ref": "common.schema.json#/$defs/decimal",
+          "description": "statement_credit: credit equal to this fraction of eligible spend, such as \"0.20\" back on in-flight purchases"
+        },
+        "coverage": {
+          "$ref": "common.schema.json#/$defs/coverage",
+          "description": "protection: structured coverage terms"
+        },
+        "waives": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$",
+          "description": "fee_waiver: what is waived, such as checked_bag or foreign_transaction_fee"
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "fee_waiver: units waived per use, such as one bag"
+        },
+        "companions": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "fee_waiver or certificate: extra travelers on the same reservation who also benefit"
+        },
+        "cap": {
+          "$ref": "common.schema.json#/$defs/points",
+          "description": "certificate: the most an award may cost; redemption_modifier: the most points per period"
+        },
+        "top_up": {
+          "$ref": "common.schema.json#/$defs/points",
+          "description": "certificate: how many points may be added on top of the cap"
+        },
+        "expires_after_days": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "certificate: validity from issue"
+        },
+        "issued_on": {
+          "enum": [
+            "account_open",
+            "anniversary",
+            "renewal",
+            "milestone",
+            "calendar_year"
+          ],
+          "description": "certificate or anniversary: when it is issued"
+        },
+        "applies_to_path": {
+          "type": "string",
+          "description": "redemption_modifier: the path id it improves"
+        },
+        "rate": {
+          "$ref": "common.schema.json#/$defs/decimal"
+        },
+        "rate_min": {
+          "$ref": "common.schema.json#/$defs/decimal"
+        },
+        "rate_max": {
+          "$ref": "common.schema.json#/$defs/decimal"
+        },
+        "percent_rebate": {
+          "$ref": "common.schema.json#/$defs/decimal",
+          "description": "redemption_modifier: fraction of points refunded, such as \"0.35\""
+        },
+        "threshold": {
+          "$ref": "common.schema.json#/$defs/money",
+          "description": "milestone: spend that earns the reward"
+        },
+        "threshold_period": {
+          "enum": [
+            "calendar_year",
+            "cardmember_year",
+            "lifetime"
+          ]
+        },
+        "reward": {
+          "$ref": "common.schema.json#/$defs/points"
+        },
+        "reward_cash": {
+          "$ref": "common.schema.json#/$defs/money",
+          "description": "milestone: a cash or statement-credit reward"
+        },
+        "reward_benefit": {
+          "$ref": "common.schema.json#/$defs/benefit_id",
+          "description": "milestone: a benefit (such as a certificate) the reward issues"
+        },
+        "transition_amounts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "period",
+              "amount"
+            ],
+            "properties": {
+              "period": {
+                "type": "string"
+              },
+              "amount": {
+                "type": "integer"
+              },
+              "bookings_from": {
+                "$ref": "common.schema.json#/$defs/date"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "notes": {
+          "type": "string"
+        },
+        "machine_readable": {
+          "type": "boolean"
+        },
+        "sources": {
+          "allOf": [
+            {
+              "$ref": "common.schema.json#/$defs/sources"
+            },
+            {
+              "minItems": 1
+            }
+          ]
+        },
+        "verified_by": {
+          "type": "string"
+        },
+        "confidence": {
+          "$ref": "common.schema.json#/$defs/confidence"
+        },
+        "last_reviewed": {
+          "$ref": "common.schema.json#/$defs/date"
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 240,
+          "pattern": "^[^\\n*#`]+$",
+          "description": "One plain-language sentence a person or agent can quote: what the cardholder gets, how much, how often and the main restriction. No markdown. Must agree with the structured fields."
+        },
+        "credited_spend_earns": {
+          "type": "boolean",
+          "description": "false when purchases the credit reimburses earn no points on this card, such as the Sapphire Reserve's first $300 of travel. Default true."
+        }
+      },
+      "patternProperties": {
+        "^x-": {}
+      },
+      "additionalProperties": false
+    }
+  },
+  "if": {
+    "properties": {
+      "scope": {
+        "const": "user"
+      }
+    },
+    "required": [
+      "scope"
+    ]
+  },
+  "then": {
+    "description": "A user's custom benefit may leave out release, sources, period (ongoing) and grants (its own custom: key)."
+  },
+  "else": {
+    "properties": {
+      "versions": {
+        "items": {
+          "required": [
+            "release",
+            "period",
+            "grants",
+            "sources"
+          ]
+        }
+      }
+    }
+  }
+}

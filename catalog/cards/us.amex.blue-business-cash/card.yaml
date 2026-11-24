@@ -1,0 +1,27 @@
+id: us.amex.blue-business-cash
+issuer_id: us.amex
+name: Blue Business Cash Card
+summary: "A no-annual-fee Amex business card earning 2% cash back on all purchases up to $50,000 a year, then 1%."
+network: amex
+segment: business
+tier: no_fee
+family: amex-blue-business-cash
+earns: pts:amex_reward_dollars
+open_to_applicants: true
+url: https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/blue-business-cash-credit-card-amex/
+aliases:
+  - Amex Blue Business Cash
+  - BBC
+fee_posting:
+  anchor: account_open
+notes: 2.7% foreign transaction fee. Expanded Buying Power lets the account spend above its credit limit (amounts above the limit due in full). Cash back is credited to the statement automatically.
+provenance:
+  sources:
+    - url: https://onemileatatime.com/insights/american-express-blue-business-card-worth-it/
+      retrieved_at: "2026-11-13"
+      publisher: review
+    - url: https://thepointsparty.com/articles/amex-blue-business-plus-cash-welcome-offers
+      retrieved_at: "2026-11-13"
+      publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.8"

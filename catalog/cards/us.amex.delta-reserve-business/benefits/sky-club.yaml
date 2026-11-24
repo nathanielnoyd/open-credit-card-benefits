@@ -1,0 +1,46 @@
+id: us.amex.delta-reserve-business/sky-club
+card_id: us.amex.delta-reserve-business
+kind: access
+name: Delta Sky Club (15 visits a year)
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.delta-reserve-business@2025-02-01
+  summary: 15 Delta Sky Club visits per Medallion Year (February 1 to January 31) when flying Delta on a fare other than Basic
+    Economy; each visit gives 24 hours of access.
+  period:
+    cadence: annual
+    anchor: fixed_date
+    anchor_month: 2
+    anchor_day: 1
+  limit:
+    count: 15
+    unit:
+      unit: visit
+      window_hours: 24
+  grants:
+  - entitlement: lounge_network:delta_sky_club
+    combine: max
+    attributes:
+      visits: 15
+  conditions:
+  - type: same_day_flight
+    carrier:
+    - DL
+  - type: fare_class_not_in
+    classes:
+    - delta_basic
+  beneficiaries:
+  - primary
+  - authorized_user
+  notes: 15 visits per Medallion Year (Feb 1 - Jan 31) per eligible card; each employee card member gets their own. A visit
+    is 24 hours of access. Delta says visit issuance is additive across all eligible cards for the same person, so a holder
+    of both the personal and business Reserve gets 30 visits; the registry combines lounge_network:delta_sky_club by max,
+    which undercounts that.
+  sources:
+  - url: https://www.delta.com/us/en/delta-sky-club/access
+    retrieved_at: '2026-11-13'
+    publisher: issuer
+  - url: https://awardwallet.com/credit-cards/delta-skymiles/delta-reserve-business/
+    retrieved_at: '2026-11-13'
+    publisher: review

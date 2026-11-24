@@ -1,0 +1,84 @@
+id: us.bofa.atmos-summit@2026-11-14
+card_id: us.bofa.atmos-summit
+kind: baseline
+effective_for_new: "2026-11-14"
+notes: Current terms as first observed on November 14, 2026. The card launched in August 2025 with Atmos Rewards; which of these terms were present at launch, including rent earning through Bilt, is not confirmed, so earlier history is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 39500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.bofa.atmos-summit/alaska-hawaiian-3x
+  version: 1
+- target: earn_rule:us.bofa.atmos-summit/dining-3x
+  version: 1
+- target: earn_rule:us.bofa.atmos-summit/rent-bilt-3x
+  version: 1
+- target: earn_rule:us.bofa.atmos-summit/base-1x
+  version: 1
+- target: earn_rule:us.bofa.atmos-summit/status-points
+  version: 1
+- target: earn_rule:us.bofa.atmos-summit/bofa-account-boost
+  version: 1
+- target: benefit:us.bofa.atmos-summit/bofa-account-bonus
+  version: 1
+- target: benefit:us.bofa.atmos-summit/global-companion-25k
+  version: 1
+- target: benefit:us.bofa.atmos-summit/global-companion-100k
+  version: 1
+- target: benefit:us.bofa.atmos-summit/global-companion-100k-award
+  version: 1
+- target: benefit:us.bofa.atmos-summit/anniversary-status-points
+  version: 1
+- target: benefit:us.bofa.atmos-summit/lounge-passes
+  version: 1
+- target: benefit:us.bofa.atmos-summit/wifi-passes
+  version: 1
+- target: benefit:us.bofa.atmos-summit/checked-bag
+  version: 1
+- target: benefit:us.bofa.atmos-summit/preferred-boarding
+  version: 1
+- target: benefit:us.bofa.atmos-summit/same-day-change
+  version: 1
+- target: benefit:us.bofa.atmos-summit/travel-delay-credit
+  version: 1
+- target: benefit:us.bofa.atmos-summit/inflight-savings
+  version: 1
+- target: benefit:us.bofa.atmos-summit/points-sharing
+  version: 1
+- target: benefit:us.bofa.atmos-summit/partner-award-fee
+  version: 1
+- target: benefit:us.bofa.atmos-summit/trusted-traveler
+  version: 1
+- target: benefit:us.bofa.atmos-summit/no-fx
+  version: 1
+- target: benefit:us.bofa.atmos-summit/trip-delay
+  version: 1
+- target: benefit:us.bofa.atmos-summit/trip-cancel
+  version: 1
+- target: benefit:us.bofa.atmos-summit/baggage-delay
+  version: 1
+- target: benefit:us.bofa.atmos-summit/lost-luggage
+  version: 1
+- target: benefit:us.bofa.atmos-summit/evacuation
+  version: 1
+- target: benefit:us.bofa.atmos-summit/rental-cdw
+  version: 1
+sources:
+- url: https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/
+  retrieved_at: "2026-11-14"
+  publisher: issuer
+- url: https://upgradedpoints.com/credit-cards/reviews/atmos-rewards-summit-visa-infinite-card/benefits/
+  retrieved_at: "2026-11-14"
+  publisher: review
+- url: https://thepointsguy.com/credit-cards/reviews/atmos-rewards-summit-card-review/
+  retrieved_at: "2026-11-14"
+  publisher: review
+- url: https://www.nextcard.com/articles/atmos-summit-card-review-benefits-annual-fee-worth-it
+  retrieved_at: "2026-11-14"
+  publisher: review
+confidence: "0.75"

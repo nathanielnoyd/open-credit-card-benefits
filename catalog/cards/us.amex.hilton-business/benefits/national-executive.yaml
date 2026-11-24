@@ -1,0 +1,18 @@
+id: us.amex.hilton-business/national-executive
+card_id: us.amex.hilton-business
+kind: status
+name: National Emerald Club Executive status
+versions:
+- version: 1
+  change_type: added
+  release: us.amex.hilton-business@2024-03-28
+  summary: "National Car Rental Emerald Club Executive status after you enroll."
+  face_value: null
+  conditions:
+  - type: enrollment_required
+  beneficiaries:
+  - primary
+  grants:
+  - entitlement: status:national
+    attributes:
+      tier: executive

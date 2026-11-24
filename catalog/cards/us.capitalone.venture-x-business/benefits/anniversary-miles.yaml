@@ -1,0 +1,20 @@
+id: us.capitalone.venture-x-business/anniversary-miles
+card_id: us.capitalone.venture-x-business
+kind: anniversary
+name: 10,000 anniversary miles
+versions:
+- version: 1
+  change_type: added
+  release: us.capitalone.venture-x-business@2025-11-01
+  summary: "10,000 bonus miles each year on your account anniversary."
+  reward:
+    currency: pts:capital_one_miles
+    points: 10000
+  issued_on: anniversary
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  grants:
+  - entitlement: anniversary:us.capitalone.venture-x-business
+  beneficiaries:
+  - primary

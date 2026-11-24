@@ -1,0 +1,51 @@
+id: us.chase.united-quest/united-credit
+card_id: us.chase.united-quest
+kind: statement_credit
+name: United purchase credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-quest@2024-01-01
+  summary: "Up to $125 in statement credits on United purchases each cardmember year."
+  face_value:
+    amount: 12500
+    currency: USD
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    amount: 12500
+  grants:
+  - entitlement: credit:united_travel
+  conditions:
+  - type: merchant_in
+    merchants:
+    - united
+  beneficiaries:
+  - primary
+  notes: Up to $125 in statement credits on United purchases each account anniversary year.
+  confidence: '0.75'
+- version: 2
+  supersedes: 1
+  change_type: terms_changed
+  release: us.chase.united-quest@2025-03-24
+  summary: "$200 in United TravelBank cash each cardmember year for United and United Express flights, expiring 12 months after issue."
+  face_value:
+    amount: 20000
+    currency: USD
+  period:
+    cadence: annual
+    anchor: cardmember_year
+  limit:
+    amount: 20000
+  grants:
+  - entitlement: credit:united_travel
+  conditions:
+  - type: merchant_in
+    merchants:
+    - united
+    note: United or United Express flights only
+  beneficiaries:
+  - primary
+  notes: $200 in United TravelBank cash at account opening and each anniversary, usable only on United and United Express
+    flights and expiring 12 months after issue. Not a statement credit.

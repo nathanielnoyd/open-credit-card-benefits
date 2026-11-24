@@ -1,0 +1,30 @@
+id: us.amex.business-platinum/rental-coverage
+card_id: us.amex.business-platinum
+kind: protection
+name: Car rental loss and damage
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.business-platinum@2025-07-01
+    summary: "Secondary coverage up to $75,000 for theft of or damage to a rental car on rentals of up to 30 days paid with the card."
+    coverage:
+      priority: secondary
+      per_claim:
+        amount: 7500000
+        currency: USD
+      max_days: 30
+    grants:
+      - entitlement: protection:rental_cdw
+        attributes:
+          priority: secondary
+    conditions:
+      - type: paid_with_card
+    beneficiaries:
+      - primary
+      - authorized_user
+    confidence: "0.7"
+    notes: Secondary, up to $75,000 for theft or damage; rentals up to 30 consecutive days; Australia, Italy and New Zealand excluded. Decline the rental company CDW.
+    sources:
+      - url: https://hellosafe.com/credit-card-insurance/united-states/american-express/business-platinum
+        retrieved_at: "2026-11-13"
+        publisher: review

@@ -1,0 +1,39 @@
+id: pts:cnb_rewards
+name: City National Rewards Points
+kind: fixed_value
+issuer: City National Bank
+url: https://www.cnb.com/lending/cards/individual/crystal-credit-card.asp
+cents_per_point: "1.0"
+expiry: none while the account is open and in good standing; 60 days to redeem after the program ends
+pooling:
+  notes: Householding combines points from eligible City National cards for redemption, with up to three authorized redeemers.
+paths:
+  - id: travel
+    kind: portal
+    rate_min: "1.0"
+    rate_max: "1.2"
+    rate_expected: "1.1"
+    notes: >-
+      Airfare with no blackout dates through the rewards site or Award Headquarters. Reported values were 1.2¢ online and
+      1.1¢ through the concierge after an October 2019 devaluation, with a booking fee lowering the effective value; no
+      current figure is published, so these are dated estimates.
+  - id: gift-cards
+    kind: gift_card
+    rate: "1.0"
+    notes: About 1¢ for Visa gift cards per older reviews; other gift cards and merchandise vary.
+  - id: statement-credit
+    kind: statement_credit
+    notes: The program rules allow statement credit awards, but no point value is published; rate left out.
+sources:
+  - url: https://www.cnb.com/content/dam/cnb/personal-banking/lending/credit-cards/documents/Rewards-Program-Rules-Householding-08119.pdf
+    retrieved_at: "2026-11-14"
+    publisher: issuer
+  - url: https://www.cnb.com/lending/cards/individual/crystal-credit-card.asp
+    retrieved_at: "2026-11-14"
+    publisher: issuer
+  - url: https://www.doctorofcredit.com/city-national-bank-devalues-points-when-using-ota-1-2%C2%A2-instead-of-1-35%C2%A2
+    retrieved_at: "2026-11-14"
+    publisher: review
+  - url: https://www.uscreditcardguide.com/cnb-city-national-bank-crystal-visa-infinite-credit-card/
+    retrieved_at: "2026-11-14"
+    publisher: review

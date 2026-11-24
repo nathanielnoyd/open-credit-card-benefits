@@ -1,0 +1,35 @@
+id: us.citi.custom-cash
+issuer_id: us.citi
+name: Citi Custom Cash Card
+summary: "A no-annual-fee Citi card earning 5x ThankYou points on the first $500 each billing cycle in your top eligible category, such as dining, gas or groceries, plus 4x extra on hotels, cars and attractions booked through Citi Travel."
+network: mastercard
+segment: personal
+tier: no_fee
+family: citi-thankyou
+earns: pts:citi_ty
+open_to_applicants: false
+closed_to_applicants_on: "2026-05-28"
+url: https://www.citi.com/credit-cards/citi-custom-cash-credit-card
+aliases:
+- Custom Cash
+fee_posting:
+  anchor: account_open
+notes: >-
+  Closed to new applications on May 28, 2026; existing cardmembers keep their terms, and some report product changes into it
+  are still possible. Earns ThankYou points as cash back. 3% foreign transaction fee. On its own it reaches only a few transfer
+  partners at reduced ratios; points moved to a Strata Premier, Strata Elite or legacy Prestige/Premier account transfer at
+  full ratios, including to American AAdvantage (partner since July 27, 2025).
+provenance:
+  sources:
+  - url: https://www.citi.com/credit-cards/citi-custom-cash-credit-card
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://awardwallet.com/news/citi-thankyou-rewards/citi-custom-cash-closed-new-applications/
+    retrieved_at: "2026-11-13"
+    publisher: review
+  - url: https://frequentmiler.com/citi-custom-cash-complete-guide
+    retrieved_at: "2026-11-13"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.75"
+  last_reviewed: "2026-11-13"

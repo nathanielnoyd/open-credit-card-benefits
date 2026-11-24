@@ -1,0 +1,35 @@
+id: us.chase.united-club/instacart
+card_id: us.chase.united-club
+kind: statement_credit
+name: Instacart credit
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.united-club@2025-03-24
+  summary: "Two $10 Instacart credits each month on separate orders of $10 or more, $240 a year, after you activate Instacart+ with the card, through December 31, 2027."
+  face_value:
+    amount: 24000
+    currency: USD
+  period:
+    cadence: monthly
+    anchor: calendar
+  limit:
+    amount: 2000
+    per_transaction: 1000
+    max_transactions_per_period: 2
+  effective_to: '2027-12-31'
+  grants:
+  - entitlement: credit:instacart
+  conditions:
+  - type: enrollment_required
+    note: Activate Instacart+ with the card
+  - type: merchant_in
+    merchants:
+    - instacart
+  - type: min_transaction
+    amount: 1000
+    currency: USD
+    note: Each credit needs a separate order of $10 or more
+  beneficiaries:
+  - primary
+  notes: Two $10 credits each month, one per order; do not roll over. Ends December 31, 2027.

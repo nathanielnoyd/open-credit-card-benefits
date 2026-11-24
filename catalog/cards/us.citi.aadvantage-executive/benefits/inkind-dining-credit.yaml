@@ -1,0 +1,36 @@
+id: us.citi.aadvantage-executive/inkind-dining-credit
+card_id: us.citi.aadvantage-executive
+kind: statement_credit
+name: inKind dining credit
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-executive@2026-10-25
+  summary: "Up to $100 from January to June and $100 from July to December, $200 a year, at inKind restaurants once you add the card to the inKind app; shared with authorized users."
+  face_value:
+    amount: 20000
+    currency: USD
+  period:
+    cadence: semiannual
+    anchor: calendar
+  limit:
+    amount: 10000
+  grants:
+  - entitlement: credit:inkind
+  beneficiaries:
+  - primary
+  - authorized_user
+  conditions:
+  - type: enrollment_required
+    note: Add the card to the inKind app
+  - type: merchant_in
+    merchants:
+    - inkind_network
+  notes: Up to $100 from January to June and $100 from July to December at inKind restaurants, applied as an in-app discount when paying with the inKind app (not a statement credit). Shared between the primary cardmember and authorized users; does not stack with other inKind rewards on the same bill.
+  sources:
+  - url: https://frequentmiler.com/200-inkind-dining-benefit-added-to-citi-aadvantage-executive-card/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  - url: https://www.citi.com/credit-cards/citi-aadvantage-executive-credit-card/
+    retrieved_at: '2026-11-13'
+    publisher: issuer

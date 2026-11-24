@@ -1,0 +1,28 @@
+id: us.capitalone.venture
+issuer_id: us.capitalone
+name: Capital One Venture Rewards
+summary: "A $95-a-year Capital One card earning 2 miles per dollar on everything and 5x on hotels, vacation rentals and rental cars booked through Capital One Travel, with a Global Entry or TSA PreCheck credit and no foreign transaction fees."
+network: visa
+segment: personal
+tier: mid
+family: capital-one-miles
+earns: pts:capital_one_miles
+open_to_applicants: true
+url: https://www.capitalone.com/credit-cards/venture/
+aliases:
+- Venture
+- Venture Rewards
+fee_posting:
+  anchor: account_open
+notes: Authorized users are free. Cardholders pay $45 per visit at Capital One Lounges.
+provenance:
+  sources:
+  - url: https://www.capitalone.com/credit-cards/venture/
+    retrieved_at: "2026-11-13"
+    publisher: issuer
+  - url: https://thepointsguy.com/credit-cards/capital-one-best-welcome-offers
+    retrieved_at: "2026-11-13"
+    publisher: review
+  verified_by: agent:occb-research
+  confidence: "0.8"
+  last_reviewed: "2026-11-13"

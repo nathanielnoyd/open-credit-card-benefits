@@ -1,0 +1,36 @@
+id: us.amex.green@2026-01-01
+card_id: us.amex.green
+kind: baseline
+effective_for_new: "2026-01-01"
+notes: Terms as recorded in 2026 (unchanged through the July 2026 closure and August 2026 rename). Earlier history, including the 2019 relaunch,
+  the retired LoungeBuddy credit and earlier CLEAR credit amounts, is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 15000
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+  notes: No current source states the additional-card fee; $0 is the long-standing published term and is unconfirmed for 2026.
+- target: earn_rule:us.amex.green/travel-transit-3x
+  version: 1
+- target: earn_rule:us.amex.green/dining-3x
+  version: 1
+- target: earn_rule:us.amex.green/base-1x
+  version: 1
+- target: benefit:us.amex.green/clear
+  version: 1
+- target: benefit:us.amex.green/trip-delay
+  version: 1
+- target: benefit:us.amex.green/baggage
+  version: 1
+- target: benefit:us.amex.green/rental-cdw
+  version: 1
+- target: benefit:us.amex.green/purchase-protection
+  version: 1
+- target: benefit:us.amex.green/extended-warranty
+  version: 1
+- target: benefit:us.amex.green/no-fx
+  version: 1

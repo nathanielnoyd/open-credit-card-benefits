@@ -1,0 +1,17 @@
+id: us.amex.delta-platinum@2026-06-04
+card_id: us.amex.delta-platinum
+kind: change
+announced_on: '2026-06-04'
+effective_for_new: '2026-06-04'
+notes: '30th-anniversary enhancements: free second checked bag on U.S. domestic Delta-operated flights. Live for existing
+  holders the same day. Annual fees unchanged.'
+changes:
+- target: benefit:us.amex.delta-platinum/second-checked-bag
+  version: 1
+sources:
+- url: https://awardwallet.com/news/delta-skymiles/delta-credit-card-changes-2026/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://thriftytraveler.com/news/credit-card/amex-adds-new-delta-skymiles-card-benefits-2026/
+  retrieved_at: '2026-11-13'
+  publisher: review

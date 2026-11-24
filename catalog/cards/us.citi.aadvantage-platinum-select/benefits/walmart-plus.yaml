@@ -1,0 +1,21 @@
+id: us.citi.aadvantage-platinum-select/walmart-plus
+card_id: us.citi.aadvantage-platinum-select
+kind: membership
+name: Walmart+ membership
+versions:
+- version: 1
+  change_type: added
+  release: us.citi.aadvantage-platinum-select@2027-01-24
+  summary: "A Walmart+ membership when you enroll; the membership auto-renews."
+  grants:
+  - entitlement: membership:walmart_plus
+  beneficiaries:
+  - primary
+  conditions:
+  - type: enrollment_required
+  notes: Complimentary Walmart+ for the primary cardmember with enrollment; auto-renews.
+  sources:
+  - url: https://upgradedpoints.com/news/citi-aadvantage-card-changes-2026/
+    retrieved_at: '2026-11-13'
+    publisher: review
+  confidence: '0.7'

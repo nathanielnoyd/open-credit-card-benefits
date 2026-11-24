@@ -1,0 +1,50 @@
+{
+  "occb": "0.3",
+  "people": [
+    {
+      "id": "p1"
+    },
+    {
+      "id": "p2"
+    }
+  ],
+  "cards": [
+    {
+      "id": "w-vx",
+      "card_id": "us.capitalone.venture-x",
+      "holder": "p1",
+      "opened_on": "2024-06-01",
+      "status": "open"
+    },
+    {
+      "id": "w-csr",
+      "card_id": "us.chase.sapphire-reserve",
+      "holder": "p1",
+      "opened_on": "2024-06-01",
+      "status": "open"
+    },
+    {
+      "id": "w-plat",
+      "card_id": "us.amex.platinum",
+      "holder": "p1",
+      "opened_on": "2024-06-01",
+      "status": "open"
+    }
+  ],
+  "spend_profile": {
+    "as_of": "2026-11-13",
+    "currency": "USD",
+    "amounts": {
+      "cat:travel.flights.direct": 1000000,
+      "cat:travel.hotels.direct": 600000,
+      "cat:dining": 800000,
+      "cat:all": 2500000
+    }
+  },
+  "finance": {
+    "discount_rate": "0.045",
+    "holding_period_months": 12,
+    "horizon_months": 12,
+    "include_offers": false
+  }
+}

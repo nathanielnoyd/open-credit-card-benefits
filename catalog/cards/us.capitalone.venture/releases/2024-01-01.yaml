@@ -1,0 +1,45 @@
+id: us.capitalone.venture@2024-01-01
+card_id: us.capitalone.venture
+kind: baseline
+effective_for_new: "2024-01-01"
+notes: Terms as known in 2024, before the lounge visits ended. The date is a conventional starting point, not a product launch; earlier
+  history is not modeled. The Capital One Entertainment 5x and vacation-rental portal earn are assumed to be in place by this date.
+changes:
+- target: fee:annual
+  to:
+    amount: 9500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.capitalone.venture/c1-travel-5x
+  version: 1
+- target: earn_rule:us.capitalone.venture/c1-entertainment-5x
+  version: 1
+- target: earn_rule:us.capitalone.venture/base-2x
+  version: 1
+- target: benefit:us.capitalone.venture/trusted-traveler
+  version: 1
+- target: benefit:us.capitalone.venture/hertz
+  version: 1
+- target: benefit:us.capitalone.venture/lifestyle-collection
+  version: 1
+- target: benefit:us.capitalone.venture/lounge-visits
+  version: 1
+- target: benefit:us.capitalone.venture/no-fx
+  version: 1
+- target: benefit:us.capitalone.venture/rental-cdw
+  version: 1
+- target: benefit:us.capitalone.venture/extended-warranty
+  version: 1
+- target: benefit:us.capitalone.venture/travel-accident
+  version: 1
+sources:
+- url: https://www.capitalone.com/credit-cards/venture/
+  retrieved_at: "2026-11-13"
+  publisher: issuer
+- url: https://upgradedpoints.com/news/capital-one-removes-lounge-passes-venture-spark-miles-for-business/
+  retrieved_at: "2026-11-13"
+  publisher: review
+confidence: "0.7"

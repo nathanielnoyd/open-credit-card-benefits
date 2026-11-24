@@ -1,0 +1,24 @@
+id: us.chase.world-of-hyatt/milestone-free-night
+card_id: us.chase.world-of-hyatt
+kind: certificate
+name: Category 1-4 free night from the $15,000 milestone
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.world-of-hyatt@2024-01-01
+  summary: "After $15,000 in calendar-year spend, a free night at a Category 1-4 Hyatt hotel, valid for 12 months."
+  unlocked_only: true
+  expires_after_days: 365
+  issued_on: milestone
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: certificate:us.chase.world-of-hyatt.milestone-free-night
+    attributes:
+      max_category: 4
+  beneficiaries:
+  - primary
+  notes: Category 1-4 Hyatt hotel, standard room; not valid at Miraval, Hyatt Zilara or Hyatt Ziva or for packages. Resort
+    and destination fees waived. Valid 12 months.
+  machine_readable: false

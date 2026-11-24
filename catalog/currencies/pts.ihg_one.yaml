@@ -1,0 +1,14 @@
+id: pts:ihg_one
+name: IHG One Rewards
+kind: hotel
+issuer: IHG
+url: https://www.ihg.com/onerewards/content/us/en/home
+expiry: Points expire after 12 months with no earning or redemption activity; elite members are exempt.
+paths: []
+sources:
+  - url: https://www.ihg.com/onerewards/content/us/en/home
+    retrieved_at: "2026-11-13"
+    publisher: partner
+  - url: https://awardtravelfinder.com/points-expiration
+    retrieved_at: "2026-11-13"
+    publisher: review

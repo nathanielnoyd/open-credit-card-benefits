@@ -1,0 +1,31 @@
+id: us.amex.platinum/trusted-traveler
+card_id: us.amex.platinum
+kind: statement_credit
+name: Global Entry or TSA PreCheck credit
+versions:
+  - version: 1
+    change_type: added
+    release: us.amex.platinum@2024-01-01
+    summary: "A statement credit of up to $120 toward a Global Entry or TSA PreCheck application fee once every 4 years."
+    effective_from: "2024-01-01"
+    face_value:
+      amount: 12000
+      currency: USD
+    period:
+      cadence: every_n_years
+      anchor: calendar
+      tz: America/New_York
+      "n": 4
+    grants:
+      - entitlement: credit:trusted_traveler
+        combine: once_per_beneficiary
+    conditions: []
+    beneficiaries:
+      - primary
+      - authorized_user
+    machine_readable: true
+    sources:
+      - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+        retrieved_at: "2026-11-12"
+    verified_by: agent:occb-seed
+    confidence: "0.9"

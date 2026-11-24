@@ -1,0 +1,11 @@
+id: pts:atmos_status_points
+name: Atmos Rewards status points
+kind: status_credit
+issuer: Alaska Air Group
+url: https://www.alaskaair.com/atmosrewards
+expiry: Status-qualification credit; resets each calendar year.
+paths: []
+sources:
+  - url: https://www.alaskaair.com/atmosrewards
+    retrieved_at: "2026-11-13"
+    publisher: partner

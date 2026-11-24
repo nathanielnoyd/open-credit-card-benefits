@@ -1,0 +1,28 @@
+id: us.chase.ink-business-cash@2025-01-01
+card_id: us.chase.ink-business-cash
+kind: baseline
+effective_for_new: '2025-01-01'
+notes: Long-standing earn and protection terms as of 2025; earlier history is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 0
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.chase.ink-business-cash/office-telecom-5x
+  version: 1
+- target: earn_rule:us.chase.ink-business-cash/gas-dining-2x
+  version: 1
+- target: earn_rule:us.chase.ink-business-cash/lyft-5x
+  version: 1
+- target: earn_rule:us.chase.ink-business-cash/base-1x
+  version: 1
+- target: benefit:us.chase.ink-business-cash/rental-cdw
+  version: 1
+- target: benefit:us.chase.ink-business-cash/purchase-protection
+  version: 1
+- target: benefit:us.chase.ink-business-cash/extended-warranty
+  version: 1

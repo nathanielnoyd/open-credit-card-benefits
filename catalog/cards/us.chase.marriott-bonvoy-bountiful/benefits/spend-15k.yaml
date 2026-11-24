@@ -1,0 +1,21 @@
+id: us.chase.marriott-bonvoy-bountiful/spend-15k
+card_id: us.chase.marriott-bonvoy-bountiful
+kind: milestone
+name: Free Night Award after $15,000 spend in a calendar year
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.marriott-bonvoy-bountiful@2024-01-01
+  summary: "After $15,000 in calendar-year spend, a Free Night Award at a Marriott hotel costing up to 50,000 points, once per calendar year."
+  threshold:
+    amount: 1500000
+    currency: USD
+  threshold_period: calendar_year
+  reward_benefit: us.chase.marriott-bonvoy-bountiful/spend-free-night
+  period:
+    cadence: annual
+    anchor: calendar
+  grants:
+  - entitlement: milestone:us.chase.marriott-bonvoy-bountiful.spend-15k
+  beneficiaries:
+  - primary

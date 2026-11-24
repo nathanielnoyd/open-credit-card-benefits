@@ -1,0 +1,20 @@
+id: us.chase.united-explorer@2026-04-02
+card_id: us.chase.united-explorer
+kind: change
+announced_on: '2026-02-19'
+effective_for_new: '2026-04-02'
+notes: 'MileagePlus overhaul: card earn on United purchases rose from 2x to 3x and cardmembers get at least 10% off United
+  award pricing (15% for Premier members). The cardmember flight earn rate (6x for general members) is a MileagePlus program
+  rate, not card earn, and is not modeled here.'
+changes:
+- target: earn_rule:us.chase.united-explorer/united-purchases
+  version: 2
+- target: benefit:us.chase.united-explorer/award-pricing
+  version: 1
+sources:
+- url: https://awardwallet.com/news/united-mileageplus/mileage-earning-changes-2026/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://creditcards.chase.com/travel-credit-cards/united/united-explorer
+  retrieved_at: '2026-11-13'
+  publisher: issuer

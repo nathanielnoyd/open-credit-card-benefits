@@ -1,0 +1,92 @@
+id: us.amex.platinum@2024-01-01
+card_id: us.amex.platinum
+kind: baseline
+effective_for_new: "2024-01-01"
+notes: Terms as known before the 2025 changes. Earlier history is not modeled.
+changes:
+  - target: fee:annual
+    to:
+      amount: 69500
+      currency: USD
+  - target: fee:authorized_user
+    to:
+      amount: 19500
+      currency: USD
+  - target: earn_rule:us.amex.platinum/flights-5x
+    version: 1
+  - target: earn_rule:us.amex.platinum/amex-travel-hotels-5x
+    version: 1
+  - target: earn_rule:us.amex.platinum/base-1x
+    version: 1
+  - target: benefit:us.amex.platinum/hotel-credit
+    version: 1
+  - target: benefit:us.amex.platinum/digital-entertainment
+    version: 1
+  - target: benefit:us.amex.platinum/equinox
+    version: 1
+  - target: benefit:us.amex.platinum/soulcycle
+    version: 1
+  - target: benefit:us.amex.platinum/clear
+    version: 1
+  - target: benefit:us.amex.platinum/airline-fee
+    version: 1
+  - target: benefit:us.amex.platinum/uber-cash
+    version: 1
+  - target: benefit:us.amex.platinum/walmart-plus
+    version: 1
+  - target: benefit:us.amex.platinum/trusted-traveler
+    version: 1
+  - target: benefit:us.amex.platinum/centurion
+    version: 1
+  - target: benefit:us.amex.platinum/centurion-guests
+    version: 1
+  - target: benefit:us.amex.platinum/delta-sky-club
+    version: 1
+  - target: benefit:us.amex.platinum/priority-pass
+    version: 1
+  - target: benefit:us.amex.platinum/plaza-premium
+    version: 1
+  - target: benefit:us.amex.platinum/escape
+    version: 1
+  - target: benefit:us.amex.platinum/lufthansa
+    version: 1
+  - target: benefit:us.amex.platinum/hilton-gold
+    version: 1
+  - target: benefit:us.amex.platinum/marriott-gold
+    version: 1
+  - target: benefit:us.amex.platinum/hertz-pc
+    version: 1
+  - target: benefit:us.amex.platinum/national-exec
+    version: 1
+  - target: benefit:us.amex.platinum/avis-pp
+    version: 1
+  - target: benefit:us.amex.platinum/fhr
+    version: 1
+  - target: benefit:us.amex.platinum/member-airfares
+    version: 1
+  - target: benefit:us.amex.platinum/rental-coverage
+    version: 1
+  - target: benefit:us.amex.platinum/trip-delay
+    version: 1
+  - target: benefit:us.amex.platinum/trip-cancel
+    version: 1
+  - target: benefit:us.amex.platinum/baggage
+    version: 1
+  - target: benefit:us.amex.platinum/purchase-protection
+    version: 1
+  - target: benefit:us.amex.platinum/return-protection
+    version: 1
+  - target: benefit:us.amex.platinum/extended-warranty
+    version: 1
+  - target: benefit:us.amex.platinum/cell-phone
+    version: 1
+  - target: benefit:us.amex.platinum/no-fx
+    version: 1
+  - target: benefit:us.amex.platinum/saks-credit
+    version: 1
+sources:
+  - url: https://www.nerdwallet.com/credit-cards/news/amex-platinum-hikes-fee-adds-hundreds-in-credits
+    retrieved_at: "2026-11-12"
+  - url: https://onemileatatime.com/reviews/credit-cards/american-express/amex-platinum-card/
+    retrieved_at: "2026-11-12"
+confidence: "0.8"

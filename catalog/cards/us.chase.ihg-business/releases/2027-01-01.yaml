@@ -1,0 +1,24 @@
+id: us.chase.ihg-business@2027-01-01
+card_id: us.chase.ihg-business
+kind: change
+announced_on: '2026-10-01'
+notes: For all cardmembers, the broad 5x travel and office supply categories end after December 31, 2026 (direct airfare
+  and car rentals keep 5x), and the Diamond Elite spend threshold rises from $40,000 to $50,000 a calendar year.
+effective_for_new: '2027-01-01'
+changes:
+- target: earn_rule:us.chase.ihg-business/travel-5x
+  change_type: retired
+- target: earn_rule:us.chase.ihg-business/office-supplies-5x
+  change_type: retired
+- target: benefit:us.chase.ihg-business/diamond-spend
+  version: 2
+sources:
+- url: https://creditcards.chase.com/business-credit-cards/IHG/business
+  retrieved_at: '2026-11-13'
+  publisher: issuer
+- url: https://thepointsguy.com/news/ihg-credit-card-refresh-2026/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://frequentmiler.com/all-the-existing-ihg-credit-cards-have-been-refreshed-here-are-the-changes/
+  retrieved_at: '2026-11-13'
+  publisher: review

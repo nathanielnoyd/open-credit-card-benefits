@@ -1,0 +1,22 @@
+id: us.chase.freedom-unlimited/rental-cdw
+card_id: us.chase.freedom-unlimited
+kind: protection
+name: Auto rental collision damage waiver
+versions:
+- version: 1
+  change_type: added
+  release: us.chase.freedom-unlimited@2024-01-01
+  summary: "Secondary collision and theft coverage on rental cars paid with the card when you decline the rental company's collision coverage."
+  coverage:
+    priority: secondary
+  grants:
+  - entitlement: protection:rental_cdw
+    attributes:
+      priority: secondary
+  conditions:
+  - type: paid_with_card
+  notes: Theft and collision damage on most rentals when the rental company's collision coverage is declined; secondary to personal auto insurance in the US. Listed on the Freedom card benefit pages; the Unlimited product page excerpt did not show it, so confidence is lower.
+  confidence: "0.7"
+  beneficiaries:
+  - primary
+  - authorized_user

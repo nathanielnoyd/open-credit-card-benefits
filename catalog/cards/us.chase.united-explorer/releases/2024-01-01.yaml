@@ -1,0 +1,62 @@
+id: us.chase.united-explorer@2024-01-01
+card_id: us.chase.united-explorer
+kind: baseline
+confidence: '0.7'
+effective_for_new: '2024-01-01'
+notes: Terms before the March 24, 2025 refresh, limited to the fee, earn rates and benefits that reviews of the refresh confirm
+  existed before it. Earlier history is not modeled.
+changes:
+- target: fee:annual
+  to:
+    amount: 9500
+    currency: USD
+- target: fee:authorized_user
+  to:
+    amount: 0
+    currency: USD
+- target: earn_rule:us.chase.united-explorer/united-purchases
+  version: 1
+- target: earn_rule:us.chase.united-explorer/dining-2x
+  version: 1
+- target: earn_rule:us.chase.united-explorer/hotels-2x
+  version: 1
+- target: earn_rule:us.chase.united-explorer/base-1x
+  version: 1
+- target: benefit:us.chase.united-explorer/checked-bag
+  version: 1
+- target: benefit:us.chase.united-explorer/priority-boarding
+  version: 1
+- target: benefit:us.chase.united-explorer/club-passes
+  version: 1
+- target: benefit:us.chase.united-explorer/trusted-traveler
+  version: 1
+- target: benefit:us.chase.united-explorer/inflight-25
+  version: 1
+- target: benefit:us.chase.united-explorer/award-availability
+  version: 1
+- target: benefit:us.chase.united-explorer/no-fx
+  version: 1
+- target: benefit:us.chase.united-explorer/rental-cdw
+  version: 1
+- target: benefit:us.chase.united-explorer/baggage-delay
+  version: 1
+- target: benefit:us.chase.united-explorer/lost-luggage
+  version: 1
+- target: benefit:us.chase.united-explorer/trip-cancel
+  version: 1
+- target: benefit:us.chase.united-explorer/trip-delay
+  version: 1
+- target: benefit:us.chase.united-explorer/purchase-protection
+  version: 1
+- target: benefit:us.chase.united-explorer/extended-warranty
+  version: 1
+sources:
+- url: https://thepointsguy.com/news/united-credit-card-refresh-2025
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://awardwallet.com/news/united-mileageplus/united-card-portfolio-overhaul/
+  retrieved_at: '2026-11-13'
+  publisher: review
+- url: https://awardwallet.com/news/united-mileageplus/mileage-earning-changes-2026/
+  retrieved_at: '2026-11-13'
+  publisher: review
