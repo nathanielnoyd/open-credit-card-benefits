@@ -1,17 +1,34 @@
-# Maintaining the catalog
+# Maintaining
 
-How to keep the catalog current, add cards and ship versions. It's written for a person or an agent doing the work. Read [`catalog-format.md`](catalog-format.md) first; it defines every file referred to here.
+How to evolve the draft spec and keep its reference implementations consistent with it. It's written for a person or an agent doing the work.
 
-## Principles
+The spec is the product. The reference catalog is example data that exercises it: it should stay valid, sourced and honest about its confidence, but it isn't maintained as an authoritative or complete source. Updating it is optional upkeep, not the main job.
+
+## Changing the spec
+
+Most changes start from a term the spec can't express. `docs/roadmap.md` lists the known ones, ranked.
+
+1. Change `spec/SPEC.md` and the matching JSON Schema in `schema/` together.
+2. Update the loader, validator or build in `tools/` if the change adds authoring shorthand, a cross-file rule or a published field.
+3. Update the engine in `src/` if the change affects resolution or valuation, with tests in `test/`. Behaviour other implementations should match also gets a case in `conformance/`.
+4. Show the feature on at least one real card in the catalog, so the schema, validator and engine are exercised by data.
+5. Update `docs/catalog-format.md`, remove the item from `docs/roadmap.md`, and add a line under **Unreleased** in `CHANGELOG.md`.
+6. Run `npm run check`.
+
+Before 1.0, a minor spec version may break compatibility. Note every breaking change in `CHANGELOG.md`.
+
+## Catalog principles
 
 - **History is append-only.** A change in terms is a new version plus a dated release. Never edit an existing version's terms. Correct one in place only when it was wrong when written, and say so in its `notes`.
 - **Every fact has a source.** Prefer the issuer's own page (`publisher: issuer`). Use reputable coverage when the issuer page doesn't say or can't be loaded, and lower `confidence` to match.
 - **Unsure is a valid answer.** If the sources disagree, record the better-supported value, lower `confidence`, and add an entry to [`review-queue.md`](review-queue.md). If the vocabulary can't express a term, write it in `notes` with `machine_readable: false`. Don't force it into a field.
 - **Facts only.** Welcome offers, intro APRs, first-year waivers and other sign-up incentives never go in the catalog. Neither do opinions of what a perk is worth; those belong in value sets.
 
-## The update loop
+## Updating the reference catalog
 
-Run this on a schedule (weekly is plenty) or whenever an issuer announces changes.
+Optional. Do this when a card's terms are needed to demonstrate a spec feature, or when asked. The principles above apply to every catalog edit.
+
+To refresh a card:
 
 1. **Pick cards.** `npm run stale -- --limit 10` lists the cards checked least recently, then those with the lowest confidence. Add `--json` for structured output.
 2. **Read the current record.** `npm run build`, then read `dist/cards/<card id>.md`. It holds the card's current terms in plain language with benefit IDs.
@@ -25,9 +42,12 @@ Run this on a schedule (weekly is plenty) or whenever an issuer announces change
 
 ### Points currencies
 
-Transfer partners and ratios live in `catalog/currencies/pts.<program>.yaml`, and they change more often than card terms. Check them in the same loop: start with the transferable currencies (`pts.amex_mr`, `pts.chase_ur`, `pts.citi_ty`, `pts.capital_one_miles`, `pts.bilt`, `pts.wells_fargo_rewards`) whenever an issuer announces a partner change. Add a dated path with `effective_from` and end the old one with `effective_to`. Don't overwrite it.
+Transfer partners and ratios live in `catalog/currencies/pts.<program>.yaml`, and they change more often than card terms. Check them the same way: start with the transferable currencies (`pts.amex_mr`, `pts.chase_ur`, `pts.citi_ty`, `pts.capital_one_miles`, `pts.bilt`, `pts.wells_fargo_rewards`) whenever an issuer announces a partner change. Add a dated path with `effective_from` and end the old one with `effective_to`. Don't overwrite it.
 
 ## Adding a card
+
+Add a card when it demonstrates something the existing cards don't, such as a new benefit kind or an unusual earn structure.
+
 
 1. Create `catalog/cards/<card id>/` with `card.yaml`, `earn-rules.yaml`, `benefits/` and `releases/`. Copy the structure of a similar card. `us.chase.sapphire-preferred` is a good model for a points card and `us.citi.double-cash` for a cashback card.
 2. Write a `baseline` release dated when the terms were first observed. It sets `fee:annual`, ships every version, and says in `notes` if the history before it is unknown.
@@ -42,12 +62,6 @@ Transfer partners and ratios live in `catalog/currencies/pts.<program>.yaml`, an
 [`review-queue.md`](review-queue.md) lists facts that need a person, or a better source. When you resolve one, fix the record, raise its `confidence`, and mark the entry FIXED with the date. Run `npm run warnings` to see the live list of structural gaps, such as protections without coverage amounts or summaries that quote figures missing from the data.
 
 A person who confirms a record against issuer terms sets `verified_by: human:<name>`. Agents always use `agent:<identifier>`.
-
-## Changing the engine, schema or spec
-
-- Add or update tests in `test/`. Engine behaviour that other implementations should match also gets a case in `conformance/`.
-- A schema change needs the spec text (`spec/SPEC.md`), `docs/catalog-format.md` and any affected catalog files updated in the same pull request.
-- Add a line under **Unreleased** in `CHANGELOG.md`. Catalog data changes don't need one, because their releases are their changelog.
 
 ## Shipping a version
 

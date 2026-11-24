@@ -1,10 +1,10 @@
-# Open Credit Card Benefits (OCCB) v0.3
+# Open Credit Card Benefits (OCCB) v0.3 — Draft
 
 November 13, 2026.
 
 ## 1. Status and scope
 
-OCCB is an open data standard for describing credit card benefits and points currencies, and for computing what a person's whole wallet is actually worth. Every part may change before 1.0. Version 0.2 added a model for how card terms change over time (section 8) after modeling three premium cards (Appendix B). Version 0.3 adds what modeling 56 popular US personal and business cards required: structured fields for protections, certificates and fee waivers, richer earn rules, and an authoring shorthand (Appendix E).
+OCCB is an open data standard for describing credit card benefits and points currencies, and for computing what a person's whole wallet is actually worth. Version 0.3 is a draft; every part may change before 1.0. Version 0.2 added a model for how card terms change over time (section 8) after modeling three premium cards (Appendix B). Version 0.3 adds what modeling 56 popular US personal and business cards required: structured fields for protections, certificates and fee waivers, richer earn rules, and an authoring shorthand (Appendix E).
 
 **Goals**
 

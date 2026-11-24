@@ -2,14 +2,27 @@
 
 [![CI](https://github.com/nathanielnoyd/open-credit-card-benefits/actions/workflows/ci.yml/badge.svg)](https://github.com/nathanielnoyd/open-credit-card-benefits/actions/workflows/ci.yml)
 
-Structured, sourced data on US credit card benefits, plus a TypeScript engine that answers questions with it.
+An open draft specification for credit card benefit data, with JSON Schemas, a reference catalog and a reference engine.
 
-- **Catalog:** 81 US personal and business cards from 11 issuers. It covers fees, earn rates, statement credits, lounges, protections, points currencies and transfer partners, with dated history and a source on every fact.
-- **Engine:** resolves which terms a cardholder has on any date and values a wallet of cards without double-counting overlapping perks. It has no runtime dependencies.
-- **Spec and schemas:** the data model, as a written spec and JSON Schemas.
+## Why this exists
+
+Every app that deals with credit card benefits invents its own way to describe them. Most of those formats break down in the same places:
+
+- **Change over time.** Issuers refresh cards often. New applicants get new terms on one date, and existing cardholders on another, usually at renewal. A format that stores only "current terms" gets most existing cardholders wrong.
+- **Overlap.** Many cards cover the same perk, such as Global Entry, Priority Pass or a streaming credit. Without a shared notion of "the same perk", tools add them up and overstate what a set of cards is worth.
+- **Facts vs. opinions.** What a card offers and what a point or perk is worth get stored together, so one publisher's valuation becomes part of the data.
+- **Provenance.** Facts rarely carry a source, a date or a confidence, so neither a person nor an agent can tell what to trust or when to recheck.
+
+This draft specification addresses each of these. It uses dated releases with rules for when existing cardholders get a change, shared entitlement keys so overlapping perks combine correctly, valuations kept separate from facts, and a source on every record.
+
+## What's here
+
+- **Spec and schemas:** the data model, as a written spec ([`spec/SPEC.md`](spec/SPEC.md)) and JSON Schemas.
+- **Reference catalog:** real US cards described in the format, to show it works on actual terms.
+- **Reference engine:** a TypeScript library that resolves a cardholder's terms on any date and values a wallet of cards without double-counting overlapping perks.
 
 > [!NOTE]
-> AI agents compiled the catalog from issuer pages and published reviews, and people haven't reviewed it yet. Use it as a starting point, not as issuer terms. Open issues are listed in [`docs/review-queue.md`](docs/review-queue.md).
+> The reference catalog exists to exercise the spec. AI agents compiled it from public sources, people haven't reviewed it, and it isn't maintained as an authoritative source. Don't rely on it for actual card terms.
 
 ## Install
 
@@ -17,7 +30,7 @@ Structured, sourced data on US credit card benefits, plus a TypeScript engine th
 npm install github:nathanielnoyd/open-credit-card-benefits
 ```
 
-Requires Node.js 22.18 or later. The package includes the built catalog, so it works offline and stays pinned to the commit you installed.
+Requires Node.js 22.18 or later. The package includes the engine, the schemas and the built reference catalog.
 
 ## Quick start
 
@@ -47,9 +60,9 @@ valueWallet(catalog, wallet, { asOf: '2026-11-24' }).net;  // cents, after fees 
 
 Valuation runs on facts alone unless you pass a **value set**, which holds your opinion of what each perk and point is worth. See [`docs/value-sets.md`](docs/value-sets.md).
 
-## Use the data without the engine
+## Published files
 
-CI publishes the catalog to GitHub Pages on every push to `main`. Agents start at `llms.txt`. Apps read `cards.json`, the per-card JSON or `catalog.json`. There's also JSONL for search indexes and CSV for spreadsheets.
+CI publishes the reference catalog in the spec's distribution formats to GitHub Pages on every push to `main`. Agents start at `llms.txt`. Apps read `cards.json`, the per-card JSON or `catalog.json`. There's also JSONL for search indexes and CSV for spreadsheets.
 
 ```
 https://nathanielnoyd.github.io/open-credit-card-benefits/v0.3/llms.txt
@@ -62,11 +75,11 @@ The full file list is in [`docs/publishing.md`](docs/publishing.md).
 
 | Doc | For |
 | --- | --- |
+| [`spec/SPEC.md`](spec/SPEC.md) | The draft specification |
 | [`docs/engine.md`](docs/engine.md) | Engine API reference |
 | [`docs/catalog-format.md`](docs/catalog-format.md) | How cards, benefits and releases are written |
-| [`docs/maintaining.md`](docs/maintaining.md) | Keeping the catalog current: the update loop, adding cards, cutting releases |
+| [`docs/maintaining.md`](docs/maintaining.md) | Changing the spec, schemas and engine; updating the reference catalog; cutting releases |
 | [`AGENTS.md`](AGENTS.md) | Instructions for AI agents working in this repository |
-| [`spec/SPEC.md`](spec/SPEC.md) | The full data model |
 
 All docs are listed in [`docs/`](docs/README.md).
 

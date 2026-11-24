@@ -1,9 +1,9 @@
 # Contributing
 
-Corrections are welcome as issues or pull requests.
+Issues and pull requests are welcome, especially card terms the draft spec can't express.
 
-- **Catalog changes:** follow [`docs/maintaining.md`](docs/maintaining.md). A change in terms is a new version plus a dated release with sources; never edit history.
-- **Engine, schema or spec changes:** include tests and a line under **Unreleased** in [`CHANGELOG.md`](CHANGELOG.md).
+- **Spec, schema or engine changes:** follow [Changing the spec](docs/maintaining.md#changing-the-spec). Include tests and a line under **Unreleased** in [`CHANGELOG.md`](CHANGELOG.md).
+- **Reference catalog fixes:** a change in terms is a new version plus a dated release with sources; never edit history. See [`docs/maintaining.md`](docs/maintaining.md).
 - **AI agents:** follow [`AGENTS.md`](AGENTS.md).
 
 Run `npm run check` before opening a pull request. In the description, list each change with its source. If numbers in `conformance/valuation/` moved, explain why.

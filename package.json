@@ -1,7 +1,7 @@
 {
   "name": "open-credit-card-benefits",
   "version": "0.3.0",
-  "description": "Open data, a spec and a TypeScript engine for US credit card benefits, rewards, statement credits, points and transfer partners.",
+  "description": "A draft specification for credit card benefit data, with JSON Schemas, a reference catalog and a reference TypeScript engine.",
   "author": "nathanielnoyd",
   "license": "Apache-2.0",
   "repository": { "type": "git", "url": "git+https://github.com/nathanielnoyd/open-credit-card-benefits.git" },
@@ -37,5 +37,5 @@
     "typescript": "5.7.2",
     "yaml": "2.6.1"
   },
-  "keywords": ["credit cards", "credit card benefits", "credit card rewards", "card perks", "statement credits", "points", "miles", "transfer partners", "travel rewards", "lounges", "annual fee", "open data", "llm", "mcp"]
+  "keywords": ["credit cards", "credit card benefits", "credit card rewards", "card perks", "statement credits", "points", "miles", "transfer partners", "travel rewards", "lounges", "annual fee", "open data", "specification", "json schema", "llm", "mcp"]
 }

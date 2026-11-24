@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Open Credit Card Benefits</title>
-<meta name="description" content="Structured, sourced data on US credit card benefits, rewards, credits, points and transfer partners.">
+<meta name="description" content="A draft specification for credit card benefit data, with JSON Schemas, a reference catalog and a reference engine.">
 <link rel="alternate" type="text/plain" href="llms.txt" title="llms.txt">
 <style>
   :root { --bg: #fff; --fg: #1a1a1a; --muted: #5c5c5c; --line: #e4e4e4; --link: #0b57d0; }
@@ -30,11 +30,12 @@
 <body>
 <main>
   <h1>Open Credit Card Benefits</h1>
-  <p class="lede">Structured, sourced data on US credit card benefits: fees, earn rates, statement credits, lounges, protections, points and transfer partners, with dated history.</p>
+  <p class="lede">A draft specification for credit card benefit data: how terms change over time, how overlapping perks combine, and where every fact comes from.</p>
+  <p>This site publishes the spec's reference catalog in its distribution formats. The catalog exists to exercise the spec and isn't maintained as an authoritative source.</p>
 
-  <h2>Data</h2>
+  <h2>Reference catalog</h2>
   <ul>
-    <li><a href="llms.txt">llms.txt</a><span>Start here if you're an AI agent</span></li>
+    <li><a href="llms.txt">llms.txt</a><span>Plain-text entry point for AI agents</span></li>
     <li><a href="v{{SPEC}}/cards.json">cards.json</a><span>Every card with its fee, summary and file links</span></li>
     <li><a href="v{{SPEC}}/catalog.json">catalog.json</a><span>The full catalog in one file</span></li>
     <li><a href="v{{SPEC}}/releases.json">releases.json</a><span>Every dated change in terms, newest first</span></li>
@@ -44,10 +45,10 @@
 
   <h2>Use it in code</h2>
   <pre><code>npm install github:nathanielnoyd/open-credit-card-benefits</code></pre>
-  <p>The package includes a TypeScript engine for resolving card terms and valuing a wallet. Documentation is on <a href="https://github.com/nathanielnoyd/open-credit-card-benefits">GitHub</a>.</p>
+  <p>The package includes the schemas and a reference engine for resolving card terms and valuing a wallet. The spec and documentation are on <a href="https://github.com/nathanielnoyd/open-credit-card-benefits">GitHub</a>.</p>
 
   <footer>
-    <p>Compiled from issuer pages and published reviews. This isn't issuer terms or financial advice; check with the issuer before relying on a figure.</p>
+    <p>The reference catalog was compiled from issuer pages and published reviews. It isn't issuer terms or financial advice; check with the issuer before relying on a figure.</p>
     <p>Data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Code: Apache 2.0 · Spec {{SPEC}}</p>
   </footer>
 </main>

@@ -114,7 +114,7 @@ const byIssuer = [...new Set(cat.cards.map(c => c.issuer_id))].sort();
 fs.writeFileSync(path.join(out, 'llms.txt'), [
   '# Open Credit Card Benefits (OCCB): US credit card benefits and rewards data',
   '',
-  `> Structured, sourced data on ${cat.cards.length} US credit cards: fees, earn rates, credits, lounges, status, protections, points currencies and how terms changed over time. ${NOTICE}`,
+  `> The reference catalog for the Open Credit Card Benefits draft specification: real US credit cards described in the format, with fees, earn rates, credits, lounges, status, protections, points currencies and how terms changed over time. It exists to exercise the spec and isn't maintained as an authoritative source. ${NOTICE}`,
   '',
   'Use `cards.json` to find a card, then read its fact sheet (Markdown, plain language) or its JSON file (full structured terms with history). Money is in cents; IDs are stable. The JSON Schemas and spec define every field.',
   '',

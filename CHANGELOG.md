@@ -4,6 +4,9 @@ Notable changes to the spec, schemas, engine and tooling. Catalog data changes a
 
 ## Unreleased
 
+- Framing: the project is a draft specification; the catalog and engine are reference implementations. The README explains the problems the spec addresses, the spec is marked as a draft, and `AGENTS.md` and `docs/maintaining.md` treat catalog updates as optional upkeep of example data.
+- Published site: a front page and a root `llms.txt`.
+
 ## 0.3.0 — 2026-11-24
 
 - Package: installable from GitHub with `npm install github:nathanielnoyd/open-credit-card-benefits`. The engine compiles to JavaScript with type declarations and has no runtime dependencies. The built catalog ships as `open-credit-card-benefits/catalog.json`, and the other published files as `open-credit-card-benefits/data/*`, including the example value set (`value-sets/example.json`).
