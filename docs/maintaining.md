@@ -74,6 +74,15 @@ Every push to `main` republishes the data to GitHub Pages under the current spec
 
 A new **spec** version (0.3 to 0.4) also changes `SPEC_VERSION` in `tools/load.mjs` and the `$id` of every schema, and publishes under a new Pages path. The old path keeps serving its last build, so existing consumers don't break.
 
+## Branch protection
+
+[`.github/rulesets/`](../.github/rulesets/) holds the repository's rules as GitHub rulesets. Apply or update them under **Settings → Rules → Rulesets → New ruleset → Import a ruleset**, one file at a time.
+
+- **`main.json`** protects the default branch: changes arrive by pull request, the CI `check` job must pass, review threads must be resolved, and the branch can't be force-pushed or deleted. No approving review is required, because the owner opens most pull requests and GitHub doesn't let authors approve their own. Repository admins can bypass the rules when merging a pull request, but not to push directly.
+- **`release-tags.json`** stops `v*` tags from being moved or deleted, so a published version always points at the same commit.
+
+If you change a ruleset in the GitHub settings, export it and replace the file here so the two stay in step.
+
 ## Commands
 
 | Command | What it does |
