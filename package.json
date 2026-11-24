@@ -31,11 +31,11 @@
     "prepare": "npm run build && npm run build:lib"
   },
   "devDependencies": {
-    "@types/node": "22.10.2",
-    "ajv": "8.17.1",
+    "@types/node": "26.6.6",
+    "ajv": "8.20.0",
     "ajv-formats": "3.0.1",
-    "typescript": "5.7.2",
-    "yaml": "2.6.1"
+    "typescript": "7.0.2",
+    "yaml": "2.9.1"
   },
   "keywords": ["credit cards", "credit card benefits", "credit card rewards", "card perks", "statement credits", "points", "miles", "transfer partners", "travel rewards", "lounges", "annual fee", "open data", "specification", "json schema", "llm", "mcp"]
 }
