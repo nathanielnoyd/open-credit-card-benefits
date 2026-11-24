@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Credit Card Benefits</title>
+<meta name="description" content="Structured, sourced data on US credit card benefits, rewards, credits, points and transfer partners.">
+<link rel="alternate" type="text/plain" href="llms.txt" title="llms.txt">
+<style>
+  :root { --bg: #fff; --fg: #1a1a1a; --muted: #5c5c5c; --line: #e4e4e4; --link: #0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #121212; --fg: #ececec; --muted: #a0a0a0; --line: #2c2c2c; --link: #8ab4f8; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 56px 16px; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 40px 0 8px; }
+  p { margin: 0 0 12px; }
+  .lede { color: var(--muted); font-size: 18px; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li { padding: 10px 0; border-top: 1px solid var(--line); display: flex; gap: 16px; flex-wrap: wrap; }
+  li a { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px; min-width: 190px; }
+  li span { color: var(--muted); flex: 1; min-width: 200px; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px; }
+  pre { background: color-mix(in srgb, var(--fg) 6%, transparent); padding: 12px 14px; border-radius: 6px; overflow-x: auto; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Open Credit Card Benefits</h1>
+  <p class="lede">Structured, sourced data on US credit card benefits: fees, earn rates, statement credits, lounges, protections, points and transfer partners, with dated history.</p>
+
+  <h2>Data</h2>
+  <ul>
+    <li><a href="llms.txt">llms.txt</a><span>Start here if you're an AI agent</span></li>
+    <li><a href="v{{SPEC}}/cards.json">cards.json</a><span>Every card with its fee, summary and file links</span></li>
+    <li><a href="v{{SPEC}}/catalog.json">catalog.json</a><span>The full catalog in one file</span></li>
+    <li><a href="v{{SPEC}}/releases.json">releases.json</a><span>Every dated change in terms, newest first</span></li>
+    <li><a href="v{{SPEC}}/glossary.json">glossary.json</a><span>What every kind, category, condition and currency means</span></li>
+    <li><a href="v{{SPEC}}/index.json">index.json</a><span>Catalog version and the list of every published file</span></li>
+  </ul>
+
+  <h2>Use it in code</h2>
+  <pre><code>npm install github:nathanielnoyd/open-credit-card-benefits</code></pre>
+  <p>The package includes a TypeScript engine for resolving card terms and valuing a wallet. Documentation is on <a href="https://github.com/nathanielnoyd/open-credit-card-benefits">GitHub</a>.</p>
+
+  <footer>
+    <p>Compiled from issuer pages and published reviews. This isn't issuer terms or financial advice; check with the issuer before relying on a figure.</p>
+    <p>Data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Code: Apache 2.0 · Spec {{SPEC}}</p>
+  </footer>
+</main>
+</body>
+</html>

@@ -18,6 +18,8 @@ The catalog's source is the YAML in this repository. Consumers never read the YA
 <pages-url>/v0.3/csv/*.csv           # spreadsheet projection (spec section 14)
 ```
 
+The site root has a front page (`index.html`, from `tools/site/`) and a copy of `llms.txt` whose links point into the current version, so agents that look for `/llms.txt` find it.
+
 The path carries the spec version, so a breaking spec change publishes to a new path and older consumers keep working. `catalog_version` in `index.json` changes on every build; compare it to decide whether to refetch.
 
 Tagging a commit `vX.Y.Z` also attaches the built files to a GitHub Release, so any past catalog can be downloaded exactly.
